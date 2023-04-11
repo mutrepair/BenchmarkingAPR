@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/data/statistics/Regression.java
+	Line Number: 91
+	Block: 5
+	First Index: 142
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/jfree/data/statistics/Regression.java
+	Line Number: 91
+	Block: 5
+	First Index: 145
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

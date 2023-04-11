@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field PI
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field PI
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field E
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field E
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field LOG_MAX_VALUE
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field LOG_MAX_VALUE
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local x is replaced by access to field LN_2_A
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local x is replaced by access to field LN_2_B
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 16
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 14
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 16
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 16
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 20
+	Rank: 4
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 448
+	First Index: 16
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

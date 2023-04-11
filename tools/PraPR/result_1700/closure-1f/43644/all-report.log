@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local resultType is replaced by local leftType to be used
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 98
+	First Index: 52
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local left is replaced a call left.getFirstChild()
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 97
+	First Index: 49
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local resultType is replaced a call resultType.autoboxesTo()
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 98
+	First Index: 52
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setJSType(Lcom/google/javascript/rhino/jstype/JSType;)V is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 99
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.google.javascript.rhino.Node::setJSType(Lcom/google/javascript/rhino/jstype/JSType;)V is guarded
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 99
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 97
+	First Index: 51
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 97
+	First Index: 51
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 97
+	First Index: 51
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::setJSType
+	File Name: com/google/javascript/jscomp/TypeInference.java
+	Line Number: 554
+	Block: 99
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:36:40 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local off is replaced by local len to be used
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 244
+	Block: 32
+	First Index: 7
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 244
+	Block: 32
+	First Index: 9
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 244
+	Block: 32
+	First Index: 9
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 244
+	Block: 32
+	First Index: 8
+	Rank: 4
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3817/org/apache/commons/codec/language/Metaphone.java	2022-10-31 19:47:39.099806181 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/Metaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -338,7 +338,7 @@
+ 		boolean matches = false;
+ 		if( index >= 0 &&
+ 		    (index + test.length() - 1) < string.length() ) {
+-			String substring = string.substring( index, index * test.length());
++			String substring = string.substring( index, index + test.length());
+ 			matches = substring.equals( test );
+ 		}
+ 		return matches;

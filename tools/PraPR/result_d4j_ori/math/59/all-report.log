@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local a is replaced by local b to be used
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 3
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local a to be used
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 4
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local a to be used
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 586
+	First Index: 18
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isNaN with a call to isInfinite
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 584
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted NaN with 1.0
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 585
+	First Index: 15
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced float addition with subtraction
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 584
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Float::isNaN
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 584
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced float return with 0.0f for org/apache/commons/math/util/FastMath::max
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 586
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 584
+	First Index: 14
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 584
+	First Index: 14
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 582
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of float value with -(x + 1) for org/apache/commons/math/util/FastMath::max
+	File Name: org/apache/commons/math/util/FastMath.java
+	Line Number: 3482
+	Block: 586
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

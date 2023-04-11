@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.stream.JsonReader.hasToken is replaced by the call to com.google.gson.stream.JsonReader::setLenient(Z)V
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1078
+	Block: 218
+	First Index: 26
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to hasToken with an access to lenient
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1078
+	Block: 218
+	First Index: 26
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to hasToken with an access to skipping
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1078
+	Block: 218
+	First Index: 26
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1078
+	Block: 218
+	First Index: 25
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable hasToken
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1078
+	Block: 218
+	First Index: 26
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

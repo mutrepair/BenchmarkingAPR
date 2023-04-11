@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 9
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to canContainBlock with an access to isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to canContainBlock with an access to canContainInline
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to canContainBlock with an access to optionalClosing
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to canContainBlock with an access to empty
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to canContainBlock with an access to preserveWhitespace
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field defaultAncestor
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 3
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.getImplicitParent()
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 3
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 4
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable canContainBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 334
+	Block: 96
+	First Index: 5
+	Rank: 9
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------

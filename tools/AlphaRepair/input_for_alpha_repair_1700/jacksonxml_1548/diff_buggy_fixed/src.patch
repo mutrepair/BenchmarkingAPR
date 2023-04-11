@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1548/com/fasterxml/jackson/dataformat/xml/deser/WrapperHandlingDeserializer.java	2022-10-31 19:47:49.639767932 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/WrapperHandlingDeserializer.java	2022-12-26 15:13:53.109638382 -0600
+@@ -85,7 +85,7 @@
+              * (not perfect check, but simplest reasonable check)
+              */
+             JavaType type = prop.getType();
+-            if (!true) {
++            if (!TypeUtil.isIndexedType(type)) {
+                 continue;
+             }
+             PropertyName wrapperName = prop.getWrapperName();

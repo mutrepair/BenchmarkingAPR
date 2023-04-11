@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14578/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-10-31 19:47:46.587779045 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-12-26 15:13:52.513631942 -0600
+@@ -235,7 +235,7 @@
+          *   consider "stringified" simple time stamp
+          */
+         int i = dateStr.length();
+-        while (--i >= 1) {
++        while (--i >= 0) {
+             char ch = dateStr.charAt(i);
+             if (ch < '0' || ch > '9') break;
+         }

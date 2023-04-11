@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to NaN with an access to I
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to NaN with an access to INF
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 24
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to NaN with an access to ONE
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to NaN with an access to ZERO
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field NaN is replaced by access to local this
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 24
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/complex/Complex::reciprocal
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 25
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/complex/Complex::reciprocal to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 305
+	Block: 57
+	First Index: 25
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local u is replaced by local v to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 102
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local u is replaced by local v to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 103
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local u is replaced by local v to be defined
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 103
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 102
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 103
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 103
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 102
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 102
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 592
+	Block: 102
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------

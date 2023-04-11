@@ -1,0 +1,1 @@
+public void METHOD_1 ( TYPE_1 data ) { TYPE_2 error = null ; VAR_1 . start ( ) ; while ( VAR_1 . METHOD_2 ( ) ) { try { VAR_2 . METHOD_1 ( data ) ; if ( VAR_3 ) { return ; } else { error = null ; } } catch ( TYPE_3 VAR_4 ) { error = METHOD_3 ( VAR_4 ) ; } catch ( TYPE_4 VAR_4 ) { error = METHOD_3 ( VAR_4 ) ; } } if ( error != null ) { throw error ; } }

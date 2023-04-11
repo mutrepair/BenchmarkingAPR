@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/14266/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.967784932 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2893,7 +2893,7 @@
+         /* note: won't change it to negative here, since caller
+          * already knows it'll need a surrogate
+          */
+-        return ((c << 6) | (d & -63)) - 0x10000;
++        return ((c << 6) | (d & 0x3F)) - 0x10000;
+     }
+ 
+     private void _skipUtf8_2(int c)

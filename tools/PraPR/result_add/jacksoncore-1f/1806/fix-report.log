@@ -1,0 +1,100 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 14:57:02 CST 2022
+Number of Plausible Fixes: 8
+Total Number of Patches: 30
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local hash is replaced by local oldEnd to be used
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local hash is replaced by local maxColl to be used
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_5
+	Description: local hash is replaced by local i to be used
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-16.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local hash is replaced by access to field DEFAULT_TABLE_SIZE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 7
+	Total Rank: 29
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local hash is replaced by access to field MAX_TABLE_SIZE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 7
+	Total Rank: 29
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local hash is replaced by access to field MAX_COLL_CHAIN_LENGTH
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 7
+	Total Rank: 29
+	Status: SURVIVED
+	Dump: mutant-25.class
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local hash is replaced by access to field MAX_COLL_CHAIN_FOR_REUSE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 231
+	Rank: 7
+	Total Rank: 29
+	Status: SURVIVED
+	Dump: mutant-27.class
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 931
+	Block: 121
+	First Index: 233
+	Rank: 8
+	Total Rank: 30
+	Status: SURVIVED
+	Dump: mutant-30.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/43045/org/jfree/chart/plot/PiePlot3D.java	2022-10-31 19:47:29.479840769 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/PiePlot3D.java	2022-10-29 16:41:07.430717426 -0500
+@@ -514,7 +514,7 @@
+         iterator = arcList.iterator();
+         while (iterator.hasNext()) {
+             Arc2D segment = (Arc2D) iterator.next();
+-            if (true) {
++            if (segment != null) {
+                 Comparable key = getSectionKey(cat);
+                 paint = lookupSectionPaint(key, false);
+                 outlinePaint = lookupSectionOutlinePaint(key, false);

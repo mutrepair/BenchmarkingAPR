@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/26744/org/jfree/chart/annotations/CategoryPointerAnnotation.java	2022-10-31 19:47:29.423840969 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/annotations/CategoryPointerAnnotation.java	2022-10-29 16:41:07.426717447 -0500
+@@ -463,7 +463,7 @@
+             return false;
+         }
+         if (!this.arrowPaint.equals(that.arrowPaint)) {
+-            return true;
++            return false;
+         }
+         if (!ObjectUtilities.equal(this.arrowStroke, that.arrowStroke)) {
+             return false;

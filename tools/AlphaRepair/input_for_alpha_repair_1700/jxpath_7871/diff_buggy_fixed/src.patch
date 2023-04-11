@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/7871/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-10-31 19:47:51.439761363 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-12-26 15:13:54.181649966 -0600
+@@ -16,7 +16,7 @@
+             return 10;
+          if ((active0 & 0xfffffffff8000000L) != 0L || (active1 & 0x3fffL) != 0L)
+          {
+-            jjmatchedKind = -78;
++            jjmatchedKind = 78;
+             return 12;
+          }
+          return -1;

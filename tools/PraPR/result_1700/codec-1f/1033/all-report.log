@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local bits is replaced by local ii to be used
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local bits is replaced by local jj to be used
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local bits is replaced by access to field BIT_0
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local bits is replaced by access to field BIT_1
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local bits is replaced by access to field BIT_2
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local bits is replaced by access to field BIT_3
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local bits is replaced by access to field BIT_4
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 44
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 47
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 53
+	First Index: 79
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 40
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 47
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 47
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/codec/binary/BinaryCodec.java
+	Line Number: 263
+	Block: 50
+	First Index: 47
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

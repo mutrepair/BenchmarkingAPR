@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/95239/org/apache/commons/math3/special/Beta.java	2022-10-31 19:48:00.603727760 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/special/Beta.java	2022-12-26 15:13:55.681666171 -0600
+@@ -430,7 +430,7 @@
+             final double u = -(a - 0.5) * FastMath.log(c);
+             final double v = b * FastMath.log1p(h);
+             if (u <= v) {
+-                return (((-0.5 - FastMath.log(b) + HALF_LOG_TWO_PI) + w) - u) - v;
++                return (((-0.5 * FastMath.log(b) + HALF_LOG_TWO_PI) + w) - u) - v;
+             } else {
+                 return (((-0.5 * FastMath.log(b) + HALF_LOG_TWO_PI) + w) - v) - u;
+             }

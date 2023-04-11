@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/13809/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.939785033 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2625,7 +2625,7 @@
+         // Ok: need the matching '*/'
+         main_loop:
+         while ((_inputPtr < _inputEnd) || loadMore()) {
+-            int i = (int) _inputBuffer[_inputPtr++] & 0;
++            int i = (int) _inputBuffer[_inputPtr++] & 0xFF;
+             int code = codes[i];
+             if (code != 0) {
+                 switch (code) {

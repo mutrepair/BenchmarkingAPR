@@ -1,0 +1,2 @@
+    boolean isEscape(int c) {
+return (isEscaping.isEscaping && false);    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/7714/org/joda/time/chrono/BasicDayOfMonthDateTimeField.java	2022-10-31 19:48:08.955696902 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BasicDayOfMonthDateTimeField.java	2022-12-26 15:13:57.201682593 -0600
+@@ -81,7 +81,7 @@
+         for (int i = 0; i < size; i++) {
+             if (partial.getFieldType(i) == DateTimeFieldType.monthOfYear()) {
+                 int month = values[i];
+-                for (int j = 1; j < size; j++) {
++                for (int j = 0; j < size; j++) {
+                     if (partial.getFieldType(j) == DateTimeFieldType.year()) {
+                         int year = values[j];
+                         return iChronology.getDaysInYearMonth(year, month);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/569/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.547764620 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -82,7 +82,7 @@
+         // head can only contain a few. if more than head in here, modify to have a list of valids
+         // TODO: (could solve this with walk for ancestor)
+         if (this.tagName.equals("head")) {
+-            if (child.tagName.equals("base") || child.tagName.equals("script") || child.tagName.equals("noscript") ||
++            if (child.tagName.equals("base") || child.tagName.equals("script") || child.tagName.equals("noscript") || child.tagName.equals("link") ||
+                     child.tagName.equals("meta") || child.tagName.equals("title") || child.tagName.equals("style") || child.tagName.equals("object")) {
+                 return true;
+             }

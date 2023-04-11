@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 03:03:32 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 185
+	Block: 83
+	First Index: 40
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 185
+	Block: 83
+	First Index: 42
+	Rank: 2
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field defaultAncestor
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 185
+	Block: 81
+	First Index: 34
+	Rank: 4
+	Total Rank: 24
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 185
+	Block: 81
+	First Index: 36
+	Rank: 4
+	Total Rank: 24
+	Status: SURVIVED
+	Dump: mutant-24.class
+------------------------------------------------

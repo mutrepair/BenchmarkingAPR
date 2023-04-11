@@ -1,0 +1,1 @@
+final String classAttr = attributes.getIgnoreCase("class");

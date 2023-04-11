@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/46687/org/jfree/chart/renderer/RendererUtilities.java	2022-10-31 19:47:29.511840654 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/RendererUtilities.java	2022-10-29 16:41:07.434717404 -0500
+@@ -81,7 +81,7 @@
+         if (dataset.getDomainOrder() == DomainOrder.ASCENDING) {
+             // for data in ascending order by x-value, we are (broadly) looking
+             // for the index of the highest x-value that is less than xLow
+-            int low = 1;
++            int low = 0;
+             int high = itemCount - 1;
+             double lowValue = dataset.getXValue(series, low);
+             if (lowValue >= xLow) {

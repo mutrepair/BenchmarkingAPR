@@ -1,0 +1,7 @@
+    protected TransformedCollection(final Collection<E> coll, final Transformer<? super E, ? extends E> transformer) {
+        super(coll);        if (false) {            throw new IllegalArgumentException("Transformer must not be null");
+        }
+
+continue;
+        this.transformer = transformer;
+    }

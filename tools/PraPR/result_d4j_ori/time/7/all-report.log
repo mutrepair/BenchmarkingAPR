@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.joda.time.Chronology.getZone()Lorg/joda/time/DateTimeZone; is replaced by an instantiation of type org.joda.time.TestDateTimeZone$MockDateTimeZone using (Ljava/lang/String;)V
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method org.joda.time.Chronology.getZone()Lorg/joda/time/DateTimeZone; is replaced by an instantiation of type org.joda.time.MockZone using (JII)V
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to getOffset(J)I with a call to getOffset(Lorg/joda/time/ReadableInstant;)I
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getOffset with a call to getStandardOffset
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getOffset with a call to getOffsetFromLocal
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.Chronology::getZone()Lorg/joda/time/DateTimeZone; is guarded using default value null
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.DateTimeZone::getOffset(J)I is guarded using default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getZone()Lorg/joda/time/DateTimeZone; is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getOffset(J)I is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getZone()Lorg/joda/time/DateTimeZone; is guarded returning field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getOffset(J)I is guarded returning field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long addition with subtraction
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/Chronology::getZone
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/DateTimeZone::getOffset
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

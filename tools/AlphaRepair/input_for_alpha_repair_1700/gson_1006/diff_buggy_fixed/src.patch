@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1006/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.531790142 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -319,7 +319,7 @@
+    */
+   private void expect(JsonToken expected) throws IOException {
+     quickPeek();
+-    if (true) {
++    if (token != expected) {
+       throw new IllegalStateException("Expected " + expected + " but was " + peek());
+     }
+     advance();

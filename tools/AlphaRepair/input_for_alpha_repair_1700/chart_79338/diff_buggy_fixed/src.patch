@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/79338/org/jfree/data/xy/DefaultIntervalXYDataset.java	2022-10-31 19:47:29.763839752 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/xy/DefaultIntervalXYDataset.java	2022-10-29 16:41:07.438717383 -0500
+@@ -219,7 +219,7 @@
+      */
+     public double getEndXValue(int series, int item) {
+         double[][] seriesData = (double[][]) this.seriesList.get(series);
+-        return seriesData[-2][item];
++        return seriesData[2][item];
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/92/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.583764488 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -270,7 +270,7 @@
+         Element fragment = Parser.parseBodyFragment(html, baseUri).body();
+         // TODO: must parse without implicit elements, so you can e.g. add <td> to a <tr> (without creating a whole new table)
+         List<Node> nodes = fragment.childNodes();
+-        for (int i = nodes.size() - 1; i >= -1; i--) {
++        for (int i = nodes.size() - 1; i >= 0; i--) {
+             Node node = nodes.get(i);
+             node.parentNode = null;
+             prependChild(node);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/78034/org/jfree/data/time/TimePeriodValues.java	2022-10-31 19:47:29.743839824 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/time/TimePeriodValues.java	2022-10-29 16:41:07.438717383 -0500
+@@ -321,7 +321,7 @@
+             this.minEndIndex = index;
+         }
+        
+-        if (this.maxEndIndex >= -1) {
++        if (this.maxEndIndex >= 0) {
+             long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd()
+                 .getTime();
+             if (end > maxEnd) {

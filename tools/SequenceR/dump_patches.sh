@@ -1,0 +1,17 @@
+#! /bin/sh
+
+BASEDIR=$(dirname "$0")
+OUTPUT_DIR=$BASEDIR/output
+MUTANT_OUTPUT_DIR=$OUTPUT_DIR/output_1700
+MUTANT_ADD_OUTPUT_DIR=$OUTPUT_DIR/output_add
+D4J_ORI_OUTPUT_DIR=$OUTPUT_DIR/output_d4j_ori
+
+TARGET_PATCHES_DIR=$BASEDIR/../../patch
+
+mkdir -p $MUTANT_OUTPUT_DIR
+mkdir -p $MUTANT_ADD_OUTPUT_DIR
+mkdir -p $D4J_ORI__OUTPUT_DIR
+
+cp -r $MUTANT_OUTPUT_DIR/* $TARGET_PATCHES_DIR/src_patches
+cp -r $MUTANT_ADD_OUTPUT_DIR/* $TARGET_PATCHES_DIR/src_patches_add
+cp -r $D4J_ORI_OUTPUT_DIR/* $TARGET_PATCHES_DIR/src_d4j_ori_patches

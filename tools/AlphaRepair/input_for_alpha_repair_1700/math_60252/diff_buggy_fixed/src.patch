@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/60252/org/apache/commons/math3/linear/QRDecomposition.java	2022-10-31 19:48:00.491728173 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/QRDecomposition.java	2022-12-26 15:13:55.665665998 -0600
+@@ -340,7 +340,7 @@
+         public RealVector solve(RealVector b) {
+             final int n = qrt.length;
+             final int m = qrt[0].length;
+-            if (true) {
++            if (b.getDimension() != m) {
+                 throw new DimensionMismatchException(b.getDimension(), m);
+             }
+             if (!isNonSingular()) {

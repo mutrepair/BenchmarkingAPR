@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/341/com/google/gson/JsonElement.java	2022-10-31 19:47:43.783789228 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonElement.java	2022-12-26 15:13:51.393619841 -0600
+@@ -93,7 +93,7 @@
+    * @throws IllegalStateException if the element is of another type.
+    */
+   public JsonArray getAsJsonArray() {
+-    if (false) {
++    if (isJsonArray()) {
+       return (JsonArray) this;
+     }
+     throw new IllegalStateException("This is not a JSON Array.");

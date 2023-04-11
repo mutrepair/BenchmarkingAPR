@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksoncore_5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java	2023-01-16 15:29:38.024213963 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksoncore/5/patch/./com/fasterxml/jackson/core/JsonPointer.java	2023-01-16 15:29:37.976213363 -0600
+@@ -190,7 +190,7 @@
+             return -1;
+         }
+         for (int i = 0; i < len; ++i) {
+-            char c = str.charAt(i++);
++            char c = str.charAt(i);
+             if (c > '9' || c < '0') {
+                 return -1;
+             }

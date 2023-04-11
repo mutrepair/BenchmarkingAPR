@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/1671/org/apache/commons/collections4/collection/TransformedCollection.java	2022-10-31 19:47:39.675804100 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/collection/TransformedCollection.java	2022-12-26 15:13:49.793602551 -0600
+@@ -107,7 +107,7 @@
+      */
+     protected TransformedCollection(final Collection<E> coll, final Transformer<? super E, ? extends E> transformer) {
+         super(coll);
+-        if (false) {
++        if (transformer == null) {
+             throw new IllegalArgumentException("Transformer must not be null");
+         }
+         this.transformer = transformer;

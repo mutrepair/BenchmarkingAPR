@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/3503/org/apache/commons/lang3/BitField.java	2023-04-04 14:33:25.957957609 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/BitField.java	2023-04-04 13:31:53.909639537 -0500
+@@ -150,7 +150,7 @@
+      *  parameter replacing the old bits
+      */
+     public int setValue(final int holder, final int value) {
+-        return (holder & ~_mask) | ((value << _shift_count) ^ _mask);
++        return (holder & ~_mask) | ((value << _shift_count) & _mask);
+     }
+ 
+     /**

@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:21:23 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 13
+	First Index: 27
+	Rank: 1
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-17.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 23
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+	Dump: mutant-18.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::indexOf
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 23
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------

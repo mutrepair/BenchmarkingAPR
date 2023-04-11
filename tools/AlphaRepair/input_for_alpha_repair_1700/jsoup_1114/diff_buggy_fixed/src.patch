@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1114/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.303765510 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -86,7 +86,7 @@
+         tq.consume("<!--");
+         String data = tq.chompTo("->");
+ 
+-        if (false) // i.e. was -->
++        if (data.endsWith("-")) // i.e. was -->
+             data = data.substring(0, data.length()-1);
+         Comment comment = new Comment(data, baseUri);
+         last().appendChild(comment);

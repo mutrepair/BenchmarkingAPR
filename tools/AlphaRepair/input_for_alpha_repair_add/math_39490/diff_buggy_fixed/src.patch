@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/39490/org/apache/commons/math3/geometry/euclidean/threed/Line.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java	2023-04-04 13:31:54.001640631 -0500
+@@ -162,7 +162,7 @@
+      */
+     public double distance(final Vector3D p) {
+         final Vector3D d = p.subtract(zero);
+-        final Vector3D n = new Vector3D(1.0, d, +d.dotProduct(direction), direction);
++        final Vector3D n = new Vector3D(1.0, d, -d.dotProduct(direction), direction);
+         return n.getNorm();
+     }
+ 

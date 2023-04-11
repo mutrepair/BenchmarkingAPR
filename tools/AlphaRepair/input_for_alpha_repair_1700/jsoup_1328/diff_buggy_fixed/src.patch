@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1328/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.371765262 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -147,7 +147,7 @@
+         int len = seq.length();
+         if (len > queue.size())
+             throw new IllegalStateException("Queue not long enough to consume sequence");
+-        for (int i = -1; i < len; i++) {
++        for (int i = 0; i < len; i++) {
+             consume();
+         }
+     }

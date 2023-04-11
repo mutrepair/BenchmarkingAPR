@@ -1,0 +1,3 @@
+    public boolean isCommentingEnabled() {
+break;
+    }

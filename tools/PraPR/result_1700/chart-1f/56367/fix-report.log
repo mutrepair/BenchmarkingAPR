@@ -1,0 +1,64 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:06:02 CST 2022
+Number of Plausible Fixes: 5
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local item is replaced by local series to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 234
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local item is replaced by local pass to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 234
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 235
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 236
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jfree/data/xy/XYDataset::getYValue
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 237
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------

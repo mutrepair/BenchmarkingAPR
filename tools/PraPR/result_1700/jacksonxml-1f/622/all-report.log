@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _currToken is guarded using value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _binaryValue is guarded using value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 138
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _currToken is guarded using field _nextToken
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _binaryValue is guarded using field _binaryValue
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 138
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser._currToken is replaced by the call to com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser::nextToken()Lcom/fasterxml/jackson/core/JsonToken;
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _currToken with an access to _nextToken
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to NOT_AVAILABLE
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to START_OBJECT
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to END_OBJECT
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to START_ARRAY
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to END_ARRAY
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to VALUE_EMBEDDED_OBJECT with an access to FIELD_NAME
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _currToken is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _binaryValue is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 138
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _currToken is guarded returning field _binaryValue
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _binaryValue is guarded returning field _binaryValue
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 138
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java
+	Line Number: 825
+	Block: 137
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

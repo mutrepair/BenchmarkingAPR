@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to BIG_INTEGER with an access to INT
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to BIG_INTEGER with an access to LONG
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to BIG_INTEGER with an access to FLOAT
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to BIG_INTEGER with an access to DOUBLE
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to BIG_INTEGER with an access to BIG_DECIMAL
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 30
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field instance
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 27
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local typeHint is replaced a call typeHint.withStaticTyping()
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 29
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to visitFloatFormat(Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonParser$NumberType;)V is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 31
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.fasterxml.jackson.databind.ser.std.NumberSerializer::visitFloatFormat(Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonParser$NumberType;)V is guarded
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 31
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/ser/std/NumberSerializer::visitFloatFormat
+	File Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.java
+	Line Number: 81
+	Block: 25
+	First Index: 31
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

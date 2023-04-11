@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/8114/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2022-10-31 19:47:46.827778172 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2022-12-26 15:13:52.497631769 -0600
+@@ -378,7 +378,7 @@
+             gen = new PropertyBasedObjectIdGenerator(objectIdInfo.getScope());
+         } else {
+             JavaType type = ctxt.constructType(implClass);
+-            idType = ctxt.getTypeFactory().findTypeParameters(type, ObjectIdGenerator.class)[-1];
++            idType = ctxt.getTypeFactory().findTypeParameters(type, ObjectIdGenerator.class)[0];
+             idProp = null;
+             gen = ctxt.objectIdGeneratorInstance(beanDesc.getClassInfo(), objectIdInfo);
+         }

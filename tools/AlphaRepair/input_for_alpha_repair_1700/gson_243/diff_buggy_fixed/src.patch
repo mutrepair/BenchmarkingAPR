@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/243/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.759789315 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -62,7 +62,7 @@
+     }
+     // We want stack behavior for adding to this list. A type adapter added subsequently should
+     // override a previously registered one.
+-    typeHierarchyList.add(-1, pair);
++    typeHierarchyList.add(0, pair);
+   }
+ 
+   private int getIndexOfAnOverriddenHandler(Class<?> type) {

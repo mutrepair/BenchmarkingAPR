@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14340/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-10-31 19:47:46.567779117 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-12-26 15:13:52.513631942 -0600
+@@ -129,7 +129,7 @@
+             checkOffset(date, offset, '-');
+ 
+             // extract month
+-            int month = parseInt(date, offset += -1, offset += 2);
++            int month = parseInt(date, offset += 1, offset += 2);
+             checkOffset(date, offset, '-');
+ 
+             // extract day

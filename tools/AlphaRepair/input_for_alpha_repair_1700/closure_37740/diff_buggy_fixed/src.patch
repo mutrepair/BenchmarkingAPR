@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/37740/com/google/javascript/jscomp/PeepholeReplaceKnownMethods.java	2022-10-31 19:47:37.799810873 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/PeepholeReplaceKnownMethods.java	2022-10-29 13:09:51.900306631 -0500
+@@ -724,7 +724,7 @@
+       int startIndex = 0, matchIndex;
+       while ((matchIndex =
+           jsSplitMatch(stringValue, startIndex, separator)) >= 0 &&
+-          false) {
++          splitStrings.size() < limit) {
+         splitStrings.add(stringValue.substring(startIndex, matchIndex));
+ 
+         startIndex = matchIndex + separator.length();

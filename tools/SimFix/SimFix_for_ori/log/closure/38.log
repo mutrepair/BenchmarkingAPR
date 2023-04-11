@@ -1,0 +1,45 @@
+=================================================
+Project : closure_38	start : 23/02/07 01:14
+Current failed test : com.google.javascript.jscomp.CodePrinterTest::testMinusNegativeZero | 23/02/07 01:14
+Tue Feb 07 01:17:33 CST 2023 com.google.javascript.jscomp.CodeConsumer,245
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(prev=='-'){
+add(" ");
+}
+
+Time : 23/02/07 01:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4999999999999998 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_38_buggy/src/com/google/javascript/jscomp/CodeConsumer.java=>0,0]
+if(prev=='-'&&first=='>'){
+append(" ");
+}
+
+Time : 23/02/07 01:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_38_buggy/src/com/google/javascript/jscomp/CodeConsumer.java=>245,247]
+if(x<0&&prev=='-'){
+add(" ");
+}
+
+Time : 23/02/07 01:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_38_buggy/src/com/google/javascript/jscomp/CodeConsumer.java=>245,247]
+if(prev=='-'){
+add(" ");
+}
+
+Time : 23/02/07 01:18
+----------------------------------------
+Success time : 23/02/07 01:18

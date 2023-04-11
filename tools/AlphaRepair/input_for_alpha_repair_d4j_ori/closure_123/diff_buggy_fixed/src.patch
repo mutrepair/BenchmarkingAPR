@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_123/src/com/google/javascript/jscomp/CodeGenerator.java	2023-01-16 15:29:15.263929734 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/123/patch/./com/google/javascript/jscomp/CodeGenerator.java	2023-01-16 15:29:15.231929333 -0600
+@@ -282,7 +282,7 @@
+       case Token.HOOK: {
+         Preconditions.checkState(childCount == 3);
+         int p = NodeUtil.precedence(type);
+-        Context rhsContext = Context.OTHER;
++        Context rhsContext = getContextForNoInOperator(context);
+         addExpr(first, p + 1, context);
+         cc.addOp("?", true);
+         addExpr(first.getNext(), 1, rhsContext);

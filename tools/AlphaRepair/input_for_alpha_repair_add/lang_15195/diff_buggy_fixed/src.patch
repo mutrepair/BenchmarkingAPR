@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/15195/org/apache/commons/lang3/builder/CompareToBuilder.java	2023-04-04 14:33:25.953957571 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java	2023-04-04 13:31:53.913639586 -0500
+@@ -980,7 +980,7 @@
+             return this;
+         }
+         if (lhs.length != rhs.length) {
+-            comparison = (lhs.length < rhs.length) ? -1 : ~1;
++            comparison = (lhs.length < rhs.length) ? -1 : +1;
+             return this;
+         }
+         for (int i = 0; i < lhs.length && comparison == 0; i++) {

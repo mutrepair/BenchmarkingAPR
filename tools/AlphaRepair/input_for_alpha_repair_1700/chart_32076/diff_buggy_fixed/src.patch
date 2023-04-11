@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/32076/org/jfree/chart/axis/LogarithmicAxis.java	2022-10-31 19:47:29.443840898 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/LogarithmicAxis.java	2022-10-29 16:41:07.426717447 -0500
+@@ -389,7 +389,7 @@
+         }
+         double res;
+         if (val < 1.0) {
+-            res = (Math.pow(10, val + 1.0) - 10.0) % 9.0; //invert adjustLog10
++            res = (Math.pow(10, val + 1.0) - 10.0) / 9.0; //invert adjustLog10
+         }
+         else {
+             res = Math.pow(10, val);

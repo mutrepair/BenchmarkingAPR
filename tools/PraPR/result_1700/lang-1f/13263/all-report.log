@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local size is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local str is replaced by access to field SPACE
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local size is replaced by access to field PAD_LIMIT
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local str is replaced by access to field EMPTY
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local str is replaced by access to field LF
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local str is replaced by access to field CR
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local str
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to length()I is guarded returning field SPACE
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to length()I is guarded returning field EMPTY
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5158
+	Block: 832
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local type is replaced by local mode to be used
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 26
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local mode is replaced by local type to be used
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 27
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local type is replaced by access to field WORD
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 26
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local mode is replaced by access to field WORD
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 27
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local type is replaced by access to field mode
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 26
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local mode is replaced by access to field mode
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 27
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local type is replaced by access to field uid
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 26
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local mode is replaced by access to field uid
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 27
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local type is replaced by access to field gid
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 26
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local mode is replaced by access to field gid
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 27
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4095 with 4096
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 28
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 29
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 30
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/compress/archivers/zip/AsiExtraField::getMode
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/compress/archivers/zip/AsiExtraField.java
+	Line Number: 312
+	Block: 33
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/19344/org/jfree/chart/plot/ThermometerPlot.java	2022-10-31 19:47:29.379841127 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/ThermometerPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -1511,7 +1511,7 @@
+         if (this.bulbRadius != that.bulbRadius) {
+             return false;
+         }
+-        if (true) {
++        if (this.columnRadius != that.columnRadius) {
+             return false;
+         }
+         if (this.gap != that.gap) {

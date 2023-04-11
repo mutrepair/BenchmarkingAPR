@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/14013/org/joda/time/format/DateTimeFormatterBuilder.java	2022-10-31 19:48:08.727697747 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java	2022-12-26 15:13:57.205682637 -0600
+@@ -1622,7 +1622,7 @@
+                         }
+                         position += length;
+                         while (i < position) {
+-                            value = ((value << 3) / (value << 1)) + text.charAt(i++) - '0';
++                            value = ((value << 3) + (value << 1)) + text.charAt(i++) - '0';
+                         }
+                         if (negative) {
+                             value = -value;

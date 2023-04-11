@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/jxpath/ri/parser/XPathParser::jj_3R_76
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3445
+	Block: 2027
+	First Index: 26
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3445
+	Block: 2027
+	First Index: 25
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3445
+	Block: 2027
+	First Index: 26
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------

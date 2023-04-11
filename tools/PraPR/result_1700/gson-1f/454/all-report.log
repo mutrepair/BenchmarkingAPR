@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.lang.Appendable.append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; is replaced by an instantiation of type org.mudebug.prapr.reloc.commons.lang3.text.StrBuilder using (Ljava/lang/String;)V
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method java.lang.Appendable.append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; is replaced by an instantiation of type org.mudebug.prapr.reloc.commons.lang3.text.StrBuilder using (I)V
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; with a call to append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; with a call to append(C)Ljava/lang/Appendable;
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Appendable::append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; is guarded using default value null
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/CharSequence;)Ljava/lang/Appendable; is guarded returning enclosing method
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 12 with 13
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 35
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -15 with -14
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 37
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 36
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 38
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Appendable::append
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/Appendable::append with receiver
+	File Name: com/google/gson/Escaper.java
+	Line Number: 154
+	Block: 34
+	First Index: 32
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

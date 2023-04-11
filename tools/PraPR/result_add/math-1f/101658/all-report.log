@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local h is replaced by local sum_k to be used
+	File Name: org/apache/commons/math3/stat/inference/GTest.java
+	Line Number: 277
+	Block: 30
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/math3/stat/inference/GTest::entropy
+	File Name: org/apache/commons/math3/stat/inference/GTest.java
+	Line Number: 277
+	Block: 30
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/math3/stat/inference/GTest::entropy
+	File Name: org/apache/commons/math3/stat/inference/GTest.java
+	Line Number: 277
+	Block: 30
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

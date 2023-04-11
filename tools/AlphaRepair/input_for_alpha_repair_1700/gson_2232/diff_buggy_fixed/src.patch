@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2232/com/google/gson/VersionExclusionStrategy.java	2022-10-31 19:47:43.755789330 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/VersionExclusionStrategy.java	2022-12-26 15:13:51.393619841 -0600
+@@ -62,6 +62,6 @@
+         return false;
+       }
+     }
+-    return false;
++    return true;
+   }
+ }

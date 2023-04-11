@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/63/com/google/debugging/sourcemap/Base64.java	2023-04-04 14:33:25.461952803 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/debugging/sourcemap/Base64.java	2023-04-04 13:31:52.761625898 -0500
+@@ -75,7 +75,7 @@
+     for (int i = 0; i < 5; i++) {
+       c[i] = Base64.toBase64((value >> (26 - i * 6)) & 0x3f);
+     }
+-    c[5] = Base64.toBase64((value >> 4) & 0x3f);
++    c[5] = Base64.toBase64((value << 4) & 0x3f);
+     return new String(c);
+   }
+ }

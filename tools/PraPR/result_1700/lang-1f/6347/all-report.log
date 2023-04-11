@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local srcPos to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 41
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local nHex is replaced by local srcPos to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 42
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local dstPos to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 41
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local nHex is replaced by local dstPos to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 42
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local i is replaced by local nHex to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 41
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local nHex is replaced by local shift to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 42
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local i is replaced by local shift to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 41
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local nHex is replaced by local i to be used
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 42
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 43
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 259
+	First Index: 84
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 38
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 43
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 43
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 912
+	Block: 258
+	First Index: 43
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

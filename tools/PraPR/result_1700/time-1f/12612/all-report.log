@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local minValue to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wrapRange is replaced by local value to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local minValue is replaced by local value to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local value is replaced by local maxValue to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local wrapRange is replaced by local minValue to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local minValue is replaced by local maxValue to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local value is replaced by local wrapRange to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local wrapRange is replaced by local maxValue to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local minValue is replaced by local wrapRange to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 37
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/joda/time/field/FieldUtils::getWrappedValue
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 316
+	Block: 67
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

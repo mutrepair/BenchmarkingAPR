@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1087/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.559790040 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -458,7 +458,7 @@
+    */
+   public String nextString() throws IOException {
+     peek();
+-    if (value == null) {
++    if (value == null || (token != JsonToken.STRING && token != JsonToken.NUMBER)) {
+       throw new IllegalStateException("Expected a string but was " + peek());
+     }
+ 

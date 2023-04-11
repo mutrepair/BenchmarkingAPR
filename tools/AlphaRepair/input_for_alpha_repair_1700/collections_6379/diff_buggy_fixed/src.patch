@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/6379/org/apache/commons/collections4/map/AbstractHashedMap.java	2022-10-31 19:47:39.931803175 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/AbstractHashedMap.java	2022-12-26 15:13:49.797602596 -0600
+@@ -1170,7 +1170,7 @@
+             final HashEntry<K, V>[] data = parent.data;
+             int i = hashIndex;
+             HashEntry<K, V> n = newCurrent.next;
+-            while (false && i > 0) {
++            while (n == null && i > 0) {
+                 n = data[--i];
+             }
+             next = n;

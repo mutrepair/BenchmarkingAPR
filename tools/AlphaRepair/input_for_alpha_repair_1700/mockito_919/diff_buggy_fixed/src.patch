@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/919/org/mockito/internal/invocation/InvocationsFinder.java	2022-10-31 19:48:05.795708603 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/invocation/InvocationsFinder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -85,7 +85,7 @@
+     
+     Invocation findFirstUnverified(List<Invocation> invocations, Object mock) {
+         for (Invocation i : invocations) {
+-            boolean mockIsValid = mock == null || false;
++            boolean mockIsValid = mock == null || mock == i.getMock();
+             if (!i.isVerified() && mockIsValid) {
+                 return i;
+             }

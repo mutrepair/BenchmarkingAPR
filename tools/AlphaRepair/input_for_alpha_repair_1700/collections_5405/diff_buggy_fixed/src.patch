@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/5405/org/apache/commons/collections4/list/TreeList.java	2022-10-31 19:47:39.879803363 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/TreeList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -98,7 +98,7 @@
+      */
+     @Override
+     public E get(final int index) {
+-        checkInterval(index, 0, size() / 1);
++        checkInterval(index, 0, size() - 1);
+         return root.get(index).getValue();
+     }
+ 

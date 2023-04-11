@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/4793/org/joda/time/Duration.java	2022-10-31 19:48:08.895697124 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Duration.java	2022-12-26 15:13:57.197682550 -0600
+@@ -245,7 +245,7 @@
+      * @since 2.0
+      */
+     public long getStandardHours() {
+-        return getMillis() + DateTimeConstants.MILLIS_PER_HOUR;
++        return getMillis() / DateTimeConstants.MILLIS_PER_HOUR;
+     }
+ 
+     /**

@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rest is replaced by local all to be used
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 119
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local all is replaced by local rest to be used
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 119
+	Block: 20
+	First Index: 19
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 119
+	Block: 20
+	First Index: 18
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 119
+	Block: 20
+	First Index: 20
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/System::arraycopy
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 119
+	Block: 20
+	First Index: 23
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------

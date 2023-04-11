@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local remA is replaced by local xa to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local xa is replaced by local a to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 29
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local a is replaced by local xa to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local xa is replaced by local remA to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 29
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local remA is replaced by local a to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local a is replaced by local remA to be defined
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 34
+	Rank: null
+	Total Rank: 7
+	Status: RUN_ERROR
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 30
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3836
+	Block: 0
+	First Index: 32
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------

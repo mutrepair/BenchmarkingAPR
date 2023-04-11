@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/209/com/google/gson/DefaultTypeAdapters.java	2022-10-31 19:47:43.735789402 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/DefaultTypeAdapters.java	2022-12-26 15:13:51.389619797 -0600
+@@ -584,7 +584,7 @@
+         Object value = entry.getValue();
+ 
+         JsonElement valueElement;
+-        if (false) {
++        if (value == null) {
+           valueElement = JsonNull.createJsonNull();
+         } else {
+           Type childType = (childGenericType == null)

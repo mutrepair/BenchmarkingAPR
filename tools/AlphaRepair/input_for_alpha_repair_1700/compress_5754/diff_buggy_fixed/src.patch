@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5754/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.439797721 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -557,7 +557,7 @@
+          * does save having to do it later in a separate pass, and so saves a
+          * block's worth of cache misses.
+          */
+-        for (int i = 256; --i == 0;) {
++        for (int i = 256; --i >= 0;) {
+             yy[i] = (char) i;
+             unzftab[i] = 0;
+         }

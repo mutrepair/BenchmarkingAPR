@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/86193/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java	2022-10-31 19:48:00.591727804 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java	2022-12-26 15:13:55.677666129 -0600
+@@ -237,7 +237,7 @@
+      * @return RMS value
+      */
+     public double getRMS() {
+-        return FastMath.sqrt(getChiSquare() + rows);
++        return FastMath.sqrt(getChiSquare() / rows);
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/23507/org/jfree/chart/renderer/category/BarRenderer.java	2022-10-31 19:47:29.391841084 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/category/BarRenderer.java	2022-10-29 16:41:07.434717404 -0500
+@@ -891,7 +891,7 @@
+         }
+ 
+         // check that a legend item needs to be displayed...
+-        if (true) {
++        if (!isSeriesVisible(series) || !isSeriesVisibleInLegend(series)) {
+             return null;
+         }
+ 

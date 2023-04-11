@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/41543/com/google/javascript/jscomp/RenameVars.java	2022-10-31 19:47:37.831810758 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/RenameVars.java	2022-10-29 11:13:27.048218121 -0500
+@@ -455,7 +455,7 @@
+         continue;
+       }
+ 
+-      if (true) {
++      if (externNames.contains(a.oldName)) {
+         continue;
+       }
+ 

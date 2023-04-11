@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/108351/org/apache/commons/math3/util/ArithmeticUtils.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/ArithmeticUtils.java	2023-04-04 13:31:54.041641105 -0500
+@@ -409,7 +409,7 @@
+             u = -u;
+         } // make u negative
+         if (v > 0) {
+-            v = ~v;
++            v = -v;
+         } // make v negative
+         // B1. [Find power of 2]
+         int k = 0;

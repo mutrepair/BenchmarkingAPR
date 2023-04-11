@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/12183/org/apache/commons/math3/linear/RealVector.java	2022-10-31 19:48:00.183729306 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/RealVector.java	2022-12-26 15:13:55.665665998 -0600
+@@ -398,7 +398,7 @@
+         Iterator<Entry> it = iterator();
+         while (it.hasNext()) {
+             final Entry e = it.next();
+-            final double diff = e.getValue() % v.getEntry(e.getIndex());
++            final double diff = e.getValue() - v.getEntry(e.getIndex());
+             d += diff * diff;
+         }
+         return FastMath.sqrt(d);

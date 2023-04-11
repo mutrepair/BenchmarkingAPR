@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10732/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java	2022-10-31 19:47:46.451779539 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java	2022-12-26 15:13:52.505631856 -0600
+@@ -495,7 +495,7 @@
+                 AnnotationMap ann = _mergeAnnotations(0, _setters, _fields, _getters);
+                 _setters = _setters.withValue(_setters.value.withAnnotations(ann));
+             } else if (_fields != null) {
+-                AnnotationMap ann = _mergeAnnotations(1, _fields, _getters);
++                AnnotationMap ann = _mergeAnnotations(0, _fields, _getters);
+                 _fields = _fields.withValue(_fields.value.withAnnotations(ann));
+             }
+         }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/246/org/apache/commons/csv/Lexer.java	2022-10-31 19:47:42.103795317 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/Lexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -104,7 +104,7 @@
+      */
+     boolean isEndOfLine(int c) throws IOException {
+         // check if we have \r\n...
+-        if (c >= '\r' && in.lookAhead() == '\n') {
++        if (c == '\r' && in.lookAhead() == '\n') {
+             // note: does not change c outside of this method !!
+             c = in.read();
+         }

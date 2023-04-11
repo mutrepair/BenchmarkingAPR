@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/325/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:39.031806427 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -324,7 +324,7 @@
+             // log.debug( "val2 = " + val2 );
+             // log.debug( "k4 = " + (k<<4) );
+             // log.debug( "vak = " + (val2 | (k<<4)) );
+-            encodedData[encodedIndex + 1] = lookUpBase64Alphabet[val2 | (k << -4)];
++            encodedData[encodedIndex + 1] = lookUpBase64Alphabet[val2 | (k << 4)];
+             encodedData[encodedIndex + 2] = lookUpBase64Alphabet[(l << 2) | val3];
+             encodedData[encodedIndex + 3] = lookUpBase64Alphabet[b3 & 0x3f];
+ 

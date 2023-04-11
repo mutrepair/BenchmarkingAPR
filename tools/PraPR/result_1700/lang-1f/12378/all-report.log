@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.lang3.StringUtils.join([CCII)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.lang3.StringUtils.join([CCII)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to join([CCII)Ljava/lang/String; with a call to join([IC)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to join([CCII)Ljava/lang/String; with a call to join([SCII)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to join([CCII)Ljava/lang/String; with a call to join([DC)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to join([CCII)Ljava/lang/String; with a call to join([SC)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/apache/commons/lang3/StringUtils::join
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 17
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 13
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/StringUtils::join
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 16
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/lang3/StringUtils::join to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 3364
+	Block: 527
+	First Index: 17
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

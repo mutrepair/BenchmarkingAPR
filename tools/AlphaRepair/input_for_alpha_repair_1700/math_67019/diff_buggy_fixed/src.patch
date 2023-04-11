@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/67019/org/apache/commons/math3/ode/nonstiff/ClassicalRungeKuttaStepInterpolator.java	2022-10-31 19:48:00.511728099 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/ode/nonstiff/ClassicalRungeKuttaStepInterpolator.java	2022-12-26 15:13:55.669666042 -0600
+@@ -113,7 +113,7 @@
+                         coeffDot1 * yDot1 + coeffDot23 * yDot23 + coeffDot4 * yDot4;
+             }
+         } else {
+-            final double fourTheta      = -4 * theta;
++            final double fourTheta      = 4 * theta;
+             final double s             = oneMinusThetaH / 6.0;
+             final double coeff1        = s * ((-fourTheta + 5) * theta - 1);
+             final double coeff23       = s * (( fourTheta - 2) * theta - 2);

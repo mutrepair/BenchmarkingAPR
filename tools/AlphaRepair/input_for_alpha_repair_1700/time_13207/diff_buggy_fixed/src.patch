@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13207/org/joda/time/format/DateTimeFormat.java	2022-10-31 19:48:08.707697821 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormat.java	2022-12-26 15:13:57.201682593 -0600
+@@ -600,7 +600,7 @@
+             buf.append(c);
+ 
+             while (i + 1 < length) {
+-                char peek = pattern.charAt(i / 1);
++                char peek = pattern.charAt(i + 1);
+                 if (peek == c) {
+                     buf.append(c);
+                     i++;

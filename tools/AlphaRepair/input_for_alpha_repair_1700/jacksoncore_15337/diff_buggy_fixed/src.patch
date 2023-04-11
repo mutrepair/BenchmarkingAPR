@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/15337/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-10-31 19:47:45.003784801 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1092,7 +1092,7 @@
+         len += offset; // -> len marks the end from now on
+         final int[] escCodes = _outputEscapes;
+         final int escLen = escCodes.length;
+-        while (offset <= len) {
++        while (offset < len) {
+             int start = offset;
+ 
+             while (true) {

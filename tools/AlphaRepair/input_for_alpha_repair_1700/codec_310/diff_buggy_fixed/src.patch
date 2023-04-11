@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/310/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:39.023806456 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -318,7 +318,7 @@
+ 
+             byte val1 = ((b1 & SIGN) == 0) ? (byte) (b1 >> 2) : (byte) ((b1) >> 2 ^ 0xc0);
+             byte val2 = ((b2 & SIGN) == 0) ? (byte) (b2 >> 4) : (byte) ((b2) >> 4 ^ 0xf0);
+-            byte val3 = ((b3 & SIGN) == 0) ? (byte) (b3 >> 6) : (byte) ((b3) >> -6 ^ 0xfc);
++            byte val3 = ((b3 & SIGN) == 0) ? (byte) (b3 >> 6) : (byte) ((b3) >> 6 ^ 0xfc);
+ 
+             encodedData[encodedIndex] = lookUpBase64Alphabet[val1];
+             // log.debug( "val2 = " + val2 );

@@ -1,0 +1,100 @@
+{ if( false ) return compiler.function( code , args.toArray( ) ) ; }
+{ if( true ) return compiler.function( code , args.toArray( ) ) ; }
+{ if( false ) return compiler.function( code , args.toArray( ) ) ;
+{ if( false ) return compiler.function( code , args.toArray( ) ) ; } ; }
+{ if( '') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '/') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'following') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '=') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '$') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'id') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'Missing return statement in function') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' Literal ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ',') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'processing-instruction') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '@') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'comment') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'attribute') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ')') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' Argument)*)? ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'or') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' AdditiveExpr | RelationalExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' AdditiveExpr  | RelationalExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '>=') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'text') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' RelationalExpr | EqualityExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' PredicateExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'div') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ':') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' Expr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '|') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'namespace') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '!=') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '*') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '>') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'preceding') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' ( Argument ( ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '<') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'descendant-or-self') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '(') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '::') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '..') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'ancestor-or-self') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '     | NCName ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '[') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'child') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' <Literal> ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' RelativePathPattern? | IdKeyPattern ((') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '//') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '-') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' RelativePathPattern)? | ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'mod') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '  | ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'self') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' MultiplicativeExpr  | AdditiveExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'preceding-sibling') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '.') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'following-sibling') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '\') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'and') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'parent') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'key') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' | ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'node') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'descendant') return compiler.function( code , args.toArray( ) ) ; }
+{ if( 'ancestor') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '&quot;') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' UnaryExpr | MultiplicativeExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '<=') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '+') return compiler.function( code , args.toArray( ) ) ; }
+{ if( ']') return compiler.function( code , args.toArray( ) ) ; }
+{ if( '&apos;') return compiler.function( code , args.toArray( ) ) ; }
+{ if( "\'") return compiler.function( code , args.toArray( ) ) ; }
+{ if( ' RelativeLocationPath | FilterExpr ') return compiler.function( code , args.toArray( ) ) ; }
+{ if( true ) return compiler.function( code , args.toArray( ) ) ;
+{ if( false ) return compiler.function( code , args.toArray( ) , false ) ; }
+{ if( null ) return compiler.function( code , args.toArray( ) ) ; }
+{ if( true ) return compiler.function( code , args.toArray( ) ) ; } ; }
+{ if( false ) return compiler.function( code , args.toArray( ) ) ; } ;
+{ if(( false ) return compiler.function( code , args.toArray( ) ) ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , true ) ; }
+{ if( true ) return compiler.function( code , args.toArray( ) , false ) ; }
+{ if( false ) return compiler.function( code , args.toArrayArray( ) ) ; }
+{ if( ) return compiler.function( code , args.toArray( ) ) ; }
+{ if( true ) return compiler.function( code , args.toArray( ) ) ; } ;
+{ if( false ) return compiler.function( code.toArray( ) ) ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , '') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , '/') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'following') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , '=') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , '$') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'id') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'Missing return statement in function') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , ' Literal ') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , ',') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'processing-instruction') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , '@') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'comment') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , 'attribute') ; }
+{ if( false ) return compiler.function( code , args.toArray( ) , ')') ; }

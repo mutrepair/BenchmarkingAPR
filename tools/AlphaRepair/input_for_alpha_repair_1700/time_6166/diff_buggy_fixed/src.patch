@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/6166/org/joda/time/Partial.java	2022-10-31 19:48:08.935696976 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Partial.java	2022-12-26 15:13:57.197682550 -0600
+@@ -604,7 +604,7 @@
+             return this;
+         }
+         int[] newValues = getValues();
+-        for (int i = 0; i <= period.size(); i++) {
++        for (int i = 0; i < period.size(); i++) {
+             DurationFieldType fieldType = period.getFieldType(i);
+             int index = indexOf(fieldType);
+             if (index >= 0) {

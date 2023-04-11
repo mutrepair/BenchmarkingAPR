@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1304/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.355765320 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -79,7 +79,7 @@
+             if (!found.equals(check))
+                 return false;
+         }
+-        return false;
++        return true;
+     }
+ 
+     /**

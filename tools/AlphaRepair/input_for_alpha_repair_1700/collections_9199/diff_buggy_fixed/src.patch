@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/9199/org/apache/commons/collections4/map/StaticBucketMap.java	2022-10-31 19:47:39.995802944 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/StaticBucketMap.java	2022-12-26 15:13:49.801602638 -0600
+@@ -505,7 +505,7 @@
+                         n = n.next;
+                     }
+                     bucket++;
+-                    if (current.size() >= 0) {
++                    if (current.size() > 0) {
+                         return true;
+                     }
+                 }

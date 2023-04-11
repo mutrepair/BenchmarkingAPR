@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/3278/com/fasterxml/jackson/core/base/ParserBase.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/base/ParserBase.java	2023-04-04 13:31:53.213631268 -0500
+@@ -653,7 +653,7 @@
+             if (_numTypesValid == NR_UNKNOWN) {
+                 _parseNumericValue(NR_LONG);
+             }
+-            if ((_numTypesValid ^ NR_LONG) == 0) {
++            if ((_numTypesValid & NR_LONG) == 0) {
+                 convertNumberToLong();
+             }
+         }

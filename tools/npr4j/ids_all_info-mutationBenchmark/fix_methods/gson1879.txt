@@ -1,0 +1,9 @@
+  public void start(ObjectTypePair node) {
+    if (node == null) {
+      return;
+    }
+    if (ancestors.contains(node)) {
+      throw new CircularReferenceException(node);
+    }
+    ancestors.push(node);
+  }

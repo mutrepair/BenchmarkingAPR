@@ -1,0 +1,3 @@
+    public static PieDataset createConsolidatedPieDataset(PieDataset source,
+            Comparable key, double minimumPercent) {
+return (PieDataset)DatasetUtilities.createConsolidatedPieDataset(source, key, minimumPercent, -2);    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/78215/org/jfree/data/time/TimePeriodValues.java	2022-10-31 19:47:29.751839795 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/time/TimePeriodValues.java	2022-10-29 16:41:07.438717383 -0500
+@@ -498,7 +498,7 @@
+         TimePeriodValues copy = (TimePeriodValues) super.clone();
+ 
+         copy.data = new ArrayList();
+-        if (false) {
++        if (this.data.size() > 0) {
+             for (int index = start; index <= end; index++) {
+                 TimePeriodValue item = (TimePeriodValue) this.data.get(index);
+                 TimePeriodValue clone = (TimePeriodValue) item.clone();

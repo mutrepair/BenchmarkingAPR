@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/2079/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.979806614 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -491,7 +491,7 @@
+             index += 2;
+         } else {
+             if (index > 2 && charAt(value, index - 1) == 'U' && 
+-                contains(value, index - 3, -1, "C", "G", "L", "R", "T")) {
++                contains(value, index - 3, 1, "C", "G", "L", "R", "T")) {
+                 //-- "laugh", "McLaughlin", "cough", "gough", "rough", "tough"
+                 result.append('F');
+             } else if (index > 0 && charAt(value, index - 1) != 'I') {

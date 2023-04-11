@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/730/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java	2022-10-31 19:47:41.507797474 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -320,7 +320,7 @@
+             ret = new CpioArchiveEntry(FORMAT_NEW);
+         }
+ 
+-        ret.setInode(readAsciiLong(8, -16));
++        ret.setInode(readAsciiLong(8, 16));
+         ret.setMode(readAsciiLong(8, 16));
+         ret.setUID(readAsciiLong(8, 16));
+         ret.setGID(readAsciiLong(8, 16));

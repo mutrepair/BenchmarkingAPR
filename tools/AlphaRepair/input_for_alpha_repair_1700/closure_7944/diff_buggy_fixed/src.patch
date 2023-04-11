@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/7944/com/google/javascript/rhino/Node.java	2022-10-31 19:47:37.983810209 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/Node.java	2022-10-29 13:05:29.149486452 -0500
+@@ -171,7 +171,7 @@
+         double thatValue = ((NumberNode) node).getDouble();
+         if (thisValue == thatValue) {
+           // detect the difference between 0.0 and -0.0.
+-          return (thisValue != 0.0) || (1/thisValue == 1 - thatValue);
++          return (thisValue != 0.0) || (1/thisValue == 1/thatValue);
+         }
+       }
+       return false;

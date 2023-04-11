@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_104/src/com/google/javascript/rhino/jstype/UnionType.java	2023-01-16 15:29:13.447907055 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/104/patch/./com/google/javascript/rhino/jstype/UnionType.java	2023-01-16 15:29:13.415906655 -0600
+@@ -288,7 +288,7 @@
+       builder.addAlternate(that);
+     }
+     JSType result = builder.build();
+-    if (result != null) {
++    if (!result.isNoType()) {
+       return result;
+     } else if (this.isObject() && that.isObject()) {
+       return getNativeType(JSTypeNative.NO_OBJECT_TYPE);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/6076/com/google/javascript/jscomp/ReferenceCollectingCallback.java	2022-10-31 19:47:37.967810267 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java	2022-10-29 12:13:38.601025846 -0500
+@@ -430,7 +430,7 @@
+         if (block.isFunction) {
+           break;
+         } else if (block.isLoop) {
+-          return true;
++          return false;
+         }
+       }
+ 

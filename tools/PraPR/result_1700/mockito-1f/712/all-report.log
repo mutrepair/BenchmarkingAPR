@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Class.getSimpleName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Class.getSimpleName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getInterfaces with a call to getClasses
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getSimpleName with a call to toString
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getInterfaces with a call to getDeclaredClasses
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getSimpleName with a call to toGenericString
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getSimpleName with a call to getName
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getSimpleName with a call to getTypeName
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getSimpleName with a call to getCanonicalName
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::getClass()Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::getInterfaces()[Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::getSimpleName()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getClass()Ljava/lang/Class; is guarded returning default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getInterfaces()[Ljava/lang/Class; is guarded returning default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getSimpleName()Ljava/lang/String; is guarded returning default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/mockito/internal/creation/ClassNameFinder::classNameForMock
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Object::getClass
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::getInterfaces
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::getSimpleName
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/mockito/internal/creation/ClassNameFinder::classNameForMock to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 11
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

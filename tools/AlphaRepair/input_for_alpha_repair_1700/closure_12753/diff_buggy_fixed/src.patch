@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/12753/com/google/javascript/rhino/jstype/UnionTypeBuilder.java	2022-10-31 19:47:37.615811537 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java	2022-10-29 10:21:53.833221712 -0500
+@@ -212,7 +212,7 @@
+                   return this;
+                 }
+                 // case 3: leave current, add alternate
+-              } else if (!true) {
++              } else if (!alternate.isParameterizedType()) {
+                 if (current.isSubtype(alternate)) {
+                   // case 4, 5
+                   removeCurrent = true;

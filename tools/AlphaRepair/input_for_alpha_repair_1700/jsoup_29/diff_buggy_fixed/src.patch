@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/29/org/jsoup/DataUtil.java	2022-10-31 19:47:50.475764882 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/DataUtil.java	2022-12-26 15:13:53.649644217 -0600
+@@ -67,7 +67,7 @@
+         int read;
+         do {
+             read = inReader.read(buffer, 0, buffer.length);
+-            if (read != 0) {
++            if (read > 0) {
+                 data.append(buffer, 0, read);
+             }
+ 

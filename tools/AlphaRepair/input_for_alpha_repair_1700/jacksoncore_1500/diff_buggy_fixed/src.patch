@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1500/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-10-31 19:47:44.983784873 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -673,7 +673,7 @@
+          * things up (can do bit more processing anyway)
+          */
+         int hash = firstQuad;
+-        hash ^= (hash >>> -15); // try mixing first and second byte pairs first
++        hash ^= (hash >>> 15); // try mixing first and second byte pairs first
+         hash += (secondQuad * MULT); // then add second quad
+         hash ^= _hashSeed;
+         hash += (hash >>> 7); // and shuffle some more

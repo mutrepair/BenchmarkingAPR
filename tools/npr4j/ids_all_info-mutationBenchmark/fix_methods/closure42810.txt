@@ -1,0 +1,3 @@
+      public boolean intersectsLocation(EffectLocation otherLocation) {
+        return this == EVERY_LOCATION && otherLocation == EVERY_LOCATION;
+      }

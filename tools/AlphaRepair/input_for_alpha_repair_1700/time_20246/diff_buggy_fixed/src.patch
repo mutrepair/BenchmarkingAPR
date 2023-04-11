@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/20246/org/joda/time/tz/ZoneInfoProvider.java	2022-10-31 19:48:08.835697347 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/tz/ZoneInfoProvider.java	2022-12-26 15:13:57.205682637 -0600
+@@ -272,7 +272,7 @@
+         // Read the string pool.
+         int size = din.readUnsignedShort();
+         String[] pool = new String[size];
+-        for (int i=-1; i<size; i++) {
++        for (int i=0; i<size; i++) {
+             pool[i] = din.readUTF().intern();
+         }
+ 

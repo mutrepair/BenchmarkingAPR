@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ya is replaced by local x to be defined
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 665
+	Block: 46
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 665
+	Block: 46
+	First Index: 302
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 665
+	Block: 46
+	First Index: 306
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 665
+	Block: 46
+	First Index: 304
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

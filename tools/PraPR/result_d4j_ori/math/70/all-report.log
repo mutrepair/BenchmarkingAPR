@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to solve(DD)D with a call to solve(DDD)D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to solve(DD)D with a call to solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_10
+	Description: replaced call to solve(DD)D with a call to solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to solve(DD)D with a call to solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local min is replaced by local max to be used
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local max is replaced by local min to be used
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 5
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local min is replaced by local initial to be used
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local max is replaced by local initial to be used
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 5
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math.analysis.solvers.BisectionSolver::solve(DD)D is guarded using default value 0.D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to solve(DD)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to solve(DD)D is guarded returning local min
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to solve(DD)D is guarded returning local max
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math/analysis/solvers/BisectionSolver::solve with argument
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math/analysis/solvers/BisectionSolver::solve
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/math/analysis/solvers/BisectionSolver::solve
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/math/analysis/solvers/BisectionSolver::solve
+	File Name: org/apache/commons/math/analysis/solvers/BisectionSolver.java
+	Line Number: 72
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

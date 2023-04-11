@@ -1,0 +1,22 @@
+=================================================
+Project : jacksondatabind_82	start : 23/02/07 11:36
+Current failed test : com.fasterxml.jackson.databind.filter.IgnorePropertyOnDeserTest::testIgnoreGetterNotSetter1595 | 23/02/07 11:36
+Tue Feb 07 11:36:18 CST 2023 com.fasterxml.jackson.databind.deser.BeanDeserializerFactory,495
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ignorals==null){
+boolean ignoreAny=ignorals.getIgnoreUnknown();
+builder.setIgnoreUnknownProperties(ignoreAny);
+ignored=ignorals.getIgnored();
+for(String propName : ignored){
+builder.addIgnorable(propName);
+}
+}else {
+ignored=Collections.emptySet();
+}
+
+Time : 23/02/07 11:36
+----------------------------------------
+Failed time : 23/02/07 11:37

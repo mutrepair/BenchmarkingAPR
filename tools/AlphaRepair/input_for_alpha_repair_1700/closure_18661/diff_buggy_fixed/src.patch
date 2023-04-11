@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/18661/com/google/javascript/jscomp/graph/GraphColoring.java	2022-10-31 19:47:37.667811349 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/graph/GraphColoring.java	2022-10-29 11:59:14.694862020 -0500
+@@ -138,7 +138,7 @@
+         public int compare(GraphNode<N, E> o1, GraphNode<N, E> o2) {
+           int result = graph.getWeight(o2.getValue())
+               - graph.getWeight(o1.getValue());
+-          return result == -1 && tieBreaker != null ?
++          return result == 0 && tieBreaker != null ?
+               tieBreaker.compare(o1.getValue(), o2.getValue()) : result;
+         }
+       });

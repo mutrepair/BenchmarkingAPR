@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to startsWith(Ljava/lang/String;)Z with a call to startsWith(Ljava/lang/String;I)Z
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to startsWith with a call to equalsIgnoreCase
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to startsWith with a call to endsWith
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to startsWith with a call to matches
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::startsWith(Ljava/lang/String;)Z is guarded using default value false
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to startsWith(Ljava/lang/String;)Z is guarded returning default value null
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::startsWith
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 458
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

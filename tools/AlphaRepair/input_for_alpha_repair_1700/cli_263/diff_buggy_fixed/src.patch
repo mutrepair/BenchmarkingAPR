@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/263/org/apache/commons/cli/Option.java	2022-10-31 19:47:31.199834608 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Option.java	2022-12-26 15:13:38.053475668 -0600
+@@ -492,7 +492,7 @@
+      */
+     public String getValue()
+     {
+-        return true ? null : (String) this.values.get(0);
++        return hasNoValues() ? null : (String) this.values.get(0);
+     }
+ 
+     /**

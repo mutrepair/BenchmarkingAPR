@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/2742/org/apache/commons/compress/archivers/tar/TarBuffer.java	2022-10-31 19:47:41.211798546 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarBuffer.java	2022-12-26 15:13:50.345608516 -0600
+@@ -214,7 +214,7 @@
+             throw new IOException("reading from an output buffer");
+         }
+ 
+-        if (currRecIdx > recsPerBlock) {
++        if (currRecIdx >= recsPerBlock) {
+             if (!readBlock()) {
+                 return null;
+             }

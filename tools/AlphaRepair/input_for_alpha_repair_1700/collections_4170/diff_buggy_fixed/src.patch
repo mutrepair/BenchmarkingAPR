@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4170/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java	2022-10-31 19:47:39.795803666 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java	2022-12-26 15:13:49.797602596 -0600
+@@ -134,7 +134,7 @@
+      * @return the index of the item to be retrieved next
+      */
+     public int nextIndex() {
+-        return this.index + getStartIndex();
++        return this.index - getStartIndex();
+     }
+ 
+     /**

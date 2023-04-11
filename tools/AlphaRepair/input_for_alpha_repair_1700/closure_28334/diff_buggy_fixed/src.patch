@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/28334/com/google/javascript/jscomp/NodeUtil.java	2022-10-31 19:47:37.731811118 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/NodeUtil.java	2022-10-29 12:32:46.234000113 -0500
+@@ -543,7 +543,7 @@
+       case Token.GE: // not equal
+       case Token.LT: // exactly equal
+       case Token.LE: // exactly not equal
+-        return false;
++        return true;
+     }
+     return false;
+   }

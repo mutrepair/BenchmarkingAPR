@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_57/src/com/google/javascript/jscomp/ClosureCodingConvention.java	2023-01-16 15:29:20.747998218 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/57/patch/./com/google/javascript/jscomp/ClosureCodingConvention.java	2023-01-16 15:29:20.715997819 -0600
+@@ -194,7 +194,7 @@
+         String qualifiedName = callee.getQualifiedName();
+         if (functionName.equals(qualifiedName)) {
+           Node target = callee.getNext();
+-          if (target != null) {
++          if (target != null && target.getType() == Token.STRING) {
+             className = target.getString();
+           }
+         }

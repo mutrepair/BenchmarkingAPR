@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/173/com/fasterxml/jackson/databind/JavaType.java	2022-10-31 19:47:46.607778972 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/JavaType.java	2022-12-26 15:13:52.493631727 -0600
+@@ -424,7 +424,7 @@
+ 
+     protected void _assertSubclass(Class<?> subclass, Class<?> superClass)
+     {
+-        if (!true) {
++        if (!_class.isAssignableFrom(subclass)) {
+             throw new IllegalArgumentException("Class "+subclass.getName()+" is not assignable to "+_class.getName());
+         }
+     }

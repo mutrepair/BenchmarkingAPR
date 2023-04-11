@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local denominator is replaced by local numerator to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 24
+	First Index: 22
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local numerator is replaced by local denominator to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 25
+	First Index: 25
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2147483648 with -2147483647
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 24
+	First Index: 23
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 25
+	First Index: 26
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 25
+	First Index: 27
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 24
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 24
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 217
+	Block: 24
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

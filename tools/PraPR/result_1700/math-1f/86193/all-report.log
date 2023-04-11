@@ -1,0 +1,311 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 28
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to rows is guarded using value 0
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to rows is guarded using field cols
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.rows is replaced by the call to org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer::getJacobianEvaluations()I
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to rows with an access to cols
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to rows with an access to jacobianEvaluations
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getChiSquare with a call to getRMS
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to sqrt with a call to cosh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to sqrt with a call to sinh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to sqrt with a call to tanh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to sqrt with a call to acosh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to sqrt with a call to asinh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to sqrt with a call to atanh
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to sqrt with a call to signum
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to sqrt with a call to nextUp
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to sqrt with a call to exp
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to sqrt with a call to expm1
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer::getChiSquare()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to rows is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to rows is guarded returning field DEFAULT_SINGULARITY_THRESHOLD
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getChiSquare()D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getChiSquare()D is guarded returning field DEFAULT_SINGULARITY_THRESHOLD
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getChiSquare()D is guarded returning field cost
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::sqrt with argument
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer::getChiSquare
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::sqrt
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer::getRMS
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer::getRMS
+	File Name: org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java
+	Line Number: 240
+	Block: 15
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

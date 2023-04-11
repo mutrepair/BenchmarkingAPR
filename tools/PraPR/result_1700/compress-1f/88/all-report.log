@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to offset is guarded using value 0L
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 90
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to offset is guarded using field offset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 90
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to offset is guarded returning default value null
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 90
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 91
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 93
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long modulus with multiplication
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 92
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 95
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 95
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 59
+	Block: 10
+	First Index: 95
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

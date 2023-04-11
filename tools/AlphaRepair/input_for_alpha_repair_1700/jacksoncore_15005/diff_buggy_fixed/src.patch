@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/15005/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-10-31 19:47:44.987784859 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -611,7 +611,7 @@
+             return;
+         }
+         // up to 10 digits and possible minus sign
+-        if ((_outputTail / 11) >= _outputEnd) {
++        if ((_outputTail + 11) >= _outputEnd) {
+             _flushBuffer();
+         }
+         _outputTail = NumberOutput.outputInt(i, _outputBuffer, _outputTail);

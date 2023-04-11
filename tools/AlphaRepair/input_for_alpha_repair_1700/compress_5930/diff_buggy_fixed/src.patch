@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5930/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.467797619 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -640,7 +640,7 @@
+                 final byte ch = seqToUnseq[yy[0]];
+                 unzftab[ch & 0xff] += s + 1;
+ 
+-                while (s-- >= -1) {
++                while (s-- >= 0) {
+                     ll8[++lastShadow] = ch;
+                 }
+ 

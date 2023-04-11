@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(III)V with a call to <init>(IIII)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(III)V with a call to <init>(Ljava/awt/color/ColorSpace;[FF)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(III)V with a call to <init>(IZ)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 2
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(III)V with a call to <init>(FFFF)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 2
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.chart.plot.dial.ArcDialFrame.foregroundPaint is replaced by the call to org.jfree.chart.plot.dial.ArcDialFrame::setBackgroundPaint(Ljava/awt/Paint;)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 19
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jfree.chart.plot.dial.ArcDialFrame.foregroundPaint is replaced by the call to org.jfree.chart.plot.dial.ArcDialFrame::setForegroundPaint(Ljava/awt/Paint;)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 19
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to foregroundPaint with an access to backgroundPaint
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 19
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/awt/Color::<init>
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 100 with 101
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 15
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -100 with -99
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 16
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 150 with 151
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 17
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable foregroundPaint
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 19
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

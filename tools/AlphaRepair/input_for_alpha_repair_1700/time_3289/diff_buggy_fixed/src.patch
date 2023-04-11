@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/3289/org/joda/time/LocalDate.java	2022-10-31 19:48:08.863697243 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/LocalDate.java	2022-12-26 15:13:57.197682550 -0600
+@@ -936,7 +936,7 @@
+      * @throws IllegalArgumentException if the chronology of the time does not match
+      */
+     public DateTime toDateTime(LocalTime time, DateTimeZone zone) {
+-        if (time != null && true) {
++        if (time != null && getChronology() != time.getChronology()) {
+             throw new IllegalArgumentException("The chronology of the time does not match");
+         }
+         Chronology chrono = getChronology().withZone(zone);

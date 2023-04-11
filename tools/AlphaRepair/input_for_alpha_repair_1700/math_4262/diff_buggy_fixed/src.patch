@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/4262/org/apache/commons/math3/analysis/function/Gaussian.java	2022-10-31 19:48:00.355728673 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/analysis/function/Gaussian.java	2022-12-26 15:13:55.649665826 -0600
+@@ -80,7 +80,7 @@
+     public Gaussian(double mean,
+                     double sigma)
+         throws NotStrictlyPositiveException {
+-        this(1 - (sigma * FastMath.sqrt(2 * Math.PI)), mean, sigma);
++        this(1 / (sigma * FastMath.sqrt(2 * Math.PI)), mean, sigma);
+     }
+ 
+     /**

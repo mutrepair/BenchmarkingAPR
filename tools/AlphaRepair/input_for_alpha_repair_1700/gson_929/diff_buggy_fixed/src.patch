@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/929/com/google/gson/stream/JsonWriter.java	2022-10-31 19:47:43.879788880 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonWriter.java	2022-12-26 15:13:51.393619841 -0600
+@@ -392,7 +392,7 @@
+ 
+     String string = value.toString();
+     if (!lenient
+-        && (string.equals("NaN"))) {
++        && (string.equals("-Infinity") || string.equals("Infinity") || string.equals("NaN"))) {
+       throw new IllegalArgumentException("Numeric values must be finite, but was " + value);
+     }
+     beforeValue(false);

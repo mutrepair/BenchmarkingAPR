@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/13103/com/google/javascript/rhino/jstype/ArrowType.java	2022-10-31 19:47:37.623811508 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/ArrowType.java	2022-10-29 13:43:50.606032037 -0500
+@@ -288,7 +288,7 @@
+            paramNode != null; paramNode = paramNode.getNext()) {
+         JSType type = paramNode.getJSType();
+         if (type == null || type.isUnknownType()) {
+-          return false;
++          return true;
+         }
+       }
+     }

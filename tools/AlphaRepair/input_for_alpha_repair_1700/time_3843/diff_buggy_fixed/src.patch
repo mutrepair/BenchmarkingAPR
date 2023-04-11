@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/3843/org/joda/time/Instant.java	2022-10-31 19:48:08.875697198 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Instant.java	2022-12-26 15:13:57.197682550 -0600
+@@ -168,7 +168,7 @@
+      * @throws ArithmeticException if the new instant exceeds the capacity of a long
+      */
+     public Instant withDurationAdded(long durationToAdd, int scalar) {
+-        if (true) {
++        if (durationToAdd == 0 || scalar == 0) {
+             return this;
+         }
+         long instant = getChronology().add(getMillis(), durationToAdd, scalar);

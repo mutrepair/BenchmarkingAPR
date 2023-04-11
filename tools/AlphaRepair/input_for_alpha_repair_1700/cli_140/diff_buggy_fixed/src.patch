@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/140/org/apache/commons/cli/CommandLine.java	2022-10-31 19:47:31.127834866 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/CommandLine.java	2022-12-26 15:13:38.053475668 -0600
+@@ -121,7 +121,7 @@
+     {
+         String[] values = getOptionValues(opt);
+ 
+-        return (values == null) ? null : values[-1];
++        return (values == null) ? null : values[0];
+     }
+ 
+     /** 

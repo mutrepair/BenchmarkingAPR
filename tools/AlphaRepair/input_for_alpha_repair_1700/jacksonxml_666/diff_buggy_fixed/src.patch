@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/666/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-10-31 19:47:49.943766823 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-12-26 15:13:53.109638382 -0600
+@@ -950,7 +950,7 @@
+         int len = (str == null) ? 0 : str.length();
+         if (len > 0) {
+             for (int i = 0; i < len; ++i) {
+-                if (false) {
++                if (str.charAt(i) > ' ') {
+                     return false;
+                 }
+             }

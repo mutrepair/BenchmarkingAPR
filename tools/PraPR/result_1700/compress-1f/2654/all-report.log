@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 429
+	Block: 80
+	First Index: 57
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 49 with 50
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 429
+	Block: 80
+	First Index: 59
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 429
+	Block: 80
+	First Index: 60
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 429
+	Block: 80
+	First Index: 60
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 429
+	Block: 80
+	First Index: 60
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to getCumPct(Ljava/lang/Comparable;)D with a call to getCumPct(C)D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to getCumPct(Ljava/lang/Comparable;)D with a call to getCumPct(Ljava/lang/Object;)D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to getCumPct(Ljava/lang/Comparable;)D with a call to getCumPct(I)D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to getCumPct(Ljava/lang/Comparable;)D with a call to getCumPct(J)D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getCumPct with a call to getPct
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math.stat.Frequency::getCumPct(Ljava/lang/Comparable;)D is guarded using default value 0.D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getCumPct(Ljava/lang/Comparable;)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math/stat/Frequency::getCumPct
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/math/stat/Frequency::getPct
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 7
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/math/stat/Frequency::getPct
+	File Name: org/apache/commons/math/stat/Frequency.java
+	Line Number: 303
+	Block: 33
+	First Index: 7
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

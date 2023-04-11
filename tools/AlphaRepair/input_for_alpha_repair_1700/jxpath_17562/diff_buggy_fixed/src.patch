@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/17562/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer.java	2022-10-31 19:47:51.259762021 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -251,7 +251,7 @@
+     }
+ 
+     public void remove() {
+-        if (index >= WHOLE_COLLECTION) {
++        if (index == WHOLE_COLLECTION) {
+             removeKey();
+         }
+         else if (isCollection()) {

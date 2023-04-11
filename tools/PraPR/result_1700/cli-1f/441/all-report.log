@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V with a call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: 1
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V with a call to printHelp(Ljava/lang/String;Lorg/apache/commons/cli/Options;Z)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V with a call to printHelp(Ljava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V with a call to printHelp(Ljava/lang/String;Lorg/apache/commons/cli/Options;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to defaultWidth is guarded using value 0
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to defaultWidth is guarded using field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultWidth is replaced by the call to org.apache.commons.cli.HelpFormatter::getWidth()I
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultWidth is replaced by the call to org.apache.commons.cli.HelpFormatter::getLeftPadding()I
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultWidth is replaced by the call to org.apache.commons.cli.HelpFormatter::getDescPadding()I
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to defaultWidth with an access to defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to defaultWidth with an access to defaultDescPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local cmdLineSyntax is replaced by access to field DEFAULT_SYNTAX_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local cmdLineSyntax is replaced by access to field DEFAULT_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local cmdLineSyntax is replaced by access to field DEFAULT_LONG_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local cmdLineSyntax is replaced by access to field DEFAULT_ARG_NAME
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local cmdLineSyntax is replaced by access to field defaultSyntaxPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local cmdLineSyntax is replaced a call cmdLineSyntax.toLowerCase()
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to defaultWidth is guarded returning enclosing method
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 5
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V is guarded returning enclosing method
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.cli.HelpFormatter::printHelp(ILjava/lang/String;Ljava/lang/String;Lorg/apache/commons/cli/Options;Ljava/lang/String;Z)V is guarded
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 10
+	Rank: 2
+	Total Rank: 22
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/HelpFormatter::printHelp
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 256
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------

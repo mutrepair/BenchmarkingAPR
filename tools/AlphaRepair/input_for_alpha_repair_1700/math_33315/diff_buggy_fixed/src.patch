@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/33315/org/apache/commons/math3/genetics/UniformCrossover.java	2022-10-31 19:48:00.279728953 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/genetics/UniformCrossover.java	2022-12-26 15:13:55.661665956 -0600
+@@ -61,7 +61,7 @@
+      * @throws OutOfRangeException if the mixing ratio is outside the [0, 1] range
+      */
+     public UniformCrossover(final double ratio) throws OutOfRangeException {
+-        if (ratio < 0.0) {
++        if (ratio < 0.0d || ratio > 1.0d) {
+             throw new OutOfRangeException(LocalizedFormats.CROSSOVER_RATE, ratio, 0.0d, 1.0d);
+         }
+         this.ratio = ratio;

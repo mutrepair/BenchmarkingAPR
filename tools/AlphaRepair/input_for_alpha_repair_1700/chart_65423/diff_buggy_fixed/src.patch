@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/65423/org/jfree/chart/util/ObjectUtilities.java	2022-10-31 19:47:29.587840382 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/util/ObjectUtilities.java	2022-10-29 12:45:48.820890475 -0500
+@@ -123,7 +123,7 @@
+      */
+     public static boolean equal(final Object o1, final Object o2) {
+         if (o1 == o2) {
+-            return false;
++            return true;
+         }
+         if (o1 != null) {
+             return o1.equals(o2);

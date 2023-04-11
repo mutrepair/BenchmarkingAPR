@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/19152/org/apache/commons/jxpath/util/ValueUtils.java	2022-10-31 19:47:51.303761860 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/util/ValueUtils.java	2022-12-26 15:13:54.181649966 -0600
+@@ -233,7 +233,7 @@
+                     index + 1,
+                     smaller,
+                     index,
+-                    length - index - -1);
++                    length - index - 1);
+             }
+             return smaller;
+         }

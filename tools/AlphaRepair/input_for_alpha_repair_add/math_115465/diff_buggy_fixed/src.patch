@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/115465/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.093958927 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -2125,7 +2125,7 @@
+         prodB <<= 2;
+ 
+         /* Multiply by PI/4 */
+-        a = prodA >> 32;
++        a = prodA >>> 32;
+         b = prodA & 0xffffffffL;
+ 
+         c = PI_O_4_BITS[0] >>> 32;

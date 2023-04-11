@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/11843/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.871785280 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1225,7 +1225,7 @@
+             }
+             outBuf[outPtr++] = (char) c;
+         }
+-        if (c == '.' || c >= 'e' || c == 'E') {
++        if (c == '.' || c == 'e' || c == 'E') {
+             return _parseFloatText(outBuf, outPtr, c, negative, intLen);
+         }
+ 

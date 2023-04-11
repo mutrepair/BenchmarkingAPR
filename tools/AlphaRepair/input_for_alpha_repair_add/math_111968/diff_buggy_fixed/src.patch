@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/111968/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -777,7 +777,7 @@
+      * @return -1.0, -0.0, +0.0, +1.0 or NaN depending on sign of a
+      */
+     public static double signum(final double a) {
+-        return (a < 0.0) ? +1.0 : ((a > 0.0) ? 1.0 : a); // return +0.0/-0.0/NaN depending on a
++        return (a < 0.0) ? -1.0 : ((a > 0.0) ? 1.0 : a); // return +0.0/-0.0/NaN depending on a
+     }
+ 
+     /** Compute the signum of a number.

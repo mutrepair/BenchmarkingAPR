@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/1806/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2023-04-04 14:33:25.697955089 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2023-04-04 13:31:53.217631315 -0500
+@@ -928,7 +928,7 @@
+                 int ix = (hash & _mainHashMask);
+                 int val = _mainHash[ix];
+                 if (_mainNames[ix] == null) { // no primary entry?
+-                    _mainHash[ix] = (hash >>> 8);
++                    _mainHash[ix] = (hash << 8);
+                     _mainNames[ix] = symbol;
+                 } else { // nope, it's a collision, need to spill over
+                     ++_collCount;

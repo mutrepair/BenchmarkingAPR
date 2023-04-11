@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.joda.time.LocalDateTime.withPeriodAdded(Lorg/joda/time/ReadablePeriod;I)Lorg/joda/time/LocalDateTime; is replaced by an instantiation of type org.joda.time.LocalDateTime using (JLorg/joda/time/Chronology;)V
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.joda.time.LocalDateTime.withPeriodAdded(Lorg/joda/time/ReadablePeriod;I)Lorg/joda/time/LocalDateTime; is replaced by an instantiation of type org.joda.time.LocalDateTime using (IIIIII)V
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.LocalDateTime::withPeriodAdded(Lorg/joda/time/ReadablePeriod;I)Lorg/joda/time/LocalDateTime; is guarded using default value null
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to withPeriodAdded(Lorg/joda/time/ReadablePeriod;I)Lorg/joda/time/LocalDateTime; is guarded returning default value null
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to withPeriodAdded(Lorg/joda/time/ReadablePeriod;I)Lorg/joda/time/LocalDateTime; is guarded returning local this
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/LocalDateTime::withPeriodAdded
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/joda/time/LocalDateTime::plus
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/joda/time/LocalDateTime::plus to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to org/joda/time/LocalDateTime::withPeriodAdded with receiver
+	File Name: org/joda/time/LocalDateTime.java
+	Line Number: 1086
+	Block: 117
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

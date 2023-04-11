@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/csv_14/src/main/java/org/apache/commons/csv/CSVFormat.java	2023-01-16 15:29:34.916175150 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/csv/14/patch/./org/apache/commons/csv/CSVFormat.java	2023-01-16 15:29:34.884174749 -0600
+@@ -1036,7 +1036,7 @@
+                 char c = value.charAt(pos);
+ 
+                 // RFC4180 (https://tools.ietf.org/html/rfc4180) TEXTDATA =  %x20-21 / %x23-2B / %x2D-7E
+-                if (newRecord && (c < '0' || c > '9' && c < 'A' || c > 'Z' && c < 'a' || c > 'z')) {
++                if (newRecord && (c < 0x20 || c > 0x21 && c < 0x23 || c > 0x2B && c < 0x2D || c > 0x7E)) {
+                     quote = true;
+                 } else if (c <= COMMENT) {
+                     // Some other chars at the start of a value caused the parser to fail, so for now

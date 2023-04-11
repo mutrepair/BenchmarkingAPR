@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/3256/org/joda/time/LocalDate.java	2022-10-31 19:48:08.859697258 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/LocalDate.java	2022-12-26 15:13:57.197682550 -0600
+@@ -680,7 +680,7 @@
+             LocalDate other = (LocalDate) partial;
+             if (iChronology.equals(other.iChronology)) {
+                 return (iLocalMillis < other.iLocalMillis ? -1 :
+-                            (iLocalMillis == other.iLocalMillis ? 0 : 0));
++                            (iLocalMillis == other.iLocalMillis ? 0 : 1));
+ 
+             }
+         }

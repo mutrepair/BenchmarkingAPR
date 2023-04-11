@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/910/org/mockito/internal/invocation/InvocationsFinder.java	2022-10-31 19:48:05.783708647 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/invocation/InvocationsFinder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -55,7 +55,7 @@
+         for (Invocation invocation : unverified) {
+             if (wanted.matches(invocation)) {
+                 firstChunk.add(invocation);
+-            } else if (!false) {
++            } else if (!firstChunk.isEmpty()) {
+                 break;
+             }
+         }

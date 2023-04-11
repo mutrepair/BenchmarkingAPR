@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/5492/com/fasterxml/jackson/databind/cfg/DeserializerFactoryConfig.java	2022-10-31 19:47:46.739778492 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/cfg/DeserializerFactoryConfig.java	2022-12-26 15:13:52.497631769 -0600
+@@ -180,7 +180,7 @@
+     
+     public boolean hasDeserializerModifiers() { return _modifiers.length > 0; }
+ 
+-    public boolean hasAbstractTypeResolvers() { return false; }
++    public boolean hasAbstractTypeResolvers() { return _abstractTypeResolvers.length > 0; }
+ 
+     public boolean hasValueInstantiators() { return _valueInstantiators.length > 0; }
+     

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/555/com/fasterxml/jackson/core/util/ByteArrayBuilder.java	2022-10-31 19:47:45.163784220 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/util/ByteArrayBuilder.java	2022-12-26 15:13:51.925625590 -0600
+@@ -74,7 +74,7 @@
+ 
+     public void reset()
+     {
+-        _pastLen = 1;
++        _pastLen = 0;
+         _currBlockPtr = 0;
+ 
+         if (!_pastBlocks.isEmpty()) {

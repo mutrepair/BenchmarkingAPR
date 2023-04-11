@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/277/org/apache/commons/csv/Lexer.java	2022-10-31 19:47:42.155795129 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/Lexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -125,7 +125,7 @@
+     }
+ 
+     boolean isEscape(int c) {
+-        return isEscaping;
++        return isEscaping && c == escape;
+     }
+ 
+     boolean isEncapsulator(int c) {

@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to value is guarded using value 0
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to value is guarded using local total
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to value is guarded using field size
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.bag.AbstractMapBag$MutableInteger.value is replaced by the call to org.apache.commons.collections4.bag.AbstractMapBag$MutableInteger::hashCode()I
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field value is replaced by access to local total
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local total is replaced by access to field size
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 91
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local total is replaced by access to field modCount
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 91
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::hashCode()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to value is guarded returning default value 0
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to value is guarded returning local total
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to value is guarded returning field size
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning default value 0
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to hashCode()I is guarded returning local total
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to hashCode()I is guarded returning field size
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to hashCode()I is guarded returning field modCount
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 92
+	First Index: 37
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 91
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Object::hashCode
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 93
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 91
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 572
+	Block: 91
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

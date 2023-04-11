@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:41:29 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 423
+	Block: 76
+	First Index: 38
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 423
+	Block: 76
+	First Index: 38
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------

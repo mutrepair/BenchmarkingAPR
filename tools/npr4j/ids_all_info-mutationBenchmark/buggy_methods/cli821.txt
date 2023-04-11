@@ -1,0 +1,4 @@
+    private static boolean isValidOpt(char c)
+    {
+        return (isValidChar(c) || (c >= ' ') || (c == '?') || c == '@');
+    }

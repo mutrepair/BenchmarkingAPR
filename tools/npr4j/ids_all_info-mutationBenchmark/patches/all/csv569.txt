@@ -1,0 +1,100 @@
+&&( c != 'a'&&( c != 'a'
+&&( c != ''&&( c != ''
+&&( c != 'A'&&( c != 'A'
+&&( c != '\r'&&( c != '\r'
+&&( c != 'Z'&&( c != 'Z'
+&&( c != '9'&&( c != '9'
+&&( c != '\t'&&( c != '\t'
+&&( c != ' || c == '&&( c != ' || c == '
+&&( c != '\f'&&( c != '\f'
+&&( c != ' '&&( c != ' '
+&&( c != '0'&&( c != '0'
+&&( c != ' && c < '&&( c != ' && c < '
+&&( c != 'License'&&( c != 'License'
+&&( c != 'AS IS'&&( c != 'AS IS'
+&&( c != 'r'&&( c != 'r'
+&&( c != 'n'&&( c != 'n'
+&&( c != '\n'&&( c != '\n'
+&&( c != '#'&&( c != '#'
+&&( c != 'z'&&( c != 'z'
+&&( c != 'a'&&( c.equals( c ) )
+&&( c != ''&&( c.equals( c ) )
+&&( c != 'A'&&( c.equals( c ) )
+&&( c != '\r'&&( c.equals( c ) )
+&&( c != 'Z'&&( c.equals( c ) )
+&&( c != '9'&&( c.equals( c ) )
+&&( c != '\t'&&( c.equals( c ) )
+&&( c != ' || c == '&&( c.equals( c ) )
+&&( c != '\f'&&( c.equals( c ) )
+&&( c != ' '&&( c.equals( c ) )
+&&( c != '0'&&( c.equals( c ) )
+&&( c != ' && c < '&&( c.equals( c ) )
+&&( c != 'License'&&( c.equals( c ) )
+&&( c != 'AS IS'&&( c.equals( c ) )
+&&( c != 'r'&&( c.equals( c ) )
+&&( c != 'n'&&( c.equals( c ) )
+&&( c != '\n'&&( c.equals( c ) )
+&&( c != '#'&&( c.equals( c ) )
+&&( c != 'z'&&( c.equals( c ) )
+&&( c != 'a'&&( c == 'a'
+&&( c != ''&&( c == ''
+&&( c != 'A'&&( c == 'A'
+&&( c != '\r'&&( c == '\r'
+&&( c != 'Z'&&( c == 'Z'
+&&( c != '9'&&( c == '9'
+&&( c != '\t'&&( c == '\t'
+&&( c != ' || c == '&&( c == ' || c == '
+&&( c != '\f'&&( c == '\f'
+&&( c != ' '&&( c == ' '
+&&( c != '0'&&( c == '0'
+&&( c != ' && c < '&&( c == ' && c < '
+&&( c != 'License'&&( c == 'License'
+&&( c != 'AS IS'&&( c == 'AS IS'
+&&( c != 'r'&&( c == 'r'
+&&( c != 'n'&&( c == 'n'
+&&( c != '\n'&&( c == '\n'
+&&( c != '#'&&( c == '#'
+&&( c != 'z'&&( c == 'z'
+&&( c != 'a'&& ! c.isClosed( ) )
+&&( c != ''&& ! c.isClosed( ) )
+&&( c != 'A'&& ! c.isClosed( ) )
+&&( c != '\r'&& ! c.isClosed( ) )
+&&( c != 'Z'&& ! c.isClosed( ) )
+&&( c != '9'&& ! c.isClosed( ) )
+&&( c != '\t'&& ! c.isClosed( ) )
+&&( c != ' || c == '&& ! c.isClosed( ) )
+&&( c != '\f'&& ! c.isClosed( ) )
+&&( c != ' '&& ! c.isClosed( ) )
+&&( c != '0'&& ! c.isClosed( ) )
+&&( c != ' && c < '&& ! c.isClosed( ) )
+&&( c != 'License'&& ! c.isClosed( ) )
+&&( c != 'AS IS'&& ! c.isClosed( ) )
+&&( c != 'r'&& ! c.isClosed( ) )
+&&( c != 'n'&& ! c.isClosed( ) )
+&&( c != '\n'&& ! c.isClosed( ) )
+&&( c != '#'&& ! c.isClosed( ) )
+&&( c != 'z'&& ! c.isClosed( ) )
+&&( c != 'a'&&( c != 'a'&& ! c.equals( 'a') )
+&&( c != ''&&( c != ''&& ! c.equals( '') )
+&&( c != 'A'&&( c != 'A'&& ! c.equals( 'A') )
+&&( c != '\r'&&( c != '\r'&& ! c.equals( '\r') )
+&&( c != 'Z'&&( c != 'Z'&& ! c.equals( 'Z') )
+&&( c != '9'&&( c != '9'&& ! c.equals( '9') )
+&&( c != '\t'&&( c != '\t'&& ! c.equals( '\t') )
+&&( c != ' || c == '&&( c != ' || c == '&& ! c.equals( ' || c == ') )
+&&( c != '\f'&&( c != '\f'&& ! c.equals( '\f') )
+&&( c != ' '&&( c != ' '&& ! c.equals( ' ') )
+&&( c != '0'&&( c != '0'&& ! c.equals( '0') )
+&&( c != ' && c < '&&( c != ' && c < '&& ! c.equals( ' && c < ') )
+&&( c != 'License'&&( c != 'License'&& ! c.equals( 'License') )
+&&( c != 'AS IS'&&( c != 'AS IS'&& ! c.equals( 'AS IS') )
+&&( c != 'r'&&( c != 'r'&& ! c.equals( 'r') )
+&&( c != 'n'&&( c != 'n'&& ! c.equals( 'n') )
+&&( c != '\n'&&( c != '\n'&& ! c.equals( '\n') )
+&&( c != '#'&&( c != '#'&& ! c.equals( '#') )
+&&( c != 'z'&&( c != 'z'&& ! c.equals( 'z') )
+&&( c != 'a'&& ! c.equals( 'a') && ! c.equals( 'a') )
+&&( c != ''&& ! c.equals( '') && ! c.equals( '') )
+&&( c != 'A'&& ! c.equals( 'A') && ! c.equals( 'A') )
+&&( c != '\r'&& ! c.equals( '\r') && ! c.equals( '\r') )
+&&( c != 'Z'&& ! c.equals( 'Z') && ! c.equals( 'Z') )

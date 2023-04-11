@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/121180/org/apache/commons/math3/util/Precision.java	2022-10-31 19:48:00.175729336 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/Precision.java	2022-12-26 15:13:55.689666258 -0600
+@@ -335,7 +335,7 @@
+         if (xInt < 0) {
+             xInt = SGN_MASK - xInt;
+         }
+-        if (yInt <= 0) {
++        if (yInt < 0) {
+             yInt = SGN_MASK - yInt;
+         }
+ 

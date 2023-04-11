@@ -1,0 +1,57 @@
+=================================================
+Project : math_30	start : 23/02/07 12:57
+Current failed test : org.apache.commons.math3.stat.inference.MannWhitneyUTestTest::testBigDataSet | 23/02/07 12:57
+Tue Feb 07 12:57:33 CST 2023 org.apache.commons.math3.stat.inference.MannWhitneyUTest,173
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+ final double n1n2prod=n1*n2;
+ final double EU=n1n2prod/2.0;
+ final double VarU=n1n2prod*(n1+n2)/12.0;
+ final double z=(Umin-EU)/FastMath.sqrt(VarU);
+ final NormalDistribution standardNormal=new NormalDistribution(0,1);
+return 2*standardNormal.cumulativeProbability(z);
+
+Time : 23/02/07 12:57
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+ final double n1n2prod=n1*n2;
+ final double EU=n1n2prod/2.0;
+ final double VarU=n1n2prod*(n1+n2)/2.0;
+ final double z=(Umin-EU)/FastMath.sqrt(VarU);
+ final NormalDistribution standardNormal=new NormalDistribution(0,1);
+return 2*standardNormal.cumulativeProbability(z);
+
+Time : 23/02/07 12:58
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+ final double n1n2prod=n1*n2;
+ final double EU=n1n2prod/2.0;
+ final double VarU=n1n2prod*(n1+n2)/12.0;
+ final double z=(Umin-EU)/FastMath.sqrt(VarU);
+ final NormalDistribution standardNormal=new NormalDistribution(0,1);
+return 1*standardNormal.cumulativeProbability(z);
+
+Time : 23/02/07 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+ final double n1n2prod=n1*n2;
+ final double EU=n1n2prod/2.0;
+ final double VarU=n1n2prod*(n1+n2)/12.0;
+ final double z=(Umin-EU)/FastMath.sqrt(VarU);
+ final NormalDistribution standardNormal=new NormalDistribution(0,1);
+return FastMath.abs(z)*Umin/FastMath.sqrt(n1*Umin+0.01*Umin);
+
+Time : 23/02/07 12:59
+----------------------------------------
+Failed time : 23/02/07 13:00

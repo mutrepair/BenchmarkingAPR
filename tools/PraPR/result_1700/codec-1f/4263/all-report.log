@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to digit(CI)I with a call to digit(II)I
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local b to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Character::digit with argument
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 40
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -16 with -15
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::digit
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 184
+	Block: 16
+	First Index: 40
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

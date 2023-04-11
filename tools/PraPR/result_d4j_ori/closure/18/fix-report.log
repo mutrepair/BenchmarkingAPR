@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Feb 14 13:42:01 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 36
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 201
+	Rank: 1
+	Total Rank: 36
+	Status: SURVIVED
+	Dump: mutant-36.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2215/com/google/gson/VersionExclusionStrategy.java	2022-10-31 19:47:43.747789359 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/VersionExclusionStrategy.java	2022-12-26 15:13:51.393619841 -0600
+@@ -29,7 +29,7 @@
+   private final double version;
+ 
+   public VersionExclusionStrategy(double version) {
+-    Preconditions.checkArgument(true);
++    Preconditions.checkArgument(version >= 0.0D);
+     this.version = version;
+   }
+ 

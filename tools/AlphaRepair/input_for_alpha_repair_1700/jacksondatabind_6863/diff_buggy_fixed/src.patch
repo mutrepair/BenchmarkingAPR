@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6863/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-10-31 19:47:46.795778288 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-12-26 15:13:52.497631769 -0600
+@@ -1320,7 +1320,7 @@
+         boolean wrap = (ctxt == null) || ctxt.isEnabled(DeserializationFeature.WRAP_EXCEPTIONS);
+         // Ditto for IOExceptions; except we may want to wrap mapping exceptions
+         if (t instanceof IOException) {
+-            if (!wrap) {
++            if (!wrap || !(t instanceof JsonMappingException)) {
+                 throw (IOException) t;
+             }
+         } else if (!wrap) { // [JACKSON-407] -- allow disabling wrapping for unchecked exceptions

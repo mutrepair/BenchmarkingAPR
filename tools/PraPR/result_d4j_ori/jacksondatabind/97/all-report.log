@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _value is guarded using value null
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _value is guarded using field _value
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.node.POJONode._value is replaced by the call to com.fasterxml.jackson.databind.node.POJONode::getPojo()Ljava/lang/Object;
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _value is replaced by access to local this
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _value is replaced by access to local gen
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field _value is replaced by access to local ctxt
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local gen is replaced a call gen.useDefaultPrettyPrinter()
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to writeObject with a call to setCurrentValue
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to writeObject with a call to writeStartObject
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to writeObject with a call to writeEmbeddedObject
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to writeObject with a call to writeObjectId
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to writeObject with a call to writeObjectRef
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to writeObject with a call to writeTypeId
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _value is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to writeObject(Ljava/lang/Object;)V is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.fasterxml.jackson.core.JsonGenerator::writeObject(Ljava/lang/Object;)V is guarded
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/JsonGenerator::writeObject
+	File Name: com/fasterxml/jackson/databind/node/POJONode.java
+	Line Number: 114
+	Block: 29
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

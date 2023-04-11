@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local i to be used
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to toUpperCase with a call to toLowerCase
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to toUpperCase with a call to toTitleCase
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to toUpperCase with a call to reverseBytes
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Character::toUpperCase with argument
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 15 with 16
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 85
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -16 with -15
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 87
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 84
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::forDigit
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 88
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::toUpperCase
+	File Name: org/apache/commons/codec/net/URLCodec.java
+	Line Number: 134
+	Block: 10
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

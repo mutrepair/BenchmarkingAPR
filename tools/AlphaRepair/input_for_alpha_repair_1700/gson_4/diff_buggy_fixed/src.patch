@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/4/com/google/gson/AnonymousAndLocalClassExclusionStrategy.java	2022-10-31 19:47:43.787789214 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/AnonymousAndLocalClassExclusionStrategy.java	2022-12-26 15:13:51.389619797 -0600
+@@ -34,6 +34,6 @@
+ 
+   private boolean isAnonymousOrLocal(Class<?> clazz) {
+     return !Enum.class.isAssignableFrom(clazz)
+-        && (true);
++        && (clazz.isAnonymousClass() || clazz.isLocalClass());
+   }
+ }

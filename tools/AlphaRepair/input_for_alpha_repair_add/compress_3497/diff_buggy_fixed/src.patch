@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/3497/org/apache/commons/compress/archivers/zip/AsiExtraField.java	2023-04-04 14:33:25.593954082 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/AsiExtraField.java	2023-04-04 13:31:53.013628892 -0500
+@@ -309,7 +309,7 @@
+         } else if (isDirectory()) {
+             type = DIR_FLAG;
+         }
+-        return type | (mode | PERM_MASK);
++        return type | (mode & PERM_MASK);
+     }
+ 
+     public Object clone() {

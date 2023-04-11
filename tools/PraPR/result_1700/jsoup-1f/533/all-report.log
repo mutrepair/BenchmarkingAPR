@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isBlock with an access to canContainBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isBlock with an access to canContainInline
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isBlock with an access to optionalClosing
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isBlock with an access to empty
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isBlock with an access to preserveWhitespace
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local tag is replaced by access to field defaultAncestor
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 53
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local tag is replaced a call register(tag)
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 53
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 54
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 55
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

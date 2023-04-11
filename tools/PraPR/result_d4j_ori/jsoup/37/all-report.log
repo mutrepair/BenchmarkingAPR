@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.trim()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.trim()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local accum is replaced a call accum.reverse()
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to trim with a call to toLowerCase
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to trim with a call to toUpperCase
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to trim with a call to toString
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to trim with a call to intern
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::toString()Ljava/lang/String; is guarded using default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::trim()Ljava/lang/String; is guarded using default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to toString()Ljava/lang/String; is guarded returning default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to trim()Ljava/lang/String; is guarded returning default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/jsoup/nodes/Element::html
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::toString
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::trim
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/jsoup/nodes/Element::html to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::trim with receiver
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1101
+	Block: 189
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

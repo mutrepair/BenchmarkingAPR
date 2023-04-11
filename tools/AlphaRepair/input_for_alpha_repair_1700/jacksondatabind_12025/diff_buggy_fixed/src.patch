@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12025/com/fasterxml/jackson/databind/ser/BasicSerializerFactory.java	2022-10-31 19:47:46.511779321 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/BasicSerializerFactory.java	2022-12-26 15:13:52.509631900 -0600
+@@ -382,7 +382,7 @@
+         if (Number.class.isAssignableFrom(raw)) {
+             return NumberSerializers.NumberSerializer.instance;
+         }
+-        if (false) {
++        if (Enum.class.isAssignableFrom(raw)) {
+             return buildEnumSerializer(prov.getConfig(), type, beanDesc);
+         }
+         if (Calendar.class.isAssignableFrom(raw)) {

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/158/org/mockito/internal/debugging/Location.java	2022-10-31 19:48:05.503709683 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/debugging/Location.java	2022-12-26 15:13:56.653676672 -0600
+@@ -20,7 +20,7 @@
+     public Location(StackTraceFilter filter) {
+         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+         StackTraceElement[] filtered = filter.filter(stackTrace, false);
+-        if (filtered.length >= 0) {
++        if (filtered.length == 0) {
+             where = "-> at <<unknown line>>";
+         } else {
+             where = "-> at " + filtered[0].toString();

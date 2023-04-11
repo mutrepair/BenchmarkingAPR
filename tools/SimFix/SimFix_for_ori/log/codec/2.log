@@ -1,0 +1,39 @@
+=================================================
+Project : codec_2	start : 23/02/07 01:49
+Current failed test : org.apache.commons.codec.binary.Base64InputStreamTest::testBase64EmptyInputStream | 23/02/07 01:49
+Tue Feb 07 01:49:52 CST 2023 org.apache.commons.codec.binary.Base64,446
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(lineLength>0&&lineLength<=currentLinePos){
+System.arraycopy(lineSeparator,0,buf,pos,lineSeparator.length);
+pos+=lineSeparator.length;
+}
+
+Time : 23/02/07 01:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(lineLength>0&&lineLength<=currentLinePos){
+currentLinePos=0;
+System.arraycopy(lineSeparator,0,buf,pos,lineSeparator.length);
+pos+=lineSeparator.length;
+}
+
+Time : 23/02/07 01:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(readPos>0){
+System.arraycopy(lineSeparator,0,buf,pos,lineSeparator.length);
+pos+=lineSeparator.length;
+}
+
+Time : 23/02/07 01:50
+----------------------------------------
+Failed time : 23/02/07 01:50

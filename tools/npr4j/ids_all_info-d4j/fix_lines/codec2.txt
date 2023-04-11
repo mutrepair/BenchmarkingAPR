@@ -1,0 +1,1 @@
+if (lineLength > 0 && pos > 0) {

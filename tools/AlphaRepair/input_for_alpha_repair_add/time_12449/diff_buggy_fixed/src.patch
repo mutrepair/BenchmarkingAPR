@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/12449/org/joda/time/field/FieldUtils.java	2023-04-04 14:33:26.369961602 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/field/FieldUtils.java	2023-04-04 13:31:54.469646192 -0500
+@@ -138,7 +138,7 @@
+                 if (val1 == Long.MIN_VALUE) {
+                     throw new ArithmeticException("Multiplication overflows a long: " + val1 + " * " + val2);
+                 }
+-                return +val1;
++                return -val1;
+             case 0:
+                 return 0L;
+             case 1:

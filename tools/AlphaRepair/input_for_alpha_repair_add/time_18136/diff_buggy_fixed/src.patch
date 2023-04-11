@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/18136/org/joda/time/tz/DateTimeZoneBuilder.java	2023-04-04 14:33:26.373961641 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java	2023-04-04 13:31:54.473646239 -0500
+@@ -184,7 +184,7 @@
+         switch (v >> 6) {
+         case 0: default:
+             // Form 00 (6 bits effective precision)
+-            v = (v >>> (32 - 6)) >> (32 - 6);
++            v = (v << (32 - 6)) >> (32 - 6);
+             return v * (30 * 60000L);
+ 
+         case 1:

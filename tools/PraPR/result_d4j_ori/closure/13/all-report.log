@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local node to be used
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local c is replaced a call c.getFirstChild()
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to traverse with a call to exitNode
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to traverse with a call to visit
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to traverse(Lcom/google/javascript/rhino/Node;)V is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.google.javascript.jscomp.PeepholeOptimizationsPass::traverse(Lcom/google/javascript/rhino/Node;)V is guarded
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/PeepholeOptimizationsPass::traverse
+	File Name: com/google/javascript/jscomp/PeepholeOptimizationsPass.java
+	Line Number: 126
+	Block: 6
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

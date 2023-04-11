@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/19557/com/google/javascript/jscomp/AstValidator.java	2022-10-31 19:47:37.675811320 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/AstValidator.java	2022-10-29 12:51:50.351988873 -0500
+@@ -629,7 +629,7 @@
+     validateNodeType(Token.REGEXP, n);
+     validateMinimumChildCount(n, 1);
+     validateMaximumChildCount(n, 2);
+-    for (Node c = n.getFirstChild(); true; c = c.getNext()) {
++    for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {
+       validateString(c);
+     }
+   }

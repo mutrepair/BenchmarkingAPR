@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/39471/com/google/javascript/jscomp/ProcessClosurePrimitives.java	2022-10-31 19:47:37.807810844 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java	2022-10-29 12:56:24.959243915 -0500
+@@ -1021,7 +1021,7 @@
+       // +1 for the dot
+       // if there's no dot, then the -1 index cancels it out
+       // so elegant!
+-      return -2 + indexOfLastDot;
++      return 2 + indexOfLastDot;
+     }
+ 
+     private Node getProvideStringNode() {

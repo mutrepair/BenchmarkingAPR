@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to segmentsGroupSize is guarded using value 0L
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to segmentsGroupSize is guarded using local millisecond
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to segmentsGroupSize is guarded using field serialVersionUID
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.segmentsGroupSize is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getStartTime()J
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.segmentsGroupSize is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getSegmentsExcludedSize()J
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.segmentsGroupSize is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getSegmentsGroupSize()J
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.segmentsGroupSize is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getSegmentsIncludedSize()J
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.segmentsGroupSize is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getSegmentSize()J
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to segmentsGroupSize with an access to segmentSize
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to segmentsGroupSize with an access to startTime
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to segmentsGroupSize with an access to segmentsIncludedSize
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to segmentsGroupSize with an access to segmentsExcludedSize
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field segmentsGroupSize is replaced by access to local millisecond
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field segmentsGroupSize is replaced by access to local rawMilliseconds
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field segmentsGroupSize is replaced by access to local groupMilliseconds
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field baseTimeline
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 107
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.getBaseTimeline()
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 107
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to segmentsGroupSize is guarded returning default value 0L
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to segmentsGroupSize is guarded returning local millisecond
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to segmentsGroupSize is guarded returning field serialVersionUID
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 108
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long subtraction with addition
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 615
+	Block: 36
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

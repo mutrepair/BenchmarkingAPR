@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.mockito.internal.util.ArrayUtils::concat([Ljava/lang/Class;Ljava/lang/Class;)[Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/util/MockUtil.java
+	Line Number: 47
+	Block: 3
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to concat([Ljava/lang/Class;Ljava/lang/Class;)[Ljava/lang/Class; is guarded returning default value null
+	File Name: org/mockito/internal/util/MockUtil.java
+	Line Number: 47
+	Block: 3
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/mockito/internal/util/ArrayUtils::concat with argument
+	File Name: org/mockito/internal/util/MockUtil.java
+	Line Number: 47
+	Block: 3
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/mockito/internal/util/ArrayUtils::<init>
+	File Name: org/mockito/internal/util/MockUtil.java
+	Line Number: 47
+	Block: 3
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/mockito/internal/util/ArrayUtils::concat
+	File Name: org/mockito/internal/util/MockUtil.java
+	Line Number: 47
+	Block: 3
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

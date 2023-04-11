@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/2092/com/fasterxml/jackson/dataformat/xml/util/StaxUtil.java	2022-10-31 19:47:49.803767334 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/util/StaxUtil.java	2022-12-26 15:13:53.109638382 -0600
+@@ -34,7 +34,7 @@
+         StringBuilder sb;
+         int changes = 0;
+         // First things first: remove array types' trailing[]...
+-        if (true) {
++        if (name.endsWith("[]")) {
+             do {
+                 name = name.substring(0, name.length() - 2);
+                 ++changes;

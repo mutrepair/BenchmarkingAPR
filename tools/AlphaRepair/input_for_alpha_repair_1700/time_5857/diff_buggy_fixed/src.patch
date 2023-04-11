@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/5857/org/joda/time/Months.java	2022-10-31 19:48:08.923697020 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Months.java	2022-12-26 15:13:57.197682550 -0600
+@@ -376,7 +376,7 @@
+      */
+     public boolean isLessThan(Months other) {
+         if (other == null) {
+-            return getValue() < -1;
++            return getValue() < 0;
+         }
+         return getValue() < other.getValue();
+     }

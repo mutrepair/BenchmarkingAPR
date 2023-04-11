@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/762/com/google/gson/DisjunctionExclusionStrategy.java	2022-10-31 19:47:43.855788967 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/DisjunctionExclusionStrategy.java	2022-12-26 15:13:51.389619797 -0600
+@@ -43,7 +43,7 @@
+ 
+   public boolean shouldSkipClass(Class<?> clazz) {
+     for (ExclusionStrategy strategy : strategies) {
+-      if (false) {
++      if (strategy.shouldSkipClass(clazz)) {
+         return true;
+       }
+     }

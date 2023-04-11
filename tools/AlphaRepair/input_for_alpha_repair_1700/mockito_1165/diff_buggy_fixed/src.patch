@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1165/org/mockito/internal/matchers/Equality.java	2022-10-31 19:48:05.415710008 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/Equality.java	2022-12-26 15:13:56.653676672 -0600
+@@ -32,7 +32,7 @@
+         for (int i = 0; i < Array.getLength(o1); i++) {
+             if (!areEqual(Array.get(o1, i), Array.get(o2, i))) return false;
+         }
+-        return false;
++        return true;
+     }
+ 
+     static boolean isArray(Object o) {

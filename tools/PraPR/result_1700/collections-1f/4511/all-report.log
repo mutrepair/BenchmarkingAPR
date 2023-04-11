@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to nextCalled is guarded using value false
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to nextCalled is guarded using field beforeFirst
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.iterators.SingletonListIterator.nextCalled is replaced by the call to org.apache.commons.collections4.iterators.SingletonListIterator::hasNext()Z
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.collections4.iterators.SingletonListIterator.nextCalled is replaced by the call to org.apache.commons.collections4.iterators.SingletonListIterator::hasPrevious()Z
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to nextCalled with an access to beforeFirst
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to nextCalled with an access to removed
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to nextCalled is guarded returning enclosing method
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/iterators/SingletonListIterator.java
+	Line Number: 158
+	Block: 28
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

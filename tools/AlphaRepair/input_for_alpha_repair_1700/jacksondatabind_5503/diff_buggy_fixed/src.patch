@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/5503/com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java	2022-10-31 19:47:46.743778478 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java	2022-12-26 15:13:52.497631769 -0600
+@@ -47,7 +47,7 @@
+     {
+         _additionalSerializers = (allAdditionalSerializers == null) ?
+                 NO_SERIALIZERS : allAdditionalSerializers;
+-        _additionalKeySerializers = (false) ?
++        _additionalKeySerializers = (allAdditionalKeySerializers == null) ?
+                 NO_SERIALIZERS : allAdditionalKeySerializers;
+         _modifiers = (modifiers == null) ? NO_MODIFIERS : modifiers;
+     }

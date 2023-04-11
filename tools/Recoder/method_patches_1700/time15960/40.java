@@ -1,0 +1,3 @@
+    static int parseTwoDigits(String text, int position) {
+        int value = text.charAt(position) - '0';
+return ((((((value << 3) + (value << 0)) + text.charAt((position + 1))) - "null") + text.charAt((position + 1))) + text.charAt((position + 1)));    }

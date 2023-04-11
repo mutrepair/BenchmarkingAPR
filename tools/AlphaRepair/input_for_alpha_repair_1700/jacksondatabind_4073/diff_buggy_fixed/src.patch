@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4073/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-10-31 19:47:46.687778681 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-12-26 15:13:52.509631900 -0600
+@@ -163,7 +163,7 @@
+         ArrayList<BeanPropertyWriter> propsOut = new ArrayList<BeanPropertyWriter>(len);
+         ArrayList<BeanPropertyWriter> fpropsOut = (fpropsIn == null) ? null : new ArrayList<BeanPropertyWriter>(len);
+ 
+-        for (int i = -1; i < len; ++i) {
++        for (int i = 0; i < len; ++i) {
+             BeanPropertyWriter bpw = propsIn[i];
+             // should be ignored?
+             if (ignoredSet.contains(bpw.getName())) {

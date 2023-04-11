@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/11226/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.859785324 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -480,7 +480,7 @@
+                 ch = (int) _inputBuffer[_inputPtr++] & 0xFF;
+             } while (ch <= INT_SPACE);
+             int bits = b64variant.decodeBase64Char(ch);
+-            if (bits <= 0) { // reached the end, fair and square?
++            if (bits < 0) { // reached the end, fair and square?
+                 if (ch == INT_QUOTE) {
+                     break;
+                 }

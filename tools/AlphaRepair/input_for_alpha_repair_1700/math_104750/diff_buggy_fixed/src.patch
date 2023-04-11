@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/104750/org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java	2022-10-31 19:48:00.091729645 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java	2022-12-26 15:13:55.685666215 -0600
+@@ -862,7 +862,7 @@
+         if (this.hasIntercept) {
+             xrow = new double[row_data.length + 1];
+             xrow[0] = 1.0;
+-            System.arraycopy(row_data, -1, xrow, 1, row_data.length);
++            System.arraycopy(row_data, 0, xrow, 1, row_data.length);
+         } else {
+             xrow = row_data;
+         }

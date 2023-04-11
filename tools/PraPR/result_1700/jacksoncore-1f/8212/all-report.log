@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1096
+	Block: 268
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 57 with 58
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1096
+	Block: 268
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1096
+	Block: 268
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1096
+	Block: 268
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1096
+	Block: 268
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14807/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-10-31 19:47:46.603778987 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-12-26 15:13:52.513631942 -0600
+@@ -381,7 +381,7 @@
+             c = str.charAt(len-3);
+             if (c == '+' || c == '-') return true;
+         }
+-        return true;
++        return false;
+     }
+ 
+     private final DateFormat _cloneFormat(DateFormat df) {

@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 6
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local active0 is replaced by local old0 to be used
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 103
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local active0 is replaced by local old1 to be used
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 103
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local active0 is replaced by local active1 to be used
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 103
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2199023255552 with 2199023255553
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 104
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 106
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 105
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 108
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 108
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 943
+	Block: 434
+	First Index: 108
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------

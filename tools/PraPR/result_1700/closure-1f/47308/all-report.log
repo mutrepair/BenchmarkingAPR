@@ -1,0 +1,377 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 34
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to sourceCursor is guarded using value 0
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to sourceEnd is guarded using value 0
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to sourceCursor is guarded using field EOF_CHAR
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to sourceEnd is guarded using field EOF_CHAR
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceCursor is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getLineno()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceEnd is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getLineno()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceCursor is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getCharno()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceEnd is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getCharno()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceCursor is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::peekChar()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceEnd is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::peekChar()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceCursor is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getChar()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceEnd is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getChar()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceCursor is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getCharIgnoreLineEnd()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.google.javascript.jscomp.parsing.JsDocTokenStream.sourceEnd is replaced by the call to com.google.javascript.jscomp.parsing.JsDocTokenStream::getCharIgnoreLineEnd()I
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to sourceCursor with an access to stringBufferTop
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to sourceEnd with an access to stringBufferTop
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to sourceCursor with an access to ungetCursor
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to sourceEnd with an access to ungetCursor
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to sourceCursor with an access to lineStart
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to sourceEnd with an access to lineStart
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to sourceCursor with an access to lineEndChar
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to sourceEnd with an access to lineEndChar
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to sourceCursor with an access to lineno
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to sourceEnd with an access to lineno
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to sourceCursor with an access to charno
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to sourceEnd with an access to charno
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to sourceCursor is guarded returning default value 0
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to sourceEnd is guarded returning default value 0
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to sourceCursor is guarded returning field EOF_CHAR
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to sourceEnd is guarded returning field EOF_CHAR
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/google/javascript/jscomp/parsing/JsDocTokenStream.java
+	Line Number: 348
+	Block: 94
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to floatToRawIntBits with a call to hashCode
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to floatToRawIntBits with a call to floatToIntBits
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2147483647 with -2147483648
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 3
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 6
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Float::floatToRawIntBits
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Float::intBitsToFloat
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 7
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced float return with 0.0f for org/apache/commons/math3/util/FastMath::abs
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 8
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of float value with -(x + 1) for org/apache/commons/math3/util/FastMath::abs
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3015
+	Block: 492
+	First Index: 8
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

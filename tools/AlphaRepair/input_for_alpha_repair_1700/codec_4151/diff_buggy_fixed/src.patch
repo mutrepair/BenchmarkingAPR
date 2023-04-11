@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4151/org/apache/commons/codec/net/QCodec.java	2022-10-31 19:47:39.159805964 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/QCodec.java	2022-12-26 15:13:39.225488336 -0600
+@@ -136,7 +136,7 @@
+         }
+         byte[] data = QuotedPrintableCodec.encodeQuotedPrintable(PRINTABLE_CHARS, bytes);
+         if (this.encodeBlanks) {
+-            for (int i = -1; i < data.length; i++) {
++            for (int i = 0; i < data.length; i++) {
+                 if (data[i] == BLANK) {
+                     data[i] = UNDERSCORE;
+                 }

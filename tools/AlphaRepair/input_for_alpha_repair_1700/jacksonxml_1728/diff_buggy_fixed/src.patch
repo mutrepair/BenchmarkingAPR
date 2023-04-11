@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1728/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-10-31 19:47:49.715767655 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-12-26 15:13:53.109638382 -0600
+@@ -194,7 +194,7 @@
+                 xgen.setNextName(xmlNames[i]);
+                 BeanPropertyWriter prop = props[i];
+                 if (prop != null) { // can have nulls in filtered list
+-                    if ((true) && cdata.get(i)) {
++                    if ((cdata != null) && cdata.get(i)) {
+                         xgen.setNextIsCData(true);
+                         prop.serializeAsField(bean, xgen, provider);
+                         xgen.setNextIsCData(false);

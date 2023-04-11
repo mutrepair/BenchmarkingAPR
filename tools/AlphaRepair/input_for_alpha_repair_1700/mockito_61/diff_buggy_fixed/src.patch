@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/61/org/mockito/internal/progress/HandyReturnValues.java	2022-10-31 19:48:05.715708899 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/progress/HandyReturnValues.java	2022-12-26 15:13:56.653676672 -0600
+@@ -37,7 +37,7 @@
+     }
+ 
+     public <T> T returnFor(Class<T> clazz) {
+-        if (true) {
++        if (isPrimitiveWrapper(clazz)) {
+             return primitiveWrapperOf(clazz);
+         } 
+         return primitiveValueOrNullFor(clazz);

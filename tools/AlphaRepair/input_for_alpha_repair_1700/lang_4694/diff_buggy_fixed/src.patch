@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/4694/org/apache/commons/lang3/CharUtils.java	2022-10-31 19:47:57.323739819 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/CharUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -533,7 +533,7 @@
+      * @return true if between 48 and 57 or 65 and 90 or 97 and 122 inclusive
+      */
+     public static boolean isAsciiAlphanumeric(final char ch) {
+-        return (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && true) || (ch >= '0' && ch <= '9');
++        return (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9');
+     }
+     
+ }

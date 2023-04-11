@@ -1,0 +1,322 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 29
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append([CII)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append([CII)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append([CII)Ljava/lang/StringBuilder; with a call to append([C)Ljava/lang/StringBuilder;
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append([CII)Ljava/lang/StringBuilder; with a call to append(D)Ljava/lang/StringBuilder;
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append([CII)Ljava/lang/StringBuilder; with a call to append(Z)Ljava/lang/StringBuilder;
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append([CII)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to buffer is guarded using value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to pos is guarded using value 0
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to pos is guarded using local start
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to buffer is guarded using field NON_EXECUTE_PREFIX
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to pos is guarded using field pos
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.stream.JsonReader.pos is replaced by the call to com.google.gson.stream.JsonReader::nextInt()I
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.gson.stream.JsonReader.pos is replaced by the call to com.google.gson.stream.JsonReader::nextNonWhitespace()I
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to pos with an access to limit
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field pos is replaced by access to local start
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local start is replaced by access to field pos
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 107
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local start is replaced by access to field limit
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 107
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local builder is replaced a call builder.reverse()
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append([CII)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to buffer is guarded returning default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to pos is guarded returning default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to buffer is guarded returning field name
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to pos is guarded returning field name
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 109
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append([CII)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to append([CII)Ljava/lang/StringBuilder; is guarded returning field name
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to append([CII)Ljava/lang/StringBuilder; is guarded returning field value
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 111
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::append
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::append with receiver
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1012
+	Block: 200
+	First Index: 112
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

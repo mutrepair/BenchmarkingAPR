@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setMultiline(Z)V is guarded returning enclosing method
+	File Name: org/mockito/internal/reporting/SmartPrinter.java
+	Line Number: 20
+	Block: 0
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.mockito.internal.reporting.PrintSettings::setMultiline(Z)V is guarded
+	File Name: org/mockito/internal/reporting/SmartPrinter.java
+	Line Number: 20
+	Block: 0
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/reporting/SmartPrinter.java
+	Line Number: 20
+	Block: 0
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/mockito/internal/reporting/PrintSettings::setMultiline
+	File Name: org/mockito/internal/reporting/SmartPrinter.java
+	Line Number: 20
+	Block: 0
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

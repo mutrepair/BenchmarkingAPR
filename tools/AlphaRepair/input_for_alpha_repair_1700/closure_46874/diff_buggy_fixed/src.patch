@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/46874/com/google/javascript/jscomp/parsing/JsDocInfoParser.java	2022-10-31 19:47:37.891810541 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java	2022-10-29 06:55:08.070850577 -0500
+@@ -1867,7 +1867,7 @@
+             next();
+             skipEOLs();
+             Node contextType = wrapNode(
+-                true ? Token.THIS : Token.NEW,
++                isThis ? Token.THIS : Token.NEW,
+                 parseTypeName(next()));
+             if (contextType == null) {
+               return null;

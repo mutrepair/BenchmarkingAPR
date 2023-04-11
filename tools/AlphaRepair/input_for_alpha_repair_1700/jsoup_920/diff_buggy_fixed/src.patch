@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/920/org/jsoup/select/Elements.java	2022-10-31 19:47:50.591764459 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Elements.java	2022-12-26 15:13:53.649644217 -0600
+@@ -126,7 +126,7 @@
+     public boolean hasClass(String className) {
+         for (Element element : contents) {
+             if (element.hasClass(className))
+-                return false;
++                return true;
+         }
+         return false;
+     }

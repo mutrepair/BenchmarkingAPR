@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 11:43:26 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 32
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

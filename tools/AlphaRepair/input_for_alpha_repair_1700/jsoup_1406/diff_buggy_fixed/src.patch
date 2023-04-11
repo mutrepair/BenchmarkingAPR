@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1406/org/jsoup/select/Collector.java	2022-10-31 19:47:50.415765101 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Collector.java	2022-12-26 15:13:53.649644217 -0600
+@@ -25,7 +25,7 @@
+     }
+ 
+     private static void accumulateMatches(Evaluator eval, List<Element> elements, Element element) {
+-        if (false)
++        if (eval.matches(element))
+             elements.add(element);
+         for (Element child: element.children())
+             accumulateMatches(eval, elements, child);

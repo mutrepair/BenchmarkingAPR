@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/48250/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-31 19:47:37.911810469 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-29 13:23:58.569183671 -0500
+@@ -163,7 +163,7 @@
+ 
+     // The output array.  The length is m+n in the worst case when all the
+     // ranges in a are disjoint from the ranges in b.
+-    int[] out = new int[m - n];
++    int[] out = new int[m + n];
+ 
+     // Indexes into the various arrays
+     int i = 0, j = 0, k = 0;

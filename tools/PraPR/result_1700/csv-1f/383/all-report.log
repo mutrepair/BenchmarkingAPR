@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to lastChar with an access to lineCounter
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 24
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local line is replaced a call line.toLowerCase()
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 18
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value null
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local line
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(I)C is guarded returning local line
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 21
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 20
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 23
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable lastChar
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 127
+	Block: 22
+	First Index: 24
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

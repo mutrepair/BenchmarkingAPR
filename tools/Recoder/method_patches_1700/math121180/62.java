@@ -1,0 +1,16 @@
+    public static boolean equals(double x, double y, int maxUlps) {
+        long xInt = Double.doubleToLongBits(x);
+        long yInt = Double.doubleToLongBits(y);
+
+        // Make lexicographically ordered as a two's-complement integer.
+        if (xInt < 0) {
+            xInt = SGN_MASK - xInt;
+        }
+if(((yInt <= 0) && (yInt < 0))){
+            yInt = SGN_MASK - yInt;
+        }
+
+        final boolean isEqual = FastMath.abs(xInt - yInt) <= maxUlps;
+
+        return isEqual && !Double.isNaN(x) && !Double.isNaN(y);
+    }

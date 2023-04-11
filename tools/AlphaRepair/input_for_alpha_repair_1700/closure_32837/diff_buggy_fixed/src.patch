@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/32837/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-31 19:47:37.783810931 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-29 11:29:13.750746500 -0500
+@@ -839,7 +839,7 @@
+    */
+   boolean isMessageName(String identifier, boolean isNewStyleMessage) {
+     return identifier.startsWith(MSG_PREFIX) &&
+-        (style == JsMessage.Style.CLOSURE ||
++        (style == JsMessage.Style.CLOSURE || isNewStyleMessage ||
+          !identifier.endsWith(DESC_SUFFIX));
+   }
+ 

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/33560/org/apache/commons/math3/geometry/partitioning/BSPTree.java	2022-10-31 19:48:00.287728924 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/partitioning/BSPTree.java	2022-12-26 15:13:55.661665956 -0600
+@@ -401,7 +401,7 @@
+             }
+ 
+             // merging phase
+-            plus.merge(merged.plus, leafMerger, merged, false);
++            plus.merge(merged.plus, leafMerger, merged, true);
+             minus.merge(merged.minus, leafMerger, merged, false);
+             merged.condense();
+             if (merged.cut != null) {

@@ -1,0 +1,498 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 45
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.cli.HelpFormatter.createPadding(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.cli.HelpFormatter.createPadding(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/String;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append([CII)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append([C)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_3
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: NON_VIABLE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local width to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 44
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local max is replaced by local width to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 44
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local x is replaced by local leftPad to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 44
+	Status: RUN_ERROR
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local max is replaced by local leftPad to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 44
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local x is replaced by local descPad to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 44
+	Status: RUN_ERROR
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local max is replaced by local descPad to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: 2
+	Total Rank: 44
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local x is replaced by local max to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 44
+	Status: RUN_ERROR
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local max is replaced by local x to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 44
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 36
+	Status: RUN_ERROR
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local max is replaced by access to field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 36
+	Status: RUN_ERROR
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local max is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 36
+	Status: RUN_ERROR
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local max is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: 1
+	Total Rank: 36
+	Status: SURVIVED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local x is replaced by access to field defaultWidth
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 36
+	Status: RUN_ERROR
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local max is replaced by access to field defaultWidth
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local x is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 207
+	Rank: null
+	Total Rank: 36
+	Status: RUN_ERROR
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local max is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to capacity
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::length()I is guarded using default value 0
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.HelpFormatter::createPadding(I)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to createPadding(I)Ljava/lang/String; is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to createPadding(I)Ljava/lang/String; is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to length()I is guarded returning local optBuf
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: NON_VIABLE
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to createPadding(I)Ljava/lang/String; is guarded returning local optBuf
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: NON_VIABLE
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded returning local optBuf
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: NON_VIABLE
+------------------------------------------------
+41.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 212
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+------------------------------------------------
+42.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::length
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 211
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/HelpFormatter::createPadding
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 213
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::append
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuffer::append with receiver
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 214
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,1 @@
+public static double METHOD_1 ( final double [ ] VAR_1 , final double [ ] VAR_2 ) throws TYPE_1 , TYPE_2 { int n = VAR_1 . length ; if ( n != VAR_2 . length ) { throw new TYPE_1 ( n , VAR_2 . length ) ; } if ( n <= 0 ) { throw new TYPE_2 ( VAR_3 ) ; } double result = 0 ; for ( int i = 1 ; i < n ; i ++ ) { result += VAR_1 [ i ] - VAR_2 [ i ] ; } return result ; }

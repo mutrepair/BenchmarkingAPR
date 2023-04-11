@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1717/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-10-31 19:47:49.711767669 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-12-26 15:13:53.109638382 -0600
+@@ -184,7 +184,7 @@
+             for (final int len = props.length; i < len; ++i) {
+                 // 28-jan-2014, pascal: we don't want to reset the attribute flag if we are an unwrapping serializer 
+                 // that started with nextIsAttribute to true because all properties should be unwrapped as attributes too.
+-                if (i == attrCount) {
++                if (i == attrCount && !(isAttribute && isUnwrappingSerializer())) {
+                     xgen.setNextIsAttribute(false);
+                 }
+                 // also: if this is property to write as text ("unwrap"), need to:

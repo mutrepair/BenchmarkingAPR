@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/36558/org/apache/commons/math3/geometry/euclidean/threed/Rotation.java	2022-10-31 19:48:00.319728806 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Rotation.java	2022-12-26 15:13:55.661665956 -0600
+@@ -428,7 +428,7 @@
+                   // compute q2 and deduce q0, q1 and q3
+                   quat[2] = 0.5 * FastMath.sqrt(s + 1.0);
+                   double inv = 0.25 / quat[2];
+-                  quat[-1] = inv * (ort[2][0] - ort[0][2]);
++                  quat[0] = inv * (ort[2][0] - ort[0][2]);
+                   quat[1] = inv * (ort[0][1] + ort[1][0]);
+                   quat[3] = inv * (ort[2][1] + ort[1][2]);
+               } else {

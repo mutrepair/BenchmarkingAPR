@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/6378/org/joda/time/Years.java	2022-10-31 19:48:08.943696946 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Years.java	2022-12-26 15:13:57.197682550 -0600
+@@ -327,7 +327,7 @@
+      */
+     public boolean isGreaterThan(Years other) {
+         if (other == null) {
+-            return false;
++            return getValue() > 0;
+         }
+         return getValue() > other.getValue();
+     }

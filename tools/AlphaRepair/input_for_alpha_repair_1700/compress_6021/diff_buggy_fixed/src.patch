@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/6021/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.475797590 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -690,7 +690,7 @@
+                     final int thech = inShadow.read();
+                     if (thech >= 0) {
+                         bsBuffShadow = (bsBuffShadow << 8) | thech;
+-                        bsLiveShadow += 0;
++                        bsLiveShadow += 8;
+                         continue;
+                     } else {
+                         throw new IOException("unexpected end of stream");

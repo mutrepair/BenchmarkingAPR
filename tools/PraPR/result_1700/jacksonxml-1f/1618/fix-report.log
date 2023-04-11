@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 02:52:59 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to booleanValue()Z is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 123
+	Block: 27
+	First Index: 61
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to booleanValue()Z is guarded returning local textProp
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 123
+	Block: 27
+	First Index: 61
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Boolean::booleanValue()Z is guarded using default value false
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 123
+	Block: 27
+	First Index: 61
+	Rank: 3
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------

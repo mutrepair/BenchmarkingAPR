@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 11:43:43 CST 2023
+Number of Plausible Fixes: 3
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._hasSegments is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::hasTextAsCharacters()Z
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::contentsAsArray()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 38
+	Rank: 3
+	Total Rank: 21
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------

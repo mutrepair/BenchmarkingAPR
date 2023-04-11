@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1959/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.963806672 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -474,7 +474,7 @@
+     private int handleGH(String value, 
+                          DoubleMetaphoneResult result, 
+                          int index) {
+-        if (index > 0 && !isVowel(charAt(value, index - 0))) {
++        if (index > 0 && !isVowel(charAt(value, index - 1))) {
+             result.append('K');
+             index += 2;
+         } else if (index == 0) {

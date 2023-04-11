@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/157/org/apache/commons/lang3/AnnotationUtils.java	2022-10-31 19:47:57.091740670 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/AnnotationUtils.java	2022-12-26 15:13:54.757656188 -0600
+@@ -363,7 +363,7 @@
+         if (componentType.equals(Double.TYPE)) {
+             return Arrays.hashCode((double[]) o);
+         }
+-        if (true) {
++        if (componentType.equals(Boolean.TYPE)) {
+             return Arrays.hashCode((boolean[]) o);
+         }
+         return Arrays.hashCode((Object[]) o);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/17604/org/apache/commons/lang3/math/NumberUtils.java	2022-10-31 19:47:57.123740553 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/NumberUtils.java	2022-12-26 15:13:54.773656362 -0600
+@@ -248,7 +248,7 @@
+      * @since 2.1
+      */
+     public static double toDouble(final String str) {
+-        return toDouble(str, 1.0);
++        return toDouble(str, 0.0d);
+     }
+ 
+     /**

@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.ReadablePartial::size()I is guarded using default value 0
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to size()I is guarded returning local values
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 73
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 64
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 73
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/ReadablePartial::size
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 73
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 29
+	First Index: 73
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 218
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: 11
+	Status: TIMED_OUT
+------------------------------------------------

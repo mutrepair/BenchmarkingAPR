@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/cli_25/src/java/org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:10.191866393 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/cli/25/patch/./org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:10.159865992 -0600
+@@ -822,7 +822,7 @@
+         if (nextLineTabStop >= width)
+         {
+             // stops infinite loop happening
+-            nextLineTabStop = width - 1;
++            nextLineTabStop = 1;
+         }
+ 
+         // all following lines must be padded with nextLineTabStop space 

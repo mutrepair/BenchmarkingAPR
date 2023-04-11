@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/7987/org/jfree/chart/LegendItem.java	2022-10-31 19:47:29.775839710 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/LegendItem.java	2022-10-29 16:41:07.422717468 -0500
+@@ -1066,7 +1066,7 @@
+         if (this.shapeVisible != that.shapeVisible) {
+             return false;
+         }
+-        if (!false) {
++        if (!ShapeUtilities.equal(this.shape, that.shape)) {
+             return false;
+         }
+         if (this.shapeFilled != that.shapeFilled) {

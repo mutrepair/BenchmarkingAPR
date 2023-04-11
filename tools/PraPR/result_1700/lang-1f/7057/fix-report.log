@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 03:34:26 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 1292
+	Block: 349
+	First Index: 13
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 1292
+	Block: 349
+	First Index: 16
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/Conversion.java
+	Line Number: 1292
+	Block: 349
+	First Index: 20
+	Rank: 3
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------

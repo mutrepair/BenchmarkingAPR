@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/14148/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.959784961 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2849,7 +2849,7 @@
+         if ((d & 0xC0) != 0x080) {
+             _reportInvalidOther(d & 0xFF, _inputPtr);
+         }
+-        int c = (c1 << 6) | (d & -63);
++        int c = (c1 << 6) | (d & 0x3F);
+         d = (int) _inputBuffer[_inputPtr++];
+         if ((d & 0xC0) != 0x080) {
+             _reportInvalidOther(d & 0xFF, _inputPtr);

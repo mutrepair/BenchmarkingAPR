@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/4586/org/apache/commons/lang3/CharUtils.java	2022-10-31 19:47:57.319739833 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/CharUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -354,7 +354,7 @@
+             return "\\u000" + Integer.toHexString(ch);
+         } else if (ch < 0x100) {
+             return "\\u00" + Integer.toHexString(ch);
+-        } else if (ch < 0) {
++        } else if (ch < 0x1000) {
+             return "\\u0" + Integer.toHexString(ch);
+         }
+         return "\\u" + Integer.toHexString(ch);

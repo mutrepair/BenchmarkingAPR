@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/19225/org/joda/time/tz/DateTimeZoneBuilder.java	2023-04-04 14:33:26.377961680 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java	2023-04-04 13:31:54.473646239 -0500
+@@ -1552,7 +1552,7 @@
+             if (i >= 0) {
+                 return iStandardOffsets[i];
+             }
+-            i = -i;
++            i = ~i;
+             if (i < transitions.length) {
+                 if (i > 0) {
+                     return iStandardOffsets[i - 1];

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_37/src/main/java/com/fasterxml/jackson/databind/type/SimpleType.java	2023-01-16 15:29:42.092264763 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/37/patch/./com/fasterxml/jackson/databind/type/SimpleType.java	2023-01-16 15:29:42.056264313 -0600
+@@ -132,7 +132,7 @@
+         }
+         */
+         // 15-Jan-2015, tatu: Not correct; should really re-resolve...
+-        return new SimpleType(subclass, _bindings, _superClass, _superInterfaces,
++        return new SimpleType(subclass, _bindings, this, _superInterfaces,
+                 _valueHandler, _typeHandler, _asStatic);
+     }
+     

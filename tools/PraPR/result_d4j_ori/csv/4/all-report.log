@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Ljava/util/Map;)V with a call to <init>(IFZ)V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Ljava/util/Map;)V with a call to <init>(I)V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Ljava/util/Map;)V with a call to <init>(IF)V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Ljava/util/Map;)V with a call to <init>()V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to headerMap is guarded using value null
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to headerMap is guarded using field headerMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.csv.CSVParser.headerMap is replaced by the call to org.apache.commons.csv.CSVParser::getHeaderMap()Ljava/util/Map;
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.csv.CSVParser.headerMap is replaced by the call to org.apache.commons.csv.CSVParser::initializeHeader()Ljava/util/Map;
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to headerMap is guarded returning default value null
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to headerMap is guarded returning field headerMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/util/LinkedHashMap::<init>
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/csv/CSVParser::getHeaderMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/csv/CSVParser::getHeaderMap to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 288
+	Block: 14
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

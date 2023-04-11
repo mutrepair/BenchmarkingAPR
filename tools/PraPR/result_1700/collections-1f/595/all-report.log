@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to toList(Ljava/util/Iterator;I)Ljava/util/List; with a call to toList(Ljava/util/Iterator;)Ljava/util/List;
+	File Name: org/apache/commons/collections4/IteratorUtils.java
+	Line Number: 1110
+	Block: 98
+	First Index: 29
+	Rank: 2
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/IteratorUtils.java
+	Line Number: 1110
+	Block: 98
+	First Index: 28
+	Rank: 2
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/IteratorUtils::toList
+	File Name: org/apache/commons/collections4/IteratorUtils.java
+	Line Number: 1110
+	Block: 98
+	First Index: 29
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

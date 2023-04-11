@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/18291/org/apache/commons/lang3/math/NumberUtils.java	2022-10-31 19:47:57.155740435 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/NumberUtils.java	2022-12-26 15:13:54.773656362 -0600
+@@ -1350,7 +1350,7 @@
+             }
+             // checking hex (it can't be anything else)
+             for (; i < chars.length; i++) {
+-                if ((chars[i] < '0' || false)
++                if ((chars[i] < '0' || chars[i] > '9')
+                     && (chars[i] < 'a' || chars[i] > 'f')
+                     && (chars[i] < 'A' || chars[i] > 'F')) {
+                     return false;

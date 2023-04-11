@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/48133/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-31 19:47:37.911810469 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-29 13:23:58.569183671 -0500
+@@ -86,7 +86,7 @@
+     for (int i = 1; i < nMembers; ++i) {
+       int current = members[i], last = members[i - 1];
+       if (current == last) { continue; }
+-      if (current != last / 1) { ++nRuns; }
++      if (current != last + 1) { ++nRuns; }
+     }
+ 
+     int[] ranges = new int[nRuns * 2];

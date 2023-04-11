@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jxpath_10/src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java	2023-01-16 15:29:59.964487946 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jxpath/10/patch/./org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java	2023-01-16 15:29:59.912487297 -0600
+@@ -39,7 +39,7 @@
+     }
+ 
+     public final Object computeValue(EvalContext context) {
+-        return compute(args[0].computeValue(context), args[1].computeValue(context)) 
++        return compute(args[0].compute(context), args[1].compute(context))
+                 ? Boolean.TRUE : Boolean.FALSE;
+     }
+ 

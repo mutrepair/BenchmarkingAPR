@@ -1,0 +1,46 @@
+    public void tan(final double[] operand, final int operandOffset,
+                    final double[] result, final int resultOffset) {
+
+        // create the function value and derivatives
+        final double[] function = new double[1 + order];
+        final double t = FastMath.tan(operand[operandOffset]);
+        function[0] = t;
+
+        if (order > 0) {
+
+            // the nth order derivative of tan has the form:
+            // dn(tan(x)/dxn = P_n(tan(x))
+            // where P_n(t) is a degree n+1 polynomial with same parity as n+1
+            // P_0(t) = t, P_1(t) = 1 + t^2, P_2(t) = 2 t (1 + t^2) ...
+            // the general recurrence relation for P_n is:
+            // P_n(x) = (1+t^2) P_(n-1)'(t)
+            // as per polynomial parity, we can store coefficients of both P_(n-1) and P_n in the same array
+            final double[] p = new double[order + 2];
+            p[1] = 1;
+            final double t2 = t * t;
+            for (int n = 1; n <= order; ++n) {
+
+                // update and evaluate polynomial P_n(t)
+                double v = 0;
+                p[n + 1] = n * p[n];
+                for (int k = n + 1; k >= 0; k -= 2) {
+                    v = v * t2 + p[k];
+                    if (k > 2) {
+                        p[k - 2] = (k - 1) * p[k - 1] + (k - 3) * p[k - 3];
+compose(operand, operandOffset, function, result, resultOffset);
+                        p[0] = p[1];
+                    }
+                }
+                if ((n & 0x1) == 0) {
+                    v *= t;
+                }
+
+                function[n] = v;
+
+            }
+        }
+
+        // apply function composition
+        compose(operand, operandOffset, function, result, resultOffset);
+
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1097/com/fasterxml/jackson/dataformat/xml/deser/XmlReadContext.java	2022-10-31 19:47:49.567768194 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/XmlReadContext.java	2022-12-26 15:13:53.109638382 -0600
+@@ -97,7 +97,7 @@
+     public final XmlReadContext createChildObjectContext(int lineNr, int colNr)
+     {
+         XmlReadContext ctxt = _child;
+-        if (false) {
++        if (ctxt == null) {
+             _child = ctxt = new XmlReadContext(this, TYPE_OBJECT, lineNr, colNr);
+             return ctxt;
+         }

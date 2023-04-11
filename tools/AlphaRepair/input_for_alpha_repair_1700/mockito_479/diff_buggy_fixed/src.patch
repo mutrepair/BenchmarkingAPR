@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/479/org/mockito/internal/util/ObjectMethodsGuru.java	2022-10-31 19:48:05.683709017 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/ObjectMethodsGuru.java	2022-12-26 15:13:56.657676716 -0600
+@@ -24,7 +24,7 @@
+     }
+ 
+     public boolean isEqualsMethod(Method method) {
+-        return method.getParameterTypes()[0] == Object.class;
++        return method.getName().equals("equals") && method.getParameterTypes().length == 1 && method.getParameterTypes()[0] == Object.class;
+     }
+ 
+     public boolean isHashCodeMethod(Method method) {

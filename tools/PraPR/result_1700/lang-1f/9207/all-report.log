@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field size
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.minimizeCapacity()
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 20
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to deleteImpl(III)V is guarded returning default value null
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 26
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to deleteImpl(III)V is guarded returning local this
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 26
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.lang3.text.StrBuilder::deleteImpl(III)V is guarded
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 26
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 23
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 24
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/text/StrBuilder::deleteImpl
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1723
+	Block: 280
+	First Index: 26
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

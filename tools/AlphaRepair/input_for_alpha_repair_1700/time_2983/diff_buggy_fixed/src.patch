@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/2983/org/joda/time/base/BasePeriod.java	2022-10-31 19:48:08.855697273 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/base/BasePeriod.java	2022-12-26 15:13:57.201682593 -0600
+@@ -580,7 +580,7 @@
+             int value = period.getValue(i);
+             if (value != 0) {
+                 int index = indexOf(type);
+-                if (index >= -1) {
++                if (index == -1) {
+                     throw new IllegalArgumentException(
+                         "Period does not support field '" + type.getName() + "'");
+                 } else {

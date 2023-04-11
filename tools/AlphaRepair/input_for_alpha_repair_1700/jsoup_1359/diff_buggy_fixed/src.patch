@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1359/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.391765189 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -220,7 +220,7 @@
+     public String consumeCssIdentifier() {
+         StringBuilder accum = new StringBuilder();
+         Character c = queue.peek();
+-        while (!queue.isEmpty() && (true)) {
++        while (!queue.isEmpty() && (Character.isLetterOrDigit(c) || c.equals('-') || c.equals('_'))) {
+             accum.append(queue.removeFirst());
+             c = queue.peek();
+         }

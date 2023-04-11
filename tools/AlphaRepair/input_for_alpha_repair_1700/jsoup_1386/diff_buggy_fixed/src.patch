@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1386/org/jsoup/safety/Cleaner.java	2022-10-31 19:47:50.407765130 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/safety/Cleaner.java	2022-12-26 15:13:53.649644217 -0600
+@@ -71,7 +71,7 @@
+      */
+     private int copySafeNodes(Element source, Element dest) {
+         List<Node> sourceChildren = source.childNodes();
+-        int numDiscarded = 1;
++        int numDiscarded = 0;
+ 
+         for (Node sourceChild : sourceChildren) {
+             if (sourceChild instanceof Element) {

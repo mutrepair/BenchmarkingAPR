@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to allResultsMatch with a call to anyResultsMatch
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 9
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to allResultsMatch with a call to evaluatesToLocalValue
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 9
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/google/javascript/jscomp/NodeUtil::mayBeString
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 10
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/google/javascript/jscomp/NodeUtil::mayBeString
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 10
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/NodeUtil::allResultsMatch
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 9
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 10
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

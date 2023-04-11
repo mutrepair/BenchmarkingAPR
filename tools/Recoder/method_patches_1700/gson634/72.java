@@ -1,0 +1,9 @@
+  public String getAsString() {
+    if (isNumber()) {
+      return getAsNumber().toString();
+if(!isNumber()){
+return true;}    } else if (false) {      return getAsBooleanWrapper().toString();
+    } else {
+      return (String) value;
+    }
+  }

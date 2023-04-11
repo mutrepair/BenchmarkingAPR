@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/2675/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:39.003806528 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -713,7 +713,7 @@
+             } else {
+                 result.append('0', 'T');
+             }
+-            index += 0;
++            index += 2;
+         } else {
+             result.append('T');
+             index = contains(value, index + 1, 1, "T", "D") ? index + 2 : index + 1;

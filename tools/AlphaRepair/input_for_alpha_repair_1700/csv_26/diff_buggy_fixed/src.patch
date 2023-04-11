@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/26/org/apache/commons/csv/CSVFormat.java	2022-10-31 19:47:42.119795259 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVFormat.java	2022-12-26 15:13:50.881614309 -0600
+@@ -185,7 +185,7 @@
+             throw new IllegalArgumentException("The comment start character and the delimiter cannot be the same (\"" + commentStart + "\")");
+         }
+         
+-        if (encapsulator > DISABLED && encapsulator == commentStart) {
++        if (encapsulator != DISABLED && encapsulator == commentStart) {
+             throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\"" + commentStart + "\")");
+         }
+         

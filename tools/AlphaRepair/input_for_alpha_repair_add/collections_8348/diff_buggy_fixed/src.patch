@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/collections-25f/mutants/8348/org/apache/commons/collections4/map/MultiKeyMap.java	2023-04-04 14:33:25.533953500 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java	2023-04-04 13:31:52.889627417 -0500
+@@ -513,7 +513,7 @@
+             h ^= key4.hashCode();
+         }
+         h += ~(h << 9);
+-        h ^=  h << 14;
++        h ^=  h >>> 14;
+         h +=  h << 4;
+         h ^=  h >>> 10;
+         return h;

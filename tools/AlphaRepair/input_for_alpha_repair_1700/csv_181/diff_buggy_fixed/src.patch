@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/181/org/apache/commons/csv/CSVLexer.java	2022-10-31 19:47:42.059795476 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVLexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -158,7 +158,7 @@
+             c = in.read();
+         }
+ 
+-        if (false) {
++        if (surroundingSpacesIgnored) {
+             trimTrailingSpaces(tkn.content);
+         }
+ 

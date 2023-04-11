@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/11591/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-10-31 19:47:39.655804172 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-12-26 15:13:49.805602682 -0600
+@@ -2099,7 +2099,7 @@
+                 size = 0;
+ 
+                 Map.Entry<K, V> entry = null;
+-                if (true) {
++                if (it.hasNext()) {
+                     entry = it.next();
+                     size = 1;
+                 }

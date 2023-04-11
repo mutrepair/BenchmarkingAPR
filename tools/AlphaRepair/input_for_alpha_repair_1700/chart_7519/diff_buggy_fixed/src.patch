@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/7519/org/jfree/chart/plot/PlotOrientation.java	2022-10-31 19:47:29.707839953 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/PlotOrientation.java	2022-10-29 16:41:07.430717426 -0500
+@@ -92,7 +92,7 @@
+      */
+     public boolean equals(Object obj) {
+         if (this == obj) {
+-            return false;
++            return true;
+         }
+         if (!(obj instanceof PlotOrientation)) {
+             return false;

@@ -1,0 +1,124 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 14:51:10 CST 2022
+Number of Plausible Fixes: 10
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local h is replaced by access to field DEFAULT_CAPACITY
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 8
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local h is replaced by access to field DEFAULT_THRESHOLD
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 8
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local h is replaced by access to field threshold
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 15
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local h is replaced by access to field MAXIMUM_CAPACITY
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 8
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local h is replaced by access to field size
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 9
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 9 with 10
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 10
+	Rank: 10
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 12
+	Rank: 10
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 11
+	Rank: 10
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 13
+	Rank: 10
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/collections4/map/AbstractHashedMap.java
+	Line Number: 396
+	Block: 66
+	First Index: 14
+	Rank: 10
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------

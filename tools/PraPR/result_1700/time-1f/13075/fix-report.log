@@ -1,0 +1,268 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 09:05:25 CST 2022
+Number of Plausible Fixes: 22
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local length to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local i to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local tokenLen to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local length is replaced by local tokenLen to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local i is replaced by local maxDigits to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local length is replaced by local maxDigits to be used
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field FULL
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field FULL
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field LONG
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local length is replaced by access to field LONG
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local i is replaced by access to field MEDIUM
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local length is replaced by access to field MEDIUM
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local i is replaced by access to field SHORT
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local length is replaced by access to field SHORT
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local i is replaced by access to field NONE
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 162
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local length is replaced by access to field NONE
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 165
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-16.class
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 166
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-17.class
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 163
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-18.class
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 164
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 166
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-20.class
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 166
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 473
+	Block: 28
+	First Index: 166
+	Rank: 22
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-22.class
+------------------------------------------------

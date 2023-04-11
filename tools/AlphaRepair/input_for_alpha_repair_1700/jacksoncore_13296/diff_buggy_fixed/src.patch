@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/13296/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.923785091 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2115,7 +2115,7 @@
+                 }
+                 final int max = Math.min(_inputEnd, (ptr + (outBuf.length - outPtr)));
+                 while (ptr < max) {
+-                    c = (int)inputBuffer[ptr++] | 255;
++                    c = (int) inputBuffer[ptr++] & 0xFF;
+                     if (codes[c] != 0) {
+                         _inputPtr = ptr;
+                         break ascii_loop;

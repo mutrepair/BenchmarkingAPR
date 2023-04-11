@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1312/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.359765306 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -104,7 +104,7 @@
+     public boolean matchChomp(String seq) {
+         if (matches(seq)) {
+             consume(seq);
+-            return false;
++            return true;
+         } else {
+             return false;
+         }

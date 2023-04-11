@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1760/com/google/gson/InnerClassExclusionStrategy.java	2022-10-31 19:47:43.687789576 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/InnerClassExclusionStrategy.java	2022-12-26 15:13:51.393619841 -0600
+@@ -38,6 +38,6 @@
+   }
+ 
+   private boolean isStatic(Class<?> clazz) {
+-    return (clazz.getModifiers() ^ Modifier.STATIC) != 0;
++    return (clazz.getModifiers() & Modifier.STATIC) != 0;
+   }
+ }

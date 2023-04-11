@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/7193/org/apache/commons/collections4/map/Flat3Map.java	2022-10-31 19:47:39.951803103 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/Flat3Map.java	2022-12-26 15:13:49.801602638 -0600
+@@ -222,7 +222,7 @@
+                             return true;
+                         }
+                     case 2:
+-                        if (false && key.equals(key2)) {
++                        if (hash2 == hashCode && key.equals(key2)) {
+                             return true;
+                         }
+                     case 1:

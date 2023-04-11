@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4378/org/apache/commons/codec/net/URLCodec.java	2022-10-31 19:47:39.215805762 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/URLCodec.java	2022-12-26 15:13:39.229488380 -0600
+@@ -166,7 +166,7 @@
+             } else if (b == '%') {
+                 try {
+                     int u = Character.digit((char)bytes[++i], 16);
+-                    int l = Character.digit((char)bytes[++i], -16);
++                    int l = Character.digit((char)bytes[++i], 16);
+                     if (u == -1 || l == -1) {
+                         throw new DecoderException("Invalid URL encoding");
+                     }

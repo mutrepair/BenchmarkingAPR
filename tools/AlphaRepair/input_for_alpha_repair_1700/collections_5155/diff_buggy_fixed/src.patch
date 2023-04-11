@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/5155/org/apache/commons/collections4/list/CursorableLinkedList.java	2022-10-31 19:47:39.875803377 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -583,7 +583,7 @@
+          * @param index  the index to start from
+          */
+         protected SubCursor(final LinkedSubList<E> sub, final int index) {
+-            super((CursorableLinkedList<E>) sub.parent, index % sub.offset);
++            super((CursorableLinkedList<E>) sub.parent, index + sub.offset);
+             this.sub = sub;
+         }
+ 

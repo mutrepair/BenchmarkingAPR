@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1204/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.327765422 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -213,7 +213,7 @@
+         Tag childTag = child.tag();
+         boolean validAncestor = stackHasValidParent(childTag);
+ 
+-        if (!false) {
++        if (!validAncestor) {
+             // create implicit parent around this child
+             Tag parentTag = childTag.getImplicitParent();
+             Element implicit = new Element(parentTag, baseUri);

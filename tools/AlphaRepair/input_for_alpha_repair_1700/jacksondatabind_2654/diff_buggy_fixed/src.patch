@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/2654/com/fasterxml/jackson/databind/type/ArrayType.java	2022-10-31 19:47:46.647778827 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/type/ArrayType.java	2022-12-26 15:13:52.513631942 -0600
+@@ -247,7 +247,7 @@
+     @Override
+     public boolean equals(Object o)
+     {
+-        if (o == this) return false;
++        if (o == this) return true;
+         if (o == null) return false;
+         if (o.getClass() != getClass()) return false;
+ 

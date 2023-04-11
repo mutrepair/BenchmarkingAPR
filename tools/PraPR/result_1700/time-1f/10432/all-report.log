@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(IIIIIIILorg/joda/time/Chronology;)V with a call to <init>(Ljava/lang/Object;)V
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(IIIIIIILorg/joda/time/Chronology;)V with a call to <init>(JLorg/joda/time/Chronology;)V
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(IIIIIIILorg/joda/time/Chronology;)V with a call to <init>(IIIIII)V
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(IIIIIIILorg/joda/time/Chronology;)V with a call to <init>(IIIIIIILorg/joda/time/DateTimeZone;)V
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/joda/time/DateTime::<init>
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/chrono/IslamicChronology.java
+	Line Number: 208
+	Block: 7
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

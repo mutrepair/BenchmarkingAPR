@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/285/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.767789286 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -99,7 +99,7 @@
+     for (int i = other.typeHierarchyList.size()-1; i >= 0; --i) {
+       Pair<Class<?>, T> entry = other.typeHierarchyList.get(i);
+       int index = getIndexOfSpecificHandlerForTypeHierarchy(entry.first);
+-      if (index <= 0) {
++      if (index < 0) {
+         registerForTypeHierarchy(entry);
+       }
+     }

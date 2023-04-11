@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/1045/org/apache/commons/cli/PosixParser.java	2022-10-31 19:47:31.075835052 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PosixParser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -279,7 +279,7 @@
+     {
+         int tokenLength = token.length();
+ 
+-        for (int i = 0; i < tokenLength; i++)
++        for (int i = 1; i < tokenLength; i++)
+         {
+             String ch = String.valueOf(token.charAt(i));
+             boolean hasOption = options.hasOption(ch);

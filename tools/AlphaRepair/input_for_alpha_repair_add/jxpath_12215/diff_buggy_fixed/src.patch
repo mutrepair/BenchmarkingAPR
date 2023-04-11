@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jxpath-1f/mutants/12215/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2023-04-04 14:33:25.889956949 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2023-04-04 13:31:53.593635782 -0500
+@@ -1839,7 +1839,7 @@
+    {
+       if (jjmatchedPos + 1 < curPos)
+          input_stream.backup(curPos - jjmatchedPos - 1);
+-      if ((jjtoToken[jjmatchedKind << 6] & (1L << (jjmatchedKind & 077))) != 0L)
++      if ((jjtoToken[jjmatchedKind >> 6] & (1L << (jjmatchedKind & 077))) != 0L)
+       {
+          matchedToken = jjFillToken();
+          return matchedToken;

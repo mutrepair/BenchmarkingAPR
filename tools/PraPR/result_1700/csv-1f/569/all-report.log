@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local first is replaced by local quote to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 41
+	First Index: 61
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local delim to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 63
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local c is replaced by local encapsulator to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 63
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local first is replaced by access to field newLine
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 41
+	First Index: 61
+	Rank: 5
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 43
+	First Index: 68
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 48 with 49
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 64
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 57 with 58
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 43
+	First Index: 67
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 65 with 66
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 44
+	First Index: 70
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 90 with 91
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 45
+	First Index: 74
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 97 with 98
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 46
+	First Index: 77
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 122 with 123
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 47
+	First Index: 81
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 41
+	First Index: 62
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 65
+	Rank: 4
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 41
+	First Index: 62
+	Rank: 4
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 65
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 41
+	First Index: 62
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 42
+	First Index: 65
+	Rank: 4
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 43
+	First Index: 68
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 212
+	Block: 43
+	First Index: 68
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

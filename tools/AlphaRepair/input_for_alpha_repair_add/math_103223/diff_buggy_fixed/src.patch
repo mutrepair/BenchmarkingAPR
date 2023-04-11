@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/103223/org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java	2023-04-04 14:33:26.085958849 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java	2023-04-04 13:31:54.041641105 -0500
+@@ -265,7 +265,7 @@
+             d[i] = dpi;
+             for (int k = i + 1; k < nvars; k++) {
+                 xk = x[k];
+-                x[k] = smartAdd(xk, +xi * r[nextr]);
++                x[k] = smartAdd(xk, -xi * r[nextr]);
+                 if (di != 0.0) {
+                     r[nextr] = smartAdd(di * r[nextr], (_w * xi) * xk) / dpi;
+                 } else {

@@ -1,0 +1,36 @@
+    public RealMatrix getQT() {
+        if (cachedQt == null) {
+            final int m = householderVectors.length;
+            double[][] qta = new double[m][m];
+
+            // build up first part of the matrix by applying Householder transforms
+            for (int k = m - 1; k >= 1; --k) {
+                final double[] hK = householderVectors[k - 1];
+                qta[k][k] = 1;
+                if (hK[k] != 0.0) {
+                    final double inv = 1.0 / (secondary[k - 1] * hK[k]);
+beta = 0;
+                    double beta = 1.0 + secondary[k - 1];                    qta[k][k] = 1 + beta * hK[k];
+                    for (int i = k + 1; i < m; ++i) {
+                        qta[k][i] = beta * hK[i];
+                    }
+                    for (int j = k + 1; j < m; ++j) {
+                        beta = 0;
+                        for (int i = k + 1; i < m; ++i) {
+                            beta += qta[j][i] * hK[i];
+                        }
+                        beta *= inv;
+                        qta[j][k] = beta * hK[k];
+                        for (int i = k + 1; i < m; ++i) {
+                            qta[j][i] += beta * hK[i];
+                        }
+                    }
+                }
+            }
+            qta[0][0] = 1;
+            cachedQt = MatrixUtils.createRealMatrix(qta);
+        }
+
+        // return the cached matrix
+        return cachedQt;
+    }

@@ -1,0 +1,333 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 30
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V with a call to <init>(Ljava/util/Collection;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V with a call to <init>(ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$1;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V with a call to <init>(Ljava/util/Collection;Lorg/apache/commons/collections4/list/TreeList$1;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V with a call to <init>(Ljava/util/Iterator;IIILorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to left is guarded using value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to left is guarded using local this
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to left is guarded using field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.list.TreeList$AVLNode.left is replaced by the call to org.apache.commons.collections4.list.TreeList$AVLNode::next()Lorg/apache/commons/collections4/list/TreeList$AVLNode;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.collections4.list.TreeList$AVLNode.left is replaced by the call to org.apache.commons.collections4.list.TreeList$AVLNode::previous()Lorg/apache/commons/collections4/list/TreeList$AVLNode;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.collections4.list.TreeList$AVLNode.left is replaced by the call to org.apache.commons.collections4.list.TreeList$AVLNode::getLeftSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.collections4.list.TreeList$AVLNode.left is replaced by the call to org.apache.commons.collections4.list.TreeList$AVLNode::getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.collections4.list.TreeList$AVLNode.left is replaced by the call to org.apache.commons.collections4.list.TreeList$AVLNode::max()Lorg/apache/commons/collections4/list/TreeList$AVLNode;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to left with an access to right
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field left is replaced by access to local this
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local obj is replaced by access to field value
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field right
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.next()
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to setLeft with a call to setRight
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to left is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to left is guarded returning local this
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to left is guarded returning field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setLeft(Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to setLeft(Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V is guarded returning local this
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to setLeft(Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V is guarded returning field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to setLeft(Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V is guarded returning field right
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.collections4.list.TreeList$AVLNode::setLeft(Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V is guarded
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList$AVLNode::<init>
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList$AVLNode::setLeft
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 504
+	Block: 42
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

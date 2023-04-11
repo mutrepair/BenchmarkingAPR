@@ -1,0 +1,399 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 36
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to options is guarded using value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to dependencyOptions is guarded using value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 195
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to closurePass is guarded using value false
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to closurePass is guarded using local devMode
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to options is guarded using field options
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to closurePass is guarded using field useThreads
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.javascript.jscomp.Compiler.options is replaced by the call to com.google.javascript.jscomp.Compiler::newCompilerOptions()Lcom/google/javascript/jscomp/CompilerOptions;
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.javascript.jscomp.CompilerOptions.closurePass is replaced by the call to com.google.javascript.jscomp.CompilerOptions::isRemoveUnusedClassProperties()Z
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.javascript.jscomp.Compiler.options is replaced by the call to com.google.javascript.jscomp.Compiler::getOptions()Lcom/google/javascript/jscomp/CompilerOptions;
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.javascript.jscomp.CompilerOptions.closurePass is replaced by the call to com.google.javascript.jscomp.CompilerOptions::shouldColorizeErrorOutput()Z
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.google.javascript.jscomp.CompilerOptions.closurePass is replaced by the call to com.google.javascript.jscomp.CompilerOptions::isExternExportsEnabled()Z
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.google.javascript.jscomp.CompilerOptions.closurePass is replaced by the call to com.google.javascript.jscomp.CompilerOptions::getInferTypes()Z
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.google.javascript.jscomp.CompilerOptions.closurePass is replaced by the call to com.google.javascript.jscomp.CompilerOptions::assumeStrictThis()Z
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to closurePass with an access to ideMode
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to closurePass with an access to checkSymbols
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to closurePass with an access to checkSuspiciousCode
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to closurePass with an access to checkControlStructures
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to closurePass with an access to checkTypes
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to closurePass with an access to foldConstants
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field closurePass is replaced by access to local devMode
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field closurePass is replaced by access to local staleInputs
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.jscomp.DependencyOptions::needsManagement()Z is guarded using default value false
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 196
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to options is guarded returning default value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to dependencyOptions is guarded returning default value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 195
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to closurePass is guarded returning default value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to options is guarded returning field externsRoot
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 194
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to dependencyOptions is guarded returning field externsRoot
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 195
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to closurePass is guarded returning field externsRoot
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 200
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to needsManagement()Z is guarded returning default value null
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 196
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to needsManagement()Z is guarded returning field externsRoot
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 196
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to needsManagement()Z is guarded returning field jsRoot
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 196
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 197
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/DependencyOptions::needsManagement
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 196
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 197
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 212
+	First Index: 197
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/Compiler.java
+	Line Number: 1288
+	Block: 213
+	First Index: 201
+	Rank: 1
+	Total Rank: 36
+	Status: SURVIVED
+------------------------------------------------

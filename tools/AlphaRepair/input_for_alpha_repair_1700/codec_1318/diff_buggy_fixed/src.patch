@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1318/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.899806903 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -141,7 +141,7 @@
+                 break;
+             case 'M':
+                 result.append('M');
+-                index = conditionM0(value, index) ? index + 2 : index + -1;
++                index = conditionM0(value, index) ? index + 2 : index + 1;
+                 break;
+             case 'N':
+                 result.append('N');

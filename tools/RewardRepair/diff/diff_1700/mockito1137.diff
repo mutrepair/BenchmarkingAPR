@@ -1,0 +1,46 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1137/org/mockito/internal/matchers/Equality.java	2022-10-22 16:02:25.341427417 -0500
++++ /home/jun/research/dlapr/all_mutants/mockito-1f/src/org/mockito/internal/matchers/Equality.java	2022-10-22 16:02:47.645565474 -0500
+@@ -1,41 +1,41 @@
+ /*
+  * Copyright (c) 2007 Mockito contributors
+  * This program is made available under the terms of the MIT License.
+  */
+ package org.mockito.internal.matchers;
+ 
+ import java.lang.reflect.Array;
+ 
+ //stolen from hamcrest because I didn't want to have more dependency than Matcher class 
+ public class Equality {
+ 
+     public static boolean areEqual(Object o1, Object o2) {
+-        if (true) {
++        if (o1 == null || o2 == null) {
+             return o1 == null && o2 == null;
+         } else if (isArray(o1)) {
+             return isArray(o2) && areArraysEqual(o1, o2);
+         } else {
+             return o1.equals(o2);
+         }
+     }
+ 
+     static boolean areArraysEqual(Object o1, Object o2) {
+         return areArrayLengthsEqual(o1, o2)
+                 && areArrayElementsEqual(o1, o2);
+     }
+ 
+     static boolean areArrayLengthsEqual(Object o1, Object o2) {
+         return Array.getLength(o1) == Array.getLength(o2);
+     }
+ 
+     static boolean areArrayElementsEqual(Object o1, Object o2) {
+         for (int i = 0; i < Array.getLength(o1); i++) {
+             if (!areEqual(Array.get(o1, i), Array.get(o2, i))) return false;
+         }
+         return true;
+     }
+ 
+     static boolean isArray(Object o) {
+         return o.getClass().isArray();
+     }
+ }
+\ No newline at end of file

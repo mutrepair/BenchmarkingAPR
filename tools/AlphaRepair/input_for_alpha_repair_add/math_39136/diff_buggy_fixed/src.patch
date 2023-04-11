@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/39136/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java	2023-04-04 13:31:54.001640631 -0500
+@@ -325,7 +325,7 @@
+ 
+         if (FastMath.abs(x) <= threshold) {
+             double inverse  = 1 / FastMath.sqrt(y * y + z * z);
+-            return new Vector3D(0, inverse * z, +inverse * y);
++            return new Vector3D(0, inverse * z, -inverse * y);
+         } else if (FastMath.abs(y) <= threshold) {
+             double inverse  = 1 / FastMath.sqrt(x * x + z * z);
+             return new Vector3D(-inverse * z, 0, inverse * x);

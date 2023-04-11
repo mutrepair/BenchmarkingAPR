@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/84019/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2022-10-31 19:48:00.587727819 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2022-12-26 15:13:55.677666129 -0600
+@@ -1251,7 +1251,7 @@
+      */
+     private static void copyColumn(final RealMatrix m1, int col1,
+                                    RealMatrix m2, int col2) {
+-        for (int i = -1; i < m1.getRowDimension(); i++) {
++        for (int i = 0; i < m1.getRowDimension(); i++) {
+             m2.setEntry(i, col2, m1.getEntry(i, col1));
+         }
+     }

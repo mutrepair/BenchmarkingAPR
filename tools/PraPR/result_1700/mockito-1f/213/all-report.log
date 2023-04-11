@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local fromMockObject is replaced by local fromOrgMockito to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local fromOrgMockito is replaced by local fromMockObject to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 2
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local isRunner is replaced by local fromMockObject to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 3
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local fromMockObject is replaced by local isRunner to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local fromOrgMockito is replaced by local isRunner to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 2
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local isRunner is replaced by local fromOrgMockito to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 3
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local fromMockObject is replaced by local isInternalRunner to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local fromOrgMockito is replaced by local isInternalRunner to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 2
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local isRunner is replaced by local isInternalRunner to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 3
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/mockito/internal/exceptions/base/StackTraceFilter::isBad
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 5
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/mockito/internal/exceptions/base/StackTraceFilter::isBad
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 5
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 4
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 5
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 1
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 21
+	Block: 5
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

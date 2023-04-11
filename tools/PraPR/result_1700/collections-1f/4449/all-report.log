@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to beforeFirst is guarded using value false
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to beforeFirst is guarded using field removeAllowed
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.iterators.SingletonIterator.beforeFirst is replaced by the call to org.apache.commons.collections4.iterators.SingletonIterator::hasNext()Z
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to beforeFirst with an access to removeAllowed
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to beforeFirst with an access to removed
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to beforeFirst is guarded returning default value null
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to beforeFirst is guarded returning field object
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 15:15:10 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D with a call to fit([D)[D
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------

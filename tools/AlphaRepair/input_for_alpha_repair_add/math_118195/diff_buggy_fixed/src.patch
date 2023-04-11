@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/118195/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.093958927 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -3090,7 +3090,7 @@
+                 // the input is a normal number and the result is a subnormal number
+ 
+                 // recover the hidden mantissa bit
+-                mantissa = mantissa | (1L >> 52);
++                mantissa = mantissa | (1L << 52);
+ 
+                 // scales down complete mantissa, hence losing least significant bits
+                 final long mostSignificantLostBit = mantissa & (1L << (-scaledExponent));

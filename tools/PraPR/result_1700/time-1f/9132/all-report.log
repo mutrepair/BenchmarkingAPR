@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local relativeYear is replaced by local year to be used
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local leapYears is replaced by local year to be used
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local relativeYear is replaced by local leapYears to be used
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local leapYears is replaced by local relativeYear to be used
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local relativeYear is replaced by access to field AM
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local leapYears is replaced by access to field AM
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local relativeYear is replaced by access to field MIN_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local leapYears is replaced by access to field MIN_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local relativeYear is replaced by access to field MAX_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local leapYears is replaced by access to field MAX_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 365 with 366
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 40
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 86400000 with 86400001
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long addition with subtraction
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long multiplication with division
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 223
+	Block: 27
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1657/com/google/gson/GsonBuilder.java	2022-10-31 19:47:43.675789620 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/GsonBuilder.java	2022-12-26 15:13:51.393619841 -0600
+@@ -150,7 +150,7 @@
+    * @since 1.3
+    */
+   public GsonBuilder generateNonExecutableJson() {
+-    this.generateNonExecutableJson = false;
++    this.generateNonExecutableJson = true;
+     return this;
+   }
+ 

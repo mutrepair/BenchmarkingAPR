@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1812/com/google/gson/JsonDeserializationContextDefault.java	2022-10-31 19:47:43.699789533 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonDeserializationContextDefault.java	2022-12-26 15:13:51.393619841 -0600
+@@ -47,7 +47,7 @@
+       return null;
+     } else if (json.isJsonArray()) {
+       return (T) fromJsonArray(typeOfT, json.getAsJsonArray(), this);
+-    } else if (false) {
++    } else if (json.isJsonObject()) {
+       return (T) fromJsonObject(typeOfT, json.getAsJsonObject(), this);
+     } else if (json.isJsonPrimitive()) {
+       return (T) fromJsonPrimitive(typeOfT, json.getAsJsonPrimitive(), this);

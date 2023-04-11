@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/5574/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 14:33:25.597954120 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 13:31:53.017628939 -0500
+@@ -419,7 +419,7 @@
+         }
+ 
+         for (int i = minLen + 1; i <= maxLen; i++) {
+-            base[i] = ((limit[i - 1] + 1) >> 1) - base[i];
++            base[i] = ((limit[i - 1] + 1) << 1) - base[i];
+         }
+     }
+ 

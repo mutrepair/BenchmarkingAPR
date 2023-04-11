@@ -1,0 +1,498 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 45
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to bsBuff is guarded using value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to bsLive is guarded using value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to bsBuff is guarded using local n
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to bsLive is guarded using local n
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to bsBuff is guarded using field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to bsLive is guarded using field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream.bsBuff is replaced by the call to org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream::write(I)V
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 71
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream.bsBuff is replaced by the call to org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream::bsPutUChar(I)V
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 71
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream.bsBuff is replaced by the call to org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream::bsPutint(I)V
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 71
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to bsBuff with an access to last
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to bsLive with an access to last
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to bsBuff with an access to origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to bsLive with an access to origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to bsBuff with an access to blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to bsLive with an access to blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: 1
+	Total Rank: 37
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to bsBuff with an access to bytesOut
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to bsLive with an access to bytesOut
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to bsBuff with an access to bsLive
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to bsLive with an access to bsBuff
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to bsBuff with an access to nInUse
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to bsLive with an access to nInUse
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field bsBuff is replaced by access to local n
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field bsLive is replaced by access to local n
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field bsBuff is replaced by access to local v
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field bsLive is replaced by access to local v
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local v is replaced by local n to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local v to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local v is replaced by access to field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local n is replaced by access to field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local v is replaced by access to field CLEARMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local n is replaced by access to field CLEARMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local v is replaced by access to field GREATER_ICOST
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local n is replaced by access to field GREATER_ICOST
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local v is replaced by access to field LESSER_ICOST
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local n is replaced by access to field LESSER_ICOST
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local v is replaced by access to field SMALL_THRESH
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 62
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local n is replaced by access to field SMALL_THRESH
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 67
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to bsBuff is guarded returning enclosing method
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 61
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to bsLive is guarded returning enclosing method
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 32 with 33
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 63
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 66
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+------------------------------------------------
+42.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 68
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 69
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 70
+	Rank: null
+	Total Rank: 45
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable bsBuff
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 71
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------

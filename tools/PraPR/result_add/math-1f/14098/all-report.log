@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local m is replaced by local bits to be used
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 90
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local m is replaced by local sign to be used
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 90
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local m is replaced by local exponent to be used
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 90
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 9007199254740990 with 9007199254740991
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 91
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 93
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 2
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 15
+	First Index: 97
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 92
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 15
+	First Index: 98
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 95
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 95
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 193
+	Block: 14
+	First Index: 95
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

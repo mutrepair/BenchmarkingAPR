@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.Iterator.next()Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.util.Collection.iterator()Ljava/util/Iterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.NodeListIterator using (Lorg/w3c/dom/Node;)V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.Collection.iterator()Ljava/util/Iterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.IteratorChain using ([Ljava/util/Iterator;)V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.Iterator.next()Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.collections4.MockTestCase using ()V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method java.util.Collection.iterator()Ljava/util/Iterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.NodeListIterator using (Lorg/w3c/dom/NodeList;)V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: MethodNameMutator_6
+	Description: the call to factory method java.util.Collection.iterator()Ljava/util/Iterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.IteratorChain using ()V
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Collection::iterator()Ljava/util/Iterator; is guarded using default value null
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Iterator::next()Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to iterator()Ljava/util/Iterator; is guarded returning default value null
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to next()Ljava/lang/Object; is guarded returning default value null
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to iterator()Ljava/util/Iterator; is guarded returning local key
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to next()Ljava/lang/Object; is guarded returning local key
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Collection::iterator
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Iterator::next
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/collections4/collection/IndexedCollection::get
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 14
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/collections4/collection/IndexedCollection::get to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/collections4/collection/IndexedCollection.java
+	Line Number: 182
+	Block: 15
+	First Index: 14
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,236 @@
+
+test-offline:
+
+get-deps:
+
+jackson-dataformat-xml-from-maven.compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jacksonxml-1f/maven-build.xml:88: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+jackson-dataformat-xml-from-maven.compile-tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jacksonxml-1f/maven-build.xml:116: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 48 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 22.07 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 2209
+    [junit] MAJOR: Mutants covered:   1518 (68.72%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 48 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/48 - com.fasterxml.jackson.dataformat.xml.stream.XmlTokenStreamTest (41ms / 36):
+    [junit] MAJOR: 2039 (26 / 36 / 36) -> AVG-RTPM: 56ms
+    [junit] MAJOR: Mutants killed / live: 26 (16-10-0) / 1492
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/48 - com.fasterxml.jackson.dataformat.xml.lists.UnwrappedListWithEmptyCData129Test (47ms / 314):
+    [junit] MAJOR: 62177 (104 / 291 / 314) -> AVG-RTPM: 206ms
+    [junit] MAJOR: Mutants killed / live: 130 (35-94-0) / 1388
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/48 - com.fasterxml.jackson.dataformat.xml.deser.TestStringValues (56ms / 311):
+    [junit] MAJOR: 105607 (40 / 232 / 311) -> AVG-RTPM: 187ms
+    [junit] MAJOR: Mutants killed / live: 170 (39-130-0) / 1348
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/48 - com.fasterxml.jackson.dataformat.xml.lists.ListSerializationTest (56ms / 427):
+    [junit] MAJOR: 176924 (159 / 410 / 427) -> AVG-RTPM: 173ms
+    [junit] MAJOR: Mutants killed / live: 329 (120-208-0) / 1189
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/48 - com.fasterxml.jackson.dataformat.xml.incr.IncrementalWritingTest (63ms / 378):
+    [junit] MAJOR: 215656 (43 / 242 / 378) -> AVG-RTPM: 160ms
+    [junit] MAJOR: Mutants killed / live: 372 (153-218-0) / 1146
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/48 - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test (63ms / 344):
+    [junit] MAJOR: 247407 (16 / 197 / 344) -> AVG-RTPM: 161ms
+    [junit] MAJOR: Mutants killed / live: 388 (158-229-0) / 1130
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/48 - com.fasterxml.jackson.dataformat.xml.incr.PartialReadTest (65ms / 220):
+    [junit] MAJOR: 266746 (7 / 120 / 220) -> AVG-RTPM: 161ms
+    [junit] MAJOR: Mutants killed / live: 395 (162-232-0) / 1123
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/48 - com.fasterxml.jackson.dataformat.xml.lists.EmptyListDeserTest (66ms / 335):
+    [junit] MAJOR: 296275 (7 / 184 / 335) -> AVG-RTPM: 160ms
+    [junit] MAJOR: Mutants killed / live: 402 (162-239-0) / 1116
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/48 - com.fasterxml.jackson.dataformat.xml.misc.ObjectId104Test (76ms / 286):
+    [junit] MAJOR: 323626 (9 / 165 / 286) -> AVG-RTPM: 165ms
+    [junit] MAJOR: Mutants killed / live: 411 (162-248-0) / 1107
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/48 - com.fasterxml.jackson.dataformat.xml.lists.ListAnnotationSharingTest (84ms / 612):
+    [junit] MAJOR: 386058 (7 / 337 / 612) -> AVG-RTPM: 185ms
+    [junit] MAJOR: Mutants killed / live: 418 (162-255-0) / 1100
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/48 - com.fasterxml.jackson.dataformat.xml.lists.Issue101UnwrappedListAttributesTest (92ms / 694):
+    [junit] MAJOR: 452809 (34 / 374 / 694) -> AVG-RTPM: 178ms
+    [junit] MAJOR: Mutants killed / live: 452 (175-276-0) / 1066
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/48 - com.fasterxml.jackson.dataformat.xml.deser.TestDeserialization (106ms / 606):
+    [junit] MAJOR: 514688 (29 / 328 / 606) -> AVG-RTPM: 188ms
+    [junit] MAJOR: Mutants killed / live: 481 (181-299-0) / 1037
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/48 - com.fasterxml.jackson.dataformat.xml.misc.EmptyPolymorphicTest (107ms / 625):
+    [junit] MAJOR: 597494 (26 / 380 / 625) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 507 (181-323-0) / 1011
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/48 - com.fasterxml.jackson.dataformat.xml.lists.ListRoundtripTest (110ms / 710):
+    [junit] MAJOR: 662147 (3 / 337 / 710) -> AVG-RTPM: 191ms
+    [junit] MAJOR: Mutants killed / live: 510 (184-323-0) / 1008
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/48 - com.fasterxml.jackson.dataformat.xml.misc.TextValueTest (115ms / 645):
+    [junit] MAJOR: 724128 (42 / 332 / 645) -> AVG-RTPM: 186ms
+    [junit] MAJOR: Mutants killed / live: 552 (211-338-0) / 966
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/48 - com.fasterxml.jackson.dataformat.xml.RoundtripContentTest (132ms / 762):
+    [junit] MAJOR: 826080 (28 / 393 / 762) -> AVG-RTPM: 259ms
+    [junit] MAJOR: Mutants killed / live: 580 (213-364-0) / 938
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/48 - com.fasterxml.jackson.dataformat.xml.lists.ListDeserializationTest (136ms / 878):
+    [junit] MAJOR: 910206 (8 / 423 / 878) -> AVG-RTPM: 198ms
+    [junit] MAJOR: Mutants killed / live: 588 (217-368-0) / 930
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/48 - com.fasterxml.jackson.dataformat.xml.ser.TestXmlDeclaration (136ms / 355):
+    [junit] MAJOR: 938464 (17 / 175 / 355) -> AVG-RTPM: 161ms
+    [junit] MAJOR: Mutants killed / live: 605 (233-369-0) / 913
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/48 - com.fasterxml.jackson.dataformat.xml.lists.WrappedListsTest (143ms / 357):
+    [junit] MAJOR: 963179 (1 / 172 / 357) -> AVG-RTPM: 143ms
+    [junit] MAJOR: Mutants killed / live: 606 (233-370-0) / 912
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/48 - com.fasterxml.jackson.dataformat.xml.deser.TestEnums (157ms / 512):
+    [junit] MAJOR: 1003129 (0 / 225 / 512) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 606 (233-370-0) / 912
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/48 - com.fasterxml.jackson.dataformat.xml.ser.TestSerializationOrdering (157ms / 391):
+    [junit] MAJOR: 1028381 (1 / 169 / 391) -> AVG-RTPM: 149ms
+    [junit] MAJOR: Mutants killed / live: 607 (234-370-0) / 911
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/48 - com.fasterxml.jackson.dataformat.xml.ser.TestSerializationManual (170ms / 353):
+    [junit] MAJOR: 1052888 (5 / 163 / 353) -> AVG-RTPM: 150ms
+    [junit] MAJOR: Mutants killed / live: 612 (236-373-0) / 906
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/48 - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest (174ms / 352):
+    [junit] MAJOR: 1079410 (9 / 147 / 352) -> AVG-RTPM: 180ms
+    [junit] MAJOR: Mutants killed / live: 621 (236-382-0) / 897
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/48 - com.fasterxml.jackson.dataformat.xml.ser.TestSerializerCustom (174ms / 517):
+    [junit] MAJOR: 1119981 (3 / 229 / 517) -> AVG-RTPM: 177ms
+    [junit] MAJOR: Mutants killed / live: 624 (237-384-0) / 894
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/48 - com.fasterxml.jackson.dataformat.xml.stream.XmlParserTest (174ms / 407):
+    [junit] MAJOR: 1149118 (3 / 169 / 407) -> AVG-RTPM: 172ms
+    [junit] MAJOR: Mutants killed / live: 627 (238-386-0) / 891
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/48 - com.fasterxml.jackson.dataformat.xml.stream.XmlGeneratorTest (175ms / 361):
+    [junit] MAJOR: 1173281 (1 / 157 / 361) -> AVG-RTPM: 153ms
+    [junit] MAJOR: Mutants killed / live: 628 (239-386-0) / 890
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/48 - com.fasterxml.jackson.dataformat.xml.misc.NodeTest (180ms / 161):
+    [junit] MAJOR: 1182747 (0 / 65 / 161) -> AVG-RTPM: 145ms
+    [junit] MAJOR: Mutants killed / live: 628 (239-386-0) / 890
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/48 - com.fasterxml.jackson.dataformat.xml.misc.ArrayConversionsTest (189ms / 237):
+    [junit] MAJOR: 1199174 (6 / 93 / 237) -> AVG-RTPM: 176ms
+    [junit] MAJOR: Mutants killed / live: 634 (240-391-0) / 884
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/48 - com.fasterxml.jackson.dataformat.xml.ser.TestSerializationAttr (201ms / 490):
+    [junit] MAJOR: 1238747 (23 / 243 / 490) -> AVG-RTPM: 162ms
+    [junit] MAJOR: Mutants killed / live: 657 (262-392-0) / 861
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/48 - com.fasterxml.jackson.dataformat.xml.misc.XmlTextTest (203ms / 355):
+    [junit] MAJOR: 1260057 (4 / 148 / 355) -> AVG-RTPM: 143ms
+    [junit] MAJOR: Mutants killed / live: 661 (266-392-0) / 857
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/48 - com.fasterxml.jackson.dataformat.xml.stream.FormatDetectionTest (205ms / 744):
+    [junit] MAJOR: 1331604 (60 / 380 / 744) -> AVG-RTPM: 188ms
+    [junit] MAJOR: Mutants killed / live: 721 (318-399-0) / 797
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/48 - com.fasterxml.jackson.dataformat.xml.lists.UnwrappedListsTest (207ms / 731):
+    [junit] MAJOR: 1389521 (4 / 298 / 731) -> AVG-RTPM: 194ms
+    [junit] MAJOR: Mutants killed / live: 725 (319-402-0) / 793
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/48 - com.fasterxml.jackson.dataformat.xml.lists.ListAsObjectTest (210ms / 338):
+    [junit] MAJOR: 1416070 (2 / 125 / 338) -> AVG-RTPM: 212ms
+    [junit] MAJOR: Mutants killed / live: 727 (319-404-0) / 791
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/48 - com.fasterxml.jackson.dataformat.xml.jaxb.AttributesWithJAXBTest (214ms / 379):
+    [junit] MAJOR: 1439439 (0 / 152 / 379) -> AVG-RTPM: 153ms
+    [junit] MAJOR: Mutants killed / live: 727 (319-404-0) / 791
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/48 - com.fasterxml.jackson.dataformat.xml.deser.TestBinaryData (225ms / 257):
+    [junit] MAJOR: 1456092 (2 / 101 / 257) -> AVG-RTPM: 164ms
+    [junit] MAJOR: Mutants killed / live: 729 (321-404-0) / 789
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/48 - com.fasterxml.jackson.dataformat.xml.deser.TestViews (229ms / 692):
+    [junit] MAJOR: 1512226 (23 / 294 / 692) -> AVG-RTPM: 190ms
+    [junit] MAJOR: Mutants killed / live: 752 (337-411-0) / 766
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/48 - com.fasterxml.jackson.dataformat.xml.jaxb.WithJAXBAnnotationsTest (229ms / 560):
+    [junit] MAJOR: 1556031 (2 / 226 / 560) -> AVG-RTPM: 193ms
+    [junit] MAJOR: Mutants killed / live: 754 (339-411-0) / 764
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/48 - com.fasterxml.jackson.dataformat.xml.jaxb.ElementWrapperTest (234ms / 361):
+    [junit] MAJOR: 1577166 (1 / 139 / 361) -> AVG-RTPM: 152ms
+    [junit] MAJOR: Mutants killed / live: 755 (340-411-0) / 763
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/48 - com.fasterxml.jackson.dataformat.xml.lists.RootListHandlingTest (250ms / 643):
+    [junit] MAJOR: 1667097 (30 / 288 / 643) -> AVG-RTPM: 312ms
+    [junit] MAJOR: Mutants killed / live: 785 (353-426-0) / 733
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/48 - com.fasterxml.jackson.dataformat.xml.ser.TestSerialization (256ms / 608):
+    [junit] MAJOR: 1741002 (18 / 233 / 608) -> AVG-RTPM: 317ms
+    [junit] MAJOR: Mutants killed / live: 803 (369-428-0) / 715
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/48 - com.fasterxml.jackson.dataformat.xml.ser.TestIndentation (260ms / 737):
+    [junit] MAJOR: 1804138 (40 / 308 / 737) -> AVG-RTPM: 204ms
+    [junit] MAJOR: Mutants killed / live: 843 (409-428-0) / 675
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/48 - com.fasterxml.jackson.dataformat.xml.VersionInfoTest (270ms / 67):
+    [junit] MAJOR: 1809222 (10 / 33 / 67) -> AVG-RTPM: 154ms
+    [junit] MAJOR: Mutants killed / live: 853 (413-434-0) / 665
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/48 - com.fasterxml.jackson.dataformat.xml.misc.UnwrappingWithXMLTest (272ms / 534):
+    [junit] MAJOR: 1849633 (8 / 187 / 534) -> AVG-RTPM: 216ms
+    [junit] MAJOR: Mutants killed / live: 861 (418-437-0) / 657
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/48 - com.fasterxml.jackson.dataformat.xml.misc.PolymorphicTypesTest (311ms / 755):
+    [junit] MAJOR: 1942119 (64 / 326 / 755) -> AVG-RTPM: 283ms
+    [junit] MAJOR: Mutants killed / live: 925 (450-457-3) / 593
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/48 - com.fasterxml.jackson.dataformat.xml.adapters.TestIssue47Attribute (330ms / 289):
+    [junit] MAJOR: 1959435 (0 / 104 / 289) -> AVG-RTPM: 166ms
+    [junit] MAJOR: Mutants killed / live: 925 (450-457-3) / 593
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/48 - com.fasterxml.jackson.dataformat.xml.ser.TestJDKSerializability (364ms / 522):
+    [junit] MAJOR: 2019328 (1 / 181 / 522) -> AVG-RTPM: 330ms
+    [junit] MAJOR: Mutants killed / live: 926 (450-458-3) / 592
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/48 - com.fasterxml.jackson.dataformat.xml.ser.TestNamespaces (375ms / 336):
+    [junit] MAJOR: 2063227 (0 / 108 / 336) -> AVG-RTPM: 406ms
+    [junit] MAJOR: Mutants killed / live: 926 (450-458-3) / 592
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/48 - com.fasterxml.jackson.dataformat.xml.jaxb.JAXBObjectId170Test (391ms / 285):
+    [junit] MAJOR: 2103394 (1 / 110 / 285) -> AVG-RTPM: 365ms
+    [junit] MAJOR: Mutants killed / live: 927 (450-459-3) / 591
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  2103.4 seconds
+    [junit] MAJOR: Mutation score: 41.96% (61.07%)
+    [junit] MAJOR: Mutants killed / live: 927 (450-459-3) / 591
+    [junit] MAJOR: Mutant executions: 10529
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/jacksonxml-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 35 minutes 26 seconds

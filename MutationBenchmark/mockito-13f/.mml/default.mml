@@ -1,0 +1,2359 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.mockito.stubbing.answers.ReturnsElementsOf
+AOR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+LOR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+SOR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+COR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+ROR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+ORU<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+LVR<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+STD<"org.mockito.stubbing.answers.ReturnsElementsOf">;
+
+// Enable operators for org.mockito.stubbing.Answer
+AOR<"org.mockito.stubbing.Answer">;
+LOR<"org.mockito.stubbing.Answer">;
+SOR<"org.mockito.stubbing.Answer">;
+COR<"org.mockito.stubbing.Answer">;
+ROR<"org.mockito.stubbing.Answer">;
+ORU<"org.mockito.stubbing.Answer">;
+LVR<"org.mockito.stubbing.Answer">;
+STD<"org.mockito.stubbing.Answer">;
+
+// Enable operators for org.mockito.stubbing.Stubber
+AOR<"org.mockito.stubbing.Stubber">;
+LOR<"org.mockito.stubbing.Stubber">;
+SOR<"org.mockito.stubbing.Stubber">;
+COR<"org.mockito.stubbing.Stubber">;
+ROR<"org.mockito.stubbing.Stubber">;
+ORU<"org.mockito.stubbing.Stubber">;
+LVR<"org.mockito.stubbing.Stubber">;
+STD<"org.mockito.stubbing.Stubber">;
+
+// Enable operators for org.mockito.stubbing.VoidMethodStubbable
+AOR<"org.mockito.stubbing.VoidMethodStubbable">;
+LOR<"org.mockito.stubbing.VoidMethodStubbable">;
+SOR<"org.mockito.stubbing.VoidMethodStubbable">;
+COR<"org.mockito.stubbing.VoidMethodStubbable">;
+ROR<"org.mockito.stubbing.VoidMethodStubbable">;
+ORU<"org.mockito.stubbing.VoidMethodStubbable">;
+LVR<"org.mockito.stubbing.VoidMethodStubbable">;
+STD<"org.mockito.stubbing.VoidMethodStubbable">;
+
+// Enable operators for org.mockito.stubbing.DeprecatedOngoingStubbing
+AOR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+LOR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+SOR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+COR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+ROR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+ORU<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+LVR<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+STD<"org.mockito.stubbing.DeprecatedOngoingStubbing">;
+
+// Enable operators for org.mockito.stubbing.OngoingStubbing
+AOR<"org.mockito.stubbing.OngoingStubbing">;
+LOR<"org.mockito.stubbing.OngoingStubbing">;
+SOR<"org.mockito.stubbing.OngoingStubbing">;
+COR<"org.mockito.stubbing.OngoingStubbing">;
+ROR<"org.mockito.stubbing.OngoingStubbing">;
+ORU<"org.mockito.stubbing.OngoingStubbing">;
+LVR<"org.mockito.stubbing.OngoingStubbing">;
+STD<"org.mockito.stubbing.OngoingStubbing">;
+
+// Enable operators for org.mockito.runners.MockitoJUnitRunner
+AOR<"org.mockito.runners.MockitoJUnitRunner">;
+LOR<"org.mockito.runners.MockitoJUnitRunner">;
+SOR<"org.mockito.runners.MockitoJUnitRunner">;
+COR<"org.mockito.runners.MockitoJUnitRunner">;
+ROR<"org.mockito.runners.MockitoJUnitRunner">;
+ORU<"org.mockito.runners.MockitoJUnitRunner">;
+LVR<"org.mockito.runners.MockitoJUnitRunner">;
+STD<"org.mockito.runners.MockitoJUnitRunner">;
+
+// Enable operators for org.mockito.runners.ConsoleSpammingMockitoJUnitRunner
+AOR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+LOR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+SOR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+COR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+ROR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+ORU<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+LVR<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+STD<"org.mockito.runners.ConsoleSpammingMockitoJUnitRunner">;
+
+// Enable operators for org.mockito.runners.VerboseMockitoJUnitRunner
+AOR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+LOR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+SOR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+COR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+ROR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+ORU<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+LVR<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+STD<"org.mockito.runners.VerboseMockitoJUnitRunner">;
+
+// Enable operators for org.mockito.runners.MockitoJUnit44Runner
+AOR<"org.mockito.runners.MockitoJUnit44Runner">;
+LOR<"org.mockito.runners.MockitoJUnit44Runner">;
+SOR<"org.mockito.runners.MockitoJUnit44Runner">;
+COR<"org.mockito.runners.MockitoJUnit44Runner">;
+ROR<"org.mockito.runners.MockitoJUnit44Runner">;
+ORU<"org.mockito.runners.MockitoJUnit44Runner">;
+LVR<"org.mockito.runners.MockitoJUnit44Runner">;
+STD<"org.mockito.runners.MockitoJUnit44Runner">;
+
+// Enable operators for org.mockito.Answers
+AOR<"org.mockito.Answers">;
+LOR<"org.mockito.Answers">;
+SOR<"org.mockito.Answers">;
+COR<"org.mockito.Answers">;
+ROR<"org.mockito.Answers">;
+ORU<"org.mockito.Answers">;
+LVR<"org.mockito.Answers">;
+STD<"org.mockito.Answers">;
+
+// Enable operators for org.mockito.BDDMockito
+AOR<"org.mockito.BDDMockito">;
+LOR<"org.mockito.BDDMockito">;
+SOR<"org.mockito.BDDMockito">;
+COR<"org.mockito.BDDMockito">;
+ROR<"org.mockito.BDDMockito">;
+ORU<"org.mockito.BDDMockito">;
+LVR<"org.mockito.BDDMockito">;
+STD<"org.mockito.BDDMockito">;
+
+// Enable operators for org.mockito.InOrder
+AOR<"org.mockito.InOrder">;
+LOR<"org.mockito.InOrder">;
+SOR<"org.mockito.InOrder">;
+COR<"org.mockito.InOrder">;
+ROR<"org.mockito.InOrder">;
+ORU<"org.mockito.InOrder">;
+LVR<"org.mockito.InOrder">;
+STD<"org.mockito.InOrder">;
+
+// Enable operators for org.mockito.invocation.InvocationOnMock
+AOR<"org.mockito.invocation.InvocationOnMock">;
+LOR<"org.mockito.invocation.InvocationOnMock">;
+SOR<"org.mockito.invocation.InvocationOnMock">;
+COR<"org.mockito.invocation.InvocationOnMock">;
+ROR<"org.mockito.invocation.InvocationOnMock">;
+ORU<"org.mockito.invocation.InvocationOnMock">;
+LVR<"org.mockito.invocation.InvocationOnMock">;
+STD<"org.mockito.invocation.InvocationOnMock">;
+
+// Enable operators for org.mockito.Matchers
+AOR<"org.mockito.Matchers">;
+LOR<"org.mockito.Matchers">;
+SOR<"org.mockito.Matchers">;
+COR<"org.mockito.Matchers">;
+ROR<"org.mockito.Matchers">;
+ORU<"org.mockito.Matchers">;
+LVR<"org.mockito.Matchers">;
+STD<"org.mockito.Matchers">;
+
+// Enable operators for org.mockito.AdditionalMatchers
+AOR<"org.mockito.AdditionalMatchers">;
+LOR<"org.mockito.AdditionalMatchers">;
+SOR<"org.mockito.AdditionalMatchers">;
+COR<"org.mockito.AdditionalMatchers">;
+ROR<"org.mockito.AdditionalMatchers">;
+ORU<"org.mockito.AdditionalMatchers">;
+LVR<"org.mockito.AdditionalMatchers">;
+STD<"org.mockito.AdditionalMatchers">;
+
+// Enable operators for org.mockito.MockitoAnnotations
+AOR<"org.mockito.MockitoAnnotations">;
+LOR<"org.mockito.MockitoAnnotations">;
+SOR<"org.mockito.MockitoAnnotations">;
+COR<"org.mockito.MockitoAnnotations">;
+ROR<"org.mockito.MockitoAnnotations">;
+ORU<"org.mockito.MockitoAnnotations">;
+LVR<"org.mockito.MockitoAnnotations">;
+STD<"org.mockito.MockitoAnnotations">;
+
+// Enable operators for org.mockito.Mockito
+AOR<"org.mockito.Mockito">;
+LOR<"org.mockito.Mockito">;
+SOR<"org.mockito.Mockito">;
+COR<"org.mockito.Mockito">;
+ROR<"org.mockito.Mockito">;
+ORU<"org.mockito.Mockito">;
+LVR<"org.mockito.Mockito">;
+STD<"org.mockito.Mockito">;
+
+// Enable operators for org.mockito.ArgumentMatcher
+AOR<"org.mockito.ArgumentMatcher">;
+LOR<"org.mockito.ArgumentMatcher">;
+SOR<"org.mockito.ArgumentMatcher">;
+COR<"org.mockito.ArgumentMatcher">;
+ROR<"org.mockito.ArgumentMatcher">;
+ORU<"org.mockito.ArgumentMatcher">;
+LVR<"org.mockito.ArgumentMatcher">;
+STD<"org.mockito.ArgumentMatcher">;
+
+// Enable operators for org.mockito.ArgumentCaptor
+AOR<"org.mockito.ArgumentCaptor">;
+LOR<"org.mockito.ArgumentCaptor">;
+SOR<"org.mockito.ArgumentCaptor">;
+COR<"org.mockito.ArgumentCaptor">;
+ROR<"org.mockito.ArgumentCaptor">;
+ORU<"org.mockito.ArgumentCaptor">;
+LVR<"org.mockito.ArgumentCaptor">;
+STD<"org.mockito.ArgumentCaptor">;
+
+// Enable operators for org.mockito.Spy
+AOR<"org.mockito.Spy">;
+LOR<"org.mockito.Spy">;
+SOR<"org.mockito.Spy">;
+COR<"org.mockito.Spy">;
+ROR<"org.mockito.Spy">;
+ORU<"org.mockito.Spy">;
+LVR<"org.mockito.Spy">;
+STD<"org.mockito.Spy">;
+
+// Enable operators for org.mockito.MockitoDebugger
+AOR<"org.mockito.MockitoDebugger">;
+LOR<"org.mockito.MockitoDebugger">;
+SOR<"org.mockito.MockitoDebugger">;
+COR<"org.mockito.MockitoDebugger">;
+ROR<"org.mockito.MockitoDebugger">;
+ORU<"org.mockito.MockitoDebugger">;
+LVR<"org.mockito.MockitoDebugger">;
+STD<"org.mockito.MockitoDebugger">;
+
+// Enable operators for org.mockito.ReturnValues
+AOR<"org.mockito.ReturnValues">;
+LOR<"org.mockito.ReturnValues">;
+SOR<"org.mockito.ReturnValues">;
+COR<"org.mockito.ReturnValues">;
+ROR<"org.mockito.ReturnValues">;
+ORU<"org.mockito.ReturnValues">;
+LVR<"org.mockito.ReturnValues">;
+STD<"org.mockito.ReturnValues">;
+
+// Enable operators for org.mockito.Mock
+AOR<"org.mockito.Mock">;
+LOR<"org.mockito.Mock">;
+SOR<"org.mockito.Mock">;
+COR<"org.mockito.Mock">;
+ROR<"org.mockito.Mock">;
+ORU<"org.mockito.Mock">;
+LVR<"org.mockito.Mock">;
+STD<"org.mockito.Mock">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.AnswersValidator
+AOR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+LOR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+SOR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+COR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+ROR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+ORU<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+LVR<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+STD<"org.mockito.internal.stubbing.answers.AnswersValidator">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter
+AOR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+LOR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+SOR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+COR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+ROR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+ORU<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+LVR<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+STD<"org.mockito.internal.stubbing.answers.AnswerReturnValuesAdapter">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.CallsRealMethods
+AOR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+LOR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+SOR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+COR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+ROR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+ORU<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+LVR<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+STD<"org.mockito.internal.stubbing.answers.CallsRealMethods">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.DoesNothing
+AOR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+LOR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+SOR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+COR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+ROR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+ORU<"org.mockito.internal.stubbing.answers.DoesNothing">;
+LVR<"org.mockito.internal.stubbing.answers.DoesNothing">;
+STD<"org.mockito.internal.stubbing.answers.DoesNothing">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.ClonesArguments
+AOR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+LOR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+SOR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+COR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+ROR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+ORU<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+LVR<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+STD<"org.mockito.internal.stubbing.answers.ClonesArguments">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.Returns
+AOR<"org.mockito.internal.stubbing.answers.Returns">;
+LOR<"org.mockito.internal.stubbing.answers.Returns">;
+SOR<"org.mockito.internal.stubbing.answers.Returns">;
+COR<"org.mockito.internal.stubbing.answers.Returns">;
+ROR<"org.mockito.internal.stubbing.answers.Returns">;
+ORU<"org.mockito.internal.stubbing.answers.Returns">;
+LVR<"org.mockito.internal.stubbing.answers.Returns">;
+STD<"org.mockito.internal.stubbing.answers.Returns">;
+
+// Enable operators for org.mockito.internal.stubbing.answers.ThrowsException
+AOR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+LOR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+SOR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+COR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+ROR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+ORU<"org.mockito.internal.stubbing.answers.ThrowsException">;
+LVR<"org.mockito.internal.stubbing.answers.ThrowsException">;
+STD<"org.mockito.internal.stubbing.answers.ThrowsException">;
+
+// Enable operators for org.mockito.internal.stubbing.VoidMethodStubbableImpl
+AOR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+LOR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+SOR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+COR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+ROR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+ORU<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+LVR<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+STD<"org.mockito.internal.stubbing.VoidMethodStubbableImpl">;
+
+// Enable operators for org.mockito.internal.stubbing.InvocationContainer
+AOR<"org.mockito.internal.stubbing.InvocationContainer">;
+LOR<"org.mockito.internal.stubbing.InvocationContainer">;
+SOR<"org.mockito.internal.stubbing.InvocationContainer">;
+COR<"org.mockito.internal.stubbing.InvocationContainer">;
+ROR<"org.mockito.internal.stubbing.InvocationContainer">;
+ORU<"org.mockito.internal.stubbing.InvocationContainer">;
+LVR<"org.mockito.internal.stubbing.InvocationContainer">;
+STD<"org.mockito.internal.stubbing.InvocationContainer">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls
+AOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+COR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+STD<"org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.Answers
+AOR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+COR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+STD<"org.mockito.internal.stubbing.defaultanswers.Answers">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues
+AOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+COR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+STD<"org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.ReturnsMocks
+AOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+COR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+STD<"org.mockito.internal.stubbing.defaultanswers.ReturnsMocks">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues
+AOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+COR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+STD<"org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValues">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer
+AOR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+COR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+STD<"org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer">;
+
+// Enable operators for org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs
+AOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+LOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+SOR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+COR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+ROR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+ORU<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+LVR<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+STD<"org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs">;
+
+// Enable operators for org.mockito.internal.stubbing.StubbedInvocationMatcher
+AOR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+LOR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+SOR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+COR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+ROR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+ORU<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+LVR<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+STD<"org.mockito.internal.stubbing.StubbedInvocationMatcher">;
+
+// Enable operators for org.mockito.internal.stubbing.BaseStubbing
+AOR<"org.mockito.internal.stubbing.BaseStubbing">;
+LOR<"org.mockito.internal.stubbing.BaseStubbing">;
+SOR<"org.mockito.internal.stubbing.BaseStubbing">;
+COR<"org.mockito.internal.stubbing.BaseStubbing">;
+ROR<"org.mockito.internal.stubbing.BaseStubbing">;
+ORU<"org.mockito.internal.stubbing.BaseStubbing">;
+LVR<"org.mockito.internal.stubbing.BaseStubbing">;
+STD<"org.mockito.internal.stubbing.BaseStubbing">;
+
+// Enable operators for org.mockito.internal.stubbing.StubberImpl
+AOR<"org.mockito.internal.stubbing.StubberImpl">;
+LOR<"org.mockito.internal.stubbing.StubberImpl">;
+SOR<"org.mockito.internal.stubbing.StubberImpl">;
+COR<"org.mockito.internal.stubbing.StubberImpl">;
+ROR<"org.mockito.internal.stubbing.StubberImpl">;
+ORU<"org.mockito.internal.stubbing.StubberImpl">;
+LVR<"org.mockito.internal.stubbing.StubberImpl">;
+STD<"org.mockito.internal.stubbing.StubberImpl">;
+
+// Enable operators for org.mockito.internal.stubbing.ConsecutiveStubbing
+AOR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+LOR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+SOR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+COR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+ROR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+ORU<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+LVR<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+STD<"org.mockito.internal.stubbing.ConsecutiveStubbing">;
+
+// Enable operators for org.mockito.internal.stubbing.OngoingStubbingImpl
+AOR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+LOR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+SOR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+COR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+ROR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+ORU<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+LVR<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+STD<"org.mockito.internal.stubbing.OngoingStubbingImpl">;
+
+// Enable operators for org.mockito.internal.stubbing.InvocationContainerImpl
+AOR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+LOR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+SOR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+COR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+ROR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+ORU<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+LVR<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+STD<"org.mockito.internal.stubbing.InvocationContainerImpl">;
+
+// Enable operators for org.mockito.internal.MockitoCore
+AOR<"org.mockito.internal.MockitoCore">;
+LOR<"org.mockito.internal.MockitoCore">;
+SOR<"org.mockito.internal.MockitoCore">;
+COR<"org.mockito.internal.MockitoCore">;
+ROR<"org.mockito.internal.MockitoCore">;
+ORU<"org.mockito.internal.MockitoCore">;
+LVR<"org.mockito.internal.MockitoCore">;
+STD<"org.mockito.internal.MockitoCore">;
+
+// Enable operators for org.mockito.internal.runners.util.RunnerProvider
+AOR<"org.mockito.internal.runners.util.RunnerProvider">;
+LOR<"org.mockito.internal.runners.util.RunnerProvider">;
+SOR<"org.mockito.internal.runners.util.RunnerProvider">;
+COR<"org.mockito.internal.runners.util.RunnerProvider">;
+ROR<"org.mockito.internal.runners.util.RunnerProvider">;
+ORU<"org.mockito.internal.runners.util.RunnerProvider">;
+LVR<"org.mockito.internal.runners.util.RunnerProvider">;
+STD<"org.mockito.internal.runners.util.RunnerProvider">;
+
+// Enable operators for org.mockito.internal.runners.util.TestMethodsFinder
+AOR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+LOR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+SOR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+COR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+ROR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+ORU<"org.mockito.internal.runners.util.TestMethodsFinder">;
+LVR<"org.mockito.internal.runners.util.TestMethodsFinder">;
+STD<"org.mockito.internal.runners.util.TestMethodsFinder">;
+
+// Enable operators for org.mockito.internal.runners.util.FrameworkUsageValidator
+AOR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+LOR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+SOR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+COR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+ROR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+ORU<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+LVR<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+STD<"org.mockito.internal.runners.util.FrameworkUsageValidator">;
+
+// Enable operators for org.mockito.internal.runners.RunnerFactory
+AOR<"org.mockito.internal.runners.RunnerFactory">;
+LOR<"org.mockito.internal.runners.RunnerFactory">;
+SOR<"org.mockito.internal.runners.RunnerFactory">;
+COR<"org.mockito.internal.runners.RunnerFactory">;
+ROR<"org.mockito.internal.runners.RunnerFactory">;
+ORU<"org.mockito.internal.runners.RunnerFactory">;
+LVR<"org.mockito.internal.runners.RunnerFactory">;
+STD<"org.mockito.internal.runners.RunnerFactory">;
+
+// Enable operators for org.mockito.internal.runners.JUnit45AndHigherRunnerImpl
+AOR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+LOR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+SOR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+COR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+ROR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+ORU<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+LVR<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+STD<"org.mockito.internal.runners.JUnit45AndHigherRunnerImpl">;
+
+// Enable operators for org.mockito.internal.runners.JUnit44RunnerImpl
+AOR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+LOR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+SOR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+COR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+ROR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+ORU<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+LVR<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+STD<"org.mockito.internal.runners.JUnit44RunnerImpl">;
+
+// Enable operators for org.mockito.internal.runners.RunnerImpl
+AOR<"org.mockito.internal.runners.RunnerImpl">;
+LOR<"org.mockito.internal.runners.RunnerImpl">;
+SOR<"org.mockito.internal.runners.RunnerImpl">;
+COR<"org.mockito.internal.runners.RunnerImpl">;
+ROR<"org.mockito.internal.runners.RunnerImpl">;
+ORU<"org.mockito.internal.runners.RunnerImpl">;
+LVR<"org.mockito.internal.runners.RunnerImpl">;
+STD<"org.mockito.internal.runners.RunnerImpl">;
+
+// Enable operators for org.mockito.internal.matchers.StartsWith
+AOR<"org.mockito.internal.matchers.StartsWith">;
+LOR<"org.mockito.internal.matchers.StartsWith">;
+SOR<"org.mockito.internal.matchers.StartsWith">;
+COR<"org.mockito.internal.matchers.StartsWith">;
+ROR<"org.mockito.internal.matchers.StartsWith">;
+ORU<"org.mockito.internal.matchers.StartsWith">;
+LVR<"org.mockito.internal.matchers.StartsWith">;
+STD<"org.mockito.internal.matchers.StartsWith">;
+
+// Enable operators for org.mockito.internal.matchers.LocalizedMatcher
+AOR<"org.mockito.internal.matchers.LocalizedMatcher">;
+LOR<"org.mockito.internal.matchers.LocalizedMatcher">;
+SOR<"org.mockito.internal.matchers.LocalizedMatcher">;
+COR<"org.mockito.internal.matchers.LocalizedMatcher">;
+ROR<"org.mockito.internal.matchers.LocalizedMatcher">;
+ORU<"org.mockito.internal.matchers.LocalizedMatcher">;
+LVR<"org.mockito.internal.matchers.LocalizedMatcher">;
+STD<"org.mockito.internal.matchers.LocalizedMatcher">;
+
+// Enable operators for org.mockito.internal.matchers.EqualsWithDelta
+AOR<"org.mockito.internal.matchers.EqualsWithDelta">;
+LOR<"org.mockito.internal.matchers.EqualsWithDelta">;
+SOR<"org.mockito.internal.matchers.EqualsWithDelta">;
+COR<"org.mockito.internal.matchers.EqualsWithDelta">;
+ROR<"org.mockito.internal.matchers.EqualsWithDelta">;
+ORU<"org.mockito.internal.matchers.EqualsWithDelta">;
+LVR<"org.mockito.internal.matchers.EqualsWithDelta">;
+STD<"org.mockito.internal.matchers.EqualsWithDelta">;
+
+// Enable operators for org.mockito.internal.matchers.Matches
+AOR<"org.mockito.internal.matchers.Matches">;
+LOR<"org.mockito.internal.matchers.Matches">;
+SOR<"org.mockito.internal.matchers.Matches">;
+COR<"org.mockito.internal.matchers.Matches">;
+ROR<"org.mockito.internal.matchers.Matches">;
+ORU<"org.mockito.internal.matchers.Matches">;
+LVR<"org.mockito.internal.matchers.Matches">;
+STD<"org.mockito.internal.matchers.Matches">;
+
+// Enable operators for org.mockito.internal.matchers.ContainsExtraTypeInformation
+AOR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+LOR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+SOR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+COR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+ROR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+ORU<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+LVR<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+STD<"org.mockito.internal.matchers.ContainsExtraTypeInformation">;
+
+// Enable operators for org.mockito.internal.matchers.Equality
+AOR<"org.mockito.internal.matchers.Equality">;
+LOR<"org.mockito.internal.matchers.Equality">;
+SOR<"org.mockito.internal.matchers.Equality">;
+COR<"org.mockito.internal.matchers.Equality">;
+ROR<"org.mockito.internal.matchers.Equality">;
+ORU<"org.mockito.internal.matchers.Equality">;
+LVR<"org.mockito.internal.matchers.Equality">;
+STD<"org.mockito.internal.matchers.Equality">;
+
+// Enable operators for org.mockito.internal.matchers.And
+AOR<"org.mockito.internal.matchers.And">;
+LOR<"org.mockito.internal.matchers.And">;
+SOR<"org.mockito.internal.matchers.And">;
+COR<"org.mockito.internal.matchers.And">;
+ROR<"org.mockito.internal.matchers.And">;
+ORU<"org.mockito.internal.matchers.And">;
+LVR<"org.mockito.internal.matchers.And">;
+STD<"org.mockito.internal.matchers.And">;
+
+// Enable operators for org.mockito.internal.matchers.CompareEqual
+AOR<"org.mockito.internal.matchers.CompareEqual">;
+LOR<"org.mockito.internal.matchers.CompareEqual">;
+SOR<"org.mockito.internal.matchers.CompareEqual">;
+COR<"org.mockito.internal.matchers.CompareEqual">;
+ROR<"org.mockito.internal.matchers.CompareEqual">;
+ORU<"org.mockito.internal.matchers.CompareEqual">;
+LVR<"org.mockito.internal.matchers.CompareEqual">;
+STD<"org.mockito.internal.matchers.CompareEqual">;
+
+// Enable operators for org.mockito.internal.matchers.MatchersPrinter
+AOR<"org.mockito.internal.matchers.MatchersPrinter">;
+LOR<"org.mockito.internal.matchers.MatchersPrinter">;
+SOR<"org.mockito.internal.matchers.MatchersPrinter">;
+COR<"org.mockito.internal.matchers.MatchersPrinter">;
+ROR<"org.mockito.internal.matchers.MatchersPrinter">;
+ORU<"org.mockito.internal.matchers.MatchersPrinter">;
+LVR<"org.mockito.internal.matchers.MatchersPrinter">;
+STD<"org.mockito.internal.matchers.MatchersPrinter">;
+
+// Enable operators for org.mockito.internal.matchers.LessOrEqual
+AOR<"org.mockito.internal.matchers.LessOrEqual">;
+LOR<"org.mockito.internal.matchers.LessOrEqual">;
+SOR<"org.mockito.internal.matchers.LessOrEqual">;
+COR<"org.mockito.internal.matchers.LessOrEqual">;
+ROR<"org.mockito.internal.matchers.LessOrEqual">;
+ORU<"org.mockito.internal.matchers.LessOrEqual">;
+LVR<"org.mockito.internal.matchers.LessOrEqual">;
+STD<"org.mockito.internal.matchers.LessOrEqual">;
+
+// Enable operators for org.mockito.internal.matchers.Contains
+AOR<"org.mockito.internal.matchers.Contains">;
+LOR<"org.mockito.internal.matchers.Contains">;
+SOR<"org.mockito.internal.matchers.Contains">;
+COR<"org.mockito.internal.matchers.Contains">;
+ROR<"org.mockito.internal.matchers.Contains">;
+ORU<"org.mockito.internal.matchers.Contains">;
+LVR<"org.mockito.internal.matchers.Contains">;
+STD<"org.mockito.internal.matchers.Contains">;
+
+// Enable operators for org.mockito.internal.matchers.InstanceOf
+AOR<"org.mockito.internal.matchers.InstanceOf">;
+LOR<"org.mockito.internal.matchers.InstanceOf">;
+SOR<"org.mockito.internal.matchers.InstanceOf">;
+COR<"org.mockito.internal.matchers.InstanceOf">;
+ROR<"org.mockito.internal.matchers.InstanceOf">;
+ORU<"org.mockito.internal.matchers.InstanceOf">;
+LVR<"org.mockito.internal.matchers.InstanceOf">;
+STD<"org.mockito.internal.matchers.InstanceOf">;
+
+// Enable operators for org.mockito.internal.matchers.CapturesArguments
+AOR<"org.mockito.internal.matchers.CapturesArguments">;
+LOR<"org.mockito.internal.matchers.CapturesArguments">;
+SOR<"org.mockito.internal.matchers.CapturesArguments">;
+COR<"org.mockito.internal.matchers.CapturesArguments">;
+ROR<"org.mockito.internal.matchers.CapturesArguments">;
+ORU<"org.mockito.internal.matchers.CapturesArguments">;
+LVR<"org.mockito.internal.matchers.CapturesArguments">;
+STD<"org.mockito.internal.matchers.CapturesArguments">;
+
+// Enable operators for org.mockito.internal.matchers.Same
+AOR<"org.mockito.internal.matchers.Same">;
+LOR<"org.mockito.internal.matchers.Same">;
+SOR<"org.mockito.internal.matchers.Same">;
+COR<"org.mockito.internal.matchers.Same">;
+ROR<"org.mockito.internal.matchers.Same">;
+ORU<"org.mockito.internal.matchers.Same">;
+LVR<"org.mockito.internal.matchers.Same">;
+STD<"org.mockito.internal.matchers.Same">;
+
+// Enable operators for org.mockito.internal.matchers.ArrayEquals
+AOR<"org.mockito.internal.matchers.ArrayEquals">;
+LOR<"org.mockito.internal.matchers.ArrayEquals">;
+SOR<"org.mockito.internal.matchers.ArrayEquals">;
+COR<"org.mockito.internal.matchers.ArrayEquals">;
+ROR<"org.mockito.internal.matchers.ArrayEquals">;
+ORU<"org.mockito.internal.matchers.ArrayEquals">;
+LVR<"org.mockito.internal.matchers.ArrayEquals">;
+STD<"org.mockito.internal.matchers.ArrayEquals">;
+
+// Enable operators for org.mockito.internal.matchers.CapturingMatcher
+AOR<"org.mockito.internal.matchers.CapturingMatcher">;
+LOR<"org.mockito.internal.matchers.CapturingMatcher">;
+SOR<"org.mockito.internal.matchers.CapturingMatcher">;
+COR<"org.mockito.internal.matchers.CapturingMatcher">;
+ROR<"org.mockito.internal.matchers.CapturingMatcher">;
+ORU<"org.mockito.internal.matchers.CapturingMatcher">;
+LVR<"org.mockito.internal.matchers.CapturingMatcher">;
+STD<"org.mockito.internal.matchers.CapturingMatcher">;
+
+// Enable operators for org.mockito.internal.matchers.NotNull
+AOR<"org.mockito.internal.matchers.NotNull">;
+LOR<"org.mockito.internal.matchers.NotNull">;
+SOR<"org.mockito.internal.matchers.NotNull">;
+COR<"org.mockito.internal.matchers.NotNull">;
+ROR<"org.mockito.internal.matchers.NotNull">;
+ORU<"org.mockito.internal.matchers.NotNull">;
+LVR<"org.mockito.internal.matchers.NotNull">;
+STD<"org.mockito.internal.matchers.NotNull">;
+
+// Enable operators for org.mockito.internal.matchers.Any
+AOR<"org.mockito.internal.matchers.Any">;
+LOR<"org.mockito.internal.matchers.Any">;
+SOR<"org.mockito.internal.matchers.Any">;
+COR<"org.mockito.internal.matchers.Any">;
+ROR<"org.mockito.internal.matchers.Any">;
+ORU<"org.mockito.internal.matchers.Any">;
+LVR<"org.mockito.internal.matchers.Any">;
+STD<"org.mockito.internal.matchers.Any">;
+
+// Enable operators for org.mockito.internal.matchers.MatcherDecorator
+AOR<"org.mockito.internal.matchers.MatcherDecorator">;
+LOR<"org.mockito.internal.matchers.MatcherDecorator">;
+SOR<"org.mockito.internal.matchers.MatcherDecorator">;
+COR<"org.mockito.internal.matchers.MatcherDecorator">;
+ROR<"org.mockito.internal.matchers.MatcherDecorator">;
+ORU<"org.mockito.internal.matchers.MatcherDecorator">;
+LVR<"org.mockito.internal.matchers.MatcherDecorator">;
+STD<"org.mockito.internal.matchers.MatcherDecorator">;
+
+// Enable operators for org.mockito.internal.matchers.apachecommons.ReflectionEquals
+AOR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+LOR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+SOR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+COR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+ROR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+ORU<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+LVR<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+STD<"org.mockito.internal.matchers.apachecommons.ReflectionEquals">;
+
+// Enable operators for org.mockito.internal.matchers.apachecommons.EqualsBuilder
+AOR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+LOR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+SOR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+COR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+ROR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+ORU<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+LVR<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+STD<"org.mockito.internal.matchers.apachecommons.EqualsBuilder">;
+
+// Enable operators for org.mockito.internal.matchers.GreaterThan
+AOR<"org.mockito.internal.matchers.GreaterThan">;
+LOR<"org.mockito.internal.matchers.GreaterThan">;
+SOR<"org.mockito.internal.matchers.GreaterThan">;
+COR<"org.mockito.internal.matchers.GreaterThan">;
+ROR<"org.mockito.internal.matchers.GreaterThan">;
+ORU<"org.mockito.internal.matchers.GreaterThan">;
+LVR<"org.mockito.internal.matchers.GreaterThan">;
+STD<"org.mockito.internal.matchers.GreaterThan">;
+
+// Enable operators for org.mockito.internal.matchers.VarargMatcher
+AOR<"org.mockito.internal.matchers.VarargMatcher">;
+LOR<"org.mockito.internal.matchers.VarargMatcher">;
+SOR<"org.mockito.internal.matchers.VarargMatcher">;
+COR<"org.mockito.internal.matchers.VarargMatcher">;
+ROR<"org.mockito.internal.matchers.VarargMatcher">;
+ORU<"org.mockito.internal.matchers.VarargMatcher">;
+LVR<"org.mockito.internal.matchers.VarargMatcher">;
+STD<"org.mockito.internal.matchers.VarargMatcher">;
+
+// Enable operators for org.mockito.internal.matchers.LessThan
+AOR<"org.mockito.internal.matchers.LessThan">;
+LOR<"org.mockito.internal.matchers.LessThan">;
+SOR<"org.mockito.internal.matchers.LessThan">;
+COR<"org.mockito.internal.matchers.LessThan">;
+ROR<"org.mockito.internal.matchers.LessThan">;
+ORU<"org.mockito.internal.matchers.LessThan">;
+LVR<"org.mockito.internal.matchers.LessThan">;
+STD<"org.mockito.internal.matchers.LessThan">;
+
+// Enable operators for org.mockito.internal.matchers.GreaterOrEqual
+AOR<"org.mockito.internal.matchers.GreaterOrEqual">;
+LOR<"org.mockito.internal.matchers.GreaterOrEqual">;
+SOR<"org.mockito.internal.matchers.GreaterOrEqual">;
+COR<"org.mockito.internal.matchers.GreaterOrEqual">;
+ROR<"org.mockito.internal.matchers.GreaterOrEqual">;
+ORU<"org.mockito.internal.matchers.GreaterOrEqual">;
+LVR<"org.mockito.internal.matchers.GreaterOrEqual">;
+STD<"org.mockito.internal.matchers.GreaterOrEqual">;
+
+// Enable operators for org.mockito.internal.matchers.CompareTo
+AOR<"org.mockito.internal.matchers.CompareTo">;
+LOR<"org.mockito.internal.matchers.CompareTo">;
+SOR<"org.mockito.internal.matchers.CompareTo">;
+COR<"org.mockito.internal.matchers.CompareTo">;
+ROR<"org.mockito.internal.matchers.CompareTo">;
+ORU<"org.mockito.internal.matchers.CompareTo">;
+LVR<"org.mockito.internal.matchers.CompareTo">;
+STD<"org.mockito.internal.matchers.CompareTo">;
+
+// Enable operators for org.mockito.internal.matchers.AnyVararg
+AOR<"org.mockito.internal.matchers.AnyVararg">;
+LOR<"org.mockito.internal.matchers.AnyVararg">;
+SOR<"org.mockito.internal.matchers.AnyVararg">;
+COR<"org.mockito.internal.matchers.AnyVararg">;
+ROR<"org.mockito.internal.matchers.AnyVararg">;
+ORU<"org.mockito.internal.matchers.AnyVararg">;
+LVR<"org.mockito.internal.matchers.AnyVararg">;
+STD<"org.mockito.internal.matchers.AnyVararg">;
+
+// Enable operators for org.mockito.internal.matchers.Or
+AOR<"org.mockito.internal.matchers.Or">;
+LOR<"org.mockito.internal.matchers.Or">;
+SOR<"org.mockito.internal.matchers.Or">;
+COR<"org.mockito.internal.matchers.Or">;
+ROR<"org.mockito.internal.matchers.Or">;
+ORU<"org.mockito.internal.matchers.Or">;
+LVR<"org.mockito.internal.matchers.Or">;
+STD<"org.mockito.internal.matchers.Or">;
+
+// Enable operators for org.mockito.internal.matchers.Null
+AOR<"org.mockito.internal.matchers.Null">;
+LOR<"org.mockito.internal.matchers.Null">;
+SOR<"org.mockito.internal.matchers.Null">;
+COR<"org.mockito.internal.matchers.Null">;
+ROR<"org.mockito.internal.matchers.Null">;
+ORU<"org.mockito.internal.matchers.Null">;
+LVR<"org.mockito.internal.matchers.Null">;
+STD<"org.mockito.internal.matchers.Null">;
+
+// Enable operators for org.mockito.internal.matchers.Equals
+AOR<"org.mockito.internal.matchers.Equals">;
+LOR<"org.mockito.internal.matchers.Equals">;
+SOR<"org.mockito.internal.matchers.Equals">;
+COR<"org.mockito.internal.matchers.Equals">;
+ROR<"org.mockito.internal.matchers.Equals">;
+ORU<"org.mockito.internal.matchers.Equals">;
+LVR<"org.mockito.internal.matchers.Equals">;
+STD<"org.mockito.internal.matchers.Equals">;
+
+// Enable operators for org.mockito.internal.matchers.EndsWith
+AOR<"org.mockito.internal.matchers.EndsWith">;
+LOR<"org.mockito.internal.matchers.EndsWith">;
+SOR<"org.mockito.internal.matchers.EndsWith">;
+COR<"org.mockito.internal.matchers.EndsWith">;
+ROR<"org.mockito.internal.matchers.EndsWith">;
+ORU<"org.mockito.internal.matchers.EndsWith">;
+LVR<"org.mockito.internal.matchers.EndsWith">;
+STD<"org.mockito.internal.matchers.EndsWith">;
+
+// Enable operators for org.mockito.internal.matchers.Find
+AOR<"org.mockito.internal.matchers.Find">;
+LOR<"org.mockito.internal.matchers.Find">;
+SOR<"org.mockito.internal.matchers.Find">;
+COR<"org.mockito.internal.matchers.Find">;
+ROR<"org.mockito.internal.matchers.Find">;
+ORU<"org.mockito.internal.matchers.Find">;
+LVR<"org.mockito.internal.matchers.Find">;
+STD<"org.mockito.internal.matchers.Find">;
+
+// Enable operators for org.mockito.internal.matchers.Not
+AOR<"org.mockito.internal.matchers.Not">;
+LOR<"org.mockito.internal.matchers.Not">;
+SOR<"org.mockito.internal.matchers.Not">;
+COR<"org.mockito.internal.matchers.Not">;
+ROR<"org.mockito.internal.matchers.Not">;
+ORU<"org.mockito.internal.matchers.Not">;
+LVR<"org.mockito.internal.matchers.Not">;
+STD<"org.mockito.internal.matchers.Not">;
+
+// Enable operators for org.mockito.internal.reporting.PrintingFriendlyInvocation
+AOR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+LOR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+SOR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+COR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+ROR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+ORU<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+LVR<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+STD<"org.mockito.internal.reporting.PrintingFriendlyInvocation">;
+
+// Enable operators for org.mockito.internal.reporting.PrintSettings
+AOR<"org.mockito.internal.reporting.PrintSettings">;
+LOR<"org.mockito.internal.reporting.PrintSettings">;
+SOR<"org.mockito.internal.reporting.PrintSettings">;
+COR<"org.mockito.internal.reporting.PrintSettings">;
+ROR<"org.mockito.internal.reporting.PrintSettings">;
+ORU<"org.mockito.internal.reporting.PrintSettings">;
+LVR<"org.mockito.internal.reporting.PrintSettings">;
+STD<"org.mockito.internal.reporting.PrintSettings">;
+
+// Enable operators for org.mockito.internal.reporting.SmartPrinter
+AOR<"org.mockito.internal.reporting.SmartPrinter">;
+LOR<"org.mockito.internal.reporting.SmartPrinter">;
+SOR<"org.mockito.internal.reporting.SmartPrinter">;
+COR<"org.mockito.internal.reporting.SmartPrinter">;
+ROR<"org.mockito.internal.reporting.SmartPrinter">;
+ORU<"org.mockito.internal.reporting.SmartPrinter">;
+LVR<"org.mockito.internal.reporting.SmartPrinter">;
+STD<"org.mockito.internal.reporting.SmartPrinter">;
+
+// Enable operators for org.mockito.internal.InOrderImpl
+AOR<"org.mockito.internal.InOrderImpl">;
+LOR<"org.mockito.internal.InOrderImpl">;
+SOR<"org.mockito.internal.InOrderImpl">;
+COR<"org.mockito.internal.InOrderImpl">;
+ROR<"org.mockito.internal.InOrderImpl">;
+ORU<"org.mockito.internal.InOrderImpl">;
+LVR<"org.mockito.internal.InOrderImpl">;
+STD<"org.mockito.internal.InOrderImpl">;
+
+// Enable operators for org.mockito.internal.util.MockUtil
+AOR<"org.mockito.internal.util.MockUtil">;
+LOR<"org.mockito.internal.util.MockUtil">;
+SOR<"org.mockito.internal.util.MockUtil">;
+COR<"org.mockito.internal.util.MockUtil">;
+ROR<"org.mockito.internal.util.MockUtil">;
+ORU<"org.mockito.internal.util.MockUtil">;
+LVR<"org.mockito.internal.util.MockUtil">;
+STD<"org.mockito.internal.util.MockUtil">;
+
+// Enable operators for org.mockito.internal.util.StringJoiner
+AOR<"org.mockito.internal.util.StringJoiner">;
+LOR<"org.mockito.internal.util.StringJoiner">;
+SOR<"org.mockito.internal.util.StringJoiner">;
+COR<"org.mockito.internal.util.StringJoiner">;
+ROR<"org.mockito.internal.util.StringJoiner">;
+ORU<"org.mockito.internal.util.StringJoiner">;
+LVR<"org.mockito.internal.util.StringJoiner">;
+STD<"org.mockito.internal.util.StringJoiner">;
+
+// Enable operators for org.mockito.internal.util.Decamelizer
+AOR<"org.mockito.internal.util.Decamelizer">;
+LOR<"org.mockito.internal.util.Decamelizer">;
+SOR<"org.mockito.internal.util.Decamelizer">;
+COR<"org.mockito.internal.util.Decamelizer">;
+ROR<"org.mockito.internal.util.Decamelizer">;
+ORU<"org.mockito.internal.util.Decamelizer">;
+LVR<"org.mockito.internal.util.Decamelizer">;
+STD<"org.mockito.internal.util.Decamelizer">;
+
+// Enable operators for org.mockito.internal.util.MockName
+AOR<"org.mockito.internal.util.MockName">;
+LOR<"org.mockito.internal.util.MockName">;
+SOR<"org.mockito.internal.util.MockName">;
+COR<"org.mockito.internal.util.MockName">;
+ROR<"org.mockito.internal.util.MockName">;
+ORU<"org.mockito.internal.util.MockName">;
+LVR<"org.mockito.internal.util.MockName">;
+STD<"org.mockito.internal.util.MockName">;
+
+// Enable operators for org.mockito.internal.util.junit.JUnitFailureHacker
+AOR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+LOR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+SOR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+COR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+ROR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+ORU<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+LVR<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+STD<"org.mockito.internal.util.junit.JUnitFailureHacker">;
+
+// Enable operators for org.mockito.internal.util.ObjectMethodsGuru
+AOR<"org.mockito.internal.util.ObjectMethodsGuru">;
+LOR<"org.mockito.internal.util.ObjectMethodsGuru">;
+SOR<"org.mockito.internal.util.ObjectMethodsGuru">;
+COR<"org.mockito.internal.util.ObjectMethodsGuru">;
+ROR<"org.mockito.internal.util.ObjectMethodsGuru">;
+ORU<"org.mockito.internal.util.ObjectMethodsGuru">;
+LVR<"org.mockito.internal.util.ObjectMethodsGuru">;
+STD<"org.mockito.internal.util.ObjectMethodsGuru">;
+
+// Enable operators for org.mockito.internal.util.ArrayUtils
+AOR<"org.mockito.internal.util.ArrayUtils">;
+LOR<"org.mockito.internal.util.ArrayUtils">;
+SOR<"org.mockito.internal.util.ArrayUtils">;
+COR<"org.mockito.internal.util.ArrayUtils">;
+ROR<"org.mockito.internal.util.ArrayUtils">;
+ORU<"org.mockito.internal.util.ArrayUtils">;
+LVR<"org.mockito.internal.util.ArrayUtils">;
+STD<"org.mockito.internal.util.ArrayUtils">;
+
+// Enable operators for org.mockito.internal.util.Primitives
+AOR<"org.mockito.internal.util.Primitives">;
+LOR<"org.mockito.internal.util.Primitives">;
+SOR<"org.mockito.internal.util.Primitives">;
+COR<"org.mockito.internal.util.Primitives">;
+ROR<"org.mockito.internal.util.Primitives">;
+ORU<"org.mockito.internal.util.Primitives">;
+LVR<"org.mockito.internal.util.Primitives">;
+STD<"org.mockito.internal.util.Primitives">;
+
+// Enable operators for org.mockito.internal.util.MockitoLogger
+AOR<"org.mockito.internal.util.MockitoLogger">;
+LOR<"org.mockito.internal.util.MockitoLogger">;
+SOR<"org.mockito.internal.util.MockitoLogger">;
+COR<"org.mockito.internal.util.MockitoLogger">;
+ROR<"org.mockito.internal.util.MockitoLogger">;
+ORU<"org.mockito.internal.util.MockitoLogger">;
+LVR<"org.mockito.internal.util.MockitoLogger">;
+STD<"org.mockito.internal.util.MockitoLogger">;
+
+// Enable operators for org.mockito.internal.util.ListUtil
+AOR<"org.mockito.internal.util.ListUtil">;
+LOR<"org.mockito.internal.util.ListUtil">;
+SOR<"org.mockito.internal.util.ListUtil">;
+COR<"org.mockito.internal.util.ListUtil">;
+ROR<"org.mockito.internal.util.ListUtil">;
+ORU<"org.mockito.internal.util.ListUtil">;
+LVR<"org.mockito.internal.util.ListUtil">;
+STD<"org.mockito.internal.util.ListUtil">;
+
+// Enable operators for org.mockito.internal.util.MockCreationValidator
+AOR<"org.mockito.internal.util.MockCreationValidator">;
+LOR<"org.mockito.internal.util.MockCreationValidator">;
+SOR<"org.mockito.internal.util.MockCreationValidator">;
+COR<"org.mockito.internal.util.MockCreationValidator">;
+ROR<"org.mockito.internal.util.MockCreationValidator">;
+ORU<"org.mockito.internal.util.MockCreationValidator">;
+LVR<"org.mockito.internal.util.MockCreationValidator">;
+STD<"org.mockito.internal.util.MockCreationValidator">;
+
+// Enable operators for org.mockito.internal.util.reflection.FieldReader
+AOR<"org.mockito.internal.util.reflection.FieldReader">;
+LOR<"org.mockito.internal.util.reflection.FieldReader">;
+SOR<"org.mockito.internal.util.reflection.FieldReader">;
+COR<"org.mockito.internal.util.reflection.FieldReader">;
+ROR<"org.mockito.internal.util.reflection.FieldReader">;
+ORU<"org.mockito.internal.util.reflection.FieldReader">;
+LVR<"org.mockito.internal.util.reflection.FieldReader">;
+STD<"org.mockito.internal.util.reflection.FieldReader">;
+
+// Enable operators for org.mockito.internal.util.reflection.FieldSetter
+AOR<"org.mockito.internal.util.reflection.FieldSetter">;
+LOR<"org.mockito.internal.util.reflection.FieldSetter">;
+SOR<"org.mockito.internal.util.reflection.FieldSetter">;
+COR<"org.mockito.internal.util.reflection.FieldSetter">;
+ROR<"org.mockito.internal.util.reflection.FieldSetter">;
+ORU<"org.mockito.internal.util.reflection.FieldSetter">;
+LVR<"org.mockito.internal.util.reflection.FieldSetter">;
+STD<"org.mockito.internal.util.reflection.FieldSetter">;
+
+// Enable operators for org.mockito.internal.util.reflection.AccessibilityChanger
+AOR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+LOR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+SOR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+COR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+ROR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+ORU<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+LVR<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+STD<"org.mockito.internal.util.reflection.AccessibilityChanger">;
+
+// Enable operators for org.mockito.internal.util.reflection.FieldCopier
+AOR<"org.mockito.internal.util.reflection.FieldCopier">;
+LOR<"org.mockito.internal.util.reflection.FieldCopier">;
+SOR<"org.mockito.internal.util.reflection.FieldCopier">;
+COR<"org.mockito.internal.util.reflection.FieldCopier">;
+ROR<"org.mockito.internal.util.reflection.FieldCopier">;
+ORU<"org.mockito.internal.util.reflection.FieldCopier">;
+LVR<"org.mockito.internal.util.reflection.FieldCopier">;
+STD<"org.mockito.internal.util.reflection.FieldCopier">;
+
+// Enable operators for org.mockito.internal.util.reflection.LenientCopyTool
+AOR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+LOR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+SOR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+COR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+ROR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+ORU<"org.mockito.internal.util.reflection.LenientCopyTool">;
+LVR<"org.mockito.internal.util.reflection.LenientCopyTool">;
+STD<"org.mockito.internal.util.reflection.LenientCopyTool">;
+
+// Enable operators for org.mockito.internal.util.reflection.Whitebox
+AOR<"org.mockito.internal.util.reflection.Whitebox">;
+LOR<"org.mockito.internal.util.reflection.Whitebox">;
+SOR<"org.mockito.internal.util.reflection.Whitebox">;
+COR<"org.mockito.internal.util.reflection.Whitebox">;
+ROR<"org.mockito.internal.util.reflection.Whitebox">;
+ORU<"org.mockito.internal.util.reflection.Whitebox">;
+LVR<"org.mockito.internal.util.reflection.Whitebox">;
+STD<"org.mockito.internal.util.reflection.Whitebox">;
+
+// Enable operators for org.mockito.internal.util.RemoveFirstLine
+AOR<"org.mockito.internal.util.RemoveFirstLine">;
+LOR<"org.mockito.internal.util.RemoveFirstLine">;
+SOR<"org.mockito.internal.util.RemoveFirstLine">;
+COR<"org.mockito.internal.util.RemoveFirstLine">;
+ROR<"org.mockito.internal.util.RemoveFirstLine">;
+ORU<"org.mockito.internal.util.RemoveFirstLine">;
+LVR<"org.mockito.internal.util.RemoveFirstLine">;
+STD<"org.mockito.internal.util.RemoveFirstLine">;
+
+// Enable operators for org.mockito.internal.util.IdentitySet
+AOR<"org.mockito.internal.util.IdentitySet">;
+LOR<"org.mockito.internal.util.IdentitySet">;
+SOR<"org.mockito.internal.util.IdentitySet">;
+COR<"org.mockito.internal.util.IdentitySet">;
+ROR<"org.mockito.internal.util.IdentitySet">;
+ORU<"org.mockito.internal.util.IdentitySet">;
+LVR<"org.mockito.internal.util.IdentitySet">;
+STD<"org.mockito.internal.util.IdentitySet">;
+
+// Enable operators for org.mockito.internal.util.SimpleMockitoLogger
+AOR<"org.mockito.internal.util.SimpleMockitoLogger">;
+LOR<"org.mockito.internal.util.SimpleMockitoLogger">;
+SOR<"org.mockito.internal.util.SimpleMockitoLogger">;
+COR<"org.mockito.internal.util.SimpleMockitoLogger">;
+ROR<"org.mockito.internal.util.SimpleMockitoLogger">;
+ORU<"org.mockito.internal.util.SimpleMockitoLogger">;
+LVR<"org.mockito.internal.util.SimpleMockitoLogger">;
+STD<"org.mockito.internal.util.SimpleMockitoLogger">;
+
+// Enable operators for org.mockito.internal.util.ConsoleMockitoLogger
+AOR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+LOR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+SOR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+COR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+ROR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+ORU<"org.mockito.internal.util.ConsoleMockitoLogger">;
+LVR<"org.mockito.internal.util.ConsoleMockitoLogger">;
+STD<"org.mockito.internal.util.ConsoleMockitoLogger">;
+
+// Enable operators for org.mockito.internal.progress.ArgumentMatcherStorageImpl
+AOR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+LOR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+SOR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+COR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+ROR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+ORU<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+LVR<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+STD<"org.mockito.internal.progress.ArgumentMatcherStorageImpl">;
+
+// Enable operators for org.mockito.internal.progress.ThreadSafeMockingProgress
+AOR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+LOR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+SOR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+COR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+ROR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+ORU<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+LVR<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+STD<"org.mockito.internal.progress.ThreadSafeMockingProgress">;
+
+// Enable operators for org.mockito.internal.progress.IOngoingStubbing
+AOR<"org.mockito.internal.progress.IOngoingStubbing">;
+LOR<"org.mockito.internal.progress.IOngoingStubbing">;
+SOR<"org.mockito.internal.progress.IOngoingStubbing">;
+COR<"org.mockito.internal.progress.IOngoingStubbing">;
+ROR<"org.mockito.internal.progress.IOngoingStubbing">;
+ORU<"org.mockito.internal.progress.IOngoingStubbing">;
+LVR<"org.mockito.internal.progress.IOngoingStubbing">;
+STD<"org.mockito.internal.progress.IOngoingStubbing">;
+
+// Enable operators for org.mockito.internal.progress.MockingProgress
+AOR<"org.mockito.internal.progress.MockingProgress">;
+LOR<"org.mockito.internal.progress.MockingProgress">;
+SOR<"org.mockito.internal.progress.MockingProgress">;
+COR<"org.mockito.internal.progress.MockingProgress">;
+ROR<"org.mockito.internal.progress.MockingProgress">;
+ORU<"org.mockito.internal.progress.MockingProgress">;
+LVR<"org.mockito.internal.progress.MockingProgress">;
+STD<"org.mockito.internal.progress.MockingProgress">;
+
+// Enable operators for org.mockito.internal.progress.MockingProgressImpl
+AOR<"org.mockito.internal.progress.MockingProgressImpl">;
+LOR<"org.mockito.internal.progress.MockingProgressImpl">;
+SOR<"org.mockito.internal.progress.MockingProgressImpl">;
+COR<"org.mockito.internal.progress.MockingProgressImpl">;
+ROR<"org.mockito.internal.progress.MockingProgressImpl">;
+ORU<"org.mockito.internal.progress.MockingProgressImpl">;
+LVR<"org.mockito.internal.progress.MockingProgressImpl">;
+STD<"org.mockito.internal.progress.MockingProgressImpl">;
+
+// Enable operators for org.mockito.internal.progress.SequenceNumber
+AOR<"org.mockito.internal.progress.SequenceNumber">;
+LOR<"org.mockito.internal.progress.SequenceNumber">;
+SOR<"org.mockito.internal.progress.SequenceNumber">;
+COR<"org.mockito.internal.progress.SequenceNumber">;
+ROR<"org.mockito.internal.progress.SequenceNumber">;
+ORU<"org.mockito.internal.progress.SequenceNumber">;
+LVR<"org.mockito.internal.progress.SequenceNumber">;
+STD<"org.mockito.internal.progress.SequenceNumber">;
+
+// Enable operators for org.mockito.internal.progress.HandyReturnValues
+AOR<"org.mockito.internal.progress.HandyReturnValues">;
+LOR<"org.mockito.internal.progress.HandyReturnValues">;
+SOR<"org.mockito.internal.progress.HandyReturnValues">;
+COR<"org.mockito.internal.progress.HandyReturnValues">;
+ROR<"org.mockito.internal.progress.HandyReturnValues">;
+ORU<"org.mockito.internal.progress.HandyReturnValues">;
+LVR<"org.mockito.internal.progress.HandyReturnValues">;
+STD<"org.mockito.internal.progress.HandyReturnValues">;
+
+// Enable operators for org.mockito.internal.progress.ArgumentMatcherStorage
+AOR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+LOR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+SOR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+COR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+ROR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+ORU<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+LVR<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+STD<"org.mockito.internal.progress.ArgumentMatcherStorage">;
+
+// Enable operators for org.mockito.internal.invocation.MatchersBinder
+AOR<"org.mockito.internal.invocation.MatchersBinder">;
+LOR<"org.mockito.internal.invocation.MatchersBinder">;
+SOR<"org.mockito.internal.invocation.MatchersBinder">;
+COR<"org.mockito.internal.invocation.MatchersBinder">;
+ROR<"org.mockito.internal.invocation.MatchersBinder">;
+ORU<"org.mockito.internal.invocation.MatchersBinder">;
+LVR<"org.mockito.internal.invocation.MatchersBinder">;
+STD<"org.mockito.internal.invocation.MatchersBinder">;
+
+// Enable operators for org.mockito.internal.invocation.MockitoMethod
+AOR<"org.mockito.internal.invocation.MockitoMethod">;
+LOR<"org.mockito.internal.invocation.MockitoMethod">;
+SOR<"org.mockito.internal.invocation.MockitoMethod">;
+COR<"org.mockito.internal.invocation.MockitoMethod">;
+ROR<"org.mockito.internal.invocation.MockitoMethod">;
+ORU<"org.mockito.internal.invocation.MockitoMethod">;
+LVR<"org.mockito.internal.invocation.MockitoMethod">;
+STD<"org.mockito.internal.invocation.MockitoMethod">;
+
+// Enable operators for org.mockito.internal.invocation.SerializableMethod
+AOR<"org.mockito.internal.invocation.SerializableMethod">;
+LOR<"org.mockito.internal.invocation.SerializableMethod">;
+SOR<"org.mockito.internal.invocation.SerializableMethod">;
+COR<"org.mockito.internal.invocation.SerializableMethod">;
+ROR<"org.mockito.internal.invocation.SerializableMethod">;
+ORU<"org.mockito.internal.invocation.SerializableMethod">;
+LVR<"org.mockito.internal.invocation.SerializableMethod">;
+STD<"org.mockito.internal.invocation.SerializableMethod">;
+
+// Enable operators for org.mockito.internal.invocation.StubInfo
+AOR<"org.mockito.internal.invocation.StubInfo">;
+LOR<"org.mockito.internal.invocation.StubInfo">;
+SOR<"org.mockito.internal.invocation.StubInfo">;
+COR<"org.mockito.internal.invocation.StubInfo">;
+ROR<"org.mockito.internal.invocation.StubInfo">;
+ORU<"org.mockito.internal.invocation.StubInfo">;
+LVR<"org.mockito.internal.invocation.StubInfo">;
+STD<"org.mockito.internal.invocation.StubInfo">;
+
+// Enable operators for org.mockito.internal.invocation.InvocationsFinder
+AOR<"org.mockito.internal.invocation.InvocationsFinder">;
+LOR<"org.mockito.internal.invocation.InvocationsFinder">;
+SOR<"org.mockito.internal.invocation.InvocationsFinder">;
+COR<"org.mockito.internal.invocation.InvocationsFinder">;
+ROR<"org.mockito.internal.invocation.InvocationsFinder">;
+ORU<"org.mockito.internal.invocation.InvocationsFinder">;
+LVR<"org.mockito.internal.invocation.InvocationsFinder">;
+STD<"org.mockito.internal.invocation.InvocationsFinder">;
+
+// Enable operators for org.mockito.internal.invocation.AllInvocationsFinder
+AOR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+LOR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+SOR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+COR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+ROR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+ORU<"org.mockito.internal.invocation.AllInvocationsFinder">;
+LVR<"org.mockito.internal.invocation.AllInvocationsFinder">;
+STD<"org.mockito.internal.invocation.AllInvocationsFinder">;
+
+// Enable operators for org.mockito.internal.invocation.CapturesArgumensFromInvocation
+AOR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+LOR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+SOR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+COR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+ROR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+ORU<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+LVR<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+STD<"org.mockito.internal.invocation.CapturesArgumensFromInvocation">;
+
+// Enable operators for org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod
+AOR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+LOR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+SOR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+COR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+ROR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+ORU<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+LVR<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+STD<"org.mockito.internal.invocation.realmethod.CGLIBProxyRealMethod">;
+
+// Enable operators for org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy
+AOR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+LOR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+SOR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+COR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+ROR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+ORU<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+LVR<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+STD<"org.mockito.internal.invocation.realmethod.HasCGLIBMethodProxy">;
+
+// Enable operators for org.mockito.internal.invocation.realmethod.RealMethod
+AOR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+LOR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+SOR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+COR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+ROR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+ORU<"org.mockito.internal.invocation.realmethod.RealMethod">;
+LVR<"org.mockito.internal.invocation.realmethod.RealMethod">;
+STD<"org.mockito.internal.invocation.realmethod.RealMethod">;
+
+// Enable operators for org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod
+AOR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+LOR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+SOR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+COR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+ROR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+ORU<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+LVR<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+STD<"org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod">;
+
+// Enable operators for org.mockito.internal.invocation.InvocationMatcher
+AOR<"org.mockito.internal.invocation.InvocationMatcher">;
+LOR<"org.mockito.internal.invocation.InvocationMatcher">;
+SOR<"org.mockito.internal.invocation.InvocationMatcher">;
+COR<"org.mockito.internal.invocation.InvocationMatcher">;
+ROR<"org.mockito.internal.invocation.InvocationMatcher">;
+ORU<"org.mockito.internal.invocation.InvocationMatcher">;
+LVR<"org.mockito.internal.invocation.InvocationMatcher">;
+STD<"org.mockito.internal.invocation.InvocationMatcher">;
+
+// Enable operators for org.mockito.internal.invocation.ArgumentsComparator
+AOR<"org.mockito.internal.invocation.ArgumentsComparator">;
+LOR<"org.mockito.internal.invocation.ArgumentsComparator">;
+SOR<"org.mockito.internal.invocation.ArgumentsComparator">;
+COR<"org.mockito.internal.invocation.ArgumentsComparator">;
+ROR<"org.mockito.internal.invocation.ArgumentsComparator">;
+ORU<"org.mockito.internal.invocation.ArgumentsComparator">;
+LVR<"org.mockito.internal.invocation.ArgumentsComparator">;
+STD<"org.mockito.internal.invocation.ArgumentsComparator">;
+
+// Enable operators for org.mockito.internal.invocation.UnusedStubsFinder
+AOR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+LOR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+SOR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+COR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+ROR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+ORU<"org.mockito.internal.invocation.UnusedStubsFinder">;
+LVR<"org.mockito.internal.invocation.UnusedStubsFinder">;
+STD<"org.mockito.internal.invocation.UnusedStubsFinder">;
+
+// Enable operators for org.mockito.internal.invocation.Invocation
+AOR<"org.mockito.internal.invocation.Invocation">;
+LOR<"org.mockito.internal.invocation.Invocation">;
+SOR<"org.mockito.internal.invocation.Invocation">;
+COR<"org.mockito.internal.invocation.Invocation">;
+ROR<"org.mockito.internal.invocation.Invocation">;
+ORU<"org.mockito.internal.invocation.Invocation">;
+LVR<"org.mockito.internal.invocation.Invocation">;
+STD<"org.mockito.internal.invocation.Invocation">;
+
+// Enable operators for org.mockito.internal.invocation.InvocationMarker
+AOR<"org.mockito.internal.invocation.InvocationMarker">;
+LOR<"org.mockito.internal.invocation.InvocationMarker">;
+SOR<"org.mockito.internal.invocation.InvocationMarker">;
+COR<"org.mockito.internal.invocation.InvocationMarker">;
+ROR<"org.mockito.internal.invocation.InvocationMarker">;
+ORU<"org.mockito.internal.invocation.InvocationMarker">;
+LVR<"org.mockito.internal.invocation.InvocationMarker">;
+STD<"org.mockito.internal.invocation.InvocationMarker">;
+
+// Enable operators for org.mockito.internal.debugging.Localized
+AOR<"org.mockito.internal.debugging.Localized">;
+LOR<"org.mockito.internal.debugging.Localized">;
+SOR<"org.mockito.internal.debugging.Localized">;
+COR<"org.mockito.internal.debugging.Localized">;
+ROR<"org.mockito.internal.debugging.Localized">;
+ORU<"org.mockito.internal.debugging.Localized">;
+LVR<"org.mockito.internal.debugging.Localized">;
+STD<"org.mockito.internal.debugging.Localized">;
+
+// Enable operators for org.mockito.internal.debugging.WarningsPrinterImpl
+AOR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+LOR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+SOR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+COR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+ROR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+ORU<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+LVR<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+STD<"org.mockito.internal.debugging.WarningsPrinterImpl">;
+
+// Enable operators for org.mockito.internal.debugging.MockitoDebuggerImpl
+AOR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+LOR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+SOR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+COR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+ROR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+ORU<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+LVR<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+STD<"org.mockito.internal.debugging.MockitoDebuggerImpl">;
+
+// Enable operators for org.mockito.internal.debugging.LoggingListener
+AOR<"org.mockito.internal.debugging.LoggingListener">;
+LOR<"org.mockito.internal.debugging.LoggingListener">;
+SOR<"org.mockito.internal.debugging.LoggingListener">;
+COR<"org.mockito.internal.debugging.LoggingListener">;
+ROR<"org.mockito.internal.debugging.LoggingListener">;
+ORU<"org.mockito.internal.debugging.LoggingListener">;
+LVR<"org.mockito.internal.debugging.LoggingListener">;
+STD<"org.mockito.internal.debugging.LoggingListener">;
+
+// Enable operators for org.mockito.internal.debugging.WarningsCollector
+AOR<"org.mockito.internal.debugging.WarningsCollector">;
+LOR<"org.mockito.internal.debugging.WarningsCollector">;
+SOR<"org.mockito.internal.debugging.WarningsCollector">;
+COR<"org.mockito.internal.debugging.WarningsCollector">;
+ROR<"org.mockito.internal.debugging.WarningsCollector">;
+ORU<"org.mockito.internal.debugging.WarningsCollector">;
+LVR<"org.mockito.internal.debugging.WarningsCollector">;
+STD<"org.mockito.internal.debugging.WarningsCollector">;
+
+// Enable operators for org.mockito.internal.debugging.Location
+AOR<"org.mockito.internal.debugging.Location">;
+LOR<"org.mockito.internal.debugging.Location">;
+SOR<"org.mockito.internal.debugging.Location">;
+COR<"org.mockito.internal.debugging.Location">;
+ROR<"org.mockito.internal.debugging.Location">;
+ORU<"org.mockito.internal.debugging.Location">;
+LVR<"org.mockito.internal.debugging.Location">;
+STD<"org.mockito.internal.debugging.Location">;
+
+// Enable operators for org.mockito.internal.debugging.WarningsFinder
+AOR<"org.mockito.internal.debugging.WarningsFinder">;
+LOR<"org.mockito.internal.debugging.WarningsFinder">;
+SOR<"org.mockito.internal.debugging.WarningsFinder">;
+COR<"org.mockito.internal.debugging.WarningsFinder">;
+ROR<"org.mockito.internal.debugging.WarningsFinder">;
+ORU<"org.mockito.internal.debugging.WarningsFinder">;
+LVR<"org.mockito.internal.debugging.WarningsFinder">;
+STD<"org.mockito.internal.debugging.WarningsFinder">;
+
+// Enable operators for org.mockito.internal.debugging.FindingsListener
+AOR<"org.mockito.internal.debugging.FindingsListener">;
+LOR<"org.mockito.internal.debugging.FindingsListener">;
+SOR<"org.mockito.internal.debugging.FindingsListener">;
+COR<"org.mockito.internal.debugging.FindingsListener">;
+ROR<"org.mockito.internal.debugging.FindingsListener">;
+ORU<"org.mockito.internal.debugging.FindingsListener">;
+LVR<"org.mockito.internal.debugging.FindingsListener">;
+STD<"org.mockito.internal.debugging.FindingsListener">;
+
+// Enable operators for org.mockito.internal.MockHandlerInterface
+AOR<"org.mockito.internal.MockHandlerInterface">;
+LOR<"org.mockito.internal.MockHandlerInterface">;
+SOR<"org.mockito.internal.MockHandlerInterface">;
+COR<"org.mockito.internal.MockHandlerInterface">;
+ROR<"org.mockito.internal.MockHandlerInterface">;
+ORU<"org.mockito.internal.MockHandlerInterface">;
+LVR<"org.mockito.internal.MockHandlerInterface">;
+STD<"org.mockito.internal.MockHandlerInterface">;
+
+// Enable operators for org.mockito.internal.MockHandler
+AOR<"org.mockito.internal.MockHandler">;
+LOR<"org.mockito.internal.MockHandler">;
+SOR<"org.mockito.internal.MockHandler">;
+COR<"org.mockito.internal.MockHandler">;
+ROR<"org.mockito.internal.MockHandler">;
+ORU<"org.mockito.internal.MockHandler">;
+LVR<"org.mockito.internal.MockHandler">;
+STD<"org.mockito.internal.MockHandler">;
+
+// Enable operators for org.mockito.internal.verification.api.VerificationData
+AOR<"org.mockito.internal.verification.api.VerificationData">;
+LOR<"org.mockito.internal.verification.api.VerificationData">;
+SOR<"org.mockito.internal.verification.api.VerificationData">;
+COR<"org.mockito.internal.verification.api.VerificationData">;
+ROR<"org.mockito.internal.verification.api.VerificationData">;
+ORU<"org.mockito.internal.verification.api.VerificationData">;
+LVR<"org.mockito.internal.verification.api.VerificationData">;
+STD<"org.mockito.internal.verification.api.VerificationData">;
+
+// Enable operators for org.mockito.internal.verification.api.VerificationInOrderMode
+AOR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+LOR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+SOR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+COR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+ROR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+ORU<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+LVR<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+STD<"org.mockito.internal.verification.api.VerificationInOrderMode">;
+
+// Enable operators for org.mockito.internal.verification.api.VerificationDataInOrderImpl
+AOR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+LOR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+SOR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+COR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+ROR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+ORU<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+LVR<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+STD<"org.mockito.internal.verification.api.VerificationDataInOrderImpl">;
+
+// Enable operators for org.mockito.internal.verification.api.VerificationDataInOrder
+AOR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+LOR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+SOR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+COR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+ROR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+ORU<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+LVR<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+STD<"org.mockito.internal.verification.api.VerificationDataInOrder">;
+
+// Enable operators for org.mockito.internal.verification.api.InOrderContext
+AOR<"org.mockito.internal.verification.api.InOrderContext">;
+LOR<"org.mockito.internal.verification.api.InOrderContext">;
+SOR<"org.mockito.internal.verification.api.InOrderContext">;
+COR<"org.mockito.internal.verification.api.InOrderContext">;
+ROR<"org.mockito.internal.verification.api.InOrderContext">;
+ORU<"org.mockito.internal.verification.api.InOrderContext">;
+LVR<"org.mockito.internal.verification.api.InOrderContext">;
+STD<"org.mockito.internal.verification.api.InOrderContext">;
+
+// Enable operators for org.mockito.internal.verification.InOrderContextImpl
+AOR<"org.mockito.internal.verification.InOrderContextImpl">;
+LOR<"org.mockito.internal.verification.InOrderContextImpl">;
+SOR<"org.mockito.internal.verification.InOrderContextImpl">;
+COR<"org.mockito.internal.verification.InOrderContextImpl">;
+ROR<"org.mockito.internal.verification.InOrderContextImpl">;
+ORU<"org.mockito.internal.verification.InOrderContextImpl">;
+LVR<"org.mockito.internal.verification.InOrderContextImpl">;
+STD<"org.mockito.internal.verification.InOrderContextImpl">;
+
+// Enable operators for org.mockito.internal.verification.NoMoreInteractions
+AOR<"org.mockito.internal.verification.NoMoreInteractions">;
+LOR<"org.mockito.internal.verification.NoMoreInteractions">;
+SOR<"org.mockito.internal.verification.NoMoreInteractions">;
+COR<"org.mockito.internal.verification.NoMoreInteractions">;
+ROR<"org.mockito.internal.verification.NoMoreInteractions">;
+ORU<"org.mockito.internal.verification.NoMoreInteractions">;
+LVR<"org.mockito.internal.verification.NoMoreInteractions">;
+STD<"org.mockito.internal.verification.NoMoreInteractions">;
+
+// Enable operators for org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker
+AOR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+LOR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+SOR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+COR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+ROR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+ORU<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+LVR<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+STD<"org.mockito.internal.verification.checkers.MissingInvocationInOrderChecker">;
+
+// Enable operators for org.mockito.internal.verification.checkers.NumberOfInvocationsChecker
+AOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+LOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+SOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+COR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+ROR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+ORU<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+LVR<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+STD<"org.mockito.internal.verification.checkers.NumberOfInvocationsChecker">;
+
+// Enable operators for org.mockito.internal.verification.checkers.MissingInvocationChecker
+AOR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+LOR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+SOR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+COR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+ROR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+ORU<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+LVR<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+STD<"org.mockito.internal.verification.checkers.MissingInvocationChecker">;
+
+// Enable operators for org.mockito.internal.verification.checkers.AtLeastDiscrepancy
+AOR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+LOR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+SOR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+COR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+ROR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+ORU<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+LVR<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+STD<"org.mockito.internal.verification.checkers.AtLeastDiscrepancy">;
+
+// Enable operators for org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker
+AOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+LOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+SOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+COR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+ROR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+ORU<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+LVR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+STD<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsInOrderChecker">;
+
+// Enable operators for org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker
+AOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+LOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+SOR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+COR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+ROR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+ORU<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+LVR<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+STD<"org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderChecker">;
+
+// Enable operators for org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker
+AOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+LOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+SOR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+COR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+ROR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+ORU<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+LVR<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+STD<"org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker">;
+
+// Enable operators for org.mockito.internal.verification.InOrderWrapper
+AOR<"org.mockito.internal.verification.InOrderWrapper">;
+LOR<"org.mockito.internal.verification.InOrderWrapper">;
+SOR<"org.mockito.internal.verification.InOrderWrapper">;
+COR<"org.mockito.internal.verification.InOrderWrapper">;
+ROR<"org.mockito.internal.verification.InOrderWrapper">;
+ORU<"org.mockito.internal.verification.InOrderWrapper">;
+LVR<"org.mockito.internal.verification.InOrderWrapper">;
+STD<"org.mockito.internal.verification.InOrderWrapper">;
+
+// Enable operators for org.mockito.internal.verification.VerificationWithTimeoutImpl
+AOR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+LOR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+SOR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+COR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+ROR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+ORU<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+LVR<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+STD<"org.mockito.internal.verification.VerificationWithTimeoutImpl">;
+
+// Enable operators for org.mockito.internal.verification.Only
+AOR<"org.mockito.internal.verification.Only">;
+LOR<"org.mockito.internal.verification.Only">;
+SOR<"org.mockito.internal.verification.Only">;
+COR<"org.mockito.internal.verification.Only">;
+ROR<"org.mockito.internal.verification.Only">;
+ORU<"org.mockito.internal.verification.Only">;
+LVR<"org.mockito.internal.verification.Only">;
+STD<"org.mockito.internal.verification.Only">;
+
+// Enable operators for org.mockito.internal.verification.MockAwareVerificationMode
+AOR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+LOR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+SOR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+COR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+ROR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+ORU<"org.mockito.internal.verification.MockAwareVerificationMode">;
+LVR<"org.mockito.internal.verification.MockAwareVerificationMode">;
+STD<"org.mockito.internal.verification.MockAwareVerificationMode">;
+
+// Enable operators for org.mockito.internal.verification.VerificationModeFactory
+AOR<"org.mockito.internal.verification.VerificationModeFactory">;
+LOR<"org.mockito.internal.verification.VerificationModeFactory">;
+SOR<"org.mockito.internal.verification.VerificationModeFactory">;
+COR<"org.mockito.internal.verification.VerificationModeFactory">;
+ROR<"org.mockito.internal.verification.VerificationModeFactory">;
+ORU<"org.mockito.internal.verification.VerificationModeFactory">;
+LVR<"org.mockito.internal.verification.VerificationModeFactory">;
+STD<"org.mockito.internal.verification.VerificationModeFactory">;
+
+// Enable operators for org.mockito.internal.verification.RegisteredInvocations
+AOR<"org.mockito.internal.verification.RegisteredInvocations">;
+LOR<"org.mockito.internal.verification.RegisteredInvocations">;
+SOR<"org.mockito.internal.verification.RegisteredInvocations">;
+COR<"org.mockito.internal.verification.RegisteredInvocations">;
+ROR<"org.mockito.internal.verification.RegisteredInvocations">;
+ORU<"org.mockito.internal.verification.RegisteredInvocations">;
+LVR<"org.mockito.internal.verification.RegisteredInvocations">;
+STD<"org.mockito.internal.verification.RegisteredInvocations">;
+
+// Enable operators for org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool
+AOR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+LOR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+SOR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+COR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+ROR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+ORU<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+LVR<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+STD<"org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool">;
+
+// Enable operators for org.mockito.internal.verification.Times
+AOR<"org.mockito.internal.verification.Times">;
+LOR<"org.mockito.internal.verification.Times">;
+SOR<"org.mockito.internal.verification.Times">;
+COR<"org.mockito.internal.verification.Times">;
+ROR<"org.mockito.internal.verification.Times">;
+ORU<"org.mockito.internal.verification.Times">;
+LVR<"org.mockito.internal.verification.Times">;
+STD<"org.mockito.internal.verification.Times">;
+
+// Enable operators for org.mockito.internal.verification.AtMost
+AOR<"org.mockito.internal.verification.AtMost">;
+LOR<"org.mockito.internal.verification.AtMost">;
+SOR<"org.mockito.internal.verification.AtMost">;
+COR<"org.mockito.internal.verification.AtMost">;
+ROR<"org.mockito.internal.verification.AtMost">;
+ORU<"org.mockito.internal.verification.AtMost">;
+LVR<"org.mockito.internal.verification.AtMost">;
+STD<"org.mockito.internal.verification.AtMost">;
+
+// Enable operators for org.mockito.internal.verification.VerificationDataImpl
+AOR<"org.mockito.internal.verification.VerificationDataImpl">;
+LOR<"org.mockito.internal.verification.VerificationDataImpl">;
+SOR<"org.mockito.internal.verification.VerificationDataImpl">;
+COR<"org.mockito.internal.verification.VerificationDataImpl">;
+ROR<"org.mockito.internal.verification.VerificationDataImpl">;
+ORU<"org.mockito.internal.verification.VerificationDataImpl">;
+LVR<"org.mockito.internal.verification.VerificationDataImpl">;
+STD<"org.mockito.internal.verification.VerificationDataImpl">;
+
+// Enable operators for org.mockito.internal.verification.AtLeast
+AOR<"org.mockito.internal.verification.AtLeast">;
+LOR<"org.mockito.internal.verification.AtLeast">;
+SOR<"org.mockito.internal.verification.AtLeast">;
+COR<"org.mockito.internal.verification.AtLeast">;
+ROR<"org.mockito.internal.verification.AtLeast">;
+ORU<"org.mockito.internal.verification.AtLeast">;
+LVR<"org.mockito.internal.verification.AtLeast">;
+STD<"org.mockito.internal.verification.AtLeast">;
+
+// Enable operators for org.mockito.internal.listeners.CollectCreatedMocks
+AOR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+LOR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+SOR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+COR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+ROR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+ORU<"org.mockito.internal.listeners.CollectCreatedMocks">;
+LVR<"org.mockito.internal.listeners.CollectCreatedMocks">;
+STD<"org.mockito.internal.listeners.CollectCreatedMocks">;
+
+// Enable operators for org.mockito.internal.listeners.MockingStartedListener
+AOR<"org.mockito.internal.listeners.MockingStartedListener">;
+LOR<"org.mockito.internal.listeners.MockingStartedListener">;
+SOR<"org.mockito.internal.listeners.MockingStartedListener">;
+COR<"org.mockito.internal.listeners.MockingStartedListener">;
+ROR<"org.mockito.internal.listeners.MockingStartedListener">;
+ORU<"org.mockito.internal.listeners.MockingStartedListener">;
+LVR<"org.mockito.internal.listeners.MockingStartedListener">;
+STD<"org.mockito.internal.listeners.MockingStartedListener">;
+
+// Enable operators for org.mockito.internal.listeners.MockingProgressListener
+AOR<"org.mockito.internal.listeners.MockingProgressListener">;
+LOR<"org.mockito.internal.listeners.MockingProgressListener">;
+SOR<"org.mockito.internal.listeners.MockingProgressListener">;
+COR<"org.mockito.internal.listeners.MockingProgressListener">;
+ROR<"org.mockito.internal.listeners.MockingProgressListener">;
+ORU<"org.mockito.internal.listeners.MockingProgressListener">;
+LVR<"org.mockito.internal.listeners.MockingProgressListener">;
+STD<"org.mockito.internal.listeners.MockingProgressListener">;
+
+// Enable operators for org.mockito.internal.MockitoInvocationHandler
+AOR<"org.mockito.internal.MockitoInvocationHandler">;
+LOR<"org.mockito.internal.MockitoInvocationHandler">;
+SOR<"org.mockito.internal.MockitoInvocationHandler">;
+COR<"org.mockito.internal.MockitoInvocationHandler">;
+ROR<"org.mockito.internal.MockitoInvocationHandler">;
+ORU<"org.mockito.internal.MockitoInvocationHandler">;
+LVR<"org.mockito.internal.MockitoInvocationHandler">;
+STD<"org.mockito.internal.MockitoInvocationHandler">;
+
+// Enable operators for org.mockito.internal.configuration.DefaultAnnotationEngine
+AOR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+LOR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+SOR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+COR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+ROR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+ORU<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+LVR<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+STD<"org.mockito.internal.configuration.DefaultAnnotationEngine">;
+
+// Enable operators for org.mockito.internal.configuration.ClassPathLoader
+AOR<"org.mockito.internal.configuration.ClassPathLoader">;
+LOR<"org.mockito.internal.configuration.ClassPathLoader">;
+SOR<"org.mockito.internal.configuration.ClassPathLoader">;
+COR<"org.mockito.internal.configuration.ClassPathLoader">;
+ROR<"org.mockito.internal.configuration.ClassPathLoader">;
+ORU<"org.mockito.internal.configuration.ClassPathLoader">;
+LVR<"org.mockito.internal.configuration.ClassPathLoader">;
+STD<"org.mockito.internal.configuration.ClassPathLoader">;
+
+// Enable operators for org.mockito.internal.configuration.SpyAnnotationEngine
+AOR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+LOR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+SOR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+COR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+ROR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+ORU<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+LVR<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+STD<"org.mockito.internal.configuration.SpyAnnotationEngine">;
+
+// Enable operators for org.mockito.internal.configuration.DefaultInjectionEngine
+AOR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+LOR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+SOR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+COR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+ROR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+ORU<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+LVR<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+STD<"org.mockito.internal.configuration.DefaultInjectionEngine">;
+
+// Enable operators for org.mockito.internal.configuration.GlobalConfiguration
+AOR<"org.mockito.internal.configuration.GlobalConfiguration">;
+LOR<"org.mockito.internal.configuration.GlobalConfiguration">;
+SOR<"org.mockito.internal.configuration.GlobalConfiguration">;
+COR<"org.mockito.internal.configuration.GlobalConfiguration">;
+ROR<"org.mockito.internal.configuration.GlobalConfiguration">;
+ORU<"org.mockito.internal.configuration.GlobalConfiguration">;
+LVR<"org.mockito.internal.configuration.GlobalConfiguration">;
+STD<"org.mockito.internal.configuration.GlobalConfiguration">;
+
+// Enable operators for org.mockito.internal.configuration.InjectingAnnotationEngine
+AOR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+LOR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+SOR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+COR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+ROR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+ORU<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+LVR<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+STD<"org.mockito.internal.configuration.InjectingAnnotationEngine">;
+
+// Enable operators for org.mockito.internal.creation.AbstractMockitoMethodProxy
+AOR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+LOR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+SOR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+COR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+ROR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+ORU<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+LVR<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+STD<"org.mockito.internal.creation.AbstractMockitoMethodProxy">;
+
+// Enable operators for org.mockito.internal.creation.DelegatingMethod
+AOR<"org.mockito.internal.creation.DelegatingMethod">;
+LOR<"org.mockito.internal.creation.DelegatingMethod">;
+SOR<"org.mockito.internal.creation.DelegatingMethod">;
+COR<"org.mockito.internal.creation.DelegatingMethod">;
+ROR<"org.mockito.internal.creation.DelegatingMethod">;
+ORU<"org.mockito.internal.creation.DelegatingMethod">;
+LVR<"org.mockito.internal.creation.DelegatingMethod">;
+STD<"org.mockito.internal.creation.DelegatingMethod">;
+
+// Enable operators for org.mockito.internal.creation.cglib.CGLIBHacker
+AOR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+LOR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+SOR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+COR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+ROR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+ORU<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+LVR<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+STD<"org.mockito.internal.creation.cglib.CGLIBHacker">;
+
+// Enable operators for org.mockito.internal.creation.cglib.MockitoNamingPolicy
+AOR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+LOR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+SOR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+COR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+ROR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+ORU<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+LVR<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+STD<"org.mockito.internal.creation.cglib.MockitoNamingPolicy">;
+
+// Enable operators for org.mockito.internal.creation.MockitoMethodProxy
+AOR<"org.mockito.internal.creation.MockitoMethodProxy">;
+LOR<"org.mockito.internal.creation.MockitoMethodProxy">;
+SOR<"org.mockito.internal.creation.MockitoMethodProxy">;
+COR<"org.mockito.internal.creation.MockitoMethodProxy">;
+ROR<"org.mockito.internal.creation.MockitoMethodProxy">;
+ORU<"org.mockito.internal.creation.MockitoMethodProxy">;
+LVR<"org.mockito.internal.creation.MockitoMethodProxy">;
+STD<"org.mockito.internal.creation.MockitoMethodProxy">;
+
+// Enable operators for org.mockito.internal.creation.SerializableMockitoMethodProxy
+AOR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+LOR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+SOR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+COR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+ROR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+ORU<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+LVR<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+STD<"org.mockito.internal.creation.SerializableMockitoMethodProxy">;
+
+// Enable operators for org.mockito.internal.creation.MockSettingsImpl
+AOR<"org.mockito.internal.creation.MockSettingsImpl">;
+LOR<"org.mockito.internal.creation.MockSettingsImpl">;
+SOR<"org.mockito.internal.creation.MockSettingsImpl">;
+COR<"org.mockito.internal.creation.MockSettingsImpl">;
+ROR<"org.mockito.internal.creation.MockSettingsImpl">;
+ORU<"org.mockito.internal.creation.MockSettingsImpl">;
+LVR<"org.mockito.internal.creation.MockSettingsImpl">;
+STD<"org.mockito.internal.creation.MockSettingsImpl">;
+
+// Enable operators for org.mockito.internal.creation.ClassNameFinder
+AOR<"org.mockito.internal.creation.ClassNameFinder">;
+LOR<"org.mockito.internal.creation.ClassNameFinder">;
+SOR<"org.mockito.internal.creation.ClassNameFinder">;
+COR<"org.mockito.internal.creation.ClassNameFinder">;
+ROR<"org.mockito.internal.creation.ClassNameFinder">;
+ORU<"org.mockito.internal.creation.ClassNameFinder">;
+LVR<"org.mockito.internal.creation.ClassNameFinder">;
+STD<"org.mockito.internal.creation.ClassNameFinder">;
+
+// Enable operators for org.mockito.internal.creation.MethodInterceptorFilter
+AOR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+LOR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+SOR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+COR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+ROR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+ORU<"org.mockito.internal.creation.MethodInterceptorFilter">;
+LVR<"org.mockito.internal.creation.MethodInterceptorFilter">;
+STD<"org.mockito.internal.creation.MethodInterceptorFilter">;
+
+// Enable operators for org.mockito.internal.creation.DelegatingMockitoMethodProxy
+AOR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+LOR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+SOR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+COR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+ROR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+ORU<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+LVR<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+STD<"org.mockito.internal.creation.DelegatingMockitoMethodProxy">;
+
+// Enable operators for org.mockito.internal.creation.jmock.ClassImposterizer
+AOR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+LOR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+SOR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+COR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+ROR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+ORU<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+LVR<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+STD<"org.mockito.internal.creation.jmock.ClassImposterizer">;
+
+// Enable operators for org.mockito.internal.creation.jmock.SearchingClassLoader
+AOR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+LOR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+SOR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+COR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+ROR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+ORU<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+LVR<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+STD<"org.mockito.internal.creation.jmock.SearchingClassLoader">;
+
+// Enable operators for org.mockito.internal.creation.jmock.SerializableNoOp
+AOR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+LOR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+SOR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+COR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+ROR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+ORU<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+LVR<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+STD<"org.mockito.internal.creation.jmock.SerializableNoOp">;
+
+// Enable operators for org.mockito.internal.exceptions.base.StackTraceFilter
+AOR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+LOR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+SOR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+COR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+ROR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+ORU<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+LVR<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+STD<"org.mockito.internal.exceptions.base.StackTraceFilter">;
+
+// Enable operators for org.mockito.internal.exceptions.base.ConditionalStackTraceFilter
+AOR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+LOR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+SOR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+COR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+ROR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+ORU<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+LVR<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+STD<"org.mockito.internal.exceptions.base.ConditionalStackTraceFilter">;
+
+// Enable operators for org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings
+AOR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+LOR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+SOR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+COR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+ROR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+ORU<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+LVR<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+STD<"org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings">;
+
+// Enable operators for org.mockito.MockSettings
+AOR<"org.mockito.MockSettings">;
+LOR<"org.mockito.MockSettings">;
+SOR<"org.mockito.MockSettings">;
+COR<"org.mockito.MockSettings">;
+ROR<"org.mockito.MockSettings">;
+ORU<"org.mockito.MockSettings">;
+LVR<"org.mockito.MockSettings">;
+STD<"org.mockito.MockSettings">;
+
+// Enable operators for org.mockito.Captor
+AOR<"org.mockito.Captor">;
+LOR<"org.mockito.Captor">;
+SOR<"org.mockito.Captor">;
+COR<"org.mockito.Captor">;
+ROR<"org.mockito.Captor">;
+ORU<"org.mockito.Captor">;
+LVR<"org.mockito.Captor">;
+STD<"org.mockito.Captor">;
+
+// Enable operators for org.mockito.verification.VerificationWithTimeout
+AOR<"org.mockito.verification.VerificationWithTimeout">;
+LOR<"org.mockito.verification.VerificationWithTimeout">;
+SOR<"org.mockito.verification.VerificationWithTimeout">;
+COR<"org.mockito.verification.VerificationWithTimeout">;
+ROR<"org.mockito.verification.VerificationWithTimeout">;
+ORU<"org.mockito.verification.VerificationWithTimeout">;
+LVR<"org.mockito.verification.VerificationWithTimeout">;
+STD<"org.mockito.verification.VerificationWithTimeout">;
+
+// Enable operators for org.mockito.verification.Timeout
+AOR<"org.mockito.verification.Timeout">;
+LOR<"org.mockito.verification.Timeout">;
+SOR<"org.mockito.verification.Timeout">;
+COR<"org.mockito.verification.Timeout">;
+ROR<"org.mockito.verification.Timeout">;
+ORU<"org.mockito.verification.Timeout">;
+LVR<"org.mockito.verification.Timeout">;
+STD<"org.mockito.verification.Timeout">;
+
+// Enable operators for org.mockito.verification.VerificationMode
+AOR<"org.mockito.verification.VerificationMode">;
+LOR<"org.mockito.verification.VerificationMode">;
+SOR<"org.mockito.verification.VerificationMode">;
+COR<"org.mockito.verification.VerificationMode">;
+ROR<"org.mockito.verification.VerificationMode">;
+ORU<"org.mockito.verification.VerificationMode">;
+LVR<"org.mockito.verification.VerificationMode">;
+STD<"org.mockito.verification.VerificationMode">;
+
+// Enable operators for org.mockito.configuration.DefaultMockitoConfiguration
+AOR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+LOR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+SOR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+COR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+ROR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+ORU<"org.mockito.configuration.DefaultMockitoConfiguration">;
+LVR<"org.mockito.configuration.DefaultMockitoConfiguration">;
+STD<"org.mockito.configuration.DefaultMockitoConfiguration">;
+
+// Enable operators for org.mockito.configuration.AnnotationEngine
+AOR<"org.mockito.configuration.AnnotationEngine">;
+LOR<"org.mockito.configuration.AnnotationEngine">;
+SOR<"org.mockito.configuration.AnnotationEngine">;
+COR<"org.mockito.configuration.AnnotationEngine">;
+ROR<"org.mockito.configuration.AnnotationEngine">;
+ORU<"org.mockito.configuration.AnnotationEngine">;
+LVR<"org.mockito.configuration.AnnotationEngine">;
+STD<"org.mockito.configuration.AnnotationEngine">;
+
+// Enable operators for org.mockito.configuration.IMockitoConfiguration
+AOR<"org.mockito.configuration.IMockitoConfiguration">;
+LOR<"org.mockito.configuration.IMockitoConfiguration">;
+SOR<"org.mockito.configuration.IMockitoConfiguration">;
+COR<"org.mockito.configuration.IMockitoConfiguration">;
+ROR<"org.mockito.configuration.IMockitoConfiguration">;
+ORU<"org.mockito.configuration.IMockitoConfiguration">;
+LVR<"org.mockito.configuration.IMockitoConfiguration">;
+STD<"org.mockito.configuration.IMockitoConfiguration">;
+
+// Enable operators for org.mockito.exceptions.PrintableInvocation
+AOR<"org.mockito.exceptions.PrintableInvocation">;
+LOR<"org.mockito.exceptions.PrintableInvocation">;
+SOR<"org.mockito.exceptions.PrintableInvocation">;
+COR<"org.mockito.exceptions.PrintableInvocation">;
+ROR<"org.mockito.exceptions.PrintableInvocation">;
+ORU<"org.mockito.exceptions.PrintableInvocation">;
+LVR<"org.mockito.exceptions.PrintableInvocation">;
+STD<"org.mockito.exceptions.PrintableInvocation">;
+
+// Enable operators for org.mockito.exceptions.base.MockitoAssertionError
+AOR<"org.mockito.exceptions.base.MockitoAssertionError">;
+LOR<"org.mockito.exceptions.base.MockitoAssertionError">;
+SOR<"org.mockito.exceptions.base.MockitoAssertionError">;
+COR<"org.mockito.exceptions.base.MockitoAssertionError">;
+ROR<"org.mockito.exceptions.base.MockitoAssertionError">;
+ORU<"org.mockito.exceptions.base.MockitoAssertionError">;
+LVR<"org.mockito.exceptions.base.MockitoAssertionError">;
+STD<"org.mockito.exceptions.base.MockitoAssertionError">;
+
+// Enable operators for org.mockito.exceptions.base.MockitoException
+AOR<"org.mockito.exceptions.base.MockitoException">;
+LOR<"org.mockito.exceptions.base.MockitoException">;
+SOR<"org.mockito.exceptions.base.MockitoException">;
+COR<"org.mockito.exceptions.base.MockitoException">;
+ROR<"org.mockito.exceptions.base.MockitoException">;
+ORU<"org.mockito.exceptions.base.MockitoException">;
+LVR<"org.mockito.exceptions.base.MockitoException">;
+STD<"org.mockito.exceptions.base.MockitoException">;
+
+// Enable operators for org.mockito.exceptions.Discrepancy
+AOR<"org.mockito.exceptions.Discrepancy">;
+LOR<"org.mockito.exceptions.Discrepancy">;
+SOR<"org.mockito.exceptions.Discrepancy">;
+COR<"org.mockito.exceptions.Discrepancy">;
+ROR<"org.mockito.exceptions.Discrepancy">;
+ORU<"org.mockito.exceptions.Discrepancy">;
+LVR<"org.mockito.exceptions.Discrepancy">;
+STD<"org.mockito.exceptions.Discrepancy">;
+
+// Enable operators for org.mockito.exceptions.Pluralizer
+AOR<"org.mockito.exceptions.Pluralizer">;
+LOR<"org.mockito.exceptions.Pluralizer">;
+SOR<"org.mockito.exceptions.Pluralizer">;
+COR<"org.mockito.exceptions.Pluralizer">;
+ROR<"org.mockito.exceptions.Pluralizer">;
+ORU<"org.mockito.exceptions.Pluralizer">;
+LVR<"org.mockito.exceptions.Pluralizer">;
+STD<"org.mockito.exceptions.Pluralizer">;
+
+// Enable operators for org.mockito.exceptions.misusing.WrongTypeOfReturnValue
+AOR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+LOR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+SOR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+COR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+ROR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+ORU<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+LVR<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+STD<"org.mockito.exceptions.misusing.WrongTypeOfReturnValue">;
+
+// Enable operators for org.mockito.exceptions.misusing.NotAMockException
+AOR<"org.mockito.exceptions.misusing.NotAMockException">;
+LOR<"org.mockito.exceptions.misusing.NotAMockException">;
+SOR<"org.mockito.exceptions.misusing.NotAMockException">;
+COR<"org.mockito.exceptions.misusing.NotAMockException">;
+ROR<"org.mockito.exceptions.misusing.NotAMockException">;
+ORU<"org.mockito.exceptions.misusing.NotAMockException">;
+LVR<"org.mockito.exceptions.misusing.NotAMockException">;
+STD<"org.mockito.exceptions.misusing.NotAMockException">;
+
+// Enable operators for org.mockito.exceptions.misusing.UnfinishedStubbingException
+AOR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+LOR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+SOR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+COR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+ROR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+ORU<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+LVR<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+STD<"org.mockito.exceptions.misusing.UnfinishedStubbingException">;
+
+// Enable operators for org.mockito.exceptions.misusing.NullInsteadOfMockException
+AOR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+LOR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+SOR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+COR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+ROR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+ORU<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+LVR<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+STD<"org.mockito.exceptions.misusing.NullInsteadOfMockException">;
+
+// Enable operators for org.mockito.exceptions.misusing.InvalidUseOfMatchersException
+AOR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+LOR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+SOR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+COR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+ROR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+ORU<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+LVR<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+STD<"org.mockito.exceptions.misusing.InvalidUseOfMatchersException">;
+
+// Enable operators for org.mockito.exceptions.misusing.MissingMethodInvocationException
+AOR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+LOR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+SOR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+COR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+ROR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+ORU<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+LVR<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+STD<"org.mockito.exceptions.misusing.MissingMethodInvocationException">;
+
+// Enable operators for org.mockito.exceptions.misusing.UnfinishedVerificationException
+AOR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+LOR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+SOR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+COR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+ROR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+ORU<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+LVR<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+STD<"org.mockito.exceptions.misusing.UnfinishedVerificationException">;
+
+// Enable operators for org.mockito.exceptions.misusing.MockitoConfigurationException
+AOR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+LOR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+SOR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+COR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+ROR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+ORU<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+LVR<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+STD<"org.mockito.exceptions.misusing.MockitoConfigurationException">;
+
+// Enable operators for org.mockito.exceptions.verification.TooLittleActualInvocations
+AOR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+LOR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+SOR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+COR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+ROR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+ORU<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+LVR<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+STD<"org.mockito.exceptions.verification.TooLittleActualInvocations">;
+
+// Enable operators for org.mockito.exceptions.verification.ArgumentsAreDifferent
+AOR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+LOR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+SOR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+COR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+ROR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+ORU<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+LVR<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+STD<"org.mockito.exceptions.verification.ArgumentsAreDifferent">;
+
+// Enable operators for org.mockito.exceptions.verification.TooManyActualInvocations
+AOR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+LOR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+SOR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+COR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+ROR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+ORU<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+LVR<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+STD<"org.mockito.exceptions.verification.TooManyActualInvocations">;
+
+// Enable operators for org.mockito.exceptions.verification.junit.ArgumentsAreDifferent
+AOR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+LOR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+SOR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+COR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+ROR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+ORU<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+LVR<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+STD<"org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">;
+
+// Enable operators for org.mockito.exceptions.verification.junit.JUnitTool
+AOR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+LOR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+SOR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+COR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+ROR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+ORU<"org.mockito.exceptions.verification.junit.JUnitTool">;
+LVR<"org.mockito.exceptions.verification.junit.JUnitTool">;
+STD<"org.mockito.exceptions.verification.junit.JUnitTool">;
+
+// Enable operators for org.mockito.exceptions.verification.VerificationInOrderFailure
+AOR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+LOR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+SOR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+COR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+ROR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+ORU<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+LVR<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+STD<"org.mockito.exceptions.verification.VerificationInOrderFailure">;
+
+// Enable operators for org.mockito.exceptions.verification.WantedButNotInvoked
+AOR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+LOR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+SOR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+COR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+ROR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+ORU<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+LVR<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+STD<"org.mockito.exceptions.verification.WantedButNotInvoked">;
+
+// Enable operators for org.mockito.exceptions.verification.NoInteractionsWanted
+AOR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+LOR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+SOR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+COR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+ROR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+ORU<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+LVR<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+STD<"org.mockito.exceptions.verification.NoInteractionsWanted">;
+
+// Enable operators for org.mockito.exceptions.verification.SmartNullPointerException
+AOR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+LOR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+SOR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+COR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+ROR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+ORU<"org.mockito.exceptions.verification.SmartNullPointerException">;
+LVR<"org.mockito.exceptions.verification.SmartNullPointerException">;
+STD<"org.mockito.exceptions.verification.SmartNullPointerException">;
+
+// Enable operators for org.mockito.exceptions.verification.NeverWantedButInvoked
+AOR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+LOR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+SOR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+COR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+ROR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+ORU<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+LVR<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+STD<"org.mockito.exceptions.verification.NeverWantedButInvoked">;
+
+// Enable operators for org.mockito.exceptions.Reporter
+AOR<"org.mockito.exceptions.Reporter">;
+LOR<"org.mockito.exceptions.Reporter">;
+SOR<"org.mockito.exceptions.Reporter">;
+COR<"org.mockito.exceptions.Reporter">;
+ROR<"org.mockito.exceptions.Reporter">;
+ORU<"org.mockito.exceptions.Reporter">;
+LVR<"org.mockito.exceptions.Reporter">;
+STD<"org.mockito.exceptions.Reporter">;
+
+// Enable operators for org.mockito.InjectMocks
+AOR<"org.mockito.InjectMocks">;
+LOR<"org.mockito.InjectMocks">;
+SOR<"org.mockito.InjectMocks">;
+COR<"org.mockito.InjectMocks">;
+ROR<"org.mockito.InjectMocks">;
+ORU<"org.mockito.InjectMocks">;
+LVR<"org.mockito.InjectMocks">;
+STD<"org.mockito.InjectMocks">;

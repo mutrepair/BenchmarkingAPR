@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5159/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.363797996 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -165,7 +165,7 @@
+         final boolean[] inUse = this.data.inUse;
+         final byte[] seqToUnseq = this.data.seqToUnseq;
+ 
+-        int nInUseShadow = 1;
++        int nInUseShadow = 0;
+ 
+         for (int i = 0; i < 256; i++) {
+             if (inUse[i])

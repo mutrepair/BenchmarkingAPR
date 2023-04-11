@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/5817/com/fasterxml/jackson/core/io/NumberOutput.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/NumberOutput.java	2023-04-04 13:31:53.213631268 -0500
+@@ -343,7 +343,7 @@
+ 
+     private static int outputLeadingTriplet(int triplet, byte[] buffer, int offset)
+     {
+-        int digitOffset = (triplet >>> 2);
++        int digitOffset = (triplet << 2);
+         char c = LEADING_TRIPLETS[digitOffset++];
+         if (c != NULL_CHAR) {
+             buffer[offset++] = (byte) c;

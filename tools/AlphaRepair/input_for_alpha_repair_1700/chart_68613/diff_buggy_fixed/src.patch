@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/68613/org/jfree/data/general/AbstractSeriesDataset.java	2022-10-31 19:47:29.623840254 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/general/AbstractSeriesDataset.java	2022-10-29 01:02:43.157515003 -0500
+@@ -96,7 +96,7 @@
+      */
+     public int indexOf(Comparable seriesKey) {
+         int seriesCount = getSeriesCount();
+-        for (int s = -1; s < seriesCount; s++) {
++        for (int s = 0; s < seriesCount; s++) {
+            if (getSeriesKey(s).equals(seriesKey)) {
+                return s;
+            }

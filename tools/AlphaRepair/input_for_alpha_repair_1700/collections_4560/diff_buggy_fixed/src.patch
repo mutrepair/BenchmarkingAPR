@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4560/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java	2022-10-31 19:47:39.807803623 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java	2022-12-26 15:13:49.797602596 -0600
+@@ -127,7 +127,7 @@
+         if (obj == this) {
+             return true;
+         }
+-        if (obj instanceof DefaultKeyValue == true) {
++        if (obj instanceof DefaultKeyValue == false) {
+             return false;
+         }
+ 

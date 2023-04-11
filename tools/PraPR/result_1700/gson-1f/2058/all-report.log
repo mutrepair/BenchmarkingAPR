@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to hashCode([Ljava/lang/Object;)I with a call to hashCode([D)I
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to hashCode([Ljava/lang/Object;)I with a call to hashCode([Z)I
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to hashCode([Ljava/lang/Object;)I with a call to hashCode([I)I
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to hashCode([Ljava/lang/Object;)I with a call to hashCode([S)I
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to actualTypeArguments is guarded using value null
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to owner is guarded using value null
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to actualTypeArguments is guarded using field actualTypeArguments
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to owner is guarded using field rawType
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.ParameterizedTypeImpl.actualTypeArguments is replaced by the call to com.google.gson.ParameterizedTypeImpl::getActualTypeArguments()[Ljava/lang/reflect/Type;
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.ParameterizedTypeImpl.owner is replaced by the call to com.google.gson.ParameterizedTypeImpl::getRawType()Ljava/lang/reflect/Type;
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.gson.ParameterizedTypeImpl.owner is replaced by the call to com.google.gson.ParameterizedTypeImpl::getOwnerType()Ljava/lang/reflect/Type;
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to owner with an access to rawType
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hashCode with a call to deepHashCode
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to actualTypeArguments is guarded returning default value 0
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to owner is guarded returning default value 0
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Arrays::hashCode
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 19
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for com/google/gson/ParameterizedTypeImpl::hashCode
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 21
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/gson/ParameterizedTypeImpl.java
+	Line Number: 87
+	Block: 21
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4972/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java	2022-10-31 19:47:46.727778536 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java	2022-12-26 15:13:52.505631856 -0600
+@@ -99,7 +99,7 @@
+             return null;
+         }
+ 
+-        TypeIdResolver idRes = idResolver(config, baseType, subtypes, false, false);
++        TypeIdResolver idRes = idResolver(config, baseType, subtypes, false, true);
+         
+         // First, method for converting type info to type id:
+         switch (_includeAs) {

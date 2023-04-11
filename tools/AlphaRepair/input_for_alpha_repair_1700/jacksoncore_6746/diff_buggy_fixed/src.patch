@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/6746/com/fasterxml/jackson/core/io/UTF8Writer.java	2022-10-31 19:47:45.175784176 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/UTF8Writer.java	2022-12-26 15:13:51.921625546 -0600
+@@ -301,7 +301,7 @@
+                         continue output_loop;
+                     }
+                     c = str.charAt(off++);
+-                    if (c >= 0) {
++                    if (c >= 0x80) {
+                         break ascii_loop;
+                     }
+                     outBuf[outPtr++] = (byte) c;

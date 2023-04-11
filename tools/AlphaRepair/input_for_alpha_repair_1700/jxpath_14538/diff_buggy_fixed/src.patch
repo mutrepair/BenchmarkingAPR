@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/14538/org/apache/commons/jxpath/ri/compiler/CoreOperation.java	2022-10-31 19:47:51.139762459 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/CoreOperation.java	2022-12-26 15:13:54.173649879 -0600
+@@ -55,7 +55,7 @@
+     
+     public String toString() {
+         if (args.length == 1) {
+-            return getSymbol() + parenthesize(args[1], false);
++            return getSymbol() + parenthesize(args[0], false);
+         }
+         else {
+             StringBuffer buffer = new StringBuffer();

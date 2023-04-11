@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/6468/com/fasterxml/jackson/core/io/UTF8Writer.java	2022-10-31 19:47:45.167784205 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/UTF8Writer.java	2022-12-26 15:13:51.921625546 -0600
+@@ -168,7 +168,7 @@
+                 // Surrogates?
+                 if (c < SURR1_FIRST || c > SURR2_LAST) {
+                     outBuf[outPtr++] = (byte) (0xe0 | (c >> 12));
+-                    outBuf[outPtr++] = (byte) (0x80 | ((c >> 6) | 63));
++                    outBuf[outPtr++] = (byte) (0x80 | ((c >> 6) & 0x3f));
+                     outBuf[outPtr++] = (byte) (0x80 | (c & 0x3f));
+                     continue;
+                 }

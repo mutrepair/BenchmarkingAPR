@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local f to be used
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local f is replaced by local transformed to be used
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 91
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local x is replaced by local transformed to be used
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local f is replaced by local x to be used
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 91
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 88
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2.0 with 1.0
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 90
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 89
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 94
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/transform/FastSineTransformer.java
+	Line Number: 160
+	Block: 13
+	First Index: 96
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

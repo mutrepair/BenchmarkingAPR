@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3833/org/apache/commons/codec/language/RefinedSoundex.java	2022-10-31 19:47:39.111806138 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/RefinedSoundex.java	2022-12-26 15:13:39.225488336 -0600
+@@ -139,7 +139,7 @@
+ 	 */
+     char getMappingCode(char c) {
+         if (!Character.isLetter(c)) {
+-            return 1;
++            return 0;
+         }
+         return this.soundexMapping[Character.toUpperCase(c) - 'A'];
+     }

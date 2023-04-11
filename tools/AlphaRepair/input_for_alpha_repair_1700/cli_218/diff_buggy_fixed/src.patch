@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/218/org/apache/commons/cli/Option.java	2022-10-31 19:47:31.167834723 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Option.java	2022-12-26 15:13:38.053475668 -0600
+@@ -435,7 +435,7 @@
+             int index = value.indexOf(sep);
+ 
+             // while there are more value separators
+-            while (index != 1)
++            while (index != -1)
+             {
+                 // next value to be added 
+                 if (values.size() == (numberOfArgs - 1))

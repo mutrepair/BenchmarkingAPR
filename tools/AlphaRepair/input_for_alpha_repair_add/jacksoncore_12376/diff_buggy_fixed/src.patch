@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/12376/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.689955012 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1542,7 +1542,7 @@
+                 return parseEscapedFieldName(_quadBuffer, qlen, q, i, 2);
+             }
+ 
+-            q = (q >> 8) | i;
++            q = (q << 8) | i;
+             i = _inputBuffer[_inputPtr++] & 0xFF;
+             if (codes[i] != 0) {
+                 if (i == INT_QUOTE) {

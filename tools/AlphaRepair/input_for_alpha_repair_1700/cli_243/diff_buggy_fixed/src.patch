@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/243/org/apache/commons/cli/Option.java	2022-10-31 19:47:31.175834694 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Option.java	2022-12-26 15:13:38.053475668 -0600
+@@ -473,7 +473,7 @@
+      */
+     private void add(String value)
+     {
+-        if ((numberOfArgs > 1) && (values.size() > (numberOfArgs - 1)))
++        if ((numberOfArgs > 0) && (values.size() > (numberOfArgs - 1)))
+         {
+             throw new RuntimeException("Cannot add value, list full.");
+         }

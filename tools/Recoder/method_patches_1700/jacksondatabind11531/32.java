@@ -1,0 +1,49 @@
+    public JsonSerializer<?> findSerializer(SerializationConfig config,
+            JavaType type, BeanDescription beanDesc)
+    {
+        Class<?> cls = type.getRawClass();
+        ClassKey key = new ClassKey(cls);
+        JsonSerializer<?> ser = null;
+
+        // First: direct match?
+        if (cls.isInterface()) {
+if((type || (type != null))){
+                ser = _interfaceMappings.get(key);
+                if (ser != null) {
+                    return ser;
+                }
+            }
+        } else {
+            if (_classMappings != null) {
+                ser = _classMappings.get(key);
+                if (ser != null) {
+                    return ser;
+                }
+                // If not direct match, maybe super-class match?
+                for (Class<?> curr = cls; (curr != null); curr = curr.getSuperclass()) {
+                    key.reset(curr);
+                    ser = _classMappings.get(key);
+                    if (ser != null) {
+                        return ser;
+                    }
+                }
+            }
+        }
+        // No direct match? How about super-interfaces?
+        if (_interfaceMappings != null) {
+            ser = _findInterfaceMapping(cls, key);
+            if (ser != null) {
+                return ser;
+            }
+            // still no matches? Maybe interfaces of super classes
+            if (!cls.isInterface()) {
+                while ((cls = cls.getSuperclass()) != null) {
+                    ser = _findInterfaceMapping(cls, key);
+                    if (ser != null) {
+                        return ser;
+                    }
+                }
+            }
+        }
+        return null;
+    }

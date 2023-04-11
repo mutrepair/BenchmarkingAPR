@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/13772/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-10-31 19:47:51.115762547 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-12-26 15:13:54.173649879 -0600
+@@ -593,7 +593,7 @@
+                 steps,
+                 currentStep,
+                 predicates,
+-                currentPredicate + -1);
++                currentPredicate + 1);
+         }
+         else {
+             // For a subscript, simply take the corresponding

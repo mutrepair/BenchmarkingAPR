@@ -1,0 +1,344 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 31
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.joda.time.Chronology.year()Lorg/joda/time/DateTimeField; is replaced by an instantiation of type org.joda.time.DateTimeField using ()V
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method org.joda.time.Chronology.year()Lorg/joda/time/DateTimeField; is replaced by an instantiation of type org.joda.time.field.DelegatedDateTimeField using (Lorg/joda/time/DateTimeField;Lorg/joda/time/DurationField;Lorg/joda/time/DateTimeFieldType;)V
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_6
+	Description: the call to factory method org.joda.time.Chronology.year()Lorg/joda/time/DateTimeField; is replaced by an instantiation of type org.joda.time.field.DelegatedDateTimeField using (Lorg/joda/time/DateTimeField;)V
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to add(JI)J with a call to add(JJ)J
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local prev is replaced by local instant to be used
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 119
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local prev is replaced by local instant to be defined
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 122
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local chrono is replaced a call chrono.withUTC()
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to year with a call to millisOfSecond
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to add with a call to addWrapField
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to year with a call to millisOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to add with a call to set
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to year with a call to secondOfMinute
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to year with a call to secondOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to year with a call to minuteOfHour
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to year with a call to minuteOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to year with a call to hourOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to year with a call to clockhourOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to year with a call to hourOfHalfday
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to year with a call to clockhourOfHalfday
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.Chronology::year()Lorg/joda/time/DateTimeField; is guarded using default value null
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.DateTimeField::add(JI)J is guarded using default value 0L
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to year()Lorg/joda/time/DateTimeField; is guarded returning default value 0L
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(JI)J is guarded returning default value 0L
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to year()Lorg/joda/time/DateTimeField; is guarded returning local instant
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to add(JI)J is guarded returning local instant
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to year()Lorg/joda/time/DateTimeField; is guarded returning local prev
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to add(JI)J is guarded returning local prev
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/joda/time/DateTimeField::add with argument
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/Chronology::year
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/DateTimeField::add
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 617
+	Block: 29
+	First Index: 121
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

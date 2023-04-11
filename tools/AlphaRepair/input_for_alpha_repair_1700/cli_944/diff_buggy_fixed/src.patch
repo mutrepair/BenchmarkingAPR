@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/944/org/apache/commons/cli/PatternOptionBuilder.java	2022-10-31 19:47:31.427833790 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PatternOptionBuilder.java	2022-12-26 15:13:38.053475668 -0600
+@@ -169,7 +169,7 @@
+ 
+             // a value code comes after an option and specifies 
+             // details about it
+-            if (!true)
++            if (!isValueCode(ch))
+             {
+                 if (opt != ' ')
+                 {

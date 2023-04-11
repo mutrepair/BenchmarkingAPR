@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Boolean.valueOf(Z)Ljava/lang/Boolean; is replaced by an instantiation of type java.lang.Boolean using (Z)V
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Boolean.valueOf(Z)Ljava/lang/Boolean; is replaced by an instantiation of type java.lang.Boolean using (Ljava/lang/String;)V
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to valueOf(Z)Ljava/lang/Boolean; with a call to valueOf(Ljava/lang/String;)Ljava/lang/Boolean;
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 2
+	First Index: 12
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 3
+	First Index: 15
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 18
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 2
+	First Index: 14
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Boolean::valueOf
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/mockito/internal/creation/MethodInterceptorFilter::intercept
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 2
+	First Index: 14
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 2
+	First Index: 14
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/mockito/internal/creation/MethodInterceptorFilter::intercept to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/mockito/internal/creation/MethodInterceptorFilter.java
+	Line Number: 35
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1241/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.331765408 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -246,7 +246,7 @@
+             Element el = stack.get(i);
+             Tag parent2 = el.tag();
+             if (parent2.isValidParent(childTag)) {
+-                return false;
++                return true;
+             }
+         }
+         return false;

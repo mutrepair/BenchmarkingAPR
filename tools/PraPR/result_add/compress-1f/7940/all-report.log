@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to globalCrc is guarded using value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to globalCrc is guarded using field globalCrc
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.compress.compressors.bzip2.CRC.globalCrc is replaced by the call to org.apache.commons.compress.compressors.bzip2.CRC::getFinalCRC()I
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.compress.compressors.bzip2.CRC.globalCrc is replaced by the call to org.apache.commons.compress.compressors.bzip2.CRC::getGlobalCRC()I
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to globalCrc is guarded returning default value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to globalCrc is guarded returning field globalCrc
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/compress/compressors/bzip2/CRC::getFinalCRC
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/compress/compressors/bzip2/CRC.java
+	Line Number: 102
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

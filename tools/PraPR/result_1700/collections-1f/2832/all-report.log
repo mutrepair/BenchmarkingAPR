@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local position1 is replaced by local position2 to be used
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 34
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 35
+	First Index: 61
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 36
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 34
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/collections4/comparators/FixedOrderComparator::compare
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 36
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 34
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 34
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/collections4/comparators/FixedOrderComparator.java
+	Line Number: 236
+	Block: 36
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_37/src/main/java/org/jsoup/nodes/Element.java	2023-01-16 15:29:50.200366015 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/37/patch/./org/jsoup/nodes/Element.java	2023-01-16 15:29:50.152365416 -0600
+@@ -1098,7 +1098,7 @@
+     public String html() {
+         StringBuilder accum = new StringBuilder();
+         html(accum);
+-        return accum.toString().trim();
++        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();
+     }
+ 
+     private void html(StringBuilder accum) {

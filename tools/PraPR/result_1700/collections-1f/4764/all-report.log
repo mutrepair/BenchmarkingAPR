@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(I)V with a call to <init>(Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(I)V with a call to <init>(Ljava/lang/String;)V
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(I)V with a call to <init>()V
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.list.AbstractLinkedList::size()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/lang/StringBuilder::<init>
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/AbstractLinkedList::size
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 388
+	Block: 97
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

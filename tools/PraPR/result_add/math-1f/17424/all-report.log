@@ -1,0 +1,707 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 64
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(DDDD)V with a call to <init>([D)V
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(DDDD)V with a call to <init>(D[D)V
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q0 is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q1 is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q2 is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q3 is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q0 is guarded using field q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q1 is guarded using field q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q2 is guarded using field q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q3 is guarded using field q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q0 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getNorm()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q1 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getNorm()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q2 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getNorm()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q3 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getNorm()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q0 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ0()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q1 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ0()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q2 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ0()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q3 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ0()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q0 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ1()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q1 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ1()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q2 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ1()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q3 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ1()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q0 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ2()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q1 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ2()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q2 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ2()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q3 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ2()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q0 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ3()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q1 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ3()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q2 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ3()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.complex.Quaternion.q3 is replaced by the call to org.apache.commons.math3.complex.Quaternion::getQ3()D
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q0 with an access to q1
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q1 with an access to q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q2 with an access to q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q3 with an access to q0
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q0 with an access to q2
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q1 with an access to q2
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q2 with an access to q1
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q3 with an access to q1
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q0 with an access to q3
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q1 with an access to q3
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q2 with an access to q3
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q3 with an access to q2
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field IDENTITY
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field I
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field J
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field K
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.getConjugate()
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q0 is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q1 is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q2 is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q3 is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q0 is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q1 is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q2 is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q3 is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q0 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q1 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+59.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q2 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+60.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q3 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+61.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/complex/Quaternion::<init>
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+62.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+63.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/complex/Quaternion::getConjugate
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+64.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/complex/Quaternion::getConjugate to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/complex/Quaternion.java
+	Line Number: 115
+	Block: 5
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

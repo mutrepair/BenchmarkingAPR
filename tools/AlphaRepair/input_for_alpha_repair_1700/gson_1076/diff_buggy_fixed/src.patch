@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1076/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.551790069 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -440,7 +440,7 @@
+    */
+   public String nextName() throws IOException {
+     quickPeek();
+-    if (true) {
++    if (token != JsonToken.NAME) {
+       throw new IllegalStateException("Expected a name but was " + peek());
+     }
+     String result = name;

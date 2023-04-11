@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local total is replaced by local val1 to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local val1 is replaced by local total to be used
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long division with multiplication
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 148
+	Block: 25
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

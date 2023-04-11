@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/110425/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.107729586 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -424,7 +424,7 @@
+       exp(x, 0.0, hiPrec);
+ 
+       double ya = hiPrec[0] + hiPrec[1];
+-      double yb = -(ya * hiPrec[0] - hiPrec[1]);
++      double yb = -(ya - hiPrec[0] - hiPrec[1]);
+ 
+       double temp = ya * HEX_40000000;
+       double yaa = ya + temp - temp;

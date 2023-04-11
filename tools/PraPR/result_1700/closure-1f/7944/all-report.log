@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local thisValue is replaced by local thatValue to be used
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 32
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local thatValue is replaced by local thisValue to be used
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 40
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local thisValue is replaced by access to field number
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 32
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local thatValue is replaced by access to field number
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 40
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/google/javascript/rhino/Node$NumberNode::isEquivalentTo
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/google/javascript/rhino/Node$NumberNode::isEquivalentTo
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0.0 with 1.0
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 33
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 36
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 8
+	First Index: 46
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 9
+	First Index: 50
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double division with multiplication
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 38
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 41
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 35
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 35
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 6
+	First Index: 35
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 7
+	First Index: 43
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/javascript/rhino/Node.java
+	Line Number: 174
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

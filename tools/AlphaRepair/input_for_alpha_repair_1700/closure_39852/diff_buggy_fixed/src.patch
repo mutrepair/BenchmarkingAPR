@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/39852/com/google/javascript/jscomp/ProcessTweaks.java	2022-10-31 19:47:37.815810815 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ProcessTweaks.java	2022-10-29 06:12:05.520685210 -0500
+@@ -377,7 +377,7 @@
+         case REGISTER_NUMBER:
+         case REGISTER_STRING:
+           // Ensure the ID contains only valid characters.
+-          if (!false) {
++          if (!ID_MATCHER.matchesAllOf(tweakId)) {
+             compiler.report(t.makeError(tweakIdNode, INVALID_TWEAK_ID_ERROR));
+           }
+ 

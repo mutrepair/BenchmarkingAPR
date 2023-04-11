@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.PropertyName.getSimpleName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.fasterxml.jackson.databind.PropertyName.getSimpleName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getSimpleName with a call to getNamespace
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getSimpleName with a call to toString
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.PropertyName::getSimpleName()Ljava/lang/String; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getSimpleName()Ljava/lang/String; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/PropertyName::getSimpleName
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 551
+	Block: 141
+	First Index: 180
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

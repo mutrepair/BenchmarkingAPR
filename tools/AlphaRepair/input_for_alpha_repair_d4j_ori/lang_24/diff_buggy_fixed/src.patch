@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/lang_24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java	2023-01-16 15:30:01.916512322 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/lang/24/patch/./org/apache/commons/lang3/math/NumberUtils.java	2023-01-16 15:30:01.884511921 -0600
+@@ -1410,7 +1410,7 @@
+             if (chars[i] == 'l'
+                 || chars[i] == 'L') {
+                 // not allowing L with an exponent or decimal point
+-                return foundDigit && !hasExp;
++                return foundDigit && !hasExp && !hasDecPoint;
+             }
+             // last character is illegal
+             return false;

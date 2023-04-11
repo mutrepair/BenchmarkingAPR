@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/15075/org/apache/commons/jxpath/ri/compiler/LocationPath.java	2022-10-31 19:47:51.155762401 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/LocationPath.java	2022-12-26 15:13:54.177649922 -0600
+@@ -49,7 +49,7 @@
+         Step steps[] = getSteps();
+         if (steps != null) {
+             for (int i = 0; i < steps.length; i++) {
+-                if (i > 0) {
++                if (i > 0 || absolute) {
+                     buffer.append('/');
+                 }
+                 buffer.append(steps[i]);

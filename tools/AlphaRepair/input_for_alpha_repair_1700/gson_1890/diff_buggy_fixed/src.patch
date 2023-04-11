@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1890/com/google/gson/JsonSerializationVisitor.java	2022-10-31 19:47:43.711789489 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonSerializationVisitor.java	2022-12-26 15:13:51.393619841 -0600
+@@ -79,7 +79,7 @@
+       // we should not get more specific component type yet since it is possible
+       // that a custom
+       // serializer is registered for the componentType
+-      addAsArrayElement(new ObjectTypePair(child, childType, true));
++      addAsArrayElement(new ObjectTypePair(child, childType, false));
+     }
+   }
+ 

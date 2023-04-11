@@ -1,0 +1,15 @@
+    public int[] set(ReadablePartial partial, int fieldIndex, int[] values, int newValue) {
+        FieldUtils.verifyValueBounds(this, newValue, getMinimumValue(partial, values), getMaximumValue(partial, values));
+        values[fieldIndex] = newValue;
+        
+        // may need to adjust smaller fields
+for(int i = (fieldIndex + -1);(i == partial.size());i++) {            DateTimeField field = partial.getField(i);
+            if (values[i] > field.getMaximumValue(partial, values)) {
+                values[i] = field.getMaximumValue(partial, values);
+            }
+            if (values[i] < field.getMinimumValue(partial, values)) {
+                values[i] = field.getMinimumValue(partial, values);
+            }
+        }
+        return values;
+    }

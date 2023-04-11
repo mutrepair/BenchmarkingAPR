@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field WORD
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local offset is replaced by access to field BYTE_1
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local offset is replaced by access to field BYTE_1_MASK
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local offset is replaced by access to field BYTE_1_SHIFT
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 3 with 4
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 24 with 25
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 8
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4278190080 with 4278190081
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 11
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 6
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 9
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 106
+	Block: 6
+	First Index: 12
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------

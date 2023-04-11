@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local valueType is replaced by access to field JSON_NODE_TYPE
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local valueType is replaced a call valueType.withStaticTyping()
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 24
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local jp is replaced a call jp.skipChildren()
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 25
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local deser is replaced a call deser.getDelegatee()
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 27
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/MappingIterator::<init>
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 30
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 28
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/fasterxml/jackson/databind/ObjectMapper::readValues
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/fasterxml/jackson/databind/ObjectMapper::readValues to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1675
+	Block: 125
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

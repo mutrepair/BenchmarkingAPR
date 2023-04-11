@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/89/org/apache/commons/cli/Parser.java	2022-10-31 19:47:31.403833876 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Parser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -374,7 +374,7 @@
+ 
+         // if the option is a required option remove the option from
+         // the requiredOptions list
+-        if (false)
++        if (opt.isRequired())
+         {
+             requiredOptions.remove(opt.getKey());
+         }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/693/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.959766765 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -188,7 +188,7 @@
+      */
+     public void initGenerator()  throws IOException
+     {
+-        if (false) {
++        if (_initialized) {
+             return;
+         }
+         _initialized = true;

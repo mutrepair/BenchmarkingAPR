@@ -1,0 +1,28 @@
+  private void visitFallbackFunctionCall(NodeTraversal t, Node call) {
+    // Check to make sure the function call looks like:
+    // goog.getMsgWithFallback(MSG_1, MSG_2);
+    if (call.getChildCount() != 3 ||
+        !call.getChildAtIndex(1).isName() ||
+        !call.getChildAtIndex(2).isName()) {
+      compiler.report(t.makeError(call, BAD_FALLBACK_SYNTAX));
+      return;
+    }
+
+    Node firstArg = call.getChildAtIndex(1);
+    JsMessage firstMessage = getTrackedMessage(t, firstArg.getString());
+    if (firstMessage == null) {
+      compiler.report(
+          t.makeError(firstArg, FALLBACK_ARG_ERROR, firstArg.getString()));
+      return;
+    }
+
+    Node secondArg = firstArg.getNext();
+JsMessage secondMessage = getTrackedMessage(t, call.getString(0).getString());
+    if (secondMessage == null) {
+      compiler.report(
+          t.makeError(secondArg, FALLBACK_ARG_ERROR, secondArg.getString()));
+      return;
+    }
+
+    processMessageFallback(call, firstMessage, secondMessage);
+  }

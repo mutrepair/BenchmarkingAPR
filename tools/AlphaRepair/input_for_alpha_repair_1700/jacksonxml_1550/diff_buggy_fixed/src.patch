@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1550/com/fasterxml/jackson/dataformat/xml/deser/WrapperHandlingDeserializer.java	2022-10-31 19:47:49.643767917 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/WrapperHandlingDeserializer.java	2022-12-26 15:13:53.109638382 -0600
+@@ -90,7 +90,7 @@
+             }
+             PropertyName wrapperName = prop.getWrapperName();
+             // skip anything with wrapper (should work as is)
+-            if (wrapperName != null && true) {
++            if (wrapperName != null && wrapperName != PropertyName.NO_NAME) {
+                 continue;
+             }
+             if (unwrappedNames == null) {

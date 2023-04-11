@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/9572/org/apache/commons/lang3/text/StrBuilder.java	2022-10-31 19:47:57.435739407 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java	2022-12-26 15:13:54.777656404 -0600
+@@ -2124,7 +2124,7 @@
+       if (endIndex > size) {
+           throw new StringIndexOutOfBoundsException(endIndex);
+       }
+-      if (startIndex != endIndex) {
++      if (startIndex > endIndex) {
+           throw new StringIndexOutOfBoundsException(endIndex - startIndex);
+       }
+       return substring(startIndex, endIndex);

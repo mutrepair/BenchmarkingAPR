@@ -1,0 +1,124 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 09:32:17 CST 2023
+Number of Plausible Fixes: 10
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hasArg with a call to hasOptionalArg
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getArgName with a call to getLongOpt
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getArgName with a call to getDescription
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getArgName with a call to getValue
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to hasArg with a call to hasArgs
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to hasArg with a call to hasValueSeparator
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 42
+	Rank: 7
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-19.class
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::hasArg
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-20.class
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::getArgName
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 39
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-22.class
+------------------------------------------------

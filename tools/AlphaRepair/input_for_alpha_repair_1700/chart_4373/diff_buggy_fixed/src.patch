@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/4373/org/jfree/chart/plot/CategoryPlot.java	2022-10-31 19:47:29.499840697 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/CategoryPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -5044,7 +5044,7 @@
+         }
+         if (!PaintUtilities.equal(this.domainCrosshairPaint,
+                 that.domainCrosshairPaint)) {
+-            return true;
++            return false;
+         }
+         if (!ObjectUtilities.equal(this.domainCrosshairStroke,
+                 that.domainCrosshairStroke)) {

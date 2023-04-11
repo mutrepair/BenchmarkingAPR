@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/30462/org/jfree/chart/axis/DateAxis.java	2022-10-31 19:47:29.431840941 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/DateAxis.java	2022-10-29 16:41:07.426717447 -0500
+@@ -1223,7 +1223,7 @@
+         units.add(new DateTickUnit(DateTickUnitType.HOUR, 4,
+                 DateTickUnitType.MINUTE, 30, f3));
+         units.add(new DateTickUnit(DateTickUnitType.HOUR, 6,
+-                DateTickUnitType.HOUR, -1, f3));
++                DateTickUnitType.HOUR, 1, f3));
+         units.add(new DateTickUnit(DateTickUnitType.HOUR, 12,
+                 DateTickUnitType.HOUR, 1, f4));
+ 

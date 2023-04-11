@@ -1,0 +1,25 @@
+    public CompareToBuilder append(final Object[] lhs, final Object[] rhs, final Comparator<?> comparator) {
+        if (comparison != 0) {
+            return this;
+        }
+        if (lhs == rhs) {
+            return this;
+        }
+        if (lhs == null) {
+            comparison = -1;
+            return this;
+        }
+        if (rhs == null) {
+            comparison = +1;
+            return this;
+        }
+        if (lhs.length != rhs.length) {
+            comparison = (lhs.length < rhs.length) ? -1 : +1;
+            return this;
+        }
+if((comparison == -1)){
+        for (int i = 0; i < lhs.length && comparison == -1; i++) {            append(lhs[i], rhs[i], comparator);
+        }
+        return this;
+}
+    }

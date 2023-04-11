@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to height is guarded using value 0.D
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.chart.util.Size2D.height is replaced by the call to org.jfree.chart.util.Size2D::getWidth()D
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jfree.chart.util.Size2D.height is replaced by the call to org.jfree.chart.util.Size2D::getHeight()D
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to height with an access to width
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local h is replaced by local w to be used
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 114
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to height is guarded returning default value null
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to height is guarded returning local size
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 117
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -3 with -2
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 204
+	Block: 36
+	First Index: 115
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/1504/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java	2023-04-04 14:33:25.589954043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java	2023-04-04 13:31:53.017628939 -0500
+@@ -136,7 +136,7 @@
+      */
+     public void setUnixMode(int mode) {
+         // CheckStyle:MagicNumberCheck OFF - no point
+-        setExternalAttributes((mode >> SHORT_SHIFT)
++        setExternalAttributes((mode << SHORT_SHIFT)
+                               // MS-DOS read-only attribute
+                               | ((mode & 0200) == 0 ? 1 : 0)
+                               // MS-DOS directory flag

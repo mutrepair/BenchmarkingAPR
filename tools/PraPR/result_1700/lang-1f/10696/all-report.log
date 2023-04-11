@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to nextInt(I)I with a call to nextInt()I
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 223
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local buffer is replaced by local chars to be used
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 218
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local count is replaced by local start to be used
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 219
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local count is replaced by local end to be used
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 219
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local count is replaced by local gap to be used
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 219
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local random is replaced by access to field RANDOM
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 221
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Random::nextInt(I)I is guarded using default value 0
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 223
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to nextInt(I)I is guarded returning default value null
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 223
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/util/Random::nextInt with argument
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 223
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 220
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 128 with 129
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 222
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 224
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Random::nextInt
+	File Name: org/apache/commons/lang3/RandomStringUtils.java
+	Line Number: 278
+	Block: 44
+	First Index: 223
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

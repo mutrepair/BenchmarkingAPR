@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field archiveOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 34
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field archiveOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 38
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field entryOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 34
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field entryOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 38
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.compress.archivers.ar.ArArchiveOutputStream::fill(JJC)J is guarded using default value 0L
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to fill(JJC)J is guarded returning default value 0L
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to fill(JJC)J is guarded returning local offset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to fill(JJC)J is guarded returning field archiveOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to fill(JJC)J is guarded returning field entryOffset
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/compress/archivers/ar/ArArchiveOutputStream::fill with argument
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -16 with -15
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 35
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 32 with 33
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 36
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/ar/ArArchiveOutputStream::fill
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveOutputStream.java
+	Line Number: 101
+	Block: 16
+	First Index: 37
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

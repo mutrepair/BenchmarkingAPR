@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/18081/org/apache/commons/math3/dfp/BracketingNthOrderBrentSolverDFP.java	2022-10-31 19:48:00.219729174 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/dfp/BracketingNthOrderBrentSolverDFP.java	2022-12-26 15:13:55.653665869 -0600
+@@ -287,7 +287,7 @@
+             if (agingA >= MAXIMAL_AGING) {
+                 // we keep updating the high bracket, try to compensate this
+                 targetY = yB.divide(16).negate();
+-            } else if (true) {
++            } else if (agingB >= MAXIMAL_AGING) {
+                 // we keep updating the low bracket, try to compensate this
+                 targetY = yA.divide(16).negate();
+             } else {

@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local parent to be used
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local n is replaced a call n.getFirstChild()
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isVar with a call to hasChildren
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isVar with a call to isFromExterns
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isVar with a call to hasOneChild
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isVar with a call to hasMoreThanOneChild
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isVar with a call to isQualifiedName
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isVar with a call to isUnscopedQualifiedName
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isVar with a call to isVarArgs
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isVar with a call to isOptionalArg
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isVar with a call to isSyntheticBlock
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to isVar with a call to wasEmptyNode
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.Node::isVar()Z is guarded using default value false
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isVar()Z is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::isVar
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/TypedCodeGenerator.java
+	Line Number: 50
+	Block: 9
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local attrKey is replaced by local key to be used
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local key is replaced by local attrKey to be used
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local attrKey is replaced by access to field dataPrefix
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local key is replaced by access to field dataPrefix
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local attrKey is replaced a call attrKey.toLowerCase()
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local key is replaced a call key.toLowerCase()
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to equalsIgnoreCase with a call to startsWith
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to equalsIgnoreCase with a call to endsWith
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to equalsIgnoreCase with a call to matches
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::equalsIgnoreCase(Ljava/lang/String;)Z is guarded using default value false
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equalsIgnoreCase(Ljava/lang/String;)Z is guarded returning enclosing method
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::equalsIgnoreCase
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/nodes/Attributes.java
+	Line Number: 124
+	Block: 25
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

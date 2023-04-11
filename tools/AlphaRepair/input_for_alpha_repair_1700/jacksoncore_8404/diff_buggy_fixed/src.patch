@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/8404/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-10-31 19:47:45.227783987 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1278,7 +1278,7 @@
+         } else {
+             firstOk = Character.isJavaIdentifierPart((char) i);
+         }
+-        if (!false) {
++        if (!firstOk) {
+             _reportUnexpectedChar(i, "was expecting either valid name character (for unquoted name) or double-quote (for quoted) to start field name");
+         }
+         int ptr = _inputPtr;

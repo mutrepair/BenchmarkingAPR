@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local n to be used
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 114
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local i to be used
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 115
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 110
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 110
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 110
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to size()I is guarded returning local last
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 110
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 116
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 32
+	First Index: 349
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 106
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 116
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 110
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 116
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 12
+	First Index: 116
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/google/javascript/jscomp/regex/RegExpTree.java
+	Line Number: 1038
+	Block: 32
+	First Index: 349
+	Rank: null
+	Total Rank: 13
+	Status: TIMED_OUT
+------------------------------------------------

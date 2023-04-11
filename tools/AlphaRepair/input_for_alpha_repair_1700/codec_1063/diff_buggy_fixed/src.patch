@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1063/org/apache/commons/codec/binary/Hex.java	2022-10-31 19:47:38.843807105 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Hex.java	2022-12-26 15:13:39.225488336 -0600
+@@ -60,7 +60,7 @@
+             throw new DecoderException("Odd number of characters.");
+         }
+ 
+-        byte[] out = new byte[len >> 0];
++        byte[] out = new byte[len >> 1];
+ 
+         // two characters form the hex value.
+         for (int i = 0, j = 0; j < len; i++) {

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/658/org/joda/time/DurationField.java	2023-04-04 14:33:26.381961718 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/DurationField.java	2023-04-04 13:31:54.461646096 -0500
+@@ -209,7 +209,7 @@
+         if (value == Integer.MIN_VALUE) {
+             return subtract(instant, (long) value);
+         }
+-        return add(instant, +value);
++        return add(instant, -value);
+     }
+ 
+     /**

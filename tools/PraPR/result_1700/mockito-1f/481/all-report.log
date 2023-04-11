@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.reflect.Method.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.reflect.Method.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getName with a call to toString
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getParameterTypes with a call to getExceptionTypes
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getName with a call to toGenericString
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Method::getName()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Method::getParameterTypes()[Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getName()Ljava/lang/String; is guarded returning default value false
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getParameterTypes()[Ljava/lang/Class; is guarded returning default value false
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/mockito/internal/util/ObjectMethodsGuru::isHashCodeMethod
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 15
+	First Index: 18
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/mockito/internal/util/ObjectMethodsGuru::isHashCodeMethod
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 15
+	First Index: 18
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 13
+	First Index: 11
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 14
+	First Index: 13
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 15
+	First Index: 16
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Method::getName
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::equals
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Method::getParameterTypes
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 12
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/mockito/internal/util/ObjectMethodsGuru.java
+	Line Number: 31
+	Block: 15
+	First Index: 18
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------

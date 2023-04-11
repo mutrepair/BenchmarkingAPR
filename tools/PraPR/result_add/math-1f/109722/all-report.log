@@ -1,0 +1,333 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 30
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to pow(DD)D with a call to pow(DI)D
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to value is guarded using value 0.D
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to value is guarded using field value
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.util.Decimal64.value is replaced by the call to org.apache.commons.math3.util.Decimal64::doubleValue()D
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.util.Decimal64.value is replaced by the call to org.apache.commons.math3.util.Decimal64::getReal()D
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field NEGATIVE_INFINITY
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field POSITIVE_INFINITY
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field NAN
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.negate()
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to pow with a call to log
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to pow with a call to atan2
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to pow with a call to nextAfter
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to pow with a call to min
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to pow with a call to max
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to pow with a call to hypot
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to pow with a call to IEEEremainder
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to pow with a call to copySign
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to value is guarded returning default value null
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to value is guarded returning local this
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to value is guarded returning field ZERO
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::pow with argument
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/util/Decimal64::<init>
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double division with multiplication
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::pow
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/util/Decimal64::rootN
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/util/Decimal64::rootN to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/util/Decimal64.java
+	Line Number: 444
+	Block: 45
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

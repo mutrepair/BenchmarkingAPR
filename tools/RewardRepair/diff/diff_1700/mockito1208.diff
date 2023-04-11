@@ -1,0 +1,30 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1208/org/mockito/internal/matchers/LessOrEqual.java	2022-10-22 16:02:23.789417807 -0500
++++ /home/jun/research/dlapr/all_mutants/mockito-1f/src/org/mockito/internal/matchers/LessOrEqual.java	2022-10-22 16:02:47.649565499 -0500
+@@ -1,26 +1,26 @@
+ /*
+  * Copyright (c) 2007 Mockito contributors
+  * This program is made available under the terms of the MIT License.
+  */
+ package org.mockito.internal.matchers;
+ 
+ import java.io.Serializable;
+ 
+ public class LessOrEqual<T extends Comparable<T>> extends CompareTo<T> implements Serializable {
+ 
+     private static final long serialVersionUID = -6648773374429103565L;
+ 
+     public LessOrEqual(Comparable<T> value) {
+         super(value);
+     }
+ 
+     @Override
+     protected String getName() {
+         return "leq";
+     }
+ 
+     @Override
+     protected boolean matchResult(int result) {
+-        return result <= -1;
++        return result <= 0;
+     }
+ }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/2056/com/fasterxml/jackson/dataformat/xml/util/XmlRootNameLookup.java	2022-10-31 19:47:49.787767392 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/util/XmlRootNameLookup.java	2022-12-26 15:13:53.109638382 -0600
+@@ -74,7 +74,7 @@
+             ns = root.getNamespace();
+         }
+         // No answer so far? Let's just default to using simple class name
+-        if (localName == null || localName.length() == 1) {
++        if (localName == null || localName.length() == 0) {
+             // Should we strip out enclosing class tho? For now, nope:
+             // one caveat: array simple names end with "[]"; also, "$" needs replacing
+             localName = StaxUtil.sanitizeXmlTypeName(rootType.getSimpleName());

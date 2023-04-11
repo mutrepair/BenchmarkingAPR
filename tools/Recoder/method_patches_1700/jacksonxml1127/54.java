@@ -1,0 +1,12 @@
+    public int next() throws IOException 
+    {
+if(hasAttributes(_repeatElement)){
+            return (_currentState = _handleRepeatElement());
+        }
+        try {
+            return _next();
+        } catch (XMLStreamException e) {
+            StaxUtil.throwXmlAsIOException(e);
+            return -1;
+        }
+    }

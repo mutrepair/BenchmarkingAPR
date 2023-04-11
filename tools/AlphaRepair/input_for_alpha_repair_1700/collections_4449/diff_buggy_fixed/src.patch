@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4449/org/apache/commons/collections4/iterators/SingletonIterator.java	2022-10-31 19:47:39.799803652 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/iterators/SingletonIterator.java	2022-12-26 15:13:49.797602596 -0600
+@@ -85,7 +85,7 @@
+      *    been returned
+      */
+     public E next() {
+-        if (!beforeFirst) {
++        if (!beforeFirst || removed) {
+             throw new NoSuchElementException();
+         }
+         beforeFirst = false;

@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local outputPtr is replaced by local outputEnd to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local decodedData is replaced by local outputPtr to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local outputPtr is replaced by local outputCount to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local decodedData is replaced by local outputEnd to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local outputPtr is replaced by local ch to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local decodedData is replaced by local outputCount to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local outputPtr is replaced by local bits to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local decodedData is replaced by local ch to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local outputPtr is replaced by local decodedData to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local decodedData is replaced by local bits to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local buffer is replaced by access to field _inputBuffer
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 426
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local outputPtr is replaced by access to field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 427
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local decodedData is replaced by access to field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 429
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 428
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 430
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 431
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 574
+	Block: 112
+	First Index: 428
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

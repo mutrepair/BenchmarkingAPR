@@ -1,0 +1,10 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/108819/org/apache/commons/math3/util/ArithmeticUtils.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/ArithmeticUtils.java	2023-04-04 13:31:54.041641105 -0500
+@@ -883,6 +883,6 @@
+      * @return true if the argument is a power of two
+      */
+     public static boolean isPowerOfTwo(long n) {
+-        return (n > 0) && ((n ^ (n - 1)) == 0);
++        return (n > 0) && ((n & (n - 1)) == 0);
+     }
+ }

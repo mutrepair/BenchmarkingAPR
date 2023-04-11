@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/520/org/apache/commons/jxpath/functions/MethodFunction.java	2022-10-31 19:47:51.375761597 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/functions/MethodFunction.java	2022-12-26 15:13:54.173649879 -0600
+@@ -66,7 +66,7 @@
+                 }
+             }
+             else {
+-                int pi = 1;
++                int pi = 0;
+                 Class types[] = method.getParameterTypes();
+                 if (types.length >= 1
+                     && ExpressionContext.class.isAssignableFrom(types[0])) {

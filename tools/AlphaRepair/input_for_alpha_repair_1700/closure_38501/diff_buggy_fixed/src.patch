@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/38501/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java	2022-10-31 19:47:37.803810859 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java	2022-10-29 10:43:40.471925455 -0500
+@@ -1458,7 +1458,7 @@
+     Node pattern = constructor.getNext();  // e.g.  ^foobar$
+     Node flags = null != pattern ? pattern.getNext() : null;  // e.g. gi
+ 
+-    if (null == pattern || (null != flags.getNext())) {
++    if (null == pattern || (null != flags && null != flags.getNext())) {
+       // too few or too many arguments
+       return n;
+     }

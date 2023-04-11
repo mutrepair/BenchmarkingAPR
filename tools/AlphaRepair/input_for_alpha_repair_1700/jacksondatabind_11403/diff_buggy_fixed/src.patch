@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/11403/com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver.java	2022-10-31 19:47:46.487779408 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver.java	2022-12-26 15:13:52.505631856 -0600
+@@ -153,6 +153,6 @@
+     {
+         String n = cls.getName();
+         int ix = n.lastIndexOf('.');
+-        return (ix != 0) ? n : n.substring(ix+1);
++        return (ix < 0) ? n : n.substring(ix+1);
+     }
+ }

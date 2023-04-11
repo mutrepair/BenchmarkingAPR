@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/3940/com/fasterxml/jackson/core/format/DataFormatDetector.java	2022-10-31 19:47:45.107784423 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/format/DataFormatDetector.java	2022-12-26 15:13:51.921625546 -0600
+@@ -190,7 +190,7 @@
+             acc.reset();
+             MatchStrength strength = f.hasFormat(acc);
+             // if not better than what we have so far (including minimal level limit), skip
+-            if (true) {
++            if (strength == null || strength.ordinal() < _minimalMatch.ordinal()) {
+                 continue;
+             }
+             // also, needs to better match than before

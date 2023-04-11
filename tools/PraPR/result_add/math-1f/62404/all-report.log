@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to mask is guarded using value 0
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to mask is guarded using local key
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to mask is guarded using field DEFAULT_EXPECTED_SIZE
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.util.OpenIntToFieldHashMap.mask is replaced by the call to org.apache.commons.math3.util.OpenIntToFieldHashMap::size()I
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to mask with an access to size
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to mask with an access to count
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field mask is replaced by access to local key
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field mask is replaced by access to local hash
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local hash is replaced by local key to be used
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local hash is replaced by access to field DEFAULT_EXPECTED_SIZE
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local hash is replaced by access to field RESIZE_MULTIPLIER
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local hash is replaced by access to field PERTURB_SHIFT
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local hash is replaced by access to field size
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local hash is replaced by access to field mask
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 8
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to mask is guarded returning default value null
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to mask is guarded returning field missingEntries
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 10
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/math3/util/OpenIntToFieldHashMap.java
+	Line Number: 365
+	Block: 54
+	First Index: 11
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------

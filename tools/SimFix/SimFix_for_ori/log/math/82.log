@@ -1,0 +1,102 @@
+=================================================
+Project : math_82	start : 23/02/07 13:35
+Current failed test : org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288 | 23/02/07 13:35
+Tue Feb 07 13:35:24 CST 2023 org.apache.commons.math.optimization.linear.SimplexSolver,82
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ratio<=minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+
+Time : 23/02/07 13:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1327584497459624 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>0,0]
+if(pv.abs()<=functionValueAccuracy){
+resultComputed=true;
+iterationCount=i;
+return z;
+}
+
+Time : 23/02/07 13:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>84,87]
+if(ratio<minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+
+Time : 23/02/07 13:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>84,87]
+if(ratio<=minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+
+Time : 23/02/07 13:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(MathUtils.compareTo(entry,0,epsilon)>0){
+ final double ratio=rhs/entry;
+if(ratio<minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+}
+
+Time : 23/02/07 13:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0569939807910576 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>0,0]
+if(Math.abs(m.getEntry(r,c))>epsilon){
+throw MathRuntimeException.createIllegalArgumentException("matrix is not upper-triangular, entry ({0}, {1}) = {2} is too large",r,c,m.getEntry(r,c));
+}
+
+Time : 23/02/07 13:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>82,88]
+if(MathUtils.compareTo(entry,0,epsilon)>=0){
+ final double ratio=rhs/entry;
+if(ratio<minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+}
+
+Time : 23/02/07 13:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java=>82,88]
+if(MathUtils.compareTo(entry,0,epsilon)>0){
+ final double ratio=rhs/entry;
+if(ratio<minRatio){
+minRatio=ratio;
+minRatioPos=i;
+}
+}
+
+Time : 23/02/07 13:36
+----------------------------------------
+Success time : 23/02/07 13:37

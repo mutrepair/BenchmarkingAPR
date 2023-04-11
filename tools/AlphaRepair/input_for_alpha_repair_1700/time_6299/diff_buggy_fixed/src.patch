@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/6299/org/joda/time/YearMonth.java	2022-10-31 19:48:08.939696961 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/YearMonth.java	2022-12-26 15:13:57.197682550 -0600
+@@ -504,7 +504,7 @@
+      */
+     public YearMonth withFieldAdded(DurationFieldType fieldType, int amount) {
+         int index = indexOfSupported(fieldType);
+-        if (amount <= 0) {
++        if (amount == 0) {
+             return this;
+         }
+         int[] newValues = getValues();

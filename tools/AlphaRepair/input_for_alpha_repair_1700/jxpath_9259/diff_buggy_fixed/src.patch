@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/9259/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-10-31 19:47:51.471761246 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-12-26 15:13:54.181649966 -0600
+@@ -474,7 +474,7 @@
+       case 124:
+          return jjStopAtPos(0, 8);
+       default :
+-         return jjMoveNfa_0(-1, 0);
++         return jjMoveNfa_0(0, 0);
+    }
+ }
+ private final int jjMoveStringLiteralDfa1_0(long active0, long active1)

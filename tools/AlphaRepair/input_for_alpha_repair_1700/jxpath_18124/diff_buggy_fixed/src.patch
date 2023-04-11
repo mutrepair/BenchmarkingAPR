@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/18124/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-10-31 19:47:51.279761948 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -398,7 +398,7 @@
+         if (s1 == null && s2 != null) {
+             return false;
+         }
+-        if (s1 != null) {
++        if (s1 != null && s2 == null) {
+             return false;
+         }
+ 

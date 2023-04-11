@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/14564/org/apache/commons/lang3/Validate.java	2022-10-31 19:47:57.075740729 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/Validate.java	2022-12-26 15:13:54.765656275 -0600
+@@ -946,7 +946,7 @@
+      */
+     public static <T> void exclusiveBetween(final T start, final T end, final Comparable<T> value) {
+         // TODO when breaking BC, consider returning value
+-        if (true) {
++        if (value.compareTo(start) <= 0 || value.compareTo(end) >= 0) {
+             throw new IllegalArgumentException(String.format(DEFAULT_EXCLUSIVE_BETWEEN_EX_MESSAGE, value, start, end));
+         }
+     }

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/13101/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.693955051 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -2009,7 +2009,7 @@
+                 if (needed > 1) {
+                     ch2 = quads[ix >> 2];
+                     byteIx = (ix & 3);
+-                    ch2 = (ch2 >> ((3 - byteIx) >>> 3));
++                    ch2 = (ch2 >> ((3 - byteIx) << 3));
+                     ++ix;
+                     
+                     if ((ch2 & 0xC0) != 0x080) {

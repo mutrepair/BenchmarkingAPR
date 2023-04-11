@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/10972/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-10-31 19:47:44.847785367 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1829,7 +1829,7 @@
+         bbuf[outputPtr++] = BYTE_u;
+         if (charToEscape > 0xFF) {
+             int hi = (charToEscape >> 8) & 0xFF;
+-            bbuf[outputPtr++] = HEX_CHARS[hi >> -4];
++            bbuf[outputPtr++] = HEX_CHARS[hi >> 4];
+             bbuf[outputPtr++] = HEX_CHARS[hi & 0xF];
+             charToEscape &= 0xFF;
+         } else {

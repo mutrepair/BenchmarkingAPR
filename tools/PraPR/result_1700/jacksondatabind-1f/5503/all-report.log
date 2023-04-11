@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _additionalKeySerializers is replaced by access to local allAdditionalSerializers
+	File Name: com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java
+	Line Number: 50
+	Block: 3
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _additionalKeySerializers is replaced by access to local allAdditionalKeySerializers
+	File Name: com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java
+	Line Number: 50
+	Block: 3
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local allAdditionalKeySerializers is replaced by local allAdditionalSerializers to be used
+	File Name: com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java
+	Line Number: 50
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _additionalKeySerializers
+	File Name: com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.java
+	Line Number: 50
+	Block: 3
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

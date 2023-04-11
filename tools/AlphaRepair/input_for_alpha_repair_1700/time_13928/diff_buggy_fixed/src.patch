@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13928/org/joda/time/format/DateTimeFormatterBuilder.java	2022-10-31 19:48:08.719697777 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java	2022-12-26 15:13:57.205682637 -0600
+@@ -1582,7 +1582,7 @@
+                 int length = 0;
+                 while (length < limit) {
+                     char c = text.charAt(position + length);
+-                    if (length == -1 && (c == '-' || c == '+')) {
++                    if (length == 0 && (c == '-' || c == '+')) {
+                         hasSignChar = true;
+                         negative = c == '-';
+                         if (negative) {

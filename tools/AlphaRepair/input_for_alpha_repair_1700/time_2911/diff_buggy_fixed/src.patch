@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/2911/org/joda/time/base/BasePeriod.java	2022-10-31 19:48:08.847697302 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/base/BasePeriod.java	2022-12-26 15:13:57.201682593 -0600
+@@ -418,7 +418,7 @@
+      */
+     private void setPeriodInternal(ReadablePeriod period) {
+         int[] newValues = new int[size()];
+-        for (int i = -1, isize = period.size(); i < isize; i++) {
++        for (int i = 0, isize = period.size(); i < isize; i++) {
+             DurationFieldType type = period.getFieldType(i);
+             int value = period.getValue(i);
+             checkAndUpdate(type, newValues, value);

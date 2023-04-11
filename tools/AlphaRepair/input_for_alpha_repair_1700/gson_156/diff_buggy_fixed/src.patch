@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/156/com/google/gson/DefaultTypeAdapters.java	2022-10-31 19:47:43.667789649 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/DefaultTypeAdapters.java	2022-12-26 15:13:51.389619797 -0600
+@@ -202,7 +202,7 @@
+   }
+ 
+   static ParameterizedTypeHandlerMap<JsonSerializer<?>> getDefaultSerializers() {
+-    return getDefaultSerializers(true, LongSerializationPolicy.DEFAULT);
++    return getDefaultSerializers(false, LongSerializationPolicy.DEFAULT);
+   }
+       
+   static ParameterizedTypeHandlerMap<JsonSerializer<?>> getDefaultSerializers(

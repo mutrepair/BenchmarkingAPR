@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 08:46:11 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local firstBad is replaced by local lastBad to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 40
+	Block: 10
+	First Index: 41
+	Rank: 3
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local firstBad is replaced by local i to be used
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 40
+	Block: 10
+	First Index: 41
+	Rank: 3
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/exceptions/base/StackTraceFilter.java
+	Line Number: 40
+	Block: 10
+	First Index: 43
+	Rank: 3
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------

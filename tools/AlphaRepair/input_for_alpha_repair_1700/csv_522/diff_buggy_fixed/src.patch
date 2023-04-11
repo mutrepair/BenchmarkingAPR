@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/522/org/apache/commons/csv/CSVPrinter.java	2022-10-31 19:47:42.299794607 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVPrinter.java	2022-12-26 15:13:50.881614309 -0600
+@@ -159,7 +159,7 @@
+ 
+         while (pos < end) {
+             char c = value.charAt(pos);
+-            if (c == '\r' || c == '\n' || c == delim || c >= escape) {
++            if (c == '\r' || c == '\n' || c == delim || c == escape) {
+                 // write out segment up until this char
+                 if (pos > start) {
+                     out.append(value, start, pos);

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local length to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 36
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local offset to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 37
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local offset is replaced by local i to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 36
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local length to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 37
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 36
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 37
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 39
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 108
+	Block: 21
+	First Index: 38
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

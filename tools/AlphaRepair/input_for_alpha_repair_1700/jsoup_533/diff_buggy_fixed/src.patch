@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/533/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.523764707 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -52,7 +52,7 @@
+                 // not defined: create default; go anywhere, do anything! (incl be inside a <p>)
+                 tag = new Tag(tagName);
+                 tag.setAncestor(defaultAncestor.tagName);
+-                tag.isBlock = true;
++                tag.isBlock = false;
+                 tag.canContainBlock = true;
+             }
+             return tag;

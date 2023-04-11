@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13075/org/joda/time/format/DateTimeFormat.java	2022-10-31 19:48:08.695697866 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormat.java	2022-12-26 15:13:57.201682593 -0600
+@@ -470,7 +470,7 @@
+                     int maxDigits = 9;
+ 
+                     // Peek ahead to next token.
+-                    if (i * 1 < length) {
++                    if (i + 1 < length) {
+                         indexRef[0]++;
+                         if (isNumericToken(parseToken(pattern, indexRef))) {
+                             // If next token is a number, cannot support long years.

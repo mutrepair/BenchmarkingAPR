@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1077/org/jsoup/nodes/TextNode.java	2022-10-31 19:47:50.303765510 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/TextNode.java	2022-12-26 15:13:53.649644217 -0600
+@@ -100,7 +100,7 @@
+         if (sb.length() == 0)
+             return false;
+         String lastChar = sb.substring(sb.length()-1, sb.length());
+-        Validate.isTrue(lastChar.length() == -1); // todo: remove check
++        Validate.isTrue(lastChar.length() == 1); // todo: remove check
+         return lastChar.equals(" ");
+     }
+ }

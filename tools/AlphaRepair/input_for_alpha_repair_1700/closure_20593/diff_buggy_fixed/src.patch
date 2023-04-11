@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/20593/com/google/javascript/jscomp/CheckAccessControls.java	2022-10-31 19:47:37.691811263 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/CheckAccessControls.java	2022-10-29 02:44:16.565259492 -0500
+@@ -714,7 +714,7 @@
+       if (iproto != null) {
+         Node source = iproto.getConstructor().getSource();
+         JSDocInfo jsDoc = source != null ? NodeUtil.getBestJSDocInfo(source) : null;
+-        if (jsDoc != null) {
++        if (jsDoc != null && jsDoc.isConstant()) {
+           return iproto;
+         }
+       }

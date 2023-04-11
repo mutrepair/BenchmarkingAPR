@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to lineLength is guarded using value 0
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to lineLength is guarded using local inPos
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to lineLength is guarded using field CHUNK_SIZE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.codec.binary.Base64.lineLength is replaced by the call to org.apache.commons.codec.binary.Base64::avail()I
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to lineLength with an access to decodeSize
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to lineLength with an access to encodeSize
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to lineLength with an access to pos
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to lineLength with an access to readPos
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to lineLength with an access to currentLinePos
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to lineLength with an access to modulus
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field lineLength is replaced by access to local inPos
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field lineLength is replaced by access to local inAvail
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to lineLength is guarded returning enclosing method
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 201
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 202
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 202
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 202
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 446
+	Block: 43
+	First Index: 202
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

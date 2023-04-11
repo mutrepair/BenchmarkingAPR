@@ -1,0 +1,17 @@
+maxMultiProcess: 10  # max number of processes to run in parallel
+mutationBenchmarkPath: ../../MutationBenchmark  # path to the mutation benchmark 
+logDirPath: logs  # path to the log directory
+
+binPatch: # path to the directory containing the compiled patches
+  recoder: /home/xxx/bin_patches/recoder_patches
+  alphaRepair: /home/xxx/bin_patches/alpha_repair_patches
+  coconut: /home/xxx/bin_patches/coconut_patches
+  cure: /home/xxx/bin_patches/cure_patches
+  edits: /home/xxx/bin_patches/edits_patches
+  rewardRepair: /home/xxx/bin_patches/reward_repair_patches
+  selfapr: /home/xxx/bin_patches/selfapr_patches
+  sequencer: /home/xxx/bin_patches/sequencer_patches
+  tbar: /home/xxx/bin_patches/tbar_patches
+  tufano: /home/xxx/bin_patches/tufano_patches
+  prapr: /ssd/xxx/bin_patches/prapr_patches
+  simfix: /ssd/xxx/bin_patches/simfix_patches

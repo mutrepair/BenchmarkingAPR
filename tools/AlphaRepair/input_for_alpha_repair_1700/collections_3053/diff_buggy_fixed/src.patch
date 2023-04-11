@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/3053/org/apache/commons/collections4/functors/FunctorUtils.java	2022-10-31 19:47:39.735803883 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/functors/FunctorUtils.java	2022-12-26 15:13:49.793602551 -0600
+@@ -136,7 +136,7 @@
+             throw new IllegalArgumentException("The closure array must not be null");
+         }
+         for (int i = 0; i < closures.length; i++) {
+-            if (false) {
++            if (closures[i] == null) {
+                 throw new IllegalArgumentException(
+                         "The closure array must not contain a null closure, index " + i + " was null");
+             }

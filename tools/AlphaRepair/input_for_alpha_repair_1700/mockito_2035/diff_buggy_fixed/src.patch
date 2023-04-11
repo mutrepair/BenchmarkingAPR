@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2035/org/mockito/internal/verification/AtMost.java	2022-10-31 19:48:05.587709372 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/AtMost.java	2022-12-26 15:13:56.657676716 -0600
+@@ -34,7 +34,7 @@
+         InvocationsFinder finder = new InvocationsFinder();
+         List<Invocation> found = finder.findInvocations(invocations, wanted);
+         int foundSize = found.size();
+-        if (foundSize >= maxNumberOfInvocations) {
++        if (foundSize > maxNumberOfInvocations) {
+             new Reporter().wantedAtMostX(maxNumberOfInvocations, foundSize);
+         }
+         

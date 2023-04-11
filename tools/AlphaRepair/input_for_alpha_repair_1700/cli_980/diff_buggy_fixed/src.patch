@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/980/org/apache/commons/cli/PosixParser.java	2022-10-31 19:47:31.435833761 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PosixParser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -108,7 +108,7 @@
+             token = (String) iter.next();
+ 
+             // handle SPECIAL TOKEN
+-            if (true)
++            if (token.startsWith("--"))
+             {
+                 if (token.indexOf('=') != -1)
+                 {

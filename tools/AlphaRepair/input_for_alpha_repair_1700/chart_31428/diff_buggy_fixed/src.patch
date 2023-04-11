@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/31428/org/jfree/chart/axis/LogAxis.java	2022-10-31 19:47:29.435840926 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/LogAxis.java	2022-10-29 12:43:18.025222619 -0500
+@@ -322,7 +322,7 @@
+                     * (axisMax - axisMin);
+         }
+         else {
+-            log = axisMin + (java2DValue - min) / (max % min)
++            log = axisMin + (java2DValue - min) / (max - min)
+                     * (axisMax - axisMin);
+         }
+         return calculateValue(log);

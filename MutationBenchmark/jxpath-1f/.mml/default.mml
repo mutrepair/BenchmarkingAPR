@@ -1,0 +1,1679 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathAbstractFactoryException
+AOR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+LOR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+SOR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+COR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+ROR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+ORU<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+LVR<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+STD<"org.apache.commons.jxpath.JXPathAbstractFactoryException">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.HttpSessionAndServletContext
+AOR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+LOR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+SOR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+COR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+ROR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+ORU<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+LVR<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+STD<"org.apache.commons.jxpath.servlet.HttpSessionAndServletContext">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.PageScopeContextHandler
+AOR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+LOR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+SOR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+COR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+ROR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+ORU<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+LVR<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+STD<"org.apache.commons.jxpath.servlet.PageScopeContextHandler">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.ServletRequestHandler
+AOR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+LOR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+SOR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+COR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+ROR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+ORU<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+LVR<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+STD<"org.apache.commons.jxpath.servlet.ServletRequestHandler">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.ServletContextHandler
+AOR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+LOR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+SOR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+COR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+ROR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+ORU<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+LVR<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+STD<"org.apache.commons.jxpath.servlet.ServletContextHandler">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.JXPathServletContexts
+AOR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+LOR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+SOR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+COR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+ROR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+ORU<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+LVR<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+STD<"org.apache.commons.jxpath.servlet.JXPathServletContexts">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.Constants
+AOR<"org.apache.commons.jxpath.servlet.Constants">;
+LOR<"org.apache.commons.jxpath.servlet.Constants">;
+SOR<"org.apache.commons.jxpath.servlet.Constants">;
+COR<"org.apache.commons.jxpath.servlet.Constants">;
+ROR<"org.apache.commons.jxpath.servlet.Constants">;
+ORU<"org.apache.commons.jxpath.servlet.Constants">;
+LVR<"org.apache.commons.jxpath.servlet.Constants">;
+STD<"org.apache.commons.jxpath.servlet.Constants">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.PageScopeContext
+AOR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+LOR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+SOR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+COR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+ROR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+ORU<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+LVR<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+STD<"org.apache.commons.jxpath.servlet.PageScopeContext">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.ServletRequestAndContext
+AOR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+LOR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+SOR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+COR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+ROR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+ORU<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+LVR<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+STD<"org.apache.commons.jxpath.servlet.ServletRequestAndContext">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.PageContextHandler
+AOR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+LOR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+SOR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+COR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+ROR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+ORU<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+LVR<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+STD<"org.apache.commons.jxpath.servlet.PageContextHandler">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.HttpSessionHandler
+AOR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+LOR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+SOR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+COR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+ROR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+ORU<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+LVR<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+STD<"org.apache.commons.jxpath.servlet.HttpSessionHandler">;
+
+// Enable operators for org.apache.commons.jxpath.servlet.KeywordVariables
+AOR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+LOR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+SOR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+COR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+ROR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+ORU<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+LVR<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+STD<"org.apache.commons.jxpath.servlet.KeywordVariables">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathFunctionNotFoundException
+AOR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+LOR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+SOR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+COR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+ROR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+ORU<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+LVR<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+STD<"org.apache.commons.jxpath.JXPathFunctionNotFoundException">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathIntrospector
+AOR<"org.apache.commons.jxpath.JXPathIntrospector">;
+LOR<"org.apache.commons.jxpath.JXPathIntrospector">;
+SOR<"org.apache.commons.jxpath.JXPathIntrospector">;
+COR<"org.apache.commons.jxpath.JXPathIntrospector">;
+ROR<"org.apache.commons.jxpath.JXPathIntrospector">;
+ORU<"org.apache.commons.jxpath.JXPathIntrospector">;
+LVR<"org.apache.commons.jxpath.JXPathIntrospector">;
+STD<"org.apache.commons.jxpath.JXPathIntrospector">;
+
+// Enable operators for org.apache.commons.jxpath.Variables
+AOR<"org.apache.commons.jxpath.Variables">;
+LOR<"org.apache.commons.jxpath.Variables">;
+SOR<"org.apache.commons.jxpath.Variables">;
+COR<"org.apache.commons.jxpath.Variables">;
+ROR<"org.apache.commons.jxpath.Variables">;
+ORU<"org.apache.commons.jxpath.Variables">;
+LVR<"org.apache.commons.jxpath.Variables">;
+STD<"org.apache.commons.jxpath.Variables">;
+
+// Enable operators for org.apache.commons.jxpath.FunctionLibrary
+AOR<"org.apache.commons.jxpath.FunctionLibrary">;
+LOR<"org.apache.commons.jxpath.FunctionLibrary">;
+SOR<"org.apache.commons.jxpath.FunctionLibrary">;
+COR<"org.apache.commons.jxpath.FunctionLibrary">;
+ROR<"org.apache.commons.jxpath.FunctionLibrary">;
+ORU<"org.apache.commons.jxpath.FunctionLibrary">;
+LVR<"org.apache.commons.jxpath.FunctionLibrary">;
+STD<"org.apache.commons.jxpath.FunctionLibrary">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathInvalidAccessException
+AOR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+LOR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+SOR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+COR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+ROR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+ORU<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+LVR<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+STD<"org.apache.commons.jxpath.JXPathInvalidAccessException">;
+
+// Enable operators for org.apache.commons.jxpath.MapDynamicPropertyHandler
+AOR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+LOR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+SOR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+COR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+ROR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+ORU<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+LVR<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+STD<"org.apache.commons.jxpath.MapDynamicPropertyHandler">;
+
+// Enable operators for org.apache.commons.jxpath.CompiledExpression
+AOR<"org.apache.commons.jxpath.CompiledExpression">;
+LOR<"org.apache.commons.jxpath.CompiledExpression">;
+SOR<"org.apache.commons.jxpath.CompiledExpression">;
+COR<"org.apache.commons.jxpath.CompiledExpression">;
+ROR<"org.apache.commons.jxpath.CompiledExpression">;
+ORU<"org.apache.commons.jxpath.CompiledExpression">;
+LVR<"org.apache.commons.jxpath.CompiledExpression">;
+STD<"org.apache.commons.jxpath.CompiledExpression">;
+
+// Enable operators for org.apache.commons.jxpath.DynamicPropertyHandler
+AOR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+LOR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+SOR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+COR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+ROR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+ORU<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+LVR<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+STD<"org.apache.commons.jxpath.DynamicPropertyHandler">;
+
+// Enable operators for org.apache.commons.jxpath.util.TypeUtils
+AOR<"org.apache.commons.jxpath.util.TypeUtils">;
+LOR<"org.apache.commons.jxpath.util.TypeUtils">;
+SOR<"org.apache.commons.jxpath.util.TypeUtils">;
+COR<"org.apache.commons.jxpath.util.TypeUtils">;
+ROR<"org.apache.commons.jxpath.util.TypeUtils">;
+ORU<"org.apache.commons.jxpath.util.TypeUtils">;
+LVR<"org.apache.commons.jxpath.util.TypeUtils">;
+STD<"org.apache.commons.jxpath.util.TypeUtils">;
+
+// Enable operators for org.apache.commons.jxpath.util.ValueUtils
+AOR<"org.apache.commons.jxpath.util.ValueUtils">;
+LOR<"org.apache.commons.jxpath.util.ValueUtils">;
+SOR<"org.apache.commons.jxpath.util.ValueUtils">;
+COR<"org.apache.commons.jxpath.util.ValueUtils">;
+ROR<"org.apache.commons.jxpath.util.ValueUtils">;
+ORU<"org.apache.commons.jxpath.util.ValueUtils">;
+LVR<"org.apache.commons.jxpath.util.ValueUtils">;
+STD<"org.apache.commons.jxpath.util.ValueUtils">;
+
+// Enable operators for org.apache.commons.jxpath.util.TypeConverter
+AOR<"org.apache.commons.jxpath.util.TypeConverter">;
+LOR<"org.apache.commons.jxpath.util.TypeConverter">;
+SOR<"org.apache.commons.jxpath.util.TypeConverter">;
+COR<"org.apache.commons.jxpath.util.TypeConverter">;
+ROR<"org.apache.commons.jxpath.util.TypeConverter">;
+ORU<"org.apache.commons.jxpath.util.TypeConverter">;
+LVR<"org.apache.commons.jxpath.util.TypeConverter">;
+STD<"org.apache.commons.jxpath.util.TypeConverter">;
+
+// Enable operators for org.apache.commons.jxpath.util.MethodLookupUtils
+AOR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+LOR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+SOR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+COR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+ROR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+ORU<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+LVR<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+STD<"org.apache.commons.jxpath.util.MethodLookupUtils">;
+
+// Enable operators for org.apache.commons.jxpath.util.BasicTypeConverter
+AOR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+LOR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+SOR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+COR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+ROR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+ORU<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+LVR<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+STD<"org.apache.commons.jxpath.util.BasicTypeConverter">;
+
+// Enable operators for org.apache.commons.jxpath.BasicNodeSet
+AOR<"org.apache.commons.jxpath.BasicNodeSet">;
+LOR<"org.apache.commons.jxpath.BasicNodeSet">;
+SOR<"org.apache.commons.jxpath.BasicNodeSet">;
+COR<"org.apache.commons.jxpath.BasicNodeSet">;
+ROR<"org.apache.commons.jxpath.BasicNodeSet">;
+ORU<"org.apache.commons.jxpath.BasicNodeSet">;
+LVR<"org.apache.commons.jxpath.BasicNodeSet">;
+STD<"org.apache.commons.jxpath.BasicNodeSet">;
+
+// Enable operators for org.apache.commons.jxpath.BasicVariables
+AOR<"org.apache.commons.jxpath.BasicVariables">;
+LOR<"org.apache.commons.jxpath.BasicVariables">;
+SOR<"org.apache.commons.jxpath.BasicVariables">;
+COR<"org.apache.commons.jxpath.BasicVariables">;
+ROR<"org.apache.commons.jxpath.BasicVariables">;
+ORU<"org.apache.commons.jxpath.BasicVariables">;
+LVR<"org.apache.commons.jxpath.BasicVariables">;
+STD<"org.apache.commons.jxpath.BasicVariables">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathBeanInfo
+AOR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+LOR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+SOR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+COR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+ROR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+ORU<"org.apache.commons.jxpath.JXPathBeanInfo">;
+LVR<"org.apache.commons.jxpath.JXPathBeanInfo">;
+STD<"org.apache.commons.jxpath.JXPathBeanInfo">;
+
+// Enable operators for org.apache.commons.jxpath.ClassFunctions
+AOR<"org.apache.commons.jxpath.ClassFunctions">;
+LOR<"org.apache.commons.jxpath.ClassFunctions">;
+SOR<"org.apache.commons.jxpath.ClassFunctions">;
+COR<"org.apache.commons.jxpath.ClassFunctions">;
+ROR<"org.apache.commons.jxpath.ClassFunctions">;
+ORU<"org.apache.commons.jxpath.ClassFunctions">;
+LVR<"org.apache.commons.jxpath.ClassFunctions">;
+STD<"org.apache.commons.jxpath.ClassFunctions">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathException
+AOR<"org.apache.commons.jxpath.JXPathException">;
+LOR<"org.apache.commons.jxpath.JXPathException">;
+SOR<"org.apache.commons.jxpath.JXPathException">;
+COR<"org.apache.commons.jxpath.JXPathException">;
+ROR<"org.apache.commons.jxpath.JXPathException">;
+ORU<"org.apache.commons.jxpath.JXPathException">;
+LVR<"org.apache.commons.jxpath.JXPathException">;
+STD<"org.apache.commons.jxpath.JXPathException">;
+
+// Enable operators for org.apache.commons.jxpath.xml.XMLParser2
+AOR<"org.apache.commons.jxpath.xml.XMLParser2">;
+LOR<"org.apache.commons.jxpath.xml.XMLParser2">;
+SOR<"org.apache.commons.jxpath.xml.XMLParser2">;
+COR<"org.apache.commons.jxpath.xml.XMLParser2">;
+ROR<"org.apache.commons.jxpath.xml.XMLParser2">;
+ORU<"org.apache.commons.jxpath.xml.XMLParser2">;
+LVR<"org.apache.commons.jxpath.xml.XMLParser2">;
+STD<"org.apache.commons.jxpath.xml.XMLParser2">;
+
+// Enable operators for org.apache.commons.jxpath.xml.DOMParser
+AOR<"org.apache.commons.jxpath.xml.DOMParser">;
+LOR<"org.apache.commons.jxpath.xml.DOMParser">;
+SOR<"org.apache.commons.jxpath.xml.DOMParser">;
+COR<"org.apache.commons.jxpath.xml.DOMParser">;
+ROR<"org.apache.commons.jxpath.xml.DOMParser">;
+ORU<"org.apache.commons.jxpath.xml.DOMParser">;
+LVR<"org.apache.commons.jxpath.xml.DOMParser">;
+STD<"org.apache.commons.jxpath.xml.DOMParser">;
+
+// Enable operators for org.apache.commons.jxpath.xml.JDOMParser
+AOR<"org.apache.commons.jxpath.xml.JDOMParser">;
+LOR<"org.apache.commons.jxpath.xml.JDOMParser">;
+SOR<"org.apache.commons.jxpath.xml.JDOMParser">;
+COR<"org.apache.commons.jxpath.xml.JDOMParser">;
+ROR<"org.apache.commons.jxpath.xml.JDOMParser">;
+ORU<"org.apache.commons.jxpath.xml.JDOMParser">;
+LVR<"org.apache.commons.jxpath.xml.JDOMParser">;
+STD<"org.apache.commons.jxpath.xml.JDOMParser">;
+
+// Enable operators for org.apache.commons.jxpath.xml.DocumentContainer
+AOR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+LOR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+SOR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+COR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+ROR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+ORU<"org.apache.commons.jxpath.xml.DocumentContainer">;
+LVR<"org.apache.commons.jxpath.xml.DocumentContainer">;
+STD<"org.apache.commons.jxpath.xml.DocumentContainer">;
+
+// Enable operators for org.apache.commons.jxpath.xml.XMLParser
+AOR<"org.apache.commons.jxpath.xml.XMLParser">;
+LOR<"org.apache.commons.jxpath.xml.XMLParser">;
+SOR<"org.apache.commons.jxpath.xml.XMLParser">;
+COR<"org.apache.commons.jxpath.xml.XMLParser">;
+ROR<"org.apache.commons.jxpath.xml.XMLParser">;
+ORU<"org.apache.commons.jxpath.xml.XMLParser">;
+LVR<"org.apache.commons.jxpath.xml.XMLParser">;
+STD<"org.apache.commons.jxpath.xml.XMLParser">;
+
+// Enable operators for org.apache.commons.jxpath.KeyManager
+AOR<"org.apache.commons.jxpath.KeyManager">;
+LOR<"org.apache.commons.jxpath.KeyManager">;
+SOR<"org.apache.commons.jxpath.KeyManager">;
+COR<"org.apache.commons.jxpath.KeyManager">;
+ROR<"org.apache.commons.jxpath.KeyManager">;
+ORU<"org.apache.commons.jxpath.KeyManager">;
+LVR<"org.apache.commons.jxpath.KeyManager">;
+STD<"org.apache.commons.jxpath.KeyManager">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathInvalidSyntaxException
+AOR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+LOR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+SOR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+COR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+ROR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+ORU<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+LVR<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+STD<"org.apache.commons.jxpath.JXPathInvalidSyntaxException">;
+
+// Enable operators for org.apache.commons.jxpath.PackageFunctions
+AOR<"org.apache.commons.jxpath.PackageFunctions">;
+LOR<"org.apache.commons.jxpath.PackageFunctions">;
+SOR<"org.apache.commons.jxpath.PackageFunctions">;
+COR<"org.apache.commons.jxpath.PackageFunctions">;
+ROR<"org.apache.commons.jxpath.PackageFunctions">;
+ORU<"org.apache.commons.jxpath.PackageFunctions">;
+LVR<"org.apache.commons.jxpath.PackageFunctions">;
+STD<"org.apache.commons.jxpath.PackageFunctions">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathBasicBeanInfo
+AOR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+LOR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+SOR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+COR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+ROR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+ORU<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+LVR<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+STD<"org.apache.commons.jxpath.JXPathBasicBeanInfo">;
+
+// Enable operators for org.apache.commons.jxpath.NodeSet
+AOR<"org.apache.commons.jxpath.NodeSet">;
+LOR<"org.apache.commons.jxpath.NodeSet">;
+SOR<"org.apache.commons.jxpath.NodeSet">;
+COR<"org.apache.commons.jxpath.NodeSet">;
+ROR<"org.apache.commons.jxpath.NodeSet">;
+ORU<"org.apache.commons.jxpath.NodeSet">;
+LVR<"org.apache.commons.jxpath.NodeSet">;
+STD<"org.apache.commons.jxpath.NodeSet">;
+
+// Enable operators for org.apache.commons.jxpath.AbstractFactory
+AOR<"org.apache.commons.jxpath.AbstractFactory">;
+LOR<"org.apache.commons.jxpath.AbstractFactory">;
+SOR<"org.apache.commons.jxpath.AbstractFactory">;
+COR<"org.apache.commons.jxpath.AbstractFactory">;
+ROR<"org.apache.commons.jxpath.AbstractFactory">;
+ORU<"org.apache.commons.jxpath.AbstractFactory">;
+LVR<"org.apache.commons.jxpath.AbstractFactory">;
+STD<"org.apache.commons.jxpath.AbstractFactory">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathContext
+AOR<"org.apache.commons.jxpath.JXPathContext">;
+LOR<"org.apache.commons.jxpath.JXPathContext">;
+SOR<"org.apache.commons.jxpath.JXPathContext">;
+COR<"org.apache.commons.jxpath.JXPathContext">;
+ROR<"org.apache.commons.jxpath.JXPathContext">;
+ORU<"org.apache.commons.jxpath.JXPathContext">;
+LVR<"org.apache.commons.jxpath.JXPathContext">;
+STD<"org.apache.commons.jxpath.JXPathContext">;
+
+// Enable operators for org.apache.commons.jxpath.Pointer
+AOR<"org.apache.commons.jxpath.Pointer">;
+LOR<"org.apache.commons.jxpath.Pointer">;
+SOR<"org.apache.commons.jxpath.Pointer">;
+COR<"org.apache.commons.jxpath.Pointer">;
+ROR<"org.apache.commons.jxpath.Pointer">;
+ORU<"org.apache.commons.jxpath.Pointer">;
+LVR<"org.apache.commons.jxpath.Pointer">;
+STD<"org.apache.commons.jxpath.Pointer">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathTypeConversionException
+AOR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+LOR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+SOR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+COR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+ROR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+ORU<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+LVR<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+STD<"org.apache.commons.jxpath.JXPathTypeConversionException">;
+
+// Enable operators for org.apache.commons.jxpath.IdentityManager
+AOR<"org.apache.commons.jxpath.IdentityManager">;
+LOR<"org.apache.commons.jxpath.IdentityManager">;
+SOR<"org.apache.commons.jxpath.IdentityManager">;
+COR<"org.apache.commons.jxpath.IdentityManager">;
+ROR<"org.apache.commons.jxpath.IdentityManager">;
+ORU<"org.apache.commons.jxpath.IdentityManager">;
+LVR<"org.apache.commons.jxpath.IdentityManager">;
+STD<"org.apache.commons.jxpath.IdentityManager">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathContextFactoryConfigurationError
+AOR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+LOR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+SOR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+COR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+ROR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+ORU<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+LVR<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+STD<"org.apache.commons.jxpath.JXPathContextFactoryConfigurationError">;
+
+// Enable operators for org.apache.commons.jxpath.functions.MethodFunction
+AOR<"org.apache.commons.jxpath.functions.MethodFunction">;
+LOR<"org.apache.commons.jxpath.functions.MethodFunction">;
+SOR<"org.apache.commons.jxpath.functions.MethodFunction">;
+COR<"org.apache.commons.jxpath.functions.MethodFunction">;
+ROR<"org.apache.commons.jxpath.functions.MethodFunction">;
+ORU<"org.apache.commons.jxpath.functions.MethodFunction">;
+LVR<"org.apache.commons.jxpath.functions.MethodFunction">;
+STD<"org.apache.commons.jxpath.functions.MethodFunction">;
+
+// Enable operators for org.apache.commons.jxpath.functions.ConstructorFunction
+AOR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+LOR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+SOR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+COR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+ROR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+ORU<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+LVR<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+STD<"org.apache.commons.jxpath.functions.ConstructorFunction">;
+
+// Enable operators for org.apache.commons.jxpath.ri.Compiler
+AOR<"org.apache.commons.jxpath.ri.Compiler">;
+LOR<"org.apache.commons.jxpath.ri.Compiler">;
+SOR<"org.apache.commons.jxpath.ri.Compiler">;
+COR<"org.apache.commons.jxpath.ri.Compiler">;
+ROR<"org.apache.commons.jxpath.ri.Compiler">;
+ORU<"org.apache.commons.jxpath.ri.Compiler">;
+LVR<"org.apache.commons.jxpath.ri.Compiler">;
+STD<"org.apache.commons.jxpath.ri.Compiler">;
+
+// Enable operators for org.apache.commons.jxpath.ri.Parser
+AOR<"org.apache.commons.jxpath.ri.Parser">;
+LOR<"org.apache.commons.jxpath.ri.Parser">;
+SOR<"org.apache.commons.jxpath.ri.Parser">;
+COR<"org.apache.commons.jxpath.ri.Parser">;
+ROR<"org.apache.commons.jxpath.ri.Parser">;
+ORU<"org.apache.commons.jxpath.ri.Parser">;
+LVR<"org.apache.commons.jxpath.ri.Parser">;
+STD<"org.apache.commons.jxpath.ri.Parser">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.NodePointer
+AOR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+COR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.NodePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.NodePointer">;
+STD<"org.apache.commons.jxpath.ri.model.NodePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.container.ContainerPointer
+AOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+COR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+STD<"org.apache.commons.jxpath.ri.model.container.ContainerPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer
+AOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+COR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+STD<"org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator
+AOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer
+AOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+COR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+STD<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator
+AOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+COR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+STD<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer
+AOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+COR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+STD<"org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.NodePointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.NodePointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.PropertyIterator
+AOR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+COR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+STD<"org.apache.commons.jxpath.ri.model.beans.PropertyIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.NullPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.NullPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.BeanPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.BeanPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.CollectionPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.CollectionPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.NullElementPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.NullElementPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator
+AOR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.PropertyPointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.PropertyPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.beans.LangAttributePointer
+AOR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+COR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+STD<"org.apache.commons.jxpath.ri.model.beans.LangAttributePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.VariablePointer
+AOR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+COR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+STD<"org.apache.commons.jxpath.ri.model.VariablePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.NamespacePointer
+AOR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+COR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+STD<"org.apache.commons.jxpath.ri.model.dom.NamespacePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMNodePointer
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.NodeIterator
+AOR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+LOR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+SOR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+COR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+ROR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+ORU<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+LVR<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+STD<"org.apache.commons.jxpath.ri.model.NodeIterator">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory
+AOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+LOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+SOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+COR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+ROR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+ORU<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+LVR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+STD<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer
+AOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+COR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+STD<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer
+AOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+LOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+SOR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+COR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+ROR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+ORU<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+LVR<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+STD<"org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer">;
+
+// Enable operators for org.apache.commons.jxpath.ri.JXPathContextReferenceImpl
+AOR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+LOR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+SOR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+COR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+ROR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+ORU<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+LVR<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+STD<"org.apache.commons.jxpath.ri.JXPathContextReferenceImpl">;
+
+// Enable operators for org.apache.commons.jxpath.ri.EvalContext
+AOR<"org.apache.commons.jxpath.ri.EvalContext">;
+LOR<"org.apache.commons.jxpath.ri.EvalContext">;
+SOR<"org.apache.commons.jxpath.ri.EvalContext">;
+COR<"org.apache.commons.jxpath.ri.EvalContext">;
+ROR<"org.apache.commons.jxpath.ri.EvalContext">;
+ORU<"org.apache.commons.jxpath.ri.EvalContext">;
+LVR<"org.apache.commons.jxpath.ri.EvalContext">;
+STD<"org.apache.commons.jxpath.ri.EvalContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.JXPathCompiledExpression
+AOR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+LOR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+SOR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+COR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+ROR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+ORU<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+LVR<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+STD<"org.apache.commons.jxpath.ri.JXPathCompiledExpression">;
+
+// Enable operators for org.apache.commons.jxpath.ri.InfoSetUtil
+AOR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+LOR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+SOR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+COR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+ROR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+ORU<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+LVR<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+STD<"org.apache.commons.jxpath.ri.InfoSetUtil">;
+
+// Enable operators for org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl
+AOR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+LOR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+SOR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+COR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+ROR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+ORU<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+LVR<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+STD<"org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.NodeSetContext
+AOR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+COR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+STD<"org.apache.commons.jxpath.ri.axes.NodeSetContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.AncestorContext
+AOR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+COR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+STD<"org.apache.commons.jxpath.ri.axes.AncestorContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.UnionContext
+AOR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+COR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+STD<"org.apache.commons.jxpath.ri.axes.UnionContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.PredicateContext
+AOR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+COR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+STD<"org.apache.commons.jxpath.ri.axes.PredicateContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.InitialContext
+AOR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+COR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+STD<"org.apache.commons.jxpath.ri.axes.InitialContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.AttributeContext
+AOR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+COR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+STD<"org.apache.commons.jxpath.ri.axes.AttributeContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.RootContext
+AOR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+COR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.RootContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.RootContext">;
+STD<"org.apache.commons.jxpath.ri.axes.RootContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.NamespaceContext
+AOR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+COR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+STD<"org.apache.commons.jxpath.ri.axes.NamespaceContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext
+AOR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+COR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+STD<"org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.ParentContext
+AOR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+COR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+STD<"org.apache.commons.jxpath.ri.axes.ParentContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.DescendantContext
+AOR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+COR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+STD<"org.apache.commons.jxpath.ri.axes.DescendantContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.ChildContext
+AOR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+COR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+STD<"org.apache.commons.jxpath.ri.axes.ChildContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.SimplePathInterpreter
+AOR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+LOR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+SOR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+COR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+ROR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+ORU<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+LVR<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+STD<"org.apache.commons.jxpath.ri.axes.SimplePathInterpreter">;
+
+// Enable operators for org.apache.commons.jxpath.ri.axes.SelfContext
+AOR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+LOR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+SOR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+COR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+ROR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+ORU<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+LVR<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+STD<"org.apache.commons.jxpath.ri.axes.SelfContext">;
+
+// Enable operators for org.apache.commons.jxpath.ri.QName
+AOR<"org.apache.commons.jxpath.ri.QName">;
+LOR<"org.apache.commons.jxpath.ri.QName">;
+SOR<"org.apache.commons.jxpath.ri.QName">;
+COR<"org.apache.commons.jxpath.ri.QName">;
+ROR<"org.apache.commons.jxpath.ri.QName">;
+ORU<"org.apache.commons.jxpath.ri.QName">;
+LVR<"org.apache.commons.jxpath.ri.QName">;
+STD<"org.apache.commons.jxpath.ri.QName">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationEqual
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationEqual">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperation
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperation">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.NodeNameTest
+AOR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+LOR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+SOR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+COR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+ROR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+ORU<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+LVR<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+STD<"org.apache.commons.jxpath.ri.compiler.NodeNameTest">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.Step
+AOR<"org.apache.commons.jxpath.ri.compiler.Step">;
+LOR<"org.apache.commons.jxpath.ri.compiler.Step">;
+SOR<"org.apache.commons.jxpath.ri.compiler.Step">;
+COR<"org.apache.commons.jxpath.ri.compiler.Step">;
+ROR<"org.apache.commons.jxpath.ri.compiler.Step">;
+ORU<"org.apache.commons.jxpath.ri.compiler.Step">;
+LVR<"org.apache.commons.jxpath.ri.compiler.Step">;
+STD<"org.apache.commons.jxpath.ri.compiler.Step">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationUnion
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationUnion">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.LocationPath
+AOR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+LOR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+SOR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+COR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+ROR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+ORU<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+LVR<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+STD<"org.apache.commons.jxpath.ri.compiler.LocationPath">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.TreeCompiler
+AOR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+LOR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+SOR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+COR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+ROR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+ORU<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+LVR<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+STD<"org.apache.commons.jxpath.ri.compiler.TreeCompiler">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationMod
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationMod">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.Expression
+AOR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+LOR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+SOR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+COR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+ROR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+ORU<"org.apache.commons.jxpath.ri.compiler.Expression">;
+LVR<"org.apache.commons.jxpath.ri.compiler.Expression">;
+STD<"org.apache.commons.jxpath.ri.compiler.Expression">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreFunction
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreFunction">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.VariableReference
+AOR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+LOR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+SOR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+COR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+ROR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+ORU<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+LVR<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+STD<"org.apache.commons.jxpath.ri.compiler.VariableReference">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationDivide
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationDivide">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationNegate
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationNegate">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationAdd
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationAdd">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationAnd
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationAnd">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationOr
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationOr">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationCompare
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationCompare">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.Path
+AOR<"org.apache.commons.jxpath.ri.compiler.Path">;
+LOR<"org.apache.commons.jxpath.ri.compiler.Path">;
+SOR<"org.apache.commons.jxpath.ri.compiler.Path">;
+COR<"org.apache.commons.jxpath.ri.compiler.Path">;
+ROR<"org.apache.commons.jxpath.ri.compiler.Path">;
+ORU<"org.apache.commons.jxpath.ri.compiler.Path">;
+LVR<"org.apache.commons.jxpath.ri.compiler.Path">;
+STD<"org.apache.commons.jxpath.ri.compiler.Path">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.Constant
+AOR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+LOR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+SOR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+COR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+ROR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+ORU<"org.apache.commons.jxpath.ri.compiler.Constant">;
+LVR<"org.apache.commons.jxpath.ri.compiler.Constant">;
+STD<"org.apache.commons.jxpath.ri.compiler.Constant">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.Operation
+AOR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+LOR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+SOR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+COR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+ROR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+ORU<"org.apache.commons.jxpath.ri.compiler.Operation">;
+LVR<"org.apache.commons.jxpath.ri.compiler.Operation">;
+STD<"org.apache.commons.jxpath.ri.compiler.Operation">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.ExpressionPath
+AOR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+LOR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+SOR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+COR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+ROR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+ORU<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+LVR<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+STD<"org.apache.commons.jxpath.ri.compiler.ExpressionPath">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.NodeTypeTest
+AOR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+LOR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+SOR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+COR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+ROR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+ORU<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+LVR<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+STD<"org.apache.commons.jxpath.ri.compiler.NodeTypeTest">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest
+AOR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+LOR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+SOR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+COR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+ROR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+ORU<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+LVR<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+STD<"org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.NameAttributeTest
+AOR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+LOR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+SOR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+COR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+ROR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+ORU<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+LVR<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+STD<"org.apache.commons.jxpath.ri.compiler.NameAttributeTest">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.ExtensionFunction
+AOR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+LOR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+SOR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+COR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+ROR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+ORU<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+LVR<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+STD<"org.apache.commons.jxpath.ri.compiler.ExtensionFunction">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual
+AOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+LOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+SOR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+COR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+ROR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+ORU<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+LVR<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+STD<"org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual">;
+
+// Enable operators for org.apache.commons.jxpath.ri.compiler.NodeTest
+AOR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+LOR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+SOR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+COR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+ROR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+ORU<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+LVR<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+STD<"org.apache.commons.jxpath.ri.compiler.NodeTest">;
+
+// Enable operators for org.apache.commons.jxpath.ri.NamespaceResolver
+AOR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+LOR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+SOR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+COR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+ROR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+ORU<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+LVR<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+STD<"org.apache.commons.jxpath.ri.NamespaceResolver">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.ParseException
+AOR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+LOR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+SOR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+COR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+ROR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+ORU<"org.apache.commons.jxpath.ri.parser.ParseException">;
+LVR<"org.apache.commons.jxpath.ri.parser.ParseException">;
+STD<"org.apache.commons.jxpath.ri.parser.ParseException">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.XPathParserTokenManager
+AOR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+LOR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+SOR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+COR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+ROR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+ORU<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+LVR<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+STD<"org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.Token
+AOR<"org.apache.commons.jxpath.ri.parser.Token">;
+LOR<"org.apache.commons.jxpath.ri.parser.Token">;
+SOR<"org.apache.commons.jxpath.ri.parser.Token">;
+COR<"org.apache.commons.jxpath.ri.parser.Token">;
+ROR<"org.apache.commons.jxpath.ri.parser.Token">;
+ORU<"org.apache.commons.jxpath.ri.parser.Token">;
+LVR<"org.apache.commons.jxpath.ri.parser.Token">;
+STD<"org.apache.commons.jxpath.ri.parser.Token">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.SimpleCharStream
+AOR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+LOR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+SOR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+COR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+ROR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+ORU<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+LVR<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+STD<"org.apache.commons.jxpath.ri.parser.SimpleCharStream">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.XPathParser
+AOR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+LOR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+SOR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+COR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+ROR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+ORU<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+LVR<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+STD<"org.apache.commons.jxpath.ri.parser.XPathParser">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.TokenMgrError
+AOR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+LOR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+SOR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+COR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+ROR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+ORU<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+LVR<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+STD<"org.apache.commons.jxpath.ri.parser.TokenMgrError">;
+
+// Enable operators for org.apache.commons.jxpath.ri.parser.XPathParserConstants
+AOR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+LOR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+SOR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+COR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+ROR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+ORU<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+LVR<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+STD<"org.apache.commons.jxpath.ri.parser.XPathParserConstants">;
+
+// Enable operators for org.apache.commons.jxpath.Function
+AOR<"org.apache.commons.jxpath.Function">;
+LOR<"org.apache.commons.jxpath.Function">;
+SOR<"org.apache.commons.jxpath.Function">;
+COR<"org.apache.commons.jxpath.Function">;
+ROR<"org.apache.commons.jxpath.Function">;
+ORU<"org.apache.commons.jxpath.Function">;
+LVR<"org.apache.commons.jxpath.Function">;
+STD<"org.apache.commons.jxpath.Function">;
+
+// Enable operators for org.apache.commons.jxpath.XMLDocumentContainer
+AOR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+LOR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+SOR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+COR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+ROR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+ORU<"org.apache.commons.jxpath.XMLDocumentContainer">;
+LVR<"org.apache.commons.jxpath.XMLDocumentContainer">;
+STD<"org.apache.commons.jxpath.XMLDocumentContainer">;
+
+// Enable operators for org.apache.commons.jxpath.Container
+AOR<"org.apache.commons.jxpath.Container">;
+LOR<"org.apache.commons.jxpath.Container">;
+SOR<"org.apache.commons.jxpath.Container">;
+COR<"org.apache.commons.jxpath.Container">;
+ROR<"org.apache.commons.jxpath.Container">;
+ORU<"org.apache.commons.jxpath.Container">;
+LVR<"org.apache.commons.jxpath.Container">;
+STD<"org.apache.commons.jxpath.Container">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathNotFoundException
+AOR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+LOR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+SOR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+COR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+ROR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+ORU<"org.apache.commons.jxpath.JXPathNotFoundException">;
+LVR<"org.apache.commons.jxpath.JXPathNotFoundException">;
+STD<"org.apache.commons.jxpath.JXPathNotFoundException">;
+
+// Enable operators for org.apache.commons.jxpath.Functions
+AOR<"org.apache.commons.jxpath.Functions">;
+LOR<"org.apache.commons.jxpath.Functions">;
+SOR<"org.apache.commons.jxpath.Functions">;
+COR<"org.apache.commons.jxpath.Functions">;
+ROR<"org.apache.commons.jxpath.Functions">;
+ORU<"org.apache.commons.jxpath.Functions">;
+LVR<"org.apache.commons.jxpath.Functions">;
+STD<"org.apache.commons.jxpath.Functions">;
+
+// Enable operators for org.apache.commons.jxpath.JXPathContextFactory
+AOR<"org.apache.commons.jxpath.JXPathContextFactory">;
+LOR<"org.apache.commons.jxpath.JXPathContextFactory">;
+SOR<"org.apache.commons.jxpath.JXPathContextFactory">;
+COR<"org.apache.commons.jxpath.JXPathContextFactory">;
+ROR<"org.apache.commons.jxpath.JXPathContextFactory">;
+ORU<"org.apache.commons.jxpath.JXPathContextFactory">;
+LVR<"org.apache.commons.jxpath.JXPathContextFactory">;
+STD<"org.apache.commons.jxpath.JXPathContextFactory">;
+
+// Enable operators for org.apache.commons.jxpath.ExpressionContext
+AOR<"org.apache.commons.jxpath.ExpressionContext">;
+LOR<"org.apache.commons.jxpath.ExpressionContext">;
+SOR<"org.apache.commons.jxpath.ExpressionContext">;
+COR<"org.apache.commons.jxpath.ExpressionContext">;
+ROR<"org.apache.commons.jxpath.ExpressionContext">;
+ORU<"org.apache.commons.jxpath.ExpressionContext">;
+LVR<"org.apache.commons.jxpath.ExpressionContext">;
+STD<"org.apache.commons.jxpath.ExpressionContext">;

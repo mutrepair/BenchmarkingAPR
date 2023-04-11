@@ -1,0 +1,1426 @@
+=================================================
+Project : lang_59	start : 23/02/07 12:17
+Current failed test : org.apache.commons.lang.text.StrBuilderAppendInsertTest::testLang299 | 23/02/07 12:17
+Tue Feb 07 12:17:18 CST 2023 org.apache.commons.lang.text.StrBuilder,884
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:28
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:28
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=size-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+ensureCapacity(width+strLen);
+str.getChars(0,strLen,buffer,size);
+}else {
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+ensureCapacity(width+strLen);
+size=width+strLen;
+str.getChars(0,strLen,buffer,size);
+
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>buffer.length){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=buffer.length){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=width){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+buffer=new char[strLen];
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>width){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+buffer=new char[strLen];
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>buffer.length){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+buffer=new char[strLen];
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(strLen>=buffer.length){
+buffer=new char[strLen];
+str.getChars(0,strLen,buffer,size);
+}else {
+buffer=new char[strLen];
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+buffer=new char[strLen];
+if(strLen>=width){
+str.getChars(0,strLen,buffer,size);
+}else {
+int padLen=width-strLen;
+str.getChars(0,strLen,buffer,size);
+for(int i=0;i<padLen;i++){
+buffer[size+strLen]=padChar;
+}
+}
+
+Time : 23/02/07 12:42
+----------------------------------------
+Failed time : 23/02/07 12:44

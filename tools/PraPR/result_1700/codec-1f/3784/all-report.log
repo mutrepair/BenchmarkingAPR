@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 18
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local string is replaced a call string.reverse()
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 17
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::charAt(I)C is guarded using default value '\0'
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 21
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 21
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(I)C is guarded returning local matches
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 21
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 19
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 119
+	First Index: 24
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 120
+	First Index: 28
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 20
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::charAt
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 21
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 332
+	Block: 118
+	First Index: 23
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

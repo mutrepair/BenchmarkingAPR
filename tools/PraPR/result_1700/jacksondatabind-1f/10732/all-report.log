@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder._mergeAnnotations(I[Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Linked;)Lcom/fasterxml/jackson/databind/introspect/AnnotationMap; is replaced by an instantiation of type com.fasterxml.jackson.databind.introspect.AnnotationMap using ()V
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 213
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _fields is guarded using value null
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _getters is guarded using value null
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _fields is guarded using field _fields
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _getters is guarded using field _fields
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _fields with an access to _ctorParameters
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _getters with an access to _fields
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _fields with an access to _getters
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _getters with an access to _ctorParameters
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _fields with an access to _setters
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _getters with an access to _setters
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder::_mergeAnnotations(I[Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Linked;)Lcom/fasterxml/jackson/databind/introspect/AnnotationMap; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 213
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _fields is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 206
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _getters is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 211
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to _mergeAnnotations(I[Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Linked;)Lcom/fasterxml/jackson/databind/introspect/AnnotationMap; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 213
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 200
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 201
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 204
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 209
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder::_mergeAnnotations
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java
+	Line Number: 498
+	Block: 121
+	First Index: 213
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

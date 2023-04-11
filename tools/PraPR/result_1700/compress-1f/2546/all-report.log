@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to entrySize is guarded using value 0L
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to entryOffset is guarded using value 0L
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to entrySize is guarded using field entrySize
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to entryOffset is guarded using field entrySize
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to entrySize with an access to entryOffset
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to entryOffset with an access to entrySize
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local numToRead is replaced by local offset to be defined
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 36
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local numToRead is replaced by local totalRead to be defined
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 36
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to entrySize is guarded returning default value 0
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to entryOffset is guarded returning default value 0
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to entrySize is guarded returning local offset
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to entryOffset is guarded returning local offset
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to entrySize is guarded returning field SMALL_BUFFER_SIZE
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 31
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to entryOffset is guarded returning field SMALL_BUFFER_SIZE
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 33
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long division with multiplication
+	File Name: org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java
+	Line Number: 306
+	Block: 49
+	First Index: 34
+	Rank: null
+	Total Rank: 13
+	Status: TIMED_OUT
+------------------------------------------------

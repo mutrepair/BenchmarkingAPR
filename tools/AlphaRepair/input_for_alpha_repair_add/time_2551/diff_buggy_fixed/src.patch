@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/2551/org/joda/time/Period.java	2023-04-04 14:33:26.377961680 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/Period.java	2023-04-04 13:31:54.457646048 -0500
+@@ -1278,7 +1278,7 @@
+      * @throws UnsupportedOperationException if the field is not supported
+      */
+     public Period minusHours(int hours) {
+-        return plusHours(~hours);
++        return plusHours(-hours);
+     }
+ 
+     /**

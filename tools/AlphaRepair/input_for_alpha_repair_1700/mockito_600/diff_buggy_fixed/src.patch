@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/600/org/mockito/internal/verification/RegisteredInvocations.java	2022-10-31 19:48:05.711708914 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/RegisteredInvocations.java	2022-12-26 15:13:56.657676716 -0600
+@@ -22,7 +22,7 @@
+     }
+ 
+     public void removeLast() {
+-        int last = invocations.size() - -1;
++        int last = invocations.size() - 1;
+         invocations.remove(last);
+     }
+ 

@@ -1,0 +1,92 @@
+
+test-offline:
+
+get-deps:
+
+jsoup-from-maven.compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jsoup-1f/maven-build.xml:77: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+jsoup-from-maven.compile-tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jsoup-1f/maven-build.xml:103: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 12 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.49 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 1511
+    [junit] MAJOR: Mutants covered:   1362 (90.14%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 12 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/12 - org.jsoup.integration.UrlConnectTest (1ms / 0):
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 1362
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/12 - org.jsoup.parser.TagTest (16ms / 189):
+    [junit] MAJOR: 3523 (57 / 189 / 189) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 57 (49-8-0) / 1305
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/12 - org.jsoup.nodes.TextNodeTest (25ms / 592):
+    [junit] MAJOR: 26872 (173 / 538 / 592) -> AVG-RTPM: 43ms
+    [junit] MAJOR: Mutants killed / live: 230 (76-141-0) / 1132
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/12 - org.jsoup.nodes.DocumentTest (26ms / 631):
+    [junit] MAJOR: 39361 (31 / 419 / 631) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 261 (98-149-0) / 1101
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/12 - org.jsoup.parser.AttributeParseTest (30ms / 540):
+    [junit] MAJOR: 50906 (34 / 349 / 540) -> AVG-RTPM: 33ms
+    [junit] MAJOR: Mutants killed / live: 295 (122-156-0) / 1067
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/12 - org.jsoup.nodes.NodeTest (36ms / 730):
+    [junit] MAJOR: 64137 (36 / 452 / 730) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 331 (136-178-0) / 1031
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/12 - org.jsoup.select.ElementsTest (45ms / 974):
+    [junit] MAJOR: 90039 (173 / 667 / 974) -> AVG-RTPM: 38ms
+    [junit] MAJOR: Mutants killed / live: 504 (252-231-1) / 858
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/12 - org.jsoup.safety.CleanerTest (54ms / 835):
+    [junit] MAJOR: 108817 (97 / 512 / 835) -> AVG-RTPM: 36ms
+    [junit] MAJOR: Mutants killed / live: 601 (324-252-3) / 761
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/12 - org.jsoup.nodes.ElementTest (68ms / 945):
+    [junit] MAJOR: 127575 (115 / 516 / 945) -> AVG-RTPM: 36ms
+    [junit] MAJOR: Mutants killed / live: 716 (415-276-3) / 646
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/12 - org.jsoup.select.SelectorTest (73ms / 803):
+    [junit] MAJOR: 143371 (60 / 399 / 803) -> AVG-RTPM: 39ms
+    [junit] MAJOR: Mutants killed / live: 776 (455-296-3) / 586
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/12 - org.jsoup.parser.ParserTest (74ms / 944):
+    [junit] MAJOR: 158570 (91 / 441 / 944) -> AVG-RTPM: 34ms
+    [junit] MAJOR: Mutants killed / live: 867 (523-317-4) / 495
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/12 - org.jsoup.integration.ParseTest (369ms / 873):
+    [junit] MAJOR: 233205 (15 / 337 / 873) -> AVG-RTPM: 221ms
+    [junit] MAJOR: Mutants killed / live: 882 (526-326-4) / 480
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  233.2 seconds
+    [junit] MAJOR: Mutation score: 58.37% (64.76%)
+    [junit] MAJOR: Mutants killed / live: 882 (526-326-4) / 480
+    [junit] MAJOR: Mutant executions: 4819
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/jsoup-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 3 minutes 56 seconds

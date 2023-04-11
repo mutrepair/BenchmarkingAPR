@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6682/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-10-31 19:47:46.791778303 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-12-26 15:13:52.497631769 -0600
+@@ -629,7 +629,7 @@
+             SettableBeanProperty prop)
+     {
+         String refName = prop.getManagedReferenceName();
+-        if (false) {
++        if (refName == null) {
+             return prop;
+         }
+         JsonDeserializer<?> valueDeser = prop.getValueDeserializer();

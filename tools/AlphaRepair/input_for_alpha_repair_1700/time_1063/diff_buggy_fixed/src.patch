@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/1063/org/joda/time/LocalDateTime.java	2022-10-31 19:48:08.627698118 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/LocalDateTime.java	2022-12-26 15:13:57.197682550 -0600
+@@ -854,7 +854,7 @@
+                 check = LocalDateTime.fromCalendarFields(calendar);
+             }
+             calendar.setTimeInMillis(calendar.getTimeInMillis() + 1000);
+-        } else if (false) {
++        } else if (check.equals(this)) {
+             // check for DST overlap
+             final Calendar earlier = Calendar.getInstance(timeZone);
+             earlier.setTimeInMillis(calendar.getTimeInMillis() - timeZone.getDSTSavings());

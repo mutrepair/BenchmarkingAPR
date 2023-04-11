@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/18022/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-10-31 19:47:51.275761962 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -176,7 +176,7 @@
+                 return -1;
+             }
+             else if (n == node2) {
+-                return -1;
++                return 1;
+             }
+         }
+ 

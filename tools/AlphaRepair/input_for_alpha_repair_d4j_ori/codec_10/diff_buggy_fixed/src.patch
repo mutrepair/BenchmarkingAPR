@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/codec_10/src/java/org/apache/commons/codec/language/Caverphone.java	2023-01-16 15:29:26.000063806 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/codec/10/patch/./org/apache/commons/codec/language/Caverphone.java	2023-01-16 15:29:25.968063407 -0600
+@@ -73,7 +73,7 @@
+         txt = txt.replaceAll("^gn", "2n");
+ 
+         // End 
+-        txt = txt.replaceAll("^mb", "m2");
++        txt = txt.replaceAll("mb$", "m2");
+ 
+         // 4. Handle replacements
+         txt = txt.replaceAll("cq", "2q");

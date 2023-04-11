@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/2477/org/joda/time/Period.java	2022-10-31 19:48:08.843697317 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Period.java	2022-12-26 15:13:57.197682550 -0600
+@@ -1065,7 +1065,7 @@
+      * @throws UnsupportedOperationException if the field is not supported
+      */
+     public Period plusMonths(int months) {
+-        if (months <= 0) {
++        if (months == 0) {
+             return this;
+         }
+         int[] values = getValues();  // cloned

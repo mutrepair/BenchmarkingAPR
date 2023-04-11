@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/834/com/fasterxml/jackson/core/JsonFactory.java	2023-04-04 14:33:25.705955166 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/JsonFactory.java	2023-04-04 13:31:53.209631219 -0500
+@@ -573,7 +573,7 @@
+      * Check whether specified generator feature is enabled.
+      */
+     public final boolean isEnabled(JsonGenerator.Feature f) {
+-        return (_generatorFeatures | f.getMask()) != 0;
++        return (_generatorFeatures & f.getMask()) != 0;
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/39813/com/google/javascript/jscomp/ProcessTweaks.java	2022-10-31 19:47:37.811810830 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ProcessTweaks.java	2022-10-29 06:12:05.520685210 -0500
+@@ -208,7 +208,7 @@
+ 
+     boolean changed = false;
+ 
+-    if (false) {
++    if (stripTweaks) {
+       changed = stripAllCalls(result.tweakInfos);
+     } else if (!compilerDefaultValueOverrides.isEmpty()) {
+       changed = replaceGetCompilerOverridesCalls(result.getOverridesCalls);

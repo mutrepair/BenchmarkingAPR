@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14044/com/fasterxml/jackson/databind/util/BeanUtil.java	2022-10-31 19:47:46.551779176 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/BeanUtil.java	2022-12-26 15:13:52.513631942 -0600
+@@ -184,7 +184,7 @@
+             if (upper == lower) {
+                 break;
+             }
+-            if (false) {
++            if (sb == null) {
+                 sb = new StringBuilder(basename);
+             }
+             sb.setCharAt(i, lower);

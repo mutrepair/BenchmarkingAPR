@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.jxpath.ri.parser.SimpleCharStream.bufpos is replaced by the call to org.apache.commons.jxpath.ri.parser.SimpleCharStream::backup(I)V
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to bufpos with an access to bufsize
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to bufpos with an access to available
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to bufpos with an access to tokenBegin
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to bufpos with an access to column
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to bufpos with an access to line
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to bufpos with an access to maxNextCharInd
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field bufpos is replaced by access to local startline
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field bufpos is replaced by access to local startcolumn
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field bufpos is replaced by access to local buffersize
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 78
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable bufpos
+	File Name: org/apache/commons/jxpath/ri/parser/SimpleCharStream.java
+	Line Number: 276
+	Block: 49
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

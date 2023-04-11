@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/36958/org/apache/commons/math3/geometry/euclidean/threed/Rotation.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Rotation.java	2023-04-04 13:31:54.001640631 -0500
+@@ -657,7 +657,7 @@
+       }
+       return new double[] {
+         FastMath.atan2(v1.getY(), v1.getX()),
+-       +FastMath.asin(v2.getX()),
++       -FastMath.asin(v2.getX()),
+         FastMath.atan2(v2.getY(), v2.getZ())
+       };
+ 

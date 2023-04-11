@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local propName is replaced a call propName.toLowerCase()
+	File Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java
+	Line Number: 476
+	Block: 72
+	First Index: 103
+	Rank: null
+	Total Rank: 4
+	Status: RUN_ERROR
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(ILjava/lang/Object;)V is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java
+	Line Number: 476
+	Block: 72
+	First Index: 104
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.util.List::add(ILjava/lang/Object;)V is guarded
+	File Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java
+	Line Number: 476
+	Block: 72
+	First Index: 104
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java
+	Line Number: 476
+	Block: 72
+	First Index: 102
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/util/List::add
+	File Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java
+	Line Number: 476
+	Block: 72
+	First Index: 104
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 6
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local element to be used
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 214
+	First Index: 35
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.parent()
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 214
+	First Index: 35
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jsoup/nodes/Element::equals
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 216
+	First Index: 43
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/jsoup/nodes/Element::equals
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 216
+	First Index: 43
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 215
+	First Index: 38
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 216
+	First Index: 41
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 214
+	First Index: 37
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 214
+	First Index: 37
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1175
+	Block: 216
+	First Index: 43
+	Rank: 6
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/lang_61/src/java/org/apache/commons/lang/text/StrBuilder.java	2023-01-16 15:30:05.904562122 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/lang/61/patch/./org/apache/commons/lang/text/StrBuilder.java	2023-01-16 15:30:05.876561773 -0600
+@@ -1773,7 +1773,7 @@
+             return -1;
+         }
+         char[] thisBuf = buffer;
+-        int len = thisBuf.length - strLen;
++        int len = size - strLen + 1;
+         outer:
+         for (int i = startIndex; i < len; i++) {
+             for (int j = 0; j < strLen; j++) {

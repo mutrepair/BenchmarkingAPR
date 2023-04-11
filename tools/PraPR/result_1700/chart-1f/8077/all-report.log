@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to objects is guarded using value null
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 16
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to objects is guarded using field objects
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 16
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field DEFAULT_INITIAL_CAPACITY
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 14
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local index is replaced by access to field size
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 14
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local index is replaced by access to field increment
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 14
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to objects is guarded returning enclosing method
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 16
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 18
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 18
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jfree/chart/util/AbstractObjectList.java
+	Line Number: 126
+	Block: 8
+	First Index: 18
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

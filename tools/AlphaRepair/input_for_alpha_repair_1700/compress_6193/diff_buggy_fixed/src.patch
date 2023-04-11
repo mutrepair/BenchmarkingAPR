@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/6193/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.503797489 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -783,7 +783,7 @@
+ 
+         this.su_tPos = tt[this.origPtr];
+         this.su_count = 0;
+-        this.su_i2 = 1;
++        this.su_i2 = 0;
+         this.su_ch2 = 256; /* not a char and not EOF */
+ 
+         if (this.blockRandomised) {

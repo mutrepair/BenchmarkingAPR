@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 02:47:24 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.BitSet::get(I)Z is guarded using default value false
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 279
+	Block: 62
+	First Index: 175
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/BitSet::get
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 279
+	Block: 62
+	First Index: 175
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------

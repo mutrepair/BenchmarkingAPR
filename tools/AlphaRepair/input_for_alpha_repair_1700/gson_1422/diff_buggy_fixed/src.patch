@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1422/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.627789794 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -946,7 +946,7 @@
+           }
+ 
+         } else if (c == '\\') {
+-          if (false) {
++          if (builder == null) {
+             builder = new StringBuilder();
+           }
+           builder.append(buffer, start, pos - start - 1);

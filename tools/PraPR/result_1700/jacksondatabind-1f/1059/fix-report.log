@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 02:41:16 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.cfg.HandlerInstantiator::objectIdGeneratorInstance(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Lcom/fasterxml/jackson/annotation/ObjectIdGenerator; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/cfg/HandlerInstantiator::objectIdGeneratorInstance
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------

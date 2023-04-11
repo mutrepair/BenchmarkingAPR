@@ -1,0 +1,4 @@
+    private void validateDoNothing(DoesNothing answer, Invocation invocation) {
+if(true){            reporter.onlyVoidMethodsCanBeSetToDoNothing();
+        }
+    }

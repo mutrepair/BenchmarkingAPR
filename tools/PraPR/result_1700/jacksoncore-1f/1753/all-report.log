@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer._mainHashMask is replaced by the call to com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer::reportTooManyCollisions(I)V
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _mainHashMask with an access to _count
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _mainHashMask with an access to _longestCollisionList
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _mainHashMask with an access to _collCount
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to _mainHashMask with an access to _collEnd
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _mainHashMask is replaced by access to local len
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _mainHashMask is replaced by access to local newLen
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local newLen is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field _parent
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 48
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local newLen is replaced by access to field DEFAULT_TABLE_SIZE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local newLen is replaced by access to field MAX_TABLE_SIZE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local newLen is replaced by access to field MAX_ENTRIES_FOR_REUSE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local newLen is replaced by access to field MAX_COLL_CHAIN_LENGTH
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local newLen is replaced by access to field MAX_COLL_CHAIN_FOR_REUSE
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 49
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 50
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 51
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _mainHashMask
+	File Name: com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java
+	Line Number: 890
+	Block: 113
+	First Index: 52
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

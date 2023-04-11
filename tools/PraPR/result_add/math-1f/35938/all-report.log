@@ -1,0 +1,993 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 90
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.math3.RealFieldElement.linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method org.apache.commons.math3.RealFieldElement.linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.math3.userguide.ExampleUtils using ()V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; with a call to linearCombination(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;)V with a call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; with a call to linearCombination([D[Ljava/lang/Object;)Ljava/lang/Object;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;)V with a call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/FieldVector3D;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/FieldVector3D;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/geometry/euclidean/threed/FieldVector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; with a call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;)V with a call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/FieldVector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; with a call to linearCombination([Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;)V with a call to <init>(Lorg/apache/commons/math3/RealFieldElement;Lorg/apache/commons/math3/RealFieldElement;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to x is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to y is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to z is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to x is guarded using field x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to y is guarded using field x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to z is guarded using field x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.x is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getX()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.y is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getX()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.z is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getX()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.x is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getY()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.y is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getY()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.z is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getY()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.x is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getZ()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.y is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getZ()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.z is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getZ()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.x is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm1()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.y is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm1()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.z is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm1()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.x is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.y is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D.z is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D::getNorm()Lorg/apache/commons/math3/RealFieldElement;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to x with an access to y
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to y with an access to x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to z with an access to x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to x with an access to z
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to y with an access to z
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to z with an access to y
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.normalize()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local v is replaced a call v.getZero()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getZ with a call to getX
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getY with a call to getX
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getX with a call to getY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getZ with a call to getY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getY with a call to getZ
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getX with a call to getZ
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getZ with a call to getNorm1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getY with a call to getNorm1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getX with a call to getNorm1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getZ with a call to getNorm
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getY with a call to getNorm
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getX with a call to getNorm
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getZ with a call to getNormSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getY with a call to getNormSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getX with a call to getNormSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getZ with a call to getNormInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getY with a call to getNormInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getX with a call to getNormInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getZ with a call to getAlpha
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+59.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getY with a call to getAlpha
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+60.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getX with a call to getAlpha
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+61.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getZ with a call to getDelta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+62.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getY with a call to getDelta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+63.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getX with a call to getDelta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+64.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.threed.Vector3D::getZ()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+65.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.threed.Vector3D::getY()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+66.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.RealFieldElement::linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+67.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.threed.Vector3D::getX()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+68.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to x is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+69.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to y is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+70.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to z is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+71.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to x is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+72.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to y is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+73.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to z is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+74.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getZ()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+75.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getY()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+76.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+77.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getX()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+78.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getZ()D is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+79.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getY()D is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+80.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to linearCombination(DLjava/lang/Object;DLjava/lang/Object;)Ljava/lang/Object; is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+81.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getX()D is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+82.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/RealFieldElement::linearCombination with argument
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+83.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D::<init>
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+84.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+85.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::getZ
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+86.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::getY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+87.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/RealFieldElement::linearCombination
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+88.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::getX
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+89.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D::crossProduct
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+90.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D::crossProduct to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java
+	Line Number: 793
+	Block: 104
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

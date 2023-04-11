@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 00:54:28 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutatorSecondPhase_1
+	Description: replaced call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V with a call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V
+	File Name: org/jfree/chart/plot/ValueMarker.java
+	Line Number: 95
+	Block: 2
+	First Index: 9
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

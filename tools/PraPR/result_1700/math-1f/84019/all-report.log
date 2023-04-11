@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local col1 to be used
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 6
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local m1 is replaced by local m2 to be used
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 7
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local col2 to be used
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 6
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field DEFAULT_CHECKFEASABLECOUNT
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 6
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field DEFAULT_MAXITERATIONS
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 6
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local i is replaced by access to field DEFAULT_DIAGONALONLY
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 6
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.linear.RealMatrix::getRowDimension()I is guarded using default value 0
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 8
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getRowDimension()I is guarded returning enclosing method
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 8
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 9
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 3
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 9
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/RealMatrix::getRowDimension
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 8
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 9
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/optimization/direct/CMAESOptimizer.java
+	Line Number: 1254
+	Block: 179
+	First Index: 9
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

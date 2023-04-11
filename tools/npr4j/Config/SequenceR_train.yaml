@@ -1,0 +1,58 @@
+## Where the vocab(s) will be written
+save_data: E:\APR_data\data\SequenceR\
+# Prevent overwriting existing files in the folder
+overwrite: True
+
+# filter long examples
+src_seq_length: 1010
+tgt_seq_length: 1010
+src_seq_length_trunc: 1010
+tgt_seq_length_trunc: 1010
+
+# common vocabulary for CoCoNut and target
+share_vocab: True
+dynamic_dict: True
+# Corpus opts:
+data:
+    train:
+        path_src: E:\APR_data\data\SequenceR\buggy.trn.txt
+        path_tgt: E:\APR_data\data\SequenceR\fix.trn.txt
+        transforms: []
+        weight: 1
+    valid:
+        path_src: E:\APR_data\data\SequenceR\buggy.val.txt
+        path_tgt: E:\APR_data\data\SequenceR\fix.val.txt
+        transforms: []
+
+src_vocab_size: 100000 #SequenceR original vocab size
+tgt_vocab_size: 100000
+
+src_vocab: E:\APR_data\data\SequenceR\SequenceR.src.vocab
+tgt_vocab: E:\APR_data\data\SequenceR\SequenceR.src.vocab
+
+#log_file
+log_file: E:\APR_data\log\SequenceR\SR_T.log
+save_model: E:\APR_data\model\SequenceR\SequenceR_model
+copy_attn: true
+copy_loss_by_seqlength: true
+reuse_copy_attn: true
+gpu_ranks: 0
+global_attention: general
+word_vec_size: 256
+rnn_size: 256
+bridge: true
+layers: 2
+encoder_type: brnn
+train_steps: 20000
+save_checkpoint_steps: 10000
+max_grad_norm: 2
+dropout: 0.1
+batch_size: 32
+valid_batch_size: 32
+optim: adagrad
+learning_rate: 0.15
+adagrad_accumulator_init: 0.1
+
+seed: 912
+world_size: 1
+

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12938/com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanSerializer.java	2022-10-31 19:47:46.535779234 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanSerializer.java	2022-12-26 15:13:52.509631900 -0600
+@@ -56,7 +56,7 @@
+ 
+     @Override
+     public boolean isUnwrappingSerializer() {
+-        return false; // sure is
++        return true; // sure is
+     }
+ 
+     @Override

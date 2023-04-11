@@ -1,0 +1,388 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 35
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to log(D)D with a call to log(D[D)D
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to log(D)D with a call to log(DD)D
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local a is replaced by access to field PI
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 28
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local a is replaced by access to field E
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 28
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local a is replaced by access to field LOG_MAX_VALUE
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 28
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local a is replaced by access to field LN_2_A
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 28
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local a is replaced by access to field LN_2_B
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 28
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to sqrt with a call to doubleHighPart
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to log with a call to doubleHighPart
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to sqrt with a call to cosh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to log with a call to sqrt
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to sqrt with a call to sinh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to log with a call to cosh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to sqrt with a call to tanh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to log with a call to sinh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to sqrt with a call to acosh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to log with a call to tanh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to sqrt with a call to asinh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to log with a call to acosh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to sqrt with a call to atanh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to log with a call to asinh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to sqrt with a call to signum
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to log with a call to atanh
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to sqrt with a call to nextUp
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to log with a call to signum
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to sqrt with a call to exp
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to log with a call to nextUp
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::sqrt with argument
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::log with argument
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1.0 with 1.0
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 31
+	Rank: 2
+	Total Rank: 35
+	Status: SURVIVED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 30
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 32
+	Rank: 1
+	Total Rank: 34
+	Status: SURVIVED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 35
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::sqrt
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 33
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::log
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 727
+	Block: 51
+	First Index: 36
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------

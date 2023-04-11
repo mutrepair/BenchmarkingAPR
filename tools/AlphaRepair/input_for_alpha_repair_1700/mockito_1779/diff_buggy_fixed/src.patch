@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1779/org/mockito/internal/reporting/SmartPrinter.java	2022-10-31 19:48:05.535709564 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/reporting/SmartPrinter.java	2022-12-26 15:13:56.653676672 -0600
+@@ -17,7 +17,7 @@
+ 
+     public SmartPrinter(PrintingFriendlyInvocation wanted, PrintingFriendlyInvocation actual, Integer ... indexesOfMatchersToBeDescribedWithExtraTypeInfo) {
+         PrintSettings printSettings = new PrintSettings();
+-        printSettings.setMultiline(true);
++        printSettings.setMultiline(wanted.toString().contains("\n") || actual.toString().contains("\n"));
+         printSettings.setMatchersToBeDescribedWithExtraTypeInfo(indexesOfMatchersToBeDescribedWithExtraTypeInfo);
+         
+         this.wanted = wanted.toString(printSettings);

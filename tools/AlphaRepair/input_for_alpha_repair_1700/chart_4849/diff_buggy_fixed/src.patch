@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/4849/org/jfree/chart/plot/XYPlot.java	2022-10-31 19:47:29.527840597 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/XYPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -1413,7 +1413,7 @@
+      * @see #setDataset(int, XYDataset)
+      */
+     public void setDataset(XYDataset dataset) {
+-        setDataset(-1, dataset);
++        setDataset(0, dataset);
+     }
+ 
+     /**

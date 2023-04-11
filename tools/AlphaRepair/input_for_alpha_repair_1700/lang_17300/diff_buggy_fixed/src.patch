@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/17300/org/apache/commons/lang3/math/Fraction.java	2022-10-31 19:47:57.111740597 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/Fraction.java	2022-12-26 15:13:54.773656362 -0600
+@@ -766,7 +766,7 @@
+             .multiply(BigInteger.valueOf(fraction.denominator/d1));
+         final BigInteger upv = BigInteger.valueOf(fraction.numerator)
+             .multiply(BigInteger.valueOf(denominator/d1));
+-        final BigInteger t = true ? uvp.add(upv) : uvp.subtract(upv);
++        final BigInteger t = isAdd ? uvp.add(upv) : uvp.subtract(upv);
+         // but d2 doesn't need extra precision because
+         // d2 = gcd(t,d1) = gcd(t mod d1, d1)
+         final int tmodd1 = t.mod(BigInteger.valueOf(d1)).intValue();

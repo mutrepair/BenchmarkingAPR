@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.jsoup.parser.HtmlTreeBuilder.insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Element using (Lorg/jsoup/parser/Tag;Ljava/lang/String;)V
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.jsoup.parser.HtmlTreeBuilder.insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.FormElement using (Lorg/jsoup/parser/Tag;Ljava/lang/String;Lorg/jsoup/nodes/Attributes;)V
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method org.jsoup.parser.HtmlTreeBuilder.insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Document using (Ljava/lang/String;)V
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.jsoup.parser.HtmlTreeBuilder.insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Element using (Lorg/jsoup/parser/Tag;Ljava/lang/String;Lorg/jsoup/nodes/Attributes;)V
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.parser.HtmlTreeBuilder::insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is guarded using default value null
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to insert(Lorg/jsoup/parser/Token$StartTag;)Lorg/jsoup/nodes/Element; is guarded returning enclosing method
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/parser/HtmlTreeBuilder::insert
+	File Name: org/jsoup/parser/HtmlTreeBuilderState.java
+	Line Number: 1489
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,1139 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.lang3.StringEscapeUtils
+AOR<"org.apache.commons.lang3.StringEscapeUtils">;
+LOR<"org.apache.commons.lang3.StringEscapeUtils">;
+SOR<"org.apache.commons.lang3.StringEscapeUtils">;
+COR<"org.apache.commons.lang3.StringEscapeUtils">;
+ROR<"org.apache.commons.lang3.StringEscapeUtils">;
+ORU<"org.apache.commons.lang3.StringEscapeUtils">;
+LVR<"org.apache.commons.lang3.StringEscapeUtils">;
+STD<"org.apache.commons.lang3.StringEscapeUtils">;
+
+// Enable operators for org.apache.commons.lang3.AnnotationUtils
+AOR<"org.apache.commons.lang3.AnnotationUtils">;
+LOR<"org.apache.commons.lang3.AnnotationUtils">;
+SOR<"org.apache.commons.lang3.AnnotationUtils">;
+COR<"org.apache.commons.lang3.AnnotationUtils">;
+ROR<"org.apache.commons.lang3.AnnotationUtils">;
+ORU<"org.apache.commons.lang3.AnnotationUtils">;
+LVR<"org.apache.commons.lang3.AnnotationUtils">;
+STD<"org.apache.commons.lang3.AnnotationUtils">;
+
+// Enable operators for org.apache.commons.lang3.SerializationException
+AOR<"org.apache.commons.lang3.SerializationException">;
+LOR<"org.apache.commons.lang3.SerializationException">;
+SOR<"org.apache.commons.lang3.SerializationException">;
+COR<"org.apache.commons.lang3.SerializationException">;
+ROR<"org.apache.commons.lang3.SerializationException">;
+ORU<"org.apache.commons.lang3.SerializationException">;
+LVR<"org.apache.commons.lang3.SerializationException">;
+STD<"org.apache.commons.lang3.SerializationException">;
+
+// Enable operators for org.apache.commons.lang3.ObjectUtils
+AOR<"org.apache.commons.lang3.ObjectUtils">;
+LOR<"org.apache.commons.lang3.ObjectUtils">;
+SOR<"org.apache.commons.lang3.ObjectUtils">;
+COR<"org.apache.commons.lang3.ObjectUtils">;
+ROR<"org.apache.commons.lang3.ObjectUtils">;
+ORU<"org.apache.commons.lang3.ObjectUtils">;
+LVR<"org.apache.commons.lang3.ObjectUtils">;
+STD<"org.apache.commons.lang3.ObjectUtils">;
+
+// Enable operators for org.apache.commons.lang3.tuple.ImmutableTriple
+AOR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+LOR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+SOR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+COR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+ROR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+ORU<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+LVR<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+STD<"org.apache.commons.lang3.tuple.ImmutableTriple">;
+
+// Enable operators for org.apache.commons.lang3.tuple.ImmutablePair
+AOR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+LOR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+SOR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+COR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+ROR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+ORU<"org.apache.commons.lang3.tuple.ImmutablePair">;
+LVR<"org.apache.commons.lang3.tuple.ImmutablePair">;
+STD<"org.apache.commons.lang3.tuple.ImmutablePair">;
+
+// Enable operators for org.apache.commons.lang3.tuple.Triple
+AOR<"org.apache.commons.lang3.tuple.Triple">;
+LOR<"org.apache.commons.lang3.tuple.Triple">;
+SOR<"org.apache.commons.lang3.tuple.Triple">;
+COR<"org.apache.commons.lang3.tuple.Triple">;
+ROR<"org.apache.commons.lang3.tuple.Triple">;
+ORU<"org.apache.commons.lang3.tuple.Triple">;
+LVR<"org.apache.commons.lang3.tuple.Triple">;
+STD<"org.apache.commons.lang3.tuple.Triple">;
+
+// Enable operators for org.apache.commons.lang3.tuple.Pair
+AOR<"org.apache.commons.lang3.tuple.Pair">;
+LOR<"org.apache.commons.lang3.tuple.Pair">;
+SOR<"org.apache.commons.lang3.tuple.Pair">;
+COR<"org.apache.commons.lang3.tuple.Pair">;
+ROR<"org.apache.commons.lang3.tuple.Pair">;
+ORU<"org.apache.commons.lang3.tuple.Pair">;
+LVR<"org.apache.commons.lang3.tuple.Pair">;
+STD<"org.apache.commons.lang3.tuple.Pair">;
+
+// Enable operators for org.apache.commons.lang3.tuple.MutableTriple
+AOR<"org.apache.commons.lang3.tuple.MutableTriple">;
+LOR<"org.apache.commons.lang3.tuple.MutableTriple">;
+SOR<"org.apache.commons.lang3.tuple.MutableTriple">;
+COR<"org.apache.commons.lang3.tuple.MutableTriple">;
+ROR<"org.apache.commons.lang3.tuple.MutableTriple">;
+ORU<"org.apache.commons.lang3.tuple.MutableTriple">;
+LVR<"org.apache.commons.lang3.tuple.MutableTriple">;
+STD<"org.apache.commons.lang3.tuple.MutableTriple">;
+
+// Enable operators for org.apache.commons.lang3.tuple.MutablePair
+AOR<"org.apache.commons.lang3.tuple.MutablePair">;
+LOR<"org.apache.commons.lang3.tuple.MutablePair">;
+SOR<"org.apache.commons.lang3.tuple.MutablePair">;
+COR<"org.apache.commons.lang3.tuple.MutablePair">;
+ROR<"org.apache.commons.lang3.tuple.MutablePair">;
+ORU<"org.apache.commons.lang3.tuple.MutablePair">;
+LVR<"org.apache.commons.lang3.tuple.MutablePair">;
+STD<"org.apache.commons.lang3.tuple.MutablePair">;
+
+// Enable operators for org.apache.commons.lang3.CharRange
+AOR<"org.apache.commons.lang3.CharRange">;
+LOR<"org.apache.commons.lang3.CharRange">;
+SOR<"org.apache.commons.lang3.CharRange">;
+COR<"org.apache.commons.lang3.CharRange">;
+ROR<"org.apache.commons.lang3.CharRange">;
+ORU<"org.apache.commons.lang3.CharRange">;
+LVR<"org.apache.commons.lang3.CharRange">;
+STD<"org.apache.commons.lang3.CharRange">;
+
+// Enable operators for org.apache.commons.lang3.CharUtils
+AOR<"org.apache.commons.lang3.CharUtils">;
+LOR<"org.apache.commons.lang3.CharUtils">;
+SOR<"org.apache.commons.lang3.CharUtils">;
+COR<"org.apache.commons.lang3.CharUtils">;
+ROR<"org.apache.commons.lang3.CharUtils">;
+ORU<"org.apache.commons.lang3.CharUtils">;
+LVR<"org.apache.commons.lang3.CharUtils">;
+STD<"org.apache.commons.lang3.CharUtils">;
+
+// Enable operators for org.apache.commons.lang3.BitField
+AOR<"org.apache.commons.lang3.BitField">;
+LOR<"org.apache.commons.lang3.BitField">;
+SOR<"org.apache.commons.lang3.BitField">;
+COR<"org.apache.commons.lang3.BitField">;
+ROR<"org.apache.commons.lang3.BitField">;
+ORU<"org.apache.commons.lang3.BitField">;
+LVR<"org.apache.commons.lang3.BitField">;
+STD<"org.apache.commons.lang3.BitField">;
+
+// Enable operators for org.apache.commons.lang3.event.EventUtils
+AOR<"org.apache.commons.lang3.event.EventUtils">;
+LOR<"org.apache.commons.lang3.event.EventUtils">;
+SOR<"org.apache.commons.lang3.event.EventUtils">;
+COR<"org.apache.commons.lang3.event.EventUtils">;
+ROR<"org.apache.commons.lang3.event.EventUtils">;
+ORU<"org.apache.commons.lang3.event.EventUtils">;
+LVR<"org.apache.commons.lang3.event.EventUtils">;
+STD<"org.apache.commons.lang3.event.EventUtils">;
+
+// Enable operators for org.apache.commons.lang3.event.EventListenerSupport
+AOR<"org.apache.commons.lang3.event.EventListenerSupport">;
+LOR<"org.apache.commons.lang3.event.EventListenerSupport">;
+SOR<"org.apache.commons.lang3.event.EventListenerSupport">;
+COR<"org.apache.commons.lang3.event.EventListenerSupport">;
+ROR<"org.apache.commons.lang3.event.EventListenerSupport">;
+ORU<"org.apache.commons.lang3.event.EventListenerSupport">;
+LVR<"org.apache.commons.lang3.event.EventListenerSupport">;
+STD<"org.apache.commons.lang3.event.EventListenerSupport">;
+
+// Enable operators for org.apache.commons.lang3.Validate
+AOR<"org.apache.commons.lang3.Validate">;
+LOR<"org.apache.commons.lang3.Validate">;
+SOR<"org.apache.commons.lang3.Validate">;
+COR<"org.apache.commons.lang3.Validate">;
+ROR<"org.apache.commons.lang3.Validate">;
+ORU<"org.apache.commons.lang3.Validate">;
+LVR<"org.apache.commons.lang3.Validate">;
+STD<"org.apache.commons.lang3.Validate">;
+
+// Enable operators for org.apache.commons.lang3.StringUtils
+AOR<"org.apache.commons.lang3.StringUtils">;
+LOR<"org.apache.commons.lang3.StringUtils">;
+SOR<"org.apache.commons.lang3.StringUtils">;
+COR<"org.apache.commons.lang3.StringUtils">;
+ROR<"org.apache.commons.lang3.StringUtils">;
+ORU<"org.apache.commons.lang3.StringUtils">;
+LVR<"org.apache.commons.lang3.StringUtils">;
+STD<"org.apache.commons.lang3.StringUtils">;
+
+// Enable operators for org.apache.commons.lang3.EnumUtils
+AOR<"org.apache.commons.lang3.EnumUtils">;
+LOR<"org.apache.commons.lang3.EnumUtils">;
+SOR<"org.apache.commons.lang3.EnumUtils">;
+COR<"org.apache.commons.lang3.EnumUtils">;
+ROR<"org.apache.commons.lang3.EnumUtils">;
+ORU<"org.apache.commons.lang3.EnumUtils">;
+LVR<"org.apache.commons.lang3.EnumUtils">;
+STD<"org.apache.commons.lang3.EnumUtils">;
+
+// Enable operators for org.apache.commons.lang3.SerializationUtils
+AOR<"org.apache.commons.lang3.SerializationUtils">;
+LOR<"org.apache.commons.lang3.SerializationUtils">;
+SOR<"org.apache.commons.lang3.SerializationUtils">;
+COR<"org.apache.commons.lang3.SerializationUtils">;
+ROR<"org.apache.commons.lang3.SerializationUtils">;
+ORU<"org.apache.commons.lang3.SerializationUtils">;
+LVR<"org.apache.commons.lang3.SerializationUtils">;
+STD<"org.apache.commons.lang3.SerializationUtils">;
+
+// Enable operators for org.apache.commons.lang3.exception.DefaultExceptionContext
+AOR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+LOR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+SOR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+COR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+ROR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+ORU<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+LVR<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+STD<"org.apache.commons.lang3.exception.DefaultExceptionContext">;
+
+// Enable operators for org.apache.commons.lang3.exception.ContextedRuntimeException
+AOR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+LOR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+SOR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+COR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+ROR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+ORU<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+LVR<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+STD<"org.apache.commons.lang3.exception.ContextedRuntimeException">;
+
+// Enable operators for org.apache.commons.lang3.exception.CloneFailedException
+AOR<"org.apache.commons.lang3.exception.CloneFailedException">;
+LOR<"org.apache.commons.lang3.exception.CloneFailedException">;
+SOR<"org.apache.commons.lang3.exception.CloneFailedException">;
+COR<"org.apache.commons.lang3.exception.CloneFailedException">;
+ROR<"org.apache.commons.lang3.exception.CloneFailedException">;
+ORU<"org.apache.commons.lang3.exception.CloneFailedException">;
+LVR<"org.apache.commons.lang3.exception.CloneFailedException">;
+STD<"org.apache.commons.lang3.exception.CloneFailedException">;
+
+// Enable operators for org.apache.commons.lang3.exception.ExceptionUtils
+AOR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+LOR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+SOR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+COR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+ROR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+ORU<"org.apache.commons.lang3.exception.ExceptionUtils">;
+LVR<"org.apache.commons.lang3.exception.ExceptionUtils">;
+STD<"org.apache.commons.lang3.exception.ExceptionUtils">;
+
+// Enable operators for org.apache.commons.lang3.exception.ContextedException
+AOR<"org.apache.commons.lang3.exception.ContextedException">;
+LOR<"org.apache.commons.lang3.exception.ContextedException">;
+SOR<"org.apache.commons.lang3.exception.ContextedException">;
+COR<"org.apache.commons.lang3.exception.ContextedException">;
+ROR<"org.apache.commons.lang3.exception.ContextedException">;
+ORU<"org.apache.commons.lang3.exception.ContextedException">;
+LVR<"org.apache.commons.lang3.exception.ContextedException">;
+STD<"org.apache.commons.lang3.exception.ContextedException">;
+
+// Enable operators for org.apache.commons.lang3.exception.ExceptionContext
+AOR<"org.apache.commons.lang3.exception.ExceptionContext">;
+LOR<"org.apache.commons.lang3.exception.ExceptionContext">;
+SOR<"org.apache.commons.lang3.exception.ExceptionContext">;
+COR<"org.apache.commons.lang3.exception.ExceptionContext">;
+ROR<"org.apache.commons.lang3.exception.ExceptionContext">;
+ORU<"org.apache.commons.lang3.exception.ExceptionContext">;
+LVR<"org.apache.commons.lang3.exception.ExceptionContext">;
+STD<"org.apache.commons.lang3.exception.ExceptionContext">;
+
+// Enable operators for org.apache.commons.lang3.LocaleUtils
+AOR<"org.apache.commons.lang3.LocaleUtils">;
+LOR<"org.apache.commons.lang3.LocaleUtils">;
+SOR<"org.apache.commons.lang3.LocaleUtils">;
+COR<"org.apache.commons.lang3.LocaleUtils">;
+ROR<"org.apache.commons.lang3.LocaleUtils">;
+ORU<"org.apache.commons.lang3.LocaleUtils">;
+LVR<"org.apache.commons.lang3.LocaleUtils">;
+STD<"org.apache.commons.lang3.LocaleUtils">;
+
+// Enable operators for org.apache.commons.lang3.ClassUtils
+AOR<"org.apache.commons.lang3.ClassUtils">;
+LOR<"org.apache.commons.lang3.ClassUtils">;
+SOR<"org.apache.commons.lang3.ClassUtils">;
+COR<"org.apache.commons.lang3.ClassUtils">;
+ROR<"org.apache.commons.lang3.ClassUtils">;
+ORU<"org.apache.commons.lang3.ClassUtils">;
+LVR<"org.apache.commons.lang3.ClassUtils">;
+STD<"org.apache.commons.lang3.ClassUtils">;
+
+// Enable operators for org.apache.commons.lang3.CharSetUtils
+AOR<"org.apache.commons.lang3.CharSetUtils">;
+LOR<"org.apache.commons.lang3.CharSetUtils">;
+SOR<"org.apache.commons.lang3.CharSetUtils">;
+COR<"org.apache.commons.lang3.CharSetUtils">;
+ROR<"org.apache.commons.lang3.CharSetUtils">;
+ORU<"org.apache.commons.lang3.CharSetUtils">;
+LVR<"org.apache.commons.lang3.CharSetUtils">;
+STD<"org.apache.commons.lang3.CharSetUtils">;
+
+// Enable operators for org.apache.commons.lang3.builder.ReflectionToStringBuilder
+AOR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+LOR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+SOR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+COR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+ROR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+ORU<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+LVR<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+STD<"org.apache.commons.lang3.builder.ReflectionToStringBuilder">;
+
+// Enable operators for org.apache.commons.lang3.builder.Builder
+AOR<"org.apache.commons.lang3.builder.Builder">;
+LOR<"org.apache.commons.lang3.builder.Builder">;
+SOR<"org.apache.commons.lang3.builder.Builder">;
+COR<"org.apache.commons.lang3.builder.Builder">;
+ROR<"org.apache.commons.lang3.builder.Builder">;
+ORU<"org.apache.commons.lang3.builder.Builder">;
+LVR<"org.apache.commons.lang3.builder.Builder">;
+STD<"org.apache.commons.lang3.builder.Builder">;
+
+// Enable operators for org.apache.commons.lang3.builder.CompareToBuilder
+AOR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+LOR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+SOR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+COR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+ROR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+ORU<"org.apache.commons.lang3.builder.CompareToBuilder">;
+LVR<"org.apache.commons.lang3.builder.CompareToBuilder">;
+STD<"org.apache.commons.lang3.builder.CompareToBuilder">;
+
+// Enable operators for org.apache.commons.lang3.builder.StandardToStringStyle
+AOR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+LOR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+SOR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+COR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+ROR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+ORU<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+LVR<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+STD<"org.apache.commons.lang3.builder.StandardToStringStyle">;
+
+// Enable operators for org.apache.commons.lang3.builder.IDKey
+AOR<"org.apache.commons.lang3.builder.IDKey">;
+LOR<"org.apache.commons.lang3.builder.IDKey">;
+SOR<"org.apache.commons.lang3.builder.IDKey">;
+COR<"org.apache.commons.lang3.builder.IDKey">;
+ROR<"org.apache.commons.lang3.builder.IDKey">;
+ORU<"org.apache.commons.lang3.builder.IDKey">;
+LVR<"org.apache.commons.lang3.builder.IDKey">;
+STD<"org.apache.commons.lang3.builder.IDKey">;
+
+// Enable operators for org.apache.commons.lang3.builder.ToStringBuilder
+AOR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+LOR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+SOR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+COR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+ROR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+ORU<"org.apache.commons.lang3.builder.ToStringBuilder">;
+LVR<"org.apache.commons.lang3.builder.ToStringBuilder">;
+STD<"org.apache.commons.lang3.builder.ToStringBuilder">;
+
+// Enable operators for org.apache.commons.lang3.builder.ToStringStyle
+AOR<"org.apache.commons.lang3.builder.ToStringStyle">;
+LOR<"org.apache.commons.lang3.builder.ToStringStyle">;
+SOR<"org.apache.commons.lang3.builder.ToStringStyle">;
+COR<"org.apache.commons.lang3.builder.ToStringStyle">;
+ROR<"org.apache.commons.lang3.builder.ToStringStyle">;
+ORU<"org.apache.commons.lang3.builder.ToStringStyle">;
+LVR<"org.apache.commons.lang3.builder.ToStringStyle">;
+STD<"org.apache.commons.lang3.builder.ToStringStyle">;
+
+// Enable operators for org.apache.commons.lang3.builder.EqualsBuilder
+AOR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+LOR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+SOR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+COR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+ROR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+ORU<"org.apache.commons.lang3.builder.EqualsBuilder">;
+LVR<"org.apache.commons.lang3.builder.EqualsBuilder">;
+STD<"org.apache.commons.lang3.builder.EqualsBuilder">;
+
+// Enable operators for org.apache.commons.lang3.builder.HashCodeBuilder
+AOR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+LOR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+SOR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+COR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+ROR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+ORU<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+LVR<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+STD<"org.apache.commons.lang3.builder.HashCodeBuilder">;
+
+// Enable operators for org.apache.commons.lang3.ArrayUtils
+AOR<"org.apache.commons.lang3.ArrayUtils">;
+LOR<"org.apache.commons.lang3.ArrayUtils">;
+SOR<"org.apache.commons.lang3.ArrayUtils">;
+COR<"org.apache.commons.lang3.ArrayUtils">;
+ROR<"org.apache.commons.lang3.ArrayUtils">;
+ORU<"org.apache.commons.lang3.ArrayUtils">;
+LVR<"org.apache.commons.lang3.ArrayUtils">;
+STD<"org.apache.commons.lang3.ArrayUtils">;
+
+// Enable operators for org.apache.commons.lang3.BooleanUtils
+AOR<"org.apache.commons.lang3.BooleanUtils">;
+LOR<"org.apache.commons.lang3.BooleanUtils">;
+SOR<"org.apache.commons.lang3.BooleanUtils">;
+COR<"org.apache.commons.lang3.BooleanUtils">;
+ROR<"org.apache.commons.lang3.BooleanUtils">;
+ORU<"org.apache.commons.lang3.BooleanUtils">;
+LVR<"org.apache.commons.lang3.BooleanUtils">;
+STD<"org.apache.commons.lang3.BooleanUtils">;
+
+// Enable operators for org.apache.commons.lang3.reflect.TypeUtils
+AOR<"org.apache.commons.lang3.reflect.TypeUtils">;
+LOR<"org.apache.commons.lang3.reflect.TypeUtils">;
+SOR<"org.apache.commons.lang3.reflect.TypeUtils">;
+COR<"org.apache.commons.lang3.reflect.TypeUtils">;
+ROR<"org.apache.commons.lang3.reflect.TypeUtils">;
+ORU<"org.apache.commons.lang3.reflect.TypeUtils">;
+LVR<"org.apache.commons.lang3.reflect.TypeUtils">;
+STD<"org.apache.commons.lang3.reflect.TypeUtils">;
+
+// Enable operators for org.apache.commons.lang3.reflect.MethodUtils
+AOR<"org.apache.commons.lang3.reflect.MethodUtils">;
+LOR<"org.apache.commons.lang3.reflect.MethodUtils">;
+SOR<"org.apache.commons.lang3.reflect.MethodUtils">;
+COR<"org.apache.commons.lang3.reflect.MethodUtils">;
+ROR<"org.apache.commons.lang3.reflect.MethodUtils">;
+ORU<"org.apache.commons.lang3.reflect.MethodUtils">;
+LVR<"org.apache.commons.lang3.reflect.MethodUtils">;
+STD<"org.apache.commons.lang3.reflect.MethodUtils">;
+
+// Enable operators for org.apache.commons.lang3.reflect.MemberUtils
+AOR<"org.apache.commons.lang3.reflect.MemberUtils">;
+LOR<"org.apache.commons.lang3.reflect.MemberUtils">;
+SOR<"org.apache.commons.lang3.reflect.MemberUtils">;
+COR<"org.apache.commons.lang3.reflect.MemberUtils">;
+ROR<"org.apache.commons.lang3.reflect.MemberUtils">;
+ORU<"org.apache.commons.lang3.reflect.MemberUtils">;
+LVR<"org.apache.commons.lang3.reflect.MemberUtils">;
+STD<"org.apache.commons.lang3.reflect.MemberUtils">;
+
+// Enable operators for org.apache.commons.lang3.reflect.FieldUtils
+AOR<"org.apache.commons.lang3.reflect.FieldUtils">;
+LOR<"org.apache.commons.lang3.reflect.FieldUtils">;
+SOR<"org.apache.commons.lang3.reflect.FieldUtils">;
+COR<"org.apache.commons.lang3.reflect.FieldUtils">;
+ROR<"org.apache.commons.lang3.reflect.FieldUtils">;
+ORU<"org.apache.commons.lang3.reflect.FieldUtils">;
+LVR<"org.apache.commons.lang3.reflect.FieldUtils">;
+STD<"org.apache.commons.lang3.reflect.FieldUtils">;
+
+// Enable operators for org.apache.commons.lang3.reflect.ConstructorUtils
+AOR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+LOR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+SOR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+COR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+ROR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+ORU<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+LVR<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+STD<"org.apache.commons.lang3.reflect.ConstructorUtils">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableByte
+AOR<"org.apache.commons.lang3.mutable.MutableByte">;
+LOR<"org.apache.commons.lang3.mutable.MutableByte">;
+SOR<"org.apache.commons.lang3.mutable.MutableByte">;
+COR<"org.apache.commons.lang3.mutable.MutableByte">;
+ROR<"org.apache.commons.lang3.mutable.MutableByte">;
+ORU<"org.apache.commons.lang3.mutable.MutableByte">;
+LVR<"org.apache.commons.lang3.mutable.MutableByte">;
+STD<"org.apache.commons.lang3.mutable.MutableByte">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableShort
+AOR<"org.apache.commons.lang3.mutable.MutableShort">;
+LOR<"org.apache.commons.lang3.mutable.MutableShort">;
+SOR<"org.apache.commons.lang3.mutable.MutableShort">;
+COR<"org.apache.commons.lang3.mutable.MutableShort">;
+ROR<"org.apache.commons.lang3.mutable.MutableShort">;
+ORU<"org.apache.commons.lang3.mutable.MutableShort">;
+LVR<"org.apache.commons.lang3.mutable.MutableShort">;
+STD<"org.apache.commons.lang3.mutable.MutableShort">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableFloat
+AOR<"org.apache.commons.lang3.mutable.MutableFloat">;
+LOR<"org.apache.commons.lang3.mutable.MutableFloat">;
+SOR<"org.apache.commons.lang3.mutable.MutableFloat">;
+COR<"org.apache.commons.lang3.mutable.MutableFloat">;
+ROR<"org.apache.commons.lang3.mutable.MutableFloat">;
+ORU<"org.apache.commons.lang3.mutable.MutableFloat">;
+LVR<"org.apache.commons.lang3.mutable.MutableFloat">;
+STD<"org.apache.commons.lang3.mutable.MutableFloat">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableObject
+AOR<"org.apache.commons.lang3.mutable.MutableObject">;
+LOR<"org.apache.commons.lang3.mutable.MutableObject">;
+SOR<"org.apache.commons.lang3.mutable.MutableObject">;
+COR<"org.apache.commons.lang3.mutable.MutableObject">;
+ROR<"org.apache.commons.lang3.mutable.MutableObject">;
+ORU<"org.apache.commons.lang3.mutable.MutableObject">;
+LVR<"org.apache.commons.lang3.mutable.MutableObject">;
+STD<"org.apache.commons.lang3.mutable.MutableObject">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableDouble
+AOR<"org.apache.commons.lang3.mutable.MutableDouble">;
+LOR<"org.apache.commons.lang3.mutable.MutableDouble">;
+SOR<"org.apache.commons.lang3.mutable.MutableDouble">;
+COR<"org.apache.commons.lang3.mutable.MutableDouble">;
+ROR<"org.apache.commons.lang3.mutable.MutableDouble">;
+ORU<"org.apache.commons.lang3.mutable.MutableDouble">;
+LVR<"org.apache.commons.lang3.mutable.MutableDouble">;
+STD<"org.apache.commons.lang3.mutable.MutableDouble">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableBoolean
+AOR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+LOR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+SOR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+COR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+ROR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+ORU<"org.apache.commons.lang3.mutable.MutableBoolean">;
+LVR<"org.apache.commons.lang3.mutable.MutableBoolean">;
+STD<"org.apache.commons.lang3.mutable.MutableBoolean">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableInt
+AOR<"org.apache.commons.lang3.mutable.MutableInt">;
+LOR<"org.apache.commons.lang3.mutable.MutableInt">;
+SOR<"org.apache.commons.lang3.mutable.MutableInt">;
+COR<"org.apache.commons.lang3.mutable.MutableInt">;
+ROR<"org.apache.commons.lang3.mutable.MutableInt">;
+ORU<"org.apache.commons.lang3.mutable.MutableInt">;
+LVR<"org.apache.commons.lang3.mutable.MutableInt">;
+STD<"org.apache.commons.lang3.mutable.MutableInt">;
+
+// Enable operators for org.apache.commons.lang3.mutable.MutableLong
+AOR<"org.apache.commons.lang3.mutable.MutableLong">;
+LOR<"org.apache.commons.lang3.mutable.MutableLong">;
+SOR<"org.apache.commons.lang3.mutable.MutableLong">;
+COR<"org.apache.commons.lang3.mutable.MutableLong">;
+ROR<"org.apache.commons.lang3.mutable.MutableLong">;
+ORU<"org.apache.commons.lang3.mutable.MutableLong">;
+LVR<"org.apache.commons.lang3.mutable.MutableLong">;
+STD<"org.apache.commons.lang3.mutable.MutableLong">;
+
+// Enable operators for org.apache.commons.lang3.mutable.Mutable
+AOR<"org.apache.commons.lang3.mutable.Mutable">;
+LOR<"org.apache.commons.lang3.mutable.Mutable">;
+SOR<"org.apache.commons.lang3.mutable.Mutable">;
+COR<"org.apache.commons.lang3.mutable.Mutable">;
+ROR<"org.apache.commons.lang3.mutable.Mutable">;
+ORU<"org.apache.commons.lang3.mutable.Mutable">;
+LVR<"org.apache.commons.lang3.mutable.Mutable">;
+STD<"org.apache.commons.lang3.mutable.Mutable">;
+
+// Enable operators for org.apache.commons.lang3.time.FastDateFormat
+AOR<"org.apache.commons.lang3.time.FastDateFormat">;
+LOR<"org.apache.commons.lang3.time.FastDateFormat">;
+SOR<"org.apache.commons.lang3.time.FastDateFormat">;
+COR<"org.apache.commons.lang3.time.FastDateFormat">;
+ROR<"org.apache.commons.lang3.time.FastDateFormat">;
+ORU<"org.apache.commons.lang3.time.FastDateFormat">;
+LVR<"org.apache.commons.lang3.time.FastDateFormat">;
+STD<"org.apache.commons.lang3.time.FastDateFormat">;
+
+// Enable operators for org.apache.commons.lang3.time.DateUtils
+AOR<"org.apache.commons.lang3.time.DateUtils">;
+LOR<"org.apache.commons.lang3.time.DateUtils">;
+SOR<"org.apache.commons.lang3.time.DateUtils">;
+COR<"org.apache.commons.lang3.time.DateUtils">;
+ROR<"org.apache.commons.lang3.time.DateUtils">;
+ORU<"org.apache.commons.lang3.time.DateUtils">;
+LVR<"org.apache.commons.lang3.time.DateUtils">;
+STD<"org.apache.commons.lang3.time.DateUtils">;
+
+// Enable operators for org.apache.commons.lang3.time.StopWatch
+AOR<"org.apache.commons.lang3.time.StopWatch">;
+LOR<"org.apache.commons.lang3.time.StopWatch">;
+SOR<"org.apache.commons.lang3.time.StopWatch">;
+COR<"org.apache.commons.lang3.time.StopWatch">;
+ROR<"org.apache.commons.lang3.time.StopWatch">;
+ORU<"org.apache.commons.lang3.time.StopWatch">;
+LVR<"org.apache.commons.lang3.time.StopWatch">;
+STD<"org.apache.commons.lang3.time.StopWatch">;
+
+// Enable operators for org.apache.commons.lang3.time.FastDateParser
+AOR<"org.apache.commons.lang3.time.FastDateParser">;
+LOR<"org.apache.commons.lang3.time.FastDateParser">;
+SOR<"org.apache.commons.lang3.time.FastDateParser">;
+COR<"org.apache.commons.lang3.time.FastDateParser">;
+ROR<"org.apache.commons.lang3.time.FastDateParser">;
+ORU<"org.apache.commons.lang3.time.FastDateParser">;
+LVR<"org.apache.commons.lang3.time.FastDateParser">;
+STD<"org.apache.commons.lang3.time.FastDateParser">;
+
+// Enable operators for org.apache.commons.lang3.time.FormatCache
+AOR<"org.apache.commons.lang3.time.FormatCache">;
+LOR<"org.apache.commons.lang3.time.FormatCache">;
+SOR<"org.apache.commons.lang3.time.FormatCache">;
+COR<"org.apache.commons.lang3.time.FormatCache">;
+ROR<"org.apache.commons.lang3.time.FormatCache">;
+ORU<"org.apache.commons.lang3.time.FormatCache">;
+LVR<"org.apache.commons.lang3.time.FormatCache">;
+STD<"org.apache.commons.lang3.time.FormatCache">;
+
+// Enable operators for org.apache.commons.lang3.time.DurationFormatUtils
+AOR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+LOR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+SOR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+COR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+ROR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+ORU<"org.apache.commons.lang3.time.DurationFormatUtils">;
+LVR<"org.apache.commons.lang3.time.DurationFormatUtils">;
+STD<"org.apache.commons.lang3.time.DurationFormatUtils">;
+
+// Enable operators for org.apache.commons.lang3.time.FastDatePrinter
+AOR<"org.apache.commons.lang3.time.FastDatePrinter">;
+LOR<"org.apache.commons.lang3.time.FastDatePrinter">;
+SOR<"org.apache.commons.lang3.time.FastDatePrinter">;
+COR<"org.apache.commons.lang3.time.FastDatePrinter">;
+ROR<"org.apache.commons.lang3.time.FastDatePrinter">;
+ORU<"org.apache.commons.lang3.time.FastDatePrinter">;
+LVR<"org.apache.commons.lang3.time.FastDatePrinter">;
+STD<"org.apache.commons.lang3.time.FastDatePrinter">;
+
+// Enable operators for org.apache.commons.lang3.time.DateFormatUtils
+AOR<"org.apache.commons.lang3.time.DateFormatUtils">;
+LOR<"org.apache.commons.lang3.time.DateFormatUtils">;
+SOR<"org.apache.commons.lang3.time.DateFormatUtils">;
+COR<"org.apache.commons.lang3.time.DateFormatUtils">;
+ROR<"org.apache.commons.lang3.time.DateFormatUtils">;
+ORU<"org.apache.commons.lang3.time.DateFormatUtils">;
+LVR<"org.apache.commons.lang3.time.DateFormatUtils">;
+STD<"org.apache.commons.lang3.time.DateFormatUtils">;
+
+// Enable operators for org.apache.commons.lang3.time.DatePrinter
+AOR<"org.apache.commons.lang3.time.DatePrinter">;
+LOR<"org.apache.commons.lang3.time.DatePrinter">;
+SOR<"org.apache.commons.lang3.time.DatePrinter">;
+COR<"org.apache.commons.lang3.time.DatePrinter">;
+ROR<"org.apache.commons.lang3.time.DatePrinter">;
+ORU<"org.apache.commons.lang3.time.DatePrinter">;
+LVR<"org.apache.commons.lang3.time.DatePrinter">;
+STD<"org.apache.commons.lang3.time.DatePrinter">;
+
+// Enable operators for org.apache.commons.lang3.time.DateParser
+AOR<"org.apache.commons.lang3.time.DateParser">;
+LOR<"org.apache.commons.lang3.time.DateParser">;
+SOR<"org.apache.commons.lang3.time.DateParser">;
+COR<"org.apache.commons.lang3.time.DateParser">;
+ROR<"org.apache.commons.lang3.time.DateParser">;
+ORU<"org.apache.commons.lang3.time.DateParser">;
+LVR<"org.apache.commons.lang3.time.DateParser">;
+STD<"org.apache.commons.lang3.time.DateParser">;
+
+// Enable operators for org.apache.commons.lang3.CharSet
+AOR<"org.apache.commons.lang3.CharSet">;
+LOR<"org.apache.commons.lang3.CharSet">;
+SOR<"org.apache.commons.lang3.CharSet">;
+COR<"org.apache.commons.lang3.CharSet">;
+ROR<"org.apache.commons.lang3.CharSet">;
+ORU<"org.apache.commons.lang3.CharSet">;
+LVR<"org.apache.commons.lang3.CharSet">;
+STD<"org.apache.commons.lang3.CharSet">;
+
+// Enable operators for org.apache.commons.lang3.text.WordUtils
+AOR<"org.apache.commons.lang3.text.WordUtils">;
+LOR<"org.apache.commons.lang3.text.WordUtils">;
+SOR<"org.apache.commons.lang3.text.WordUtils">;
+COR<"org.apache.commons.lang3.text.WordUtils">;
+ROR<"org.apache.commons.lang3.text.WordUtils">;
+ORU<"org.apache.commons.lang3.text.WordUtils">;
+LVR<"org.apache.commons.lang3.text.WordUtils">;
+STD<"org.apache.commons.lang3.text.WordUtils">;
+
+// Enable operators for org.apache.commons.lang3.text.StrBuilder
+AOR<"org.apache.commons.lang3.text.StrBuilder">;
+LOR<"org.apache.commons.lang3.text.StrBuilder">;
+SOR<"org.apache.commons.lang3.text.StrBuilder">;
+COR<"org.apache.commons.lang3.text.StrBuilder">;
+ROR<"org.apache.commons.lang3.text.StrBuilder">;
+ORU<"org.apache.commons.lang3.text.StrBuilder">;
+LVR<"org.apache.commons.lang3.text.StrBuilder">;
+STD<"org.apache.commons.lang3.text.StrBuilder">;
+
+// Enable operators for org.apache.commons.lang3.text.FormatFactory
+AOR<"org.apache.commons.lang3.text.FormatFactory">;
+LOR<"org.apache.commons.lang3.text.FormatFactory">;
+SOR<"org.apache.commons.lang3.text.FormatFactory">;
+COR<"org.apache.commons.lang3.text.FormatFactory">;
+ROR<"org.apache.commons.lang3.text.FormatFactory">;
+ORU<"org.apache.commons.lang3.text.FormatFactory">;
+LVR<"org.apache.commons.lang3.text.FormatFactory">;
+STD<"org.apache.commons.lang3.text.FormatFactory">;
+
+// Enable operators for org.apache.commons.lang3.text.StrSubstitutor
+AOR<"org.apache.commons.lang3.text.StrSubstitutor">;
+LOR<"org.apache.commons.lang3.text.StrSubstitutor">;
+SOR<"org.apache.commons.lang3.text.StrSubstitutor">;
+COR<"org.apache.commons.lang3.text.StrSubstitutor">;
+ROR<"org.apache.commons.lang3.text.StrSubstitutor">;
+ORU<"org.apache.commons.lang3.text.StrSubstitutor">;
+LVR<"org.apache.commons.lang3.text.StrSubstitutor">;
+STD<"org.apache.commons.lang3.text.StrSubstitutor">;
+
+// Enable operators for org.apache.commons.lang3.text.StrLookup
+AOR<"org.apache.commons.lang3.text.StrLookup">;
+LOR<"org.apache.commons.lang3.text.StrLookup">;
+SOR<"org.apache.commons.lang3.text.StrLookup">;
+COR<"org.apache.commons.lang3.text.StrLookup">;
+ROR<"org.apache.commons.lang3.text.StrLookup">;
+ORU<"org.apache.commons.lang3.text.StrLookup">;
+LVR<"org.apache.commons.lang3.text.StrLookup">;
+STD<"org.apache.commons.lang3.text.StrLookup">;
+
+// Enable operators for org.apache.commons.lang3.text.CompositeFormat
+AOR<"org.apache.commons.lang3.text.CompositeFormat">;
+LOR<"org.apache.commons.lang3.text.CompositeFormat">;
+SOR<"org.apache.commons.lang3.text.CompositeFormat">;
+COR<"org.apache.commons.lang3.text.CompositeFormat">;
+ROR<"org.apache.commons.lang3.text.CompositeFormat">;
+ORU<"org.apache.commons.lang3.text.CompositeFormat">;
+LVR<"org.apache.commons.lang3.text.CompositeFormat">;
+STD<"org.apache.commons.lang3.text.CompositeFormat">;
+
+// Enable operators for org.apache.commons.lang3.text.FormattableUtils
+AOR<"org.apache.commons.lang3.text.FormattableUtils">;
+LOR<"org.apache.commons.lang3.text.FormattableUtils">;
+SOR<"org.apache.commons.lang3.text.FormattableUtils">;
+COR<"org.apache.commons.lang3.text.FormattableUtils">;
+ROR<"org.apache.commons.lang3.text.FormattableUtils">;
+ORU<"org.apache.commons.lang3.text.FormattableUtils">;
+LVR<"org.apache.commons.lang3.text.FormattableUtils">;
+STD<"org.apache.commons.lang3.text.FormattableUtils">;
+
+// Enable operators for org.apache.commons.lang3.text.ExtendedMessageFormat
+AOR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+LOR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+SOR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+COR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+ROR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+ORU<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+LVR<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+STD<"org.apache.commons.lang3.text.ExtendedMessageFormat">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.LookupTranslator
+AOR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+LOR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+SOR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+COR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+ROR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+ORU<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+LVR<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+STD<"org.apache.commons.lang3.text.translate.LookupTranslator">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.NumericEntityEscaper
+AOR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+LOR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+SOR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+COR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+ROR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+ORU<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+LVR<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+STD<"org.apache.commons.lang3.text.translate.NumericEntityEscaper">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.EntityArrays
+AOR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+LOR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+SOR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+COR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+ROR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+ORU<"org.apache.commons.lang3.text.translate.EntityArrays">;
+LVR<"org.apache.commons.lang3.text.translate.EntityArrays">;
+STD<"org.apache.commons.lang3.text.translate.EntityArrays">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.AggregateTranslator
+AOR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+LOR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+SOR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+COR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+ROR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+ORU<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+LVR<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+STD<"org.apache.commons.lang3.text.translate.AggregateTranslator">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.OctalUnescaper
+AOR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+LOR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+SOR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+COR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+ROR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+ORU<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+LVR<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+STD<"org.apache.commons.lang3.text.translate.OctalUnescaper">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.JavaUnicodeEscaper
+AOR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+LOR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+SOR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+COR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+ROR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+ORU<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+LVR<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+STD<"org.apache.commons.lang3.text.translate.JavaUnicodeEscaper">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.CharSequenceTranslator
+AOR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+LOR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+SOR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+COR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+ROR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+ORU<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+LVR<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+STD<"org.apache.commons.lang3.text.translate.CharSequenceTranslator">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.NumericEntityUnescaper
+AOR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+LOR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+SOR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+COR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+ROR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+ORU<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+LVR<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+STD<"org.apache.commons.lang3.text.translate.NumericEntityUnescaper">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.UnicodeUnescaper
+AOR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+LOR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+SOR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+COR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+ROR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+ORU<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+LVR<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+STD<"org.apache.commons.lang3.text.translate.UnicodeUnescaper">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.CodePointTranslator
+AOR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+LOR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+SOR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+COR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+ROR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+ORU<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+LVR<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+STD<"org.apache.commons.lang3.text.translate.CodePointTranslator">;
+
+// Enable operators for org.apache.commons.lang3.text.translate.UnicodeEscaper
+AOR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+LOR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+SOR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+COR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+ROR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+ORU<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+LVR<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+STD<"org.apache.commons.lang3.text.translate.UnicodeEscaper">;
+
+// Enable operators for org.apache.commons.lang3.text.StrTokenizer
+AOR<"org.apache.commons.lang3.text.StrTokenizer">;
+LOR<"org.apache.commons.lang3.text.StrTokenizer">;
+SOR<"org.apache.commons.lang3.text.StrTokenizer">;
+COR<"org.apache.commons.lang3.text.StrTokenizer">;
+ROR<"org.apache.commons.lang3.text.StrTokenizer">;
+ORU<"org.apache.commons.lang3.text.StrTokenizer">;
+LVR<"org.apache.commons.lang3.text.StrTokenizer">;
+STD<"org.apache.commons.lang3.text.StrTokenizer">;
+
+// Enable operators for org.apache.commons.lang3.text.StrMatcher
+AOR<"org.apache.commons.lang3.text.StrMatcher">;
+LOR<"org.apache.commons.lang3.text.StrMatcher">;
+SOR<"org.apache.commons.lang3.text.StrMatcher">;
+COR<"org.apache.commons.lang3.text.StrMatcher">;
+ROR<"org.apache.commons.lang3.text.StrMatcher">;
+ORU<"org.apache.commons.lang3.text.StrMatcher">;
+LVR<"org.apache.commons.lang3.text.StrMatcher">;
+STD<"org.apache.commons.lang3.text.StrMatcher">;
+
+// Enable operators for org.apache.commons.lang3.SystemUtils
+AOR<"org.apache.commons.lang3.SystemUtils">;
+LOR<"org.apache.commons.lang3.SystemUtils">;
+SOR<"org.apache.commons.lang3.SystemUtils">;
+COR<"org.apache.commons.lang3.SystemUtils">;
+ROR<"org.apache.commons.lang3.SystemUtils">;
+ORU<"org.apache.commons.lang3.SystemUtils">;
+LVR<"org.apache.commons.lang3.SystemUtils">;
+STD<"org.apache.commons.lang3.SystemUtils">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.ConstantInitializer
+AOR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+COR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+STD<"org.apache.commons.lang3.concurrent.ConstantInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.CallableBackgroundInitializer
+AOR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+COR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+STD<"org.apache.commons.lang3.concurrent.CallableBackgroundInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.TimedSemaphore
+AOR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+LOR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+SOR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+COR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+ROR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+ORU<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+LVR<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+STD<"org.apache.commons.lang3.concurrent.TimedSemaphore">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.ConcurrentUtils
+AOR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+LOR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+SOR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+COR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+ROR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+ORU<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+LVR<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+STD<"org.apache.commons.lang3.concurrent.ConcurrentUtils">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.LazyInitializer
+AOR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+COR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+STD<"org.apache.commons.lang3.concurrent.LazyInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.BasicThreadFactory
+AOR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+LOR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+SOR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+COR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+ROR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+ORU<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+LVR<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+STD<"org.apache.commons.lang3.concurrent.BasicThreadFactory">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.AtomicInitializer
+AOR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+COR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+STD<"org.apache.commons.lang3.concurrent.AtomicInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.ConcurrentRuntimeException
+AOR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+LOR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+SOR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+COR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+ROR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+ORU<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+LVR<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+STD<"org.apache.commons.lang3.concurrent.ConcurrentRuntimeException">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.ConcurrentException
+AOR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+LOR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+SOR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+COR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+ROR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+ORU<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+LVR<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+STD<"org.apache.commons.lang3.concurrent.ConcurrentException">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.ConcurrentInitializer
+AOR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+COR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+STD<"org.apache.commons.lang3.concurrent.ConcurrentInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.BackgroundInitializer
+AOR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+COR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+STD<"org.apache.commons.lang3.concurrent.BackgroundInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.MultiBackgroundInitializer
+AOR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+COR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+STD<"org.apache.commons.lang3.concurrent.MultiBackgroundInitializer">;
+
+// Enable operators for org.apache.commons.lang3.concurrent.AtomicSafeInitializer
+AOR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+LOR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+SOR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+COR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+ROR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+ORU<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+LVR<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+STD<"org.apache.commons.lang3.concurrent.AtomicSafeInitializer">;
+
+// Enable operators for org.apache.commons.lang3.RandomStringUtils
+AOR<"org.apache.commons.lang3.RandomStringUtils">;
+LOR<"org.apache.commons.lang3.RandomStringUtils">;
+SOR<"org.apache.commons.lang3.RandomStringUtils">;
+COR<"org.apache.commons.lang3.RandomStringUtils">;
+ROR<"org.apache.commons.lang3.RandomStringUtils">;
+ORU<"org.apache.commons.lang3.RandomStringUtils">;
+LVR<"org.apache.commons.lang3.RandomStringUtils">;
+STD<"org.apache.commons.lang3.RandomStringUtils">;
+
+// Enable operators for org.apache.commons.lang3.math.Fraction
+AOR<"org.apache.commons.lang3.math.Fraction">;
+LOR<"org.apache.commons.lang3.math.Fraction">;
+SOR<"org.apache.commons.lang3.math.Fraction">;
+COR<"org.apache.commons.lang3.math.Fraction">;
+ROR<"org.apache.commons.lang3.math.Fraction">;
+ORU<"org.apache.commons.lang3.math.Fraction">;
+LVR<"org.apache.commons.lang3.math.Fraction">;
+STD<"org.apache.commons.lang3.math.Fraction">;
+
+// Enable operators for org.apache.commons.lang3.math.NumberUtils
+AOR<"org.apache.commons.lang3.math.NumberUtils">;
+LOR<"org.apache.commons.lang3.math.NumberUtils">;
+SOR<"org.apache.commons.lang3.math.NumberUtils">;
+COR<"org.apache.commons.lang3.math.NumberUtils">;
+ROR<"org.apache.commons.lang3.math.NumberUtils">;
+ORU<"org.apache.commons.lang3.math.NumberUtils">;
+LVR<"org.apache.commons.lang3.math.NumberUtils">;
+STD<"org.apache.commons.lang3.math.NumberUtils">;
+
+// Enable operators for org.apache.commons.lang3.math.IEEE754rUtils
+AOR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+LOR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+SOR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+COR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+ROR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+ORU<"org.apache.commons.lang3.math.IEEE754rUtils">;
+LVR<"org.apache.commons.lang3.math.IEEE754rUtils">;
+STD<"org.apache.commons.lang3.math.IEEE754rUtils">;
+
+// Enable operators for org.apache.commons.lang3.CharSequenceUtils
+AOR<"org.apache.commons.lang3.CharSequenceUtils">;
+LOR<"org.apache.commons.lang3.CharSequenceUtils">;
+SOR<"org.apache.commons.lang3.CharSequenceUtils">;
+COR<"org.apache.commons.lang3.CharSequenceUtils">;
+ROR<"org.apache.commons.lang3.CharSequenceUtils">;
+ORU<"org.apache.commons.lang3.CharSequenceUtils">;
+LVR<"org.apache.commons.lang3.CharSequenceUtils">;
+STD<"org.apache.commons.lang3.CharSequenceUtils">;
+
+// Enable operators for org.apache.commons.lang3.Range
+AOR<"org.apache.commons.lang3.Range">;
+LOR<"org.apache.commons.lang3.Range">;
+SOR<"org.apache.commons.lang3.Range">;
+COR<"org.apache.commons.lang3.Range">;
+ROR<"org.apache.commons.lang3.Range">;
+ORU<"org.apache.commons.lang3.Range">;
+LVR<"org.apache.commons.lang3.Range">;
+STD<"org.apache.commons.lang3.Range">;
+
+// Enable operators for org.apache.commons.lang3.JavaVersion
+AOR<"org.apache.commons.lang3.JavaVersion">;
+LOR<"org.apache.commons.lang3.JavaVersion">;
+SOR<"org.apache.commons.lang3.JavaVersion">;
+COR<"org.apache.commons.lang3.JavaVersion">;
+ROR<"org.apache.commons.lang3.JavaVersion">;
+ORU<"org.apache.commons.lang3.JavaVersion">;
+LVR<"org.apache.commons.lang3.JavaVersion">;
+STD<"org.apache.commons.lang3.JavaVersion">;
+
+// Enable operators for org.apache.commons.lang3.Conversion
+AOR<"org.apache.commons.lang3.Conversion">;
+LOR<"org.apache.commons.lang3.Conversion">;
+SOR<"org.apache.commons.lang3.Conversion">;
+COR<"org.apache.commons.lang3.Conversion">;
+ROR<"org.apache.commons.lang3.Conversion">;
+ORU<"org.apache.commons.lang3.Conversion">;
+LVR<"org.apache.commons.lang3.Conversion">;
+STD<"org.apache.commons.lang3.Conversion">;
+
+// Enable operators for org.apache.commons.lang3.CharEncoding
+AOR<"org.apache.commons.lang3.CharEncoding">;
+LOR<"org.apache.commons.lang3.CharEncoding">;
+SOR<"org.apache.commons.lang3.CharEncoding">;
+COR<"org.apache.commons.lang3.CharEncoding">;
+ROR<"org.apache.commons.lang3.CharEncoding">;
+ORU<"org.apache.commons.lang3.CharEncoding">;
+LVR<"org.apache.commons.lang3.CharEncoding">;
+STD<"org.apache.commons.lang3.CharEncoding">;

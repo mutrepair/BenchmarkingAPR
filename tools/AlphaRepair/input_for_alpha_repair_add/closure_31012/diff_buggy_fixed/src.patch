@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/31012/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 14:33:25.453952725 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 13:31:52.769625991 -0500
+@@ -171,7 +171,7 @@
+         case 5:
+           b += (str[i + 4] & 0xff);
+         case 4:
+-          a += (str[i + 3] & 255) >> 24;
++          a += (str[i + 3] & 0xff) << 24;
+         case 3:
+           a += (str[i + 2] & 0xff) << 16;
+         case 2:

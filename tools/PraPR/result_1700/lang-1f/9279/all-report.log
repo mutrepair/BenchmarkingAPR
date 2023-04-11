@@ -1,0 +1,410 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 37
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to buffer is guarded using value null
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 24
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to size is guarded using value 0
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to size is guarded using local startIndex
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to buffer is guarded using field buffer
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 24
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to size is guarded using field CAPACITY
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.text.StrBuilder.buffer is replaced by the call to org.apache.commons.lang3.text.StrBuilder::toCharArray()[C
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 24
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.text.StrBuilder.size is replaced by the call to org.apache.commons.lang3.text.StrBuilder::length()I
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.lang3.text.StrBuilder.size is replaced by the call to org.apache.commons.lang3.text.StrBuilder::capacity()I
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.lang3.text.StrBuilder.size is replaced by the call to org.apache.commons.lang3.text.StrBuilder::size()I
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.lang3.text.StrBuilder.size is replaced by the call to org.apache.commons.lang3.text.StrBuilder::hashCode()I
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field size is replaced by access to local startIndex
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field size is replaced by access to local endIndex
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field size is replaced by access to local removeLen
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local endIndex is replaced by local startIndex to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local startIndex is replaced by local endIndex to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local insertLen is replaced by local startIndex to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local endIndex is replaced by local removeLen to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local startIndex is replaced by local removeLen to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local insertLen is replaced by local endIndex to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local endIndex is replaced by local insertLen to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local startIndex is replaced by local insertLen to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local insertLen is replaced by local removeLen to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local endIndex is replaced by local newSize to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local startIndex is replaced by local newSize to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local insertLen is replaced by local newSize to be used
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local endIndex is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local startIndex is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local insertLen is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local endIndex is replaced by access to field size
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 25
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local startIndex is replaced by access to field size
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 28
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local insertLen is replaced by access to field size
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 29
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.minimizeCapacity()
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 23
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to buffer is guarded returning enclosing method
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 24
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to size is guarded returning enclosing method
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 32
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 30
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 34
+	Rank: 1
+	Total Rank: 37
+	Status: SURVIVED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/System::arraycopy
+	File Name: org/apache/commons/lang3/text/StrBuilder.java
+	Line Number: 1810
+	Block: 297
+	First Index: 35
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,14 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_64/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java	2023-01-16 15:29:56.500444689 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/64/patch/./org/jsoup/parser/HtmlTreeBuilderState.java	2023-01-16 15:29:56.452444089 -0600
+@@ -1486,10 +1486,10 @@
+     }
+ 
+     private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {
+-        tb.insert(startTag);
+         tb.tokeniser.transition(TokeniserState.Rawtext);
+         tb.markInsertionMode();
+         tb.transition(Text);
++        tb.insert(startTag);
+     }
+ 
+     // lists of tags to search through. A little harder to read here, but causes less GC than dynamic varargs.

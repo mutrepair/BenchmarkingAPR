@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1572/com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java	2022-10-31 19:47:49.647767903 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java	2022-12-26 15:13:53.109638382 -0600
+@@ -48,7 +48,7 @@
+              * hope this does not break other parts...)
+              */
+             Boolean b = AnnotationUtil.findIsTextAnnotation(intr, acc);
+-            if (true && b.booleanValue()) {
++            if (b != null && b.booleanValue()) {
+                 // unwrapped properties will appear as 'unnamed' (empty String)
+                 BeanPropertyDefinition newProp = prop.withSimpleName(_cfgNameForTextValue);
+                 if (newProp != prop) {

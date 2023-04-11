@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.replace(IILjava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.replace(IILjava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::replace(IILjava/lang/String;)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::toString()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to replace(IILjava/lang/String;)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to toString()Ljava/lang/String; is guarded returning default value null
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/mockito/internal/util/StringJoiner::join
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 56
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 51
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 52
+	Rank: 2
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::replace
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::toString
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 55
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/mockito/internal/util/StringJoiner::join to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 56
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::replace with receiver
+	File Name: org/mockito/internal/util/StringJoiner.java
+	Line Number: 15
+	Block: 3
+	First Index: 54
+	Rank: 2
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------

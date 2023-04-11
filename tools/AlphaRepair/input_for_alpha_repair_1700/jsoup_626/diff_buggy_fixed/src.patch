@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/626/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.551764605 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -168,7 +168,7 @@
+ 
+         Tag tag = (Tag) o;
+ 
+-        if (canContainBlock != tag.canContainBlock) return true;
++        if (canContainBlock != tag.canContainBlock) return false;
+         if (canContainInline != tag.canContainInline) return false;
+         if (empty != tag.empty) return false;
+         if (isBlock != tag.isBlock) return false;

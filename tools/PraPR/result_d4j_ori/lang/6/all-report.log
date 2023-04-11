@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to codePointAt(Ljava/lang/CharSequence;I)I with a call to codePointAt([CII)I
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 85
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to codePointAt(Ljava/lang/CharSequence;I)I with a call to codePointAt([CI)I
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 85
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local pos is replaced by local len to be used
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 82
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local pos is replaced by local len to be defined
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 88
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local pos is replaced by local consumed to be used
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 82
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local pos is replaced by local consumed to be defined
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 88
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local pos is replaced by local pt to be used
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 82
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local pos is replaced by local pt to be used
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 84
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local pos is replaced by local pt to be defined
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 88
+	Rank: null
+	Total Rank: 20
+	Status: MEMORY_ERROR
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to codePointAt with a call to codePointBefore
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 85
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to charCount with a call to toLowerCase
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to charCount with a call to toUpperCase
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to charCount with a call to toTitleCase
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to charCount with a call to getNumericValue
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to charCount with a call to getType
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Character::codePointAt with argument
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 85
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Character::charCount with argument
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 87
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::codePointAt
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 85
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::charCount
+	File Name: org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+	Line Number: 95
+	Block: 13
+	First Index: 86
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

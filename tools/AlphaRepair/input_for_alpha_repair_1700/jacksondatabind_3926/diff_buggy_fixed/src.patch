@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/3926/com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.java	2022-10-31 19:47:46.683778696 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.java	2022-12-26 15:13:52.509631900 -0600
+@@ -62,7 +62,7 @@
+             return bucket.value;
+         }
+         while ((bucket = bucket.next) != null) {
+-            if (true) {
++            if (key.equals(bucket.key)) {
+                 return bucket.value;
+             }
+         }

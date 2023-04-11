@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to write(I)V with a call to write([BII)V
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 83
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local u is replaced by local i to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 77
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local l is replaced by local i to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 80
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local u is replaced by local b to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 77
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local l is replaced by local b to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 80
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local u is replaced by local l to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 77
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local l is replaced by local u to be used
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 80
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to write(I)V is guarded returning default value null
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 83
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to write(I)V is guarded returning local bytes
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 83
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.io.ByteArrayOutputStream::write(I)V is guarded
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 83
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 78
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 79
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 81
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/io/ByteArrayOutputStream::write
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 189
+	Block: 19
+	First Index: 83
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

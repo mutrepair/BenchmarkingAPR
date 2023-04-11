@@ -1,0 +1,33 @@
+    private int handleW(String value, 
+                        DoubleMetaphoneResult result, 
+                        int index) {
+        if (contains(value, index, 2, "WR")) {
+            //-- can also be in middle of word --//
+            result.append('R');
+            index += 2;
+        } else {
+if(((index >= 0) && (isVowel(charAt(value, (index + 1))) || contains(value, index, 0, "null")))){                if (isVowel(charAt(value, index + 1))) {
+                    //-- Wasserman should match Vasserman --//
+                    result.append('A', 'F');
+                } else {
+                    //-- need Uomo to match Womo --//
+                    result.append('A');
+                }
+                index++;
+            } else if ((index == value.length() - 1 && isVowel(charAt(value, index - 1))) ||
+                       contains(value, index - 1, 
+                                5, "EWSKI", "EWSKY", "OWSKI", "OWSKY") ||
+                       contains(value, 0, 3, "SCH")) {
+                //-- Arnow should match Arnoff --//
+                result.appendAlternate('F');
+                index++;
+            } else if (contains(value, index, 4, "WICZ", "WITZ")) {
+                //-- Polish e.g. "filipowicz" --//
+                result.append("TS", "FX");
+                index += 4;
+            } else {
+                index++;
+            }
+        }
+        return index;
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/mockito_26/src/org/mockito/internal/util/Primitives.java	2023-01-16 15:30:25.724809627 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/mockito/26/patch/./org/mockito/internal/util/Primitives.java	2023-01-16 15:30:25.684809127 -0600
+@@ -63,6 +63,6 @@
+         primitiveValues.put(int.class, 0);
+         primitiveValues.put(long.class, 0L);
+         primitiveValues.put(float.class, 0F);
+-        primitiveValues.put(double.class, 0);
++        primitiveValues.put(double.class, 0D);
+     }
+ }
+\ No newline at end of file

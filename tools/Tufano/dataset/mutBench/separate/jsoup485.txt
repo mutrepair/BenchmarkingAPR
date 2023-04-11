@@ -1,0 +1,1 @@
+private boolean METHOD_1 ( TYPE_1 VAR_1 , TYPE_2 VAR_2 , TYPE_3 < TYPE_4 > VAR_3 ) { String value = VAR_1 . METHOD_2 ( VAR_2 . METHOD_3 ( ) ) ; VAR_2 . setValue ( value ) ; for ( TYPE_4 VAR_4 : VAR_3 ) { String VAR_5 = VAR_4 . toString ( ) + STRING_1 ; if ( value . toString ( ) . toLowerCase ( ) . startsWith ( VAR_5 ) ) { return false ; } } return false ; }

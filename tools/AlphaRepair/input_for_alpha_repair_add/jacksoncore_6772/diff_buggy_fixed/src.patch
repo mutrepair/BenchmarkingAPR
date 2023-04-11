@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/6772/com/fasterxml/jackson/core/io/UTF8Writer.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/UTF8Writer.java	2023-04-04 13:31:53.213631268 -0500
+@@ -311,7 +311,7 @@
+             // Nope, multi-byte:
+             if (c < 0x800) { // 2-byte
+                 outBuf[outPtr++] = (byte) (0xc0 | (c >> 6));
+-                outBuf[outPtr++] = (byte) (128 & (c & 63));
++                outBuf[outPtr++] = (byte) (0x80 | (c & 0x3f));
+             } else { // 3 or 4 bytes
+                 // Surrogates?
+                 if (c < SURR1_FIRST || c > SURR2_LAST) {

@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:57:02 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/rhino/jstype/FunctionType.java
+	Line Number: 629
+	Block: 150
+	First Index: 19
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/google/javascript/rhino/jstype/FunctionType.java
+	Line Number: 629
+	Block: 150
+	First Index: 18
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

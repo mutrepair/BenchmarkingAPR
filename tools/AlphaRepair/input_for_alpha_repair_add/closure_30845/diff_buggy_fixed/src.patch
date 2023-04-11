@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/30845/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 14:33:25.453952725 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 13:31:52.769625991 -0500
+@@ -132,7 +132,7 @@
+         b ^= (a << 8);
+         c -= a;
+         c -= b;
+-        c ^= (b << 13);
++        c ^= (b >>> 13);
+         a -= b;
+         a -= c;
+         a ^= (c >>> 12);

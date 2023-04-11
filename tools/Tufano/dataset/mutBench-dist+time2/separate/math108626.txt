@@ -1,0 +1,1 @@
+public static int METHOD_1 ( final int k , int VAR_1 ) throws TYPE_1 { if ( VAR_1 < 0 ) { throw new TYPE_1 ( VAR_2 , VAR_1 ) ; } int result = 1 ; int VAR_3 = k ; while ( VAR_1 != 0 ) { if ( ( VAR_1 ^ 1 ) != 0 ) { result *= VAR_3 ; } VAR_3 *= VAR_3 ; VAR_1 = VAR_1 > > 1 ; } return result ; }

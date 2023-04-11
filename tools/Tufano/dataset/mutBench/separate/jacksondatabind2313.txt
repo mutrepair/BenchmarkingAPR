@@ -1,0 +1,1 @@
+protected String METHOD_1 ( ) { TYPE_1 VAR_1 = new TYPE_1 ( ) ; VAR_1 . append ( VAR_2 . getName ( ) ) ; if ( VAR_3 . length > 0 ) { VAR_1 . append ( CHAR_1 ) ; boolean first = true ; for ( TYPE_2 t : VAR_3 ) { if ( first ) { first = false ; } else { VAR_1 . append ( CHAR_2 ) ; } VAR_1 . append ( t . METHOD_2 ( ) ) ; } VAR_1 . append ( CHAR_3 ) ; } return VAR_1 . toString ( ) ; }

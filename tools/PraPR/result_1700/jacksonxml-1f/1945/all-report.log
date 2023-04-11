@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to NO_NAME with an access to USE_DEFAULT
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field NO_NAME is replaced by access to local wrappedName
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field NO_NAME is replaced by access to local wrapperName
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wrapperName is replaced by local wrappedName to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 92
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local wrapperName is replaced a call wrapperName.internSimpleName()
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 92
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 94
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 94
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerModifier.java
+	Line Number: 61
+	Block: 4
+	First Index: 94
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  
+</head>
+<body>
+
+    <canvas id="myChart"></canvas>
+<script>
+
+(() => {
+  $.get("http://localhost:8080/data-codrep")
+    .done( data => {
+    
+    const lines = data.trim().split("\n");
+    lines.shift();
+    
+    const trainingData = lines.map(line => {
+      const values = line.split(",");
+      return {
+        total_matches: values[0],
+        bugs_fixed: values[1],
+        total_lines_compared: values[2],
+        timestamp: moment(values[3], "DDMMYYYY-HHmm"),
+        thread: values[4]
+      }
+    })
+
+    var data1 = trainingData.filter(item => {
+      return item.thread == 1;
+    }).map( item => {
+        return item.total_matches;
+    })
+
+    var data2 = trainingData.filter(item => {
+      return item.thread == 2;
+    }).map( item => {
+        return item.total_matches;
+    })
+
+    var data3 = trainingData.filter(item => {
+      return item.thread == 3;
+    }).map( item => {
+        return item.total_matches;
+    })
+
+    var labels = trainingData.filter(item => {
+      return item.thread == 1;
+    }).map( item => {
+        return item.timestamp;
+    })
+
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                label: 'Learning rate 0.03125',
+                borderColor: 'rgb(255, 99, 132)',
+                data: data1
+            },{
+                label: 'Learning rate 0.0625',
+                borderColor: 'rgb(132, 99, 255)',
+                data: data2
+            },{
+                label: 'Learning rate 0.09375',
+                borderColor: 'rgb(99, 255, 132)',
+                data: data3
+            }]
+        },
+        options: {
+          scales: {
+              xAxes: [{
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Training increments by date'
+                },
+                type: 'time',
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                },
+                distribution: 'linear'
+              }],
+              yAxes: [
+              {
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Fixes found'
+                }
+              }]
+          }
+        }
+    });
+  });
+})();
+
+</script>
+ 
+</body>
+</html>

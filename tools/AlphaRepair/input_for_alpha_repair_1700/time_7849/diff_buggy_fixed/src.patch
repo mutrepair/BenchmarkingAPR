@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/7849/org/joda/time/chrono/BasicFixedMonthChronology.java	2022-10-31 19:48:08.959696887 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BasicFixedMonthChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -134,7 +134,7 @@
+ 
+     //-----------------------------------------------------------------------
+     int getMonthOfYear(long millis, int year) {
+-        long monthZeroBased = (millis - getYearMillis(year)) % MILLIS_PER_MONTH;
++        long monthZeroBased = (millis - getYearMillis(year)) / MILLIS_PER_MONTH;
+         return ((int) monthZeroBased) + 1;
+     }
+ 

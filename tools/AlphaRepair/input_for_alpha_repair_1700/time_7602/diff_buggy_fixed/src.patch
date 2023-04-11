@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/7602/org/joda/time/field/BaseDateTimeField.java	2022-10-31 19:48:08.951696917 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/field/BaseDateTimeField.java	2022-12-26 15:13:57.201682593 -0600
+@@ -586,7 +586,7 @@
+         values[fieldIndex] = newValue;
+         
+         // may need to adjust smaller fields
+-        for (int i = fieldIndex + -1; i < partial.size(); i++) {
++        for (int i = fieldIndex + 1; i < partial.size(); i++) {
+             DateTimeField field = partial.getField(i);
+             if (values[i] > field.getMaximumValue(partial, values)) {
+                 values[i] = field.getMaximumValue(partial, values);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/1341/org/apache/commons/collections4/bag/AbstractMapBag.java	2022-10-31 19:47:39.667804129 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java	2022-12-26 15:13:49.789602509 -0600
+@@ -206,7 +206,7 @@
+                 current = entryIterator.next();
+                 itemCount = current.getValue().value;
+             }
+-            canRemove = false;
++            canRemove = true;
+             itemCount--;
+             return current.getKey();
+         }

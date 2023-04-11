@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.lang3.StringUtils.leftPad(Ljava/lang/String;IC)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.lang3.StringUtils.leftPad(Ljava/lang/String;IC)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to leftPad(Ljava/lang/String;IC)Ljava/lang/String; with a call to leftPad(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to leftPad(Ljava/lang/String;IC)Ljava/lang/String; with a call to leftPad(Ljava/lang/String;I)Ljava/lang/String;
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local strLen is replaced by local size to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local pads is replaced by local size to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local strLen is replaced by local pads to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local pads is replaced by local strLen to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local str is replaced by access to field SPACE
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local strLen is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local pads is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local str is replaced by access to field EMPTY
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local strLen is replaced by access to field PAD_LIMIT
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local pads is replaced by access to field PAD_LIMIT
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local str is replaced by access to field LF
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local str is replaced by access to field CR
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to leftPad with a call to rightPad
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to leftPad with a call to center
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/lang3/StringUtils::leftPad with argument
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/StringUtils::leftPad
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 5411
+	Block: 884
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

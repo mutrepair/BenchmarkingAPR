@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/712/org/mockito/internal/creation/ClassNameFinder.java	2022-10-31 19:48:05.739708810 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/creation/ClassNameFinder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -8,7 +8,7 @@
+ 
+     public static String classNameForMock(Object mock) {
+         if (mock.getClass().getInterfaces().length == 2) {
+-            return mock.getClass().getInterfaces()[1].getSimpleName();
++            return mock.getClass().getInterfaces()[0].getSimpleName();
+         } else {
+             return mock.getClass().getSuperclass().getSimpleName();
+         }

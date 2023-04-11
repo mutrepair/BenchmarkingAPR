@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to findName(III)Lcom/fasterxml/jackson/core/sym/Name; with a call to findName([IIII)Lcom/fasterxml/jackson/core/sym/Name;
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to findName(III)Lcom/fasterxml/jackson/core/sym/Name; with a call to findName(II)Lcom/fasterxml/jackson/core/sym/Name;
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _quad1 is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _quad1 is guarded using local q2
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _quad1 is guarded using field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._quad1 is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::getTextLength()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._quad1 is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::getTextOffset()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._quad1 is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_verifyNoLeadingZeroes()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._quad1 is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipWS()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._quad1 is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipWSOrEnd()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _quad1 is replaced by access to local q2
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _quad1 is replaced by access to local i
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local q2 is replaced by local i to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 87
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local q2 is replaced by access to field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 87
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to findName with a call to parseFieldName
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::findName(III)Lcom/fasterxml/jackson/core/sym/Name; is guarded using default value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _quad1 is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to findName(III)Lcom/fasterxml/jackson/core/sym/Name; is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 88
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/json/UTF8StreamJsonParser::findName
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/fasterxml/jackson/core/json/UTF8StreamJsonParser::parseMediumFieldName
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/fasterxml/jackson/core/json/UTF8StreamJsonParser::parseMediumFieldName to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1486
+	Block: 359
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

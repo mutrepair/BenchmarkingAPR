@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/5827/com/google/javascript/rhino/jstype/JSType.java	2022-10-31 19:47:37.959810296 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/JSType.java	2022-10-29 09:16:21.084867965 -0500
+@@ -973,7 +973,7 @@
+    * ECMA-262 specification.<p>
+    */
+   public final boolean canTestForShallowEqualityWith(JSType that) {
+-    if (isEmptyType()) {
++    if (isEmptyType() || that.isEmptyType()) {
+       return isSubtype(that) || that.isSubtype(this);
+     }
+ 

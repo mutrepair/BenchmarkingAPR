@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to attributes is guarded using value null
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to attributes is guarded using field attributes
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.nodes.Node.attributes is replaced by the call to org.jsoup.nodes.Node::attributes()Lorg/jsoup/nodes/Attributes;
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field parentNode
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 19
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.parent()
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 19
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hashCode with a call to size
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 61
+	First Index: 24
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Attributes::hashCode()I is guarded using default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 61
+	First Index: 24
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to attributes is guarded returning default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to attributes is guarded returning local result
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 61
+	First Index: 24
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to hashCode()I is guarded returning local result
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 61
+	First Index: 24
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 31 with 32
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 16
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 62
+	First Index: 27
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 18
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 62
+	First Index: 29
+	Rank: 1
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 21
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Attributes::hashCode
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 61
+	First Index: 24
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 21
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 345
+	Block: 60
+	First Index: 21
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------

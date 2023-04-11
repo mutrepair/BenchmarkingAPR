@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/38878/org/jfree/chart/labels/StandardPieSectionLabelGenerator.java	2022-10-31 19:47:29.475840783 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/labels/StandardPieSectionLabelGenerator.java	2022-10-29 16:41:07.430717426 -0500
+@@ -223,7 +223,7 @@
+             return true;
+         }
+         if (!(obj instanceof StandardPieSectionLabelGenerator)) {
+-            return true;
++            return false;
+         }
+         StandardPieSectionLabelGenerator that
+                 = (StandardPieSectionLabelGenerator) obj;

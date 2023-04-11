@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local str is replaced by access to field DATE_FORMAT_STR_ISO8601
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local str is replaced by access to field DATE_FORMAT_STR_ISO8601_Z
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local str is replaced by access to field DATE_FORMAT_STR_PLAIN
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local str is replaced by access to field DATE_FORMAT_STR_RFC1123
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value false
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 6 with 7
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: com/fasterxml/jackson/databind/util/StdDateFormat.java
+	Line Number: 377
+	Block: 60
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

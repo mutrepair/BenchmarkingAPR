@@ -1,0 +1,619 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.compress.utils.IOUtils
+AOR<"org.apache.commons.compress.utils.IOUtils">;
+LOR<"org.apache.commons.compress.utils.IOUtils">;
+SOR<"org.apache.commons.compress.utils.IOUtils">;
+COR<"org.apache.commons.compress.utils.IOUtils">;
+ROR<"org.apache.commons.compress.utils.IOUtils">;
+ORU<"org.apache.commons.compress.utils.IOUtils">;
+LVR<"org.apache.commons.compress.utils.IOUtils">;
+STD<"org.apache.commons.compress.utils.IOUtils">;
+
+// Enable operators for org.apache.commons.compress.changes.Change
+AOR<"org.apache.commons.compress.changes.Change">;
+LOR<"org.apache.commons.compress.changes.Change">;
+SOR<"org.apache.commons.compress.changes.Change">;
+COR<"org.apache.commons.compress.changes.Change">;
+ROR<"org.apache.commons.compress.changes.Change">;
+ORU<"org.apache.commons.compress.changes.Change">;
+LVR<"org.apache.commons.compress.changes.Change">;
+STD<"org.apache.commons.compress.changes.Change">;
+
+// Enable operators for org.apache.commons.compress.changes.ChangeSet
+AOR<"org.apache.commons.compress.changes.ChangeSet">;
+LOR<"org.apache.commons.compress.changes.ChangeSet">;
+SOR<"org.apache.commons.compress.changes.ChangeSet">;
+COR<"org.apache.commons.compress.changes.ChangeSet">;
+ROR<"org.apache.commons.compress.changes.ChangeSet">;
+ORU<"org.apache.commons.compress.changes.ChangeSet">;
+LVR<"org.apache.commons.compress.changes.ChangeSet">;
+STD<"org.apache.commons.compress.changes.ChangeSet">;
+
+// Enable operators for org.apache.commons.compress.archivers.cpio.CpioArchiveEntry
+AOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.cpio.CpioConstants
+AOR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+LOR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+SOR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+COR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+ROR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+ORU<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+LVR<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+STD<"org.apache.commons.compress.archivers.cpio.CpioConstants">;
+
+// Enable operators for org.apache.commons.compress.archivers.cpio.CpioUtil
+AOR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+LOR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+SOR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+COR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+ROR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+ORU<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+LVR<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+STD<"org.apache.commons.compress.archivers.cpio.CpioUtil">;
+
+// Enable operators for org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.ArchiveEntry
+AOR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.ArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.ArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.ArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.UnrecognizedExtraField
+AOR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.UnrecognizedExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding
+AOR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+LOR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+SOR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+COR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+ROR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+ORU<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+LVR<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+STD<"org.apache.commons.compress.archivers.zip.Simple8BitZipEncoding">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.NioZipEncoding
+AOR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+LOR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+SOR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+COR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+ROR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+ORU<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+LVR<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+STD<"org.apache.commons.compress.archivers.zip.NioZipEncoding">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipFile
+AOR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+COR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipFile">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipFile">;
+STD<"org.apache.commons.compress.archivers.zip.ZipFile">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipEncodingHelper
+AOR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+COR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+STD<"org.apache.commons.compress.archivers.zip.ZipEncodingHelper">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipLong
+AOR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+COR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipLong">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipLong">;
+STD<"org.apache.commons.compress.archivers.zip.ZipLong">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField
+AOR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipUtil
+AOR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+COR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+STD<"org.apache.commons.compress.archivers.zip.ZipUtil">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.AsiExtraField
+AOR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.AsiExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.FallbackZipEncoding
+AOR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+LOR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+SOR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+COR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+ROR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+ORU<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+LVR<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+STD<"org.apache.commons.compress.archivers.zip.FallbackZipEncoding">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipArchiveEntry
+AOR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.zip.ZipArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.UnicodePathExtraField
+AOR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.UnicodePathExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ExtraFieldUtils
+AOR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+LOR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+SOR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+COR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+ROR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+ORU<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+LVR<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+STD<"org.apache.commons.compress.archivers.zip.ExtraFieldUtils">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipExtraField
+AOR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.ZipExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipEncoding
+AOR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+COR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+STD<"org.apache.commons.compress.archivers.zip.ZipEncoding">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.JarMarker
+AOR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+LOR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+SOR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+COR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+ROR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+ORU<"org.apache.commons.compress.archivers.zip.JarMarker">;
+LVR<"org.apache.commons.compress.archivers.zip.JarMarker">;
+STD<"org.apache.commons.compress.archivers.zip.JarMarker">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.ZipShort
+AOR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+LOR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+SOR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+COR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+ROR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+ORU<"org.apache.commons.compress.archivers.zip.ZipShort">;
+LVR<"org.apache.commons.compress.archivers.zip.ZipShort">;
+STD<"org.apache.commons.compress.archivers.zip.ZipShort">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.UnixStat
+AOR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+LOR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+SOR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+COR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+ROR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+ORU<"org.apache.commons.compress.archivers.zip.UnixStat">;
+LVR<"org.apache.commons.compress.archivers.zip.UnixStat">;
+STD<"org.apache.commons.compress.archivers.zip.UnixStat">;
+
+// Enable operators for org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField
+AOR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+LOR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+SOR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+COR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+ROR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+ORU<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+LVR<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+STD<"org.apache.commons.compress.archivers.zip.AbstractUnicodeExtraField">;
+
+// Enable operators for org.apache.commons.compress.archivers.jar.JarArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.jar.JarArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.jar.JarArchiveEntry
+AOR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.jar.JarArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.jar.JarArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.ArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.ArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.ArchiveStreamFactory
+AOR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+LOR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+SOR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+COR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+ROR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+ORU<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+LVR<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+STD<"org.apache.commons.compress.archivers.ArchiveStreamFactory">;
+
+// Enable operators for org.apache.commons.compress.archivers.ArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.ArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarUtils
+AOR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+LOR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+SOR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+COR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+ROR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+ORU<"org.apache.commons.compress.archivers.tar.TarUtils">;
+LVR<"org.apache.commons.compress.archivers.tar.TarUtils">;
+STD<"org.apache.commons.compress.archivers.tar.TarUtils">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarArchiveEntry
+AOR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.tar.TarArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarBuffer
+AOR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+LOR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+SOR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+COR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+ROR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+ORU<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+LVR<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+STD<"org.apache.commons.compress.archivers.tar.TarBuffer">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.tar.TarArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.tar.TarConstants
+AOR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+LOR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+SOR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+COR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+ROR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+ORU<"org.apache.commons.compress.archivers.tar.TarConstants">;
+LVR<"org.apache.commons.compress.archivers.tar.TarConstants">;
+STD<"org.apache.commons.compress.archivers.tar.TarConstants">;
+
+// Enable operators for org.apache.commons.compress.archivers.ar.ArArchiveInputStream
+AOR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+LOR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+SOR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+COR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+ROR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+ORU<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+LVR<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+STD<"org.apache.commons.compress.archivers.ar.ArArchiveInputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.ar.ArArchiveEntry
+AOR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+LOR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+SOR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+COR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+ROR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+ORU<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+LVR<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+STD<"org.apache.commons.compress.archivers.ar.ArArchiveEntry">;
+
+// Enable operators for org.apache.commons.compress.archivers.ar.ArArchiveOutputStream
+AOR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+LOR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+SOR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+COR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+ROR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+ORU<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+LVR<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+STD<"org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">;
+
+// Enable operators for org.apache.commons.compress.archivers.ArchiveException
+AOR<"org.apache.commons.compress.archivers.ArchiveException">;
+LOR<"org.apache.commons.compress.archivers.ArchiveException">;
+SOR<"org.apache.commons.compress.archivers.ArchiveException">;
+COR<"org.apache.commons.compress.archivers.ArchiveException">;
+ROR<"org.apache.commons.compress.archivers.ArchiveException">;
+ORU<"org.apache.commons.compress.archivers.ArchiveException">;
+LVR<"org.apache.commons.compress.archivers.ArchiveException">;
+STD<"org.apache.commons.compress.archivers.ArchiveException">;
+
+// Enable operators for org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
+AOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+LOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+SOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+COR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+ROR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+ORU<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+LVR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+STD<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream">;
+
+// Enable operators for org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream
+AOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+LOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+SOR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+COR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+ROR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+ORU<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+LVR<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+STD<"org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream">;
+
+// Enable operators for org.apache.commons.compress.compressors.bzip2.BZip2Constants
+AOR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+LOR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+SOR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+COR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+ROR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+ORU<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+LVR<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+STD<"org.apache.commons.compress.compressors.bzip2.BZip2Constants">;
+
+// Enable operators for org.apache.commons.compress.compressors.bzip2.CRC
+AOR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+LOR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+SOR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+COR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+ROR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+ORU<"org.apache.commons.compress.compressors.bzip2.CRC">;
+LVR<"org.apache.commons.compress.compressors.bzip2.CRC">;
+STD<"org.apache.commons.compress.compressors.bzip2.CRC">;
+
+// Enable operators for org.apache.commons.compress.compressors.CompressorStreamFactory
+AOR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+LOR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+SOR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+COR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+ROR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+ORU<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+LVR<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+STD<"org.apache.commons.compress.compressors.CompressorStreamFactory">;
+
+// Enable operators for org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream
+AOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+LOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+SOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+COR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+ROR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+ORU<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+LVR<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+STD<"org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream">;
+
+// Enable operators for org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream
+AOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+LOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+SOR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+COR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+ROR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+ORU<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+LVR<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+STD<"org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream">;
+
+// Enable operators for org.apache.commons.compress.compressors.CompressorOutputStream
+AOR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+LOR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+SOR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+COR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+ROR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+ORU<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+LVR<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+STD<"org.apache.commons.compress.compressors.CompressorOutputStream">;
+
+// Enable operators for org.apache.commons.compress.compressors.CompressorException
+AOR<"org.apache.commons.compress.compressors.CompressorException">;
+LOR<"org.apache.commons.compress.compressors.CompressorException">;
+SOR<"org.apache.commons.compress.compressors.CompressorException">;
+COR<"org.apache.commons.compress.compressors.CompressorException">;
+ROR<"org.apache.commons.compress.compressors.CompressorException">;
+ORU<"org.apache.commons.compress.compressors.CompressorException">;
+LVR<"org.apache.commons.compress.compressors.CompressorException">;
+STD<"org.apache.commons.compress.compressors.CompressorException">;
+
+// Enable operators for org.apache.commons.compress.compressors.CompressorInputStream
+AOR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+LOR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+SOR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+COR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+ROR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+ORU<"org.apache.commons.compress.compressors.CompressorInputStream">;
+LVR<"org.apache.commons.compress.compressors.CompressorInputStream">;
+STD<"org.apache.commons.compress.compressors.CompressorInputStream">;

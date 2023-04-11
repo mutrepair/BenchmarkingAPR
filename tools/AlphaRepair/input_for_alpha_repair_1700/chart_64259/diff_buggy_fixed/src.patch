@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/64259/org/jfree/chart/urls/StandardCategoryURLGenerator.java	2022-10-31 19:47:29.571840440 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/urls/StandardCategoryURLGenerator.java	2022-10-29 16:41:07.438717383 -0500
+@@ -145,7 +145,7 @@
+         String url = this.prefix;
+         Comparable seriesKey = dataset.getRowKey(series);
+         Comparable categoryKey = dataset.getColumnKey(category);
+-        boolean firstParameter = url.indexOf("?") == 0;
++        boolean firstParameter = url.indexOf("?") == -1;
+         url += firstParameter ? "?" : "&amp;";
+         url += this.seriesParameterName + "=";
+         String seriesKeyStr = null;

@@ -1,0 +1,49 @@
+=================================================
+Project : closure_104	start : 23/02/06 21:57
+=================================================
+Project : closure_104	start : 23/02/06 23:21
+Current failed test : com.google.javascript.rhino.jstype.UnionTypeTest::testGreatestSubtypeUnionTypes5 | 23/02/06 23:21
+Mon Feb 06 23:22:53 CST 2023 com.google.javascript.rhino.jstype.UnionType,291
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(result==null){
+return result;
+}else if(this.isObject()&&that.isObject()){
+return getNativeType(JSTypeNative.NO_OBJECT_TYPE);
+}else {
+return getNativeType(JSTypeNative.NO_TYPE);
+}
+
+Time : 23/02/06 23:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(result!=null&&that.isSubtype(result)){
+return result;
+}else if(this.isObject()&&that.isObject()){
+return getNativeType(JSTypeNative.NO_OBJECT_TYPE);
+}else {
+return getNativeType(JSTypeNative.NO_TYPE);
+}
+
+Time : 23/02/06 23:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(result!=null&&(that.isUnknownType()||result.isUnknownType())){
+return result;
+}else if(this.isObject()&&that.isObject()){
+return getNativeType(JSTypeNative.NO_OBJECT_TYPE);
+}else {
+return getNativeType(JSTypeNative.NO_TYPE);
+}
+
+Time : 23/02/06 23:41
+----------------------------------------
+Failed time : 23/02/06 23:42

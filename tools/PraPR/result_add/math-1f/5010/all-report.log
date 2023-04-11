@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to exp with a call to sqrt
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to exp with a call to cosh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to exp with a call to sinh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to exp with a call to tanh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to exp with a call to acosh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to exp with a call to asinh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to exp with a call to atanh
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to exp with a call to signum
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to exp with a call to nextUp
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to exp with a call to expm1
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::exp with argument
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double division with multiplication
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::exp
+	File Name: org/apache/commons/math3/analysis/function/Sigmoid.java
+	Line Number: 126
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

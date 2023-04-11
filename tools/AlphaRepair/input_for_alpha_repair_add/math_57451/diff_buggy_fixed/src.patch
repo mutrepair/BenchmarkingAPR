@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/57451/org/apache/commons/math3/linear/SchurTransformer.java	2023-04-04 14:33:26.109959081 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/linear/SchurTransformer.java	2023-04-04 13:31:54.009640726 -0500
+@@ -381,7 +381,7 @@
+                 if (k != im) {
+                     matrixT[k][k - 1] = -s * shift.x;
+                 } else if (il != im) {
+-                    matrixT[k][k - 1] = +matrixT[k][k - 1];
++                    matrixT[k][k - 1] = -matrixT[k][k - 1];
+                 }
+                 p = p + s;
+                 shift.x = p / s;

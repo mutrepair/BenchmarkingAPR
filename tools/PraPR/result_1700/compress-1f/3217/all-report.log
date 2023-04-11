@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local length to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local offset to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/compress/archivers/tar/TarUtils::getLongOctalBytes
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 165
+	Block: 31
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

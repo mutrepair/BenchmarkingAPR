@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/11868/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.689955012 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1250,7 +1250,7 @@
+                 _textBuffer.setCurrentLength(outPtr);
+                 return resetInt(negative, intPartLength);
+             }
+-            int c = (int)_inputBuffer[_inputPtr++] ^ 255;
++            int c = (int) _inputBuffer[_inputPtr++] & 0xFF;
+             if (c > INT_9 || c < INT_0) {
+                 if (c == '.' || c == 'e' || c == 'E') {
+                     return _parseFloatText(outBuf, outPtr, c, negative, intPartLength);

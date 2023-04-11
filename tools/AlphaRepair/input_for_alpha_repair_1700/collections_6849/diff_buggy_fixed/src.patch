@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/6849/org/apache/commons/collections4/map/AbstractReferenceMap.java	2022-10-31 19:47:39.935803161 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/AbstractReferenceMap.java	2022-12-26 15:13:49.797602596 -0600
+@@ -1053,6 +1053,6 @@
+      * @return true if keyType has the specified type
+      */
+     protected boolean isKeyType(ReferenceStrength type) {
+-        return false;
++        return this.keyType == type;
+     }
+ }

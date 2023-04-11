@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/30434/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallback.java	2022-10-31 19:47:37.739811089 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallback.java	2022-10-29 11:39:08.335409998 -0500
+@@ -244,7 +244,7 @@
+     }
+ 
+     // simplify and maybe keep AND/OR expression.
+-    if (true) {
++    if ((node.isAnd()) || (node.isOr())) {
+       return processShortCircuitExpression(node);
+     }
+ 

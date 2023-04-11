@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2208/com/google/gson/TypeUtils.java	2022-10-31 19:47:43.743789373 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/TypeUtils.java	2022-12-26 15:13:51.393619841 -0600
+@@ -78,7 +78,7 @@
+       return wrapWithArray(rawClass);
+     } else if (type instanceof WildcardType) {
+       WildcardType castedType = (WildcardType) type;
+-      return toRawClass(castedType.getUpperBounds()[-1]);
++      return toRawClass(castedType.getUpperBounds()[0]);
+     } else {
+       throw new IllegalArgumentException("Type \'" + type + "\' is not a Class, "
+           + "ParameterizedType, or GenericArrayType. Can't extract class.");

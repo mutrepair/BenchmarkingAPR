@@ -1,0 +1,165 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.google.javascript</groupId>
+  <artifactId>closure-compiler</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Closure Compiler</name>
+  <version>r@build.svnVersion@</version>
+
+  <url>http://code.google.com/p/closure-compiler/</url>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <dependencies>
+  <dependency>
+    <groupId>rhino</groupId>
+    <artifactId>rhino</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/build/lib/rhino.jar</systemPath>
+  </dependency>
+    <dependency>
+      <groupId>args4j</groupId>
+      <artifactId>args4j</artifactId>
+      <version>2.0.16</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/args4j.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>13.0.1</version>
+      <scope>system</scope>
+    <systemPath>${project.basedir}/lib/guava.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java</artifactId>
+      <version>2.4.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/protobuf-java.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20090211</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/json.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.8.2</version>
+      
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/ant.jar</systemPath>
+    </dependency>
+
+ 
+
+    <dependency>
+      <groupId>com.googlecode.jarjar</groupId>
+      <artifactId>jarjar</artifactId>
+      <version>1.1</version>
+      
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/jarjar.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      
+      <version>4.11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>caja</groupId>
+      <artifactId>caja</artifactId>
+      <version>r4314</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/caja-r4314.jar</systemPath>
+    </dependency>
+	
+
+  </dependencies>
+  <build>
+
+
+   <plugins>
+    <plugin>
+      <groupId>org.mudebug</groupId>
+      <artifactId>prapr-plugin</artifactId>
+      <version>2.0.3-SNAPSHOT</version>
+      <configuration>
+        <threads>1</threads>
+        <mutators>
+          <mutator>ALL</mutator>
+        </mutators>
+        <outputFormats>
+          <param>COMPRESSED-XML</param>
+          <param>LOG</param>
+        </outputFormats>
+      </configuration>
+    </plugin>
+   
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+<version>2.18</version>
+        <configuration>
+          <excludes><exclude>**/PeepholeSubstituteAlternateSyntaxTest$StringCompareTestCase.class</exclude></excludes>
+          <argLine>-Xmx1G</argLine>
+        </configuration>
+      </plugin>
+      
+
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default-compile</id>
+            <phase>none</phase>
+          </execution>
+          <execution>
+            <id>default-testCompile</id>
+            <phase>none</phase>
+          </execution>
+        </executions>
+     </plugin>
+     <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-resources-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>default-resources</id>
+          <phase>none</phase>
+        </execution>
+        <execution>
+          <id>default-testResources</id>
+          <phase>none</phase>
+        </execution>
+      </executions>
+   </plugin>
+    
+
+    </plugins>
+  <sourceDirectory>src</sourceDirectory><testSourceDirectory>test</testSourceDirectory><outputDirectory>build/classes</outputDirectory><testOutputDirectory>build/test</testOutputDirectory></build>
+</project>

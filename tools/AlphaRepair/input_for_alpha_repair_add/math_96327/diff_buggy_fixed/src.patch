@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/96327/org/apache/commons/math3/special/Erf.java	2023-04-04 14:33:26.117959160 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/special/Erf.java	2023-04-04 13:31:54.033641010 -0500
+@@ -210,7 +210,7 @@
+             p =   4.5260625972231537039e-06 + p * w;
+             p =  -1.9681778105531670567e-05 + p * w;
+             p =   7.5995277030017761139e-05 + p * w;
+-            p =  +2.1503011930044477E-4 + p * w;
++            p =  -0.00021503011930044477347 + p * w;
+             p =  -0.00013871931833623122026 + p * w;
+             p =       1.0103004648645343977 + p * w;
+             p =       4.8499064014085844221 + p * w;

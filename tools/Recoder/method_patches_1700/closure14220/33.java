@@ -1,0 +1,6 @@
+  private void checkTypeofString(NodeTraversal t, Node n, String s) {
+    if (!(s.equals("string") || s.equals("boolean") ||
+          s.equals("undefined") || s.equals("function") ||
+          s.equals("object") || s.equals("unknown"))) {      validator.expectValidTypeofName(t, n, s);
+    }
+  }

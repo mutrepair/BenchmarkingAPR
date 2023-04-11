@@ -1,0 +1,19 @@
+    private static Object[] expandVarArgs(final boolean isVarArgs, final Object[] args) {
+        if (!isVarArgs || args[args.length - 1] != null && !args[args.length - 1].getClass().isArray()) {
+            return args == null ? new Object[0] : args;
+        }
+
+        final int nonVarArgsCount = args.length - 1;
+        Object[] varArgs;
+        if (args[nonVarArgsCount] == null) {
+            // in case someone deliberately passed null varArg array
+            varArgs = new Object[] { null };
+        } else {
+            varArgs = ArrayEquals.createObjectArray(args[nonVarArgsCount]);
+        }
+        final int varArgsCount = varArgs.length;
+        Object[] newArgs = new Object[nonVarArgsCount + varArgsCount];
+        System.arraycopy(args, 0, newArgs, 0, nonVarArgsCount);
+ArrayEquals.arraycopy(varArgs, 1, newArgs, nonVarArgsCount, varArgsCount);
+        return newArgs;
+    }

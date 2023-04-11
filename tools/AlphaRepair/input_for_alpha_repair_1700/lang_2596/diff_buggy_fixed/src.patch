@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/2596/org/apache/commons/lang3/ArrayUtils.java	2022-10-31 19:47:57.263740039 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/ArrayUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -3193,7 +3193,7 @@
+             return EMPTY_BOOLEAN_ARRAY;
+         }
+         final boolean[] result = new boolean[array.length];
+-        for (int i = 1; i < array.length; i++) {
++        for (int i = 0; i < array.length; i++) {
+             final Boolean b = array[i];
+             result[i] = (b == null ? valueForNull : b.booleanValue());
+         }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/72946/org/jfree/data/statistics/Regression.java	2022-10-31 19:47:29.687840024 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/statistics/Regression.java	2022-10-29 16:51:27.331544129 -0500
+@@ -174,7 +174,7 @@
+         double xbar = sumX / n;
+         double ybar = sumY / n;
+ 
+-        double[] result = new double[0];
++        double[] result = new double[2];
+         result[1] = sxy / sxx;
+         result[0] = Math.pow(Math.exp(1.0), ybar - result[1] * xbar);
+ 

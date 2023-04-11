@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13334/org/joda/time/format/DateTimeFormat.java	2022-10-31 19:48:08.711697806 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormat.java	2022-12-26 15:13:57.201682593 -0600
+@@ -734,7 +734,7 @@
+      * @return the formatter
+      */
+     private static DateTimeFormatter createFormatterForStyleIndex(int dateStyle, int timeStyle) {
+-        int index = ((dateStyle << 0) + dateStyle) + timeStyle;
++        int index = ((dateStyle << 2) + dateStyle) + timeStyle;
+         // Should never happen but do a double check...
+         if (index >= STYLE_CACHE.length) {
+             return createDateTimeFormatter(dateStyle, timeStyle);

@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.mockito.internal.matchers.apachecommons.EqualsBuilder.isEquals is replaced by the call to org.mockito.internal.matchers.apachecommons.EqualsBuilder::setEquals(Z)V
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 529
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field isEquals is replaced by access to local lhs
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 529
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field isEquals is replaced by access to local rhs
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 529
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 529
+	Block: 105
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable isEquals
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 529
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

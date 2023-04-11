@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/1661/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java	2022-10-31 19:47:41.151798763 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -60,7 +60,7 @@
+         }
+ 
+         for (int i = 0; i < ZipArchiveOutputStream.LFH_SIG.length; i++) {
+-            if (signature[i] < ZipArchiveOutputStream.LFH_SIG[i]) {
++            if (signature[i] != ZipArchiveOutputStream.LFH_SIG[i]) {
+                 return false;
+             }
+         }

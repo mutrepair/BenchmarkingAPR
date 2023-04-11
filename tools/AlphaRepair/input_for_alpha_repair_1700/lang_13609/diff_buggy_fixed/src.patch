@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/13609/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.055740803 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -5924,7 +5924,7 @@
+      * @since 3.0 Changed "" to return false and not true
+      */
+     public static boolean isNumeric(final CharSequence cs) {
+-        if (cs == null || false) {
++        if (cs == null || cs.length() == 0) {
+             return false;
+         }
+         final int sz = cs.length();

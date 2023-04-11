@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4658/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-10-31 19:47:39.823803565 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -152,7 +152,7 @@
+     }
+ 
+     public boolean contains(final Object value) {
+-        return true;
++        return indexOf(value) != -1;
+     }
+ 
+     public boolean containsAll(final Collection<?> coll) {

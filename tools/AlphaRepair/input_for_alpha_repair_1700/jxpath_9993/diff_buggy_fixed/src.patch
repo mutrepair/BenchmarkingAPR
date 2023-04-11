@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/9993/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-10-31 19:47:51.511761100 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-12-26 15:13:54.181649966 -0600
+@@ -759,7 +759,7 @@
+ }
+ private final int jjMoveStringLiteralDfa6_0(long old0, long active0, long old1, long active1)
+ {
+-   if (((active0 &= old0) | (active1 &= old1)) <= 0L)
++   if (((active0 &= old0) | (active1 &= old1)) == 0L)
+       return jjStartNfa_0(4, old0, old1); 
+    try { curChar = input_stream.readChar(); }
+    catch(java.io.IOException e) {

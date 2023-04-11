@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/2039/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.975806629 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -486,7 +486,7 @@
+             index += 2;
+         } else if ((index > 1 && contains(value, index - 2, 1, "B", "H", "D")) ||
+                    (index > 2 && contains(value, index - 3, 1, "B", "H", "D")) ||
+-                   (index > 3 && contains(value, index + 4, 1, "B", "H"))) {
++                   (index > 3 && contains(value, index - 4, 1, "B", "H"))) {
+             //-- Parker's rule (with some further refinements) - "hugh"
+             index += 2;
+         } else {

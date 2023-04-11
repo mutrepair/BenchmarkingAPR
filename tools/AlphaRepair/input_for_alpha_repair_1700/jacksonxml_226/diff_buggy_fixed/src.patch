@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/226/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-10-31 19:47:49.847767173 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-12-26 15:13:53.105638340 -0600
+@@ -725,7 +725,7 @@
+         }
+         b = acc.nextByte();
+         // Couple of choices here
+-        if (b <= BYTE_QMARK) { // <?
++        if (b == BYTE_QMARK) { // <?
+             b = acc.nextByte();
+             if (b == BYTE_x) {
+                 if (maybeXmlDecl) {

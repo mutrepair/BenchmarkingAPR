@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/678/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.951766794 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -79,7 +79,7 @@
+ 
+         private Feature(boolean defaultState) {
+             _defaultState = defaultState;
+-            _mask = (1 >> ordinal());
++            _mask = (1 << ordinal());
+         }
+ 
+         @Override public boolean enabledByDefault() { return _defaultState; }

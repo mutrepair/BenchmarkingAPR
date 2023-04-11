@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to printWrapped(Ljava/io/PrintWriter;IILjava/lang/String;)V with a call to printWrapped(Ljava/io/PrintWriter;ILjava/lang/String;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 8
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local width is replaced by access to field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local text is replaced by access to field DEFAULT_SYNTAX_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local width is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local text is replaced by access to field DEFAULT_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local width is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local text is replaced by access to field DEFAULT_LONG_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local width is replaced by access to field defaultWidth
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local text is replaced by access to field DEFAULT_ARG_NAME
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local width is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local text is replaced by access to field defaultSyntaxPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local text is replaced a call text.toLowerCase()
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 7
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to printWrapped(Ljava/io/PrintWriter;IILjava/lang/String;)V is guarded returning enclosing method
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 8
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.cli.HelpFormatter::printWrapped(Ljava/io/PrintWriter;IILjava/lang/String;)V is guarded
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 8
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 6
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/HelpFormatter::printWrapped
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 607
+	Block: 56
+	First Index: 8
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

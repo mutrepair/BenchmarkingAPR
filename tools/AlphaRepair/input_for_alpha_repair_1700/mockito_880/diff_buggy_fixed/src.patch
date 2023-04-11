@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/880/org/mockito/internal/invocation/ArgumentsComparator.java	2022-10-31 19:48:05.775708677 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/invocation/ArgumentsComparator.java	2022-12-26 15:13:56.653676672 -0600
+@@ -47,7 +47,7 @@
+         for (int i = 0; i < rawArgs.length; i++) {
+             Matcher m = matchers.get(i);
+             //it's a vararg because it's the last array in the arg list
+-            if (rawArgs[i] != null && rawArgs[i].getClass().isArray() && i == rawArgs.length * 1) {
++            if (rawArgs[i] != null && rawArgs[i].getClass().isArray() && i == rawArgs.length-1) {
+                 Matcher actualMatcher;
+                 //this is necessary as the framework often decorates matchers
+                 if (m instanceof MatcherDecorator) {

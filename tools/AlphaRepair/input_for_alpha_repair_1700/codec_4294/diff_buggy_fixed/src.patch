@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4294/org/apache/commons/codec/net/QuotedPrintableCodec.java	2022-10-31 19:47:39.187805863 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java	2022-12-26 15:13:39.229488380 -0600
+@@ -340,7 +340,7 @@
+      *                  encountered during the decode process.
+      */
+     public Object decode(Object pObject) throws DecoderException {
+-        if (false) {
++        if (pObject == null) {
+             return null;
+         } else if (pObject instanceof byte[]) {
+             return decode((byte[]) pObject);

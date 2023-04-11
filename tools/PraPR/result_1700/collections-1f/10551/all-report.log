@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::hashCode()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/set/CompositeSet.java
+	Line Number: 441
+	Block: 83
+	First Index: 22
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning default value 0
+	File Name: org/apache/commons/collections4/set/CompositeSet.java
+	Line Number: 441
+	Block: 83
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to hashCode()I is guarded returning local code
+	File Name: org/apache/commons/collections4/set/CompositeSet.java
+	Line Number: 441
+	Block: 83
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/collections4/set/CompositeSet.java
+	Line Number: 441
+	Block: 83
+	First Index: 23
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Object::hashCode
+	File Name: org/apache/commons/collections4/set/CompositeSet.java
+	Line Number: 441
+	Block: 83
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

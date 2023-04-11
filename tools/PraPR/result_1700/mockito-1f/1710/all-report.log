@@ -1,0 +1,267 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.Stack.subList(II)Ljava/util/List; is replaced by an instantiation of type org.apache.velocity.anakia.NodeList using (Lorg/jdom/Element;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method java.util.Stack.subList(II)Ljava/util/List; is replaced by an instantiation of type org.mudebug.prapr.reloc.commons.collections.CursorableLinkedList using ()V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_6
+	Description: the call to factory method java.util.Stack.subList(II)Ljava/util/List; is replaced by an instantiation of type org.apache.velocity.anakia.NodeList using (Ljava/util/List;Z)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to addAll(Ljava/util/Collection;)Z with a call to addAll(ILjava/util/Collection;)Z
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to matcherStack is guarded using value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to matcherStack is guarded using field matcherStack
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to addAll with a call to containsAll
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to addAll with a call to removeAll
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to addAll with a call to retainAll
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Stack::size()I is guarded using default value 0
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Stack::subList(II)Ljava/util/List; is guarded using default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::addAll(Ljava/util/Collection;)Z is guarded using default value false
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to matcherStack is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to matcherStack is guarded returning local result
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to subList(II)Ljava/util/List; is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to addAll(Ljava/util/Collection;)Z is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to size()I is guarded returning local result
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to subList(II)Ljava/util/List; is guarded returning local result
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to addAll(Ljava/util/Collection;)Z is guarded returning local result
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Stack::size
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Stack::subList
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::addAll
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 72
+	Block: 15
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

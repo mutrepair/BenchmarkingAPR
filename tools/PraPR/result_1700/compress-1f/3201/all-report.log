@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local offset to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 160
+	Block: 31
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 160
+	Block: 31
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 160
+	Block: 31
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 160
+	Block: 31
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/11435/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-10-31 19:47:39.647804201 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-12-26 15:13:49.805602682 -0600
+@@ -1789,7 +1789,7 @@
+ 
+             final int ret = getKeyAnalyzer().compare(key, fromKey);
+             if (fromInclusive || forceInclusive) {
+-                return ret >= -1;
++                return ret >= 0;
+             }
+             return ret > 0;
+         }

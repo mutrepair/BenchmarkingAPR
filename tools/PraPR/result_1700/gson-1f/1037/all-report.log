@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to nextInObject with a call to nextInArray
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 75
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.gson.stream.JsonReader::nextInObject(Z)Lcom/google/gson/stream/JsonToken; is guarded using default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 75
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to nextInObject(Z)Lcom/google/gson/stream/JsonToken; is guarded returning default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 75
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to nextInObject(Z)Lcom/google/gson/stream/JsonToken; is guarded returning field token
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 75
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 74
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/gson/stream/JsonReader::nextInObject
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 75
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/google/gson/stream/JsonReader::quickPeek
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 76
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/google/gson/stream/JsonReader::quickPeek to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 375
+	Block: 27
+	First Index: 76
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

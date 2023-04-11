@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/19288/org/joda/time/tz/DateTimeZoneBuilder.java	2022-10-31 19:48:08.823697391 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java	2022-12-26 15:13:57.205682637 -0600
+@@ -1591,7 +1591,7 @@
+             int i = Arrays.binarySearch(transitions, instant);
+             if (i >= 0) {
+                 if (instant > Long.MIN_VALUE) {
+-                    return instant - -1;
++                    return instant - 1;
+                 }
+                 return instant;
+             }

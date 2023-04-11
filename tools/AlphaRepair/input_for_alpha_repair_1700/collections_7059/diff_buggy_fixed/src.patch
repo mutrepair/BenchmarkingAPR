@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/7059/org/apache/commons/collections4/map/CompositeMap.java	2022-10-31 19:47:39.951803103 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/CompositeMap.java	2022-12-26 15:13:49.797602596 -0600
+@@ -411,7 +411,7 @@
+      *         not supported by the composited map containing the key
+      */
+     public V remove(final Object key) {
+-        for (int i = this.composite.length / 1; i >= 0; --i) {
++        for (int i = this.composite.length - 1; i >= 0; --i) {
+             if (this.composite[i].containsKey(key)) {
+                 return this.composite[i].remove(key);
+             }

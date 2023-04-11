@@ -1,0 +1,103 @@
+
+init:
+     [echo] -------- commons-codec 1.4-dev --------
+
+prepare:
+
+static:
+
+compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/codec-1f/build.xml:58: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/codec-1f/build.xml:175: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 15 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 2.20 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 4408
+    [junit] MAJOR: Mutants covered:   4205 (95.39%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 15 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/15 - org.apache.commons.codec.net.RFC1522CodecTest (5ms / 50):
+    [junit] MAJOR: 564 (7 / 50 / 50) -> AVG-RTPM: 11ms
+    [junit] MAJOR: Mutants killed / live: 7 (1-6-0) / 4198
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/15 - org.apache.commons.codec.StringEncoderComparatorTest (14ms / 503):
+    [junit] MAJOR: 10242 (110 / 503 / 503) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 117 (24-84-1) / 4088
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/15 - org.apache.commons.codec.net.QCodecTest (17ms / 253):
+    [junit] MAJOR: 13199 (143 / 246 / 253) -> AVG-RTPM: 12ms
+    [junit] MAJOR: Mutants killed / live: 260 (106-140-1) / 3945
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/15 - org.apache.commons.codec.binary.BinaryCodecTest (18ms / 184):
+    [junit] MAJOR: 16238 (152 / 184 / 184) -> AVG-RTPM: 15ms
+    [junit] MAJOR: Mutants killed / live: 412 (164-232-1) / 3793
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/15 - org.apache.commons.codec.net.QuotedPrintableCodecTest (19ms / 107):
+    [junit] MAJOR: 16561 (23 / 40 / 107) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 435 (178-241-1) / 3770
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/15 - org.apache.commons.codec.language.CaverphoneTest (20ms / 73):
+    [junit] MAJOR: 17106 (32 / 73 / 73) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 467 (204-247-1) / 3738
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/15 - org.apache.commons.codec.net.URLCodecTest (20ms / 113):
+    [junit] MAJOR: 18239 (94 / 113 / 113) -> AVG-RTPM: 10ms
+    [junit] MAJOR: Mutants killed / live: 561 (262-280-1) / 3644
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/15 - org.apache.commons.codec.language.RefinedSoundexTest (25ms / 77):
+    [junit] MAJOR: 18721 (46 / 67 / 77) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 607 (294-293-1) / 3598
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/15 - org.apache.commons.codec.net.BCodecTest (30ms / 695):
+    [junit] MAJOR: 25510 (505 / 655 / 695) -> AVG-RTPM: 10ms
+    [junit] MAJOR: Mutants killed / live: 1112 (596-495-1) / 3093
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/15 - org.apache.commons.codec.language.SoundexTest (31ms / 163):
+    [junit] MAJOR: 26490 (69 / 113 / 163) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 1181 (649-511-1) / 3024
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/15 - org.apache.commons.codec.language.DoubleMetaphoneTest (72ms / 1974):
+    [junit] MAJOR: 186217 (774 / 1897 / 1974) -> AVG-RTPM: 84ms
+    [junit] MAJOR: Mutants killed / live: 1955 (1259-654-1) / 2250
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/15 - org.apache.commons.codec.binary.HexTest (89ms / 66):
+    [junit] MAJOR: 187187 (59 / 66 / 66) -> AVG-RTPM: 14ms
+    [junit] MAJOR: Mutants killed / live: 2014 (1277-695-1) / 2191
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/15 - org.apache.commons.codec.binary.Base64Test (98ms / 859):
+    [junit] MAJOR: 196753 (217 / 359 / 859) -> AVG-RTPM: 26ms
+    [junit] MAJOR: Mutants killed / live: 2231 (1408-781-1) / 1974
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/15 - org.apache.commons.codec.language.MetaphoneTest (138ms / 470):
+    [junit] MAJOR: 213694 (370 / 463 / 470) -> AVG-RTPM: 36ms
+    [junit] MAJOR: Mutants killed / live: 2601 (1686-872-1) / 1604
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/15 - org.apache.commons.codec.digest.DigestUtilsTest (246ms / 38):
+    [junit] MAJOR: 215593 (10 / 15 / 38) -> AVG-RTPM: 126ms
+    [junit] MAJOR: Mutants killed / live: 2611 (1688-879-1) / 1594
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  215.6 seconds
+    [junit] MAJOR: Mutation score: 59.23% (62.09%)
+    [junit] MAJOR: Mutants killed / live: 2611 (1688-879-1) / 1594
+    [junit] MAJOR: Mutant executions: 4844
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/codec-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 3 minutes 38 seconds

@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local target is replaced by local node to be used
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local target is replaced by local parent to be used
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local target is replaced by local callee to be used
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/ClosureCodingConvention.java
+	Line Number: 197
+	Block: 44
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

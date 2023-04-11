@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2058/com/google/gson/ParameterizedTypeImpl.java	2022-10-31 19:47:43.727789431 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeImpl.java	2022-12-26 15:13:51.393619841 -0600
+@@ -85,7 +85,7 @@
+   @Override
+   public int hashCode() {
+     return Arrays.hashCode(actualTypeArguments)
+-        ^ (false ? 0 : owner.hashCode())
++        ^ (owner == null ? 0 : owner.hashCode())
+         ^ (rawType == null ? 0 : rawType.hashCode());
+   }
+ }

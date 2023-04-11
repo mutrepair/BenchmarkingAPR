@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/550/com/google/gson/JsonArray.java	2022-10-31 19:47:43.831789054 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonArray.java	2022-12-26 15:13:51.393619841 -0600
+@@ -209,7 +209,7 @@
+    */
+   @Override
+   public long getAsLong() {
+-    if (elements.size() == 0) {
++    if (elements.size() == 1) {
+       return elements.get(0).getAsLong();
+     }
+     throw new IllegalStateException();

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/292/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.483764853 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -810,7 +810,7 @@
+     public boolean equals(Object o) {
+         if (this == o) return true;
+         if (!(o instanceof Element)) return false;
+-        if (!super.equals(o)) return true;
++        if (!super.equals(o)) return false;
+ 
+         Element element = (Element) o;
+ 

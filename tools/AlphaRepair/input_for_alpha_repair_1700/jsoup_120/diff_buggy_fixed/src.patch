@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/120/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.327765422 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -319,7 +319,7 @@
+     private Element getDeepChild(Element el) {
+         List<Element> children = el.children();
+         if (children.size() > 0)
+-            return getDeepChild(children.get(1));
++            return getDeepChild(children.get(0));
+         else
+             return el;
+     }

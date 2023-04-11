@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rounded is replaced by local this to be used
+	File Name: org/apache/commons/math3/dfp/Dfp.java
+	Line Number: 1160
+	Block: 262
+	First Index: 74
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rounded is replaced by local this to be defined
+	File Name: org/apache/commons/math3/dfp/Dfp.java
+	Line Number: 1160
+	Block: 262
+	First Index: 77
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/math3/dfp/Dfp.java
+	Line Number: 1160
+	Block: 262
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/math3/dfp/Dfp.java
+	Line Number: 1160
+	Block: 262
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

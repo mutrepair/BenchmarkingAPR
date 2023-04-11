@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/431/com/google/gson/Escaper.java	2022-10-31 19:47:43.803789156 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Escaper.java	2022-12-26 15:13:51.389619797 -0600
+@@ -136,7 +136,7 @@
+     return codePoint < 0x20
+         || codePoint == 0x2028  // Line separator
+         || codePoint == 0x2029  // Paragraph separator
+-        || (codePoint >= 0x7f && codePoint == 159);
++        || (codePoint >= 0x7f && codePoint <= 0x9f);
+   }
+ 
+   private static void appendHexJavaScriptRepresentation(int codePoint, Appendable out)

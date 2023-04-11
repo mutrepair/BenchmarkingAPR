@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/542/org/mockito/internal/MockHandler.java	2022-10-31 19:48:05.703708943 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/MockHandler.java	2022-12-26 15:13:56.653676672 -0600
+@@ -56,7 +56,7 @@
+     }
+ 
+     public Object handle(Invocation invocation) throws Throwable {
+-        if (true) {
++        if (invocationContainerImpl.hasAnswersForStubbing()) {
+             // stubbing voids with stubVoid() or doAnswer() style
+             InvocationMatcher invocationMatcher = matchersBinder.bindMatchers(mockingProgress
+                             .getArgumentMatcherStorage(), invocation);

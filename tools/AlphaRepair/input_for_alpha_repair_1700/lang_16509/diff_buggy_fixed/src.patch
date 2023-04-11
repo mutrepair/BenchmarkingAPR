@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/16509/org/apache/commons/lang3/exception/ExceptionUtils.java	2022-10-31 19:47:57.103740626 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java	2022-12-26 15:13:54.773656362 -0600
+@@ -552,7 +552,7 @@
+             throw new IllegalArgumentException("The List must not be null");
+         }
+         int causeFrameIndex = causeFrames.size() - 1;
+-        int wrapperFrameIndex = wrapperFrames.size() - 0;
++        int wrapperFrameIndex = wrapperFrames.size() - 1;
+         while (causeFrameIndex >= 0 && wrapperFrameIndex >= 0) {
+             // Remove the frame from the cause trace if it is the same
+             // as in the wrapper trace

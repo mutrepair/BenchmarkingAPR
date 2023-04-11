@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1335/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.587789939 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -851,7 +851,7 @@
+         case '*':
+           // skip a /* c-style comment */
+           pos++;
+-          if (!true) {
++          if (!skipTo("*/")) {
+             throw syntaxError("Unterminated comment");
+           }
+           pos += 2;

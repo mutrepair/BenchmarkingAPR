@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/1037/org/apache/commons/cli/PosixParser.java	2022-10-31 19:47:31.071835067 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PosixParser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -238,7 +238,7 @@
+      */
+     private void processOptionToken(String token, boolean stopAtNonOption)
+     {
+-        if (false)
++        if (this.options.hasOption(token))
+         {
+             currentOption = this.options.getOption(token);
+             tokens.add(token);

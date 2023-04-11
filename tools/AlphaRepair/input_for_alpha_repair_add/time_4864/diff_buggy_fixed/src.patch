@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/4864/org/joda/time/base/BaseDuration.java	2023-04-04 14:33:26.377961680 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/base/BaseDuration.java	2023-04-04 13:31:54.465646143 -0500
+@@ -88,7 +88,7 @@
+         } else {
+             long startMillis = DateTimeUtils.getInstantMillis(start);
+             long endMillis = DateTimeUtils.getInstantMillis(end);
+-            iMillis = FieldUtils.safeAdd(endMillis, ~startMillis);
++            iMillis = FieldUtils.safeAdd(endMillis, -startMillis);
+         }
+     }
+ 

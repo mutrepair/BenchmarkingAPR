@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/91/com/fasterxml/jackson/core/Base64Variant.java	2022-10-31 19:47:45.263783856 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/Base64Variant.java	2022-12-26 15:13:51.921625546 -0600
+@@ -245,7 +245,7 @@
+         buffer[ptr++] = _base64ToAsciiC[(b24 >> 18) & 0x3F];
+         buffer[ptr++] = _base64ToAsciiC[(b24 >> 12) & 0x3F];
+         buffer[ptr++] = _base64ToAsciiC[(b24 >> 6) & 0x3F];
+-        buffer[ptr++] = _base64ToAsciiC[b24 & 0];
++        buffer[ptr++] = _base64ToAsciiC[b24 & 0x3F];
+         return ptr;
+     }
+ 

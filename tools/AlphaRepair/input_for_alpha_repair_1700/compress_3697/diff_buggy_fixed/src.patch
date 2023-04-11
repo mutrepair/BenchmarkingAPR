@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3697/org/apache/commons/compress/archivers/zip/NioZipEncoding.java	2022-10-31 19:47:41.299798227 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/NioZipEncoding.java	2022-12-26 15:13:50.345608516 -0600
+@@ -85,7 +85,7 @@
+                 // pseudo-URL encoding style to ByteBuffer.
+                 if (res.length() * 6 > out.remaining()) {
+                     out = ZipEncodingHelper.growBuffer(out, out.position()
+-                                                       + res.length() * 0);
++                                                       + res.length() * 6);
+                 }
+ 
+                 for (int i=0; i<res.length(); ++i) {

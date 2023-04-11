@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/94364/org/apache/commons/math3/random/Well44497b.java	2023-04-04 14:33:26.117959160 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/random/Well44497b.java	2023-04-04 13:31:54.033641010 -0500
+@@ -95,7 +95,7 @@
+ 
+         // the values below include the errata of the original article
+         final int z0       = (0xFFFF8000 & v[indexRm1]) ^ (0x00007FFF & v[indexRm2]);
+-        final int z1       = (v0 ^ (v0 << 24))  ^ (vM1 & (vM1 >>> 30));
++        final int z1       = (v0 ^ (v0 << 24))  ^ (vM1 ^ (vM1 >>> 30));
+         final int z2       = (vM2 ^ (vM2 << 10)) ^ (vM3 << 26);
+         final int z3       = z1      ^ z2;
+         final int z2Prime  = ((z2 << 9) ^ (z2 >>> 23)) & 0xfbffffff;

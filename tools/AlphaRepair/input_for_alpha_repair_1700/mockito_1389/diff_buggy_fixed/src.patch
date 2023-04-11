@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1389/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-10-31 19:48:05.447709890 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -423,7 +423,7 @@
+      * @return EqualsBuilder - used to chain calls.
+      */
+     public EqualsBuilder append(int lhs, int rhs) {
+-        if (isEquals == true) {
++        if (isEquals == false) {
+             return this;
+         }
+         isEquals = (lhs == rhs);

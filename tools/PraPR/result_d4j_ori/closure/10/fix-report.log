@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Feb 14 10:59:57 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to allResultsMatch with a call to anyResultsMatch
+	File Name: com/google/javascript/jscomp/NodeUtil.java
+	Line Number: 1417
+	Block: 370
+	First Index: 9
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------

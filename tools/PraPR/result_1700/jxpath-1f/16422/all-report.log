@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local testLocalName is replaced by local nodePrefix to be used
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 45
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local nodeLocalName is replaced by local nodePrefix to be used
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 46
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local testLocalName is replaced by local nodeLocalName to be used
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 45
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local nodeLocalName is replaced by local testLocalName to be used
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 46
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local testLocalName is replaced a call testLocalName.toLowerCase()
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 45
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local nodeLocalName is replaced a call nodeLocalName.toLowerCase()
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 46
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 47
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 47
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 48
+	Rank: 4
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::equals
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 47
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 48
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.java
+	Line Number: 81
+	Block: 14
+	First Index: 48
+	Rank: 4
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------

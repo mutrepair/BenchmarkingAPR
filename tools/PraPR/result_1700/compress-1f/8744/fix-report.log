@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:41:23 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 45
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to bsLive with an access to blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: 1
+	Total Rank: 37
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field bsLive is replaced by access to local n
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 65
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+	Dump: mutant-23.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 553
+	Block: 98
+	First Index: 66
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+	Dump: mutant-41.class
+------------------------------------------------

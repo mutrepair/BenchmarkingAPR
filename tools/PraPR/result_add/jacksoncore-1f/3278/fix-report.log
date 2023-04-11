@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 15:02:43 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 24
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 25
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-16.class
+------------------------------------------------

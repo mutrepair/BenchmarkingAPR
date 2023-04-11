@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wdsz is replaced by local n to be used
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 818
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local wdsz to be used
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 819
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local local is replaced by local code to be used
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 823
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local wdsz is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 818
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local n is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 819
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local local is replaced a call local.reverse()
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 823
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.codec.language.Metaphone::isLastChar(II)Z is guarded using default value false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.codec.language.Metaphone::isVowel(Ljava/lang/StringBuffer;I)Z is guarded using default value false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isLastChar(II)Z is guarded returning default value null
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isVowel(Ljava/lang/StringBuffer;I)Z is guarded returning default value null
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isLastChar(II)Z is guarded returning local txt
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isVowel(Ljava/lang/StringBuffer;I)Z is guarded returning local txt
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isLastChar(II)Z is guarded returning field VOWELS
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isVowel(Ljava/lang/StringBuffer;I)Z is guarded returning field VOWELS
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to isLastChar(II)Z is guarded returning field FRONTV
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to isVowel(Ljava/lang/StringBuffer;I)Z is guarded returning field FRONTV
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 825
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 826
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 821
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/Metaphone::isLastChar
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 820
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/Metaphone::isVowel
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 102
+	First Index: 827
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 821
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 295
+	Block: 101
+	First Index: 821
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

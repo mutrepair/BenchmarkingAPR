@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/241/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.471764897 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -721,7 +721,7 @@
+         Validate.notNull(className);
+ 
+         Set<String> classes = classNames();
+-        if (false)
++        if (classes.contains(className))
+             classes.remove(className);
+         else
+             classes.add(className);

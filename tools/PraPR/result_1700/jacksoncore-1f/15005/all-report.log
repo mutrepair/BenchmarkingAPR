@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _outputTail is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _outputEnd is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _outputTail is guarded using local i
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _outputEnd is guarded using local i
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _outputTail is guarded using field SHORT_WRITE
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _outputEnd is guarded using field SHORT_WRITE
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _outputTail with an access to _outputHead
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _outputEnd with an access to _outputHead
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _outputTail with an access to _outputEnd
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _outputEnd with an access to _outputTail
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _outputTail is replaced by access to local i
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _outputEnd is replaced by access to local i
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: 2
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _outputTail is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 23
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _outputEnd is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 28
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 11 with 12
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 24
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 25
+	Rank: 5
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 28
+	Rank: 5
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 28
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 614
+	Block: 113
+	First Index: 28
+	Rank: 5
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 12
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wholeValue is replaced by local position to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local wholeValue is replaced by local suffixPos to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local wholeValue is replaced by local limit to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local wholeValue is replaced by local length to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local wholeValue is replaced by local fractPos to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_5
+	Description: local wholeValue is replaced by local fractLen to be used
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local wholeValue is replaced by access to field iMinPrintedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local wholeValue is replaced by access to field iPrintZeroSetting
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local wholeValue is replaced by access to field iMaxParsedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local wholeValue is replaced by access to field iFieldType
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 459
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 460
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 460
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 460
+	Rank: 12
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1331
+	Block: 107
+	First Index: 460
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

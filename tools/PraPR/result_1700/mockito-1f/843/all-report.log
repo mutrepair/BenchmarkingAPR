@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to argumentsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;[Ljava/lang/Object;)Z with a call to argumentsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;Lorg/mockito/internal/invocation/Invocation;)Z
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 11
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to varArgsMatch with a call to argumentsMatch
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 15
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.mockito.internal.invocation.ArgumentsComparator::argumentsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;[Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 11
+	Rank: 4
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.mockito.internal.invocation.ArgumentsComparator::varArgsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;Lorg/mockito/internal/invocation/Invocation;)Z is guarded using default value false
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 15
+	Rank: 4
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to argumentsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;[Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 11
+	Rank: 4
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to varArgsMatch(Lorg/mockito/internal/invocation/InvocationMatcher;Lorg/mockito/internal/invocation/Invocation;)Z is guarded returning default value false
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 15
+	Rank: 4
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/mockito/internal/invocation/ArgumentsComparator::argumentsMatch
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/mockito/internal/invocation/ArgumentsComparator::argumentsMatch
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 3
+	First Index: 20
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 16
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/mockito/internal/invocation/ArgumentsComparator::argumentsMatch
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 11
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/mockito/internal/invocation/ArgumentsComparator::varArgsMatch
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 15
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 16
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 1
+	First Index: 16
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/mockito/internal/invocation/ArgumentsComparator.java
+	Line Number: 17
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

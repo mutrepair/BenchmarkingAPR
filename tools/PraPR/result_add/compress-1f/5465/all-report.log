@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to bsR with a call to getAndMoveToFrontDecode0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream::bsR(I)I is guarded using default value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to bsR(I)I is guarded returning default value 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to bsR(I)I is guarded returning field last
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to bsR(I)I is guarded returning field origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream::bsR with argument
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 7
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 11
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 13
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream::bsR
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream::bsGetInt
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 24
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 382
+	Block: 84
+	First Index: 24
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

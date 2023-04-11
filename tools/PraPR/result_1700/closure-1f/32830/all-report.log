@@ -1,0 +1,267 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.rhino.Node.getChildAtIndex(I)Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.rhino.Node.getString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method com.google.javascript.rhino.Node.getChildAtIndex(I)Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node$NumberNode using (DII)V
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.google.javascript.rhino.Node.getChildAtIndex(I)Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (I[Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.google.javascript.rhino.Node.getString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local call is replaced by local firstArg to be used
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 80
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local call is replaced by local secondArg to be used
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 80
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local call is replaced a call call.getFirstChild()
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 80
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getChildAtIndex with a call to getAncestor
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getString with a call to toString
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getString with a call to toStringTree
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getString with a call to getSourceFileName
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getString with a call to getQualifiedName
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.Node::getChildAtIndex(I)Lcom/google/javascript/rhino/Node; is guarded using default value null
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.Node::getString()Ljava/lang/String; is guarded using default value null
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.jscomp.JsMessageVisitor::getTrackedMessage(Lcom/google/javascript/jscomp/NodeTraversal;Ljava/lang/String;)Lcom/google/javascript/jscomp/JsMessage; is guarded using default value null
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 84
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getChildAtIndex(I)Lcom/google/javascript/rhino/Node; is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getString()Ljava/lang/String; is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getTrackedMessage(Lcom/google/javascript/jscomp/NodeTraversal;Ljava/lang/String;)Lcom/google/javascript/jscomp/JsMessage; is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 84
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 81
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::getChildAtIndex
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::getString
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/JsMessageVisitor::getTrackedMessage
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 84
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to com/google/javascript/rhino/Node::getChildAtIndex with receiver
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 799
+	Block: 155
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

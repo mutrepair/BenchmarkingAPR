@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/13724/com/google/javascript/jscomp/JsMessage.java	2023-04-04 14:33:25.445952648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/JsMessage.java	2023-04-04 13:31:52.773626040 -0500
+@@ -611,7 +611,7 @@
+         case 4:
+           a += (value[offset + 3] & 0xffL) << 24;
+         case 3:
+-          a += (value[offset + 2] & 255L) >> 16;
++          a += (value[offset + 2] & 0xffL) << 16;
+         case 2:
+           a += (value[offset + 1] & 0xffL) << 8;
+         case 1:

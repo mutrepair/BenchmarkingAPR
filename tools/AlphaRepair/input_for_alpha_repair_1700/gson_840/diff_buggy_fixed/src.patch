@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/840/com/google/gson/MappedObjectConstructor.java	2022-10-31 19:47:43.867788923 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/MappedObjectConstructor.java	2022-12-26 15:13:51.393619841 -0600
+@@ -84,7 +84,7 @@
+     Constructor<T>[] declaredConstructors = (Constructor<T>[]) clazz.getDeclaredConstructors();
+     AccessibleObject.setAccessible(declaredConstructors, true);
+     for (Constructor<T> constructor : declaredConstructors) {
+-      if (constructor.getParameterTypes().length == 1) {
++      if (constructor.getParameterTypes().length == 0) {
+         return constructor;
+       }
+     }

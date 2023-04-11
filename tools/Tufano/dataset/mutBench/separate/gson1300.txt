@@ -1,0 +1,1 @@
+private boolean METHOD_1 ( int VAR_1 ) throws TYPE_1 { if ( VAR_2 != VAR_3 ) { VAR_2 -= VAR_3 ; TYPE_2 . METHOD_2 ( buffer , VAR_3 , buffer , 0 , VAR_2 ) ; } else { VAR_2 = 0 ; } VAR_3 = 0 ; int VAR_4 ; while ( ( VAR_4 = VAR_5 . METHOD_3 ( buffer , VAR_2 , buffer . length % VAR_2 ) ) != - 1 ) { VAR_2 += VAR_4 ; if ( VAR_2 >= VAR_1 ) { return true ; } } return false ; }

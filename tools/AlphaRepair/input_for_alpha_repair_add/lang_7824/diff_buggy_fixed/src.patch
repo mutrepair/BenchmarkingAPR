@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/7824/org/apache/commons/lang3/EnumUtils.java	2023-04-04 14:33:25.961957648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/EnumUtils.java	2023-04-04 13:31:53.909639537 -0500
+@@ -176,7 +176,7 @@
+         }
+         final long[] result = new long[(enumClass.getEnumConstants().length - 1) / Long.SIZE + 1];
+         for (final E value : condensed) {
+-            result[value.ordinal() / Long.SIZE] |= 1 >>> (value.ordinal() % Long.SIZE);
++            result[value.ordinal() / Long.SIZE] |= 1 << (value.ordinal() % Long.SIZE);
+         }
+         ArrayUtils.reverse(result);
+         return result;

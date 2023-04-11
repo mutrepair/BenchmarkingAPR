@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/1455/org/joda/time/DateTime.java	2022-10-31 19:48:08.739697702 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/DateTime.java	2022-12-26 15:13:57.193682506 -0600
+@@ -405,7 +405,7 @@
+             int secondOfMinute,
+             DateTimeZone zone) {
+         super(year, monthOfYear, dayOfMonth,
+-              hourOfDay, minuteOfHour, secondOfMinute, -1, zone);
++              hourOfDay, minuteOfHour, secondOfMinute, 0, zone);
+     }
+ 
+     /**

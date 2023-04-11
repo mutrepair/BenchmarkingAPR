@@ -1,0 +1,9 @@
+    private Element popStackToSuitableContainer(Tag tag) {
+        while (!stack.isEmpty()) {
+            if (last().tag().canContain(tag))
+                return last();
+            else
+                stack.removeLast();
+        }
+        return null;
+    }

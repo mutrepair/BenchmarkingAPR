@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/6726/org/apache/commons/lang3/Conversion.java	2023-04-04 14:33:25.961957648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/Conversion.java	2023-04-04 13:31:53.909639537 -0500
+@@ -1088,7 +1088,7 @@
+             shift = i * 1 + dstPos;
+             final int bits = (src[i + srcPos] ? 1 : 0) << shift;
+             final int mask = 0x1 << shift;
+-            out = (out | ~mask) | bits;
++            out = (out & ~mask) | bits;
+         }
+         return out;
+     }

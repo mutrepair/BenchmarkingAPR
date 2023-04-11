@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/603/org/joda/time/chrono/BaseChronology.java	2022-10-31 19:48:08.927697006 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BaseChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -275,7 +275,7 @@
+     public int[] get(ReadablePeriod period, long duration) {
+         int size = period.size();
+         int[] values = new int[size];
+-        if (duration > 0) {
++        if (duration != 0) {
+             long current = 0;
+             for (int i = 0; i < size; i++) {
+                 DurationField field = period.getFieldType(i).getField(this);

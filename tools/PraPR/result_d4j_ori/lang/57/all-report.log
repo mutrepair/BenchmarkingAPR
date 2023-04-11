@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet is replaced by the call to org.apache.commons.lang.LocaleUtils::availableLocaleSet()Ljava/util/Set;
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 3
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to contains with a call to add
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to contains with a call to remove
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to contains with a call to equals
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Set::contains(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to contains(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/lang/LocaleUtils::isAvailableLocale
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/lang/LocaleUtils::isAvailableLocale
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Set::contains
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

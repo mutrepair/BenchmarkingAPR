@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutatorSecondPhase_0
+	Description: replaced call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V with a call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V
+	File Name: org/jfree/chart/plot/ValueMarker.java
+	Line Number: 95
+	Block: 2
+	First Index: 9
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutatorSecondPhase_1
+	Description: replaced call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V with a call to <init>(Ljava/awt/Paint;Ljava/awt/Stroke;Ljava/awt/Paint;Ljava/awt/Stroke;F)V
+	File Name: org/jfree/chart/plot/ValueMarker.java
+	Line Number: 95
+	Block: 2
+	First Index: 9
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local paint is replaced by local outlinePaint to be used
+	File Name: org/jfree/chart/plot/ValueMarker.java
+	Line Number: 95
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local stroke is replaced by local outlineStroke to be used
+	File Name: org/jfree/chart/plot/ValueMarker.java
+	Line Number: 95
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

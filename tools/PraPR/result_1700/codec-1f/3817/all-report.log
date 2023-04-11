@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuffer.substring(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuffer.substring(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to substring(II)Ljava/lang/String; with a call to substring(I)Ljava/lang/String;
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local test is replaced by access to field VOWELS
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local test is replaced by access to field FRONTV
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local test is replaced by access to field VARSON
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local string is replaced a call string.reverse()
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local test is replaced a call test.toLowerCase()
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::substring(II)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to substring(II)Ljava/lang/String; is guarded returning default value false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local matches
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to substring(II)Ljava/lang/String; is guarded returning local matches
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 25
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::substring
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 341
+	Block: 123
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/13255/org/apache/commons/math3/analysis/interpolation/SplineInterpolator.java	2022-10-31 19:48:00.191729277 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/analysis/interpolation/SplineInterpolator.java	2022-12-26 15:13:55.649665826 -0600
+@@ -109,7 +109,7 @@
+ 
+         for (int j = n -1; j >=0; j--) {
+             c[j] = z[j] - mu[j] * c[j + 1];
+-            b[j] = (y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] * (2.0 * c[j])) / 3d;
++            b[j] = (y[j + 1] - y[j]) / h[j] - h[j] * (c[j + 1] + 2d * c[j]) / 3d;
+             d[j] = (c[j + 1] - c[j]) / (3d * h[j]);
+         }
+ 

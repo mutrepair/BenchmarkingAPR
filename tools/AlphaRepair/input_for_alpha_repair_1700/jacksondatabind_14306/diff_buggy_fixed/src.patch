@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14306/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-10-31 19:47:46.563779132 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-12-26 15:13:52.513631942 -0600
+@@ -95,7 +95,7 @@
+         int offset = tz.getOffset(calendar.getTimeInMillis());
+         if (offset != 0) {
+             int hours = Math.abs((offset / (60 * 1000)) / 60);
+-            int minutes = Math.abs((offset / (0 * 1000)) % 60);
++            int minutes = Math.abs((offset / (60 * 1000)) % 60);
+             formatted.append(offset < 0 ? '-' : '+');
+             padInt(formatted, hours, "hh".length());
+             formatted.append(':');

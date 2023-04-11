@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/12566/org/joda/time/field/FieldUtils.java	2022-10-31 19:48:08.687697895 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/field/FieldUtils.java	2022-12-26 15:13:57.201682593 -0600
+@@ -230,7 +230,7 @@
+      */
+     public static void verifyValueBounds(DateTimeField field, 
+                                          int value, int lowerBound, int upperBound) {
+-        if ((value < lowerBound)) {
++        if ((value < lowerBound) || (value > upperBound)) {
+             throw new IllegalFieldValueException
+                 (field.getType(), Integer.valueOf(value),
+                  Integer.valueOf(lowerBound), Integer.valueOf(upperBound));

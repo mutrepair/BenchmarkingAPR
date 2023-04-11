@@ -1,0 +1,100 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 08:42:15 CST 2022
+Number of Plausible Fixes: 8
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 5
+	First Index: 46
+	Rank: 1
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wantedCount is replaced by local actualCount to be used
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 4
+	First Index: 42
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local actualCount is replaced by local wantedCount to be used
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 5
+	First Index: 45
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 5
+	First Index: 46
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 4
+	First Index: 43
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 4
+	First Index: 44
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 5
+	First Index: 46
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java
+	Line Number: 39
+	Block: 5
+	First Index: 46
+	Rank: 8
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------

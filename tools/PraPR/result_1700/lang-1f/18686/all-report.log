@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to value is guarded using value 0
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to value is guarded using local anotherVal
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to value is guarded using field value
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.mutable.MutableShort.value is replaced by the call to org.apache.commons.lang3.mutable.MutableShort::shortValue()S
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field value is replaced by access to local anotherVal
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local other to be used
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local anotherVal is replaced by access to field value
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to value is guarded returning default value 0
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 26
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 29
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/lang3/mutable/MutableShort::compareTo
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 29
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 27
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 27
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 25
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/lang3/mutable/MutableShort.java
+	Line Number: 272
+	Block: 29
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

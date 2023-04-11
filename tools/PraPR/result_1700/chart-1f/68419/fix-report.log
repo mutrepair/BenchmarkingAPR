@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:30:10 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 5
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 4
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

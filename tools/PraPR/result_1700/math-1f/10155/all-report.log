@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to xval is guarded using value null
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to yval is guarded using value null
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to xval is guarded using field xval
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to yval is guarded using field xval
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to xval with an access to yval
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to yval with an access to xval
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local y to be used
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 3
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local y is replaced by local x to be used
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 21
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to xval is guarded returning default value false
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to yval is guarded returning default value false
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 23
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 9
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 6
+	Rank: 1
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 28
+	First Index: 16
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 29
+	First Index: 24
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 28
+	First Index: 17
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 9
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 9
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/analysis/interpolation/BicubicSplineInterpolatingFunction.java
+	Line Number: 184
+	Block: 27
+	First Index: 9
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

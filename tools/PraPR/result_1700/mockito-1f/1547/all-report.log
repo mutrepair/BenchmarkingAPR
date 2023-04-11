@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isEquals is guarded using value false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isEquals is guarded using field isEquals
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.mockito.internal.matchers.apachecommons.EqualsBuilder.isEquals is replaced by the call to org.mockito.internal.matchers.apachecommons.EqualsBuilder::isEquals()Z
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isEquals is guarded returning default value null
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to isEquals is guarded returning local this
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 157
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 156
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 651
+	Block: 157
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------

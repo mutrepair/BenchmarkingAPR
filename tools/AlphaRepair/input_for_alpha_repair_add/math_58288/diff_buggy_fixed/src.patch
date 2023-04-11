@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/58288/org/apache/commons/math3/linear/HessenbergTransformer.java	2023-04-04 14:33:26.109959081 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/linear/HessenbergTransformer.java	2023-04-04 13:31:54.005640677 -0500
+@@ -195,7 +195,7 @@
+                     ort[i] = householderVectors[i][m - 1] / scale;
+                     h += ort[i] * ort[i];
+                 }
+-                final double g = (ort[m] > 0) ? +FastMath.sqrt(h) : FastMath.sqrt(h);
++                final double g = (ort[m] > 0) ? -FastMath.sqrt(h) : FastMath.sqrt(h);
+ 
+                 h = h - ort[m] * g;
+                 ort[m] = ort[m] - g;

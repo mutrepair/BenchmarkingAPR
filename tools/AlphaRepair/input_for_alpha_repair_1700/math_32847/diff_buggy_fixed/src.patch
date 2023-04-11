@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/32847/org/apache/commons/math3/genetics/CycleCrossover.java	2022-10-31 19:48:00.267728997 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/genetics/CycleCrossover.java	2022-12-26 15:13:55.661665956 -0600
+@@ -157,7 +157,7 @@
+             }
+ 
+             // for even cycles: swap the child elements on the indices found in this cycle
+-            if (cycle++ % 2 < 0) {
++            if (cycle++ % 2 != 0) {
+                 for (int i : indices) {
+                     T tmp = child1Rep.get(i);
+                     child1Rep.set(i, child2Rep.get(i));

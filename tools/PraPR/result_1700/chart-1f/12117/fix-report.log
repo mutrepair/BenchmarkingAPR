@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:26:50 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/chart/util/PaintList.java
+	Line Number: 171
+	Block: 22
+	First Index: 17
+	Rank: 2
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jfree/chart/util/PaintList.java
+	Line Number: 171
+	Block: 22
+	First Index: 12
+	Rank: 2
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------

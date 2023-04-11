@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/9266/com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java	2022-10-31 19:47:46.855778070 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java	2022-12-26 15:13:52.501631814 -0600
+@@ -280,7 +280,7 @@
+ 
+             if (t == JsonToken.VALUE_NUMBER_INT) { // ok iff ascii value
+                 value = jp.getIntValue();
+-                if (value >= 0 && value <= 0) {
++                if (value >= 0 && value <= 0xFFFF) {
+                     return Character.valueOf((char) value);
+                 }
+             } else if (t == JsonToken.VALUE_STRING) { // this is the usual type

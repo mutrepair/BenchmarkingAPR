@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1281/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-10-31 19:48:05.435709934 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -239,7 +239,7 @@
+         if (lhs == rhs) {
+             return true;
+         }
+-        if (true) {
++        if (lhs == null || rhs == null) {
+             return false;
+         }
+         // Find the leaf class since there may be transients in the leaf 

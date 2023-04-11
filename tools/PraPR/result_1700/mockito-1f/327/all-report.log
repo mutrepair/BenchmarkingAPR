@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type org.mockitousage.bugs.MultipleInOrdersTest using ()V
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to remove
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::get(I)Ljava/lang/Object; is guarded using default value null
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(I)Ljava/lang/Object; is guarded returning default value null
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::get
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/mockito/internal/MockitoCore::getLastInvocation
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/mockito/internal/MockitoCore::getLastInvocation to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/mockito/internal/MockitoCore.java
+	Line Number: 156
+	Block: 33
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

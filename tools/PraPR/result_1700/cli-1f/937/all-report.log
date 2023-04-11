@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local sz to be used
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 34
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local sz is replaced by local i to be used
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 35
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 36
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 40
+	First Index: 121
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 30
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 36
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 36
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 32
+	First Index: 36
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/apache/commons/cli/PatternOptionBuilder.java
+	Line Number: 166
+	Block: 40
+	First Index: 121
+	Rank: null
+	Total Rank: 8
+	Status: TIMED_OUT
+------------------------------------------------

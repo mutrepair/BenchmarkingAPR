@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1557/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-10-31 19:47:45.007784786 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -702,7 +702,7 @@
+         hash += (hash >>> 17);
+         
+         for (int i = 3; i < qlen; ++i) {
+-            hash = (hash * MULT3) | quads[i];
++            hash = (hash * MULT3) ^ quads[i];
+             // for longer entries, mess a bit in-between too
+             hash += (hash >>> 3);
+             hash ^= (hash << 7);

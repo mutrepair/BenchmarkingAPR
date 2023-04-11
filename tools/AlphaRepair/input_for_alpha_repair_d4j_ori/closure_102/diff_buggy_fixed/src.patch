@@ -1,0 +1,16 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_102/src/com/google/javascript/jscomp/Normalize.java	2023-01-16 15:29:12.943900761 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/102/patch/./com/google/javascript/jscomp/Normalize.java	2023-01-16 15:29:12.911900361 -0600
+@@ -86,12 +86,12 @@
+   @Override
+   public void process(Node externs, Node root) {
+     NodeTraversal.traverse(compiler, root, this);
++    removeDuplicateDeclarations(root);
+     if (MAKE_LOCAL_NAMES_UNIQUE) {
+       MakeDeclaredNamesUnique renamer = new MakeDeclaredNamesUnique();
+       NodeTraversal t = new NodeTraversal(compiler, renamer);
+       t.traverseRoots(externs, root);
+     }
+-    removeDuplicateDeclarations(root);
+     new PropogateConstantAnnotations(compiler, assertOnChange)
+         .process(externs, root);
+   }

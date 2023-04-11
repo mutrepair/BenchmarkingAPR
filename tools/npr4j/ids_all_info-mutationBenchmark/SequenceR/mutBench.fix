@@ -1,0 +1,1700 @@
+for ( int c = 0 ; c < colCount ; c ++ ) {
+for ( int i = 0 ; i < n ; i ++ ) {
+y2 = y2 + ( maxX - x2 ) * dy / dx ;
+if ( isAutoRange ( ) ) {
+return true ;
+if ( ! Double . isNaN ( value ) ) {
+double y0 = dataset . getYValue ( series , item - 1 ) ;
+double y0 = dataset . getYValue ( series , item - 1 ) ;
+this . year = underestimatedYYYY - 1 ;
+if ( ! super . equals ( obj ) ) {
+final int yy = ( ( y - 1900 ) * 365 ) + SerialDate . leapYearCount ( y - 1 ) ;
+return true ;
+if ( position < 0 || position > getItemCount ( ) ) {
+if ( this . value != that . value ) {
+double logRange = logUpper - logLower ;
+if ( columnIndex < 0 ) {
+if ( days != 0 || this . showZeroDays ) {
+double [ ] result = new double [ 2 ] ;
+if ( i == bins - 1 ) {
+int low = 0 ;
+if ( listeners [ i ] == PlotChangeListener . class ) {
+setDataset ( 0 , dataset ) ;
+return false ;
+this . foregroundPaint = new Color ( 100 , 100 , 150 ) ;
+return 1 ;
+return this . year * 12L + this . month ;
+return false ;
+h [ 3 ] = h [ 2 ] ;
+for ( int s = 0 ; s < seriesCount ; s ++ ) {
+double sxy = sumXY - ( sumX * sumY ) / n ;
+drawRotatedString ( text , g2 , x + textAdj [ 0 ] , y + textAdj [ 1 ] , angle ,
+return false ;
+return false ;
+for ( int c = 0 ; c < columnCount ; c ++ ) {
+return false ;
+return false ;
+if ( this . labelTextAnchor != that . labelTextAnchor ) {
+if ( this . legendItemToolTipGenerator != null ) {
+if ( this . fixedDomainAxisSpace != null ) {
+this . data . add ( - index - 1 , item ) ;
+if ( ! this . domainAxisLocations . equals ( that . domainAxisLocations ) ) {
+y2 = y2 + ( maxX - x2 ) * dy / dx ;
+final int index = this . lines . size ( ) - 1 ;
+boolean firstParameter = url . indexOf ( "?" ) == - 1 ;
+if ( this . maxEndIndex >= 0 ) {
+if ( rowIndex >= 0 ) {
+minimumPercent , 2 ) ;
+else if ( this . equals ( RectangleAnchor . LEFT ) ) {
+if ( this . stepPoint != that . stepPoint ) {
+if ( ! isSeriesVisible ( series ) || ! isSeriesVisibleInLegend ( series ) ) {
+return ( edge == RectangleEdge . LEFT || edge == RectangleEdge . RIGHT ) ;
+double sxx = sumXX - ( sumX * sumX ) / n ;
+if ( polygon . length % 2 != 0 ) {
+DateTickUnitType . HOUR , 1 , f3 ) ) ;
+if ( ! this . tickLabelFont . equals ( font ) ) {
+this . labelInfo = new PeriodAxisLabelInfo [ 2 ] ;
+double step = ( end - start ) / ( samples - 1 ) ;
+return false ;
+if ( this . datasets . size ( ) > index ) {
+x1 = x1 + ( minY - y1 ) * dx / dy ;
+if ( segment != null ) {
+for ( int i = 0 ; i < count ; i ++ ) {
+if ( ! this . blocks . equals ( that . blocks ) ) {
+if ( ( series < 0 ) || ( series >= getSeriesCount ( ) ) ) {
+if ( keyIndex >= 0 ) {
+if ( ! info . periodClass . equals ( this . periodClass ) ) {
+return false ;
+double sumY = 0 ;
+Object [ ] result = new Object [ 4 ] ;
+this . intervalPositionFactor = 0.5 ;
+return this . day . getSerialIndex ( ) * 24L + this . hour ;
+if ( count > 0 ) {
+res = ( Math . pow ( 10 , val + 1.0 ) - 10.0 ) / 9.0 ;
+if ( ( series < 0 ) || ( series >= getSeriesCount ( ) ) ) {
+units . add ( new DateTickUnit ( DateTickUnitType . MINUTE , 30 ,
+if ( data . length != 6 ) {
+return false ;
+double xbar = sumX / n ;
+if ( ! ShapeUtilities . equal ( this . shape , that . shape ) ) {
+return true ;
+long y = shiftedSegmentedValue / this . segmentsGroupSize ;
+if ( ! ObjectUtilities . equal ( this . urlText , that . urlText ) ) {
+result [ 1 ] = sxy / sxx ;
+if ( this . data . size ( ) > 0 ) {
+double sxx = sumXX - ( sumX * sumX ) / n ;
+double sxy = sumXY - ( sumX * sumY ) / n ;
+if ( index >= this . objects . length ) {
+if ( selectionState == null && info != null ) {
+mid = ( low + high ) / 2 ;
+double height = h [ 0 ] + h [ 1 ] + centerHeight ;
+return true ;
+return false ;
+h [ 3 ] = size . height ;
+for ( int seriesIndex = 0 ; seriesIndex < seriesCount ; seriesIndex ++ ) {
+if ( this . columnRadius != that . columnRadius ) {
+if ( result == null ) {
+log = axisMin + ( java2DValue - min ) / ( max - min )
+return true ;
+return seriesData [ 2 ] [ item ] ;
+calendar . set ( Calendar . MILLISECOND , 999 ) ;
+if ( opt . equals ( option . getLongOpt ( ) ) )
+int x = 0 ;
+if ( ( header != null ) && ( header . trim ( ) . length ( ) > 0 ) )
+return ( this . numberOfArgs > 0 ) || ( numberOfArgs == UNLIMITED_VALUES ) ;
+if ( pos == - 1 )
+return ( isValidChar ( c ) || ( c == ' ' ) || ( c == '?' ) || c == '@' ) ;
+else if ( ( startPos + width ) >= text . length ( ) )
+while ( ( pos > 0 ) && Character . isWhitespace ( s . charAt ( pos - 1 ) ) )
+return false ;
+else if ( ( startPos + width ) >= text . length ( ) )
+return ( values == null ) ? null : values [ 0 ] ;
+&& ( c != '\n' ) && ( c != '\r' ) )
+while ( ( pos > 0 ) && Character . isWhitespace ( s . charAt ( pos - 1 ) ) )
+return shortOpts . containsKey ( opt ) || longOpts . containsKey ( opt ) ;
+if ( ( ch != '@' ) && ( ch != ':' ) && ( ch != '%' ) && ( ch != '+' )
+optBuf . append ( createPadding ( max - optBuf . length ( ) ) ) ;
+char ch = opt . charAt ( 0 ) ;
+if ( option . hasArg ( ) )
+if ( pos == - 1 )
+return ( this . numberOfArgs > 1 )
+else if ( ch == '+' )
+return str . substring ( 2 , str . length ( ) ) ;
+boolean eatTheRest = false ;
+result = 31 * result + ( longOpt != null ? longOpt . hashCode ( ) : 0 ) ;
+if ( stopAtNonOption )
+arguments = new String [ 0 ] ;
+options . getOption ( arguments [ i ] . substring ( 0 , 2 ) ) ;
+else if ( ( startPos + width ) >= text . length ( ) )
+if ( ! hasOption )
+tokens . add ( token . substring ( 0 , token . indexOf ( '=' ) ) ) ;
+arguments = new String [ 0 ] ;
+if ( options . hasOption ( str ) && str . startsWith ( "-" ) )
+int nextLineTabStop = max + descPad ;
+OptionBuilder . numberOfArgs = ( hasArg == true ) ? 1 : Option . UNINITIALIZED ;
+for ( int i = 1 ; i < tokenLength ; i ++ )
+return str . substring ( 1 , str . length ( ) ) ;
+if ( ( cmdLineSyntax == null ) || ( cmdLineSyntax . length ( ) == 0 ) )
+if ( hasArg )
+return ( this . argName != null && this . argName . length ( ) > 0 ) ;
+return hasNoValues ( ) ? null : ( String ) this . values . get ( 0 ) ;
+if ( ( s == null ) || ( s . length ( ) == 0 ) )
+if ( ( opt . getValues ( ) == null ) && ! opt . hasOptionalArg ( ) )
+if ( currentOption . hasArg ( ) && ( token . length ( ) != ( i + 1 ) ) )
+result = 31 * result + ( longOpt != null ? longOpt . hashCode ( ) : 0 ) ;
+if ( ( numberOfArgs > 0 ) && ( values . size ( ) > ( numberOfArgs - 1 ) ) )
+else if ( ch == ':' )
+if ( group . isRequired ( ) )
+while ( ( pos > 0 ) && Character . isWhitespace ( s . charAt ( pos - 1 ) ) )
+if ( ( numberOfArgs > 0 ) && ( values . size ( ) > ( numberOfArgs - 1 ) ) )
+if ( ( numberOfArgs > 0 ) && ( values . size ( ) > ( numberOfArgs - 1 ) ) )
+if ( opt . isRequired ( ) )
+if ( opt . hasArg ( ) )
+while ( ( pos > 0 ) && Character . isWhitespace ( s . charAt ( pos - 1 ) ) )
+if ( this . options . hasOption ( token ) )
+return ( values == null ) ? null : values [ 0 ] ;
+return true ;
+if ( "--" . equals ( arguments [ i ] ) )
+for ( int i = 0 ; i < chars . length ; i ++ )
+if ( ( footer != null ) && ( footer . trim ( ) . length ( ) > 0 ) )
+for ( int i = 0 ; i < len ; ++ i )
+if ( ( numberOfArgs > 0 ) && ( values . size ( ) > ( numberOfArgs - 1 ) ) )
+if ( opt . hasArg ( ) )
+return str . substring ( 1 , str . length ( ) ) ;
+sb . append ( rtrim ( text . substring ( 0 , pos ) ) ) . append ( defaultNewLine ) ;
+else if ( PatternOptionBuilder . FILE_VALUE == clazz )
+if ( ( header != null ) && ( header . trim ( ) . length ( ) > 0 ) )
+while ( index != - 1 )
+tokens . add ( arguments [ i ] . substring ( 2 ) ) ;
+if ( ( numberOfArgs > 0 ) && ( values . size ( ) > ( numberOfArgs - 1 ) ) )
+str = str . substring ( 0 , str . length ( ) - 1 ) ;
+else if ( "-" . equals ( t ) )
+printHelp ( defaultWidth , cmdLineSyntax , null , options , null , false ) ;
+pos = startPos + width ;
+else if ( t . startsWith ( "-" ) )
+for ( int i = 0 ; i < sz ; i ++ )
+tokens . add ( token . substring ( i + 1 ) ) ;
+optionalArg = false ;
+return ( this . numberOfArgs > 0 ) || ( numberOfArgs == UNLIMITED_VALUES ) ;
+if ( "--" . equals ( t ) )
+if ( ( header != null ) && ( header . trim ( ) . length ( ) > 0 ) )
+while ( ( pos >= startPos ) && ( ( c = text . charAt ( pos ) ) != ' ' )
+tokens . add ( token . substring ( i + 1 ) ) ;
+str = str . substring ( 0 , str . length ( ) - 1 ) ;
+if ( ( opt . getValues ( ) == null ) && ! opt . hasOptionalArg ( ) )
+pos = startPos + width ;
+return hasNoValues ( ) ? null : ( String ) this . values . get ( index ) ;
+while ( ( pos > 0 ) && Character . isWhitespace ( s . charAt ( pos - 1 ) ) )
+printWrapped ( pw , width , 0 , text ) ;
+if ( values . size ( ) == ( numberOfArgs - 1 ) )
+if ( ( ch != '@' ) && ( ch != ':' ) && ( ch != '%' ) && ( ch != '+' )
+if ( options . getOptionGroup ( opt ) != null )
+if ( stopAtNonOption )
+return shortOpts . containsKey ( opt ) || longOpts . containsKey ( opt ) ;
+if ( ! isValidChar ( chars [ i ] ) )
+if ( token . startsWith ( "--" ) )
+if ( ! isValueCode ( ch ) )
+else if ( "-" . equals ( token ) )
+for ( int i = 0 ; i < len ; ++ i )
+return getKey ( ) . charAt ( 0 ) ;
+if ( eatTheRest )
+if ( referencedType . isUnionType ( ) ) {
+if ( maybeHandlePrototypePrefix ( t , n , parent , name ) ) return ;
+if ( numCapturingGroups >= possibleGroupIndex ) {
+return false ;
+return false ;
+if ( cur . getChildCount ( ) == 4 ) {
+if ( stripTweaks ) {
+if ( argsToBind >= 0 ) {
+if ( endIndex == - 1 ) {
+if ( n . isVar ( ) ) {
+if ( types == null ) {
+if ( jsDoc != null && jsDoc . isConstant ( ) ) {
+int digit = value & VLQ_BASE_MASK ;
+messageHasDesc = true ;
+this ( compiler , globalSymbolNamespace , true ) ;
+if ( ! srcBlock . hasChildren ( ) ) {
+if ( ! n . isFunction ( ) ) {
+if ( condition == null && source . isCase ( ) ) {
+b += ( str [ i + 4 ] & 0xff ) ;
+return false ;
+if ( ! ( s . equals ( "number" ) || s . equals ( "string" ) || s . equals ( "boolean" ) ||
+Name owner = isPrototypeGet ? name : parent ;
+} else if ( modules . get ( 0 ) . getInputs ( ) . isEmpty ( ) && modules . size ( ) > 1 ) {
+if ( makesStructs && ! isConstructor ) {
+if ( var == null ) {
+isThis ? Token . THIS : Token . NEW ,
+if ( ! ownerFn . isConstructor ( ) && ! ownerFn . isInterface ( ) ) {
+return true ;
+if ( ! ID_MATCHER . matchesAllOf ( tweakId ) ) {
+if ( RenameProperties . RENAME_PROPERTY_FUNCTION_NAME . equals ( fnName ) ) {
+if ( i != 0 ) {
+if ( currentInfo . documentParam ( parameterName , description ) ) {
+line . indexOf ( "require" ) != - 1 ||
+return unreadToken == token ;
+int keysLength = templateKeys == null ? 0 : templateKeys . size ( ) ;
+return n2 - n1 ;
+return this . getType ( ) == Token . CATCH ;
+&& n . getFirstChild ( ) . getFirstChild ( ) != null ) {
+c [ i ] = Base64 . toBase64 ( ( value > > ( 26 - i * 6 ) ) & 0x3f ) ;
+if ( ! fnType . isInterface ( ) && baseType != null ) {
+Preconditions . checkState ( ++ iterations != maxIterations ,
+if ( descend ) {
+if ( propName . equals ( "apply" ) || propName . equals ( "call" ) ) {
+if ( currentProp . isQuotedString ( ) ) {
+return true ;
+for ( int n = 1 ; n < startLine ; n ++ ) {
+if ( sourceCursor == sourceEnd ) {
+c ^= ( b > > > 15 ) ;
+if ( isNestedAssign ( parent ) ) {
+return this == EVERY_LOCATION && otherLocation == EVERY_LOCATION ;
+if ( isEmptyType ( ) || that . isEmptyType ( ) ) {
+return n != parent . getFirstChild ( ) ;
+if ( setters . contains ( key . getString ( ) ) ) {
+return true ;
+if ( scopeRoots . isEmpty ( ) ) {
+if ( ! modules . isEmpty ( ) ) {
+if ( var != null ) {
+} else if ( ! alternate . isParameterizedType ( ) ) {
+return true ;
+return ( thisValue != 0.0 ) || ( 1 / thisValue == 1 / thatValue ) ;
+if ( null == pattern || ( null != flags && null != flags . getNext ( ) ) ) {
+| ( ( str [ i + 7 ] & 0xff ) << 24 ) ) ;
+( style == JsMessage . Style . CLOSURE || isNewStyleMessage ||
+k += n - j ;
+Preconditions . checkState ( childCount == 1 ) ;
+&& ( ! arg . isNumber ( ) || arg . getDouble ( ) != 0 ) ) {
+if ( externNames . contains ( a . oldName ) ) {
+return this . getType ( ) == Token . BLOCK ;
+if ( current != last + 1 ) { ++ nRuns ; }
+t , call . getChildAtIndex ( 2 ) . getString ( ) ) ;
+return current < length ;
+if ( ( node . isAnd ( ) ) || ( node . isOr ( ) ) ) {
+if ( ! defSite . inExterns && ! callResultsMaybeUsed ( definitions , defSite ) ) {
+current . getType ( ) == Token . NEW ) {
+left . setJSType ( isVarDeclaration || leftType == null ?
+return result == 0 && tieBreaker != null ?
+if ( line < nextLine || ( line == nextLine && col < nextCol ) ) {
+if ( line < nextLine || ( line == nextLine && col < nextCol ) ) {
+return false ;
+return handlePlugins ( t , script , moduleName . substring ( condition + 1 ) ,
+if ( complexity < minComplexity ) {
+idDigits = addBase64Digit ( digit , 0 ) ;
+return false ;
+if ( definitions == null ) {
+if ( prototypeVar != null && prototypeVar . scope == scopeToDeclareIn ) {
+} else if ( lineno1 < 0 && 0 <= lineno2 ) {
+for ( Node c = n . getFirstChild ( ) ; c != null ; c = c . getNext ( ) ) {
+return 2 + indexOfLastDot ;
+} else if ( superRanges [ superIdx + 1 ] >= subRanges [ subIdx + 1 ] ) {
+return this . getType ( ) == Token . NEW ;
+splitStrings . size ( ) < limit ) {
+parentNodeType == Token . CATCH ||
+if ( inputId == null ) {
+int [ ] out = new int [ m + n ] ;
+} else if ( NodeUtil . isFunctionDeclaration ( n ) ) {
+for ( int i = 0 , n = alternatives . size ( ) ; i < n ; ++ i ) {
+if ( ! n . isReturn ( ) ) {
+if ( staticsProp . isObjectLit ( ) && validateObjLit ( staticsProp ) ) {
+return true ;
+if ( line < nextLine || ( line == nextLine && col < nextCol ) ) {
+if ( ascii [ jj - bits ] == '1' ) {
+if ( index > 0 && ! isVowel ( charAt ( value , index - 1 ) ) ) {
+if ( ascii [ jj - bits ] == '1' ) {
+encodedData [ encodedIndex + 2 ] = lookUpBase64Alphabet [ l << 2 ] ;
+return alternate ? result . getAlternate ( ) : result . getPrimary ( ) ;
+return 0 ;
+index = charAt ( value , index + 1 ) == 'F' ? index + 2 : index + 1 ;
+encodedDataLengthLong += chunckCount * CHUNK_SEPARATOR . length ;
+while ( base64Data [ lastData - 1 ] == PAD ) {
+byte val2 = ( ( b2 & SIGN ) == 0 ) ? ( byte ) ( b2 > > 4 ) : ( byte ) ( ( b2 ) > > 4 ^ 0xf0 ) ;
+result = true ;
+} else if ( contains ( value , index , 2 , "TH" ) || contains ( value , index ,
+index = contains ( value , index + 1 , 1 , "S" , "Z" ) ? index + 2 : index + 1 ;
+System . arraycopy ( CHUNK_SEPARATOR , 0 , encodedData , encodedIndex , CHUNK_SEPARATOR . length ) ;
+contains ( value , index - 3 , 1 , "C" , "G" , "L" , "R" , "T" ) ) {
+return new byte [ 0 ] ;
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+byte val3 = ( ( b3 & SIGN ) == 0 ) ? ( byte ) ( b3 > > 6 ) : ( byte ) ( ( b3 ) > > 6 ^ 0xfc ) ;
+encodedData [ encodedIndex + 3 ] = PAD ;
+int index = ch - 'A' ;
+l_ascii [ jj - bits ] = '0' ;
+( FRONTV . indexOf ( local . charAt ( n + 1 ) ) >= 0 ) &&
+encodedDataLengthLong = ( tripletCount + 1 ) * 4 ;
+byte [ ] resizedBytes = new byte [ bitlen / 8 ] ;
+index = charAt ( value , index + 1 ) == 'F' ? index + 2 : index + 1 ;
+index += 2 ;
+buffer . write ( ( char ) ( ( u << 4 ) + l ) ) ;
+byte val2 = ( ( b2 & SIGN ) == 0 ) ? ( byte ) ( b2 > > 4 ) : ( byte ) ( ( b2 ) > > 4 ^ 0xf0 ) ;
+if ( inwd [ 1 ] == 'N' ) {
+index = charAt ( value , index + 1 ) == 'Z' ? index + 2 : index + 1 ;
+int u = Character . digit ( ( char ) bytes [ ++ i ] , 16 ) ;
+startSrc = 1 ;
+int index = isSilentStart ( value ) ? 1 : 0 ;
+( FRONTV . indexOf ( local . charAt ( n + 1 ) ) >= 0 ) &&
+if ( b == ESCAPE_CHAR ) {
+while ( ! result . isComplete ( ) && index <= value . length ( ) - 1 ) {
+if ( digit == - 1 ) {
+for ( int ii = 0 , jj = ascii . length - 1 ; ii < l_raw . length ; ii ++ , jj -= 8 ) {
+if ( ( symb != 'C' ) && ( isPreviousChar ( local , n , symb ) ) ) {
+Character . forDigit ( ( b > > 4 ) & 0xF , 16 ) ) ;
+if ( start >= 0 && start + length <= value . length ( ) ) {
+if ( b == '+' ) {
+while ( ! result . isComplete ( ) && index <= value . length ( ) - 1 ) {
+. ceil ( ( float ) encodedDataLengthLong / CHUNK_SIZE ) ) ;
+int index = isSilentStart ( value ) ? 1 : 0 ;
+} else if ( marker1 == PAD ) {
+matches = string . charAt ( index + 1 ) == c ;
+dataIndex = i * 3 ;
+return charAt ( value , index + 1 ) == 'R' ? index + 2 : index + 1 ;
+( index > 3 && contains ( value , index - 4 , 1 , "B" , "H" ) ) ) {
+Character . forDigit ( ( b > > 4 ) & 0xF , 16 ) ) ;
+for ( int ii = 0 , jj = l_ascii . length - 1 ; ii < raw . length ; ii ++ , jj -= 8 ) {
+if ( contains ( value , index + 1 , 2 , " C" , " Q" , " G" ) ) {
+encodedDataLengthLong = tripletCount * 4 ;
+index = charAt ( value , index + 1 ) == 'F' ? index + 2 : index + 1 ;
+index = conditionM0 ( value , index ) ? index + 2 : index + 1 ;
+String substring = string . substring ( index , index + test . length ( ) ) ;
+contains ( value , index - 1 , 5 , "UCCEE" , "UCCES" ) ) {
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+decodedData [ encodedIndex + 1 ] = ( byte ) ( ( ( b2 & 0xf ) << 4 ) | ( ( b3 > > 2 ) & 0xf ) ) ;
+if ( ( raw [ ii ] & BITS [ bits ] ) == 0 ) {
+for ( int i = 0 ; i < data . length ; i ++ ) {
+int incount = 1 , count = 1 ;
+contains ( value , index , 2 , "WH" ) ) ) {
+encodedData [ encodedIndex + 1 ] = lookUpBase64Alphabet [ k << 4 ] ;
+isVowel ( local , n + 1 ) ) {
+buffer . write ( ( char ) ( ( u << 4 ) + l ) ) ;
+for ( int i = 0 ; i < bytes . length ; i ++ ) {
+if ( ( txt == null ) || ( txt . length ( ) == 0 ) ) {
+encodedData [ encodedIndex + 1 ] = lookUpBase64Alphabet [ val2 | ( k << 4 ) ] ;
+( FRONTV . indexOf ( local . charAt ( n + 2 ) ) >= 0 ) ) {
+index = charAt ( value , index + 1 ) == 'B' ? index + 2 : index + 1 ;
+} else if ( charAt ( value , index + 1 ) == 'N' ) {
+value . indexOf ( "CZ" ) > - 1 || value . indexOf ( "WITZ" ) > - 1 ;
+for ( int i = 0 ; i < numberQuadruple ; i ++ ) {
+int l = Character . digit ( ( char ) bytes [ ++ i ] , 16 ) ;
+for ( int bits = 0 ; bits < BITS . length ; ++ bits ) {
+} else if ( contains ( value , index , 2 , "CI" , "CE" , "CY" ) ) {
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+byte [ ] out = new byte [ len > > 1 ] ;
+int digit = Character . digit ( ch , 16 ) ;
+out [ j ++ ] = DIGITS [ 0x0F & data [ i ] ] ;
+for ( int i = 0 ; i < lengthToMatch ; i ++ ) {
+index = charAt ( value , index + 1 ) == 'V' ? index + 2 : index + 1 ;
+if ( charAt ( value , index + 1 ) == 'H' ) {
+encodedData [ encodedIndex + 3 ] = PAD ;
+String target = value . substring ( start , start + length ) ;
+if ( txt . length ( ) == 1 ) {
+if ( ( contains ( value , 0 , 4 , "VAN " , "VON " ) || contains ( value , 0 , 3 , "SCH" ) ) || contains ( value , index + 1 , 2 , "ET" ) ) {
+if ( mapped != 0 ) {
+dataIndex = i * 4 ;
+int chunksSoFar = 0 ;
+while ( base64Data [ lastData - 1 ] == PAD ) {
+if ( pObject == null ) {
+index = charAt ( value , index + 1 ) == 'N' ? index + 2 : index + 1 ;
+if ( contains ( value , index + 2 , 1 , "I" , "E" , "H" ) &&
+if ( raw == null || raw . length == 0 ) {
+if ( regionMatch ( local , n , "TCH" ) ) {
+index = contains ( value , index + 1 , 1 , "C" , "X" ) ? index + 2 : index + 1 ;
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+if ( inputIterator != null && transformer != null ) {
+if ( bound < 0 ) {
+if ( hash2 == hashCode && key . equals ( key2 ) ) {
+if ( transformer == null ) {
+h += h << 4 ;
+retval = - 1 ;
+multi . size ( ) == 5 &&
+return key1 == key2 || key1 . equals ( key2 ) ;
+final int i = k + offset - delta ;
+return ( v1 ^ v2 ) ? ( ( v1 ^ trueFirst ) ? 1 : - 1 ) : 0 ;
+super ( ( CursorableLinkedList < E > ) sub . parent , index + sub . offset ) ;
+if ( predicates == null || predicates . length < 1 ) {
+int i = 0 ;
+code += e == null ? 0 : e . hashCode ( ) ;
+while ( x >= start1 && y >= start2
+( getValue ( ) == null ? 0 : getValue ( ) . hashCode ( ) ) ;
+return keyAnalyzer . compare ( key , other ) == 0 ;
+if ( hasNext ( ) == false ) {
+for ( int i = composite . length - 1 ; i >= 0 ; -- i ) {
+if ( predicate . evaluate ( item ) ) {
+if ( coll . contains ( it . next ( ) ) == false ) {
+if ( index >= 0 && index < size ( ) - 1 ) {
+if ( element == null ) {
+while ( n == null && i > 0 ) {
+if ( hash2 == hashCode && key . equals ( key2 ) ) {
+final List < E > list = toList ( iterator , 100 ) ;
+next = parent . root . get ( nextIndex - 1 ) ;
+for ( int i = 0 ; i < size ; i ++ ) {
+int pos = 0 ;
+if ( preds . length == 0 ) {
+if ( current . size ( ) > 0 ) {
+return buildSnake ( vUp [ i - delta ] , k + start1 - start2 , end1 , end2 ) ;
+return ret >= 0 ;
+if ( iPredicates [ i ] . evaluate ( input ) == true ) {
+if ( index < 0 || index >= beyond ) {
+if ( node == next && node == current ) {
+if ( getRightSubTree ( ) == null && getLeftSubTree ( ) == null ) {
+return true ;
+for ( int i = this . composite . length - 1 ; i >= 0 ; -- i ) {
+final int idx = ( start + index ) % maxElements ;
+if ( node != null && compare ( node . getValue ( ) , entry . getValue ( ) ) ) {
+if ( inputIterator != null && transformer != null ) {
+if ( prefixStart == null ) {
+int j = array . length - 1 ;
+int y = x - start1 + start2 - k ;
+return listIterator ( 0 ) ;
+if ( node == next && node == current ) {
+if ( ! beforeFirst || removed ) {
+for ( int i = this . composite . length - 1 ; i >= 0 ; -- i ) {
+for ( int currentIndex = 0 ; currentIndex < index ; currentIndex ++ ) {
+vUp [ 1 + offset ] = end1 + 1 ;
+if ( retval > 0 ) {
+if ( set . size ( ) > 0 || list . size ( ) > 0 ) {
+relativePosition = mid - absolutePositionOfParent ;
+return true ;
+return position1 == null ? position2 == null ? 0 : 1 : - 1 ;
+final int delta = m - n ;
+|| middle . getEnd ( ) == start1 && middle . getDiag ( ) == start1 - start2 ) {
+while ( parent != null && child == parent . getRight ( dataElement ) ) {
+return next != null && ! compare ( next . key , excludedKey ) ;
+return this . index - this . startIndex ;
+return remove ( object , 1 ) ;
+|| paramTypes != null && args != null && paramTypes . length != args . length ) {
+if ( closures [ i ] == null ) {
+return this . keyType == type ;
+if ( inverseKeySet == null ) {
+if ( it . hasNext ( ) ) {
+otherTreeMin . relativePosition = currentSize - sParentAbsolutePosition ;
+return indexOf ( value ) != - 1 ;
+|| ( ( paramTypes != null ) && ( args != null ) && ( paramTypes . length != args . length ) ) ) {
+return previousIndex ( ) >= 0 ;
+if ( null == object ) {
+rangeCheck ( index , size + 1 ) ;
+setLeft ( new AVLNode < E > ( - 1 , obj , this , left ) , null ) ;
+while ( currentIterator . hasNext ( ) == false && ! iteratorChain . isEmpty ( ) ) {
+return true ;
+if ( inputCollection == null ) {
+return this . index - getStartIndex ( ) ;
+if ( coll == null ) {
+if ( other . size ( ) != size ( ) ) {
+setRight ( new AVLNode < E > ( + 1 , obj , right , this ) , null ) ;
+hashCode = 31 * hashCode + ( e == null ? 0 : e . hashCode ( ) ) ;
+if ( ! nextCalled || removed ) {
+return ( ( Iterator < ? > ) object ) . hasNext ( ) == false ;
+if ( readable == false ) {
+} else if ( node . getLeft ( dataElement ) != null ) {
+return candidate != null && candidate . equals ( o ) ;
+System . arraycopy ( this . composite , i + 1 , temp , i , size - i - 1 ) ;
+final StringBuilder buf = new StringBuilder ( 16 * size ( ) ) ;
+return true ;
+while ( currentNode != rootNode [ dataElement . ordinal ( ) ] && isBlack ( currentNode , dataElement ) ) {
+return coll == null ? null : coll . iterator ( ) . next ( ) ;
+if ( ( ( paramTypes == null ) && ( args != null ) )
+if ( parent . delegateMap != null ) {
+int i = 0 ;
+checkInterval ( index , 0 , size ( ) - 1 ) ;
+if ( obj instanceof DefaultKeyValue == false ) {
+if ( iterator . hasPrevious ( ) == false ) {
+canRemove = true ;
+return get ( n - 1 ) ;
+written += 12 ;
+writeAsciiLong ( entry . getMode ( ) , 8 , 16 ) ;
+System . arraycopy ( more_magic , 0 , tmp , magic . length ,
+while ( zvec > limit_zt [ zn ] ) {
+( generalPurposeFlag & ZipArchiveOutputStream . EFS_FLAG ) != 0 ;
+ge = gs + G_SIZE - 1 ;
+for ( int i = 0 ; i < 256 ; i ++ ) {
+return 2 * ( ( long ) Integer . MAX_VALUE ) + 2 + i ;
+for ( int i = 0 ; i < nSelectors ; i ++ ) {
+ret . setDeviceMaj ( readAsciiLong ( 8 , 16 ) ) ;
+return read ( this . singleByteBuf , 0 , 1 ) == - 1 ? - 1
+result [ BYTE_3 ] = ( byte ) ( ( value & BYTE_3_MASK ) > > BYTE_3_SHIFT ) ;
+if ( currRecIdx >= recsPerBlock ) {
+if ( offset % 2 != 0 ) {
+writeAsciiLong ( entry . getSize ( ) , 8 , 16 ) ;
+int zt = selector [ groupNo ] & 0xff ;
+numToRead = ( int ) ( entrySize - entryOffset ) ;
+} else if ( "jar" . equalsIgnoreCase ( archiverName ) ) {
+tmp . insert ( 0 , "0" ) ;
+if ( newName != null && ! originalName . equals ( newName ) ) {
+return ( bsBuffShadow > > ( bsLiveShadow - n ) ) & ( ( 1 << n ) - 1 ) ;
+if ( entriesWithoutEFS . containsKey ( ze ) ) {
+if ( signature [ 4 ] != 0x31 ) {
+int nInUseShadow = 0 ;
+int offset = 0 ;
+result = ( result << 3 ) + ( header [ i ] - '0' ) ;
+gs = ge + 1 ;
+ret . setInode ( readAsciiLong ( 8 , 16 ) ) ;
+return ( ( ( ( ( bsR ( 8 ) << 8 ) | bsR ( 8 ) ) << 8 ) | bsR ( 8 ) ) << 8 ) | bsR ( 8 ) ;
+if ( ! this . canEncodeChar ( c ) ) {
+long value = ( bytes [ offset + BYTE_3 ] << BYTE_3_SHIFT ) & BYTE_3_MASK ;
+if ( extraFields == null ) {
+long result = 0 ;
+System . arraycopy ( data , 0 , result , WORD , data . length ) ;
+for ( int i = 0 ; i < 16 ; i ++ ) {
+if ( o == null || ! ( o instanceof ZipShort ) ) {
+for ( int v = nGroups ; -- v >= 0 ; ) {
+buf [ offset + i ] = 0 ;
+if ( off < 0 || len < 0 || off > b . length - len ) {
+hasEFS ? ZipEncodingHelper . UTF8_ZIP_ENCODING : zipEncoding ;
+if ( ( offset + recordSize ) > buf . length ) {
+if ( off < 0 || len < 0 || off > b . length - len ) {
+return true ;
+if ( start + WORD + length > data . length ) {
++ res . length ( ) * 6 ) ;
+return offset + length ;
+setDirectory ( ( newMode & DIR_FLAG ) != 0 ) ;
+for ( int i = minLen , pp = 0 ; i <= maxLen ; i ++ ) {
+base [ length [ i ] + 1 ] ++ ;
+int end = offset + length ;
+| ( ( mode & 0200 ) == 0 ? 1 : 0 )
+if ( signature [ 3 ] != 0x72 ) {
+int lastShadow = - 1 ;
+if ( thech < 0 ) {
+int zvec = ( bsBuffShadow > > ( bsLiveShadow - zn ) )
+nameCRC32 = ZipLong . getValue ( buffer , offset + 1 ) ;
+if ( data == null ) {
+return true ;
+if ( in . available ( ) == 0 ) {
+writeAsciiLong ( entry . getRemoteDeviceMaj ( ) , 8 , 16 ) ;
++ 6 + ( name . length ( ) + 1 ) / 2 ) ;
+System . arraycopy ( data , offset + WORD , tmp , 0 , length - WORD ) ;
+if ( inUse [ i * 16 + j ] ) {
+for ( int i = 256 ; -- i >= 0 ; ) {
+boolean [ ] inUse16 = new boolean [ 16 ] ;
+if ( currBytes < currSize ) {
+if ( nameLength == 0 || name . charAt ( nameLength - 1 ) != '/' ) {
+if ( bsLiveShadow < n ) {
+while ( s -- >= 0 ) {
+offset = fill ( offset , 16 , ' ' ) ;
+writeAsciiLong ( entry . getTime ( ) , 8 , 16 ) ;
+buf [ offset + length - 1 ] = ( byte ) ' ' ;
+copy = false ;
+byte [ ] temp = new byte [ length + 1 ] ;
+for ( int i = 0 ; i < fields . length ; i ++ ) {
+if ( signature [ 2 ] != 0x61 ) {
+result [ 0 ] = ( byte ) ( ( value & BYTE_MASK ) ) ;
+if ( entry . getMethod ( ) == - 1 ) {
+return getValue ( bytes , 0 ) ;
+} else if ( magic0 != 0x31 ||
+this . su_i2 = 0 ;
+System . arraycopy ( buffer , offset + 5 , unicodeName , 0 , length - 5 ) ;
+gs = ge + 1 ;
+nextSym = perm_zt [ zvec - base_zt [ zn ] ] ;
+value += ( bytes [ offset + BYTE_2 ] << BYTE_2_SHIFT ) & BYTE_2_MASK ;
+if ( signature [ i ] != ZipArchiveOutputStream . LFH_SIG [ i ] ) {
+while ( zvec > limit_zt [ zn ] ) {
+if ( m . unicode == c ) {
+final int zt = dataShadow . selector [ groupNo ] & 0xff ;
+long value = ( bytes [ offset + BYTE_3 ] << BYTE_3_SHIFT ) & BYTE_3_MASK ;
+block [ last + i + 2 ] = block [ ( i % ( last + 1 ) ) + 1 ] ;
+if ( signature [ 4 ] != 0x30 ) {
+if ( signature [ 4 ] != 0x63 ) {
+zvec = ( zvec << 1 )
+if ( signature [ 1 ] != 0x65 ) {
+if ( signature [ 6 ] != 0x3e ) {
+bsBuff |= ( v << ( 32 - bsLive - n ) ) ;
+if ( signature [ 2 ] != 0x73 ) {
+bsLiveShadow += 8 ;
+result [ 0 ] = ( byte ) ( value & BYTE_MASK ) ;
+if ( delimiter == encapsulator ) {
+&& ( c < '0'
+if ( format . getHeader ( ) . length == 0 ) {
+return ( c != format . getDelimiter ( ) ) && Character . isWhitespace ( ( char ) c ) ;
+return isEncapsulating && c == encapsulator ;
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+return ( c == '\n' || c == '\r' ) ;
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+if ( current == '\r' || ( current == '\n' && lastChar != '\r' ) ) {
+} else if ( isEndOfFile ( c ) ) {
+if ( format . getHeader ( ) != null ) {
+if ( c == '\r' && in . lookAhead ( ) == '\n' ) {
+while ( eol
+if ( emptyLinesIgnored ) {
+out . append ( value , start , pos + 1 ) ;
+lastChar = buf [ offset + len - 1 ] ;
+start = pos + 1 ;
+super . mark ( 1 ) ;
+while ( pos < end ) {
+if ( surroundingSpacesIgnored ) {
+return c == '\n' || c == '\r' ;
+if ( current == '\r' || ( current == '\n' && lastChar != '\r' ) ) {
+if ( newLine ) {
+return isEscaping && c == escape ;
+while ( length > 0 && Character . isWhitespace ( buffer . charAt ( length - 1 ) ) ) {
+if ( format . isEncapsulating ( ) ) {
+if ( escape != DISABLED && escape == commentStart ) {
+return this . commentStart != DISABLED ;
+if ( escape != DISABLED && escape == commentStart ) {
+if ( encapsulator != DISABLED && encapsulator == commentStart ) {
+if ( ! newLine ) {
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+if ( delimiter == encapsulator ) {
+quote = true ;
+if ( escape != DISABLED && escape == commentStart ) {
+if ( c == encapsulator ) {
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+int end = offset + len ;
+if ( isEndOfFile ( lastChar ) || ( ! isDelimiter ( lastChar ) && isEndOfFile ( c ) ) ) {
+if ( surroundingSpacesIgnored ) {
+out . append ( value , start , pos + 1 ) ;
+start = pos + 1 ;
+if ( c == '\r' && in . lookAhead ( ) == '\n' ) {
+out . append ( value , start , pos + 1 ) ;
+if ( c == '\n' || c == '\r' || c == encapsulator || c == delim ) {
+out . append ( value , start , pos + 1 ) ;
+lastChar = buf [ offset + len - 1 ] ;
+return this . commentStart != DISABLED ;
+if ( c == '\n' || c == '\r' || c == encapsulator || c == delim ) {
+if ( isEscape ( c ) ) {
+} else if ( isEscape ( c ) ) {
+} else if ( isEscape ( c ) ) {
+return ( c == '\n' || c == '\r' ) ;
+lastChar = line . charAt ( line . length ( ) - 1 ) ;
+return ( c == '\n' || c == '\r' ) ;
+if ( isEndOfFile ( lastChar ) || ( ! isDelimiter ( lastChar ) && isEndOfFile ( c ) ) ) {
+return c == '\n' || c == '\r' ;
+if ( surroundingSpacesIgnored ) {
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+return c == ExtendedBufferedReader . END_OF_STREAM ;
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+return c == delimiter ;
+for ( int i = 0 ; i < comment . length ( ) ; i ++ ) {
+} else if ( isEncapsulator ( c ) ) {
+lastChar = line . charAt ( line . length ( ) - 1 ) ;
+if ( line != null ) {
+while ( length > 0 && Character . isWhitespace ( buffer . charAt ( length - 1 ) ) ) {
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+} else if ( isEndOfFile ( c ) ) {
+if ( encapsulator != DISABLED && encapsulator == commentStart ) {
+if ( len > 0 ) {
+if ( encapsulator != DISABLED && encapsulator == commentStart ) {
+return isEscaping && c == escape ;
+return isEscaping && c == escape ;
+return c == delimiter ;
+if ( isLineBreak ( escape ) ) {
+length = length - 1 ;
+content . setLength ( 0 ) ;
+&& ( lastChar == '\n' || lastChar == '\r' || lastChar == ExtendedBufferedReader . UNDEFINED )
+} else if ( isEncapsulator ( c ) ) {
+return 0 ;
+content . setLength ( 0 ) ;
+&& ( lastChar == '\n' || lastChar == '\r' || lastChar == ExtendedBufferedReader . UNDEFINED )
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+if ( c == encapsulator ) {
+if ( next == null ) {
+lastChar = buf [ offset + len - 1 ] ;
+pos = end - 1 ;
+lastChar = buf [ offset + len - 1 ] ;
+if ( c == '\n' || c == '\r' || c == encapsulator || c == delim ) {
+tkn . isReady = true ;
+if ( surroundingSpacesIgnored ) {
+quote = true ;
+if ( c == '\n' || c == '\r' || c == encapsulator || c == delim ) {
+if ( c == '\r' || c == '\n' || c == delim || c == escape ) {
+} else if ( isEncapsulator ( c ) ) {
+for ( int i = 0 ; i < comment . length ( ) ; i ++ ) {
+return isCommentEnabled && c == commmentStart ;
+return isEscaping && c == escape ;
+lastChar = buf [ offset + len - 1 ] ;
+if ( ignoreVersionsAfter != VersionConstants . IGNORE_VERSIONS ) {
+if ( context == JsonScope . NONEMPTY_OBJECT ) {
+return element == null ? JsonNull . createJsonNull ( ) : element ;
+if ( context != nonempty && context != empty ) {
+checkArgument ( obj != null ) ;
+return toRawClass ( castedType . getUpperBounds ( ) [ 0 ] ) ;
+if ( child == null ) {
+. append ( HEX_CHARS [ ( codePoint > > > 12 ) & 0xf ] )
+if ( value == null || ( token != JsonToken . STRING && token != JsonToken . NUMBER ) ) {
+if ( typeAsClass . isAssignableFrom ( actualClass ) ) {
+return new String ( buffer , start , pos - start ) ;
+hasToken = true ;
+. append ( HEX_CHARS [ codePoint & 0xf ] ) ;
+if ( longValue >= Integer . MIN_VALUE && longValue <= Integer . MAX_VALUE ) {
+if ( isJsonArray ( ) ) {
+if ( constructor . getParameterTypes ( ) . length == 0 ) {
+for ( int i = 1 ; i < stack . size ( ) ; i ++ ) {
+return elements . get ( 0 ) . getAsDouble ( ) ;
+^ ( owner == null ? 0 : owner . hashCode ( ) )
+. append ( HEX_CHARS [ ( codePoint > > > 12 ) & 0xf ] )
+return ( modifiers & modifier ) != 0 ;
+. append ( HEX_CHARS [ ( codePoint > > > 12 ) & 0xf ] )
+if ( builder == null ) {
+return codePoint < 0x20
+&& ( clazz . isAnonymousClass ( ) || clazz . isLocalClass ( ) ) ;
+builder . append ( buffer , start , pos - start ) ;
+if ( token != JsonToken . NAME ) {
+if ( strategy . shouldSkipClass ( clazz ) ) {
+if ( c <= 0x1F ) {
+builder . append ( buffer , start , pos - start - 1 ) ;
+while ( ( total = in . read ( buffer , limit , buffer . length - limit ) ) != - 1 ) {
+if ( members . containsKey ( memberName ) ) {
+json . setLenient ( true ) ;
+return true ;
+AccessibleObject . setAccessible ( declaredConstructors , true ) ;
+if ( ! Character . isSupplementaryCodePoint ( codepoint ) ) {
+for ( int i = 1 ; i < stack . size ( ) ; i ++ ) {
+if ( elements . size ( ) == 1 ) {
+builder . append ( buffer , start , pos - start - 1 ) ;
+if ( country == null && variant == null ) {
+stack . set ( stack . size ( ) - 1 , newTop ) ;
+} else if ( builder == null ) {
+if ( elements . size ( ) == 1 ) {
+|| codePoint == 0x2028
+if ( ! visitedWithCustomHandler ) {
+if ( c == quote ) {
+modifiable = false ;
+if ( buffer [ pos + c ] != toFind . charAt ( c ) ) {
+if ( capitalizeFirstLetter && ! Character . isUpperCase ( firstCharacter ) ) {
+} else if ( json . isJsonObject ( ) ) {
+if ( elements . size ( ) == 1 ) {
+if ( token == null ) {
+addAsArrayElement ( new ObjectTypePair ( child , childType , false ) ) ;
+return context . serialize ( src , typeOfSrc , true ) ;
+|| ( codePoint >= 0x7f && codePoint <= 0x9f ) ;
+if ( Character . isUpperCase ( character ) && translation . length ( ) != 0 ) {
+return new String ( buffer , start , pos - start - 1 ) ;
+if ( c == '\r' || c == '\n' ) {
+return codePoint < 0x20
+if ( buffer [ pos + i ] != NON_EXECUTE_PREFIX [ i ] ) {
+return number instanceof BigInteger || number instanceof Long || number instanceof Integer
+this . generateNonExecutableJson = true ;
+return getDefaultSerializers ( false , LongSerializationPolicy . DEFAULT ) ;
+if ( value . equalsIgnoreCase ( "null" ) ) {
+if ( c == '\r' || c == '\n' ) {
+if ( value == null ) {
+if ( index < 0 ) {
+if ( firstElement ) {
+if ( ! skipTo ( "*/" ) ) {
+return false ;
+if ( ! lenient && firstToken != JsonToken . BEGIN_ARRAY && firstToken != JsonToken . BEGIN_OBJECT ) {
+return ( clazz . getModifiers ( ) & Modifier . STATIC ) != 0 ;
+builder . append ( buffer , start , pos - start - 1 ) ;
+if ( Character . isUpperCase ( character ) && translation . length ( ) != 0 ) {
+if ( value == null || ( token != JsonToken . STRING && token != JsonToken . NUMBER ) ) {
+if ( pair == null ) {
+return - 1 ;
+return - 1 ;
+Preconditions . checkArgument ( version >= 0.0D ) ;
+while ( ( total = in . read ( buffer , limit , buffer . length - limit ) ) != - 1 ) {
+} else if ( isBoolean ( ) ) {
+if ( ancestors . contains ( node ) ) {
+|| ( codePoint >= 0x7f && codePoint <= 0x9f ) ;
+return elements . get ( 0 ) . getAsBoolean ( ) ;
+|| ( codePoint >= 0x7f && codePoint <= 0x9f ) ;
+return number instanceof BigDecimal || number instanceof Double || number instanceof Float ;
+pos += 4 ;
+if ( token != expected ) {
+&& ( string . equals ( "-Infinity" ) || string . equals ( "Infinity" ) || string . equals ( "NaN" ) ) ) {
+if ( Character . isUpperCase ( character ) && translation . length ( ) != 0 ) {
+if ( ! deserializers . hasSpecificHandlerFor ( Date . class ) ) {
+stack . remove ( stack . size ( ) - 1 ) ;
+if ( element == null || element . isJsonNull ( ) ) {
+if ( ( result >= 1.0d && value . startsWith ( "0" ) ) ) {
+if ( entry . first . isAssignableFrom ( type ) ) {
+return nextInObject ( true ) ;
+typeHierarchyList . add ( 0 , pair ) ;
+return new String ( buffer , start , pos - start - 1 ) ;
+if ( ! serializeNulls && value . isJsonNull ( ) ) {
+for ( int i = typeHierarchyList . size ( ) - 1 ; i >= 0 ; -- i ) {
+if ( -- open == 0 ) {
+int ch = ( int ) b & 0xFF ;
+if ( c == INT_APOSTROPHE || codes [ c ] != 0 ) {
+bbuf [ outputPtr ++ ] = ( byte ) ( 0x80 | ( ( ch > > 6 ) & 0x3f ) ) ;
+return findName ( _quadBuffer , qlen , q , 2 ) ;
+x = ( x << 8 ) | ( wordBytes [ i ] & 0xFF ) ;
+int avail = _end - _ptr ;
+q2 = ( q2 << 8 ) | i ;
+System . arraycopy ( c , start , _currentSegment , 0 , amount ) ;
+if ( _inputPtr >= _inputEnd ) {
+buffer [ ptr ++ ] = _base64ToAsciiC [ b24 & 0x3F ] ;
+num = ( num * 10 ) + ( c - '0' ) ;
+int outputCount = 0 ;
+int byteLen = ( qlen << 2 ) - 4 + lastQuadBytes ;
+hash = ( hash * MULT3 ) ^ quads [ i ] ;
+if ( ch <= 0x7F ) {
+if ( _inputPtr >= _inputEnd && ! loadMore ( ) ) {
+if ( _inputPtr >= _inputEnd && ! loadMore ( ) ) {
+if ( index == 0 ) {
+return true ;
+for ( int i = 0 ; i < cmpLen ; ++ i ) {
+if ( ! firstOk ) {
+if ( bits < 0 ) {
+i = _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+str . getChars ( offset , offset + amount , _currentSegment , 0 ) ;
+int c = _buffer [ _ptr ++ ] & 0xFF ;
+int amount = _buffer . length - _ptr ;
+if ( c < INT_0 || c > INT_9 ) {
+_quoteBuffer [ 2 ] = '0' ;
+return - 1 ;
+if ( lastQuadBytes < 4 ) {
+hash ^= ( hash > > > 15 ) ;
+| ( ( _inputBuffer [ _inputPtr + 2 ] & 0xFF ) << 8 )
+if ( inputEnd < 3 ) {
+( ( ( Double . isNaN ( d ) || Double . isInfinite ( d ) )
+int second = length - first ;
+for ( int i = 0 ; i < 4 ; ++ i ) {
+if ( ( _numTypesValid & NR_LONG ) == 0 ) {
+if ( strength == null || strength . ordinal ( ) < _minimalMatch . ordinal ( ) ) {
+_mainHashMask = ( newLen - 1 ) ;
+if ( _intern ) {
+if ( c == '.' || c == 'e' || c == 'E' ) {
+num = ( num * 10 ) + ( digitChars [ offset ] - '0' ) ;
+System . arraycopy ( curr , 0 , result , offset , currLen ) ;
+return ( ( c << 6 ) | ( d & 0x3F ) ) - 0x10000 ;
+return _symbols . findSymbol ( _inputBuffer , start , ptr - start , hash ) ;
+if ( ( _outputTail + 6 * ( end - offset ) ) > _outputEnd ) {
+buf [ ++ ptr ] = HEX_CHARS [ hi & 0xF ] ;
+if ( ! maybeDirty ( ) ) {
+if ( ( d & 0xC0 ) != 0x080 ) {
+buffer [ ptr ++ ] = _base64ToAsciiC [ b24 & 0x3F ] ;
+for ( int i = 0 ; i < cmpLen ; ++ i ) {
+if ( escape > 0 ) {
+if ( qlen >= quads . length ) {
+hash ^= ( hash << 7 ) ;
+int i = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+} else if ( i <= INT_QUOTE ) {
+if ( _inputBuffer [ _inputPtr ] == INT_SLASH ) {
+int c = ( c1 << 6 ) | ( d & 0x3F ) ;
+int length = maxRead - inputEnd ;
+num = ( num * 10 ) + ( digitChars [ offset ] - '0' ) ;
+if ( ctxt . inArray ( ) ) {
+if ( value < 10 ) {
+if ( ptr > 5 && ptr < end ) {
+b24 |= ( ( int ) readBuffer [ inputPtr ++ ] ) & 0xFF ;
+buffer [ ptr ++ ] = HEX_CHARS [ hi & 0xF ] ;
+int c = ( int ) inputBuffer [ ptr ] & 0xFF ;
+while ( offset < len ) {
+i = _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+int inputLeft = inputEnd - inputPtr ;
+if ( c < escCodeCount && escCodes [ c ] != 0 ) {
+_pastLen = 0 ;
+if ( i <= INT_BACKSLASH ) {
+_tokenIncomplete = false ;
+if ( ( _outputTail + 11 ) >= _outputEnd ) {
+if ( ( _outputTail + 6 * ( end - offset ) ) > _outputEnd ) {
+outBuf [ outPtr ++ ] = ( byte ) ( 0x80 | ( ( c > > 6 ) & 0x3f ) ) ;
+if ( ( _numTypesValid & NR_BIGDECIMAL ) == 0 ) {
+if ( outPtr >= outBuf . length ) {
+if ( ch == '"' ) {
+buf [ ++ ptr ] = HEX_CHARS [ ch & 0xF ] ;
+return findName ( _quad1 , q2 , 2 ) ;
+if ( c >= 0x80 ) {
+return ( offset + len ) ;
+c = ( int ) inputBuffer [ ptr ++ ] & 0xFF ;
+text . getChars ( offset , offset + len , cbuf , 0 ) ;
+bbuf [ outputPtr ++ ] = HEX_CHARS [ hi > > 4 ] ;
+if ( ch < '0' || ch > '9' ) {
+int startPtr = ptr - 1 ;
+if ( c == INT_APOSTROPHE || codes [ c ] != 0 ) {
+_textBuffer . resetWithShared ( _inputBuffer , _inputPtr , ( ptr - _inputPtr ) ) ;
+ch = _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+int c = ( c1 << 6 ) | ( d & 0x3F ) ;
+return - 1 ;
+byteIx = ( ix & 3 ) ;
+_length = ( next == null ) ? 1 : next . _length + 1 ;
+bbuf [ outputPtr ++ ] = HEX_CHARS [ ( ch > > 8 ) & 0xF ] ;
+while ( inputPtr <= safeInputEnd ) {
+if ( ! ( ch == ' ' || ch == '\r' || ch == '\n' || ch == '\t' ) ) {
+| ( _inputBuffer [ _inputPtr + 3 ] & 0xFF ) ;
+ix = 0 ;
+if ( Enum . class . isAssignableFrom ( raw ) ) {
+false , null ) ;
+if ( hasStringCreator ) {
+c = dateStr . charAt ( len - 9 ) ;
+while ( b == null && _nextBucketIndex < _buckets . length ) {
+if ( _primaryMixIn != null ) {
+if ( o == this ) return true ;
+if ( parameterTypes . length != 2 ) {
+if ( _valueInstantiator . canCreateUsingDelegate ( ) ) {
+int seconds = parseInt ( date , offset += 1 , offset += 2 ) ;
+if ( ( dd == _delegateDeserializer ) && ( vd == _valueDeserializer ) && ( vtd == _valueTypeDeserializer ) ) {
+JavaType idType = provider . getTypeFactory ( ) . findTypeParameters ( type , ObjectIdGenerator . class ) [ 0 ] ;
+if ( objectIdInfo == null ) {
+for ( int i = 1 ; i < len ; ++ i ) {
+if ( refName == null ) {
+int index = key . hashCode ( ) & hashMask ;
+if ( ann != null ) {
+if ( sb == null ) {
+if ( t == JsonToken . VALUE_NUMBER_INT || t == JsonToken . VALUE_NUMBER_FLOAT ) {
+if ( type . isEnumType ( ) ) {
+return ( ix < 0 ) ? n : n . substring ( ix + 1 ) ;
+int i = 0 ;
+return false ;
+if ( paramCount == ( paramAnns . length + 1 ) ) {
+} else if ( "nativeMethod" . equals ( propName ) ) {
+return ( value == null ) || ( value . length ( ) == 0 ) ;
+public boolean hasAbstractTypeResolvers ( ) { return _abstractTypeResolvers . length > 0 ; }
+int month = parseInt ( date , offset += 1 , offset += 2 ) ;
+if ( activeView == null || _view . isAssignableFrom ( activeView ) ) {
+padInt ( formatted , calendar . get ( Calendar . MONTH ) + 1 , "MM" . length ( ) ) ;
+if ( ! _class . isAssignableFrom ( subclass ) ) {
+if ( name . startsWith ( "get" ) ) {
+String name = ( pn == null ) ? null : pn . getSimpleName ( ) ;
+if ( ann != null ) {
+if ( ! Modifier . isStatic ( type . getModifiers ( ) ) ) {
+if ( propertyCtor == null ) {
+if ( t == JsonToken . VALUE_STRING ) {
+if ( name != null ) {
+if ( cls != NoClass . class ) {
+if ( builder != null ) {
+idType = ctxt . getTypeFactory ( ) . findTypeParameters ( type , ObjectIdGenerator . class ) [ 0 ] ;
+if ( ! tokens . hasMoreTokens ( ) ) {
+if ( dc . isEnum ( ) && ( paramCount == paramAnns . length + 2 ) ) {
+_serializationConfig = state ?
+return ( _serFeatures & f . getMask ( ) ) != 0 ;
+for ( int i = 0 ; i < len ; ++ i ) {
+return true ;
+if ( _anySetter != null && ! _anySetter . hasValueDeserializer ( ) ) {
+if ( ch < '0' || ch > '9' ) break ;
+int month = parseInt ( date , offset += 1 , offset += 2 ) ;
+int minutes = Math . abs ( ( offset / ( 60 * 1000 ) ) % 60 ) ;
+if ( _propertyIndex != - 1 ) {
+if ( _interfaceMappings != null ) {
+if ( _typeParameters != null && _typeParameters . length > 0 ) {
+if ( supertype . getName ( ) . startsWith ( prefix ) ) {
+if ( contentClass == _elementType . getRawClass ( ) ) {
+} else if ( typeDeser == null ) {
+if ( t == JsonToken . VALUE_NUMBER_INT || t == JsonToken . VALUE_NUMBER_FLOAT ) {
+if ( converterClass == Converter . None . class || converterClass == NoClass . class ) {
+if ( ( injectId == null ) && ( name == null || name . length ( ) == 0 ) ) {
+while ( -- i >= 0 ) {
+return ( _value >= Integer . MIN_VALUE && _value <= Integer . MAX_VALUE ) ;
+TypeIdResolver idRes = idResolver ( config , baseType , subtypes , false , true ) ;
+if ( config . getAnnotationIntrospector ( ) . hasCreatorAnnotation ( factory ) ) {
+int i = 0 ;
+} else if ( _currToken == JsonToken . START_ARRAY ) {
+if ( desc == null ) {
+int newDeserFeatures = ( _deserFeatures | feature . getMask ( ) ) ;
+anyViews = true ;
+return _value ? 1.0 : 0.0 ;
+if ( t == JsonToken . VALUE_STRING ) {
+if ( objectId . writeAsId ( jgen , provider , w ) ) {
+&& ( ( AnnotatedMethod ) _member ) . getParameterCount ( ) == 1 ) {
+return false ;
+props . add ( 0 , idProp ) ;
+if ( o . getClass ( ) != getClass ( ) ) return false ;
+AnnotationMap ann = _mergeAnnotations ( 0 , _fields , _getters ) ;
+if ( _annotationIntrospector . hasIgnoreMarker ( _defaultConstructor ) ) {
+_additionalKeySerializers = ( allAdditionalKeySerializers == null ) ?
+if ( B != null ) {
+if ( value >= 0 && value <= 0xFFFF ) {
+JavaType elemType = ( type . containedTypeCount ( ) > 0 ) ? type . containedType ( 0 ) : TypeFactory . unknownType ( ) ;
+if ( objectIdInfo == null ) {
+if ( node == null ) {
+int foundIndex = - 1 ;
+if ( ( mod & ( Modifier . INTERFACE | Modifier . ABSTRACT ) ) == 0 ) {
+ObjectIdGenerator < ? > gen = ( hi == null ) ? null : hi . objectIdGeneratorInstance ( config , annotated , implClass ) ;
+return true ;
+if ( jp . getCurrentToken ( ) == JsonToken . START_ARRAY ) {
+return false ;
+String [ ] propertyOrder = ( intr == null ) ? null : intr . findSerializationPropertyOrder ( _classDef ) ;
+char c = str . charAt ( len - 6 ) ;
+if ( t == JsonToken . VALUE_NULL ) {
+} else if ( "lineNumber" . equals ( propName ) ) {
+if ( ! wrap || ! ( t instanceof JsonMappingException ) ) {
+TypeIdResolver idRes = idResolver ( config , baseType , subtypes , false , true ) ;
+if ( key . equals ( bucket . key ) ) {
+if ( propName == null || propName . length ( ) == 0 ) {
+if ( java . nio . charset . Charset . class . isAssignableFrom ( raw ) ) {
+if ( wrapperName == null || wrapperName == PropertyName . NO_NAME ) {
+if ( _nextToken != null ) {
+if ( name . endsWith ( "[]" ) ) {
+if ( _initialized ) {
+if ( c >= 'A' && c <= 'Z' ) continue ;
+if ( i == attrCount && ! ( isAttribute && isUnwrappingSerializer ( ) ) ) {
+if ( c >= '0' && c <= '9' ) continue ;
+if ( _typeSerializer == null ) {
+for ( int i = 0 , len = matchStr . length ( ) ; i < len ; ++ i ) {
+if ( i == attrCount && ! ( isAttribute && isUnwrappingSerializer ( ) ) ) {
+if ( _xmlPrettyPrinter != null ) {
+int i = 0 ;
+return true ;
+if ( ! ( ch == ' ' || ch == '\r' || ch == '\n' || ch == '\t' ) ) {
+if ( localName == null || localName . length ( ) == 0 ) {
+if ( _mayBeLeaf ) {
+if ( sr . getEventType ( ) != XMLStreamConstants . START_ELEMENT ) {
+if ( i == attrCount && ! ( isAttribute && isUnwrappingSerializer ( ) ) ) {
+if ( name == null ) {
+if ( typeIdPropName == null || typeIdPropName . length ( ) == 0 ) {
+if ( moveBy > 0 ) {
+for ( int i = 0 , len = _props . length ; i < len ; ++ i ) {
+if ( _currentState != XML_ATTRIBUTE_NAME || _nextAttributeIndex != 0 ) {
+sb . replace ( ix , ix + 1 , ".." ) ;
+if ( ! ( ch == ' ' || ch == '\r' || ch == '\n' || ch == '\t' ) ) {
+if ( _justHadStartElement ) {
+if ( ns == null || ns . length ( ) == 0 ) {
+if ( _xmlReader . getEventType ( ) == XMLStreamReader . START_ELEMENT ) {
+if ( f . enabledByDefault ( ) ) {
+if ( localName == null || localName . length ( ) == 0 ) {
+_mayBeLeaf = true ;
+if ( _elementNameStack . isEmpty ( ) && ( _xmlPrettyPrinter != null ) ) {
+int moveBy = i - attrCount ;
+if ( b == BYTE_QMARK ) {
+if ( ( cdata != null ) && cdata . get ( i ) ) {
+int attrCount = 0 ;
+@ Override public boolean enabledIn ( int flags ) { return ( flags & getMask ( ) ) != 0 ; }
+if ( ( cdata != null ) && cdata . get ( i ) ) {
+if ( _mayBeLeaf ) {
+if ( wrapperName != null && wrapperName != PropertyName . NO_NAME ) {
+if ( validXmlNameStartChar ( acc , b ) ) {
+if ( xgen . getOutputContext ( ) . inRoot ( ) ) {
+sb . replace ( ix , ix + 2 , "$" ) ;
+if ( _cfgDefaultUseWrapper ) {
+if ( b != null && b . booleanValue ( ) ) {
+if ( ns == null || ns . length ( ) == 0 ) {
+if ( str . charAt ( i ) > ' ' ) {
+if ( type . isContainerType ( ) ) {
+boolean maybeXmlDecl = ( b == BYTE_LT ) ;
+if ( _binaryValue == null ) {
+while ( level > SPACE_COUNT ) {
+if ( type == REPLAY_START_DELAYED ) {
+if ( ns == null || ns . isEmpty ( ) ) {
+if ( ch >= 'A' ) {
+if ( c == '_' || c == '.' || c == '-' ) continue ;
+if ( wrapperName != null && wrapperName != PropertyName . NO_NAME ) {
+if ( ! TypeUtil . isIndexedType ( type ) ) {
+int textIndex = - 1 ;
+if ( ( localName != null && localName . length ( ) > 0 )
+if ( name != null && namesToWrap . contains ( name ) ) {
+if ( ns != null && ns . length ( ) > 0 ) {
+if ( ctxt == null ) {
+if ( typeIdPropName == null || typeIdPropName . length ( ) == 0 ) {
+if ( _repeatElement != 0 ) {
+for ( int i = 0 , len = _props . length ; i < len ; ++ i ) {
+if ( rootName == null ) {
+if ( cdata == null ) {
+if ( _currentState != XML_ATTRIBUTE_NAME || _nextAttributeIndex != 0 ) {
+if ( _anyGetterWriter != null ) {
+int attrCount = 0 ;
+if ( _cfgNameForTextElement != null ) {
+if ( asArray ) {
+if ( b == BYTE_HYPHEN ) {
+if ( ix >= 0 ) {
+if ( b != null && b . booleanValue ( ) ) {
+if ( _cfgPrettyPrinter != null ) {
+if ( ix >= 0 ) {
+if ( _wrapperName == null ) {
+if ( c >= '0' && c <= '9' ) continue ;
+if ( ctxt . inArray ( ) ) {
+if ( name == null ) {
+if ( a . hasAnnotation ( JacksonXmlText . class ) ) {
+if ( _xmlPrettyPrinter != null ) {
+int newF = ( _formatFeatures & ~ mask ) | ( values & mask ) ;
+if ( cls == byte [ ] . class || cls == char [ ] . class ) {
+if ( ! ( ch == ' ' || ch == '\r' || ch == '\n' || ch == '\t' ) ) {
+int newF = ( _formatFeatures & ~ mask ) | ( values & mask ) ;
+if ( _nextIsAttribute ) {
+if ( c > 127 ) continue ;
+if ( _nextIsUnwrapped ) {
+} else if ( checkNextIsUnwrapped ( ) ) {
+_mask = ( 1 << ordinal ( ) ) ;
+} else if ( ctxt . inObject ( ) ) {
+if ( acc . nextByte ( ) == BYTE_HYPHEN ) {
+return true ;
+return true ;
+if ( acc . nextByte ( ) != matchStr . charAt ( i ) ) {
+if ( _cfgPrettyPrinter != null ) {
+if ( ! acc . hasMoreBytes ( ) ) {
+if ( _currToken != JsonToken . VALUE_STRING &&
+accum . append ( "\n" ) . append ( StringUtils . leftPad ( "" , nodeDepth ( ) - 1 * 2 ) ) ;
+if ( data . endsWith ( "-" ) )
+if ( isBlock != tag . isBlock ) return false ;
+return siblings . size ( ) > 1 ? siblings . get ( 0 ) : null ;
+return siblings . get ( index + 1 ) ;
+if ( elements . size ( ) > 0 )
+if ( accum . length ( ) > 0 && element . isBlock ( ) && ! TextNode . lastCharIsWhitespace ( accum ) )
+while ( ! queue . isEmpty ( ) && ! matchesAny ( seq ) )
+return parentNode . nodeDepth ( ) + 1 ;
+if ( ! e . parent ( ) . equals ( c . parent ( ) ) )
+if ( tq . matchChomp ( "/>" ) ) {
+return numDiscarded == 0 ;
+tag . isBlock = false ;
+int numDiscarded = 0 ;
+return true ;
+if ( child . tagName . equals ( "base" ) || child . tagName . equals ( "script" ) || child . tagName . equals ( "noscript" ) || child . tagName . equals ( "link" ) ||
+if ( ! super . equals ( o ) ) return false ;
+result = 31 * result + ( attributes != null ? attributes . hashCode ( ) : 0 ) ;
+Validate . isTrue ( lastChar . length ( ) == 1 ) ;
+accum . append ( "\n" ) . append ( StringUtils . leftPad ( "" , nodeDepth ( ) - 1 * 2 ) ) ;
+if ( this == o ) return true ;
+List < Character > chars = queue . subList ( 0 , len ) ;
+result = 31 * result + ( empty ? 1 : 0 ) ;
+for ( int i = 0 ; i < len ; i ++ ) {
+for ( int i = nodes . size ( ) - 1 ; i >= 0 ; i -- ) {
+if ( eval . matches ( element ) )
+return false ;
+if ( children . size ( ) > 0 )
+return tag . preserveWhitespace ( ) || parent ( ) != null && parent ( ) . preserveWhitespace ( ) ;
+Validate . isTrue ( lastChar . length ( ) == 1 ) ;
+for ( int i = 0 ; i < len ; i ++ ) {
+return parentNode . nodeDepth ( ) + 1 ;
+for ( int i = stack . size ( ) - 1 ; i >= 0 ; i -- ) {
+return false ;
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( c ) || c . equals ( '-' ) || c . equals ( '_' ) ) ) {
+if ( classes . contains ( className ) )
+if ( tq . matchChomp ( "=" ) ) {
+accum . append ( "\n" ) . append ( StringUtils . leftPad ( "" , nodeDepth ( ) - 1 * 2 ) ) ;
+if ( tagName . length ( ) == 0 ) {
+} else if ( tq . matchChomp ( ":lt(" ) ) {
+if ( el . hasText ( ) )
+if ( whitelist . isSafeAttribute ( sourceTag , sourceEl , sourceAttr ) )
+return element . elementSiblingIndex ( ) > index ;
+return false ;
+if ( this . parentNode != null )
+if ( optionalClosing != tag . optionalClosing ) return false ;
+return ! queue . isEmpty ( ) && Character . isLetterOrDigit ( queue . peek ( ) ) ;
+if ( sb . length ( ) != 0 )
+result = 31 * result + ( canContainBlock ? 1 : 0 ) ;
+if ( child . tagName . equals ( "base" ) || child . tagName . equals ( "script" ) || child . tagName . equals ( "noscript" ) || child . tagName . equals ( "link" ) ||
+if ( element . hasAttr ( attributeKey ) )
+} else if ( tq . matchesWord ( ) ) {
+return true ;
+if ( sb . length ( ) != 0 )
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( c ) || c . equals ( '-' ) || c . equals ( '_' ) ) ) {
+return tag . preserveWhitespace ( ) || parent ( ) != null && parent ( ) . preserveWhitespace ( ) ;
+if ( read > 0 ) {
+return true ;
+for ( int i = 0 ; i < counter ; i ++ ) {
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( queue . peek ( ) ) || matchesAny ( "-" , "_" , ":" ) ) ) {
+if ( canContainBlock != tag . canContainBlock ) return false ;
+return ! attrProts . containsKey ( key ) || testValidProtocol ( el , attr , attrProts . get ( key ) ) ;
+return getDeepChild ( children . get ( 0 ) ) ;
+if ( sb . length ( ) != 0 )
+return siblings . size ( ) > 1 ? siblings . get ( siblings . size ( ) - 1 ) : null ;
+if ( last ( ) . tag ( ) . canContain ( tag ) )
+return element . elementSiblingIndex ( ) == index ;
+while ( ! queue . isEmpty ( ) && Character . isLetterOrDigit ( queue . peek ( ) ) ) {
+} else if ( tq . matches ( "<?" ) || tq . matches ( "<!" ) ) {
+if ( ! found . equals ( check ) )
+while ( ! tq . matchesAny ( "<" , "/>" , ">" ) && ! tq . matchesWhitespace ( ) && ! tq . isEmpty ( ) ) {
+if ( child . tagName . equals ( "base" ) || child . tagName . equals ( "script" ) || child . tagName . equals ( "noscript" ) || child . tagName . equals ( "link" ) ||
+for ( int i = nodes . size ( ) - 1 ; i >= 0 ; i -- ) {
+for ( int i = nodes . size ( ) - 1 ; i >= 0 ; i -- ) {
+return true ;
+return ! contents . isEmpty ( ) ? contents . get ( contents . size ( ) - 1 ) : null ;
+if ( enforcedAttributes . containsKey ( tagName ) ) {
+if ( child . tagName . equals ( "base" ) || child . tagName . equals ( "script" ) || child . tagName . equals ( "noscript" ) || child . tagName . equals ( "link" ) ||
+if ( this . optionalClosing && this . equals ( child ) )
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( queue . peek ( ) ) || matchesAny ( "-" , "_" , ":" ) ) ) {
+if ( c . equals ( p ) ) {
+if ( ! validAncestor ) {
+return siblings . size ( ) > 1 ? siblings . get ( siblings . size ( ) - 1 ) : null ;
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( c ) || c . equals ( '-' ) || c . equals ( '_' ) ) ) {
+return true ;
+if ( TextNode . lastCharIsWhitespace ( accum ) )
+return element . elementSiblingIndex ( ) < index ;
+return siblings . size ( ) > 1 ? siblings . get ( siblings . size ( ) - 1 ) : null ;
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( c ) || c . equals ( '-' ) || c . equals ( '_' ) ) ) {
+if ( accum . length ( ) > 0 && element . isBlock ( ) && ! TextNode . lastCharIsWhitespace ( accum ) )
+if ( previousSib != null && previousSib . equals ( e ) ) {
+if ( size ( ) > 0 )
+result = 31 * result + ( canContainBlock ? 1 : 0 ) ;
+return parentNode . nodeDepth ( ) + 1 ;
+if ( this . equals ( tag ) )
+if ( sb . length ( ) == 0 )
+while ( ! queue . isEmpty ( ) && ( Character . isLetterOrDigit ( c ) || c . equals ( '-' ) || c . equals ( '_' ) ) ) {
+for ( int i = nodes . size ( ) - 1 ; i >= 0 ; i -- ) {
+return ! queue . isEmpty ( ) && Character . isLetterOrDigit ( queue . peek ( ) ) ;
+canContainBlock = false ;
+if ( jj_3R_123 ( ) ) return true ;
+if ( index != WHOLE_COLLECTION && isCollection ( ) ) {
+if ( jj_3R_186 ( ) ) {
+if ( getDocumentOrder ( ) == 1 ) {
+return true ;
+if ( length > 0 ) {
+index + 1 ,
+if ( ( ( active0 &= old0 ) | ( active1 &= old1 ) ) == 0L )
+jjmatchedKind = 78 ;
+if ( Modifier . isPublic ( clazz . getModifiers ( ) ) ) {
+if ( jj_3R_156 ( ) ) return true ;
+if  ( buffer . length (  )  == 0
+if ( jj_3R_183 ( ) ) return true ;
+0 ) ;
+buffer . append ( "[" ) . append ( index + 1 ) . append ( ']' ) ;
+if ( ( active0 & 0xff62fff600000000L ) != 0L || ( active1 & 0x2907L ) != 0L )
+return jjMoveStringLiteralDfa1_0 ( 0x80L , 0x0L ) ;
+return jjStopAtPos ( 1 , 14 ) ;
+if ( ( active0 & 0x4000000000L ) != 0L )
+return jjMoveStringLiteralDfa4_0 ( active0 , 0L , active1 , 0x400L ) ;
+if ( ! lname . equals ( "*" ) ) {
+return setPosition ( getCurrentPosition ( ) + 1 ) ;
+return false ;
+|| ( namespace != null && ! namespace . equals ( this . namespace ) ) ) {
+if ( jj_3R_40 ( ) ) {
+int index = 1 ;
+if ( testLocalName . equals ( "*" ) || testLocalName . equals ( nodeLocalName ) ) {
+if ( index == WHOLE_COLLECTION ) {
+if ( jj_3R_193 ( ) ) { jj_scanpos = xsp ; break ; }
+if ( jj_scan_token ( FUNCTION_FALSE ) ) return true ;
+compareNodePointers ( p1 . parent , depth1 - 1 , p2 . parent , depth2 - 1 ) ;
+if ( s1 != null && s2 == null ) {
+int pi = 0 ;
+if ( jj_3R_15 ( ) ) return true ;
+index = end - position + 2 ;
+return jjMoveStringLiteralDfa9_0 ( active0 , 0x3000660000000000L , active1 , 0L ) ;
+if ( jj_3R_16 ( ) ) return true ;
+assertArgCount ( 1 ) ;
+for ( int i = 0 ; i < count ; i ++ ) {
+return ( NodePointer ) nodeSet . getPointers ( ) . get ( position - 1 ) ;
+if ( index == WHOLE_COLLECTION ) {
+if ( jj_3R_142 ( ) ) {
+if ( jj_3R_129 ( ) ) return true ;
+length - index - 1 ) ;
+if ( types . length >= 1
+if ( ( active0 & 0x2000000000000L ) != 0L )
+if ( ( active0 & 0x100000000L ) != 0L )
+if ( ( active0 & 0x2000000000L ) != 0L )
+if ( jj_scan_token ( FUNCTION_STARTS_WITH ) ) return true ;
+index = end - position + 2 ;
+bufpos = - 1 ;
+return false ;
+return false ;
+return equal ( context , args [ 0 ] , args [ 1 ] ) ? Boolean . TRUE : Boolean . FALSE ;
+int currentMatch = 0 ;
+if ( jj_3R_15 ( ) ) return true ;
+if ( parent != null && parent . getIndex ( ) != WHOLE_COLLECTION ) {
+return false ;
+if ( ( active1 & 0x2L ) != 0L )
+{ if ( true ) return compiler . function ( code , args . toArray ( ) ) ; }
+jjmatchedPos = 2 ;
+if ( axis == Compiler . AXIS_CHILD || axis == Compiler . AXIS_ATTRIBUTE ) {
+if ( wildcard && testPrefix == null ) {
+if ( args == null ) {
+if ( jj_3R_192 ( ) ) return true ;
+return jjMoveStringLiteralDfa3_0 ( active0 , 0x7000000000000000L , active1 , 0L ) ;
+if ( i > 0 || absolute ) {
+if ( jj_la == 0 && jj_scanpos == jj_lastpos ) return false ;
+currentPredicate + 1 ) ;
+int index = position - 1 ;
+if ( ( active0 & 0x2000000000000000L ) != 0L )
+if ( jj_scan_token ( FUNCTION_NORMALIZE_SPACE ) ) return true ;
+if ( i > 0 ) {
+return getSymbol ( ) + parenthesize ( args [ 0 ] , false ) ;
+if ( getArgumentCount ( ) < 2 ) {
+else if ( ( active0 & 0x10000000000L ) != 0L )
+if ( hint == - 1 ) {
+return 1 ;
+for ( int i = 0 ; i < children . size ( ) ; i ++ ) {
+actual = false ;
+if ( jj_scan_token ( FUNCTION_CEILING ) ) return true ;
+|| nodeType == Node . CDATA_SECTION_NODE ) {
+if ( n == node1 ) {
+return jjStopAtPos ( 19 , 47 ) ;
+if ( parent != null ) {
+return jjMoveStringLiteralDfa10_0 ( active0 , 0x400880000000000L , active1 , 0L ) ;
+return ( ( Boolean ) object ) . booleanValue ( ) ? ONE : ZERO ;
+if ( jj_scan_token ( PLUS ) ) return true ;
+if ( parentContext != null ) {
+if ( jj_scan_token ( AXIS_ANCESTOR_OR_SELF ) ) return true ;
+return jjMoveNfa_0 ( 0 , 0 ) ;
+if ( includeSelf ) {
+else if ( step . getAxis ( ) == Compiler . AXIS_CHILD
+if ( steps [ 0 ] . getAxis ( ) != Compiler . AXIS_ATTRIBUTE ) {
+return jjStopAtPos ( 1 , 16 ) ;
+while ( curChar <= 32 && ( 0x100003600L & ( 1L << curChar ) ) != 0L )
+for ( int i = 0 ; i < 39 ; i ++ ) jj_la1 [ i ] = - 1 ;
+if ( ( active0 & 0x8000000000000L ) != 0L )
+else if ( ( active0 & 0x20000000L ) != 0L )
+jjmatchedPos = 8 ;
+if ( Integer . TYPE . equals ( cls ) ) {
+dst [ dstPos + i ] = ( byte ) ( 0xff & ( src > > shift ) ) ;
+final int pads = size - str . length ( ) ;
+if ( ( ch0 == 'o' || ch0 == 'O' ) &&
+if ( gcd == 1 ) {
+&& ( f . getName ( ) . indexOf ( '$' ) == - 1 )
+return true ;
+int end = index + 2 ;
+buffer . append ( ( char ) ( value / 10 + '0' ) ) ;
+if ( str == null ) {
+if ( ( nBytes - 1 ) * 8 + srcPos >= 64 ) {
+result [ value . ordinal ( ) / Long . SIZE ] |= 1 << ( value . ordinal ( ) % Long . SIZE ) ;
+deleteImpl ( i , i + 1 , 1 ) ;
+( mulAndCheck ( numerator / d1 , fraction . numerator / d2 ) ,
+if ( arrayStart == null ) {
+if ( sz > start + 1 && chars [ start ] == '0' && chars [ start + 1 ] == 'x' ) {
+size += 4 ;
+int wrapperFrameIndex = wrapperFrames . size ( ) - 1 ;
+d [ i ] = Math . min ( Math . min ( d [ i - 1 ] + 1 , p [ i ] + 1 ) , p [ i - 1 ] + cost ) ;
+shift = i * 16 + dstPos ;
+if ( str == null || searchStrs == null ) {
+long max = array [ 0 ] ;
+if ( useShortClassName ) {
+return value < anotherVal ? - 1 : ( value == anotherVal ? 0 : 1 ) ;
+if ( startIndex < 0 ) {
+if ( pattern == null ) {
+for ( int i = 0 ; i < nHex ; i ++ ) {
+( ch3 == 's' || ch3 == 'S' ) &&
+if ( tmp > ret ) {
+final int value = Integer . parseInt ( unicode . toString ( ) , 16 ) ;
+if ( str == null ) {
+buffer [ count ] = ( char ) ( 56320 + random . nextInt ( 128 ) ) ;
+if ( src . length - srcPos < 4 ) {
+return 1 ;
+} else if ( array . length == 0 ) {
+if ( start >= sz ) {
+if ( chars . length == 1 ) {
+} else if ( ch < 0x1000 ) {
+for ( int j = 1 ; j < array . length ; j ++ ) {
+} else if ( array . length == 0 ) {
+return join ( array , separator , 0 , array . length ) ;
+for ( int leftIdx = 0 , rightIdx = size - 1 ; leftIdx < half ; leftIdx ++ , rightIdx -- ) {
+final boolean chFound = CharSequenceUtils . indexOf ( searchChars , ch , 0 ) >= 0 ;
+if ( strLen > 0 ) {
+if ( ( nBytes - 1 ) * 8 + srcPos >= 16 ) {
+radix = 16 ;
+if ( componentType . equals ( Boolean . TYPE ) ) {
+if ( getNamingPattern ( ) != null ) {
+T result = ( T ) sort . toArray ( ) [ ( sort . size ( ) - 1 ) / 2 ] ;
+if ( chars [ i ] >= '0' && chars [ i ] <= '9' ) {
+if ( chars . length == 1 ) {
+} else if ( startIndex >= array . length ) {
+return 0xD ;
+if ( array != null && array . length > 0 ) {
+if ( c > a ) {
+int months = end . get ( Calendar . MONTH ) - start . get ( Calendar . MONTH ) ;
+int p [ ] = new int [ n + 1 ] ;
+if ( sz > start + 1 && chars [ start ] == '0' && chars [ start + 1 ] == 'x' ) {
+if ( date == null ) {
+if ( parsePattern . endsWith ( "ZZ" ) ) {
+if ( value . compareTo ( start ) <= 0 || value . compareTo ( end ) >= 0 ) {
+long total = 0 ;
+if ( i > 0 ) {
+if ( ( chars [ i ] < '0' || chars [ i ] > '9' )
+return array == null || array . length == 0 ;
+if ( pos == INDEX_NOT_FOUND ) {
+return str . substring ( start + open . length ( ) , end ) ;
+if ( ( ch0 == 'o' || ch0 == 'O' ) &&
+for ( int i = 0 ; i < array . length ; i ++ ) {
+if ( offset <= 4 ) {
+if ( startIndex > endIndex ) {
+if ( startIndexInclusive < 0 ) {
+final int bits = ( 0xff & src [ i + srcPos ] ) << shift ;
+if ( separator == null || EMPTY . equals ( separator ) ) {
+if ( Double . isNaN ( b ) ) {
+final int newSize = endIndexExclusive - startIndexInclusive ;
+return ( ch >= 'A' && ch <= 'Z' ) || ( ch >= 'a' && ch <= 'z' ) || ( ch >= '0' && ch <= '9' ) ;
+if ( cs == null || cs . length ( ) == 0 ) {
+for ( int i = 0 , ct = e . getValue ( ) . intValue ( ) ; i < ct ; i ++ ) {
+return abrevMarker + abbreviate ( str . substring ( offset ) , maxWidth - 3 ) ;
+final BigInteger t = isAdd ? uvp . add ( upv ) : uvp . subtract ( upv ) ;
+if ( cs == null || cs . length ( ) == 0 ) {
+final CharSequence unicode = input . subSequence ( index + i , index + i + 4 ) ;
+if ( start > end ) {
+if ( str . length ( ) <= maxWidth ) {
+System . arraycopy ( array2 , 0 , joinedArray , array1 . length , array2 . length ) ;
+return toDouble ( str , 0.0d ) ;
+minutes += 60 * hours ;
+comparison = - 1 ;
+for ( int i = 0 , ct = e . getValue ( ) . intValue ( ) ; i < ct ; i ++ ) {
+if ( modType == MODIFY_CEILING || ( modType == MODIFY_ROUND && roundUp ) ) {
+for ( int i = 0 ; i < pads ; i ++ ) {
+System . arraycopy ( buffer , endIndex , buffer , startIndex + insertLen , size - endIndex ) ;
+return ( array != null && array . length != 0 ) ;
+System . arraycopy ( buffer , index , buffer , index + len , size - index ) ;
+startIndex = array . length - 1 ;
+str = leftPad ( str , strLen + pads / 2 , padChar ) ;
+final int hours = offset / ( 60 * 60 * 1000 ) ;
+return ( array != null && array . length != 0 ) ;
+for ( int i = 0 ; i < lhs . length && comparison == 0 ; i ++ ) {
+if ( ( matrix . getRowDimension ( ) != 1 ) ||
+final double diff = e . getValue ( ) - v . getEntry ( e . getIndex ( ) ) ;
+final int lEnd = lStart + kWidth ;
+recipb += ( 1.0 - yaa * recipa - yaa * recipb - yab * recipa - yab * recipb ) * recip ;
+int k = ( p - p0 ) * jWidth + qStart - q0 ;
+sGradient [ 0 ] * jacobian [ 0 ] [ 0 ] + sGradient [ 1 ] * jacobian [ 1 ] [ 0 ] + sGradient [ 2 ] * jacobian [ 2 ] [ 0 ] ,
+if ( x < xval [ 0 ] ||
+hiPrec [ 0 ] = 0.0 ;
+if ( ratio < 0.0d || ratio > 1.0d ) {
+System . arraycopy ( row_data , 0 , xrow , 1 , row_data . length ) ;
+b [ j ] = ( y [ j + 1 ] - y [ j ] ) / h [ j ] - h [ j ] * ( c [ j + 1 ] + 2d * c [ j ] ) / 3d ;
+absAsinh = FastMath . log ( FastMath . sqrt ( a * a + 1 ) + a ) ;
+double beta = 1.0 / secondary [ k - 1 ] ;
+if ( nans == INFINITE && x . nans == FINITE ) {
+y [ 1 ] = computeObjectiveValue ( x [ 1 ] ) ;
+double xbadj = xb + est * est * xb ;
+if ( dx . mant [ mant . length - 1 ] == 0 ) {
+final boolean nextIsLast = forward ? ( nextT >= t ) : ( nextT <= t ) ;
+return j < i ? i * ( i + 1 ) / 2 + j : j * ( j + 1 ) / 2 + i ;
+if ( ( n & 0x1 ) == 0 ) {
+if ( negate ^ leftPlane ) {
+prodA <<= 2 ;
+for ( int k = 0 ; k < sequence . length - 1 ; ++ k ) {
+if ( yInt < 0 ) {
+for ( int l = 0 ; l < scale . length ; ++ l ) {
+int i = j - 1 ;
+double d = 0 ;
+( vecAbsoluteTolerance [ j ] + vecRelativeTolerance [ j ] * yScale ) ;
+} else if ( k > ( e + 52 ) ) {
+final int pEnd = FastMath . min ( ( iBlock + 1 ) * BLOCK_SIZE , 1 + endRow ) ;
+m0 . multiply ( z . multiply ( m0 ) . subtract ( q1 . multiply ( y ) . subtract ( q2 . multiply ( x ) ) ) ) . add ( s . multiply ( q3 ) ) . multiply ( 2 ) . subtract ( z ) ) ;
+q = realEigenvalues [ m ] - realEigenvalues [ j ] + e [ j ] / ( q - t ) ;
+double wgk = weight * grad [ k ] ;
+return 0 ;
+p = - 0.00013871931833623122026 + p * w ;
+final double prod2Low = a2Low * b2Low - ( ( ( prod2High - a2High * b2High ) - a2Low * b2High ) - a2High * b2Low ) ;
+final int widthExcess = jWidth + columnsShift - BLOCK_SIZE ;
+return FastMath . sqrt ( dx * dx + dy * dy + dz * dz ) ;
+if ( observed1 [ i ] == 0 && observed2 [ i ] == 0 ) {
+for ( int i = 0 ; i < order ; ++ i ) {
+for ( int col = 0 ; col < columnCount ; ++ col ) {
+if ( nRows == 0 ) {
+final double v1 = ( FastMath . log ( x1 ) - scale ) / denom ;
+for ( int i = 0 ; i < doubles . length ; i ++ ) {
+plus . merge ( merged . plus , leafMerger , merged , true ) ;
+final double F = msbg / mswg ;
+res . setEntry ( key , entries . get ( key ) - iter . value ( ) ) ;
+int blockIndex = 0 ;
+phiHessian [ 2 ] [ 2 ] = 2 * rho * zOr3 / r ;
+return ( ( ( - 0.5 * FastMath . log ( b ) + HALF_LOG_TWO_PI ) + w ) - u ) - v ;
+if ( steps [ j ] == 0 ) {
+final double midPoint = min + 0.5 * diff ;
+sumX += factor * ( x0 + x1 ) ;
+y [ 2 ] = f . value ( x [ 2 ] ) ;
+for ( int i = 0 ; i < m1 . getRowDimension ( ) ; i ++ ) {
+final int q0 = jBlock * BLOCK_SIZE ;
+} else if ( agingB >= MAXIMAL_AGING ) {
+} else if ( k == 2 ) {
+p [ k - 1 ] = ( n - k + 2 ) * p [ k - 2 ] - ( k - 1 ) * p [ k - 1 ] ;
+Precision . equals ( matT [ i + 1 ] [ i ] , 0.0 , EPSILON ) ) {
+for ( int col = in + 1 ; col < nvars ; col ++ ) {
+double inv = 1.0 / FastMath . sqrt ( q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 ) ;
+double denomr = 1.0 / denom ;
+for ( int jBlock = 0 ; jBlock < blockRows ; ++ jBlock ) {
+rHessian [ 0 ] [ 0 ] = y * yOr3 + z * zOr3 ;
+if ( b . getDimension ( ) != m ) {
+for ( int jBlock = startColumn / BLOCK_SIZE ; jBlock < 1 + endColumn / BLOCK_SIZE ; ++ jBlock ) {
+pos = base_pos + col - 1 - in ;
+dataR [ destOddStartIndex + r ] = grR - ( wSubN0ToRR * hrR - wSubN0ToRI * hrI ) ;
+if ( ( v2 . getZ ( ) . getReal ( ) < - 0.9999999999 ) || ( v2 . getZ ( ) . getReal ( ) > 0.9999999999 ) ) {
+blockColumns = ( columns + BLOCK_SIZE - 1 ) / BLOCK_SIZE ;
+ret = 1.0 - regularizedGammaQ ( a , x , epsilon , maxIterations ) ;
+remB = - ( remA - xa - a ) ;
+final double fourTheta = 4 * theta ;
+return new Vector1D ( cos * p2 . getX ( ) + sin * p2 . getY ( ) ) ;
+double yb = - ( ya - hiPrec [ 0 ] - hiPrec [ 1 ] ) ;
+rawdigits [ p ++ ] = ( char ) ( ( ( mant [ i ] ) % 10 ) + '0' ) ;
+if ( ( v2 . getZ ( ) . getReal ( ) < - 0.9999999999 ) || ( v2 . getZ ( ) . getReal ( ) > 0.9999999999 ) ) {
+this ( 1 / ( sigma * FastMath . sqrt ( 2 * Math . PI ) ) , mean , sigma ) ;
+double result = xb * factb + xb * facta + xa * factb + xa * facta ;
+sum2 += entry * entry ;
+new BigFraction ( 2 * ( k + v - 1 ) * ( k + w - 1 ) * twoKvw , den )
+quat [ 0 ] = inv * ( ort [ 2 ] [ 0 ] - ort [ 0 ] [ 2 ] ) ;
+double yb = - ( ya - hiPrec [ 0 ] - hiPrec [ 1 ] ) ;
+double xK = diag [ k ] * currentPoint [ k ] ;
+final double b1High = cb1 - ( cb1 - b1 ) ;
+d [ r ] [ c ] = m . getEntry ( r , c ) / n . getEntry ( r , c ) ;
+return true ;
+previousState [ i ] + theta * h * ( v1 [ i ] + eta * ( v2 [ i ] + theta * ( v3 [ i ] + eta * v4 [ i ] ) ) ) ;
+p = p * x2 + - 0.16666666666666666 ;
+return FastMath . sqrt ( getChiSquare ( ) / rows ) ;
+for ( int i = 0 ; i < n ; i ++ ) {
+for ( int col = m - 1 ; col >= 0 ; col -- ) {
+if ( divisor . isInfinite ( ) && ! isInfinite ( ) ) {
+if ( cycle ++ % 2 != 0 ) {
+double c = a + t ;
+ret = 0 ;
+p = 2.9234449089955446044e-06 + p * w ;
+return z4 > > > ( 32 - bits ) ;
+if ( g >= 0 ) {
+if ( wantedCount > 0 ) {
+return out . replace ( lastBreak , lastBreak + 1 , "" ) . toString ( ) ;
+return allInvocations . get ( allInvocations . size ( ) - 1 ) ;
+int k = 0 ;
+} else if ( wantedCount == 0 && actualCount > 0 ) {
+return mock . getClass ( ) . getInterfaces ( ) [ 0 ] . getSimpleName ( ) ;
+this . setEquals ( false ) ;
+this . setEquals ( false ) ;
+return result <= 0 ;
+if ( matcher instanceof ContainsExtraTypeInformation && printSettings . extraTypeInfoFor ( i ) ) {
+return 1 ;
+if ( foundSize > maxNumberOfInvocations ) {
+if ( lhs == null || rhs == null ) {
+namingPolicyField . setAccessible ( true ) ;
+return method . getName ( ) . equals ( "equals" ) && method . getParameterTypes ( ) . length == 1 && method . getParameterTypes ( ) [ 0 ] == Object . class ;
+boolean mockIsValid = mock == null || mock == i . getMock ( ) ;
+assertState ( matcherStack . size ( ) >= count ,
+isEquals = ( lhs == rhs ) ;
+&& ( useTransients || ! Modifier . isTransient ( f . getModifiers ( ) ) )
+addAnswer ( answer , false ) ;
+if ( mocks == null || mocks . length == 0 ) {
+for ( int i = 0 ; i < lhs . length && isEquals ; ++ i ) {
+return this . wanted == null && other . wanted == null || this . wanted != null && this . wanted . equals ( other . wanted ) ;
+return elements . get ( 0 ) ;
+int last = invocations . size ( ) - 1 ;
+for ( int i = 0 ; i < lhs . length && isEquals ; ++ i ) {
+if ( lhs == null || rhs == null ) {
+if ( className . length ( ) == 0 ) {
+return wanted != null && object != null && object . getClass ( ) == wanted . getClass ( ) ;
+if ( ! isVarArgs || args [ args . length - 1 ] != null && ! args [ args . length - 1 ] . getClass ( ) . isArray ( ) ) {
+if ( ! invocation . isValidException ( throwable ) ) {
+if ( lhs instanceof java . math . BigDecimal && rhs instanceof java . math . BigDecimal ) {
+System . arraycopy ( rest , 0 , all , 1 , rest . length ) ;
+if ( lhs == null || rhs == null ) {
+if ( stubbing == null ) {
+if ( lhs == null || rhs == null ) {
+printSettings . setMultiline ( wanted . toString ( ) . contains ( "\n" ) || actual . toString ( ) . contains ( "\n" ) ) ;
+if ( mock . getClass ( ) . getInterfaces ( ) . length == 2 ) {
+if ( ! methodNameEquals || ! isUnverified || ! mockIsTheSame ) {
+return actual != null && ( ( String ) actual ) . endsWith ( suffix ) ;
+if ( firstBad == - 1 ) {
+return usedAt != null ;
+return method . getName ( ) . equals ( "hashCode" ) && method . getParameterTypes ( ) . length == 0 ;
+if ( filtered . length == 0 ) {
+if ( isEquals == false ) {
+if ( lhs == rhs ) {
+result . addAll ( matcherStack . subList ( matcherStack . size ( ) - count , matcherStack . size ( ) ) ) ;
+isEquals = ( lhs == rhs ) ;
+if ( ! isVarArgs || args [ args . length - 1 ] != null && ! args [ args . length - 1 ] . getClass ( ) . isArray ( ) ) {
+for ( int i = 0 ; i < lhs . length && isEquals ; ++ i ) {
+if ( ! isVarArgs || args [ args . length - 1 ] != null && ! args [ args . length - 1 ] . getClass ( ) . isArray ( ) ) {
+if ( unverified != null ) {
+} else if ( type . isArray ( ) ) {
+return true ;
+if ( lhs == rhs ) {
+if ( lhs == null || rhs == null ) {
+for ( int i = 0 ; i < lhs . length && isEquals ; ++ i ) {
+if ( lhs == rhs ) {
+if ( ! isVarArgs || args [ args . length - 1 ] != null && ! args [ args . length - 1 ] . getClass ( ) . isArray ( ) ) {
+if ( isPrimitiveWrapper ( clazz ) ) {
+for ( int i = 0 ; i < Array . getLength ( o1 ) ; i ++ ) {
+if ( ! invocation . isVoid ( ) ) {
+} else if ( wantedCount < actualCount ) {
+if ( ! wanted . hasSimilarMethod ( invocation ) ) {
+if ( rawArgs [ i ] != null && rawArgs [ i ] . getClass ( ) . isArray ( ) && i == rawArgs . length - 1 ) {
+return proxy == args [ 0 ] ;
+if ( wantedCount > actualCount ) {
+if ( lhs == null || rhs == null ) {
+return method . isBridge ( ) ? 1 : 0 ;
+if ( mockCandidates . size ( ) == 1 ) {
+} else if ( type == Map . class ) {
+if ( invocations . isEmpty ( ) ) {
+return method . getName ( ) . equals ( "equals" ) && method . getParameterTypes ( ) . length == 1 && method . getParameterTypes ( ) [ 0 ] == Object . class ;
+return result <= 0 ;
+return StringDescription . toString ( m ) . equals ( arg == null ? "null" : arg . toString ( ) ) ;
+if ( alreadyAssigned ) {
+if ( wantedCount > actualCount ) {
+if ( invocationContainerImpl . hasAnswersForStubbing ( ) ) {
+} else if ( ! firstChunk . isEmpty ( ) ) {
+if ( wantedCount == 1 ) {
+if ( ! mockUtil . isMock ( mock ) ) {
+if ( ! Arrays . equals ( parameterTypes , other . parameterTypes ) )
+if ( wantedCount > actualCount ) {
+return true ;
+Class [ ] out = new Class [ length + 1 ] ;
+if ( lhs == null || rhs == null ) {
+if ( wantedCount > actualCount ) {
+System . arraycopy ( varArgs , 0 , newArgs , nonVarArgsCount , varArgsCount ) ;
+if ( m . isAnnotationPresent ( Test . class ) ) {
+return actual != null && ( ( String ) actual ) . startsWith ( prefix ) ;
+if ( m instanceof CapturesArguments && i . getArguments ( ) . length > k ) {
+if ( o1 == null || o2 == null ) {
+return Enhancer . isEnhanced ( mock . getClass ( ) ) && getInterceptor ( mock ) != null ;
+return argumentsMatch ( invocationMatcher , actualArgs ) || varArgsMatch ( invocationMatcher , actual ) ;
+return false ;
+if ( wantedCount > 0 ) {
+if ( ! invocationMatcher . getMatchers ( ) . get ( i ) . matches ( actualArgs [ i ] ) ) {
+ancillaryTypes = interfaces == null ? new Class < ? > [ ] { Serializable . class } : new ArrayUtils ( ) . concat ( interfaces , Serializable . class ) ;
+if ( invocations . isEmpty ( ) ) {
+return ( fromMockObject || fromOrgMockito ) && ! isRunner && ! isInternalRunner ;
+new int [ ] { 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , }
+yearMillis = ( isLeapYear ( ++ year ) ? MILLIS_PER_LONG_YEAR : MILLIS_PER_SHORT_YEAR ) ;
+} else if ( fields . remove ( DateTimeFieldType . monthOfYear ( ) ) ) {
+if ( i > 0 && types [ i - 1 ] == types [ i ] ) {
+if ( text . regionMatches ( true , position , iValue , 0 , iValue . length ( ) ) ) {
+long millis = ( relativeYear * 365L + leapYears )
+if ( converter . getSupportedType ( ) == existing . getSupportedType ( ) ) {
+builder . appendTimeZoneOffset ( null , "Z" , false , 2 , 2 ) ;
+subtrahendInstant + offset ) ;
+if ( durationToAdd == 0 || scalar == 0 ) {
+if ( partial . size ( ) > 0 && partial . getFieldType ( 0 ) . equals ( DateTimeFieldType . monthOfYear ( ) ) && fieldIndex == 0 ) {
+? ( ( i < 31 * 84375 ) ? 1 : ( i < 59 * 84375 ) ? 2 : 3 )
+return new Duration ( days * DateTimeConstants . MILLIS_PER_DAY ) ;
+return getValue ( ) < 0 ;
+year = ( ( year << 3 ) + ( year << 1 ) ) + c - '0' ;
+for ( int i = 0 , isize = period . size ( ) ; i < isize ; i ++ ) {
+if ( months == null ) {
+for ( int i = 0 ; i < count ; i ++ ) {
+return true ;
+if ( trimmed . length ( ) == 0 || trimmed . charAt ( 0 ) == '#' ) {
+if ( rounded != millis ) {
+( object == null ? "null" : object . getClass ( ) . getName ( ) ) ) ;
+if ( c >= '0' && c <= '9' ) {
+buf . append ( ( char ) ( value - ( d << 3 ) - ( d << 1 ) + '0' ) ) ;
+if ( amount == 0 ) {
+System . arraycopy ( iTypes , i , newTypes , i + 1 , newTypes . length - i - 1 ) ;
+for ( int i = 0 ; i < period . size ( ) ; i ++ ) {
+return new Duration ( seconds * DateTimeConstants . MILLIS_PER_SECOND ) ;
+long monthZeroBased = ( millis - getYearMillis ( year ) ) / MILLIS_PER_MONTH ;
+if ( durMillis == 0 ) {
+int index = ( ( dateStyle << 2 ) + dateStyle ) + timeStyle ;
+if ( ! hour && ( minute && second || ( minute && ! milli ) || second ) ) {
+( iLocalMillis == other . iLocalMillis ? 0 : 1 ) ) ;
+if ( amount == 0 ) {
+instant = iField . add ( instant + offset , value ) ;
+if ( ( value < lowerBound ) || ( value > upperBound ) ) {
+if ( i + 1 < length ) {
+return 4 ;
+return Hours . hours ( getValue ( ) / DateTimeConstants . SECONDS_PER_HOUR ) ;
+if ( fieldType == null ) {
+value = ( ( value << 3 ) + ( value << 1 ) ) + text . charAt ( i ++ ) - '0' ;
+if ( position >= text . length ( ) ) {
+return getValue ( ) > 0 ;
+monthToUse = iMax - remMonthToUse + 1 ;
+( instant + getZone ( ) . getOffset ( instant ) ,
+offset = standardOffset + saveMillis ;
+return ( thisStart < now && now < thisEnd ) ;
+value = ( ( value << 3 ) + ( value << 1 ) ) + text . charAt ( i ++ ) - '0' ;
+prev = chrono . year ( ) . add ( prev , - 1 ) ;
+if ( str . charAt ( i ) >= '0' && str . charAt ( i ) <= '9' ) {
+return withPeriodAdded ( period , 1 ) ;
+if ( type == null || length == 0 ) {
+return instant - 1 ;
+while ( i + 1 < length ) {
+if ( months == 0 ) {
+if ( hoursOffset < - 23 || hoursOffset > 23 ) {
+value = ( int ) ( valueLong / DateTimeConstants . MILLIS_PER_SECOND ) ;
+if ( total / val2 != val1 ) {
+char peek = pattern . charAt ( i + 1 ) ;
+hourOfDay , minuteOfHour , secondOfMinute , 0 , zone ) ;
+for ( int i = fieldIndex + 1 ; i < partial . size ( ) ; i ++ ) {
+DateTime lowerLimit = new DateTime ( 1 , 1 , 1 , 0 , 0 , 0 , 0 , chrono ) ;
+if ( value == '-' ) {
+return ( ( value << 3 ) + ( value << 1 ) ) + text . charAt ( position + 1 ) - '0' ;
+DateTime lowerLimit = new DateTime ( 1 , 1 , 1 , 0 , 0 , 0 , 0 , chrono ) ;
+leapYears = ( relativeYear + 3 ) > > 2 ;
+} else if ( workingFields . contains ( DateTimeFieldType . dayOfYear ( ) ) ) {
+if ( length == 0 && ( c == '-' || c == '+' ) && ! iRejectSignedValues ) {
+iMillis = FieldUtils . safeAdd ( endMillis , - startMillis ) ;
+return getInstance ( zone , 4 ) ;
+if ( days == 0 ) {
+if ( instant >= 0 ) {
+if ( fieldIndex == - 1 ) {
+if ( limit <= 0 ) {
+return ( ( value << 3 ) + ( value << 1 ) ) + text . charAt ( position + 1 ) - '0' ;
+if ( wholeValue < 0 ) {
+for ( int i = 0 , isize = period . size ( ) ; i < isize ; i ++ ) {
+return ( 1969L * MILLIS_PER_YEAR + 352L * DateTimeConstants . MILLIS_PER_DAY ) / 2 ;
+if ( length == 0 && ( c == '-' || c == '+' ) ) {
+bucket . setOffset ( Integer . valueOf ( 0 ) ) ;
+if ( field == null || ! field . isSupported ( ) ) {
+if ( bld . canBuildFormatter ( ) == false ) {
+return iTimeField ? iField . isPrecise ( ) : iField . isPrecise ( ) && this . iZone . isFixed ( ) ;
+return ( newMillis == getLocalMillis ( ) ? this : new LocalDate ( newMillis , getChronology ( ) ) ) ;
+if ( nextKey == null || ( nextKey . length ( ) < 3 && ! "??" . equals ( nextKey ) ) ) {
+return ( value % wrapRange ) + minValue ;
+for ( int j = 0 ; j < size ; j ++ ) {
+offset += minutes * DateTimeConstants . MILLIS_PER_MINUTE ;
+if ( chrono == null ) {
+if ( max - min > 32 ) {
+new int [ ] { - 1 , - 1 , - 1 , - 1 , 0 , 1 , 2 , 3 , }
+if ( index == - 1 ) {
+} else if ( check . equals ( this ) ) {
+if ( value >= 0 ) {
+if ( duration != 0 ) {
+for ( int i = 0 , isize = partial . size ( ) ; i < isize ; i ++ ) {
+Converter [ ] copy = new Converter [ length - 1 ] ;
+if ( ( c == '.' || c == ',' )
+long millis = ( relativeYear * 365L + leapYears )
+for ( int i = 0 ; i < size ; i ++ ) {

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/9006/org/joda/time/chrono/BuddhistChronology.java	2022-10-31 19:48:08.987696783 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BuddhistChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -178,7 +178,7 @@
+      */
+     public boolean equals(Object obj) {
+         if (this == obj) {
+-            return false;
++            return true;
+         }
+         if (obj instanceof BuddhistChronology) {
+             BuddhistChronology chrono = (BuddhistChronology) obj;

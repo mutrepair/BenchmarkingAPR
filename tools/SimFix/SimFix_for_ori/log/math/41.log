@@ -1,0 +1,87 @@
+=================================================
+Project : math_41	start : 23/02/07 13:02
+Current failed test : org.apache.commons.math.stat.descriptive.moment.VarianceTest::testEvaluateArraySegmentWeighted | 23/02/07 13:02
+Tue Feb 07 13:02:09 CST 2023 org.apache.commons.math.stat.descriptive.moment.Variance,520
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=begin;i<begin;i++){
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=begin;i<begin+length;i++){
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6071504429856334 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java=>0,0]
+for(int i=begin;i<begin+length;i++){
+sumLog+=FastMath.log(values[i]);
+}
+
+Time : 23/02/07 13:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java=>520,522]
+for(int i=0;i<weights.length;i++){
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java=>520,522]
+for(int i=begin;i<begin+length;i++){
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:02
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=begin;i<=begin;i++){
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=begin;i<begin;i++){
+accum2+=weights[i]-dev;
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=begin;i<begin+length;i++){
+accum2+=weights[i]-dev;
+sumWts+=weights[i];
+}
+
+Time : 23/02/07 13:06
+----------------------------------------
+Success time : 23/02/07 13:08

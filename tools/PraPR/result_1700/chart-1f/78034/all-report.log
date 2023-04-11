@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to maxEndIndex is guarded using value 0
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to maxEndIndex is guarded using local index
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to maxEndIndex is guarded using field minStartIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.data.time.TimePeriodValues.maxEndIndex is replaced by the call to org.jfree.data.time.TimePeriodValues::getItemCount()I
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jfree.data.time.TimePeriodValues.maxEndIndex is replaced by the call to org.jfree.data.time.TimePeriodValues::hashCode()I
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jfree.data.time.TimePeriodValues.maxEndIndex is replaced by the call to org.jfree.data.time.TimePeriodValues::getMinStartIndex()I
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.jfree.data.time.TimePeriodValues.maxEndIndex is replaced by the call to org.jfree.data.time.TimePeriodValues::getMaxStartIndex()I
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.jfree.data.time.TimePeriodValues.maxEndIndex is replaced by the call to org.jfree.data.time.TimePeriodValues::getMinMiddleIndex()I
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to maxEndIndex with an access to minStartIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to maxEndIndex with an access to maxStartIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to maxEndIndex with an access to minMiddleIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to maxEndIndex with an access to maxMiddleIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to maxEndIndex with an access to minEndIndex
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field maxEndIndex is replaced by access to local index
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to maxEndIndex is guarded returning enclosing method
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 236
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 238
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 237
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 238
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 238
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 238
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------

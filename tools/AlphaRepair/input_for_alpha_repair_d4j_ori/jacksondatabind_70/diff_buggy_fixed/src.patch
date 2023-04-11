@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_70/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2023-01-16 15:29:43.868286942 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/70/patch/./com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2023-01-16 15:29:43.832286491 -0600
+@@ -437,7 +437,7 @@
+             if (!found) {
+                 // 09-Jan-2017, tatu: Important: must check name slot and NOT property name,
+                 //   as only former is lower-case in case-insensitive case
+-                found = key.equals(prop.getName());
++                found = key.equals(_hashArea[i-1]);
+                 if (found) {
+                     // need to leave a hole here
+                     _propsInOrder[_findFromOrdered(prop)] = null;

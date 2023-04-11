@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 09:54:48 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to encodeBase64([BZ)[B with a call to encodeBase64([B)[B
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: 1
+	Total Rank: 19
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 4
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-17.class
+------------------------------------------------

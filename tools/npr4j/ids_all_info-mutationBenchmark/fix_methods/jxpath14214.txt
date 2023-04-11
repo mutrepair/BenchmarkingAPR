@@ -1,0 +1,16 @@
+    protected Object functionName(EvalContext context) {
+        if (getArgumentCount() == 0) {
+            NodePointer ptr = context.getCurrentNodePointer();
+            return ptr.getName().toString();
+        }
+        assertArgCount(1);
+        Object set = getArg1().compute(context);
+        if (set instanceof EvalContext) {
+            EvalContext ctx = (EvalContext) set;
+            if (ctx.hasNext()) {
+                NodePointer ptr = (NodePointer) ctx.next();
+                return ptr.getName().toString();
+            }
+        }
+        return "";
+    }

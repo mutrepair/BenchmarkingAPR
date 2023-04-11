@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Ljava/util/TimeZone;)V with a call to <init>(IIIIII)V
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Ljava/util/TimeZone;)V with a call to <init>(Ljava/util/Locale;)V
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Ljava/util/TimeZone;)V with a call to <init>(IIIII)V
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Ljava/util/TimeZone;)V with a call to <init>(Ljava/util/TimeZone;Ljava/util/Locale;)V
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_17
+	Description: replaced call to <init>(Ljava/util/TimeZone;)V with a call to <init>(Ljava/util/TimeZone;Ljava/util/Locale;)V
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to mTimeZone is guarded using value null
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to mTimeZone is guarded using field mTimeZone
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.time.FastDateFormat.mTimeZone is replaced by the call to org.apache.commons.lang3.time.FastDateFormat::getTimeZone()Ljava/util/TimeZone;
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to mTimeZone is guarded returning default value null
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to mTimeZone is guarded returning field cDefaultPattern
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/util/GregorianCalendar::<init>
+	File Name: org/apache/commons/lang3/time/FastDateFormat.java
+	Line Number: 820
+	Block: 128
+	First Index: 7
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/19941/org/jfree/chart/axis/NumberAxis.java	2022-12-26 21:03:37.241569818 -0600
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/NumberAxis.java	2022-10-29 00:30:20.282620577 -0500
+@@ -413,7 +413,7 @@
+      * auto-scaling, then sets the maximum and minimum values.
+      */
+     public void configure() {
+-        if (false) {
++        if (isAutoRange()) {
+             autoAdjustRange();
+         }
+     }

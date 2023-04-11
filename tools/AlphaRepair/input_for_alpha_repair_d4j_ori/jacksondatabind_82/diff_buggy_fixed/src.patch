@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_82/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2023-01-16 15:29:45.036301528 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/82/patch/./com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2023-01-16 15:29:45.004301128 -0600
+@@ -492,7 +492,7 @@
+             boolean ignoreAny = ignorals.getIgnoreUnknown();
+             builder.setIgnoreUnknownProperties(ignoreAny);
+             // Or explicit/implicit definitions?
+-            ignored = ignorals.getIgnored();
++            ignored = ignorals.findIgnoredForDeserialization();
+             for (String propName : ignored) {
+                 builder.addIgnorable(propName);
+             }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2106/com/google/gson/Streams.java	2022-10-31 19:47:43.739789388 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Streams.java	2022-12-26 15:13:51.393619841 -0600
+@@ -85,7 +85,7 @@
+    */
+   static void write(JsonElement element, boolean serializeNulls, JsonWriter writer)
+       throws IOException {
+-    if (element.isJsonNull()) {
++    if (element == null || element.isJsonNull()) {
+       if (serializeNulls) {
+         writer.nullValue();
+       }

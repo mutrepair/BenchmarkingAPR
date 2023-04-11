@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local curr to be used
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 388
+	Block: 10
+	First Index: 25
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b is replaced by access to field _currentBucket
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 388
+	Block: 10
+	First Index: 25
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 388
+	Block: 10
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 388
+	Block: 10
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 388
+	Block: 10
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6618/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-10-31 19:47:46.783778332 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-12-26 15:13:52.497631769 -0600
+@@ -488,7 +488,7 @@
+         }
+ 
+         // as well as delegate-based constructor:
+-        if (true) {
++        if (_valueInstantiator.canCreateUsingDelegate()) {
+             JavaType delegateType = _valueInstantiator.getDelegateType(ctxt.getConfig());
+             if (delegateType == null) {
+                 throw new IllegalArgumentException("Invalid delegate-creator definition for "+_beanType

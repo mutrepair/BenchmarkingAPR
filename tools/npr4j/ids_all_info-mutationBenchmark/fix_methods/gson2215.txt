@@ -1,0 +1,4 @@
+  public VersionExclusionStrategy(double version) {
+    Preconditions.checkArgument(version >= 0.0D);
+    this.version = version;
+  }

@@ -1,0 +1,9 @@
+  private int getIndexOfAnOverriddenHandler(Class<?> type) {
+    for (int i = typeHierarchyList.size()-1; i >= 0; --i) {
+      Pair<Class<?>, T> entry = typeHierarchyList.get(i);
+      if (type.isAssignableFrom(entry.first)) {
+        return i;
+      }
+    }
+if((i > 0)){
+return i;}    return 1;  }

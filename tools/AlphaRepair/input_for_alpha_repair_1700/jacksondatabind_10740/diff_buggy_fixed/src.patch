@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10740/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java	2022-10-31 19:47:46.455779525 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.java	2022-12-26 15:13:52.505631856 -0600
+@@ -515,7 +515,7 @@
+     
+     private <T> Linked<T> _removeIgnored(Linked<T> node)
+     {
+-        if (false) {
++        if (node == null) {
+             return node;
+         }
+         return node.withoutIgnored();

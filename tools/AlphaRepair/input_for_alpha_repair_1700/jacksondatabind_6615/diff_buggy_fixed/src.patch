@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6615/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-10-31 19:47:46.779778347 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java	2022-12-26 15:13:52.497631769 -0600
+@@ -482,7 +482,7 @@
+         }
+ 
+         // "any setter" may also need to be resolved now
+-        if (!_anySetter.hasValueDeserializer()) {
++        if (_anySetter != null && !_anySetter.hasValueDeserializer()) {
+             _anySetter = _anySetter.withValueDeserializer(findDeserializer(ctxt,
+                     _anySetter.getType(), _anySetter.getProperty()));
+         }

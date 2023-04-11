@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local triplet is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 346
+	Block: 77
+	First Index: 3
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local triplet is replaced by access to field MILLION
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 346
+	Block: 77
+	First Index: 3
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local triplet is replaced by access to field BILLION
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 346
+	Block: 77
+	First Index: 3
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 346
+	Block: 77
+	First Index: 4
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 346
+	Block: 77
+	First Index: 5
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------

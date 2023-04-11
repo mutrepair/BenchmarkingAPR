@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local in is replaced by local rms_off to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 25
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local in is replaced by access to field nvars
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 25
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 26
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 28
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 27
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 615
+	Block: 129
+	First Index: 29
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

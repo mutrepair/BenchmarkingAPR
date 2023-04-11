@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1902/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.955806701 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -449,7 +449,7 @@
+         } else if (contains(value, index + 1, 1, "E", "I", "Y") || 
+                    contains(value, index - 1, 4, "AGGI", "OGGI")) {
+             //-- Italian "biaggi" --//
+-            if ((contains(value, 0 ,-4, "VAN ", "VON ") || contains(value, 0, 3, "SCH")) || contains(value, index + 1, 2, "ET")) {
++            if ((contains(value, 0 ,4, "VAN ", "VON ") || contains(value, 0, 3, "SCH")) || contains(value, index + 1, 2, "ET")) {
+                 //-- obvious germanic --//
+                 result.append('K');
+             } else if (contains(value, index + 1, 4, "IER")) {

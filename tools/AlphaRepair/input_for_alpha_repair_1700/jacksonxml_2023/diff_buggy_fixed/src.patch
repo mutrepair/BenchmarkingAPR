@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/2023/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2022-10-31 19:47:49.771767450 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2022-12-26 15:13:53.109638382 -0600
+@@ -219,7 +219,7 @@
+          */
+         if (!xgen.setNextNameIfMissing(rootName)) {
+             // however, if we are root, we... insist
+-            if (true) {
++            if (xgen.getOutputContext().inRoot()) {
+                 xgen.setNextName(rootName);
+             }
+         }

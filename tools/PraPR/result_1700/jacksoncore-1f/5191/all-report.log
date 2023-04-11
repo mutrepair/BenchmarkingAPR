@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local cmpLen is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local cmpLen is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local i is replaced by local cmpLen to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local cmpLen is replaced by local i to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 42
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 53
+	First Index: 74
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 36
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 42
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 42
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 155
+	Block: 48
+	First Index: 42
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/110838/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.115729557 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -543,7 +543,7 @@
+ 
+           /* Compute expm1(-x) = -expm1(x) / (expm1(x) + 1) */
+           double denom = 1.0 + ya;
+-          double denomr = 1.0 % denom;
++          double denomr = 1.0 / denom;
+           double denomb = -(denom - 1.0 - ya) + yb;
+           double ratio = ya * denomr;
+           double temp = ratio * HEX_40000000;

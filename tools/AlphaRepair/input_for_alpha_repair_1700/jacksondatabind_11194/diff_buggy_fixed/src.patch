@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/11194/com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeDeserializer.java	2022-10-31 19:47:46.479779437 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeDeserializer.java	2022-12-26 15:13:52.505631856 -0600
+@@ -135,7 +135,7 @@
+             return result;
+         }
+         // or, something for which "as-property" won't work, changed into "wrapper-array" type:
+-        if (false) {
++        if (jp.getCurrentToken() == JsonToken.START_ARRAY) {
+             return super.deserializeTypedFromAny(jp, ctxt);
+         }
+         throw ctxt.wrongTokenException(jp, JsonToken.FIELD_NAME,

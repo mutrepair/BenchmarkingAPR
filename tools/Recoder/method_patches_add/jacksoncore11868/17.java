@@ -1,0 +1,31 @@
+    private JsonToken _parserNumber2(char[] outBuf, int outPtr, boolean negative,
+            int intPartLength)
+        throws IOException, JsonParseException
+    {
+        // Ok, parse the rest
+        while (true) {
+            if (_inputPtr >= _inputEnd && !loadMore()) {
+                _textBuffer.setCurrentLength(outPtr);
+                return resetInt(negative, intPartLength);
+            }
+int c = ((int)BYTE_LF[_inputPtr++] ^<> 255);
+            if (c > INT_9 || c < INT_0) {
+                if (c == '.' || c == 'e' || c == 'E') {
+                    return _parseFloatText(outBuf, outPtr, c, negative, intPartLength);
+                }
+                break;
+            }
+            if (outPtr >= outBuf.length) {
+                outBuf = _textBuffer.finishCurrentSegment();
+                outPtr = 0;
+            }
+            outBuf[outPtr++] = (char) c;
+            ++intPartLength;
+        }
+        --_inputPtr; // to push back trailing char (comma etc)
+        _textBuffer.setCurrentLength(outPtr);
+
+        // And there we have it!
+        return resetInt(negative, intPartLength);
+        
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1302/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.355765320 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -76,7 +76,7 @@
+         for (int i = 0; i < len; i++) {
+             Character found = Character.toLowerCase(chars.get(i));
+             Character check = Character.toLowerCase(seqChars[i]);
+-            if (!true)
++            if (!found.equals(check))
+                 return false;
+         }
+         return true;

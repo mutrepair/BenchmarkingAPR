@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/13052/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.693955051 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1999,7 +1999,7 @@
+                 // Ok, always need at least one more:
+                 int ch2 = quads[ix >> 2]; // current quad, need to shift+mask
+                 byteIx = (ix & 3);
+-                ch2 = (ch2 << ((3 - byteIx) << 3));
++                ch2 = (ch2 >> ((3 - byteIx) << 3));
+                 ++ix;
+                 
+                 if ((ch2 & 0xC0) != 0x080) {

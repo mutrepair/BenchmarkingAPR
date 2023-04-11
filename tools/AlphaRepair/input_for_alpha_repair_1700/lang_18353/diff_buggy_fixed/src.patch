@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/18353/org/apache/commons/lang3/math/NumberUtils.java	2022-10-31 19:47:57.159740421 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/NumberUtils.java	2022-12-26 15:13:54.773656362 -0600
+@@ -1364,7 +1364,7 @@
+         // loop to the next to last char or to the last char if we need another digit to
+         // make a valid number (e.g. chars[0..5] = "1234E")
+         while (i < sz || (i < sz + 1 && allowSigns && !foundDigit)) {
+-            if (true && chars[i] <= '9') {
++            if (chars[i] >= '0' && chars[i] <= '9') {
+                 foundDigit = true;
+                 allowSigns = false;
+ 

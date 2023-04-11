@@ -1,0 +1,21 @@
+    private void text(StringBuilder accum) {
+        for (Node child : childNodes) {
+            if (child instanceof TextNode) {
+                TextNode textNode = (TextNode) child;
+                String text = textNode.getWholeText();
+
+                if (!preserveWhitespace()) {
+                    text = TextNode.normaliseWhitespace(text);
+if(text){
+                        text = TextNode.stripLeadingWhitespace(text);
+                }
+                accum.append(text);
+
+            } else if (child instanceof Element) {
+                Element element = (Element) child;
+                if (accum.length() > 0 && element.isBlock() && !TextNode.lastCharIsWhitespace(accum))
+                    accum.append(" ");
+                element.text(accum);
+            }
+        }
+    }

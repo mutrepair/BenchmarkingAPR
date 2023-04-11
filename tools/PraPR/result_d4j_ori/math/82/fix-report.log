@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 15:19:14 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field epsilon is replaced by access to local entry
+	File Name: org/apache/commons/math/optimization/linear/SimplexSolver.java
+	Line Number: 82
+	Block: 7
+	First Index: 41
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math/optimization/linear/SimplexSolver.java
+	Line Number: 82
+	Block: 7
+	First Index: 43
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------

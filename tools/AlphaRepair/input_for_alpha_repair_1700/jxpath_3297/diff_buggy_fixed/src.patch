@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/3297/org/apache/commons/jxpath/ri/parser/XPathParser.java	2022-10-31 19:47:51.335761743 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParser.java	2022-12-26 15:13:54.177649922 -0600
+@@ -2296,7 +2296,7 @@
+ 
+   final private boolean jj_3R_169() {
+     if (jj_scan_token(MINUS)) return true;
+-    if (jj_la >= 0 && jj_scanpos == jj_lastpos) return false;
++    if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+     if (jj_3R_168()) return true;
+     if (jj_la == 0 && jj_scanpos == jj_lastpos) return false;
+     return false;

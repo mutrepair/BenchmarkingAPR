@@ -1,0 +1,76 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:06:49 CST 2022
+Number of Plausible Fixes: 6
+Total Number of Patches: 51
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_7
+	Description: replaced call to indexOf(I)I with a call to indexOf(Ljava/lang/String;)I
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 445
+	Rank: 2
+	Total Rank: 44
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::indexOf
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 445
+	Rank: 2
+	Total Rank: 44
+	Status: SURVIVED
+	Dump: mutant-47.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local n is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 441
+	Rank: 3
+	Total Rank: 47
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 446
+	Rank: 4
+	Total Rank: 49
+	Status: SURVIVED
+	Dump: mutant-43.class
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/String::indexOf with argument
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 445
+	Rank: 6
+	Total Rank: 51
+	Status: SURVIVED
+	Dump: mutant-36.class
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 190
+	Block: 50
+	First Index: 446
+	Rank: 6
+	Total Rank: 51
+	Status: SURVIVED
+	Dump: mutant-51.class
+------------------------------------------------

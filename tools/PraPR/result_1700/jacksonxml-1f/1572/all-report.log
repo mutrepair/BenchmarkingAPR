@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Boolean::booleanValue()Z is guarded using default value false
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 52
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to booleanValue()Z is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 52
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to booleanValue()Z is guarded returning local propDefs
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 52
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 53
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Boolean::booleanValue
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 52
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 53
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java
+	Line Number: 51
+	Block: 4
+	First Index: 53
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

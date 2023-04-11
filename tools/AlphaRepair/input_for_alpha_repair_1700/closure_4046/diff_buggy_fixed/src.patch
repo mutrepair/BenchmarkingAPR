@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/4046/com/google/javascript/jscomp/NodeTraversal.java	2022-10-31 19:47:37.819810801 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/NodeTraversal.java	2022-10-29 13:19:18.154153632 -0500
+@@ -353,7 +353,7 @@
+     if (n.isFunction()) {
+       // We need to do some extra magic to make sure that the scope doesn't
+       // get re-created when we dive into the function.
+-      if (false) {
++      if (inputId == null) {
+         inputId = NodeUtil.getInputId(n);
+       }
+       sourceName = getSourceName(n);

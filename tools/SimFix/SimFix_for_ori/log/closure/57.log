@@ -1,0 +1,87 @@
+=================================================
+Project : closure_57	start : 23/02/07 01:27
+Current failed test : com.google.javascript.jscomp.ClosureCodingConventionTest::testRequire | 23/02/07 01:27
+Tue Feb 07 01:27:57 CST 2023 com.google.javascript.jscomp.ClosureCodingConvention,197
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(target!=null&&target.getType()==Token.STRING){
+className=target.getString();
+}
+
+Time : 23/02/07 01:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4285714285714286 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>0,0]
+if(last!=null&&last.getType()==Token.STRING){
+String propName=last.getString();
+return (propName.equals(methodName));
+}
+
+Time : 23/02/07 01:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>197,199]
+if(target!=null){
+className=target.getString();
+}
+
+Time : 23/02/07 01:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>197,199]
+if(target!=null&&target.getType()==Token.STRING){
+className=target.getString();
+}
+
+Time : 23/02/07 01:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(target!=null&&(target.getType()==Token.STRING||target.getType()==Token.REGEXP)){
+className=target.getString();
+}
+
+Time : 23/02/07 01:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0717525603928417 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>0,0]
+if(nameNode.getFirstChild().getType()==Token.STRING&&STRING_REGEXP_METHODS.contains(nameNode.getLastChild().getString())){
+Node param=nameNode.getNext();
+if(param!=null&&(param.getType()==Token.STRING||param.getType()==Token.REGEXP))return false;
+}
+
+Time : 23/02/07 01:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>197,199]
+if(target!=null){
+className=target.getString();
+}
+
+Time : 23/02/07 01:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java=>197,199]
+if(target!=null&&(target.getType()==Token.STRING||target.getType()==Token.REGEXP)){
+className=target.getString();
+}
+
+Time : 23/02/07 01:32
+----------------------------------------
+Success time : 23/02/07 01:32

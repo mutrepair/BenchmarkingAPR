@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:18:22 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.iterators.SingletonIterator.beforeFirst is replaced by the call to org.apache.commons.collections4.iterators.SingletonIterator::hasNext()Z
+	File Name: org/apache/commons/collections4/iterators/SingletonIterator.java
+	Line Number: 88
+	Block: 6
+	First Index: 4
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------

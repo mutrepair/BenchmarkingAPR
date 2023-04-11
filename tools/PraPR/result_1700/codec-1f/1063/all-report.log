@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/codec/binary/Hex.java
+	Line Number: 63
+	Block: 3
+	First Index: 23
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/codec/binary/Hex.java
+	Line Number: 63
+	Block: 3
+	First Index: 24
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

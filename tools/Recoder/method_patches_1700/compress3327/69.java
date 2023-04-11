@@ -1,0 +1,20 @@
+    public void parseFromLocalFileData(byte[] buffer, int offset, int length)
+        throws ZipException {
+
+        if (length < 5) {
+            throw new ZipException("UniCode path extra data must have at least"
+                                   + " 5 bytes.");
+        }
+
+        int version = buffer[offset];
+
+        if (version != 0x01) {
+            throw new ZipException("Unsupported version [" + version
+                                   + "] for UniCode path extra data.");
+        }
+
+        nameCRC32 = ZipLong.getValue(buffer, offset + 1);
+        unicodeName = new byte[length - 5];
+System.arraycopy(unicodeName, buffer, (length - 5), 1, length);
+        data = null;
+    }

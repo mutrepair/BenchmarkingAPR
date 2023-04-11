@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/118550/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -3264,7 +3264,7 @@
+         // can use raw bits since already dealt with infinity and NaN
+         final long bits = Double.doubleToRawLongBits(d);
+         final long sign = bits & 0x8000000000000000L;
+-        if ((direction < d) & (sign == 0L)) {
++        if ((direction < d) ^ (sign == 0L)) {
+             return Double.longBitsToDouble(sign | ((bits & 0x7fffffffffffffffL) + 1));
+         } else {
+             return Double.longBitsToDouble(sign | ((bits & 0x7fffffffffffffffL) - 1));

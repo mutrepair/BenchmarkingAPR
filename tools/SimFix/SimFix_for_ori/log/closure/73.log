@@ -1,0 +1,53 @@
+=================================================
+Project : closure_73	start : 23/02/07 01:37
+Current failed test : com.google.javascript.jscomp.CodePrinterTest::testUnicode | 23/02/07 01:37
+Tue Feb 07 01:37:16 CST 2023 com.google.javascript.jscomp.CodeGenerator,1045
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c>0x1f&&c<0x7f){
+sb.append(c);
+}else {
+appendHexJavaScriptRepresentation(sb,c);
+}
+
+Time : 23/02/07 01:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java=>0,0]
+if(c>0x1f&&c<0x7f){
+sb.append(c);
+}else {
+appendHexJavaScriptRepresentation(sb,c);
+}
+
+Time : 23/02/07 01:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java=>1045,1052]
+if(c>0x1f&&c<=0x7f){
+sb.append(c);
+}else {
+appendHexJavaScriptRepresentation(sb,c);
+}
+
+Time : 23/02/07 01:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java=>1045,1052]
+if(c>0x1f&&c<0x7f){
+sb.append(c);
+}else {
+appendHexJavaScriptRepresentation(sb,c);
+}
+
+Time : 23/02/07 01:37
+----------------------------------------
+Success time : 23/02/07 01:38

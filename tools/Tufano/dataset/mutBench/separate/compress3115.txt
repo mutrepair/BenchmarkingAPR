@@ -1,0 +1,1 @@
+public static int METHOD_1 ( TYPE_1 name , byte [ ] buf , int offset , int length ) { int i ; for ( i = 0 ; i < length && i < name . length ( ) ; ++ i ) { buf [ offset + i ] = ( byte ) name . METHOD_2 ( i ) ; } for ( ; i < length ; ++ i ) { buf [ offset + i ] = 1 ; } return offset + length ; }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/42091/com/google/javascript/jscomp/RescopeGlobalSymbols.java	2022-10-31 19:47:37.843810714 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/RescopeGlobalSymbols.java	2022-10-29 03:10:28.884977484 -0500
+@@ -65,7 +65,7 @@
+ 
+   RescopeGlobalSymbols(AbstractCompiler compiler,
+       String globalSymbolNamespace) {
+-    this(compiler, globalSymbolNamespace, false);
++    this(compiler, globalSymbolNamespace, true);
+   }
+ 
+   private void addExternForGlobalSymbolNamespace() {

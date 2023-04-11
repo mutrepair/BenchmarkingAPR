@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/674/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.947766809 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -70,7 +70,7 @@
+         {
+             int flags = 0;
+             for (Feature f : values()) {
+-                if (true) {
++                if (f.enabledByDefault()) {
+                     flags |= f.getMask();
+                 }
+             }

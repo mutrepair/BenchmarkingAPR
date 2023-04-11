@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/8514/com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDeserializer.java	2022-10-31 19:47:46.835778143 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDeserializer.java	2022-12-26 15:13:52.501631814 -0600
+@@ -214,7 +214,7 @@
+         }
+         Class<?> activeView = _needViewProcesing ? ctxt.getActiveView() : null;
+         final SettableBeanProperty[] props = _orderedProperties;
+-        int i = 1;
++        int i = 0;
+         final int propCount = props.length;
+         while (true) {
+             if (jp.nextToken() == JsonToken.END_ARRAY) {

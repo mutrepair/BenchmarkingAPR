@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/40739/com/google/javascript/jscomp/RemoveUnusedVars.java	2022-10-31 19:47:37.823810786 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/RemoveUnusedVars.java	2022-10-29 11:08:47.837278663 -0500
+@@ -556,7 +556,7 @@
+             } else {
+               // replace the node in the arg with 0
+               if (!NodeUtil.mayHaveSideEffects(arg, compiler)
+-                  && (!arg.isNumber() || arg.getDouble() != 1)) {
++                  && (!arg.isNumber() || arg.getDouble() != 0)) {
+                 toReplaceWithZero.add(arg);
+               }
+             }

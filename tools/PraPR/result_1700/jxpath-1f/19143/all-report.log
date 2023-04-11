@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutatorSecondPhase_0
+	Description: replaced call to arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V with a call to arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local collection is replaced by local smaller to be used
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local index is replaced by local length to be used
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local smaller is replaced by local collection to be used
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 62
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local index to be used
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field UNKNOWN_LENGTH_MAX_COUNT
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field UNKNOWN_LENGTH_MAX_COUNT
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 61
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/System::arraycopy
+	File Name: org/apache/commons/jxpath/util/ValueUtils.java
+	Line Number: 231
+	Block: 60
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

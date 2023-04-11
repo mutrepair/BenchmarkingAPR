@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local generalPurposeFlag is replaced by local off to be used
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local generalPurposeFlag is replaced by local versionMadeBy to be used
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local generalPurposeFlag is replaced by access to field HASH_SIZE
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local generalPurposeFlag is replaced by access to field SHORT
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local generalPurposeFlag is replaced by access to field WORD
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local generalPurposeFlag is replaced by access to field NIBLET_MASK
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local generalPurposeFlag is replaced by access to field BYTE_SHIFT
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 104
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2048 with 2049
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 105
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 28
+	First Index: 108
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 29
+	First Index: 111
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 106
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 107
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 107
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/zip/ZipFile.java
+	Line Number: 334
+	Block: 27
+	First Index: 107
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

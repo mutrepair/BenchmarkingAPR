@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/70615/org/jfree/data/xy/XYSeries.java	2022-10-31 19:47:29.647840168 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/xy/XYSeries.java	2022-10-29 16:41:07.442717362 -0500
+@@ -985,7 +985,7 @@
+         // it is too slow to look at every data item, so let's just look at
+         // the first, middle and last items...
+         int count = getItemCount();
+-        if (count >= 0) {
++        if (count > 0) {
+             XYDataItem item = getRawDataItem(0);
+             result = 29 * result + item.hashCode();
+         }

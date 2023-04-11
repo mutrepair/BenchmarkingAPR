@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_27/src/main/java/org/apache/commons/math3/fraction/Fraction.java	2023-01-16 15:30:10.056613972 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/27/patch/./org/apache/commons/math3/fraction/Fraction.java	2023-01-16 15:30:10.024613571 -0600
+@@ -594,7 +594,7 @@
+      * @return the fraction percentage as a <tt>double</tt>.
+      */
+     public double percentageValue() {
+-        return multiply(100).doubleValue();
++        return 100 * doubleValue();
+     }
+ 
+     /**

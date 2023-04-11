@@ -1,0 +1,2 @@
+    public final boolean isEnabled(JsonGenerator.Feature f) {
+return ((DEFAULT_PARSER_FEATURE_FLAGS | f.getMask()) != 0);    }

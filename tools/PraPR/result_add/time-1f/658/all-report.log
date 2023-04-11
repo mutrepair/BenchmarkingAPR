@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to add(JI)J with a call to add(JJ)J
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to add with a call to subtract
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.DurationField::add(JI)J is guarded using default value 0L
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(JI)J is guarded returning default value 0L
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to add(JI)J is guarded returning local instant
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/joda/time/DurationField::add with argument
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/DurationField::add
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced long return with 0 for org/joda/time/DurationField::subtract
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of long value with value + 1 for org/joda/time/DurationField::subtract
+	File Name: org/joda/time/DurationField.java
+	Line Number: 212
+	Block: 3
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

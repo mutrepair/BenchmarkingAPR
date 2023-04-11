@@ -1,0 +1,298 @@
+h += ~ ( h << 9 ) ;
+h ^= h > > > 10 ;
+h += ~ ( h << 9 ) ;
+h ^= h > > > 14 ;
+h ^= h > > > 14 ;
+h += h << 4 ;
+if ( k == - d || k != d && vDown [ i - 1 ] < vDown [ i + 1 ] ) {
+h += ~ ( h << 9 ) ;
+h += ~ ( h << 9 ) ;
+return ( key . charAt ( index ) & mask ( bit ) ) != 0 ;
+return ( v1 ^ v2 ) ? ( ( v1 ^ trueFirst ) ? 1 : - 1 ) : 0 ;
+total += ( element == null ? 0 : element . hashCode ( ) ) ^ count . value ;
+v = ( v << ( 32 - 6 ) ) > > ( 32 - 6 ) ;
+leapYears = ( ( year + 3 ) > > 2 ) - leapYears + ( ( leapYears + 3 ) > > 2 ) - 1 ;
+buf . append ( ( char ) ( value - ( d << 3 ) - ( d << 1 ) + '0' ) ) ;
+iMillis = FieldUtils . safeAdd ( endMillis , - startMillis ) ;
+return add ( instant , - value ) ;
+return - val1 ;
+return plusMillis ( - millis ) ;
+i = ~ i ;
+return iChronology . setYear ( instant , - year ) ;
+return plusHours ( - hours ) ;
+iMillis = FieldUtils . safeAdd ( endInstant , - startInstant ) ;
+return - iChronology . getYearDifference ( subtrahendInstant , minuendInstant ) ;
+index = type == null ? 0 : type . hashCode ( ) & ( newLength - 1 ) ;
+return z4 > > > ( 32 - bits ) ;
+return Float . intBitsToFloat ( sign | ( scaledExponent << 23 ) | mantissa ) ;
+z4 = z4 ^ ( ( z4 << 15 ) & 0xfa118000 ) ;
+return a << shift ;
+return Double . longBitsToDouble ( sign | ( ( ( long ) scaledExponent ) << 52 ) | mantissa ) ;
+final int z2 = ( vM2 ^ ( vM2 << 10 ) ) ^ ( vM3 << 26 ) ;
+a = prodA > > > 32 ;
+word |= 0x1L << shift ;
+final int z2 = ( vM2 > > > 9 ) ^ ( vM3 ^ ( vM3 > > > 1 ) ) ;
+int exponent = ( int ) ( ( inbits > > 52 ) & 0x7ff ) - 1023 ;
+double tmpA = ( prod2A > > > 12 ) / TWO_POWER_52 ;
+final int z1 = ( v0 ^ ( v0 << 25 ) ) ^ ( vM1 ^ ( vM1 > > > 27 ) ) ;
+mem [ isaacI ] = mem [ ( isaacX & MASK ) > > 2 ] + isaacA + isaacB ;
+return ( 1l << ( n - 1 ) ) - 1l ;
+return Float . intBitsToFloat ( sign | ( scaledExponent << 23 ) | mantissa ) ;
+return z4 > > > ( 32 - bits ) ;
+( long ) ( ( ( exp3 + 1023 ) & 0x7ff ) ) << 52 ) ;
+return - u * ( 1L << k ) ;
+x [ n > > 1 ] = 2.0 * f [ n > > 1 ] ;
+mantissa = mantissa | ( 1L << 52 ) ;
+double tmpA = ( prod2A > > > 12 ) / TWO_POWER_52 ;
+final double m0 = - r . getQ0 ( ) ;
+return createComplex ( - real , - imaginary ) ;
+return ( x ^ ( ~ i + 1 ) ) + i ;
+return FastMath . pow ( 2 * FastMath . PI , - 0.5 * dim ) *
+infinity = - infinity ;
+return new FieldVector3D < T > ( 1.0 , this , - factor , v ) ;
+final Vector3D n = new Vector3D ( 1.0 , d , - d . dotProduct ( direction ) , direction ) ;
+double zb = - ( za - EIGHTHS [ idx ] - ya ) ;
+p = - 1.3654692000834678645e-06 + p * w ;
+return new FieldVector3D < T > ( x . linearCombination ( v . getZ ( ) , y , - v . getY ( ) , z ) ,
+double yb = - ( ya - hiPrec [ 0 ] - hiPrec [ 1 ] ) ;
+return - 0.5 * exp ( - x ) ;
+return new Vector3D ( 0 , inverse * z , - inverse * y ) ;
+final double b2 = h * ( - 27.0 / 32.0 + theta2 * ( 459.0 / 32.0 + theta * ( - 243.0 / 8.0 + theta * 135.0 / 8.0 ) ) ) ;
+yb += - ( temp - ya - ra ) ;
+return + 1 ;
+final int orderingSign = interpolator . isForward ( ) ? + 1 : - 1 ;
+x = - x ;
+final double f2 = f . value ( - p ) ;
+result = - result ;
+return - h ;
+rb += - ya * denomb * denomr * denomr ;
+if ( x > 1.0 || x < - 1.0 ) {
+p = - p ;
+y . linearCombination ( v . getX ( ) , z , - v . getZ ( ) , x ) ,
+return new Decimal64 ( - FastMath . pow ( - value , 1.0 / n ) ) ;
+- r . q1 * q0 + r . q0 * q1 + ( r . q2 * q3 - r . q3 * q2 ) ,
+return ( a < 0.0 ) ? - 1.0 : ( ( a > 0.0 ) ? 1.0 : a ) ;
+return new Quaternion ( q0 , - q1 , - q2 , - q3 ) ;
+return createComplex ( real , - imaginary ) ;
+if ( ( v2 . getX ( ) . getReal ( ) < - 0.9999999999 ) || ( v2 . getX ( ) . getReal ( ) > 0.9999999999 ) ) {
+return + 1 ;
+singularValues [ k ] = - singularValues [ k ] ;
+p = - 5.4154120542946279317e-11 + p * w ;
+matrixT [ k ] [ k - 1 ] = - matrixT [ k ] [ k - 1 ] ;
+rb += - x * dx / y / y ;
+lmDiag [ i ] = - sin * rik + cos * lmDiag [ i ] ;
+result = - result ;
+zb += - ( temp - za - yb ) ;
+rb = - ( temp - ra - rb ) ;
+db += - ( temp - da - yb ) ;
+x [ k ] = smartAdd ( xk , - xi * r [ nextr ] ) ;
+if ( ( q0 . getReal ( ) < - 0.1 ) || ( q0 . getReal ( ) > 0.1 ) ) {
+double a = - k * 1.570796251296997 ;
+result = - result ;
+v2 . y . linearCombination ( v1 . getZ ( ) , v2 . x , - v1 . getX ( ) , v2 . z ) ,
+final double invExp1 = 1 / ( 1 + FastMath . exp ( - x ) ) ;
+v = - v ;
+return FastMath . exp ( - 0.5 * sum ) ;
+d = - ( c - a - lnzb ) ;
+va [ i ] [ j ] += - beta * hK [ i ] ;
+return - u * ( 1L << k ) ;
+denominator = - denominator ;
+nb += - ( temp - na - yb ) ;
+double yb = - ( ya - hiPrec [ 0 ] - hiPrec [ 1 ] ) ;
+final int wrk_off = - ( in + 1 ) ;
+p = - 0.00021503011930044477347 + p * w ;
+return upper - FastMath . exp ( - y ) ;
+final double g = ( ort [ m ] > 0 ) ? - FastMath . sqrt ( h ) : FastMath . sqrt ( h ) ;
+return - Math . PI * F_1_4 ;
+ArithmeticUtils . pow ( numerator , - exponent ) ) ;
+return new Vector3D ( p2D . getX ( ) , u , p2D . getY ( ) , v , - originOffset , w ) ;
+q = - q ;
+return new BigFraction ( ArithmeticUtils . pow ( denominator , - exponent ) ,
+double actRed = - 1.0 ;
+- FastMath . asin ( v2 . getX ( ) ) ,
+points [ idx ] = - c ;
+if ( imaginary < - 20.0 ) {
+if ( ( n & 0x1 ) == 0 ) {
+index = j & mask ;
+return Float . intBitsToFloat ( sign | ( ( bits & 0x7fffffff ) - 1 ) ) ;
+return ( int ) ( ( m > > ( k - e ) ) & 0x1L ) ;
+int z4 = z0 ^ ( z1 ^ ( z1 << 9 ) ) ^ ( z2 ^ ( z2 << 21 ) ) ^ ( z3 ^ ( z3 > > > 21 ) ) ;
+( long ) ( ( ( exp3 + 1023 ) & 0x7ff ) ) << 52 ) ;
+z4 = z4 ^ ( ( z4 << 15 ) & 0x9b868000 ) ;
+final int z2 = ( vM2 ^ ( vM2 << 10 ) ) ^ ( vM3 << 26 ) ;
+mt [ k ] = mt [ k + M ] ^ ( y > > > 1 ) ^ MAG01 [ y & 0x1 ] ;
+if ( ( row & 0x1 ) == 0 ) {
+return Float . intBitsToFloat ( MASK_NON_SIGN_INT & Float . floatToRawIntBits ( x ) ) ;
+while ( ( ( m & 0x001ffffffffffffeL ) != 0 ) && ( ( m & 0x1 ) == 0 ) ) {
+if ( ( e & 0x1 ) != 0 ) {
+int exponent = ( int ) ( ( bits & 0x7ff0000000000000L ) > > 52 ) - 1023 ;
+final int sign = bits & 0x80000000 ;
+int exponent = ( ( int ) ( bits > > > 52 ) ) & 0x7ff ;
+int index = hash & mask ;
+final int z1 = ( v0 ^ ( v0 << 24 ) ) ^ ( vM1 ^ ( vM1 > > > 30 ) ) ;
+index = j & mask ;
+mt [ k ] = mt [ k + ( M - N ) ] ^ ( y > > > 1 ) ^ MAG01 [ y & 0x1 ] ;
+if ( ( direction < d ) ^ ( sign == 0L ) ) {
+return ( n > 0 ) && ( ( n & ( n - 1 ) ) == 0 ) ;
+if ( ( n & 0x1 ) == 0 ) {
+byte val2 = ( ( b2 & SIGN ) == 0 ) ? ( byte ) ( b2 > > 4 ) : ( byte ) ( ( b2 ) > > 4 ^ 0xf0 ) ;
+decodedData [ encodedIndex + 2 ] = ( byte ) ( b3 << 6 | b4 ) ;
+decodedData [ encodedIndex + 2 ] = ( byte ) ( b3 << 6 | b4 ) ;
+decodedData [ encodedIndex + 1 ] = ( byte ) ( ( ( b2 & 0xf ) << 4 ) | ( ( b3 > > 2 ) & 0xf ) ) ;
+decodedData [ encodedIndex ] = ( byte ) ( b1 << 2 | b2 > > 4 ) ;
+char [ ] l_ascii = new char [ raw . length << 3 ] ;
+byte val2 = ( ( b2 & SIGN ) == 0 ) ? ( byte ) ( b2 > > 4 ) : ( byte ) ( ( b2 ) > > 4 ^ 0xf0 ) ;
+char hex1 = Character . toUpperCase ( Character . forDigit ( ( b > > 4 ) & 0xF , 16 ) ) ;
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+byte val2 = ( ( b2 & SIGN ) == 0 ) ? ( byte ) ( b2 > > 4 ) : ( byte ) ( ( b2 ) > > 4 ^ 0xf0 ) ;
+byte val1 = ( ( b1 & SIGN ) == 0 ) ? ( byte ) ( b1 > > 2 ) : ( byte ) ( ( b1 ) > > 2 ^ 0xc0 ) ;
+byte val3 = ( ( b3 & SIGN ) == 0 ) ? ( byte ) ( b3 > > 6 ) : ( byte ) ( ( b3 ) > > 6 ^ 0xfc ) ;
+this . data . add ( - index - 1 , item ) ;
+this . data . add ( - index - 1 , item ) ;
+this . exceptionSegments . add ( - ( p + 1 ) , segment ) ;
+this . data . add ( - index - 1 , item ) ;
+this . exceptionSegments . add ( - ( p + 1 ) , segment ) ;
+if ( ( type & IMAGES ) != 0 ) {
+int newSerFeatures = _serFeatures & ~ feature . getMask ( ) ;
+int newSerFeatures = _serFeatures | feature . getMask ( ) ;
+int index = name . hashCode ( ) & ( _buckets . length - 1 ) ;
+int newDeserFeatures = _deserFeatures & ~ feature . getMask ( ) ;
+hc = ( hc << 2 ) + ranges [ i ] ;
+a ^= ( c > > > 12 ) ;
+c ^= ( b > > > 5 ) ;
++ ( ( bytes [ offset + 2 ] & 0xffL ) << 16 )
+| ( ( str [ i + 2 ] & 0xff ) << 16 )
+a += ( value [ offset + 3 ] & 0xffL ) << 24 ;
+result = lvalInt > > rvalInt ;
+return ( value << 1 ) + 0 ;
+b -= c ; b -= a ; b ^= a << 49 ;
+| ( ( str [ i + 6 ] & 0xff ) << 16 )
+a += ( str [ i + 3 ] & 0xff ) << 24 ;
+a += ( value [ offset + 2 ] & 0xffL ) << 16 ;
++ ( ( bytes [ offset + 6 ] & 0xffL ) << 48 )
+c ^= ( b > > > 13 ) ;
+c [ 5 ] = Base64 . toBase64 ( ( value << 4 ) & 0x3f ) ;
+result = lvalInt > > rvalInt ;
+result = result + ( digit << shift ) ;
+a -= b ; a -= c ; a ^= c > > > 12 ;
+public int getNumRanges ( ) { return ranges . length > > 1 ; }
+bitset &= ~ mask ;
+long lvalLong = lvalInt & 0xffffffffL ;
+c += ( str [ i + 9 ] & 0xff ) << 16 ;
+| ( ( str [ i + 6 ] & 0xff ) << 16 )
+if ( ( MASK_TYPEFIELD & bitset ) == typefield ) {
+} else if ( aIsNull ^ bIsNull ) {
+a += ( str [ i + 2 ] & 0xff ) << 16 ;
+b += ( str [ i + 7 ] & 0xff ) << 24 ;
+| ( ( str [ i + 6 ] & 0xff ) << 16 )
+sb . append ( "0x" ) . append ( Integer . toString ( ranges [ i ] - ( i & 1 ) , 16 ) ) ;
+b += ( ( ( str [ i + 4 ] & 0xff ) << 0 )
+b += ( str [ i + 7 ] & 0xff ) << 24 ;
+int ch = ( int ) b & 0xFF ;
+if ( ( jjtoToken [ jjmatchedKind > > 6 ] & ( 1L << ( jjmatchedKind & 077 ) ) ) != 0L )
+if ( ( active0 & 0x4000000000000L ) != 0L )
+if ( ( active1 & 0xc0000L ) != 0L )
+else if ( ( active0 & 0x20000000000L ) != 0L )
+if ( ( active0 & 0x2000000000000000L ) != 0L )
+if ( ( active0 & 0x100000000000L ) != 0L )
+if ( ( active0 & 0x2000000000L ) != 0L )
+if ( ( active0 & 0x10000000L ) != 0L )
+if ( ( active1 & 0x4L ) != 0L )
+if ( ( active0 & 0xfffffffff8000000L ) != 0L || ( active1 & 0x3fffL ) != 0L )
+if ( ( active0 & 0x20000000000000L ) != 0L )
+if ( ( active0 & 0x10000070000000L ) != 0L || ( active1 & 0x208L ) != 0L )
+buffer [ ptr ++ ] = HEX_CHARS [ hi > > 4 ] ;
+if ( ( ( ( val > > 8 ) ^ hash ) << 8 ) == 0 ) {
+ch2 = ( ch2 > > ( ( 3 - byteIx ) << 3 ) ) ;
+int b24 = ( ( int ) input [ inputPtr ++ ] ) << 8 ;
+int digitOffset = ( triplet << 2 ) ;
+c = ( c << 6 ) | ( d & 0x3F ) ;
+b24 |= ( ( ( int ) input [ inputPtr ++ ] ) & 0xFF ) << 8 ;
+b24 |= ( ( ( int ) readBuffer [ inputPtr ] ) & 0xFF ) << 8 ;
+ch2 = ( ch2 > > ( ( 3 - byteIx ) << 3 ) ) ;
+append ( b24 > > 16 ) ;
+b24 = ( b24 << 8 ) | ( ( ( int ) readBuffer [ inputPtr ++ ] ) & 0xFF ) ;
+int chunksBeforeLF = b64variant . getMaxLineLength ( ) > > 2 ;
+_mainHash [ ix ] = ( hash << 8 ) ;
+int b24 = ( ( int ) readBuffer [ inputPtr ++ ] ) << 16 ;
+int b24 = ( ( int ) readBuffer [ inputPtr ++ ] ) << 16 ;
+b24 = ( b24 << 8 ) | ( ( ( int ) readBuffer [ inputPtr ++ ] ) & 0xFF ) ;
+int b24 = ( ( int ) readBuffer [ inputPtr ++ ] ) << 16 ;
+buffer [ outputPtr ++ ] = ( byte ) ( decodedData > > 8 ) ;
+int b24 = ( ( int ) input [ inputPtr ++ ] ) << 8 ;
+outputBuffer [ outputPtr ++ ] = ( byte ) ( 0xc0 | ( c > > 6 ) ) ;
+int chunksBeforeLF = b64variant . getMaxLineLength ( ) > > 2 ;
+value = ( value << 4 ) | digit ;
+bbuf [ outputPtr ++ ] = HEX_CHARS [ charToEscape > > 4 ] ;
+int chunksBeforeLF = b64variant . getMaxLineLength ( ) > > 2 ;
+int b24 = ( ( int ) readBuffer [ inputPtr ++ ] ) << 8 ;
+_features &= ~ f . getMask ( ) ;
+value = - value ;
+int ix = ( hash & _mainHashMask ) ;
+sb . append ( _base64ToAsciiC [ ( b24 > > 18 ) & 0x3F ] ) ;
+i = input [ _inputPtr ++ ] & 0xFF ;
+_base64ToAsciiB [ ( bits > > 6 ) & 0x3F ] : pb ;
+int ix = ( hash & _mainHashMask ) ;
+ch = _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+ch = ( 0x80 | ( ch & 0x3f ) ) ;
+c = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+int c = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+return ( _generatorFeatures & f . getMask ( ) ) != 0 ;
+outBuf [ outPtr ++ ] = ( byte ) ( 0x80 | ( c & 0x3f ) ) ;
+ch = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+if ( ( _numTypesValid & NR_LONG ) == 0 ) {
+buf [ ++ ptr ] = HEX_CHARS [ ch & 0xF ] ;
+b24 |= ( ( ( int ) input [ inputPtr ++ ] ) & 0xFF ) << 8 ;
+} else if ( ( ch & 0xF0 ) == 0xE0 ) {
+b24 |= ( ( ( int ) input [ inputPtr ++ ] ) & 0xFF ) << 8 ;
+} else if ( ( i16 & 0x00FF ) == 0 ) {
+if ( ( _numTypesValid & NR_LONG ) == 0 ) {
+ch = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+ch = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+| ( ( _buffer [ ptr + 2 ] & 0xFF ) << 8 ) | ( _buffer [ ptr + 3 ] & 0xFF ) ;
+if ( ( d & 0xC0 ) != 0x080 ) {
+if ( ( d & 0xC0 ) != 0x080 ) {
+c = ( int ) _inputBuffer [ _inputPtr ++ ] & 0xFF ;
+return ( ( ( ( ( bsR ( 8 ) << 8 ) | bsR ( 8 ) ) << 8 ) | bsR ( 8 ) ) << 8 ) | bsR ( 8 ) ;
+result [ 1 ] = ( byte ) ( ( value & BYTE_1_MASK ) > > BYTE_1_SHIFT ) ;
+value += ( bytes [ offset + BYTE_2 ] << BYTE_2_SHIFT ) & BYTE_2_MASK ;
+globalCrc = ( globalCrc << 8 ) ^ CRC . crc32Table [ temp ] ;
+base [ i ] = ( ( limit [ i - 1 ] + 1 ) << 1 ) - base [ i ] ;
+bsBuffShadow = ( bsBuffShadow << 8 ) | thech ;
+long value = ( ( year - 1980 ) << 25 )
+bsBuffShadow = ( bsBuffShadow << 8 ) | thech ;
+int zvec = ( bsBuffShadow > > ( bsLiveShadow - zn ) )
+int zvec = ( bsBuffShadow > > ( bsLiveShadow - zn ) )
+zvec = ( zvec << 1 ) | ( ( bsBuffShadow > > bsLiveShadow ) & 1 ) ;
+setExternalAttributes ( ( mode << SHORT_SHIFT )
+value += ( bytes [ offset + BYTE_1 ] << BYTE_1_SHIFT ) & BYTE_1_MASK ;
+return ~ globalCrc ;
+result [ BYTE_1 ] = ( byte ) ( ( value & BYTE_1_MASK ) > > BYTE_1_SHIFT ) ;
+globalCrc = ( globalCrc << 8 ) ^ CRC . crc32Table [ temp ] ;
+tt [ cftab [ ll8 [ i ] & 0xff ] ++ ] = i ;
+return type | ( mode & PERM_MASK ) ;
+result [ 1 ] = ( byte ) ( ( value & BYTE_1_MASK ) > > BYTE_1_SHIFT ) ;
+zvec = ( zvec << 1 ) | ( ( bsBuffShadow > > bsLiveShadow ) & 1 ) ;
+result [ value . ordinal ( ) / Long . SIZE ] |= 1 << ( value . ordinal ( ) % Long . SIZE ) ;
+total |= 1 << constant . ordinal ( ) ;
+dst [ dstPos + i ] = ( byte ) ( 0xff & ( src > > shift ) ) ;
+final int mask = 0xff << shift ;
+result [ value . ordinal ( ) / Long . SIZE ] |= 1 << ( value . ordinal ( ) % Long . SIZE ) ;
+offset = - offset ;
+comparison = ( lhs . length < rhs . length ) ? - 1 : + 1 ;
+comparison = ( lhs . length < rhs . length ) ? - 1 : + 1 ;
+comparison = + 1 ;
+comparison = ( lhs . length < rhs . length ) ? - 1 : + 1 ;
+if ( u > 0 ) { u = - u ; }
+out = ( out & ~ mask ) | bits ;
+out = ( short ) ( ( out & ~ mask ) | bits ) ;
+comparison = + 1 ;
+final long bits = ( ( 0xffffffffL & src [ i + srcPos ] ) << shift ) ;
+final long bits = ( ( 0xffffffffL & src [ i + srcPos ] ) << shift ) ;
+dst [ dstPos + i ] = ( ( 0x1 & ( src > > shift ) ) != 0 ) ;
+if ( block < values . length && ( values [ block ] & 1 << ( constant . ordinal ( ) % Long . SIZE ) ) != 0 ) {
+return ( holder & ~ _mask ) | ( ( value << _shift_count ) & _mask ) ;
+out = ( out & ~ mask ) | bits ;
+if ( denominator == Integer . MIN_VALUE && ( numerator & 1 ) == 0 ) {
+return getMillis ( ) / DateTimeConstants . MILLIS_PER_HOUR ;
+if ( time != null && getChronology ( ) != time . getChronology ( ) ) {

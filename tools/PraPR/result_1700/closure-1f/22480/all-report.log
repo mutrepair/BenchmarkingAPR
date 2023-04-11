@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to checkState(Z)V with a call to checkState(ZLjava/lang/Object;)V
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 432
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to checkState(Z)V with a call to checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 432
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local childCount is replaced by local type to be used
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 422
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to checkState with a call to checkArgument
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 432
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 423
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 52
+	First Index: 425
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 429
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 424
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 424
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 424
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/google/common/base/Preconditions::checkState
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 432
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------

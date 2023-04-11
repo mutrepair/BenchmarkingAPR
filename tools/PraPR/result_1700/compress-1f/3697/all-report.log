@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local out is replaced a call out.slice()
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 69
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to position with a call to arrayOffset
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to position with a call to hashCode
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to position with a call to getInt
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.nio.ByteBuffer::position()I is guarded using default value 0
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.nio.charset.CoderResult::length()I is guarded using default value 0
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 73
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to position()I is guarded returning default value null
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 73
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to position()I is guarded returning local out
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local out
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 73
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/compress/archivers/zip/ZipEncodingHelper::growBuffer with argument
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 77
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 74
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 75
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 76
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/nio/ByteBuffer::position
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 71
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/nio/charset/CoderResult::length
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 73
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/zip/ZipEncodingHelper::growBuffer
+	File Name: org/apache/commons/compress/archivers/zip/NioZipEncoding.java
+	Line Number: 87
+	Block: 6
+	First Index: 77
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

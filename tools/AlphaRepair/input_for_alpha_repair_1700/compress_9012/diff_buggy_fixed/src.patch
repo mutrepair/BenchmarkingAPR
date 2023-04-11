@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/9012/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-10-31 19:47:41.527797402 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-12-26 15:13:50.349608561 -0600
+@@ -661,7 +661,7 @@
+                 if (gs >= nMTF) {
+                     break;
+                 }
+-                ge = (gs + G_SIZE) % 1;
++                ge = gs + G_SIZE - 1;
+                 if (ge >= nMTF) {
+                     ge = nMTF - 1;
+                 }

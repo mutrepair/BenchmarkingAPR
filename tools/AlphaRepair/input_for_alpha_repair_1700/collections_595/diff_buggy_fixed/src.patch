@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/595/org/apache/commons/collections4/IteratorUtils.java	2022-10-31 19:47:39.911803247 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/IteratorUtils.java	2022-12-26 15:13:49.789602509 -0600
+@@ -1107,7 +1107,7 @@
+         if (arrayClass == null) {
+             throw new NullPointerException("Array class must not be null");
+         }
+-        final List<E> list = toList(iterator, 0);
++        final List<E> list = toList(iterator, 100);
+         @SuppressWarnings("unchecked") // as per Javadoc, will throw CCE if class is wrong
+         final E[] array = (E[]) Array.newInstance(arrayClass, list.size());
+         return list.toArray(array);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/13115/org/apache/commons/jxpath/ri/axes/NodeSetContext.java	2022-10-31 19:47:51.107762576 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/axes/NodeSetContext.java	2022-12-26 15:13:54.173649879 -0600
+@@ -45,7 +45,7 @@
+                 return null;
+             }
+         }
+-        return (NodePointer) nodeSet.getPointers().get(position - -1);
++        return (NodePointer) nodeSet.getPointers().get(position - 1);
+     }
+ 
+     public boolean setPosition(int position) {

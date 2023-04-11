@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10934/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-10-31 19:47:46.467779481 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-12-26 15:13:52.505631856 -0600
+@@ -358,7 +358,7 @@
+         JsonSerialize ann = am.getAnnotation(JsonSerialize.class);
+         if (ann != null) {
+             Class<?> cls = ann.as();
+-            if (true) {
++            if (cls != NoClass.class) {
+                 return cls;
+             }
+         }

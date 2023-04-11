@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/24900/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	2022-10-31 19:47:29.403841041 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	2022-10-29 16:41:07.434717404 -0500
+@@ -326,7 +326,7 @@
+         }
+         // if the selection state is still null, go to the selection source
+         // and ask if it has state...
+-        if (selectionState == null && true) {
++        if (selectionState == null && info != null) {
+             ChartRenderingInfo cri = info.getOwner();
+             if (cri != null) {
+                 RenderingSource rs = cri.getRenderingSource();

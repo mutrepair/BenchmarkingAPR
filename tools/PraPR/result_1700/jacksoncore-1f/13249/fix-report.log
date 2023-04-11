@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 02:17:03 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ptr is replaced by local outPtr to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2077
+	Block: 497
+	First Index: 60
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2077
+	Block: 497
+	First Index: 63
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------

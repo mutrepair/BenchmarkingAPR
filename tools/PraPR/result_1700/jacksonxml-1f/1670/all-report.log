@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _props is guarded using value null
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 132
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local attrCount to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 137
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local len is replaced by local attrCount to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 138
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local textIndex to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 137
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local len is replaced by local textIndex to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 138
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local i is replaced by local len to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 137
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local len is replaced by local i to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 138
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _props is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 132
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 139
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 128
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 139
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 139
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java
+	Line Number: 93
+	Block: 8
+	First Index: 139
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

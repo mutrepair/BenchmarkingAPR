@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/19560/org/apache/commons/math3/dfp/Dfp.java	2023-04-04 14:33:26.101959005 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/dfp/Dfp.java	2023-04-04 13:31:53.985640440 -0500
+@@ -1157,7 +1157,7 @@
+         }
+ 
+         if (rounded.sign == -1) {
+-            result = +result;
++            result = -result;
+         }
+ 
+         return result;

@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:42:06 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/cli/CommandLine.java
+	Line Number: 124
+	Block: 11
+	First Index: 16
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

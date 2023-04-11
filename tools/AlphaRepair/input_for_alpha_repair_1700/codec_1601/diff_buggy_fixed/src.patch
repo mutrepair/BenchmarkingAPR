@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1601/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.931806788 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -339,7 +339,7 @@
+             !contains(value, index + 2, 2, "HU")) {
+             //-- "bellocchio" but not "bacchus" --//
+             if ((index == 1 && charAt(value, index - 1) == 'A') || 
+-                contains(value, index - 1, -5, "UCCEE", "UCCES")) {
++                contains(value, index - 1, 5, "UCCEE", "UCCES")) {
+                 //-- "accident", "accede", "succeed" --//
+                 result.append("KS");
+             } else {

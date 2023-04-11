@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 10
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.cli.Option.getArgName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.cli.Option.getArgName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hasArg with a call to hasOptionalArg
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getArgName with a call to getOpt
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to hasArg with a call to hasLongOpt
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getArgName with a call to getLongOpt
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to hasArg with a call to isRequired
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getArgName with a call to getDescription
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to hasArg with a call to hasArgName
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getArgName with a call to getValue
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to hasArg with a call to hasArgs
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getArgName with a call to toString
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to hasArg with a call to hasValueSeparator
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 6
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.Option::hasArg()Z is guarded using default value false
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.Option::getArgName()Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hasArg()Z is guarded returning enclosing method
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getArgName()Ljava/lang/String; is guarded returning enclosing method
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 39
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 42
+	Rank: 7
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::hasArg
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 38
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::getArgName
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 55
+	First Index: 41
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 39
+	Rank: 10
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 632
+	Block: 54
+	First Index: 39
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

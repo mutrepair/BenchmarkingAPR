@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Character.valueOf(C)Ljava/lang/Character; is replaced by an instantiation of type java.lang.Character using (C)V
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to isLetterOrDigit(C)Z with a call to isLetterOrDigit(I)Z
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isLetterOrDigit with a call to isHighSurrogate
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isLetterOrDigit with a call to isLowSurrogate
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isLetterOrDigit with a call to isSurrogate
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isLetterOrDigit with a call to isLowerCase
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isLetterOrDigit with a call to isUpperCase
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isLetterOrDigit with a call to isTitleCase
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isLetterOrDigit with a call to isDigit
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isLetterOrDigit with a call to isDefined
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isLetterOrDigit with a call to isLetter
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to isLetterOrDigit with a call to isJavaLetter
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Character::charValue()C is guarded using default value '\0'
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Character::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charValue()C is guarded returning default value null
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning default value null
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 45 with 46
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 95 with 96
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 56
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::charValue
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::isLetterOrDigit
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::valueOf
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::equals
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 55
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/TokenQueue.java
+	Line Number: 223
+	Block: 54
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

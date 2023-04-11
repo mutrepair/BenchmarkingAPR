@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local lhs is replaced by local rhs to be used
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rhs is replaced by local lhs to be used
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 247
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 248
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 246
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable comparison
+	File Name: org/apache/commons/lang3/builder/CompareToBuilder.java
+	Line Number: 983
+	Block: 248
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

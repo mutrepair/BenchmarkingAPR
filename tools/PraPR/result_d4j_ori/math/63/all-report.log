@@ -1,0 +1,300 @@
+Number of Plausible Fixes: 11
+Total Number of Patches: 27
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local y to be used
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 3
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local y is replaced by local x to be used
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field EPSILON
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 3
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local y is replaced by access to field EPSILON
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 6
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field EPSILON
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 10
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local y is replaced by access to field EPSILON
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 11
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field SAFE_MIN
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 3
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local y is replaced by access to field SAFE_MIN
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 6
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field SAFE_MIN
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 10
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local y is replaced by access to field SAFE_MIN
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 11
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field TWO_PI
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 3
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local y is replaced by access to field TWO_PI
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 6
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field TWO_PI
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 10
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local y is replaced by access to field TWO_PI
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 11
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isNaN with a call to isInfinite
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 4
+	Rank: 11
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/math/util/MathUtils::equals
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 82
+	First Index: 20
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/math/util/MathUtils::equals
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 82
+	First Index: 20
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 81
+	First Index: 15
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 82
+	First Index: 18
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 5
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 80
+	First Index: 13
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Double::isNaN
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 4
+	Rank: 11
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 5
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 8
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 78
+	First Index: 5
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 79
+	First Index: 8
+	Rank: 9
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/math/util/MathUtils.java
+	Line Number: 417
+	Block: 82
+	First Index: 20
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

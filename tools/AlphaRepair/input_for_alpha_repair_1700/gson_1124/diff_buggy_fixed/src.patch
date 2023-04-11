@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1124/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.563790026 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -530,7 +530,7 @@
+ 
+     double result = Double.parseDouble(value);
+ 
+-    if ((result >= 1.0)) {
++    if ((result >= 1.0d && value.startsWith("0"))) {
+       throw new NumberFormatException("JSON forbids octal prefixes: " + value);
+     }
+ 

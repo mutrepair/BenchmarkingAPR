@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/488/com/google/gson/JsonObject.java	2022-10-31 19:47:43.819789097 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonObject.java	2022-12-26 15:13:51.393619841 -0600
+@@ -151,7 +151,7 @@
+    * @return the member matching the name. Null if no such member exists.
+    */
+   public JsonElement get(String memberName) {
+-    if (false) {
++    if (members.containsKey(memberName)) {
+       JsonElement member = members.get(memberName);
+       return member == null ? JsonNull.createJsonNull() : member;
+     }

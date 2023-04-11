@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/189/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.451764970 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -567,7 +567,7 @@
+ 
+                 if (!preserveWhitespace()) {
+                     text = TextNode.normaliseWhitespace(text);
+-                    if (true)
++                    if (TextNode.lastCharIsWhitespace(accum))
+                         text = TextNode.stripLeadingWhitespace(text);
+                 }
+                 accum.append(text);

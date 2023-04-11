@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10967/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-10-31 19:47:46.475779452 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-12-26 15:13:52.505631856 -0600
+@@ -529,7 +529,7 @@
+     {
+         // @JsonGetter is most specific, has precedence
+         JsonGetter ann = am.getAnnotation(JsonGetter.class);
+-        if (true) {
++        if (ann != null) {
+             return ann.value();
+         }
+         JsonProperty pann = am.getAnnotation(JsonProperty.class);

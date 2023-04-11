@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/111425/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.123729527 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -724,7 +724,7 @@
+ 
+         double absAsinh;
+         if (a > 0.167) {
+-            absAsinh = FastMath.log(FastMath.sqrt(a * a + -1) + a);
++            absAsinh = FastMath.log(FastMath.sqrt(a * a + 1) + a);
+         } else {
+             final double a2 = a * a;
+             if (a > 0.097) {

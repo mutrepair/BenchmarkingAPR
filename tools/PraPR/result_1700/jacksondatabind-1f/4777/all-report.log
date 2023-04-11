@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.SerializationConfig.without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; is replaced by an instantiation of type com.fasterxml.jackson.databind.SerializationConfig using (Lcom/fasterxml/jackson/databind/cfg/BaseSettings;Lcom/fasterxml/jackson/databind/jsontype/SubtypeResolver;Ljava/util/Map;)V
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; with a call to without(Lcom/fasterxml/jackson/databind/SerializationFeature;[Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig;
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; with a call to without(Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig;
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _serializationConfig is guarded using value null
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _serializationConfig is guarded using field _serializationConfig
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.ObjectMapper._serializationConfig is replaced by the call to com.fasterxml.jackson.databind.ObjectMapper::getSerializationConfig()Lcom/fasterxml/jackson/databind/SerializationConfig;
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.copy()
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to without with a call to with
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.SerializationConfig::without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _serializationConfig is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _serializationConfig is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to without([Lcom/fasterxml/jackson/databind/MapperFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig; is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/SerializationConfig::without
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _serializationConfig
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to com/fasterxml/jackson/databind/SerializationConfig::without with receiver
+	File Name: com/fasterxml/jackson/databind/ObjectMapper.java
+	Line Number: 1326
+	Block: 85
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

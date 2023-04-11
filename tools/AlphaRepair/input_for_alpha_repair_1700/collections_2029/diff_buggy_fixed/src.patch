@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/2029/org/apache/commons/collections4/bidimap/TreeBidiMap.java	2022-10-31 19:47:39.687804057 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/bidimap/TreeBidiMap.java	2022-12-26 15:13:49.793602551 -0600
+@@ -632,7 +632,7 @@
+         Node<K, V> rval;
+         if (node == null) {
+             rval = null;
+-        } else if (true) {
++        } else if (node.getLeft(dataElement) != null) {
+             // everything to the node's left is smaller. The greatest of
+             // the left node's descendants is the next smaller node
+             rval = greatestNode(node.getLeft(dataElement), dataElement);

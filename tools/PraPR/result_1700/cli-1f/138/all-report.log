@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/apache/commons/cli/CommandLine::getOptionValue
+	File Name: org/apache/commons/cli/CommandLine.java
+	Line Number: 124
+	Block: 9
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/cli/CommandLine.java
+	Line Number: 124
+	Block: 9
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/cli/CommandLine::getOptionValue to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/cli/CommandLine.java
+	Line Number: 124
+	Block: 9
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

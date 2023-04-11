@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/10432/org/joda/time/chrono/IslamicChronology.java	2022-10-31 19:48:08.619698147 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/IslamicChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -205,7 +205,7 @@
+                     // First create without a lower limit.
+                     chrono = new IslamicChronology(null, null, leapYears);
+                     // Impose lower limit and make another IslamicChronology.
+-                    DateTime lowerLimit = new DateTime(0, 1, 1, 0, 0, 0, 0, chrono);
++                    DateTime lowerLimit = new DateTime(1, 1, 1, 0, 0, 0, 0, chrono);
+                     chrono = new IslamicChronology(
+                         LimitChronology.getInstance(chrono, lowerLimit, null),
+                          null, leapYears);

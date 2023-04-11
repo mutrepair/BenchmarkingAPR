@@ -1,0 +1,267 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.substring(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.jscomp.TransformAMDToCJSModule$TransformAMDModulesCallback.handlePlugins(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.substring(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.google.javascript.jscomp.TransformAMDToCJSModule$TransformAMDModulesCallback.handlePlugins(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to substring(I)Ljava/lang/String; with a call to substring(II)Ljava/lang/String;
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local script is replaced by local modNode to be used
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local modNode is replaced by local script to be used
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local script is replaced a call script.getFirstChild()
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local moduleName is replaced a call moduleName.toLowerCase()
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local modNode is replaced a call modNode.getFirstChild()
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::substring(I)Ljava/lang/String; is guarded using default value null
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.jscomp.TransformAMDToCJSModule$TransformAMDModulesCallback::handlePlugins(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/lang/String; is guarded using default value null
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to substring(I)Ljava/lang/String; is guarded returning default value null
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to handlePlugins(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/lang/String; is guarded returning default value null
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to substring(I)Ljava/lang/String; is guarded returning local moduleName
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to handlePlugins(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/lang/String; is guarded returning local moduleName
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to com/google/javascript/jscomp/TransformAMDToCJSModule$TransformAMDModulesCallback::handlePlugins with argument
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for com/google/javascript/jscomp/TransformAMDToCJSModule$TransformAMDModulesCallback::handlePlugins
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::substring
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/TransformAMDToCJSModule$TransformAMDModulesCallback::handlePlugins
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/google/javascript/jscomp/TransformAMDToCJSModule$TransformAMDModulesCallback::handlePlugins to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::substring with receiver
+	File Name: com/google/javascript/jscomp/TransformAMDToCJSModule.java
+	Line Number: 236
+	Block: 57
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

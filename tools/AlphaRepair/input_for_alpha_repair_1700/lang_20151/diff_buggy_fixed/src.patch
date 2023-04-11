@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/20151/org/apache/commons/lang3/text/translate/UnicodeEscaper.java	2022-10-31 19:47:57.179740347 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java	2022-12-26 15:13:54.781656448 -0600
+@@ -123,7 +123,7 @@
+         } else {
+             out.write("\\u000" + hex(codepoint));
+         }
+-        return false;
++        return true;
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/824/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.571764532 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -331,7 +331,7 @@
+     }
+ 
+     private Tag setContainInlineOnly() {
+-        canContainBlock = true;
++        canContainBlock = false;
+         canContainInline = true;
+         return this;
+     }

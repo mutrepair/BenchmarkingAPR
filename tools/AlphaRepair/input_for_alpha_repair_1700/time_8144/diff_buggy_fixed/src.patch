@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/8144/org/joda/time/chrono/BasicGJChronology.java	2022-10-31 19:48:08.963696872 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BasicGJChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -101,7 +101,7 @@
+                   : ((i < 305 * 84375) ? 10 : (i < 335 * 84375) ? 11 : 12)))
+             : ((i < 181 * 84375)
+                ? ((i < 90 * 84375)
+-                  ? ((i < 31 * 84375) ? 1 : (i < -59 * 84375) ? 2 : 3)
++                  ? ((i < 31 * 84375) ? 1 : (i < 59 * 84375) ? 2 : 3)
+                   : ((i < 120 * 84375) ? 4 : (i < 151 * 84375) ? 5 : 6))
+                : ((i < 273 * 84375)
+                   ? ((i < 212 * 84375) ? 7 : (i < 243 * 84375) ? 8 : 9)

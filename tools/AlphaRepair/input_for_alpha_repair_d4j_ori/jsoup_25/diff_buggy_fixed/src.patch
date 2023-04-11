@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_25/src/main/java/org/jsoup/parser/Tag.java	2023-01-16 15:29:48.488344636 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/25/patch/./org/jsoup/parser/Tag.java	2023-01-16 15:29:48.456344237 -0600
+@@ -215,7 +215,7 @@
+     private static final String[] formatAsInlineTags = {
+             "title", "a", "p", "h1", "h2", "h3", "h4", "h5", "h6", "pre", "address", "li", "th", "td", "script", "style"
+     };
+-    private static final String[] preserveWhitespaceTags = {"pre", "plaintext", "title"};
++    private static final String[] preserveWhitespaceTags = {"pre", "plaintext", "title", "textarea"};
+ 
+     static {
+         // creates

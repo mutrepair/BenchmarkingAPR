@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jsoup/safety/Cleaner::isValid
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 4
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/jsoup/safety/Cleaner::isValid
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 4
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 3
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 4
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/safety/Cleaner.java
+	Line Number: 63
+	Block: 4
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

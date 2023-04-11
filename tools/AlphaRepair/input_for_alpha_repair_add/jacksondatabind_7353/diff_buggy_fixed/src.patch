@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksondatabind-1f/mutants/7353/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2023-04-04 14:33:25.753955632 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2023-04-04 13:31:53.317632504 -0500
+@@ -240,7 +240,7 @@
+     public void replace(SettableBeanProperty property)
+     {
+         String name = property.getName();
+-        int index = name.hashCode() | (_buckets.length - 1);
++        int index = name.hashCode() & (_buckets.length-1);
+ 
+         /* This is bit tricky just because buckets themselves
+          * are immutable, so we need to recreate the chain. Fine.

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.jxpath.ri.compiler.Step::getAxis()I is guarded using default value 0
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getAxis()I is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 31
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 5 with 6
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 34
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 35
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/ri/compiler/Step::getAxis
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 35
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/compiler/TreeCompiler.java
+	Line Number: 199
+	Block: 42
+	First Index: 35
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

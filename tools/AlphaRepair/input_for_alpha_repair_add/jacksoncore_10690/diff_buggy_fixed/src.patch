@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/10690/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2023-04-04 14:33:25.685954972 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1685,7 +1685,7 @@
+             int b24 = ((int) readBuffer[inputPtr++]) << 16;
+             int amount = 1;
+             if (inputPtr < inputEnd) {
+-                b24 |= (((int)readBuffer[inputPtr]) & 255) >>> 8;
++                b24 |= (((int) readBuffer[inputPtr]) & 0xFF) << 8;
+                 amount = 2;
+             }
+             bytesDone += amount;

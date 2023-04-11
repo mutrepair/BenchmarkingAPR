@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/56270/org/apache/commons/math3/linear/TriDiagonalTransformer.java	2022-10-31 19:48:00.467728261 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/TriDiagonalTransformer.java	2022-12-26 15:13:55.669666042 -0600
+@@ -105,7 +105,7 @@
+                 qta[k][k] = 1;
+                 if (hK[k] != 0.0) {
+                     final double inv = 1.0 / (secondary[k - 1] * hK[k]);
+-                    double beta = 1.0 + secondary[k - 1];
++                    double beta = 1.0 / secondary[k - 1];
+                     qta[k][k] = 1 + beta * hK[k];
+                     for (int i = k + 1; i < m; ++i) {
+                         qta[k][i] = beta * hK[i];

@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local a to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 115
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local a to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 116
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b is replaced by local a to be defined
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 118
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local a is replaced by local b to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 120
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local b is replaced by local c to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 115
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local c is replaced by local b to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 116
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local b is replaced by local c to be defined
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 118
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local a is replaced by local c to be used
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 120
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b is replaced by access to field SEED64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 115
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local c is replaced by access to field SEED64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 116
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local a is replaced by access to field SEED64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 120
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local b is replaced by access to field CONSTANT64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 115
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local c is replaced by access to field CONSTANT64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 116
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local a is replaced by access to field CONSTANT64
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 120
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 49 with 50
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 125
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long subtraction with addition
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 117
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 126
+	Rank: 1
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/google/javascript/jscomp/JsMessage.java
+	Line Number: 646
+	Block: 14
+	First Index: 127
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------

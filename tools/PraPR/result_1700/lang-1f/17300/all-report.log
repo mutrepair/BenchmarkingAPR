@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is replaced by an instantiation of type java.math.BigInteger using (I[B)V
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.math.BigInteger.add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is replaced by an instantiation of type java.math.BigInteger using ([B)V
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local uvp is replaced by local upv to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local upv is replaced by local uvp to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 119
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local uvp is replaced a call uvp.nextProbablePrime()
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 118
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local upv is replaced a call upv.nextProbablePrime()
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 119
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to add with a call to subtract
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to add with a call to multiply
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to add with a call to divide
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to add with a call to remainder
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to add with a call to gcd
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to add with a call to mod
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to add with a call to modInverse
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to add with a call to and
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to add with a call to or
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to add with a call to xor
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.math.BigInteger::add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded using default value null
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded returning default value null
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded returning local this
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded returning local fraction
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded returning field ZERO
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to add(Ljava/math/BigInteger;)Ljava/math/BigInteger; is guarded returning field ONE
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/math/BigInteger::add with argument
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/math/BigInteger::add
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/math/BigInteger::add with receiver
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 769
+	Block: 147
+	First Index: 120
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

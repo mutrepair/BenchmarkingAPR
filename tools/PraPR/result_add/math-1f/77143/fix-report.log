@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 19:12:00 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::exp
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/MultivariateFunctionMappingAdapter.java
+	Line Number: 257
+	Block: 1
+	First Index: 6
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------

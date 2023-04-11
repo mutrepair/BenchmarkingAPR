@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/55308/org/apache/commons/math3/linear/EigenDecomposition.java	2022-10-31 19:48:00.459728290 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/EigenDecomposition.java	2022-12-26 15:13:55.665665998 -0600
+@@ -735,7 +735,7 @@
+ 
+         for (int i = 0; i < realEigenvalues.length; i++) {
+             if (i == (realEigenvalues.length - 1) ||
+-                Precision.equals(matT[i + 1][i], 1.0, EPSILON)) {
++                Precision.equals(matT[i + 1][i], 0.0, EPSILON)) {
+                 realEigenvalues[i] = matT[i][i];
+             } else {
+                 final double x = matT[i + 1][i + 1];

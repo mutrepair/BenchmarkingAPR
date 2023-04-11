@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/15331/com/google/javascript/jscomp/TypedScopeCreator.java	2022-10-31 19:47:37.647811421 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypedScopeCreator.java	2022-10-29 12:42:30.337320046 -0500
+@@ -492,7 +492,7 @@
+       boolean descend = parent == null || !parent.isFunction() ||
+           n == parent.getFirstChild() || parent == scope.getRootNode();
+ 
+-      if (false) {
++      if (descend) {
+         // Handle hoisted functions on pre-order traversal, so that they
+         // get hit before other things in the scope.
+         if (NodeUtil.isStatementParent(n)) {

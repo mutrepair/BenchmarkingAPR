@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local newLength is replaced by local length to be used
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 150
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local index is replaced by local length to be defined
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 155
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local newLength is replaced by local index to be used
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 150
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local index is replaced by local newLength to be defined
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 155
+	Rank: null
+	Total Rank: 14
+	Status: TIMED_OUT
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local newLength is replaced by local i to be used
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 150
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local index is replaced by local i to be defined
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 155
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local type is replaced a call type.getSuperclass()
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 13
+	First Index: 143
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::hashCode()I is guarded using default value 0
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 149
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning default value null
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 149
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to hashCode()I is guarded returning local converter
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 149
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 14
+	First Index: 145
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 151
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 152
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 153
+	Rank: 3
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 13
+	First Index: 144
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Object::hashCode
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 15
+	First Index: 149
+	Rank: 5
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 13
+	First Index: 144
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/joda/time/convert/ConverterSet.java
+	Line Number: 100
+	Block: 13
+	First Index: 144
+	Rank: 5
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------

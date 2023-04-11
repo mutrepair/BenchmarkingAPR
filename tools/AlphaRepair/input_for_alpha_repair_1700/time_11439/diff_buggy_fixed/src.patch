@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11439/org/joda/time/convert/ConverterManager.java	2022-10-31 19:48:08.655698014 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/convert/ConverterManager.java	2022-12-26 15:13:57.201682593 -0600
+@@ -250,7 +250,7 @@
+             return converter;
+         }
+         throw new IllegalArgumentException("No partial converter found for type: " +
+-            (false ? "null" : object.getClass().getName()));
++            (object == null ? "null" : object.getClass().getName()));
+     }
+     
+     //-----------------------------------------------------------------------

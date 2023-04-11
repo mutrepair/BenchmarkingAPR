@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/962/com/google/gson/stream/JsonWriter.java	2022-10-31 19:47:43.883788865 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonWriter.java	2022-12-26 15:13:51.393619841 -0600
+@@ -472,7 +472,7 @@
+         break;
+ 
+       default:
+-        if (true) {
++        if (c <= 0x1F) {
+           out.write(String.format("\\u%04x", (int) c));
+         } else {
+           out.write(c);

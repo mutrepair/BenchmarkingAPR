@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to composite is guarded using value null
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to composite is guarded using local temp
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to composite is guarded using field composite
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field composite is replaced by access to local temp
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local size to be used
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 45
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local size is replaced by local i to be used
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 50
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local size to be used
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 51
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local temp is replaced by access to field composite
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 48
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to composite is guarded returning default value null
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to composite is guarded returning local map
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 46
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 47
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 52
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 54
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/System::arraycopy
+	File Name: org/apache/commons/collections4/map/CompositeMap.java
+	Line Number: 162
+	Block: 16
+	First Index: 55
+	Rank: 3
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------

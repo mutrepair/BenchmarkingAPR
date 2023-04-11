@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/csv_4/src/main/java/org/apache/commons/csv/CSVParser.java	2023-01-16 15:29:35.444181742 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/csv/4/patch/./org/apache/commons/csv/CSVParser.java	2023-01-16 15:29:35.416181393 -0600
+@@ -285,7 +285,7 @@
+      * @return a copy of the header map that iterates in column order.
+      */
+     public Map<String, Integer> getHeaderMap() {
+-        return new LinkedHashMap<String, Integer>(this.headerMap);
++        return this.headerMap == null ? null : new LinkedHashMap<String, Integer>(this.headerMap);
+     }
+ 
+     /**

@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to nvars is guarded using value 0
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to nvars is guarded using local in
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to nvars is guarded using field nvars
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field nvars is replaced by access to local in
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field nvars is replaced by access to local rms_off
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field nvars is replaced by access to local wrk_off
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local in is replaced by local rms_off to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local in is replaced by local wrk_off to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local in is replaced by local offXX to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local in is replaced by local nvm to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local in is replaced by local base_pos to be used
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local in is replaced by access to field nvars
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 127
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to nvars is guarded returning default value null
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to nvars is guarded returning local output
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to nvars is guarded returning field d
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 134
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 135
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 138
+	First Index: 223
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 128
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 129
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 135
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 135
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 133
+	First Index: 135
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/apache/commons/math3/stat/regression/MillerUpdatingRegression.java
+	Line Number: 630
+	Block: 138
+	First Index: 223
+	Rank: null
+	Total Rank: 22
+	Status: TIMED_OUT
+------------------------------------------------

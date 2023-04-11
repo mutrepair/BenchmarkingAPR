@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:13:03 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/data/KeyedObjects2D.java
+	Line Number: 311
+	Block: 39
+	First Index: 36
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------

@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local series is replaced by local category to be used
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 3
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getSeriesCount with a call to getCategoryCount
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getSeriesCount with a call to getColumnCount
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getSeriesCount with a call to getRowCount
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jfree.data.category.DefaultIntervalCategoryDataset::getSeriesCount()I is guarded using default value 0
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getSeriesCount()I is guarded returning default value null
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 4
+	Rank: 2
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jfree/data/category/DefaultIntervalCategoryDataset::getSeriesCount
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 62
+	First Index: 5
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/category/DefaultIntervalCategoryDataset.java
+	Line Number: 437
+	Block: 63
+	First Index: 9
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

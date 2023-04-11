@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/2556/org/joda/time/Period.java	2023-04-04 14:33:26.377961680 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/Period.java	2023-04-04 13:31:54.457646048 -0500
+@@ -1317,7 +1317,7 @@
+      * @throws UnsupportedOperationException if the field is not supported
+      */
+     public Period minusMillis(int millis) {
+-        return plusMillis(+millis);
++        return plusMillis(-millis);
+     }
+ 
+     //-----------------------------------------------------------------------

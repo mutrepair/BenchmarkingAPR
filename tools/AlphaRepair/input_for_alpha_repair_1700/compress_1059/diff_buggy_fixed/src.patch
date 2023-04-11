@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/1059/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-10-31 19:47:41.095798966 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -202,7 +202,7 @@
+         writeAsciiLong(entry.getSize(), 8, 16);
+         writeAsciiLong(entry.getDeviceMaj(), 8, 16);
+         writeAsciiLong(entry.getDeviceMin(), 8, 16);
+-        writeAsciiLong(entry.getRemoteDeviceMaj(), -8, 16);
++        writeAsciiLong(entry.getRemoteDeviceMaj(), 8, 16);
+         writeAsciiLong(entry.getRemoteDeviceMin(), 8, 16);
+         writeAsciiLong(entry.getName().length() + 1, 8, 16);
+         writeAsciiLong(entry.getChksum(), 8, 16);

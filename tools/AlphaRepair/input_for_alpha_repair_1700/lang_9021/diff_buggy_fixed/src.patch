@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/9021/org/apache/commons/lang3/text/StrBuilder.java	2022-10-31 19:47:57.407739510 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java	2022-12-26 15:13:54.777656404 -0600
+@@ -1521,7 +1521,7 @@
+         final int len = chars.length;
+         if (len > 0) {
+             ensureCapacity(size + len);
+-            System.arraycopy(buffer, index, buffer, index - len, size - index);
++            System.arraycopy(buffer, index, buffer, index + len, size - index);
+             System.arraycopy(chars, 0, buffer, index, len);
+             size += len;
+         }

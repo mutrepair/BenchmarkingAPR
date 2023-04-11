@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/collections-25f/mutants/1508/org/apache/commons/collections4/bag/AbstractMapBag.java	2023-04-04 14:33:25.525953423 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/collections/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java	2023-04-04 13:31:52.873627229 -0500
+@@ -569,7 +569,7 @@
+         for (final Entry<E, MutableInteger> entry : map.entrySet()) {
+             final E element = entry.getKey();
+             final MutableInteger count = entry.getValue();
+-            total += (element == null ? 0 : element.hashCode()) & count.value;
++            total += (element == null ? 0 : element.hashCode()) ^ count.value;
+         }
+         return total;
+     }

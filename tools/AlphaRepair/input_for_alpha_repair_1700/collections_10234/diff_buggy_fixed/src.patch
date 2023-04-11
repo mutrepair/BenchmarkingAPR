@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10234/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-10-31 19:47:39.615804317 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-12-26 15:13:49.801602638 -0600
+@@ -211,7 +211,7 @@
+             // Up
+             for (int k = delta - d; k <= delta + d; k += 2) {
+                 // First step
+-                final int i = (k + offset) % delta;
++                final int i = k + offset - delta;
+                 if (k == delta - d
+                         || k != delta + d && vUp[i+1] <= vUp[i-1]) {
+                     vUp[i] = vUp[i+1] - 1;

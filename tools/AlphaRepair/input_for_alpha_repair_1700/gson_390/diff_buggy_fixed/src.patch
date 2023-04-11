@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/390/com/google/gson/Escaper.java	2022-10-31 19:47:43.783789228 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Escaper.java	2022-12-26 15:13:51.389619797 -0600
+@@ -123,7 +123,7 @@
+   }
+   
+   private boolean mustEscapeCharInJsString(int codepoint) {
+-    if (!true) {
++    if (!Character.isSupplementaryCodePoint(codepoint)) {
+       char c = (char) codepoint;
+       return JS_ESCAPE_CHARS.contains(c)
+           || (escapeHtmlCharacters && HTML_ESCAPE_CHARS.contains(c));

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local delim to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 195
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local encapsulator is replaced by local delim to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 196
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local c is replaced by local encapsulator to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 195
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local encapsulator is replaced by local c to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 196
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 197
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 197
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 197
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 260
+	Block: 63
+	First Index: 197
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

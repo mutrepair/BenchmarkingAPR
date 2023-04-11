@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(J)V with a call to <init>(JJ)V
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 14
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(J)V with a call to <init>(Ljava/lang/Object;)V
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 14
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(J)V with a call to <init>(Lorg/joda/time/ReadableInstant;Lorg/joda/time/ReadableInstant;)V
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 14
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local days is replaced by access to field serialVersionUID
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 11
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/joda/time/Duration::<init>
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 14
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 86400000 with 86400001
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long modulus with multiplication
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 13
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/joda/time/Days::toStandardDuration
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 15
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/joda/time/Days::toStandardDuration to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/joda/time/Days.java
+	Line Number: 333
+	Block: 31
+	First Index: 15
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

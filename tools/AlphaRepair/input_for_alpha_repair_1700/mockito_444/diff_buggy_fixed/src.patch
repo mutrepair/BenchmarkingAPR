@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/444/org/mockito/internal/creation/cglib/CGLIBHacker.java	2022-10-31 19:48:05.671709062 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/creation/cglib/CGLIBHacker.java	2022-12-26 15:13:56.653676672 -0600
+@@ -21,7 +21,7 @@
+             createInfoField.setAccessible(true);
+             Object createInfo = createInfoField.get(methodProxy);
+             Field namingPolicyField = createInfo.getClass().getDeclaredField("namingPolicy");
+-            namingPolicyField.setAccessible(false);
++            namingPolicyField.setAccessible(true);
+             if (namingPolicyField.get(createInfo) == null) {
+                 namingPolicyField.set(createInfo, MockitoNamingPolicy.INSTANCE);
+             }

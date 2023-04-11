@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10899/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-10-31 19:47:46.463779496 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java	2022-12-26 15:13:52.505631856 -0600
+@@ -182,7 +182,7 @@
+     public Boolean hasRequiredMarker(AnnotatedMember m)
+     {
+         JsonProperty ann = m.getAnnotation(JsonProperty.class);
+-        if (true) {
++        if (ann != null) {
+             return ann.required();
+         }
+         return null;

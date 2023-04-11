@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/51232/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-10-31 19:48:00.411728467 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-12-26 15:13:55.665665998 -0600
+@@ -101,7 +101,7 @@
+ 
+         // number of blocks
+         blockRows = (rows + BLOCK_SIZE - 1) / BLOCK_SIZE;
+-        blockColumns = (columns % BLOCK_SIZE - 1) / BLOCK_SIZE;
++        blockColumns = (columns + BLOCK_SIZE - 1) / BLOCK_SIZE;
+ 
+         // allocate storage blocks, taking care of smaller ones at right and bottom
+         blocks = createBlocksLayout(rows, columns);

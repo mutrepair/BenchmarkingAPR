@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:38:12 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/OptionValidator.java
+	Line Number: 87
+	Block: 13
+	First Index: 8
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/cli/OptionValidator.java
+	Line Number: 87
+	Block: 13
+	First Index: 8
+	Rank: 2
+	Total Rank: 17
+	Status: SURVIVED
+	Dump: mutant-16.class
+------------------------------------------------

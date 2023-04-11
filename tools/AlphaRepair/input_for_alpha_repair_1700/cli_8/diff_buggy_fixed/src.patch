@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/8/org/apache/commons/cli/Parser.java	2022-10-31 19:47:31.359834034 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Parser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -139,7 +139,7 @@
+ 
+         if (arguments == null)
+         {
+-            arguments = new String[1];
++            arguments = new String[0];
+         }
+ 
+         List tokenList = Arrays.asList(flatten(this.options, 

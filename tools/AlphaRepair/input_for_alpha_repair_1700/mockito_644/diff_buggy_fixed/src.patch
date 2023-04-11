@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/644/org/mockito/internal/configuration/DefaultInjectionEngine.java	2022-10-31 19:48:05.723708869 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/configuration/DefaultInjectionEngine.java	2022-12-26 15:13:56.653676672 -0600
+@@ -58,7 +58,7 @@
+             if(mockCandidates.size() > 1) {
+                 mockCandidates = selectMockCandidateOnName(mockCandidates, field.getName());
+             }
+-            if(false) {
++            if(mockCandidates.size() == 1) {
+                 inject(field, fieldInstance, mockCandidates.get(0));
+             } else {
+                 // don't fail, the user need to provide other dependencies

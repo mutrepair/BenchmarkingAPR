@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/13369/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.035740876 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -5324,7 +5324,7 @@
+         } else {
+             final char[] padding = new char[pads];
+             final char[] padChars = padStr.toCharArray();
+-            for (int i = -1; i < pads; i++) {
++            for (int i = 0; i < pads; i++) {
+                 padding[i] = padChars[i % padLen];
+             }
+             return new String(padding).concat(str);

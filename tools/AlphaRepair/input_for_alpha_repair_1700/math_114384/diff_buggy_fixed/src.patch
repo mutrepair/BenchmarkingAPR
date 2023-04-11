@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/114384/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.135729483 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -1682,7 +1682,7 @@
+         double p = 2.7553817452272217E-6;
+         p = p * x2 + -1.9841269659586505E-4;
+         p = p * x2 + 0.008333333333329196;
+-        p = p * x2 + +0.16666666666666666;
++        p = p * x2 + -0.16666666666666666;
+         //p *= x2;
+         //p *= x;
+         p = p * x2 * x;

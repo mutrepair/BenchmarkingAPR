@@ -1,0 +1,300 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 27
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to regularizedGammaQ(DDDI)D with a call to regularizedGammaQ(DD)D
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local a is replaced by local x to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local a to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local epsilon is replaced by local a to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local a is replaced by local epsilon to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local x is replaced by local epsilon to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local epsilon is replaced by local x to be used
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local a is replaced by access to field GAMMA
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field GAMMA
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local epsilon is replaced by access to field GAMMA
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local a is replaced by access to field LANCZOS_G
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field LANCZOS_G
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local epsilon is replaced by access to field LANCZOS_G
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local a is replaced by access to field DEFAULT_EPSILON
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field DEFAULT_EPSILON
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local epsilon is replaced by access to field DEFAULT_EPSILON
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local a is replaced by access to field HALF_LOG_2_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local x is replaced by access to field HALF_LOG_2_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local epsilon is replaced by access to field HALF_LOG_2_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local a is replaced by access to field SQRT_TWO_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local x is replaced by access to field SQRT_TWO_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local epsilon is replaced by access to field SQRT_TWO_PI
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to regularizedGammaQ with a call to regularizedGammaP
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/special/Gamma::regularizedGammaQ with argument
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double modulus with multiplication
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/special/Gamma::regularizedGammaQ
+	File Name: org/apache/commons/math3/special/Gamma.java
+	Line Number: 323
+	Block: 22
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

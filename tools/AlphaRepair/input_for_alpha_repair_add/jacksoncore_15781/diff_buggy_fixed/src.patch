@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/15781/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2023-04-04 14:33:25.697955089 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2023-04-04 13:31:53.213631268 -0500
+@@ -1479,7 +1479,7 @@
+             }
+             int b24 = ((int) input[inputPtr++]) << 16;
+             if (inputLeft == 2) {
+-                b24 |= (((int)input[inputPtr++]) & 255) >> 8;
++                b24 |= (((int) input[inputPtr++]) & 0xFF) << 8;
+             }
+             _outputTail = b64variant.encodeBase64Partial(b24, inputLeft, _outputBuffer, _outputTail);
+         }

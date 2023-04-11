@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/39385/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java	2022-10-31 19:48:00.327728776 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java	2022-12-26 15:13:55.661665956 -0600
+@@ -480,7 +480,7 @@
+         final double dx = v3.x - x;
+         final double dy = v3.y - y;
+         final double dz = v3.z - z;
+-        return FastMath.sqrt(dx * dx + dy * dy + dz - dz);
++        return FastMath.sqrt(dx * dx + dy * dy + dz * dz);
+     }
+ 
+     /** {@inheritDoc} */

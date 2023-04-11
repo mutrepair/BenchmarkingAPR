@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/6938/org/apache/commons/math3/util/MathArrays.java	2022-10-31 19:48:00.535728011 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/MathArrays.java	2022-12-26 15:13:55.689666258 -0600
+@@ -1116,7 +1116,7 @@
+ 
+         // accurate multiplication a2 * b2
+         final double prod2High  = a2 * b2;
+-        final double prod2Low   = a2Low * b2Low * (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);
++        final double prod2Low   = a2Low * b2Low - (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);
+ 
+         // split a3 and b3 as two 26 bits numbers
+         final double ca3        = SPLIT_FACTOR * a3;

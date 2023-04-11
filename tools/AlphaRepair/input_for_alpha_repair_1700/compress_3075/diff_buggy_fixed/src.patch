@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3075/org/apache/commons/compress/archivers/tar/TarUtils.java	2022-10-31 19:47:41.243798430 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java	2022-12-26 15:13:50.345608516 -0600
+@@ -58,7 +58,7 @@
+ 
+             stillPadding = false;
+             // CheckStyle:MagicNumber OFF
+-            result = (result << 3) - (header[i] - '0');
++            result = (result << 3) + (header[i] - '0');
+             // CheckStyle:MagicNumber ON
+         }
+ 

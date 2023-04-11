@@ -1,0 +1,641 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 58
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.substring(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.cli.HelpFormatter.rtrim(Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.substring(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.cli.HelpFormatter.rtrim(Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/String;)V
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to substring(II)Ljava/lang/String; with a call to substring(I)Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append([CII)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; with a call to append([C)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to defaultNewLine is guarded using value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to defaultNewLine is guarded using local text
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to defaultNewLine is guarded using field DEFAULT_SYNTAX_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultNewLine is replaced by the call to org.apache.commons.cli.HelpFormatter::getSyntaxPrefix()Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultNewLine is replaced by the call to org.apache.commons.cli.HelpFormatter::getNewLine()Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultNewLine is replaced by the call to org.apache.commons.cli.HelpFormatter::getOptPrefix()Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultNewLine is replaced by the call to org.apache.commons.cli.HelpFormatter::getLongOptPrefix()Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.cli.HelpFormatter.defaultNewLine is replaced by the call to org.apache.commons.cli.HelpFormatter::getArgName()Ljava/lang/String;
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to defaultNewLine with an access to defaultSyntaxPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to defaultNewLine with an access to defaultOptPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to defaultNewLine with an access to defaultLongOptPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to defaultNewLine with an access to defaultArgName
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field defaultNewLine is replaced by access to local text
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field defaultNewLine is replaced by access to local padding
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local text is replaced by local padding to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local pos is replaced by local width to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local pos is replaced by local nextLineTabStop to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local text is replaced by access to field DEFAULT_SYNTAX_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local pos is replaced by access to field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local text is replaced by access to field DEFAULT_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local pos is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local text is replaced by access to field DEFAULT_LONG_OPT_PREFIX
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local pos is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local text is replaced by access to field DEFAULT_ARG_NAME
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local pos is replaced by access to field defaultWidth
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local text is replaced by access to field defaultSyntaxPrefix
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local pos is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 92
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local sb is replaced a call sb.reverse()
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 88
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local text is replaced a call text.toLowerCase()
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 90
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::substring(II)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.HelpFormatter::rtrim(Ljava/lang/String;)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded using default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to defaultNewLine is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to defaultNewLine is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 97
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to substring(II)Ljava/lang/String; is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to rtrim(Ljava/lang/String;)Ljava/lang/String; is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded returning default value null
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to substring(II)Ljava/lang/String; is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to rtrim(Ljava/lang/String;)Ljava/lang/String; is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuffer; is guarded returning local sb
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/cli/HelpFormatter::rtrim with argument
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 91
+	Rank: 1
+	Total Rank: 58
+	Status: SURVIVED
+------------------------------------------------
+54.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::substring
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/HelpFormatter::rtrim
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 94
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::append
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::substring with receiver
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 93
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuffer::append with receiver
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 772
+	Block: 78
+	First Index: 95
+	Rank: null
+	Total Rank: 57
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/16011/org/apache/commons/math3/complex/Complex.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/complex/Complex.java	2023-04-04 13:31:53.985640440 -0500
+@@ -502,7 +502,7 @@
+             return NaN;
+         }
+ 
+-        return createComplex(+real, -imaginary);
++        return createComplex(-real, -imaginary);
+     }
+ 
+     /**

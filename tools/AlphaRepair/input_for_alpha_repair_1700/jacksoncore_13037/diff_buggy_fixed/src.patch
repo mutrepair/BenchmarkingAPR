@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/13037/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.915785120 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1998,7 +1998,7 @@
+                 
+                 // Ok, always need at least one more:
+                 int ch2 = quads[ix >> 2]; // current quad, need to shift+mask
+-                byteIx = (ix & 0);
++                byteIx = (ix & 3);
+                 ch2 = (ch2 >> ((3 - byteIx) << 3));
+                 ++ix;
+                 

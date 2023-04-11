@@ -1,0 +1,289 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 26
+================================================
+1.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.fasterxml.jackson.core.JsonFactory.createParser([B)Lcom/fasterxml/jackson/core/JsonParser; is replaced by an instantiation of type com.fasterxml.jackson.core.util.JsonParserDelegate using (Lcom/fasterxml/jackson/core/JsonParser;)V
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.fasterxml.jackson.databind.ObjectReader._considerFilter(Lcom/fasterxml/jackson/core/JsonParser;Z)Lcom/fasterxml/jackson/core/JsonParser; is replaced by an instantiation of type com.fasterxml.jackson.core.util.JsonParserDelegate using (Lcom/fasterxml/jackson/core/JsonParser;)V
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to createParser([B)Lcom/fasterxml/jackson/core/JsonParser; with a call to createParser(Ljava/net/URL;)Lcom/fasterxml/jackson/core/JsonParser;
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to createParser([B)Lcom/fasterxml/jackson/core/JsonParser; with a call to createParser(Ljava/io/Reader;)Lcom/fasterxml/jackson/core/JsonParser;
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to createParser([B)Lcom/fasterxml/jackson/core/JsonParser; with a call to createParser(Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonParser;
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to createParser([B)Lcom/fasterxml/jackson/core/JsonParser; with a call to createParser([C)Lcom/fasterxml/jackson/core/JsonParser;
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _parserFactory is guarded using value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _parserFactory is guarded using field _parserFactory
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.ObjectReader._parserFactory is replaced by the call to com.fasterxml.jackson.databind.ObjectReader::getFactory()Lcom/fasterxml/jackson/core/JsonFactory;
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.withoutRootName()
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to createParser with a call to createJsonParser
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to _bindAndReadValues with a call to readValues
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.core.JsonFactory::createParser([B)Lcom/fasterxml/jackson/core/JsonParser; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.ObjectReader::_considerFilter(Lcom/fasterxml/jackson/core/JsonParser;Z)Lcom/fasterxml/jackson/core/JsonParser; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.ObjectReader::_bindAndReadValues(Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/MappingIterator; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _parserFactory is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to createParser([B)Lcom/fasterxml/jackson/core/JsonParser; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to _considerFilter(Lcom/fasterxml/jackson/core/JsonParser;Z)Lcom/fasterxml/jackson/core/JsonParser; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to _bindAndReadValues(Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/MappingIterator; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to com/fasterxml/jackson/databind/ObjectReader::_considerFilter with argument
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/JsonFactory::createParser
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/ObjectReader::_considerFilter
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/ObjectReader::_bindAndReadValues
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/fasterxml/jackson/databind/ObjectReader::readValues
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/fasterxml/jackson/databind/ObjectReader::readValues to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/fasterxml/jackson/databind/ObjectReader.java
+	Line Number: 1441
+	Block: 146
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

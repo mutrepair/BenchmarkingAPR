@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/497/org/mockito/internal/stubbing/StubbedInvocationMatcher.java	2022-10-31 19:48:05.695708973 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/stubbing/StubbedInvocationMatcher.java	2022-12-26 15:13:56.657676716 -0600
+@@ -41,7 +41,7 @@
+     }
+ 
+     public boolean wasUsed() {
+-        return true;
++        return usedAt != null;
+     }
+ 
+     @Override

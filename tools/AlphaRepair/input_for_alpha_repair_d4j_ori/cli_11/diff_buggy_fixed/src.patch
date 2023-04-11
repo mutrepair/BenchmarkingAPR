@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/cli_11/src/java/org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:09.671859898 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/cli/11/patch/./org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:09.639859499 -0600
+@@ -629,7 +629,7 @@
+         }
+ 
+         // if the Option has a value
+-        if (option.hasArg() && (option.getArgName() != null))
++        if (option.hasArg() && option.hasArgName())
+         {
+             buff.append(" <").append(option.getArgName()).append(">");
+         }

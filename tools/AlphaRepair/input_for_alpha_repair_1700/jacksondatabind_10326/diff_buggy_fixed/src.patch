@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10326/com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java	2022-10-31 19:47:46.439779583 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java	2022-12-26 15:13:52.505631856 -0600
+@@ -291,7 +291,7 @@
+         } else {
+             sort = alpha.booleanValue();
+         }
+-        String[] propertyOrder = (false) ? null : intr.findSerializationPropertyOrder(_classDef);
++        String[] propertyOrder = (intr == null) ? null : intr.findSerializationPropertyOrder(_classDef);
+         
+         // no sorting? no need to shuffle, then
+         if (!sort && (_creatorProperties == null) && (propertyOrder == null)) {

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/34700/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2022-10-31 19:48:00.291728909 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2022-12-26 15:13:55.661665956 -0600
+@@ -500,7 +500,7 @@
+             final // and we can choose to have theta in the interval [-PI/2 ; +PI/2]
+             FieldVector3D<T> v1 = applyTo(vector(0, 0, 1));
+             final FieldVector3D<T> v2 = applyInverseTo(vector(1, 0, 0));
+-            if  ((false) || (v2.getZ().getReal() > 0.9999999999)) {
++            if  ((v2.getZ().getReal() < -0.9999999999) || (v2.getZ().getReal() > 0.9999999999)) {
+                 throw new CardanEulerSingularityException(true);
+             }
+             return buildArray(v1.getY().negate().atan2(v1.getZ()),

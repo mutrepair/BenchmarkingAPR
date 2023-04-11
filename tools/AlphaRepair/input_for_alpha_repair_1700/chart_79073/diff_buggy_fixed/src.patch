@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/79073/org/jfree/data/xy/IntervalXYDelegate.java	2022-10-31 19:47:29.759839767 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/xy/IntervalXYDelegate.java	2022-10-29 16:41:07.442717362 -0500
+@@ -135,7 +135,7 @@
+         }
+         this.dataset = dataset;
+         this.autoWidth = autoWidth;
+-        this.intervalPositionFactor = 0.0;
++        this.intervalPositionFactor = 0.5;
+         this.autoIntervalWidth = Double.POSITIVE_INFINITY;
+         this.fixedIntervalWidth = 1.0;
+     }

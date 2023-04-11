@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local element is replaced by access to field root
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 186
+	Block: 43
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/google/gson/JsonSerializationVisitor::findAndInvokeCustomSerializer
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 186
+	Block: 43
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/google/gson/JsonSerializationVisitor::findAndInvokeCustomSerializer to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 186
+	Block: 43
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

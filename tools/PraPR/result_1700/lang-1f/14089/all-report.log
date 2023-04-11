@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local d is replaced by local p to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 145
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local p is replaced by local d to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 154
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to min with a call to addExact
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to min with a call to subtractExact
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to min with a call to multiplyExact
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to min with a call to floorDiv
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to min with a call to floorMod
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to min with a call to max
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Math::min with argument
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 149
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 150
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 153
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 163
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Math::min
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6697
+	Block: 1121
+	First Index: 159
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

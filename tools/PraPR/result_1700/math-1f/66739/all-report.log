@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local t is replaced by local nextT to be used
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 19
+	First Index: 390
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local t is replaced by access to field step
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 19
+	First Index: 390
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 19
+	First Index: 392
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 20
+	First Index: 393
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 21
+	First Index: 396
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 22
+	First Index: 399
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 18
+	First Index: 388
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 18
+	First Index: 388
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 18
+	First Index: 388
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 19
+	First Index: 392
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/ode/nonstiff/RungeKuttaIntegrator.java
+	Line Number: 171
+	Block: 19
+	First Index: 392
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

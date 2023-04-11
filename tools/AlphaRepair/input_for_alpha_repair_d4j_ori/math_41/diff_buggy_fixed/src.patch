@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java	2023-01-16 15:30:13.936662424 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/41/patch/./org/apache/commons/math/stat/descriptive/moment/Variance.java	2023-01-16 15:30:13.904662024 -0600
+@@ -517,7 +517,7 @@
+                 }
+ 
+                 double sumWts = 0;
+-                for (int i = 0; i < weights.length; i++) {
++                for (int i = begin; i < begin + length; i++) {
+                     sumWts += weights[i];
+                 }
+ 

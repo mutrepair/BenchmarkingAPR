@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/10049/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-10-31 19:47:44.815785483 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1263,7 +1263,7 @@
+         
+         while (offset < end) {
+             int ch = cbuf[offset++];
+-            if (ch <= -127) {
++            if (ch <= 0x7F) {
+                  if (escCodes[ch] == 0) {
+                      outputBuffer[outputPtr++] = (byte) ch;
+                      continue;

@@ -1,0 +1,388 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 35
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _currentSegment is guarded using value null
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _currentSegment is guarded using local curr
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _currentSegment is guarded using field NO_CHARS
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::getTextBuffer()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::contentsAsArray()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::getCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::emptyAndGetCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::finishCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _currentSegment with an access to _inputBuffer
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _currentSegment with an access to _resultArray
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _currentSegment is replaced by access to local curr
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local amount is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local offset is replaced by local max to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local amount is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local offset is replaced by local amount to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local amount is replaced by local max to be used
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local str is replaced by access to field _resultString
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 106
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field MIN_SEGMENT_LEN
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local amount is replaced by access to field MIN_SEGMENT_LEN
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field MAX_SEGMENT_LEN
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local amount is replaced by access to field MAX_SEGMENT_LEN
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local offset is replaced by access to field _inputStart
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local amount is replaced by access to field _inputStart
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local offset is replaced by access to field _inputLen
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local amount is replaced by access to field _inputLen
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local offset is replaced by access to field _segmentSize
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 107
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local amount is replaced by access to field _segmentSize
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 109
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local str is replaced a call str.toLowerCase()
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 106
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _currentSegment is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 112
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getChars(II[CI)V is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 114
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.lang.String::getChars(II[CI)V is guarded
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 114
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 113
+	Rank: 1
+	Total Rank: 35
+	Status: SURVIVED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 110
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/String::getChars
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 511
+	Block: 86
+	First Index: 114
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1926/org/mockito/internal/util/ArrayUtils.java	2022-10-31 19:48:05.571709431 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/ArrayUtils.java	2022-12-26 15:13:56.657676716 -0600
+@@ -8,7 +8,7 @@
+ public class ArrayUtils {
+     public Class<?>[] concat(Class<?>[] interfaces, Class<?> clazz) {
+         int length = interfaces.length;
+-        Class[] out = new Class[length +-1];
++        Class[] out = new Class[length +1];
+         System.arraycopy(interfaces, 0, out, 0, length);
+         out[length] = clazz;
+         return out;

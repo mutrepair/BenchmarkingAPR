@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local v is replaced by local this to be used
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local v is replaced a call unmodifiableRealVector(v)
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.linear.RealVector$Entry::getValue()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.linear.RealVector$Entry::getIndex()I is guarded using default value 0
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.linear.RealVector::getEntry(I)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getIndex()I is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getEntry(I)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getValue()D is guarded returning local d
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getIndex()I is guarded returning local d
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getEntry(I)D is guarded returning local d
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double modulus with multiplication
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/RealVector$Entry::getValue
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/RealVector$Entry::getIndex
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/RealVector::getEntry
+	File Name: org/apache/commons/math3/linear/RealVector.java
+	Line Number: 401
+	Block: 37
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

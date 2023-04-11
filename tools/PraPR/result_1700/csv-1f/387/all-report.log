@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to mark(I)V is guarded returning default value 0
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to mark(I)V is guarded returning field END_OF_STREAM
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to mark(I)V is guarded returning field UNDEFINED
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.io.BufferedReader::mark(I)V is guarded
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 4
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/io/BufferedReader::mark
+	File Name: org/apache/commons/csv/ExtendedBufferedReader.java
+	Line Number: 146
+	Block: 24
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

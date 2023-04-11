@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/492/org/apache/commons/csv/CSVPrinter.java	2022-10-31 19:47:42.271794708 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVPrinter.java	2022-12-26 15:13:50.881614309 -0600
+@@ -140,7 +140,7 @@
+     }
+ 
+     void printSep() throws IOException {
+-        if (true) {
++        if (newLine) {
+             newLine = false;
+         } else {
+             out.append(format.getDelimiter());

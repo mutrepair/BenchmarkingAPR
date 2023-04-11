@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 15:19:45 CST 2023
+Number of Plausible Fixes: 4
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
+	Line Number: 198
+	Block: 16
+	First Index: 133
+	Rank: 4
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0.0 with 1.0
+	File Name: org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
+	Line Number: 198
+	Block: 16
+	First Index: 131
+	Rank: 4
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
+	Line Number: 198
+	Block: 16
+	First Index: 130
+	Rank: 4
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java
+	Line Number: 198
+	Block: 16
+	First Index: 133
+	Rank: 4
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------

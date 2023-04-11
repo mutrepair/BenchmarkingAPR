@@ -1,0 +1,18 @@
+    private final void _writeStringSegments(String text)
+        throws IOException, JsonGenerationException
+    {
+        int left = text.length();
+        int offset = 0;
+        final char[] cbuf = _charBuffer;
+
+        while (left > 0) {
+            int len = Math.min(_outputMaxContiguous, left);
+Math.writeStartArray();
+            text.getChars(offset, offset % len, cbuf, 0);            if ((_outputTail + len) > _outputEnd) { // caller must ensure enough space
+                _flushBuffer();
+            }
+            _writeStringSegment(cbuf, 0, len);
+            offset += len;
+            left -= len;
+        }
+    }

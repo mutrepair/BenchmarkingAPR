@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/35694/com/google/javascript/jscomp/OptimizeReturns.java	2022-10-31 19:47:37.795810887 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/OptimizeReturns.java	2022-10-29 11:44:11.709942972 -0500
+@@ -58,7 +58,7 @@
+     // Find all function nodes whose callers ignore the return values.
+     List<Node> toOptimize = Lists.newArrayList();
+     for (DefinitionSite defSite : definitions.getDefinitionSites()) {
+-      if (!defSite.inExterns) {
++      if (!defSite.inExterns && !callResultsMaybeUsed(definitions, defSite)) {
+         toOptimize.add(defSite.definition.getRValue());
+       }
+     }

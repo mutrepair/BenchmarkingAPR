@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to getDefault()Ljava/util/Locale; with a call to getDefault(Ljava/util/Locale$Category;)Ljava/util/Locale;
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Ljava/util/Date;Ljava/util/TimeZone;Ljava/util/Locale;)V with a call to <init>(ILorg/jfree/data/time/Year;)V
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Ljava/util/Date;Ljava/util/TimeZone;Ljava/util/Locale;)V with a call to <init>(Ljava/util/Date;)V
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Ljava/util/Date;Ljava/util/TimeZone;Ljava/util/Locale;)V with a call to <init>()V
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Ljava/util/Date;Ljava/util/TimeZone;Ljava/util/Locale;)V with a call to <init>(Ljava/util/Date;Ljava/util/TimeZone;)V
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field DEFAULT_TIME_ZONE is replaced by access to local zone
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 5
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Locale::getDefault
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 6
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

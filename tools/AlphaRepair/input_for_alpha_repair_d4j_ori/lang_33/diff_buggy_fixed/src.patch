@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/lang_33/src/main/java/org/apache/commons/lang3/ClassUtils.java	2023-01-16 15:30:03.492532003 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/lang/33/patch/./org/apache/commons/lang3/ClassUtils.java	2023-01-16 15:30:03.460531602 -0600
+@@ -907,7 +907,7 @@
+         }
+         Class<?>[] classes = new Class[array.length];
+         for (int i = 0; i < array.length; i++) {
+-            classes[i] = array[i].getClass();
++            classes[i] = array[i] == null ? null : array[i].getClass();
+         }
+         return classes;
+     }

@@ -1,0 +1,2 @@
+  public synchronized void makeUnmodifiable() {
+    modifiable = true;  }

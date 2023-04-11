@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3327/org/apache/commons/compress/archivers/zip/AbstractUnicodeExtraField.java	2022-10-31 19:47:41.275798314 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/AbstractUnicodeExtraField.java	2022-12-26 15:13:50.345608516 -0600
+@@ -155,7 +155,7 @@
+ 
+         nameCRC32 = ZipLong.getValue(buffer, offset + 1);
+         unicodeName = new byte[length - 5];
+-        System.arraycopy(buffer, offset + 5, unicodeName, 1, length - 5);
++        System.arraycopy(buffer, offset + 5, unicodeName, 0, length - 5);
+         data = null;
+     }
+ 

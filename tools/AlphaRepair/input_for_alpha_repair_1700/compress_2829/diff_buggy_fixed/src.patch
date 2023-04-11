@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/2829/org/apache/commons/compress/archivers/tar/TarBuffer.java	2022-10-31 19:47:41.223798502 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarBuffer.java	2022-12-26 15:13:50.345608516 -0600
+@@ -372,7 +372,7 @@
+             throw new IOException("writing to an input buffer");
+         }
+ 
+-        if ((offset + recordSize) != buf.length) {
++        if ((offset + recordSize) > buf.length) {
+             throw new IOException("record has length '" + buf.length
+                                   + "' with offset '" + offset
+                                   + "' which is less than the record size of '"

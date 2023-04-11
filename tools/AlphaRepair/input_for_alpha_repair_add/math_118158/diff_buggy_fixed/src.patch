@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/118158/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.093958927 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -3075,7 +3075,7 @@
+         // decompose d
+         final long bits = Double.doubleToRawLongBits(d);
+         final long sign = bits & 0x8000000000000000L;
+-        int  exponent   = ((int)(bits >>> 52)) ^ 2047;
++        int  exponent   = ((int) (bits >>> 52)) & 0x7ff;
+         long mantissa   = bits & 0x000fffffffffffffL;
+ 
+         // compute scaled exponent

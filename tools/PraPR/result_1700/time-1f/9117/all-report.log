@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local relativeYear is replaced by local year to be used
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local relativeYear is replaced by access to field AM
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local relativeYear is replaced by access to field MIN_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local relativeYear is replaced by access to field MAX_YEAR
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 3 with 4
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/joda/time/chrono/CopticChronology.java
+	Line Number: 214
+	Block: 25
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

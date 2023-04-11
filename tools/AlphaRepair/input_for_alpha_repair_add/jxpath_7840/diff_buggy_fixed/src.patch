@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jxpath-1f/mutants/7840/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2023-04-04 14:33:25.897957028 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2023-04-04 13:31:53.593635782 -0500
+@@ -12,7 +12,7 @@
+    switch (pos)
+    {
+       case 0:
+-         if ((active1 | 786432L) != 0L)
++         if ((active1 & 0xc0000L) != 0L)
+             return 10;
+          if ((active0 & 0xfffffffff8000000L) != 0L || (active1 & 0x3fffL) != 0L)
+          {

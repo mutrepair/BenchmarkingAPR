@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 5 with 6
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 38
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 40
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 63 with 64
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 42
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 41
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 43
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/debugging/sourcemap/Base64::toBase64
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 78
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

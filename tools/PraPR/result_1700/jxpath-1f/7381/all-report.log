@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to jj_la1 is guarded using value null
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 49
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to jj_la1 is guarded using field jj_la1
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 49
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to jj_la1 with an access to jj_expentry
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 49
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to jj_la1 with an access to jj_lasttokens
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 49
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field jj_la
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 45
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field jj_gen
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 45
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local i is replaced by access to field jj_gc
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 45
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local i is replaced by access to field jj_kind
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 45
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local i is replaced by access to field jj_endpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 45
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to jj_la1 is guarded returning enclosing method
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 49
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 47
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 53
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 41
+	Rank: 1
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 39 with 40
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 46
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2107
+	First Index: 51
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 47
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 47
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 3574
+	Block: 2106
+	First Index: 47
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,322 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 29
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to entries is guarded using value null
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to entries is guarded using field entries
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.linear.OpenMapRealVector.entries is replaced by the call to org.apache.commons.math3.linear.OpenMapRealVector::getEntries()Lorg/apache/commons/math3/util/OpenIntToDoubleHashMap;
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local res is replaced by local this to be used
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local v to be used
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local res is replaced by local v to be used
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local this is replaced by local res to be used
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local key is replaced by access to field virtualSize
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local res is replaced a call res.copy()
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.copy()
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to remove
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.util.OpenIntToDoubleHashMap::get(I)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.util.OpenIntToDoubleHashMap$Iterator::value()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to entries is guarded returning default value null
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to entries is guarded returning local this
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(I)D is guarded returning default value null
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to value()D is guarded returning default value null
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setEntry(ID)V is guarded returning default value null
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to get(I)D is guarded returning local this
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to value()D is guarded returning local this
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to setEntry(ID)V is guarded returning local this
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to get(I)D is guarded returning local v
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to value()D is guarded returning local v
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to setEntry(ID)V is guarded returning local v
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.math3.linear.OpenMapRealVector::setEntry(ID)V is guarded
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/OpenIntToDoubleHashMap::get
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/OpenIntToDoubleHashMap$Iterator::value
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/OpenMapRealVector::setEntry
+	File Name: org/apache/commons/math3/linear/OpenMapRealVector.java
+	Line Number: 645
+	Block: 129
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

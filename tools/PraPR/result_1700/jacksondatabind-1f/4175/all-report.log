@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_10
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: NON_VIABLE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_2
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: NON_VIABLE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local implClass is replaced a call implClass.getSuperclass()
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 100
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.SerializerProvider::getTypeFactory()Lcom/fasterxml/jackson/databind/type/TypeFactory; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 99
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.type.TypeFactory::findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getTypeFactory()Lcom/fasterxml/jackson/databind/type/TypeFactory; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 99
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 103
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/SerializerProvider::getTypeFactory
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 99
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/type/TypeFactory::findTypeParameters
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 386
+	Block: 63
+	First Index: 102
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

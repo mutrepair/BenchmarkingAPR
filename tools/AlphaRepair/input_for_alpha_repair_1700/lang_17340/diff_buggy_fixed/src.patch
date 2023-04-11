@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/17340/org/apache/commons/lang3/math/Fraction.java	2022-10-31 19:47:57.115740582 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/Fraction.java	2022-12-26 15:13:54.773656362 -0600
+@@ -805,7 +805,7 @@
+         final int d1 = greatestCommonDivisor(numerator, fraction.denominator);
+         final int d2 = greatestCommonDivisor(fraction.numerator, denominator);
+         return getReducedFraction
+-            (mulAndCheck(numerator/d1, fraction.numerator + d2),
++            (mulAndCheck(numerator/d1, fraction.numerator/d2),
+              mulPosAndCheck(denominator/d2, fraction.denominator/d1));
+     }
+ 

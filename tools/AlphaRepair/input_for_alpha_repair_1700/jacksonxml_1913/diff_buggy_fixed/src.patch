@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1913/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanPropertyWriter.java	2022-10-31 19:47:49.751767523 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanPropertyWriter.java	2022-12-26 15:13:53.109638382 -0600
+@@ -141,7 +141,7 @@
+             xmlGen.startWrappedValue(_wrapperQName, _wrappedQName);
+         }
+         jgen.writeFieldName(_name);
+-        if (false) {
++        if (_typeSerializer == null) {
+             ser.serialize(value, jgen, prov);
+         } else {
+             ser.serializeWithType(value, jgen, prov, _typeSerializer);

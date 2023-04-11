@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _buffer is guarded using value null
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 112
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ptr is replaced by local start to be used
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 113
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local ptr is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 113
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local ptr is replaced by local outPtr to be used
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 113
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local ptr is replaced by access to field _charCount
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 113
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local ptr is replaced by access to field _byteCount
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 113
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _buffer is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 112
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _buffer is guarded returning local start
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 112
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _buffer is guarded returning field _charCount
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 112
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 24 with 25
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 115
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 120
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 255 with 256
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 123
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 125
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 131
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 136
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 3 with 4
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 142
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 116
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 121
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 124
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 127
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/fasterxml/jackson/core/io/UTF32Reader.java
+	Line Number: 97
+	Block: 16
+	First Index: 146
+	Rank: 1
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------

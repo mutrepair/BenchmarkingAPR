@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _delegateDeserializer is guarded using value null
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _valueTypeDeserializer is guarded using value null
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _delegateDeserializer is guarded using local dd
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _valueTypeDeserializer is guarded using local vtd
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _delegateDeserializer is guarded using field _valueDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _valueTypeDeserializer is guarded using field _valueTypeDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._delegateDeserializer is replaced by the call to com.fasterxml.jackson.databind.deser.std.CollectionDeserializer::getContentDeserializer()Lcom/fasterxml/jackson/databind/JsonDeserializer;
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _delegateDeserializer with an access to _valueDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _delegateDeserializer is replaced by access to local dd
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _valueTypeDeserializer is replaced by access to local vtd
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _delegateDeserializer is replaced by access to local vd
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local dd is replaced by local vd to be used
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 3
+	Rank: 2
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local dd is replaced by access to field _valueDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 3
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local vtd is replaced by access to field _valueTypeDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local dd is replaced by access to field _delegateDeserializer
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 3
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local dd is replaced a call dd.getDelegatee()
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 3
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _delegateDeserializer is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _valueTypeDeserializer is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _delegateDeserializer is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _valueTypeDeserializer is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 6
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 6
+	Rank: 2
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java
+	Line Number: 111
+	Block: 3
+	First Index: 6
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------

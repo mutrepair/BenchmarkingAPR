@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 02:55:00 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/fasterxml/jackson/dataformat/xml/XmlFactory::validXmlNameStartChar
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 781
+	Block: 136
+	First Index: 15
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 781
+	Block: 136
+	First Index: 14
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 781
+	Block: 136
+	First Index: 15
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------

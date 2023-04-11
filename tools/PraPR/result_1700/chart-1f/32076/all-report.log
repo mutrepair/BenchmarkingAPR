@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local val is replaced by access to field LOG10_VALUE
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local val is replaced by access to field SMALL_LOG_VALUE
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to pow with a call to IEEEremainder
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to pow with a call to atan2
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to pow with a call to max
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to pow with a call to min
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to pow with a call to hypot
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to pow with a call to copySign
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to pow with a call to nextAfter
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Math::pow with argument
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 10.0 with 1.0
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 9.0 with 1.0
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 37
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double modulus with multiplication
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Math::pow
+	File Name: org/jfree/chart/axis/LogarithmicAxis.java
+	Line Number: 392
+	Block: 38
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

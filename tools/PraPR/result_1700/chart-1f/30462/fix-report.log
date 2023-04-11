@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:24:15 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Lorg/jfree/chart/axis/DateTickUnitType;ILorg/jfree/chart/axis/DateTickUnitType;ILjava/text/DateFormat;)V with a call to <init>(Lorg/jfree/chart/axis/DateTickUnitType;I)V
+	File Name: org/jfree/chart/axis/DateAxis.java
+	Line Number: 1225
+	Block: 127
+	First Index: 392
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Lorg/jfree/chart/axis/DateTickUnitType;ILorg/jfree/chart/axis/DateTickUnitType;ILjava/text/DateFormat;)V with a call to <init>(Lorg/jfree/chart/axis/DateTickUnitType;ILjava/text/DateFormat;)V
+	File Name: org/jfree/chart/axis/DateAxis.java
+	Line Number: 1225
+	Block: 127
+	First Index: 392
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

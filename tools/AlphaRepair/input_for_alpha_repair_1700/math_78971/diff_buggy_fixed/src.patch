@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/78971/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java	2022-10-31 19:48:00.555727937 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java	2022-12-26 15:13:55.673666084 -0600
+@@ -1038,7 +1038,7 @@
+         final double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];
+         for (int r = 0; r < m.getRowDimension(); r++) {
+             for (int c = 0; c < m.getColumnDimension(); c++) {
+-                d[r][c] = m.getEntry(r, c) + n.getEntry(r, c);
++                d[r][c] = m.getEntry(r, c) / n.getEntry(r, c);
+             }
+         }
+         return new Array2DRowRealMatrix(d, false);

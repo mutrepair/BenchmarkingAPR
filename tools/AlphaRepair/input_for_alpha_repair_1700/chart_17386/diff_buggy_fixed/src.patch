@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/17386/org/jfree/chart/plot/SpiderWebPlot.java	2022-10-31 19:47:29.375841141 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/SpiderWebPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -1249,7 +1249,7 @@
+         double v = 0;
+         Number nV = null;
+ 
+-        for (int seriesIndex = -1; seriesIndex < seriesCount; seriesIndex++) {
++        for (int seriesIndex = 0; seriesIndex < seriesCount; seriesIndex++) {
+             for (int catIndex = 0; catIndex < catCount; catIndex++) {
+                 nV = getPlotValue(seriesIndex, catIndex);
+                 if (nV != null) {

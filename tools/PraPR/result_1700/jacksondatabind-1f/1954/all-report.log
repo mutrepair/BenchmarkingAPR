@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local dc is replaced by access to field _class
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 66
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local dc is replaced by access to field _primaryMixIn
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 66
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local dc is replaced a call dc.getSuperclass()
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 66
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isEnum with a call to isInterface
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isEnum with a call to isArray
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isEnum with a call to isPrimitive
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isEnum with a call to isAnnotation
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isEnum with a call to isSynthetic
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isEnum with a call to isAnonymousClass
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isEnum with a call to isLocalClass
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isEnum with a call to isMemberClass
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isEnum with a call to desiredAssertionStatus
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::isEnum()Z is guarded using default value false
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isEnum()Z is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isEnum()Z is guarded returning field _defaultConstructor
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 175
+	First Index: 72
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 175
+	First Index: 73
+	Rank: 3
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 68
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 175
+	First Index: 74
+	Rank: 2
+	Total Rank: 22
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::isEnum
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 67
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 68
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 174
+	First Index: 68
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.java
+	Line Number: 768
+	Block: 175
+	First Index: 74
+	Rank: 2
+	Total Rank: 22
+	Status: SURVIVED
+------------------------------------------------

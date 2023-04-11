@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to lenient is guarded using value false
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to lenient is guarded using field lenient
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.stream.JsonReader.lenient is replaced by the call to com.google.gson.stream.JsonReader::isLenient()Z
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.gson.stream.JsonReader.lenient is replaced by the call to com.google.gson.stream.JsonReader::hasNext()Z
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.google.gson.stream.JsonReader.lenient is replaced by the call to com.google.gson.stream.JsonReader::nextBoolean()Z
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to lenient with an access to hasToken
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to BEGIN_ARRAY with an access to END_ARRAY
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to lenient with an access to skipping
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to BEGIN_ARRAY with an access to BEGIN_OBJECT
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to BEGIN_ARRAY with an access to END_OBJECT
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to BEGIN_ARRAY with an access to NAME
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to BEGIN_ARRAY with an access to STRING
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to BEGIN_ARRAY with an access to NUMBER
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field BEGIN_ARRAY is replaced by access to local firstToken
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local firstToken is replaced by access to field token
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 22
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to lenient is guarded returning default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to lenient is guarded returning local firstToken
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to lenient is guarded returning field token
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 366
+	Block: 21
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

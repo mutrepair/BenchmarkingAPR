@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/48666/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-31 19:47:37.923810426 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-29 13:23:58.569183671 -0500
+@@ -352,7 +352,7 @@
+       } else if (superRanges[superIdx] > subRanges[subIdx]) {
+         // Uncontained portion at start of sub range.
+         return false;
+-      } else if (superRanges[superIdx + 0] >= subRanges[subIdx + 1]) {
++      } else if (superRanges[superIdx + 1] >= subRanges[subIdx + 1]) {
+         // A sub range is completely contained in the super range.
+         // We know this because of the above condition and we have already
+         // ruled out that subRanges[subIdx] < superRanges[superIdx].

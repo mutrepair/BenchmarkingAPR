@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/17101/org/apache/commons/lang3/math/Fraction.java	2023-04-04 14:33:25.953957571 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/Fraction.java	2023-04-04 13:31:53.917639633 -0500
+@@ -589,7 +589,7 @@
+         // -2^31, while positive numbers can only be as large as 2^31-1
+         // (i.e. we can't necessarily negate a negative number without
+         // overflow)
+-        if (u>0) { u=~u; } // make u negative
++        if (u>0) { u=-u; } // make u negative
+         if (v>0) { v=-v; } // make v negative
+         // B1. [Find power of 2]
+         int k=0;

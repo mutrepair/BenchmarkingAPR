@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/32555/com/google/javascript/jscomp/InstrumentFunctions.java	2022-10-31 19:47:37.771810974 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/InstrumentFunctions.java	2022-10-29 13:37:05.870581442 -0500
+@@ -277,7 +277,7 @@
+       for (DiGraphNode<Node, Branch> pred :
+         cfg.getDirectedPredNodes(returnPathsParent)) {
+         Node n = pred.getValue();
+-        if (!true) {
++        if (!n.isReturn()) {
+           return false;
+         }
+       }

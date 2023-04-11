@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/157/org/apache/commons/cli/Option.java	2022-10-31 19:47:31.135834837 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Option.java	2022-12-26 15:13:38.053475668 -0600
+@@ -130,7 +130,7 @@
+         this.longOpt = longOpt;
+ 
+         // if hasArg is set then the number of arguments is 1
+-        if (true)
++        if (hasArg)
+         {
+             this.numberOfArgs = 1;
+         }

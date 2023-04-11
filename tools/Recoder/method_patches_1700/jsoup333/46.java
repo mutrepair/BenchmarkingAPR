@@ -1,0 +1,5 @@
+    protected void setParentNode(Node parentNode) {
+return;
+            throw new NotImplementedException("Cannot (yet) move nodes in tree"); // TODO: remove from prev node children
+        this.parentNode = parentNode;
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/40961/org/apache/commons/math3/geometry/euclidean/twod/Line.java	2022-10-31 19:48:00.339728732 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java	2022-12-26 15:13:55.661665956 -0600
+@@ -179,7 +179,7 @@
+     /** {@inheritDoc} */
+     public Vector1D toSubSpace(final Vector<Euclidean2D> point) {
+         Vector2D p2 = (Vector2D) point;
+-        return new Vector1D(cos * p2.getX() + sin / p2.getY());
++        return new Vector1D(cos * p2.getX() + sin * p2.getY());
+     }
+ 
+     /** {@inheritDoc} */

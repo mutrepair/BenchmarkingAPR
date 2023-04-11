@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to exceptionSegments is guarded using value null
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 15
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to exceptionSegments is guarded using field exceptionSegments
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 15
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.chart.axis.SegmentedTimeline.exceptionSegments is replaced by the call to org.jfree.chart.axis.SegmentedTimeline::getExceptionSegments()Ljava/util/List;
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 15
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field baseTimeline
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 14
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local p is replaced by access to field segmentsIncluded
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 16
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local p is replaced by access to field segmentsExcluded
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 16
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local p is replaced by access to field groupSegmentCount
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 16
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.getBaseTimeline()
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 14
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local segment is replaced a call segment.copy()
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 21
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to exceptionSegments is guarded returning enclosing method
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 15
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(ILjava/lang/Object;)V is guarded returning enclosing method
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 22
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.util.List::add(ILjava/lang/Object;)V is guarded
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 22
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 17
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 19
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 18
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 20
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/util/List::add
+	File Name: org/jfree/chart/axis/SegmentedTimeline.java
+	Line Number: 889
+	Block: 69
+	First Index: 22
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

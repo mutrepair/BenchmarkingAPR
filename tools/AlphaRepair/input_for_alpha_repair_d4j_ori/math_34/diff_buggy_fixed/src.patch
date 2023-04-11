@@ -1,0 +1,10 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java	2023-01-16 15:30:13.176652932 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/34/patch/./org/apache/commons/math3/genetics/ListPopulation.java	2023-01-16 15:30:13.144652534 -0600
+@@ -206,6 +206,6 @@
+      * @return chromosome iterator
+      */
+     public Iterator<Chromosome> iterator() {
+-        return chromosomes.iterator();
++        return getChromosomes().iterator();
+     }
+ }

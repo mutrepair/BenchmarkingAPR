@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2195/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java	2022-10-31 19:48:05.631709209 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java	2022-12-26 15:13:56.657676716 -0600
+@@ -35,7 +35,7 @@
+         
+         int actualCount = chunk.size();
+         
+-        if (wantedCount != actualCount) {
++        if (wantedCount > actualCount) {
+             Location lastInvocation = finder.getLastLocation(chunk);
+             reporter.tooLittleActualInvocationsInOrder(new Discrepancy(wantedCount, actualCount), wanted, lastInvocation);
+         } else if (wantedCount < actualCount) {

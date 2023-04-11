@@ -1,0 +1,1 @@
+public double METHOD_1 ( double VAR_1 ) { boolean VAR_2 = ( VAR_1 < 0.0 ) ; if ( VAR_2 ) { VAR_1 = - VAR_1 ; } double VAR_3 ; if ( VAR_1 < 1.0 ) { VAR_3 = ( TYPE_1 . METHOD_2 ( INT_1 , VAR_1 + 1.0 ) - FLOAT_1 ) % FLOAT_2 ; } else { VAR_3 = TYPE_1 . METHOD_2 ( INT_1 , VAR_1 ) ; } return VAR_2 ? ( - VAR_3 ) : VAR_3 ; }

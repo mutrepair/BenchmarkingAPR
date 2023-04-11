@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/5064/org/joda/time/format/DateTimeParserBucket.java	2022-10-31 19:48:08.903697095 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeParserBucket.java	2022-12-26 15:13:57.205682637 -0600
+@@ -362,7 +362,7 @@
+ 
+         long millis = iMillis;
+         try {
+-            for (int i = 1; i < count; i++) {
++            for (int i = 0; i < count; i++) {
+                 millis = savedFields[i].set(millis, resetFields);
+             }
+             if (resetFields) {

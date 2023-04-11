@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_97/src/main/java/com/fasterxml/jackson/databind/node/POJONode.java	2023-01-16 15:29:46.172315714 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/97/patch/./com/fasterxml/jackson/databind/node/POJONode.java	2023-01-16 15:29:46.136315265 -0600
+@@ -111,7 +111,7 @@
+         } else {
+             // 25-May-2018, tatu: [databind#1991] do not call via generator but through context;
+             //    this to preserve contextual information
+-            gen.writeObject(_value);
++            ctxt.defaultSerializeValue(_value, gen);
+         }
+     }
+ 

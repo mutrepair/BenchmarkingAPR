@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/10354/org/joda/time/chrono/ISOChronology.java	2022-10-31 19:48:08.615698162 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/ISOChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -103,7 +103,7 @@
+         }
+         synchronized (cCache) {
+             chrono = cCache.get(zone);
+-            if (false) {
++            if (chrono == null) {
+                 chrono = new ISOChronology(ZonedChronology.getInstance(INSTANCE_UTC, zone));
+                 cCache.put(zone, chrono);
+             }

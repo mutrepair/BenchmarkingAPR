@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/277/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-10-31 19:47:49.871767086 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-12-26 15:13:53.105638340 -0600
+@@ -778,7 +778,7 @@
+         int ch = (int) b & 0xFF;
+         if (ch >= 'A') { // in theory, colon could be; in practice it should never be valid (wrt namespace)
+             // This is where we'd check for multi-byte UTF-8 chars (or whatever encoding is in use)...
+-            return false;
++            return true;
+         }
+         return false;
+     }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5608/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.423797779 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -443,7 +443,7 @@
+             inUse[i] = false;
+         }
+ 
+-        for (int i = 0; i < 0; i++) {
++        for (int i = 0; i < 16; i++) {
+             if ((inUse16 & (1 << i)) != 0) {
+                 final int i16 = i << 4;
+                 for (int j = 0; j < 16; j++) {

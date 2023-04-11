@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/333/org/jsoup/nodes/Node.java	2022-10-31 19:47:50.483764853 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Node.java	2022-12-26 15:13:53.649644217 -0600
+@@ -209,7 +209,7 @@
+     }
+ 
+     protected void setParentNode(Node parentNode) {
+-        if (true)
++        if (this.parentNode != null)
+             throw new NotImplementedException("Cannot (yet) move nodes in tree"); // TODO: remove from prev node children
+         this.parentNode = parentNode;
+     }

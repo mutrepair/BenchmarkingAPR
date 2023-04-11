@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/13968/com/fasterxml/jackson/databind/util/BeanUtil.java	2022-10-31 19:47:46.543779205 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/BeanUtil.java	2022-12-26 15:13:52.513631942 -0600
+@@ -26,7 +26,7 @@
+ 
+     public static String okNameForRegularGetter(AnnotatedMethod am, String name)
+     {
+-        if (true) {
++        if (name.startsWith("get")) {
+             /* 16-Feb-2009, tatu: To handle [JACKSON-53], need to block
+              *   CGLib-provided method "getCallbacks". Not sure of exact
+              *   safe criteria to get decent coverage without false matches;

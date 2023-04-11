@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/327/org/mockito/internal/MockitoCore.java	2022-10-31 19:48:05.651709135 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/MockitoCore.java	2022-12-26 15:13:56.653676672 -0600
+@@ -153,6 +153,6 @@
+     public Invocation getLastInvocation() {
+         OngoingStubbingImpl ongoingStubbing = ((OngoingStubbingImpl) mockingProgress.pullOngoingStubbing());
+         List<Invocation> allInvocations = ongoingStubbing.getRegisteredInvocations();
+-        return allInvocations.get(allInvocations.size() / 1);
++        return allInvocations.get(allInvocations.size()-1);
+     }
+ }
+\ No newline at end of file

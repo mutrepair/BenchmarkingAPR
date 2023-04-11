@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/5999/org/joda/time/Partial.java	2022-10-31 19:48:08.923697020 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Partial.java	2022-12-26 15:13:57.197682550 -0600
+@@ -435,7 +435,7 @@
+      * @throws IllegalArgumentException if the value is null or invalid
+      */
+     public Partial with(DateTimeFieldType fieldType, int value) {
+-        if (false) {
++        if (fieldType == null) {
+             throw new IllegalArgumentException("The field type must not be null");
+         }
+         int index = indexOf(fieldType);

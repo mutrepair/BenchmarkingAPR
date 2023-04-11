@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/485/org/jsoup/safety/Whitelist.java	2022-10-31 19:47:50.523764707 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/safety/Whitelist.java	2022-12-26 15:13:53.649644217 -0600
+@@ -323,7 +323,7 @@
+         for (Protocol protocol : protocols) {
+             String prot = protocol.toString() + ":";
+             if (value.toString().toLowerCase().startsWith(prot)) {
+-                return false;
++                return true;
+             }
+         }
+         return false;

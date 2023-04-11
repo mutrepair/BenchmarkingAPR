@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local axis is replaced by local currentStep to be used
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local axis is replaced by access to field PERFECT_MATCH
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 5 with 6
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 759
+	Block: 151
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

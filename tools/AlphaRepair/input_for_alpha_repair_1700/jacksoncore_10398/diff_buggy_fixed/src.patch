@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/10398/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-10-31 19:47:44.827785440 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1546,7 +1546,7 @@
+         int chunksBeforeLF = b64variant.getMaxLineLength() >> 2;
+ 
+         // Ok, first we loop through all full triplets of data:
+-        while (inputPtr < safeInputEnd) {
++        while (inputPtr <= safeInputEnd) {
+             if (_outputTail > safeOutputEnd) { // need to flush
+                 _flushBuffer();
+             }

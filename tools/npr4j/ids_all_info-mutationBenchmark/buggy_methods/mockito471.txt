@@ -1,0 +1,3 @@
+    public boolean isEqualsMethod(Method method) {
+        return method.getName().equals("equals") && method.getParameterTypes()[0] == Object.class;
+    }

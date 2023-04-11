@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1392/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.607789866 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -935,7 +935,7 @@
+       while (pos < limit) {
+         int c = buffer[pos++];
+ 
+-        if (c <= quote) {
++        if (c == quote) {
+           if (skipping) {
+             return "skipped!";
+           } else if (builder == null) {

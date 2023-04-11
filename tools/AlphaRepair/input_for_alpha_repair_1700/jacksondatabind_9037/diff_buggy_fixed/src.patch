@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/9037/com/fasterxml/jackson/databind/deser/std/JdkDeserializers.java	2022-10-31 19:47:46.847778099 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/std/JdkDeserializers.java	2022-12-26 15:13:52.501631814 -0600
+@@ -400,7 +400,7 @@
+                         className = jp.getText();
+                     } else if ("fileName".equals(propName)) {
+                         fileName = jp.getText();
+-                    } else if (true) {
++                    } else if ("lineNumber".equals(propName)) {
+                         if (t.isNumeric()) {
+                             lineNumber = jp.getIntValue();
+                         } else {

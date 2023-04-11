@@ -1,0 +1,421 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 38
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to startsWith(Ljava/lang/String;)Z with a call to startsWith(Ljava/lang/String;I)Z
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to style is guarded using value null
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to style is guarded using field style
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to CLOSURE with an access to LEGACY
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to CLOSURE with an access to RELAX
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local identifier is replaced by access to field MSG_FUNCTION_NAME
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local identifier is replaced by access to field MSG_FALLBACK_FUNCTION_NAME
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local identifier is replaced by access to field PH_JS_PREFIX
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local identifier is replaced by access to field PH_JS_SUFFIX
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local identifier is replaced by access to field MSG_PREFIX
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local identifier is replaced a call identifier.toLowerCase()
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to startsWith with a call to equalsIgnoreCase
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to endsWith with a call to equalsIgnoreCase
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to startsWith with a call to endsWith
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to endsWith with a call to startsWith
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to startsWith with a call to matches
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to endsWith with a call to matches
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::startsWith(Ljava/lang/String;)Z is guarded using default value false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::endsWith(Ljava/lang/String;)Z is guarded using default value false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to style is guarded returning default value false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to style is guarded returning local isNewStyleMessage
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to style is guarded returning field needToCheckDuplications
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 160
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to startsWith(Ljava/lang/String;)Z is guarded returning default value false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to endsWith(Ljava/lang/String;)Z is guarded returning default value false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to startsWith(Ljava/lang/String;)Z is guarded returning local isNewStyleMessage
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to endsWith(Ljava/lang/String;)Z is guarded returning local isNewStyleMessage
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to startsWith(Ljava/lang/String;)Z is guarded returning field needToCheckDuplications
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to endsWith(Ljava/lang/String;)Z is guarded returning field needToCheckDuplications
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/google/javascript/jscomp/JsMessageVisitor::isMessageName
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 163
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/google/javascript/jscomp/JsMessageVisitor::isMessageName
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 163
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 162
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 163
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::startsWith
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::endsWith
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 161
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 159
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/javascript/jscomp/JsMessageVisitor.java
+	Line Number: 841
+	Block: 163
+	First Index: 24
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

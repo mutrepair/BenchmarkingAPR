@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/133/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.371765262 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -345,7 +345,7 @@
+         Integer index = indexInList(this, siblings);
+         Validate.notNull(index);
+         if (siblings.size() > index+1)
+-            return siblings.get(index+-1);
++            return siblings.get(index+1);
+         else
+             return null;
+     }

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local yInt is replaced by local xInt to be used
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 25
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local yInt is replaced by access to field EXPONENT_OFFSET
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 25
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local yInt is replaced by access to field SGN_MASK
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 25
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 28
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 26
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/util/Precision.java
+	Line Number: 338
+	Block: 59
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

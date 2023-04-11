@@ -1,0 +1,410 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 37
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.math3.util.ArithmeticUtils.pow(Ljava/math/BigInteger;J)Ljava/math/BigInteger; is replaced by an instantiation of type java.math.BigInteger using (I[B)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.math3.util.ArithmeticUtils.pow(Ljava/math/BigInteger;J)Ljava/math/BigInteger; is replaced by an instantiation of type java.math.BigInteger using ([B)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to pow(Ljava/math/BigInteger;J)Ljava/math/BigInteger; with a call to pow(Ljava/math/BigInteger;I)Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V with a call to <init>(II)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to pow(Ljava/math/BigInteger;J)Ljava/math/BigInteger; with a call to pow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V with a call to <init>(Ljava/math/BigInteger;)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V with a call to <init>(DDI)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V with a call to <init>(JJ)V
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to denominator is guarded using value null
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to numerator is guarded using value null
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to denominator is guarded using field ONE_HUNDRED
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to numerator is guarded using field ONE_HUNDRED
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.fraction.BigFraction.denominator is replaced by the call to org.apache.commons.math3.fraction.BigFraction::getDenominator()Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.fraction.BigFraction.numerator is replaced by the call to org.apache.commons.math3.fraction.BigFraction::getDenominator()Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.fraction.BigFraction.denominator is replaced by the call to org.apache.commons.math3.fraction.BigFraction::getNumerator()Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.fraction.BigFraction.numerator is replaced by the call to org.apache.commons.math3.fraction.BigFraction::getNumerator()Ljava/math/BigInteger;
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to denominator with an access to numerator
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to numerator with an access to denominator
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field TWO
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local exponent is replaced by access to field serialVersionUID
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field MINUS_ONE
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field FOUR_FIFTHS
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.abs()
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to denominator is guarded returning default value null
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to numerator is guarded returning default value null
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to denominator is guarded returning local this
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to numerator is guarded returning local this
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to denominator is guarded returning field TWO
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to numerator is guarded returning field TWO
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/ArithmeticUtils::pow with argument
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/fraction/BigFraction::<init>
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/ArithmeticUtils::pow
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/fraction/BigFraction::pow
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/fraction/BigFraction::pow to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/fraction/BigFraction.java
+	Line Number: 980
+	Block: 115
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/30453/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallback.java	2022-10-31 19:47:37.743811075 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/GatherSideEffectSubexpressionsCallback.java	2022-10-29 11:39:08.335409998 -0500
+@@ -283,7 +283,7 @@
+       accumulator.keepSimplifiedShortCircuitExpression(node);
+       return false;
+     } else {
+-      return false;
++      return true;
+     }
+   }
+ 

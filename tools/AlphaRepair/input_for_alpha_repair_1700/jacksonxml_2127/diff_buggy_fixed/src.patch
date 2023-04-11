@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/2127/com/fasterxml/jackson/dataformat/xml/util/StaxUtil.java	2022-10-31 19:47:49.811767305 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/util/StaxUtil.java	2022-12-26 15:13:53.109638382 -0600
+@@ -53,7 +53,7 @@
+             char c = name.charAt(i);
+             if (c > 127) continue;
+             if (c >= 'a' && c <= 'z') continue;
+-            if (c == 'A' && c <= 'Z') continue;
++            if (c >= 'A' && c <= 'Z') continue;
+             if (c >= '0' && c <= '9') continue;
+             if (c == '_' || c == '.' || c == '-') continue;
+             // Ok, need to replace

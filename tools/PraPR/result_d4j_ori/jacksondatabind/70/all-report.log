@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.deser.SettableBeanProperty.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.fasterxml.jackson.databind.deser.SettableBeanProperty.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local prop is replaced by local propToRm to be used
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local key is replaced a call key.toLowerCase()
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getName with a call to getManagedReferenceName
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getName with a call to toString
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.deser.SettableBeanProperty::getName()Ljava/lang/String; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getName()Ljava/lang/String; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/deser/SettableBeanProperty::getName
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 57
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::equals
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 440
+	Block: 90
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

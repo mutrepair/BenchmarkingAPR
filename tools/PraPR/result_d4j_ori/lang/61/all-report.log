@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local strLen is replaced by local startIndex to be used
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 1776
+	Block: 371
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local thisBuf is replaced by access to field buffer
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 1776
+	Block: 371
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local strLen is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 1776
+	Block: 371
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local strLen is replaced by access to field size
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 1776
+	Block: 371
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 1776
+	Block: 371
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

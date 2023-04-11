@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_27/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java	2023-01-16 15:29:40.964250676 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/27/patch/./com/fasterxml/jackson/databind/deser/BeanDeserializer.java	2023-01-16 15:29:40.932250278 -0600
+@@ -791,7 +791,7 @@
+                 // first: let's check to see if this might be part of value with external type id:
+                 // 11-Sep-2015, tatu: Important; do NOT pass buffer as last arg, but null,
+                 //   since it is not the bean
+-                if (ext.handlePropertyValue(p, ctxt, propName, buffer)) {
++                if (ext.handlePropertyValue(p, ctxt, propName, null)) {
+                     ;
+                 } else {
+                     // Last creator property to set?

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/2044/org/apache/commons/lang3/ArrayUtils.java	2022-10-31 19:47:57.183740333 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/ArrayUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -2115,7 +2115,7 @@
+         if (startIndex < 0) {
+             return INDEX_NOT_FOUND;
+         } else if (startIndex >= array.length) {
+-            startIndex = array.length * 1;
++            startIndex = array.length - 1;
+         }
+         for (int i = startIndex; i >= 0; i--) {
+             if (valueToFind == array[i]) {

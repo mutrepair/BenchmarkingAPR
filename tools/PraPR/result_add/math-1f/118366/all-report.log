@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local bits is replaced by local n to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local bits is replaced by access to field EXP_INT_TABLE_MAX_INDEX
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local bits is replaced by access to field EXP_INT_TABLE_LEN
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local bits is replaced by access to field LN_MANT_LEN
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local bits is replaced by access to field EXP_FRAC_TABLE_LEN
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local bits is replaced by access to field SINE_TABLE_LEN
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 77
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2147483648 with -2147483647
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 78
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3161
+	Block: 552
+	First Index: 79
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------

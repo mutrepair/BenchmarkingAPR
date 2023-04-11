@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 14:21:42 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 28
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getNumberOfSuccesses with a call to getSupportUpperBound
+	File Name: org/apache/commons/math3/distribution/HypergeometricDistribution.java
+	Line Number: 268
+	Block: 35
+	First Index: 6
+	Rank: 1
+	Total Rank: 28
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------

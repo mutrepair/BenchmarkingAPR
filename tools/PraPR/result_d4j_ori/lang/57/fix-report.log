@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 14:03:09 CST 2023
+Number of Plausible Fixes: 3
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang.LocaleUtils.cAvailableLocaleSet is replaced by the call to org.apache.commons.lang.LocaleUtils::availableLocaleSet()Ljava/util/Set;
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 3
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Set::contains(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to contains(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/apache/commons/lang/LocaleUtils.java
+	Line Number: 223
+	Block: 35
+	First Index: 5
+	Rank: 3
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------

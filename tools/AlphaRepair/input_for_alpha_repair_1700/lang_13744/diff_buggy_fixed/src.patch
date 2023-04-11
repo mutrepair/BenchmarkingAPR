@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/13744/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.063740773 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -6300,7 +6300,7 @@
+             offset = str.length() - (maxWidth - 3);
+         }
+         final String abrevMarker = "...";
+-        if (offset == 4) {
++        if (offset <= 4) {
+             return str.substring(0, maxWidth - 3) + abrevMarker;
+         }
+         if (maxWidth < 7) {

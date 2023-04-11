@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/8135/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2022-10-31 19:47:46.831778158 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java	2022-12-26 15:13:52.497631769 -0600
+@@ -488,7 +488,7 @@
+         boolean ignoreAny = false;
+         {
+             Boolean B = intr.findIgnoreUnknownProperties(beanDesc.getClassInfo());
+-            if (true) {
++            if (B != null) {
+                 ignoreAny = B.booleanValue();
+                 builder.setIgnoreUnknownProperties(ignoreAny);
+             }

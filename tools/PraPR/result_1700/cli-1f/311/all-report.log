@@ -1,0 +1,344 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 31
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to longOpt is guarded using value null
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to longOpt is guarded using field opt
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.cli.Option.longOpt is replaced by the call to org.apache.commons.cli.Option::getKey()Ljava/lang/String;
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.cli.Option.longOpt is replaced by the call to org.apache.commons.cli.Option::getOpt()Ljava/lang/String;
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.cli.Option.longOpt is replaced by the call to org.apache.commons.cli.Option::getLongOpt()Ljava/lang/String;
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.cli.Option.longOpt is replaced by the call to org.apache.commons.cli.Option::getDescription()Ljava/lang/String;
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.cli.Option.longOpt is replaced by the call to org.apache.commons.cli.Option::getArgName()Ljava/lang/String;
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to longOpt with an access to opt
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to longOpt with an access to argName
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to longOpt with an access to description
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local result is replaced by access to field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local result is replaced by access to field numberOfArgs
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 95
+	First Index: 34
+	Rank: null
+	Total Rank: 31
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local result is replaced by access to field UNLIMITED_VALUES
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local result is replaced by access to field numberOfArgs
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hashCode with a call to length
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::hashCode()I is guarded using default value 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to longOpt is guarded returning default value 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to longOpt is guarded returning local result
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to longOpt is guarded returning field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 22
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning default value 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to hashCode()I is guarded returning local result
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to hashCode()I is guarded returning field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to hashCode()I is guarded returning field UNLIMITED_VALUES
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 31 with 32
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 18
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 95
+	First Index: 30
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 20
+	Rank: 1
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 95
+	First Index: 33
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 23
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::hashCode
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 94
+	First Index: 26
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 23
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 23
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/336/org/mockito/internal/util/StringJoiner.java	2022-10-31 19:48:05.655709121 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/StringJoiner.java	2022-12-26 15:13:56.657676716 -0600
+@@ -12,6 +12,6 @@
+             out.append(line.toString()).append("\n");
+         }
+         int lastBreak = out.lastIndexOf("\n");
+-        return out.replace(lastBreak, lastBreak % 1, "").toString();
++        return out.replace(lastBreak, lastBreak+1, "").toString();
+     }
+ }
+\ No newline at end of file

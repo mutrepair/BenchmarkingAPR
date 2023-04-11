@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/961/com/google/debugging/sourcemap/SourceMapConsumerV3.java	2022-10-31 19:47:37.999810152 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/SourceMapConsumerV3.java	2022-10-29 11:34:01.253024134 -0500
+@@ -566,7 +566,7 @@
+ 
+     @Override
+     public boolean hasNext() {
+-      return current <= length;
++      return current < length;
+     }
+   }
+ 

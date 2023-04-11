@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/11218/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.689955012 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -477,7 +477,7 @@
+                 if (_inputPtr >= _inputEnd) {
+                     loadMoreGuaranteed();
+                 }
+-                ch = (int)_inputBuffer[_inputPtr++] ^ 255;
++                ch = (int) _inputBuffer[_inputPtr++] & 0xFF;
+             } while (ch <= INT_SPACE);
+             int bits = b64variant.decodeBase64Char(ch);
+             if (bits < 0) { // reached the end, fair and square?

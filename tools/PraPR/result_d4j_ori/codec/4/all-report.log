@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Z)V with a call to <init>(I)V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 225
+	Block: 0
+	First Index: 5
+	Rank: 3
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Z)V with a call to <init>(I[BZ)V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 225
+	Block: 0
+	First Index: 5
+	Rank: 3
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Z)V with a call to <init>(I[B)V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 225
+	Block: 0
+	First Index: 5
+	Rank: 3
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Z)V with a call to <init>()V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 225
+	Block: 0
+	First Index: 5
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 225
+	Block: 0
+	First Index: 4
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

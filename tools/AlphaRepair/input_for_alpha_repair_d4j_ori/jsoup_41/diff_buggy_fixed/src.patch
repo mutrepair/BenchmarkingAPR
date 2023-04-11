@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_41/src/main/java/org/jsoup/nodes/Element.java	2023-01-16 15:29:50.776373208 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/41/patch/./org/jsoup/nodes/Element.java	2023-01-16 15:29:50.728372608 -0600
+@@ -1172,7 +1172,7 @@
+ 
+         Element element = (Element) o;
+ 
+-        return this == o;
++        return tag.equals(element.tag);
+     }
+ 
+     @Override

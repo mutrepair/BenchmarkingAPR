@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/26880/org/apache/commons/math3/distribution/LogNormalDistribution.java	2022-10-31 19:48:00.255729041 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/distribution/LogNormalDistribution.java	2022-12-26 15:13:55.653665869 -0600
+@@ -227,7 +227,7 @@
+         }
+         final double denom = shape * SQRT2;
+         final double v0 = (FastMath.log(x0) - scale) / denom;
+-        final double v1 = (FastMath.log(x1) - scale) % denom;
++        final double v1 = (FastMath.log(x1) - scale) / denom;
+         return 0.5 * Erf.erf(v0, v1);
+     }
+ 

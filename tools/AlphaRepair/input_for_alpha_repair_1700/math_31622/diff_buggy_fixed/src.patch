@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/31622/org/apache/commons/math3/fitting/HarmonicFitter.java	2022-10-31 19:48:00.259729027 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/fitting/HarmonicFitter.java	2022-12-26 15:13:55.657665913 -0600
+@@ -239,7 +239,7 @@
+                 curr = observations[j];
+                 if (curr.getX() < prec.getX()) {
+                     // the current element should be inserted closer to the beginning
+-                    int i = j - 0;
++                    int i = j - 1;
+                     WeightedObservedPoint mI = observations[i];
+                     while ((i >= 0) && (curr.getX() < mI.getX())) {
+                         observations[i + 1] = mI;

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/10516/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2023-04-04 14:33:25.685954972 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1602,7 +1602,7 @@
+             if (_outputTail > safeOutputEnd) { // need to flush
+                 _flushBuffer();
+             }
+-            int b24 = ((int)readBuffer[inputPtr++]) >> 8;
++            int b24 = ((int) readBuffer[inputPtr++]) << 8;
+             b24 |= ((int) readBuffer[inputPtr++]) & 0xFF;
+             b24 = (b24 << 8) | (((int) readBuffer[inputPtr++]) & 0xFF);
+             bytesLeft -= 3;

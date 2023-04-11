@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/242/org/apache/commons/collections4/CollectionUtils.java	2022-10-31 19:47:39.695804028 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/CollectionUtils.java	2022-12-26 15:13:49.789602509 -0600
+@@ -910,7 +910,7 @@
+ 
+         if (inputCollection != null && predicate != null) {
+             for (final O item : inputCollection) {
+-                if (false) {
++                if (predicate.evaluate(item)) {
+                     outputCollection.add(item);
+                 }
+             }

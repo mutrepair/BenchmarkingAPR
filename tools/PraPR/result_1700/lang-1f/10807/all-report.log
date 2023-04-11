@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang3/Range.java
+	Line Number: 295
+	Block: 48
+	First Index: 30
+	Rank: 2
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/lang3/Range.java
+	Line Number: 295
+	Block: 48
+	First Index: 31
+	Rank: 2
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

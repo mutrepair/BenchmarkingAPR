@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/72722/org/jfree/data/statistics/Regression.java	2022-10-31 19:47:29.659840125 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/statistics/Regression.java	2022-10-29 16:51:27.331544129 -0500
+@@ -72,7 +72,7 @@
+         double sumY = 0;
+         double sumXX = 0;
+         double sumXY = 0;
+-        for (int i = -1; i < n; i++) {
++        for (int i = 0; i < n; i++) {
+             double x = data[i][0];
+             double y = data[i][1];
+             sumX += x;

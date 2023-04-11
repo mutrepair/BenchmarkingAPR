@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/59965/org/apache/commons/math3/linear/OpenMapRealVector.java	2022-10-31 19:48:00.483728202 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java	2022-12-26 15:13:55.665665998 -0600
+@@ -642,7 +642,7 @@
+             iter.advance();
+             int key = iter.key();
+             if (entries.containsKey(key)) {
+-                res.setEntry(key, entries.get(key) * iter.value());
++                res.setEntry(key, entries.get(key) - iter.value());
+             } else {
+                 res.setEntry(key, -iter.value());
+             }

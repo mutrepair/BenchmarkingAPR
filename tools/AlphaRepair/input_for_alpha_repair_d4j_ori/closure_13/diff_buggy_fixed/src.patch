@@ -1,0 +1,12 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_13/src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java	2023-01-16 15:29:16.563945967 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/13/patch/./com/google/javascript/jscomp/PeepholeOptimizationsPass.java	2023-01-16 15:29:16.515945369 -0600
+@@ -123,8 +123,8 @@
+     do {
+       Node c = node.getFirstChild();
+       while(c != null) {
+-        traverse(c);
+         Node next = c.getNext();
++        traverse(c);
+         c = next;
+       }
+ 

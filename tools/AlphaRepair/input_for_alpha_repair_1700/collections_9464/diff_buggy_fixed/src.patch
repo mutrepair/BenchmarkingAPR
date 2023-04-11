@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/9464/org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java	2022-10-31 19:47:39.995802944 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/multimap/AbstractMultiValuedMap.java	2022-12-26 15:13:49.801602638 -0600
+@@ -363,7 +363,7 @@
+         Iterator<? extends V> it = values.iterator();
+         boolean result = false;
+         Collection<V> coll = getMap().get(key);
+-        if (false) {
++        if (coll == null) {
+             coll = createCollection(); // might produce a non-empty collection
+             while (it.hasNext()) {
+                 coll.add(it.next());

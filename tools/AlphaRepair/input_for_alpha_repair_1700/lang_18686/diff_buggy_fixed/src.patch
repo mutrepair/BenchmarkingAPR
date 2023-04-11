@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/18686/org/apache/commons/lang3/mutable/MutableShort.java	2022-10-31 19:47:57.167740391 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/mutable/MutableShort.java	2022-12-26 15:13:54.777656404 -0600
+@@ -269,7 +269,7 @@
+     @Override
+     public int compareTo(final MutableShort other) {
+         final short anotherVal = other.value;
+-        return value < anotherVal ? 0 : (value == anotherVal ? 0 : 1);
++        return value < anotherVal ? -1 : (value == anotherVal ? 0 : 1);
+     }
+ 
+     //-----------------------------------------------------------------------

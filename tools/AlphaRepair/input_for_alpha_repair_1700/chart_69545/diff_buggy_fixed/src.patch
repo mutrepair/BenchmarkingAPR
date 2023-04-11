@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/69545/org/jfree/data/general/DatasetUtilities.java	2022-10-31 19:47:29.635840211 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/general/DatasetUtilities.java	2022-10-29 16:41:07.438717383 -0500
+@@ -608,7 +608,7 @@
+         }
+ 
+         for (int r = 0; r < rowCount; r++) {
+-            for (int c = 0; c <= columnCount; c++) {
++            for (int c = 0; c < columnCount; c++) {
+                 if (dataset.getValue(r, c) != null) {
+                     return false;
+                 }

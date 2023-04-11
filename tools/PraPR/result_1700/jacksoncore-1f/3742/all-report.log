@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local open is replaced by access to field INT_TAB
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 57
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local open is replaced by access to field INT_LF
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 57
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local open is replaced by access to field INT_CR
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 57
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local open is replaced by access to field INT_SPACE
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 57
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local open is replaced by access to field INT_LBRACKET
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 57
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from -1 to 1
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 56
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 58
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 59
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 59
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 59
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment -1
+	File Name: com/fasterxml/jackson/core/base/ParserMinimalBase.java
+	Line Number: 165
+	Block: 15
+	First Index: 56
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

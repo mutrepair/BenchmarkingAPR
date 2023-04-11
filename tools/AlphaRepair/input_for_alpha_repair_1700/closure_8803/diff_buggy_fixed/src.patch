@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/8803/com/google/javascript/rhino/Node.java	2022-10-31 19:47:37.987810195 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/Node.java	2022-10-29 13:05:29.149486452 -0500
+@@ -2167,7 +2167,7 @@
+   }
+ 
+   public boolean isBlock() {
+-    return this.getType() >= Token.BLOCK;
++    return this.getType() == Token.BLOCK;
+   }
+ 
+   public boolean isBreak() {

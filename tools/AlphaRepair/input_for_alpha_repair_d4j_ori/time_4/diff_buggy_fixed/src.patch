@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/time_4/src/main/java/org/joda/time/Partial.java	2023-01-16 15:30:30.068863871 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/time/4/patch/./org/joda/time/Partial.java	2023-01-16 15:30:30.036863473 -0600
+@@ -461,7 +461,7 @@
+             System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1);
+             // use public constructor to ensure full validation
+             // this isn't overly efficient, but is safe
+-            Partial newPartial = new Partial(iChronology, newTypes, newValues);
++            Partial newPartial = new Partial(newTypes, newValues, iChronology);
+             iChronology.validate(newPartial, newValues);
+             return newPartial;
+         }

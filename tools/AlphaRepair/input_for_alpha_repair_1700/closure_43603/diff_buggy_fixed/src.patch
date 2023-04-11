@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/43603/com/google/javascript/jscomp/TypeInference.java	2022-10-31 19:47:37.867810628 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeInference.java	2022-10-29 11:54:34.643115585 -0500
+@@ -451,7 +451,7 @@
+     }
+ 
+     // TODO(johnlenz): remove this after the CAST node change has shaken out.
+-    if (!false) {
++    if (!n.isFunction()) {
+       JSDocInfo info = n.getJSDocInfo();
+       if (info != null && info.hasType()) {
+         JSType castType = info.getType().evaluate(syntacticScope, registry);

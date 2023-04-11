@@ -1,0 +1,3688 @@
+=================================================
+Project : collections_1	start : 22/10/31 16:23
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorNextIndexMid | 22/10/31 16:23
+Mon Oct 31 16:24:05 CDT 2022 org.apache.commons.collections4.list.CursorableLinkedList,477
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2314527383957088 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>0,0]
+if(cacheSize==0){
+return null;
+}
+ final Node<E> cachedNode=firstCachedNode;
+firstCachedNode=cachedNode.next;
+cachedNode.next=null;
+cacheSize--;
+return cachedNode;
+
+Time : 22/10/31 16:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:26
+----------------------------------------
+Success time : 22/10/31 16:37
+=================================================
+Project : collections_1	start : 22/10/31 16:37
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorNextIndexMid | 22/10/31 16:37
+Mon Oct 31 16:37:28 CDT 2022 org.apache.commons.collections4.list.CursorableLinkedList,477
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2314527383957088 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>0,0]
+if(cacheSize==0){
+return null;
+}
+ final Node<E> cachedNode=firstCachedNode;
+firstCachedNode=cachedNode.next;
+cachedNode.next=null;
+cacheSize--;
+return cachedNode;
+
+Time : 22/10/31 16:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/10/31 16:40
+----------------------------------------
+Success time : 22/10/31 16:48
+=================================================
+Project : collections_1	start : 22/10/31 19:22
+Current failed test : org.apache.commons.collections4.queue.CircularFifoQueueTest::testGetIndex | 22/10/31 19:22
+Mon Oct 31 19:22:42 CDT 2022 org.apache.commons.collections4.queue.CircularFifoQueue,269
+Failed time : 22/10/31 19:36
+=================================================
+Project : collections_1	start : 22/10/31 19:36
+Current failed test : org.apache.commons.collections4.queue.CircularFifoQueueTest::testGetIndex | 22/10/31 19:36
+Mon Oct 31 19:36:26 CDT 2022 org.apache.commons.collections4.queue.CircularFifoQueue,269
+Failed time : 22/10/31 19:49
+=================================================
+Project : collections_1	start : 22/10/31 19:49
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubListAddEnd | 22/10/31 19:49
+Mon Oct 31 19:49:34 CDT 2022 org.apache.commons.collections4.list.AbstractLinkedList,979
+Failed time : 22/10/31 19:59
+=================================================
+Project : collections_1	start : 22/10/31 19:59
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubListAddEnd | 22/10/31 19:59
+Mon Oct 31 19:59:43 CDT 2022 org.apache.commons.collections4.list.AbstractLinkedList,979
+Failed time : 22/10/31 20:09
+=================================================
+Project : collections_1	start : 22/10/31 20:09
+Current failed test : org.apache.commons.collections4.multimap.MultiValuedHashMapTest::testPutAll_KeyIterable | 22/10/31 20:09
+Mon Oct 31 20:09:55 CDT 2022 org.apache.commons.collections4.multimap.AbstractMultiValuedMap,366
+Failed time : 22/10/31 20:19
+=================================================
+Project : collections_1	start : 22/10/31 20:19
+Current failed test : org.apache.commons.collections4.multimap.MultiValuedHashMapTest::testPutAll_KeyIterable | 22/10/31 20:19
+Mon Oct 31 20:19:58 CDT 2022 org.apache.commons.collections4.multimap.AbstractMultiValuedMap,366
+Failed time : 22/10/31 20:29
+=================================================
+Project : collections_1	start : 22/10/31 20:29
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testIndexOf | 22/10/31 20:29
+Mon Oct 31 20:29:24 CDT 2022 org.apache.commons.collections4.list.AbstractLinkedList,133
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.385214015087216 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>0,0]
+checkModCount();
+if(!hasPrevious()){
+throw new NoSuchElementException("Already at start of list.");
+}
+next=next.previous;
+ final E value=next.getValue();
+current=next;
+nextIndex--;
+return value;
+
+Time : 22/10/31 20:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:31
+----------------------------------------
+Success time : 22/10/31 20:38
+=================================================
+Project : collections_1	start : 22/10/31 20:38
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testIndexOf | 22/10/31 20:38
+Mon Oct 31 20:39:03 CDT 2022 org.apache.commons.collections4.list.AbstractLinkedList,133
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.385214015087216 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>0,0]
+checkModCount();
+if(!hasPrevious()){
+throw new NoSuchElementException("Already at start of list.");
+}
+next=next.previous;
+ final E value=next.getValue();
+current=next;
+nextIndex--;
+return value;
+
+Time : 22/10/31 20:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/10/31 20:40
+----------------------------------------
+Success time : 22/10/31 20:48
+=================================================
+Project : collections_1	start : 22/10/31 20:48
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testCollectionIteratorRemove | 22/10/31 20:48
+Mon Oct 31 20:48:32 CDT 2022 org.apache.commons.collections4.bag.AbstractMapBag,209
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 20:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7490755590960338 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+last=iterator.next();
+canRemove=true;
+return last.getKey();
+
+Time : 22/10/31 20:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 20:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 20:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/10/31 21:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1638997446389996 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+if(hasNext==true){
+throw new NoSuchElementException(AbstractHashedMap.NO_PREVIOUS_ENTRY);
+}
+hasNext=true;
+return parent.getKey();
+
+Time : 22/10/31 21:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 21:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/10/31 21:06
+----------------------------------------
+Success time : 22/10/31 21:19
+=================================================
+Project : collections_1	start : 22/10/31 21:19
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testCollectionIteratorRemove | 22/10/31 21:19
+Mon Oct 31 21:20:01 CDT 2022 org.apache.commons.collections4.bag.AbstractMapBag,209
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 21:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7490755590960338 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+last=iterator.next();
+canRemove=true;
+return last.getKey();
+
+Time : 22/10/31 21:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 21:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 21:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/10/31 21:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1638997446389996 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+if(hasNext==true){
+throw new NoSuchElementException(AbstractHashedMap.NO_PREVIOUS_ENTRY);
+}
+hasNext=true;
+return parent.getKey();
+
+Time : 22/10/31 21:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/10/31 21:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/10/31 21:36
+----------------------------------------
+Success time : 22/10/31 21:49
+=================================================
+Project : collections_1	start : 22/11/16 18:21
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:21
+Wed Nov 16 18:21:50 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/11/16 18:26
+=================================================
+Project : collections_1	start : 22/11/16 18:26
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:26
+Wed Nov 16 18:26:38 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/11/16 18:31
+=================================================
+Project : collections_1	start : 22/11/16 18:31
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:31
+Wed Nov 16 18:31:29 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,234
+Failed time : 22/11/16 18:32
+=================================================
+Project : collections_1	start : 22/11/16 18:32
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:32
+Wed Nov 16 18:32:41 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,234
+Failed time : 22/11/16 18:33
+=================================================
+Project : collections_1	start : 22/11/16 18:33
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:33
+Wed Nov 16 18:33:54 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,515
+Failed time : 22/11/16 18:38
+=================================================
+Project : collections_1	start : 22/11/16 18:38
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:38
+Wed Nov 16 18:38:31 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,515
+Failed time : 22/11/16 18:43
+=================================================
+Project : collections_1	start : 22/11/16 18:43
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/11/16 18:43
+Wed Nov 16 18:43:09 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,369
+Failed time : 22/11/16 18:43
+=================================================
+Project : collections_1	start : 22/11/16 18:43
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/11/16 18:43
+Wed Nov 16 18:43:21 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,369
+Failed time : 22/11/16 18:43
+=================================================
+Project : collections_1	start : 22/11/16 18:43
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:43
+Wed Nov 16 18:43:45 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,516
+Failed time : 22/11/16 18:43
+=================================================
+Project : collections_1	start : 22/11/16 18:43
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:43
+Wed Nov 16 18:44:09 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,516
+Failed time : 22/11/16 18:44
+=================================================
+Project : collections_1	start : 22/11/16 18:44
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:44
+Wed Nov 16 18:44:22 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,233
+Failed time : 22/11/16 18:45
+=================================================
+Project : collections_1	start : 22/11/16 18:45
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:45
+Wed Nov 16 18:45:12 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,233
+Failed time : 22/11/16 18:45
+=================================================
+Project : collections_1	start : 22/11/16 18:45
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/11/16 18:45
+Wed Nov 16 18:46:04 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,190
+Failed time : 22/11/16 18:47
+=================================================
+Project : collections_1	start : 22/11/16 18:47
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/11/16 18:47
+Wed Nov 16 18:47:17 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,190
+Failed time : 22/11/16 18:48
+=================================================
+Project : collections_1	start : 22/11/16 18:48
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyRemove | 22/11/16 18:48
+Wed Nov 16 18:48:33 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/11/16 18:53
+=================================================
+Project : collections_1	start : 22/11/16 18:53
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyRemove | 22/11/16 18:53
+Wed Nov 16 18:53:27 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/11/16 18:58
+=================================================
+Project : collections_1	start : 22/11/16 18:58
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 18:58
+Wed Nov 16 18:58:16 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,674
+Failed time : 22/11/16 19:02
+=================================================
+Project : collections_1	start : 22/11/16 19:02
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/11/16 19:02
+Wed Nov 16 19:02:52 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,674
+Failed time : 22/11/16 19:07
+=================================================
+Project : collections_1	start : 22/11/16 19:07
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/11/16 19:07
+Wed Nov 16 19:07:31 CST 2022 org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer,122
+Failed time : 22/11/16 19:10
+=================================================
+Project : collections_1	start : 22/11/16 19:10
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/11/16 19:10
+Wed Nov 16 19:11:02 CST 2022 org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer,122
+Failed time : 22/11/16 19:14
+=================================================
+Project : collections_1	start : 22/11/16 19:14
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/11/16 19:14
+Wed Nov 16 19:14:26 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/11/16 19:14
+=================================================
+Project : collections_1	start : 22/11/16 19:14
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/11/16 19:14
+Wed Nov 16 19:14:44 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/11/16 19:14
+=================================================
+Project : collections_1	start : 22/11/16 19:14
+Current failed test : org.apache.commons.collections4.bag.HashBagTest::testBagHashCode | 22/11/16 19:14
+Wed Nov 16 19:15:02 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,572
+Failed time : 22/11/16 19:17
+=================================================
+Project : collections_1	start : 22/11/16 19:17
+Current failed test : org.apache.commons.collections4.bag.HashBagTest::testBagHashCode | 22/11/16 19:17
+Wed Nov 16 19:17:31 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,572
+Failed time : 22/11/16 19:19
+=================================================
+Project : collections_1	start : 22/12/04 08:52
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::collect | 22/12/04 08:52
+Sun Dec 04 08:52:56 CST 2022 org.apache.commons.collections4.CollectionUtils,1252
+Failed time : 22/12/04 08:57
+=================================================
+Project : collections_1	start : 22/12/04 08:57
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::collect | 22/12/04 08:57
+Sun Dec 04 08:57:53 CST 2022 org.apache.commons.collections4.CollectionUtils,1252
+Failed time : 22/12/04 09:02
+=================================================
+Project : collections_1	start : 22/12/04 09:02
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 09:02
+Sun Dec 04 09:02:56 CST 2022 org.apache.commons.collections4.iterators.ArrayIterator,119
+Failed time : 22/12/04 09:02
+=================================================
+Project : collections_1	start : 22/12/04 09:02
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 09:03
+Sun Dec 04 09:03:17 CST 2022 org.apache.commons.collections4.iterators.ArrayIterator,119
+Failed time : 22/12/04 09:03
+=================================================
+Project : collections_1	start : 22/12/04 09:03
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 09:03
+Sun Dec 04 09:03:40 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(hash2==hashCode&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0885281683891708 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>0,0]
+if(hash2==hashCode&&key.equals(key2)){
+ final V old=value2;
+hash2=0;
+key2=null;
+value2=null;
+size=1;
+return old;
+}
+
+Time : 22/12/04 09:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>225,227]
+if(false&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>225,227]
+if(hash2==hashCode&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:05
+----------------------------------------
+Success time : 22/12/04 09:07
+=================================================
+Project : collections_1	start : 22/12/04 09:07
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 09:07
+Sun Dec 04 09:07:50 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(hash2==hashCode&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0885281683891708 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>0,0]
+if(hash2==hashCode&&key.equals(key2)){
+ final V old=value2;
+hash2=0;
+key2=null;
+value2=null;
+size=1;
+return old;
+}
+
+Time : 22/12/04 09:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>225,227]
+if(false&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/map/Flat3Map.java=>225,227]
+if(hash2==hashCode&&key.equals(key2)){
+return true;
+}
+
+Time : 22/12/04 09:09
+----------------------------------------
+Success time : 22/12/04 09:11
+=================================================
+Project : collections_1	start : 22/12/04 09:11
+Current failed test : org.apache.commons.collections4.BagUtilsTest::testTransformedSortedBag | 22/12/04 09:11
+Sun Dec 04 09:11:57 CST 2022 org.apache.commons.collections4.collection.TransformedCollection,110
+Failed time : 22/12/04 09:11
+=================================================
+Project : collections_1	start : 22/12/04 09:11
+Current failed test : org.apache.commons.collections4.BagUtilsTest::testTransformedSortedBag | 22/12/04 09:12
+Sun Dec 04 09:12:18 CST 2022 org.apache.commons.collections4.collection.TransformedCollection,110
+Failed time : 22/12/04 09:12
+=================================================
+Project : collections_1	start : 22/12/04 09:12
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 09:12
+Sun Dec 04 09:12:48 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,370
+Failed time : 22/12/04 09:16
+=================================================
+Project : collections_1	start : 22/12/04 09:16
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 09:16
+Sun Dec 04 09:16:58 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,370
+Failed time : 22/12/04 09:19
+=================================================
+Project : collections_1	start : 22/12/04 09:19
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 09:19
+Sun Dec 04 09:19:41 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,282
+Failed time : 22/12/04 09:19
+=================================================
+Project : collections_1	start : 22/12/04 09:19
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 09:19
+Sun Dec 04 09:20:03 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,282
+Failed time : 22/12/04 09:20
+=================================================
+Project : collections_1	start : 22/12/04 09:20
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 09:20
+Sun Dec 04 09:20:26 CST 2022 Sun Dec 04 09:20:26 CST 2022 : org.apache.commons.collections4.map.MultiKeyMap,696=>Find no block
+Failed time : 22/12/04 09:20
+=================================================
+Project : collections_1	start : 22/12/04 09:20
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 09:20
+Sun Dec 04 09:21:03 CST 2022 Sun Dec 04 09:21:03 CST 2022 : org.apache.commons.collections4.map.MultiKeyMap,696=>Find no block
+Failed time : 22/12/04 09:21
+=================================================
+Project : collections_1	start : 22/12/04 09:21
+Current failed test : org.apache.commons.collections4.map.CaseInsensitiveMapTest::testNullHandling | 22/12/04 09:21
+Sun Dec 04 09:21:30 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,413
+Failed time : 22/12/04 09:22
+=================================================
+Project : collections_1	start : 22/12/04 09:22
+Current failed test : org.apache.commons.collections4.map.CaseInsensitiveMapTest::testNullHandling | 22/12/04 09:22
+Sun Dec 04 09:23:02 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,413
+Failed time : 22/12/04 09:24
+=================================================
+Project : collections_1	start : 22/12/04 09:24
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 09:24
+Sun Dec 04 09:24:24 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,214
+Failed time : 22/12/04 09:31
+=================================================
+Project : collections_1	start : 22/12/04 09:31
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 09:31
+Sun Dec 04 09:31:52 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,214
+Failed time : 22/12/04 09:39
+=================================================
+Project : collections_1	start : 22/12/04 09:39
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/12/04 09:39
+Sun Dec 04 09:39:23 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/12/04 09:39
+=================================================
+Project : collections_1	start : 22/12/04 09:39
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/12/04 09:40
+Sun Dec 04 09:40:20 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/12/04 09:40
+=================================================
+Project : collections_1	start : 22/12/04 09:40
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubList | 22/12/04 09:40
+Sun Dec 04 09:41:14 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,586
+Failed time : 22/12/04 09:41
+=================================================
+Project : collections_1	start : 22/12/04 09:41
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubList | 22/12/04 09:41
+Sun Dec 04 09:42:06 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,586
+Failed time : 22/12/04 09:42
+=================================================
+Project : collections_1	start : 22/12/04 09:42
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 09:42
+Sun Dec 04 09:42:57 CST 2022 org.apache.commons.collections4.CollectionUtils,1130
+Failed time : 22/12/04 09:42
+=================================================
+Project : collections_1	start : 22/12/04 09:42
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 09:43
+Sun Dec 04 09:43:19 CST 2022 org.apache.commons.collections4.CollectionUtils,1130
+Failed time : 22/12/04 09:43
+=================================================
+Project : collections_1	start : 22/12/04 09:43
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::reverse | 22/12/04 09:43
+Sun Dec 04 09:43:41 CST 2022 org.apache.commons.collections4.CollectionUtils,1604
+Failed time : 22/12/04 09:46
+=================================================
+Project : collections_1	start : 22/12/04 09:46
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::reverse | 22/12/04 09:46
+Sun Dec 04 09:47:03 CST 2022 org.apache.commons.collections4.CollectionUtils,1604
+Failed time : 22/12/04 09:50
+=================================================
+Project : collections_1	start : 22/12/04 09:50
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testMapContainsKey | 22/12/04 09:50
+Sun Dec 04 09:50:30 CST 2022 org.apache.commons.collections4.set.CompositeSet,441
+Failed time : 22/12/04 09:53
+=================================================
+Project : collections_1	start : 22/12/04 09:53
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testMapContainsKey | 22/12/04 09:53
+Sun Dec 04 09:53:20 CST 2022 org.apache.commons.collections4.set.CompositeSet,441
+Failed time : 22/12/04 09:55
+=================================================
+Project : collections_1	start : 22/12/04 09:55
+Current failed test : org.apache.commons.collections4.sequence.SequencesComparatorTest::testLength | 22/12/04 09:55
+Sun Dec 04 09:56:12 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,224
+Failed time : 22/12/04 09:59
+=================================================
+Project : collections_1	start : 22/12/04 09:59
+Current failed test : org.apache.commons.collections4.sequence.SequencesComparatorTest::testLength | 22/12/04 09:59
+Sun Dec 04 09:59:35 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,224
+Failed time : 22/12/04 10:02
+=================================================
+Project : collections_1	start : 22/12/04 10:02
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 10:02
+Sun Dec 04 10:03:07 CST 2022 Sun Dec 04 10:03:07 CST 2022 : org.apache.commons.collections4.map.AbstractHashedMap,1119=>Find no block
+Failed time : 22/12/04 10:03
+=================================================
+Project : collections_1	start : 22/12/04 10:03
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 10:03
+Sun Dec 04 10:03:26 CST 2022 Sun Dec 04 10:03:26 CST 2022 : org.apache.commons.collections4.map.AbstractHashedMap,1119=>Find no block
+Failed time : 22/12/04 10:03
+=================================================
+Project : collections_1	start : 22/12/04 10:03
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/12/04 10:03
+Sun Dec 04 10:03:49 CST 2022 org.apache.commons.collections4.trie.AbstractBitwiseTrie,134
+Failed time : 22/12/04 10:06
+=================================================
+Project : collections_1	start : 22/12/04 10:06
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/12/04 10:06
+Sun Dec 04 10:06:25 CST 2022 org.apache.commons.collections4.trie.AbstractBitwiseTrie,134
+Failed time : 22/12/04 10:08
+=================================================
+Project : collections_1	start : 22/12/04 10:08
+Current failed test : org.apache.commons.collections4.iterators.CollatingIteratorTest::testIterateFibEvenOdd | 22/12/04 10:08
+Sun Dec 04 10:09:09 CST 2022 org.apache.commons.collections4.iterators.CollatingIterator,248
+Failed time : 22/12/04 10:09
+=================================================
+Project : collections_1	start : 22/12/04 10:09
+Current failed test : org.apache.commons.collections4.iterators.CollatingIteratorTest::testIterateFibEvenOdd | 22/12/04 10:09
+Sun Dec 04 10:09:31 CST 2022 org.apache.commons.collections4.iterators.CollatingIterator,248
+Failed time : 22/12/04 10:09
+=================================================
+Project : collections_1	start : 22/12/04 10:09
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testGet | 22/12/04 10:09
+Sun Dec 04 10:09:55 CST 2022 org.apache.commons.collections4.map.CompositeMap,110
+Failed time : 22/12/04 10:10
+=================================================
+Project : collections_1	start : 22/12/04 10:10
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testGet | 22/12/04 10:10
+Sun Dec 04 10:11:00 CST 2022 org.apache.commons.collections4.map.CompositeMap,110
+Failed time : 22/12/04 10:11
+=================================================
+Project : collections_1	start : 22/12/04 10:11
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 10:11
+Sun Dec 04 10:12:08 CST 2022 org.apache.commons.collections4.CollectionUtils,913
+Failed time : 22/12/04 10:12
+=================================================
+Project : collections_1	start : 22/12/04 10:12
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 10:12
+Sun Dec 04 10:13:05 CST 2022 org.apache.commons.collections4.CollectionUtils,913
+Failed time : 22/12/04 10:13
+=================================================
+Project : collections_1	start : 22/12/04 10:13
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testRetainAll | 22/12/04 10:13
+Sun Dec 04 10:14:02 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,282
+Failed time : 22/12/04 10:16
+=================================================
+Project : collections_1	start : 22/12/04 10:16
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testRetainAll | 22/12/04 10:16
+Sun Dec 04 10:16:42 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,282
+Failed time : 22/12/04 10:18
+=================================================
+Project : collections_1	start : 22/12/04 10:19
+Current failed test : org.apache.commons.collections4.map.ListOrderedMap2Test::testNextKey | 22/12/04 10:19
+Sun Dec 04 10:19:20 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,195
+Failed time : 22/12/04 10:21
+=================================================
+Project : collections_1	start : 22/12/04 10:21
+Current failed test : org.apache.commons.collections4.map.ListOrderedMap2Test::testNextKey | 22/12/04 10:21
+Sun Dec 04 10:21:26 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,195
+Failed time : 22/12/04 10:23
+=================================================
+Project : collections_1	start : 22/12/04 10:23
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::cardinalityOfNull | 22/12/04 10:23
+Sun Dec 04 10:23:31 CST 2022 org.apache.commons.collections4.CollectionUtils,629
+Failed time : 22/12/04 10:23
+=================================================
+Project : collections_1	start : 22/12/04 10:23
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::cardinalityOfNull | 22/12/04 10:23
+Sun Dec 04 10:23:55 CST 2022 org.apache.commons.collections4.CollectionUtils,629
+Failed time : 22/12/04 10:23
+=================================================
+Project : collections_1	start : 22/12/04 10:23
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 10:24
+Sun Dec 04 10:24:18 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,1173
+Failed time : 22/12/04 10:25
+=================================================
+Project : collections_1	start : 22/12/04 10:25
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 10:25
+Sun Dec 04 10:25:43 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,1173
+Failed time : 22/12/04 10:26
+=================================================
+Project : collections_1	start : 22/12/04 10:26
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 10:26
+Sun Dec 04 10:27:07 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+Failed time : 22/12/04 10:27
+=================================================
+Project : collections_1	start : 22/12/04 10:27
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 10:27
+Sun Dec 04 10:27:29 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+Failed time : 22/12/04 10:27
+=================================================
+Project : collections_1	start : 22/12/04 10:27
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testToArray2 | 22/12/04 10:27
+Sun Dec 04 10:27:53 CST 2022 org.apache.commons.collections4.IteratorUtils,1110
+Failed time : 22/12/04 10:32
+=================================================
+Project : collections_1	start : 22/12/04 10:32
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testToArray2 | 22/12/04 10:32
+Sun Dec 04 10:33:06 CST 2022 org.apache.commons.collections4.IteratorUtils,1110
+Failed time : 22/12/04 10:38
+=================================================
+Project : collections_1	start : 22/12/04 10:38
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testBug35258 | 22/12/04 10:38
+Sun Dec 04 10:38:22 CST 2022 org.apache.commons.collections4.list.TreeList,1066
+Failed time : 22/12/04 10:38
+=================================================
+Project : collections_1	start : 22/12/04 10:38
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testBug35258 | 22/12/04 10:38
+Sun Dec 04 10:39:12 CST 2022 org.apache.commons.collections4.list.TreeList,1066
+Failed time : 22/12/04 10:39
+=================================================
+Project : collections_1	start : 22/12/04 10:39
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testEmptyMapCompatibility | 22/12/04 10:39
+Sun Dec 04 10:40:01 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2387
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.666666666666667 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>0,0]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<=size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+modCount=0;
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:42
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9874694267319217 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>0,0]
+in.defaultReadObject();
+elements=(E[])new Object[maxElements];
+ final int size=in.readInt();
+for(int i=0;i<size;i++){
+elements[i]=(E)in.readObject();
+}
+start=0;
+
+Time : 22/12/04 10:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<=size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+modCount=0;
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:43
+----------------------------------------
+Success time : 22/12/04 10:47
+=================================================
+Project : collections_1	start : 22/12/04 10:47
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testEmptyMapCompatibility | 22/12/04 10:47
+Sun Dec 04 10:48:00 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2387
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.666666666666667 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>0,0]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<=size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+modCount=0;
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9874694267319217 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>0,0]
+in.defaultReadObject();
+elements=(E[])new Object[maxElements];
+ final int size=in.readInt();
+for(int i=0;i<size;i++){
+elements[i]=(E)in.readObject();
+}
+start=0;
+
+Time : 22/12/04 10:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+for(int i=0;i<=size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java=>2387,2391]
+modCount=0;
+for(int i=0;i<size;i++){
+K k=(K)stream.readObject();
+V v=(V)stream.readObject();
+put(k,v);
+}
+
+Time : 22/12/04 10:50
+----------------------------------------
+Success time : 22/12/04 10:55
+=================================================
+Project : collections_1	start : 22/12/04 10:55
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorNextIndexMid | 22/12/04 10:55
+Sun Dec 04 10:55:58 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,477
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 10:57
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2314527383957088 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>0,0]
+if(cacheSize==0){
+return null;
+}
+ final Node<E> cachedNode=firstCachedNode;
+firstCachedNode=cachedNode.next;
+cachedNode.next=null;
+cacheSize--;
+return cachedNode;
+
+Time : 22/12/04 10:58
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 10:58
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 10:58
+----------------------------------------
+Success time : 22/12/04 11:05
+=================================================
+Project : collections_1	start : 22/12/04 11:05
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorNextIndexMid | 22/12/04 11:05
+Sun Dec 04 11:06:04 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,477
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 11:07
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2314527383957088 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>0,0]
+if(cacheSize==0){
+return null;
+}
+ final Node<E> cachedNode=firstCachedNode;
+firstCachedNode=cachedNode.next;
+cachedNode.next=null;
+cacheSize--;
+return cachedNode;
+
+Time : 22/12/04 11:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 11:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/CursorableLinkedList.java=>479,482]
+pos--;
+while(temp!=next){
+pos++;
+temp=temp.next;
+}
+
+Time : 22/12/04 11:08
+----------------------------------------
+Success time : 22/12/04 11:13
+=================================================
+Project : collections_1	start : 22/12/04 11:13
+Current failed test : org.apache.commons.collections4.PredicateUtilsTest::testAllPredicate | 22/12/04 11:13
+Sun Dec 04 11:13:38 CST 2022 org.apache.commons.collections4.functors.AllPredicate,81
+Failed time : 22/12/04 11:14
+=================================================
+Project : collections_1	start : 22/12/04 11:14
+Current failed test : org.apache.commons.collections4.PredicateUtilsTest::testAllPredicate | 22/12/04 11:14
+Sun Dec 04 11:14:38 CST 2022 org.apache.commons.collections4.functors.AllPredicate,81
+Failed time : 22/12/04 11:15
+=================================================
+Project : collections_1	start : 22/12/04 11:15
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 11:15
+Sun Dec 04 11:15:39 CST 2022 org.apache.commons.collections4.map.StaticBucketMap,508
+Failed time : 22/12/04 11:15
+=================================================
+Project : collections_1	start : 22/12/04 11:15
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 11:15
+Sun Dec 04 11:16:06 CST 2022 org.apache.commons.collections4.map.StaticBucketMap,508
+Failed time : 22/12/04 11:16
+=================================================
+Project : collections_1	start : 22/12/04 11:16
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 11:16
+Sun Dec 04 11:16:33 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,206
+Failed time : 22/12/04 11:17
+=================================================
+Project : collections_1	start : 22/12/04 11:17
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 11:17
+Sun Dec 04 11:17:30 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,206
+Failed time : 22/12/04 11:18
+=================================================
+Project : collections_1	start : 22/12/04 11:18
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestTailMap::testTailMapOutOfRange | 22/12/04 11:18
+Sun Dec 04 11:18:31 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,1792
+Failed time : 22/12/04 11:18
+=================================================
+Project : collections_1	start : 22/12/04 11:18
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestTailMap::testTailMapOutOfRange | 22/12/04 11:18
+Sun Dec 04 11:18:53 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,1792
+Failed time : 22/12/04 11:19
+=================================================
+Project : collections_1	start : 22/12/04 11:19
+Current failed test : org.apache.commons.collections4.ClosureUtilsTest::testSwitchMapClosure | 22/12/04 11:19
+Sun Dec 04 11:19:15 CST 2022 org.apache.commons.collections4.functors.SwitchClosure,147
+Failed time : 22/12/04 11:19
+=================================================
+Project : collections_1	start : 22/12/04 11:19
+Current failed test : org.apache.commons.collections4.ClosureUtilsTest::testSwitchMapClosure | 22/12/04 11:19
+Sun Dec 04 11:19:36 CST 2022 org.apache.commons.collections4.functors.SwitchClosure,147
+Failed time : 22/12/04 11:19
+=================================================
+Project : collections_1	start : 22/12/04 11:19
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testListAddByIndexBoundsChecking | 22/12/04 11:19
+Sun Dec 04 11:19:58 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,1055
+Failed time : 22/12/04 11:22
+=================================================
+Project : collections_1	start : 22/12/04 11:22
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testListAddByIndexBoundsChecking | 22/12/04 11:22
+Sun Dec 04 11:22:37 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,1055
+Failed time : 22/12/04 11:25
+=================================================
+Project : collections_1	start : 22/12/04 11:25
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorConcurrentModification | 22/12/04 11:25
+Sun Dec 04 11:25:13 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,505
+Failed time : 22/12/04 11:27
+=================================================
+Project : collections_1	start : 22/12/04 11:27
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCursorConcurrentModification | 22/12/04 11:27
+Sun Dec 04 11:27:45 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,505
+Failed time : 22/12/04 11:30
+=================================================
+Project : collections_1	start : 22/12/04 11:30
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testCollectionRetainAll | 22/12/04 11:30
+Sun Dec 04 11:30:30 CST 2022 org.apache.commons.collections4.list.TreeList,621
+Failed time : 22/12/04 11:30
+=================================================
+Project : collections_1	start : 22/12/04 11:30
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testCollectionRetainAll | 22/12/04 11:30
+Sun Dec 04 11:30:41 CST 2022 org.apache.commons.collections4.list.TreeList,621
+Failed time : 22/12/04 11:30
+=================================================
+Project : collections_1	start : 22/12/04 11:30
+Current failed test : org.apache.commons.collections4.keyvalue.TiedMapEntryTest::testEqualsAndHashCode | 22/12/04 11:30
+Sun Dec 04 11:30:54 CST 2022 org.apache.commons.collections4.keyvalue.TiedMapEntry,101
+Failed time : 22/12/04 11:31
+=================================================
+Project : collections_1	start : 22/12/04 11:31
+Current failed test : org.apache.commons.collections4.keyvalue.TiedMapEntryTest::testEqualsAndHashCode | 22/12/04 11:31
+Sun Dec 04 11:31:48 CST 2022 org.apache.commons.collections4.keyvalue.TiedMapEntry,101
+Failed time : 22/12/04 11:32
+=================================================
+Project : collections_1	start : 22/12/04 11:32
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testRemoveFromComposited | 22/12/04 11:32
+Sun Dec 04 11:32:38 CST 2022 org.apache.commons.collections4.map.CompositeMap,414
+Failed time : 22/12/04 11:34
+=================================================
+Project : collections_1	start : 22/12/04 11:34
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testRemoveFromComposited | 22/12/04 11:34
+Sun Dec 04 11:34:25 CST 2022 org.apache.commons.collections4.map.CompositeMap,414
+Failed time : 22/12/04 11:36
+=================================================
+Project : collections_1	start : 22/12/04 11:36
+Current failed test : org.apache.commons.collections4.queue.CircularFifoQueueTest::testGetIndex | 22/12/04 11:36
+Sun Dec 04 11:36:18 CST 2022 org.apache.commons.collections4.queue.CircularFifoQueue,269
+Failed time : 22/12/04 11:42
+=================================================
+Project : collections_1	start : 22/12/04 11:42
+Current failed test : org.apache.commons.collections4.queue.CircularFifoQueueTest::testGetIndex | 22/12/04 11:42
+Sun Dec 04 11:42:54 CST 2022 org.apache.commons.collections4.queue.CircularFifoQueue,269
+Failed time : 22/12/04 11:49
+=================================================
+Project : collections_1	start : 22/12/04 11:49
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionRemove | 22/12/04 11:49
+Sun Dec 04 11:49:44 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2025
+Failed time : 22/12/04 11:50
+=================================================
+Project : collections_1	start : 22/12/04 11:50
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionRemove | 22/12/04 11:50
+Sun Dec 04 11:50:16 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2025
+Failed time : 22/12/04 11:50
+=================================================
+Project : collections_1	start : 22/12/04 11:50
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::collect | 22/12/04 11:50
+Sun Dec 04 11:50:50 CST 2022 org.apache.commons.collections4.CollectionUtils,1252
+Failed time : 22/12/04 11:53
+=================================================
+Project : collections_1	start : 22/12/04 11:53
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::collect | 22/12/04 11:53
+Sun Dec 04 11:54:05 CST 2022 org.apache.commons.collections4.CollectionUtils,1252
+Failed time : 22/12/04 11:57
+=================================================
+Project : collections_1	start : 22/12/04 11:57
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMap | 22/12/04 11:57
+Sun Dec 04 11:57:21 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2264
+Failed time : 22/12/04 11:59
+=================================================
+Project : collections_1	start : 22/12/04 11:59
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMap | 22/12/04 11:59
+Sun Dec 04 11:59:14 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2264
+Failed time : 22/12/04 12:00
+=================================================
+Project : collections_1	start : 22/12/04 12:00
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::reverse | 22/12/04 12:00
+Sun Dec 04 12:01:08 CST 2022 org.apache.commons.collections4.CollectionUtils,1605
+Failed time : 22/12/04 12:03
+=================================================
+Project : collections_1	start : 22/12/04 12:03
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::reverse | 22/12/04 12:03
+Sun Dec 04 12:03:55 CST 2022 org.apache.commons.collections4.CollectionUtils,1605
+Failed time : 22/12/04 12:06
+=================================================
+Project : collections_1	start : 22/12/04 12:06
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:06
+Sun Dec 04 12:06:41 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,197
+Failed time : 22/12/04 12:08
+=================================================
+Project : collections_1	start : 22/12/04 12:08
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:08
+Sun Dec 04 12:09:04 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,197
+Failed time : 22/12/04 12:11
+=================================================
+Project : collections_1	start : 22/12/04 12:11
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testBug35258 | 22/12/04 12:11
+Sun Dec 04 12:11:29 CST 2022 org.apache.commons.collections4.list.TreeList,134
+Failed time : 22/12/04 12:12
+=================================================
+Project : collections_1	start : 22/12/04 12:12
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testBug35258 | 22/12/04 12:12
+Sun Dec 04 12:12:23 CST 2022 org.apache.commons.collections4.list.TreeList,134
+Failed time : 22/12/04 12:13
+=================================================
+Project : collections_1	start : 22/12/04 12:13
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testInternalState_CursorNextNextPreviousRemoveIndex1ByList | 22/12/04 12:13
+Sun Dec 04 12:13:20 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,505
+Failed time : 22/12/04 12:15
+=================================================
+Project : collections_1	start : 22/12/04 12:15
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testInternalState_CursorNextNextPreviousRemoveIndex1ByList | 22/12/04 12:15
+Sun Dec 04 12:15:52 CST 2022 org.apache.commons.collections4.list.CursorableLinkedList,505
+Failed time : 22/12/04 12:18
+=================================================
+Project : collections_1	start : 22/12/04 12:18
+Current failed test : org.apache.commons.collections4.iterators.SingletonIteratorTest::testEmptyIterator | 22/12/04 12:18
+Sun Dec 04 12:18:29 CST 2022 org.apache.commons.collections4.iterators.SingletonIterator,88
+Failed time : 22/12/04 12:18
+=================================================
+Project : collections_1	start : 22/12/04 12:18
+Current failed test : org.apache.commons.collections4.iterators.SingletonIteratorTest::testEmptyIterator | 22/12/04 12:18
+Sun Dec 04 12:18:40 CST 2022 org.apache.commons.collections4.iterators.SingletonIterator,88
+Failed time : 22/12/04 12:18
+=================================================
+Project : collections_1	start : 22/12/04 12:18
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testFailFastEntrySet | 22/12/04 12:18
+Sun Dec 04 12:18:52 CST 2022 org.apache.commons.collections4.map.CompositeMap,321
+Failed time : 22/12/04 12:19
+=================================================
+Project : collections_1	start : 22/12/04 12:19
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testFailFastEntrySet | 22/12/04 12:19
+Sun Dec 04 12:20:05 CST 2022 org.apache.commons.collections4.map.CompositeMap,321
+Failed time : 22/12/04 12:21
+=================================================
+Project : collections_1	start : 22/12/04 12:21
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testAdd | 22/12/04 12:21
+Sun Dec 04 12:21:20 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,556
+Failed time : 22/12/04 12:23
+=================================================
+Project : collections_1	start : 22/12/04 12:23
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testAdd | 22/12/04 12:23
+Sun Dec 04 12:23:33 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,556
+Failed time : 22/12/04 12:25
+=================================================
+Project : collections_1	start : 22/12/04 12:25
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:25
+Sun Dec 04 12:25:51 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,182
+Failed time : 22/12/04 12:26
+=================================================
+Project : collections_1	start : 22/12/04 12:26
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:26
+Sun Dec 04 12:26:19 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,182
+Failed time : 22/12/04 12:26
+=================================================
+Project : collections_1	start : 22/12/04 12:26
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:26
+Sun Dec 04 12:26:44 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,281
+Failed time : 22/12/04 12:26
+=================================================
+Project : collections_1	start : 22/12/04 12:26
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:26
+Sun Dec 04 12:26:51 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,281
+Failed time : 22/12/04 12:26
+=================================================
+Project : collections_1	start : 22/12/04 12:26
+Current failed test : org.apache.commons.collections4.set.ListOrderedSetTest::testRetainAll | 22/12/04 12:26
+Sun Dec 04 12:27:00 CST 2022 org.apache.commons.collections4.set.ListOrderedSet,84
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 12:35
+Sun Dec 04 12:35:08 CST 2022 org.apache.commons.collections4.iterators.ArrayIterator,119
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 12:35
+Sun Dec 04 12:35:14 CST 2022 org.apache.commons.collections4.iterators.ArrayIterator,119
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.BagUtilsTest::testTransformedSortedBag | 22/12/04 12:35
+Sun Dec 04 12:35:20 CST 2022 org.apache.commons.collections4.collection.TransformedCollection,110
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.BagUtilsTest::testTransformedSortedBag | 22/12/04 12:35
+Sun Dec 04 12:35:25 CST 2022 org.apache.commons.collections4.collection.TransformedCollection,110
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:35
+Sun Dec 04 12:35:32 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,282
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:35
+Sun Dec 04 12:35:37 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,282
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 12:35
+Sun Dec 04 12:35:43 CST 2022 Sun Dec 04 12:35:43 CST 2022 : org.apache.commons.collections4.map.MultiKeyMap,696=>Find no block
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/04 12:35
+Sun Dec 04 12:35:49 CST 2022 Sun Dec 04 12:35:49 CST 2022 : org.apache.commons.collections4.map.MultiKeyMap,696=>Find no block
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 12:35
+Sun Dec 04 12:35:55 CST 2022 org.apache.commons.collections4.CollectionUtils,1130
+Failed time : 22/12/04 12:35
+=================================================
+Project : collections_1	start : 22/12/04 12:35
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 12:35
+Sun Dec 04 12:36:00 CST 2022 org.apache.commons.collections4.CollectionUtils,1130
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 12:36
+Sun Dec 04 12:36:07 CST 2022 Sun Dec 04 12:36:07 CST 2022 : org.apache.commons.collections4.map.AbstractHashedMap,1119=>Find no block
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.map.AbstractIterableMapTest$InnerTestMapIterator::testRemove | 22/12/04 12:36
+Sun Dec 04 12:36:12 CST 2022 Sun Dec 04 12:36:12 CST 2022 : org.apache.commons.collections4.map.AbstractHashedMap,1119=>Find no block
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.iterators.CollatingIteratorTest::testIterateFibEvenOdd | 22/12/04 12:36
+Sun Dec 04 12:36:19 CST 2022 org.apache.commons.collections4.iterators.CollatingIterator,248
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.iterators.CollatingIteratorTest::testIterateFibEvenOdd | 22/12/04 12:36
+Sun Dec 04 12:36:24 CST 2022 org.apache.commons.collections4.iterators.CollatingIterator,248
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::cardinalityOfNull | 22/12/04 12:36
+Sun Dec 04 12:36:32 CST 2022 org.apache.commons.collections4.CollectionUtils,629
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::cardinalityOfNull | 22/12/04 12:36
+Sun Dec 04 12:36:38 CST 2022 org.apache.commons.collections4.CollectionUtils,629
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 12:36
+Sun Dec 04 12:36:44 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest::testSerialisation2 | 22/12/04 12:36
+Sun Dec 04 12:36:50 CST 2022 org.apache.commons.collections4.map.Flat3Map,225
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testCollectionRetainAll | 22/12/04 12:36
+Sun Dec 04 12:36:57 CST 2022 org.apache.commons.collections4.list.TreeList,621
+Failed time : 22/12/04 12:36
+=================================================
+Project : collections_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testCollectionRetainAll | 22/12/04 12:36
+Sun Dec 04 12:37:03 CST 2022 org.apache.commons.collections4.list.TreeList,621
+Failed time : 22/12/04 12:37
+=================================================
+Project : collections_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.collections4.iterators.SingletonIteratorTest::testEmptyIterator | 22/12/04 12:37
+Sun Dec 04 12:37:10 CST 2022 org.apache.commons.collections4.iterators.SingletonIterator,88
+Failed time : 22/12/04 12:37
+=================================================
+Project : collections_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.collections4.iterators.SingletonIteratorTest::testEmptyIterator | 22/12/04 12:37
+Sun Dec 04 12:37:16 CST 2022 org.apache.commons.collections4.iterators.SingletonIterator,88
+Failed time : 22/12/04 12:37
+=================================================
+Project : collections_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:37
+Sun Dec 04 12:37:23 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,281
+Failed time : 22/12/04 12:37
+=================================================
+Project : collections_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.collections4.comparators.ComparatorChainTest::testComparatorChainOnMinvaluedCompatator | 22/12/04 12:37
+Sun Dec 04 12:37:29 CST 2022 org.apache.commons.collections4.comparators.ComparatorChain,281
+Failed time : 22/12/04 12:37
+=================================================
+Project : collections_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.collections4.set.ListOrderedSetTest::testRetainAll | 22/12/04 12:37
+Sun Dec 04 12:37:38 CST 2022 org.apache.commons.collections4.set.ListOrderedSet,84
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(set.size()>=0&&list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.398842893834464 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>0,0]
+if(transformer!=null&&list!=null&&list.size()>0){
+ @SuppressWarnings("unchecked") final E[] values=(E[])list.toArray();
+list.clear();
+for(E value : values){
+decorated.decorated().add(transformer.transform(value));
+}
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0||list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0&&list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(set.size()>=0&&set.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.24499673998831 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>0,0]
+if(transformer!=null&&set!=null&&set.size()>0){
+ @SuppressWarnings("unchecked") final E[] values=(E[])set.toArray();
+set.clear();
+for(E value : values){
+decorated.decorated().add(transformer.transform(value));
+}
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0||list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0&&set.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:38
+----------------------------------------
+Success time : 22/12/04 12:38
+=================================================
+Project : collections_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.collections4.set.ListOrderedSetTest::testRetainAll | 22/12/04 12:38
+Sun Dec 04 12:38:41 CST 2022 org.apache.commons.collections4.set.ListOrderedSet,84
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(set.size()>=0&&list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.398842893834464 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>0,0]
+if(transformer!=null&&list!=null&&list.size()>0){
+ @SuppressWarnings("unchecked") final E[] values=(E[])list.toArray();
+list.clear();
+for(E value : values){
+decorated.decorated().add(transformer.transform(value));
+}
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0||list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0&&list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(set.size()>=0&&set.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.24499673998831 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>0,0]
+if(transformer!=null&&set!=null&&set.size()>0){
+ @SuppressWarnings("unchecked") final E[] values=(E[])set.toArray();
+set.clear();
+for(E value : values){
+decorated.decorated().add(transformer.transform(value));
+}
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0||list.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/set/ListOrderedSet.java=>84,86]
+if(set.size()>=0&&set.size()>0){
+throw new IllegalArgumentException("Set and List must be empty");
+}
+
+Time : 22/12/04 12:39
+----------------------------------------
+Success time : 22/12/04 12:39
+=================================================
+Project : collections_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testIterationOrder | 22/12/04 12:39
+Sun Dec 04 12:39:43 CST 2022 org.apache.commons.collections4.list.TreeList,381
+Failed time : 22/12/04 12:41
+=================================================
+Project : collections_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testIterationOrder | 22/12/04 12:41
+Sun Dec 04 12:41:44 CST 2022 org.apache.commons.collections4.list.TreeList,381
+Failed time : 22/12/04 12:43
+=================================================
+Project : collections_1	start : 22/12/04 12:43
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionRemove | 22/12/04 12:43
+Sun Dec 04 12:43:46 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,632
+Failed time : 22/12/04 12:44
+=================================================
+Project : collections_1	start : 22/12/04 12:44
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionRemove | 22/12/04 12:44
+Sun Dec 04 12:44:43 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,632
+Failed time : 22/12/04 12:45
+=================================================
+Project : collections_1	start : 22/12/04 12:45
+Current failed test : org.apache.commons.collections4.comparators.FixedOrderComparatorTest::testUnknownObjectBehavior | 22/12/04 12:45
+Sun Dec 04 12:45:40 CST 2022 org.apache.commons.collections4.comparators.FixedOrderComparator,236
+Failed time : 22/12/04 12:45
+=================================================
+Project : collections_1	start : 22/12/04 12:45
+Current failed test : org.apache.commons.collections4.comparators.FixedOrderComparatorTest::testUnknownObjectBehavior | 22/12/04 12:45
+Sun Dec 04 12:45:49 CST 2022 org.apache.commons.collections4.comparators.FixedOrderComparator,236
+Failed time : 22/12/04 12:45
+=================================================
+Project : collections_1	start : 22/12/04 12:45
+Current failed test : org.apache.commons.collections4.sequence.SequencesComparatorTest::testExecution | 22/12/04 12:45
+Sun Dec 04 12:45:58 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,178
+Failed time : 22/12/04 12:46
+=================================================
+Project : collections_1	start : 22/12/04 12:46
+Current failed test : org.apache.commons.collections4.sequence.SequencesComparatorTest::testExecution | 22/12/04 12:46
+Sun Dec 04 12:46:29 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,178
+Failed time : 22/12/04 12:46
+=================================================
+Project : collections_1	start : 22/12/04 12:46
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:46
+Sun Dec 04 12:47:01 CST 2022 Sun Dec 04 12:47:01 CST 2022 : org.apache.commons.collections4.sequence.SequencesComparator,259=>Find no block
+Failed time : 22/12/04 12:47
+=================================================
+Project : collections_1	start : 22/12/04 12:47
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/04 12:47
+Sun Dec 04 12:47:06 CST 2022 Sun Dec 04 12:47:06 CST 2022 : org.apache.commons.collections4.sequence.SequencesComparator,259=>Find no block
+Failed time : 22/12/04 12:47
+=================================================
+Project : collections_1	start : 22/12/04 12:47
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testNextKey | 22/12/04 12:47
+Sun Dec 04 12:47:13 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,615
+Failed time : 22/12/04 12:47
+=================================================
+Project : collections_1	start : 22/12/04 12:47
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testNextKey | 22/12/04 12:47
+Sun Dec 04 12:48:03 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,615
+Failed time : 22/12/04 12:48
+=================================================
+Project : collections_1	start : 22/12/04 12:48
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestHeadMap::testLastKey | 22/12/04 12:48
+Sun Dec 04 12:48:53 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2049
+Failed time : 22/12/04 12:48
+=================================================
+Project : collections_1	start : 22/12/04 12:48
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestHeadMap::testLastKey | 22/12/04 12:48
+Sun Dec 04 12:48:59 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2049
+Failed time : 22/12/04 12:49
+=================================================
+Project : collections_1	start : 22/12/04 12:49
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 12:49
+Sun Dec 04 12:49:05 CST 2022 org.apache.commons.collections4.iterators.ArrayListIterator,145
+Failed time : 22/12/04 12:49
+=================================================
+Project : collections_1	start : 22/12/04 12:49
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 12:49
+Sun Dec 04 12:49:12 CST 2022 org.apache.commons.collections4.iterators.ArrayListIterator,145
+Failed time : 22/12/04 12:49
+=================================================
+Project : collections_1	start : 22/12/04 12:49
+Current failed test : org.apache.commons.collections4.bag.CollectionSortedBagTest::testCollectionRemove | 22/12/04 12:49
+Sun Dec 04 12:49:18 CST 2022 org.apache.commons.collections4.bag.CollectionSortedBag,120
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return remove(object,1);
+
+Time : 22/12/04 12:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>0,0]
+return remove(object,1);
+
+Time : 22/12/04 12:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>120,120]
+return remove(object,0);
+
+Time : 22/12/04 12:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>120,120]
+return remove(object,1);
+
+Time : 22/12/04 12:49
+----------------------------------------
+Success time : 22/12/04 12:49
+=================================================
+Project : collections_1	start : 22/12/04 12:49
+Current failed test : org.apache.commons.collections4.bag.CollectionSortedBagTest::testCollectionRemove | 22/12/04 12:49
+Sun Dec 04 12:49:45 CST 2022 org.apache.commons.collections4.bag.CollectionSortedBag,120
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return remove(object,1);
+
+Time : 22/12/04 12:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>0,0]
+return remove(object,1);
+
+Time : 22/12/04 12:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>120,120]
+return remove(object,0);
+
+Time : 22/12/04 12:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/CollectionSortedBag.java=>120,120]
+return remove(object,1);
+
+Time : 22/12/04 12:50
+----------------------------------------
+Success time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 12:50
+Sun Dec 04 12:50:13 CST 2022 Sun Dec 04 12:50:13 CST 2022 : org.apache.commons.collections4.functors.InstantiateFactory,63=>Find no block
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 12:50
+Sun Dec 04 12:50:19 CST 2022 Sun Dec 04 12:50:19 CST 2022 : org.apache.commons.collections4.functors.InstantiateFactory,63=>Find no block
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.ClosureUtilsTest::testChainedClosure | 22/12/04 12:50
+Sun Dec 04 12:50:25 CST 2022 org.apache.commons.collections4.functors.FunctorUtils,139
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.ClosureUtilsTest::testChainedClosure | 22/12/04 12:50
+Sun Dec 04 12:50:31 CST 2022 org.apache.commons.collections4.functors.FunctorUtils,139
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.map.ReferenceIdentityMapTest::testBasics | 22/12/04 12:50
+Sun Dec 04 12:50:38 CST 2022 org.apache.commons.collections4.map.AbstractReferenceMap,1056
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.map.ReferenceIdentityMapTest::testBasics | 22/12/04 12:50
+Sun Dec 04 12:50:44 CST 2022 org.apache.commons.collections4.map.AbstractReferenceMap,1056
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testBidiRemoveByKeySet | 22/12/04 12:50
+Sun Dec 04 12:50:50 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,2124
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testBidiRemoveByKeySet | 22/12/04 12:50
+Sun Dec 04 12:50:56 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,2124
+Failed time : 22/12/04 12:50
+=================================================
+Project : collections_1	start : 22/12/04 12:50
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMap | 22/12/04 12:50
+Sun Dec 04 12:51:03 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2102
+Failed time : 22/12/04 12:51
+=================================================
+Project : collections_1	start : 22/12/04 12:51
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMap | 22/12/04 12:51
+Sun Dec 04 12:51:21 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,2102
+Failed time : 22/12/04 12:51
+=================================================
+Project : collections_1	start : 22/12/04 12:51
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testCollectionAddAll | 22/12/04 12:51
+Sun Dec 04 12:51:40 CST 2022 org.apache.commons.collections4.list.TreeList,894
+Failed time : 22/12/04 12:52
+=================================================
+Project : collections_1	start : 22/12/04 12:52
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testCollectionAddAll | 22/12/04 12:52
+Sun Dec 04 12:52:10 CST 2022 org.apache.commons.collections4.list.TreeList,894
+Failed time : 22/12/04 12:52
+=================================================
+Project : collections_1	start : 22/12/04 12:52
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testContainsAll | 22/12/04 12:52
+Sun Dec 04 12:52:41 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,155
+Failed time : 22/12/04 12:52
+=================================================
+Project : collections_1	start : 22/12/04 12:52
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testContainsAll | 22/12/04 12:52
+Sun Dec 04 12:52:47 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,155
+Failed time : 22/12/04 12:52
+=================================================
+Project : collections_1	start : 22/12/04 12:52
+Current failed test : org.apache.commons.collections4.TransformerUtilsTest::testInvokerTransformer | 22/12/04 12:52
+Sun Dec 04 12:52:54 CST 2022 Sun Dec 04 12:52:54 CST 2022 : org.apache.commons.collections4.functors.InvokerTransformer,77=>Find no block
+Failed time : 22/12/04 12:52
+=================================================
+Project : collections_1	start : 22/12/04 12:52
+Current failed test : org.apache.commons.collections4.TransformerUtilsTest::testInvokerTransformer | 22/12/04 12:52
+Sun Dec 04 12:53:00 CST 2022 Sun Dec 04 12:53:00 CST 2022 : org.apache.commons.collections4.functors.InvokerTransformer,77=>Find no block
+Failed time : 22/12/04 12:53
+=================================================
+Project : collections_1	start : 22/12/04 12:53
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testListLastIndexOf | 22/12/04 12:53
+Sun Dec 04 12:53:07 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,911
+Failed time : 22/12/04 12:53
+=================================================
+Project : collections_1	start : 22/12/04 12:53
+Current failed test : org.apache.commons.collections4.list.AbstractListTest$BulkTestSubList::testListLastIndexOf | 22/12/04 12:53
+Sun Dec 04 12:53:13 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,911
+Failed time : 22/12/04 12:53
+=================================================
+Project : collections_1	start : 22/12/04 12:53
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestHeadMap::testMapPutAll | 22/12/04 12:53
+Sun Dec 04 12:53:21 CST 2022 org.apache.commons.collections4.comparators.ReverseComparator,113
+Failed time : 22/12/04 12:53
+=================================================
+Project : collections_1	start : 22/12/04 12:53
+Current failed test : org.apache.commons.collections4.map.AbstractSortedMapTest$TestHeadMap::testMapPutAll | 22/12/04 12:53
+Sun Dec 04 12:53:28 CST 2022 org.apache.commons.collections4.comparators.ReverseComparator,113
+Failed time : 22/12/04 12:53
+=================================================
+Project : collections_1	start : 22/12/04 12:53
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubListAddEnd | 22/12/04 12:53
+Sun Dec 04 12:53:37 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,979
+Failed time : 22/12/04 12:56
+=================================================
+Project : collections_1	start : 22/12/04 12:56
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testSubListAddEnd | 22/12/04 12:56
+Sun Dec 04 12:56:12 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,979
+Failed time : 22/12/04 12:58
+=================================================
+Project : collections_1	start : 22/12/04 12:58
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testRemove | 22/12/04 12:58
+Sun Dec 04 12:58:41 CST 2022 org.apache.commons.collections4.list.TreeList,504
+Failed time : 22/12/04 12:58
+=================================================
+Project : collections_1	start : 22/12/04 12:58
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testRemove | 22/12/04 12:58
+Sun Dec 04 12:58:47 CST 2022 org.apache.commons.collections4.list.TreeList,504
+Failed time : 22/12/04 12:58
+=================================================
+Project : collections_1	start : 22/12/04 12:58
+Current failed test : org.apache.commons.collections4.collection.CompositeCollectionTest::testAddAllToCollection | 22/12/04 12:58
+Sun Dec 04 12:58:54 CST 2022 org.apache.commons.collections4.iterators.IteratorChain,223
+Failed time : 22/12/04 12:59
+=================================================
+Project : collections_1	start : 22/12/04 12:59
+Current failed test : org.apache.commons.collections4.collection.CompositeCollectionTest::testAddAllToCollection | 22/12/04 12:59
+Sun Dec 04 12:59:28 CST 2022 org.apache.commons.collections4.iterators.IteratorChain,223
+Failed time : 22/12/04 12:59
+=================================================
+Project : collections_1	start : 22/12/04 12:59
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionContainsAll | 22/12/04 12:59
+Sun Dec 04 13:00:02 CST 2022 org.apache.commons.collections4.map.StaticBucketMap,464
+Failed time : 22/12/04 13:00
+=================================================
+Project : collections_1	start : 22/12/04 13:00
+Current failed test : org.apache.commons.collections4.map.AbstractMapTest$TestMapEntrySet::testCollectionContainsAll | 22/12/04 13:00
+Sun Dec 04 13:00:23 CST 2022 org.apache.commons.collections4.map.StaticBucketMap,464
+Failed time : 22/12/04 13:00
+=================================================
+Project : collections_1	start : 22/12/04 13:00
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 13:00
+Sun Dec 04 13:00:44 CST 2022 org.apache.commons.collections4.CollectionUtils,1126
+Failed time : 22/12/04 13:00
+=================================================
+Project : collections_1	start : 22/12/04 13:00
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::partition | 22/12/04 13:00
+Sun Dec 04 13:00:51 CST 2022 org.apache.commons.collections4.CollectionUtils,1126
+Failed time : 22/12/04 13:00
+=================================================
+Project : collections_1	start : 22/12/04 13:00
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 13:00
+Sun Dec 04 13:00:57 CST 2022 org.apache.commons.collections4.iterators.ObjectArrayListIterator,137
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>0,0]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>137,137]
+return this.index+getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>137,137]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+Success time : 22/12/04 13:01
+=================================================
+Project : collections_1	start : 22/12/04 13:01
+Current failed test : org.apache.commons.collections4.IteratorUtilsTest::testArrayListIterator | 22/12/04 13:01
+Sun Dec 04 13:01:21 CST 2022 org.apache.commons.collections4.iterators.ObjectArrayListIterator,137
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>0,0]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>137,137]
+return this.index+getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/iterators/ObjectArrayListIterator.java=>137,137]
+return this.index-getStartIndex();
+
+Time : 22/12/04 13:01
+----------------------------------------
+Success time : 22/12/04 13:01
+=================================================
+Project : collections_1	start : 22/12/04 13:01
+Current failed test : org.apache.commons.collections4.multimap.MultiValuedHashMapTest::testPutAll_KeyIterable | 22/12/04 13:01
+Sun Dec 04 13:01:46 CST 2022 org.apache.commons.collections4.multimap.AbstractMultiValuedMap,366
+Failed time : 22/12/04 13:04
+=================================================
+Project : collections_1	start : 22/12/04 13:04
+Current failed test : org.apache.commons.collections4.multimap.MultiValuedHashMapTest::testPutAll_KeyIterable | 22/12/04 13:04
+Sun Dec 04 13:04:36 CST 2022 org.apache.commons.collections4.multimap.AbstractMultiValuedMap,366
+Failed time : 22/12/04 13:07
+=================================================
+Project : collections_1	start : 22/12/04 13:07
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testEmptyBagCompatibility | 22/12/04 13:07
+Sun Dec 04 13:07:26 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,546
+Failed time : 22/12/04 13:07
+=================================================
+Project : collections_1	start : 22/12/04 13:07
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testEmptyBagCompatibility | 22/12/04 13:07
+Sun Dec 04 13:07:32 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,546
+Failed time : 22/12/04 13:07
+=================================================
+Project : collections_1	start : 22/12/04 13:07
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testRemove | 22/12/04 13:07
+Sun Dec 04 13:07:39 CST 2022 org.apache.commons.collections4.list.TreeList,519
+Failed time : 22/12/04 13:07
+=================================================
+Project : collections_1	start : 22/12/04 13:07
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testRemove | 22/12/04 13:07
+Sun Dec 04 13:07:45 CST 2022 org.apache.commons.collections4.list.TreeList,519
+Failed time : 22/12/04 13:07
+=================================================
+Project : collections_1	start : 22/12/04 13:07
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testEqualsAndHashCode | 22/12/04 13:07
+Sun Dec 04 13:07:51 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,378
+Failed time : 22/12/04 13:08
+=================================================
+Project : collections_1	start : 22/12/04 13:08
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testEqualsAndHashCode | 22/12/04 13:08
+Sun Dec 04 13:08:08 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,378
+Failed time : 22/12/04 13:08
+=================================================
+Project : collections_1	start : 22/12/04 13:08
+Current failed test : org.apache.commons.collections4.iterators.SingletonListIteratorTest::testRemoveThenSet | 22/12/04 13:08
+Sun Dec 04 13:08:26 CST 2022 org.apache.commons.collections4.iterators.SingletonListIterator,158
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+if(!nextCalled){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=true;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+nextCalled=true;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:09
+----------------------------------------
+Failed time : 22/12/04 13:10
+=================================================
+Project : collections_1	start : 22/12/04 13:10
+Current failed test : org.apache.commons.collections4.iterators.SingletonListIteratorTest::testRemoveThenSet | 22/12/04 13:10
+Sun Dec 04 13:10:09 CST 2022 org.apache.commons.collections4.iterators.SingletonListIterator,158
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+if(!nextCalled){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=true;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+nextCalled=false;
+nextCalled=true;
+if(!beforeFirst){
+throw new IllegalStateException();
+}
+
+Time : 22/12/04 13:11
+----------------------------------------
+Failed time : 22/12/04 13:11
+=================================================
+Project : collections_1	start : 22/12/04 13:11
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::testSizeIsEmpty_Iterator | 22/12/04 13:11
+Sun Dec 04 13:11:53 CST 2022 org.apache.commons.collections4.CollectionUtils,1558
+Failed time : 22/12/04 13:12
+=================================================
+Project : collections_1	start : 22/12/04 13:12
+Current failed test : org.apache.commons.collections4.CollectionUtilsTest::testSizeIsEmpty_Iterator | 22/12/04 13:12
+Sun Dec 04 13:12:06 CST 2022 org.apache.commons.collections4.CollectionUtils,1558
+Failed time : 22/12/04 13:12
+=================================================
+Project : collections_1	start : 22/12/04 13:12
+Current failed test : org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIteratorTest::testEmptyMapIterator | 22/12/04 13:12
+Sun Dec 04 13:12:20 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,758
+Failed time : 22/12/04 13:12
+=================================================
+Project : collections_1	start : 22/12/04 13:12
+Current failed test : org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIteratorTest::testEmptyMapIterator | 22/12/04 13:12
+Sun Dec 04 13:12:26 CST 2022 org.apache.commons.collections4.map.ListOrderedMap,758
+Failed time : 22/12/04 13:12
+=================================================
+Project : collections_1	start : 22/12/04 13:12
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testPreviousKey | 22/12/04 13:12
+Sun Dec 04 13:12:33 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,635
+Failed time : 22/12/04 13:13
+=================================================
+Project : collections_1	start : 22/12/04 13:13
+Current failed test : org.apache.commons.collections4.bidimap.TreeBidiMapTest::testPreviousKey | 22/12/04 13:13
+Sun Dec 04 13:13:23 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,635
+Failed time : 22/12/04 13:14
+=================================================
+Project : collections_1	start : 22/12/04 13:14
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testEntrySetContains3 | 22/12/04 13:14
+Sun Dec 04 13:14:14 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,1395
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!(o instanceof Map.Entry)){
+return false;
+}
+ final TrieEntry<K,V> candidate=getEntry(((Map.Entry<?,?>)o).getKey());
+return size!=size();
+
+Time : 22/12/04 13:14
+----------------------------------------
+Failed time : 22/12/04 13:15
+=================================================
+Project : collections_1	start : 22/12/04 13:15
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testEntrySetContains3 | 22/12/04 13:15
+Sun Dec 04 13:15:18 CST 2022 org.apache.commons.collections4.trie.AbstractPatriciaTrie,1395
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!(o instanceof Map.Entry)){
+return false;
+}
+ final TrieEntry<K,V> candidate=getEntry(((Map.Entry<?,?>)o).getKey());
+return size!=size();
+
+Time : 22/12/04 13:15
+----------------------------------------
+Failed time : 22/12/04 13:16
+=================================================
+Project : collections_1	start : 22/12/04 13:16
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testRemoveComposited | 22/12/04 13:16
+Sun Dec 04 13:16:21 CST 2022 org.apache.commons.collections4.map.CompositeMap,162
+Failed time : 22/12/04 13:16
+=================================================
+Project : collections_1	start : 22/12/04 13:16
+Current failed test : org.apache.commons.collections4.map.CompositeMapTest::testRemoveComposited | 22/12/04 13:16
+Sun Dec 04 13:16:47 CST 2022 org.apache.commons.collections4.map.CompositeMap,162
+Failed time : 22/12/04 13:17
+=================================================
+Project : collections_1	start : 22/12/04 13:17
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCollectionToString | 22/12/04 13:17
+Sun Dec 04 13:17:14 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,388
+Failed time : 22/12/04 13:18
+=================================================
+Project : collections_1	start : 22/12/04 13:18
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testCollectionToString | 22/12/04 13:18
+Sun Dec 04 13:18:08 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,388
+Failed time : 22/12/04 13:18
+=================================================
+Project : collections_1	start : 22/12/04 13:18
+Current failed test : org.apache.commons.collections4.collection.IndexedCollectionTest::testCollectionContainsAll | 22/12/04 13:18
+Sun Dec 04 13:19:02 CST 2022 org.apache.commons.collections4.collection.IndexedCollection,165
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>0,0]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>160,165]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return false;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>160,165]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+Success time : 22/12/04 13:19
+=================================================
+Project : collections_1	start : 22/12/04 13:19
+Current failed test : org.apache.commons.collections4.collection.IndexedCollectionTest::testCollectionContainsAll | 22/12/04 13:19
+Sun Dec 04 13:19:30 CST 2022 org.apache.commons.collections4.collection.IndexedCollection,165
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>0,0]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>160,165]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return false;
+
+Time : 22/12/04 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java=>160,165]
+for(Object o : coll){
+if(!contains(o)){
+return false;
+}
+}
+return true;
+
+Time : 22/12/04 13:19
+----------------------------------------
+Success time : 22/12/04 13:19
+=================================================
+Project : collections_1	start : 22/12/04 13:19
+Current failed test : org.apache.commons.collections4.bidimap.AbstractBidiMapTest$TestBidiMapEntrySet::testCollectionIteratorRemove | 22/12/04 13:19
+Sun Dec 04 13:19:58 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,1018
+Failed time : 22/12/04 13:21
+=================================================
+Project : collections_1	start : 22/12/04 13:21
+Current failed test : org.apache.commons.collections4.bidimap.AbstractBidiMapTest$TestBidiMapEntrySet::testCollectionIteratorRemove | 22/12/04 13:21
+Sun Dec 04 13:21:38 CST 2022 org.apache.commons.collections4.bidimap.TreeBidiMap,1018
+Failed time : 22/12/04 13:23
+=================================================
+Project : collections_1	start : 22/12/04 13:23
+Current failed test : org.apache.commons.collections4.collection.IndexedCollectionTest::testReindexUpdatesIndexWhenDecoratedCollectionIsModifiedSeparately | 22/12/04 13:23
+Sun Dec 04 13:23:19 CST 2022 org.apache.commons.collections4.collection.IndexedCollection,182
+Failed time : 22/12/04 13:23
+=================================================
+Project : collections_1	start : 22/12/04 13:23
+Current failed test : org.apache.commons.collections4.collection.IndexedCollectionTest::testReindexUpdatesIndexWhenDecoratedCollectionIsModifiedSeparately | 22/12/04 13:23
+Sun Dec 04 13:23:51 CST 2022 org.apache.commons.collections4.collection.IndexedCollection,182
+Failed time : 22/12/04 13:24
+=================================================
+Project : collections_1	start : 22/12/04 13:24
+Current failed test : org.apache.commons.collections4.TransformerUtilsTest::testInstantiateTransformerNull | 22/12/04 13:24
+Sun Dec 04 13:24:23 CST 2022 org.apache.commons.collections4.functors.InstantiateTransformer,67
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.298329590301172 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>0,0]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>67,71]
+if((false)||((paramTypes!=null)&&(args==null))){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>67,71]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:24
+----------------------------------------
+Success time : 22/12/04 13:24
+=================================================
+Project : collections_1	start : 22/12/04 13:24
+Current failed test : org.apache.commons.collections4.TransformerUtilsTest::testInstantiateTransformerNull | 22/12/04 13:24
+Sun Dec 04 13:25:00 CST 2022 org.apache.commons.collections4.functors.InstantiateTransformer,67
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.298329590301172 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>0,0]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>67,71]
+if((false)||((paramTypes!=null)&&(args==null))){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/functors/InstantiateTransformer.java=>67,71]
+if(paramTypes==null&&args!=null||paramTypes!=null&&args==null||paramTypes!=null&&args!=null&&paramTypes.length!=args.length){
+throw new IllegalArgumentException("Parameter types must match the arguments");
+}
+
+Time : 22/12/04 13:25
+----------------------------------------
+Success time : 22/12/04 13:25
+=================================================
+Project : collections_1	start : 22/12/04 13:25
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest$TestFlatMapIterator::testEmptyIterator | 22/12/04 13:25
+Sun Dec 04 13:25:38 CST 2022 org.apache.commons.collections4.map.Flat3Map,990
+Failed time : 22/12/04 13:25
+=================================================
+Project : collections_1	start : 22/12/04 13:25
+Current failed test : org.apache.commons.collections4.map.Flat3MapTest$TestFlatMapIterator::testEmptyIterator | 22/12/04 13:25
+Sun Dec 04 13:25:55 CST 2022 org.apache.commons.collections4.map.Flat3Map,990
+Failed time : 22/12/04 13:26
+=================================================
+Project : collections_1	start : 22/12/04 13:26
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testIndexOf | 22/12/04 13:26
+Sun Dec 04 13:26:12 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,133
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.385214015087216 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>0,0]
+checkModCount();
+if(!hasPrevious()){
+throw new NoSuchElementException("Already at start of list.");
+}
+next=next.previous;
+ final E value=next.getValue();
+current=next;
+nextIndex--;
+return value;
+
+Time : 22/12/04 13:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:26
+----------------------------------------
+Success time : 22/12/04 13:29
+=================================================
+Project : collections_1	start : 22/12/04 13:29
+Current failed test : org.apache.commons.collections4.list.CursorableLinkedListTest::testIndexOf | 22/12/04 13:29
+Sun Dec 04 13:29:51 CST 2022 org.apache.commons.collections4.list.AbstractLinkedList,133
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.385214015087216 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>0,0]
+checkModCount();
+if(!hasPrevious()){
+throw new NoSuchElementException("Already at start of list.");
+}
+next=next.previous;
+ final E value=next.getValue();
+current=next;
+nextIndex--;
+return value;
+
+Time : 22/12/04 13:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java=>134,139]
+i--;
+for(Node<E> node=header.next;node!=header;node=node.next){
+if(isEqualValue(node.getValue(),value)){
+return i;
+}
+i++;
+}
+
+Time : 22/12/04 13:30
+----------------------------------------
+Success time : 22/12/04 13:33
+=================================================
+Project : collections_1	start : 22/12/04 13:33
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testListGetByIndexBoundsChecking | 22/12/04 13:33
+Sun Dec 04 13:33:31 CST 2022 org.apache.commons.collections4.list.TreeList,101
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+size--;
+checkInterval(index,0,size()/1);
+return root.get(index).getValue();
+
+Time : 22/12/04 13:33
+----------------------------------------
+Failed time : 22/12/04 13:35
+=================================================
+Project : collections_1	start : 22/12/04 13:35
+Current failed test : org.apache.commons.collections4.list.TreeListTest::testListGetByIndexBoundsChecking | 22/12/04 13:35
+Sun Dec 04 13:35:13 CST 2022 org.apache.commons.collections4.list.TreeList,101
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+size--;
+checkInterval(index,0,size()/1);
+return root.get(index).getValue();
+
+Time : 22/12/04 13:35
+----------------------------------------
+Failed time : 22/12/04 13:36
+=================================================
+Project : collections_1	start : 22/12/04 13:36
+Current failed test : org.apache.commons.collections4.keyvalue.DefaultKeyValueTest::testEqualsAndHashCode | 22/12/04 13:36
+Sun Dec 04 13:36:54 CST 2022 org.apache.commons.collections4.keyvalue.DefaultKeyValue,130
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue==false){
+return false;
+}
+
+Time : 22/12/04 13:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map.Entry==false){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==false){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof Map.Entry==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map.Entry==false){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof Map.Entry==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof Map==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map==false){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof Map==true){
+return false;
+}
+
+Time : 22/12/04 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue==true){
+return true;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.943879807448539 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj==this){
+return true;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return true;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue!=true){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1446583712203042 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj!=null){
+hashCode+=obj.hashCode();
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue!=true){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+Success time : 22/12/04 13:38
+=================================================
+Project : collections_1	start : 22/12/04 13:38
+Current failed test : org.apache.commons.collections4.keyvalue.DefaultKeyValueTest::testEqualsAndHashCode | 22/12/04 13:38
+Sun Dec 04 13:38:40 CST 2022 org.apache.commons.collections4.keyvalue.DefaultKeyValue,130
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue==false){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map.Entry==false){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==false){
+return false;
+}
+
+Time : 22/12/04 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof Map.Entry==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map.Entry==false){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof Map.Entry==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof Map==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj instanceof Map==false){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof Map==true){
+return false;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue==true){
+return true;
+}
+
+Time : 22/12/04 13:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.943879807448539 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj==this){
+return true;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return true;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(obj instanceof DefaultKeyValue!=true){
+return false;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1446583712203042 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>0,0]
+if(obj!=null){
+hashCode+=obj.hashCode();
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue==true){
+return false;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java=>130,132]
+if(obj instanceof DefaultKeyValue!=true){
+return false;
+}
+
+Time : 22/12/04 13:40
+----------------------------------------
+Success time : 22/12/04 13:40
+=================================================
+Project : collections_1	start : 22/12/04 13:40
+Current failed test : org.apache.commons.collections4.iterators.LoopingListIteratorTest::testAdd | 22/12/04 13:40
+Sun Dec 04 13:40:27 CST 2022 org.apache.commons.collections4.iterators.LoopingListIterator,144
+Failed time : 22/12/04 13:41
+=================================================
+Project : collections_1	start : 22/12/04 13:41
+Current failed test : org.apache.commons.collections4.iterators.LoopingListIteratorTest::testAdd | 22/12/04 13:41
+Sun Dec 04 13:41:08 CST 2022 org.apache.commons.collections4.iterators.LoopingListIterator,144
+Failed time : 22/12/04 13:41
+=================================================
+Project : collections_1	start : 22/12/04 13:41
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testCollectionIteratorRemove | 22/12/04 13:41
+Sun Dec 04 13:41:50 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,209
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7490755590960338 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+last=iterator.next();
+canRemove=true;
+return last.getKey();
+
+Time : 22/12/04 13:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/12/04 13:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1638997446389996 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+if(hasNext==true){
+throw new NoSuchElementException(AbstractHashedMap.NO_PREVIOUS_ENTRY);
+}
+hasNext=true;
+return parent.getKey();
+
+Time : 22/12/04 13:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/12/04 13:46
+----------------------------------------
+Success time : 22/12/04 13:50
+=================================================
+Project : collections_1	start : 22/12/04 13:50
+Current failed test : org.apache.commons.collections4.bag.CollectionBagTest::testCollectionIteratorRemove | 22/12/04 13:50
+Sun Dec 04 13:50:22 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,209
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:52
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7490755590960338 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+last=iterator.next();
+canRemove=true;
+return last.getKey();
+
+Time : 22/12/04 13:52
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:52
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=true;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:52
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/12/04 13:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1638997446389996 : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>0,0]
+if(hasNext==true){
+throw new NoSuchElementException(AbstractHashedMap.NO_PREVIOUS_ENTRY);
+}
+hasNext=true;
+return parent.getKey();
+
+Time : 22/12/04 13:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+return current.getKey();
+
+Time : 22/12/04 13:55
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/collections/collections_1_buggy/src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java=>202,211]
+if(parent.modCount!=mods){
+throw new ConcurrentModificationException();
+}
+if(itemCount==0){
+current=entryIterator.next();
+itemCount=current.getValue().value;
+}
+canRemove=false;
+itemCount--;
+canRemove=true;
+return current.getKey();
+
+Time : 22/12/04 13:55
+----------------------------------------
+Success time : 22/12/04 13:58
+=================================================
+Project : collections_1	start : 22/12/04 13:58
+Current failed test : org.apache.commons.collections4.ArrayStackTest::testPushPeekPop | 22/12/04 13:58
+Sun Dec 04 13:58:52 CST 2022 org.apache.commons.collections4.ArrayStack,92
+Failed time : 22/12/04 13:59
+=================================================
+Project : collections_1	start : 22/12/04 13:59
+Current failed test : org.apache.commons.collections4.ArrayStackTest::testPushPeekPop | 22/12/04 13:59
+Sun Dec 04 13:59:19 CST 2022 org.apache.commons.collections4.ArrayStack,92
+Failed time : 22/12/04 13:59
+=================================================
+Project : collections_1	start : 22/12/09 11:26
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:26
+Fri Dec 09 11:26:15 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/12/09 11:29
+=================================================
+Project : collections_1	start : 22/12/09 11:29
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:29
+Fri Dec 09 11:29:57 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/12/09 11:33
+=================================================
+Project : collections_1	start : 22/12/09 11:33
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:33
+Fri Dec 09 11:33:39 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,234
+Failed time : 22/12/09 11:34
+=================================================
+Project : collections_1	start : 22/12/09 11:34
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:34
+Fri Dec 09 11:34:34 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,234
+Failed time : 22/12/09 11:35
+=================================================
+Project : collections_1	start : 22/12/09 11:35
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:35
+Fri Dec 09 11:35:29 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,515
+Failed time : 22/12/09 11:38
+=================================================
+Project : collections_1	start : 22/12/09 11:38
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:38
+Fri Dec 09 11:38:56 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,515
+Failed time : 22/12/09 11:42
+=================================================
+Project : collections_1	start : 22/12/09 11:42
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/09 11:42
+Fri Dec 09 11:42:24 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,369
+Failed time : 22/12/09 11:42
+=================================================
+Project : collections_1	start : 22/12/09 11:42
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyContainsKey | 22/12/09 11:42
+Fri Dec 09 11:42:34 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,369
+Failed time : 22/12/09 11:42
+=================================================
+Project : collections_1	start : 22/12/09 11:42
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:42
+Fri Dec 09 11:42:44 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,516
+Failed time : 22/12/09 11:42
+=================================================
+Project : collections_1	start : 22/12/09 11:42
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:42
+Fri Dec 09 11:42:54 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,516
+Failed time : 22/12/09 11:42
+=================================================
+Project : collections_1	start : 22/12/09 11:42
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:43
+Fri Dec 09 11:43:04 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,233
+Failed time : 22/12/09 11:43
+=================================================
+Project : collections_1	start : 22/12/09 11:43
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:43
+Fri Dec 09 11:43:43 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,233
+Failed time : 22/12/09 11:44
+=================================================
+Project : collections_1	start : 22/12/09 11:44
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/09 11:44
+Fri Dec 09 11:44:21 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,190
+Failed time : 22/12/09 11:45
+=================================================
+Project : collections_1	start : 22/12/09 11:45
+Current failed test : org.apache.commons.collections4.ListUtilsTest::testLongestCommonSubsequence | 22/12/09 11:45
+Fri Dec 09 11:45:16 CST 2022 org.apache.commons.collections4.sequence.SequencesComparator,190
+Failed time : 22/12/09 11:46
+=================================================
+Project : collections_1	start : 22/12/09 11:46
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyRemove | 22/12/09 11:46
+Fri Dec 09 11:46:12 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/12/09 11:49
+=================================================
+Project : collections_1	start : 22/12/09 11:49
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyRemove | 22/12/09 11:49
+Fri Dec 09 11:49:53 CST 2022 org.apache.commons.collections4.map.AbstractHashedMap,396
+Failed time : 22/12/09 11:53
+=================================================
+Project : collections_1	start : 22/12/09 11:53
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:53
+Fri Dec 09 11:53:33 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,674
+Failed time : 22/12/09 11:56
+=================================================
+Project : collections_1	start : 22/12/09 11:56
+Current failed test : org.apache.commons.collections4.map.MultiKeyMapTest::testMultiKeyGet | 22/12/09 11:56
+Fri Dec 09 11:57:01 CST 2022 org.apache.commons.collections4.map.MultiKeyMap,674
+Failed time : 22/12/09 12:00
+=================================================
+Project : collections_1	start : 22/12/09 12:00
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/12/09 12:00
+Fri Dec 09 12:00:28 CST 2022 org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer,122
+Failed time : 22/12/09 12:02
+=================================================
+Project : collections_1	start : 22/12/09 12:02
+Current failed test : org.apache.commons.collections4.trie.PatriciaTrie2Test::testNextKey | 22/12/09 12:02
+Fri Dec 09 12:03:01 CST 2022 org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer,122
+Failed time : 22/12/09 12:05
+=================================================
+Project : collections_1	start : 22/12/09 12:05
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/12/09 12:05
+Fri Dec 09 12:05:34 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/12/09 12:05
+=================================================
+Project : collections_1	start : 22/12/09 12:05
+Current failed test : org.apache.commons.collections4.comparators.BooleanComparatorTest::testConstructors | 22/12/09 12:05
+Fri Dec 09 12:05:50 CST 2022 org.apache.commons.collections4.comparators.BooleanComparator,141
+Failed time : 22/12/09 12:05
+=================================================
+Project : collections_1	start : 22/12/09 12:05
+Current failed test : org.apache.commons.collections4.bag.HashBagTest::testBagHashCode | 22/12/09 12:06
+Fri Dec 09 12:06:05 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,572
+Failed time : 22/12/09 12:07
+=================================================
+Project : collections_1	start : 22/12/09 12:07
+Current failed test : org.apache.commons.collections4.bag.HashBagTest::testBagHashCode | 22/12/09 12:07
+Fri Dec 09 12:08:00 CST 2022 org.apache.commons.collections4.bag.AbstractMapBag,572
+Failed time : 22/12/09 12:09

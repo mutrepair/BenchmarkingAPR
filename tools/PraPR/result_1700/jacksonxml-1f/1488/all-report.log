@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local typeIdPropName is replaced a call typeIdPropName.toLowerCase()
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 3
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 3
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 3
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 3
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder.java
+	Line Number: 37
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

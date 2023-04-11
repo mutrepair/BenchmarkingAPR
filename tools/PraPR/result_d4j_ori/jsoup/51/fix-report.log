@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 11:53:14 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jsoup/parser/CharacterReader.java
+	Line Number: 300
+	Block: 145
+	First Index: 25
+	Rank: 2
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jsoup/parser/CharacterReader.java
+	Line Number: 300
+	Block: 147
+	First Index: 32
+	Rank: 2
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------

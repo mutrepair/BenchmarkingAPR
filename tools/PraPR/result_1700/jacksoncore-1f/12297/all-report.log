@@ -1,0 +1,300 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 27
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _inputBuffer is guarded using value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 169
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _inputPtr is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _inputPtr is guarded using local q2
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _inputBuffer is guarded using field _inputBuffer
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 169
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _inputPtr is guarded using field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::getTextLength()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipUtf8_2(I)V
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::getTextOffset()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipUtf8_3(I)V
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_verifyNoLeadingZeroes()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipUtf8_4(I)V
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipWS()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_reportInvalidChar(I)V
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_skipWSOrEnd()I
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.json.UTF8StreamJsonParser._inputPtr is replaced by the call to com.fasterxml.jackson.core.json.UTF8StreamJsonParser::_reportInvalidInitial(I)V
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _inputPtr with an access to _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _inputPtr is replaced by access to local q2
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _inputPtr is replaced by access to local i
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local q2 to be defined
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 180
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 180
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _inputBuffer is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 169
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _inputPtr is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 172
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 174
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -255 with -254
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 178
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 175
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 179
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _inputPtr
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 1499
+	Block: 365
+	First Index: 176
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

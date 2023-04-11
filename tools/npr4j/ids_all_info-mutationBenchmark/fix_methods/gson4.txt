@@ -1,0 +1,4 @@
+  private boolean isAnonymousOrLocal(Class<?> clazz) {
+    return !Enum.class.isAssignableFrom(clazz)
+        && (clazz.isAnonymousClass() || clazz.isLocalClass());
+  }

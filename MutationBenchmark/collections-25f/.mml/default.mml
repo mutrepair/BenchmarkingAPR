@@ -1,0 +1,2969 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.collections4.set.TransformedNavigableSet
+AOR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+LOR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+SOR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+COR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+ROR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+ORU<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+LVR<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+STD<"org.apache.commons.collections4.set.TransformedNavigableSet">;
+
+// Enable operators for org.apache.commons.collections4.set.AbstractSortedSetDecorator
+AOR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+LOR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+SOR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+COR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+ROR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+ORU<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+LVR<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+STD<"org.apache.commons.collections4.set.AbstractSortedSetDecorator">;
+
+// Enable operators for org.apache.commons.collections4.set.MapBackedSet
+AOR<"org.apache.commons.collections4.set.MapBackedSet">;
+LOR<"org.apache.commons.collections4.set.MapBackedSet">;
+SOR<"org.apache.commons.collections4.set.MapBackedSet">;
+COR<"org.apache.commons.collections4.set.MapBackedSet">;
+ROR<"org.apache.commons.collections4.set.MapBackedSet">;
+ORU<"org.apache.commons.collections4.set.MapBackedSet">;
+LVR<"org.apache.commons.collections4.set.MapBackedSet">;
+STD<"org.apache.commons.collections4.set.MapBackedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.AbstractSetDecorator
+AOR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+LOR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+SOR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+COR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+ROR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+ORU<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+LVR<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+STD<"org.apache.commons.collections4.set.AbstractSetDecorator">;
+
+// Enable operators for org.apache.commons.collections4.set.UnmodifiableSortedSet
+AOR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+LOR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+SOR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+COR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+ROR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+ORU<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+LVR<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+STD<"org.apache.commons.collections4.set.UnmodifiableSortedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.TransformedSet
+AOR<"org.apache.commons.collections4.set.TransformedSet">;
+LOR<"org.apache.commons.collections4.set.TransformedSet">;
+SOR<"org.apache.commons.collections4.set.TransformedSet">;
+COR<"org.apache.commons.collections4.set.TransformedSet">;
+ROR<"org.apache.commons.collections4.set.TransformedSet">;
+ORU<"org.apache.commons.collections4.set.TransformedSet">;
+LVR<"org.apache.commons.collections4.set.TransformedSet">;
+STD<"org.apache.commons.collections4.set.TransformedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.TransformedSortedSet
+AOR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+LOR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+SOR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+COR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+ROR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+ORU<"org.apache.commons.collections4.set.TransformedSortedSet">;
+LVR<"org.apache.commons.collections4.set.TransformedSortedSet">;
+STD<"org.apache.commons.collections4.set.TransformedSortedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.ListOrderedSet
+AOR<"org.apache.commons.collections4.set.ListOrderedSet">;
+LOR<"org.apache.commons.collections4.set.ListOrderedSet">;
+SOR<"org.apache.commons.collections4.set.ListOrderedSet">;
+COR<"org.apache.commons.collections4.set.ListOrderedSet">;
+ROR<"org.apache.commons.collections4.set.ListOrderedSet">;
+ORU<"org.apache.commons.collections4.set.ListOrderedSet">;
+LVR<"org.apache.commons.collections4.set.ListOrderedSet">;
+STD<"org.apache.commons.collections4.set.ListOrderedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.PredicatedSet
+AOR<"org.apache.commons.collections4.set.PredicatedSet">;
+LOR<"org.apache.commons.collections4.set.PredicatedSet">;
+SOR<"org.apache.commons.collections4.set.PredicatedSet">;
+COR<"org.apache.commons.collections4.set.PredicatedSet">;
+ROR<"org.apache.commons.collections4.set.PredicatedSet">;
+ORU<"org.apache.commons.collections4.set.PredicatedSet">;
+LVR<"org.apache.commons.collections4.set.PredicatedSet">;
+STD<"org.apache.commons.collections4.set.PredicatedSet">;
+
+// Enable operators for org.apache.commons.collections4.set.UnmodifiableNavigableSet
+AOR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+LOR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+SOR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+COR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+ROR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+ORU<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+LVR<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+STD<"org.apache.commons.collections4.set.UnmodifiableNavigableSet">;
+
+// Enable operators for org.apache.commons.collections4.set.PredicatedNavigableSet
+AOR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+LOR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+SOR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+COR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+ROR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+ORU<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+LVR<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+STD<"org.apache.commons.collections4.set.PredicatedNavigableSet">;
+
+// Enable operators for org.apache.commons.collections4.set.AbstractSerializableSetDecorator
+AOR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+LOR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+SOR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+COR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+ROR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+ORU<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+LVR<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+STD<"org.apache.commons.collections4.set.AbstractSerializableSetDecorator">;
+
+// Enable operators for org.apache.commons.collections4.set.CompositeSet
+AOR<"org.apache.commons.collections4.set.CompositeSet">;
+LOR<"org.apache.commons.collections4.set.CompositeSet">;
+SOR<"org.apache.commons.collections4.set.CompositeSet">;
+COR<"org.apache.commons.collections4.set.CompositeSet">;
+ROR<"org.apache.commons.collections4.set.CompositeSet">;
+ORU<"org.apache.commons.collections4.set.CompositeSet">;
+LVR<"org.apache.commons.collections4.set.CompositeSet">;
+STD<"org.apache.commons.collections4.set.CompositeSet">;
+
+// Enable operators for org.apache.commons.collections4.set.UnmodifiableSet
+AOR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+LOR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+SOR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+COR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+ROR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+ORU<"org.apache.commons.collections4.set.UnmodifiableSet">;
+LVR<"org.apache.commons.collections4.set.UnmodifiableSet">;
+STD<"org.apache.commons.collections4.set.UnmodifiableSet">;
+
+// Enable operators for org.apache.commons.collections4.set.AbstractNavigableSetDecorator
+AOR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+LOR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+SOR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+COR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+ROR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+ORU<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+LVR<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+STD<"org.apache.commons.collections4.set.AbstractNavigableSetDecorator">;
+
+// Enable operators for org.apache.commons.collections4.set.PredicatedSortedSet
+AOR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+LOR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+SOR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+COR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+ROR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+ORU<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+LVR<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+STD<"org.apache.commons.collections4.set.PredicatedSortedSet">;
+
+// Enable operators for org.apache.commons.collections4.ResettableListIterator
+AOR<"org.apache.commons.collections4.ResettableListIterator">;
+LOR<"org.apache.commons.collections4.ResettableListIterator">;
+SOR<"org.apache.commons.collections4.ResettableListIterator">;
+COR<"org.apache.commons.collections4.ResettableListIterator">;
+ROR<"org.apache.commons.collections4.ResettableListIterator">;
+ORU<"org.apache.commons.collections4.ResettableListIterator">;
+LVR<"org.apache.commons.collections4.ResettableListIterator">;
+STD<"org.apache.commons.collections4.ResettableListIterator">;
+
+// Enable operators for org.apache.commons.collections4.sequence.InsertCommand
+AOR<"org.apache.commons.collections4.sequence.InsertCommand">;
+LOR<"org.apache.commons.collections4.sequence.InsertCommand">;
+SOR<"org.apache.commons.collections4.sequence.InsertCommand">;
+COR<"org.apache.commons.collections4.sequence.InsertCommand">;
+ROR<"org.apache.commons.collections4.sequence.InsertCommand">;
+ORU<"org.apache.commons.collections4.sequence.InsertCommand">;
+LVR<"org.apache.commons.collections4.sequence.InsertCommand">;
+STD<"org.apache.commons.collections4.sequence.InsertCommand">;
+
+// Enable operators for org.apache.commons.collections4.sequence.EditCommand
+AOR<"org.apache.commons.collections4.sequence.EditCommand">;
+LOR<"org.apache.commons.collections4.sequence.EditCommand">;
+SOR<"org.apache.commons.collections4.sequence.EditCommand">;
+COR<"org.apache.commons.collections4.sequence.EditCommand">;
+ROR<"org.apache.commons.collections4.sequence.EditCommand">;
+ORU<"org.apache.commons.collections4.sequence.EditCommand">;
+LVR<"org.apache.commons.collections4.sequence.EditCommand">;
+STD<"org.apache.commons.collections4.sequence.EditCommand">;
+
+// Enable operators for org.apache.commons.collections4.sequence.ReplacementsFinder
+AOR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+LOR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+SOR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+COR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+ROR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+ORU<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+LVR<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+STD<"org.apache.commons.collections4.sequence.ReplacementsFinder">;
+
+// Enable operators for org.apache.commons.collections4.sequence.DeleteCommand
+AOR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+LOR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+SOR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+COR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+ROR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+ORU<"org.apache.commons.collections4.sequence.DeleteCommand">;
+LVR<"org.apache.commons.collections4.sequence.DeleteCommand">;
+STD<"org.apache.commons.collections4.sequence.DeleteCommand">;
+
+// Enable operators for org.apache.commons.collections4.sequence.KeepCommand
+AOR<"org.apache.commons.collections4.sequence.KeepCommand">;
+LOR<"org.apache.commons.collections4.sequence.KeepCommand">;
+SOR<"org.apache.commons.collections4.sequence.KeepCommand">;
+COR<"org.apache.commons.collections4.sequence.KeepCommand">;
+ROR<"org.apache.commons.collections4.sequence.KeepCommand">;
+ORU<"org.apache.commons.collections4.sequence.KeepCommand">;
+LVR<"org.apache.commons.collections4.sequence.KeepCommand">;
+STD<"org.apache.commons.collections4.sequence.KeepCommand">;
+
+// Enable operators for org.apache.commons.collections4.sequence.ReplacementsHandler
+AOR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+LOR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+SOR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+COR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+ROR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+ORU<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+LVR<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+STD<"org.apache.commons.collections4.sequence.ReplacementsHandler">;
+
+// Enable operators for org.apache.commons.collections4.sequence.EditScript
+AOR<"org.apache.commons.collections4.sequence.EditScript">;
+LOR<"org.apache.commons.collections4.sequence.EditScript">;
+SOR<"org.apache.commons.collections4.sequence.EditScript">;
+COR<"org.apache.commons.collections4.sequence.EditScript">;
+ROR<"org.apache.commons.collections4.sequence.EditScript">;
+ORU<"org.apache.commons.collections4.sequence.EditScript">;
+LVR<"org.apache.commons.collections4.sequence.EditScript">;
+STD<"org.apache.commons.collections4.sequence.EditScript">;
+
+// Enable operators for org.apache.commons.collections4.sequence.SequencesComparator
+AOR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+LOR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+SOR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+COR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+ROR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+ORU<"org.apache.commons.collections4.sequence.SequencesComparator">;
+LVR<"org.apache.commons.collections4.sequence.SequencesComparator">;
+STD<"org.apache.commons.collections4.sequence.SequencesComparator">;
+
+// Enable operators for org.apache.commons.collections4.sequence.CommandVisitor
+AOR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+LOR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+SOR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+COR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+ROR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+ORU<"org.apache.commons.collections4.sequence.CommandVisitor">;
+LVR<"org.apache.commons.collections4.sequence.CommandVisitor">;
+STD<"org.apache.commons.collections4.sequence.CommandVisitor">;
+
+// Enable operators for org.apache.commons.collections4.collection.AbstractCollectionDecorator
+AOR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+LOR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+SOR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+COR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+ROR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+ORU<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+LVR<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+STD<"org.apache.commons.collections4.collection.AbstractCollectionDecorator">;
+
+// Enable operators for org.apache.commons.collections4.collection.UnmodifiableBoundedCollection
+AOR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+LOR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+SOR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+COR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+ROR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+ORU<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+LVR<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+STD<"org.apache.commons.collections4.collection.UnmodifiableBoundedCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.PredicatedCollection
+AOR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+LOR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+SOR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+COR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+ROR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+ORU<"org.apache.commons.collections4.collection.PredicatedCollection">;
+LVR<"org.apache.commons.collections4.collection.PredicatedCollection">;
+STD<"org.apache.commons.collections4.collection.PredicatedCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.CompositeCollection
+AOR<"org.apache.commons.collections4.collection.CompositeCollection">;
+LOR<"org.apache.commons.collections4.collection.CompositeCollection">;
+SOR<"org.apache.commons.collections4.collection.CompositeCollection">;
+COR<"org.apache.commons.collections4.collection.CompositeCollection">;
+ROR<"org.apache.commons.collections4.collection.CompositeCollection">;
+ORU<"org.apache.commons.collections4.collection.CompositeCollection">;
+LVR<"org.apache.commons.collections4.collection.CompositeCollection">;
+STD<"org.apache.commons.collections4.collection.CompositeCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.SynchronizedCollection
+AOR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+LOR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+SOR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+COR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+ROR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+ORU<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+LVR<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+STD<"org.apache.commons.collections4.collection.SynchronizedCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.UnmodifiableCollection
+AOR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+LOR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+SOR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+COR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+ROR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+ORU<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+LVR<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+STD<"org.apache.commons.collections4.collection.UnmodifiableCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.IndexedCollection
+AOR<"org.apache.commons.collections4.collection.IndexedCollection">;
+LOR<"org.apache.commons.collections4.collection.IndexedCollection">;
+SOR<"org.apache.commons.collections4.collection.IndexedCollection">;
+COR<"org.apache.commons.collections4.collection.IndexedCollection">;
+ROR<"org.apache.commons.collections4.collection.IndexedCollection">;
+ORU<"org.apache.commons.collections4.collection.IndexedCollection">;
+LVR<"org.apache.commons.collections4.collection.IndexedCollection">;
+STD<"org.apache.commons.collections4.collection.IndexedCollection">;
+
+// Enable operators for org.apache.commons.collections4.collection.TransformedCollection
+AOR<"org.apache.commons.collections4.collection.TransformedCollection">;
+LOR<"org.apache.commons.collections4.collection.TransformedCollection">;
+SOR<"org.apache.commons.collections4.collection.TransformedCollection">;
+COR<"org.apache.commons.collections4.collection.TransformedCollection">;
+ROR<"org.apache.commons.collections4.collection.TransformedCollection">;
+ORU<"org.apache.commons.collections4.collection.TransformedCollection">;
+LVR<"org.apache.commons.collections4.collection.TransformedCollection">;
+STD<"org.apache.commons.collections4.collection.TransformedCollection">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.UnmodifiableBidiMap
+AOR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.UnmodifiableBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.TreeBidiMap
+AOR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.TreeBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.DualHashBidiMap
+AOR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.DualHashBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap
+AOR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.UnmodifiableOrderedBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator
+AOR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+LOR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+SOR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+COR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+ROR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+ORU<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+LVR<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+STD<"org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.DualTreeBidiMap
+AOR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.DualTreeBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap
+AOR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.DualLinkedHashBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator
+AOR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+LOR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+SOR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+COR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+ROR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+ORU<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+LVR<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+STD<"org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.AbstractDualBidiMap
+AOR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.AbstractDualBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator
+AOR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+LOR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+SOR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+COR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+ROR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+ORU<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+LVR<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+STD<"org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap
+AOR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+LOR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+SOR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+COR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+ROR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+ORU<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+LVR<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+STD<"org.apache.commons.collections4.bidimap.UnmodifiableSortedBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.IteratorUtils
+AOR<"org.apache.commons.collections4.IteratorUtils">;
+LOR<"org.apache.commons.collections4.IteratorUtils">;
+SOR<"org.apache.commons.collections4.IteratorUtils">;
+COR<"org.apache.commons.collections4.IteratorUtils">;
+ROR<"org.apache.commons.collections4.IteratorUtils">;
+ORU<"org.apache.commons.collections4.IteratorUtils">;
+LVR<"org.apache.commons.collections4.IteratorUtils">;
+STD<"org.apache.commons.collections4.IteratorUtils">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.TiedMapEntry
+AOR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+LOR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+SOR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+COR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+ROR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+ORU<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+LVR<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+STD<"org.apache.commons.collections4.keyvalue.TiedMapEntry">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.AbstractMapEntry
+AOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+LOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+SOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+COR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+ROR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+ORU<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+LVR<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+STD<"org.apache.commons.collections4.keyvalue.AbstractMapEntry">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.AbstractKeyValue
+AOR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+LOR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+SOR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+COR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+ROR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+ORU<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+LVR<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+STD<"org.apache.commons.collections4.keyvalue.AbstractKeyValue">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.MultiKey
+AOR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+LOR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+SOR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+COR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+ROR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+ORU<"org.apache.commons.collections4.keyvalue.MultiKey">;
+LVR<"org.apache.commons.collections4.keyvalue.MultiKey">;
+STD<"org.apache.commons.collections4.keyvalue.MultiKey">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry
+AOR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+LOR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+SOR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+COR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+ROR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+ORU<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+LVR<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+STD<"org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.DefaultMapEntry
+AOR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+LOR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+SOR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+COR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+ROR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+ORU<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+LVR<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+STD<"org.apache.commons.collections4.keyvalue.DefaultMapEntry">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.DefaultKeyValue
+AOR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+LOR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+SOR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+COR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+ROR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+ORU<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+LVR<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+STD<"org.apache.commons.collections4.keyvalue.DefaultKeyValue">;
+
+// Enable operators for org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator
+AOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+LOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+SOR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+COR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+ROR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+ORU<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+LVR<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+STD<"org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator">;
+
+// Enable operators for org.apache.commons.collections4.MapUtils
+AOR<"org.apache.commons.collections4.MapUtils">;
+LOR<"org.apache.commons.collections4.MapUtils">;
+SOR<"org.apache.commons.collections4.MapUtils">;
+COR<"org.apache.commons.collections4.MapUtils">;
+ROR<"org.apache.commons.collections4.MapUtils">;
+ORU<"org.apache.commons.collections4.MapUtils">;
+LVR<"org.apache.commons.collections4.MapUtils">;
+STD<"org.apache.commons.collections4.MapUtils">;
+
+// Enable operators for org.apache.commons.collections4.CollectionUtils
+AOR<"org.apache.commons.collections4.CollectionUtils">;
+LOR<"org.apache.commons.collections4.CollectionUtils">;
+SOR<"org.apache.commons.collections4.CollectionUtils">;
+COR<"org.apache.commons.collections4.CollectionUtils">;
+ROR<"org.apache.commons.collections4.CollectionUtils">;
+ORU<"org.apache.commons.collections4.CollectionUtils">;
+LVR<"org.apache.commons.collections4.CollectionUtils">;
+STD<"org.apache.commons.collections4.CollectionUtils">;
+
+// Enable operators for org.apache.commons.collections4.ClosureUtils
+AOR<"org.apache.commons.collections4.ClosureUtils">;
+LOR<"org.apache.commons.collections4.ClosureUtils">;
+SOR<"org.apache.commons.collections4.ClosureUtils">;
+COR<"org.apache.commons.collections4.ClosureUtils">;
+ROR<"org.apache.commons.collections4.ClosureUtils">;
+ORU<"org.apache.commons.collections4.ClosureUtils">;
+LVR<"org.apache.commons.collections4.ClosureUtils">;
+STD<"org.apache.commons.collections4.ClosureUtils">;
+
+// Enable operators for org.apache.commons.collections4.queue.PredicatedQueue
+AOR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+LOR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+SOR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+COR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+ROR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+ORU<"org.apache.commons.collections4.queue.PredicatedQueue">;
+LVR<"org.apache.commons.collections4.queue.PredicatedQueue">;
+STD<"org.apache.commons.collections4.queue.PredicatedQueue">;
+
+// Enable operators for org.apache.commons.collections4.queue.TransformedQueue
+AOR<"org.apache.commons.collections4.queue.TransformedQueue">;
+LOR<"org.apache.commons.collections4.queue.TransformedQueue">;
+SOR<"org.apache.commons.collections4.queue.TransformedQueue">;
+COR<"org.apache.commons.collections4.queue.TransformedQueue">;
+ROR<"org.apache.commons.collections4.queue.TransformedQueue">;
+ORU<"org.apache.commons.collections4.queue.TransformedQueue">;
+LVR<"org.apache.commons.collections4.queue.TransformedQueue">;
+STD<"org.apache.commons.collections4.queue.TransformedQueue">;
+
+// Enable operators for org.apache.commons.collections4.queue.CircularFifoQueue
+AOR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+LOR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+SOR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+COR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+ROR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+ORU<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+LVR<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+STD<"org.apache.commons.collections4.queue.CircularFifoQueue">;
+
+// Enable operators for org.apache.commons.collections4.queue.AbstractQueueDecorator
+AOR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+LOR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+SOR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+COR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+ROR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+ORU<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+LVR<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+STD<"org.apache.commons.collections4.queue.AbstractQueueDecorator">;
+
+// Enable operators for org.apache.commons.collections4.queue.UnmodifiableQueue
+AOR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+LOR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+SOR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+COR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+ROR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+ORU<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+LVR<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+STD<"org.apache.commons.collections4.queue.UnmodifiableQueue">;
+
+// Enable operators for org.apache.commons.collections4.PredicateUtils
+AOR<"org.apache.commons.collections4.PredicateUtils">;
+LOR<"org.apache.commons.collections4.PredicateUtils">;
+SOR<"org.apache.commons.collections4.PredicateUtils">;
+COR<"org.apache.commons.collections4.PredicateUtils">;
+ROR<"org.apache.commons.collections4.PredicateUtils">;
+ORU<"org.apache.commons.collections4.PredicateUtils">;
+LVR<"org.apache.commons.collections4.PredicateUtils">;
+STD<"org.apache.commons.collections4.PredicateUtils">;
+
+// Enable operators for org.apache.commons.collections4.OrderedIterator
+AOR<"org.apache.commons.collections4.OrderedIterator">;
+LOR<"org.apache.commons.collections4.OrderedIterator">;
+SOR<"org.apache.commons.collections4.OrderedIterator">;
+COR<"org.apache.commons.collections4.OrderedIterator">;
+ROR<"org.apache.commons.collections4.OrderedIterator">;
+ORU<"org.apache.commons.collections4.OrderedIterator">;
+LVR<"org.apache.commons.collections4.OrderedIterator">;
+STD<"org.apache.commons.collections4.OrderedIterator">;
+
+// Enable operators for org.apache.commons.collections4.Unmodifiable
+AOR<"org.apache.commons.collections4.Unmodifiable">;
+LOR<"org.apache.commons.collections4.Unmodifiable">;
+SOR<"org.apache.commons.collections4.Unmodifiable">;
+COR<"org.apache.commons.collections4.Unmodifiable">;
+ROR<"org.apache.commons.collections4.Unmodifiable">;
+ORU<"org.apache.commons.collections4.Unmodifiable">;
+LVR<"org.apache.commons.collections4.Unmodifiable">;
+STD<"org.apache.commons.collections4.Unmodifiable">;
+
+// Enable operators for org.apache.commons.collections4.ListUtils
+AOR<"org.apache.commons.collections4.ListUtils">;
+LOR<"org.apache.commons.collections4.ListUtils">;
+SOR<"org.apache.commons.collections4.ListUtils">;
+COR<"org.apache.commons.collections4.ListUtils">;
+ROR<"org.apache.commons.collections4.ListUtils">;
+ORU<"org.apache.commons.collections4.ListUtils">;
+LVR<"org.apache.commons.collections4.ListUtils">;
+STD<"org.apache.commons.collections4.ListUtils">;
+
+// Enable operators for org.apache.commons.collections4.KeyValue
+AOR<"org.apache.commons.collections4.KeyValue">;
+LOR<"org.apache.commons.collections4.KeyValue">;
+SOR<"org.apache.commons.collections4.KeyValue">;
+COR<"org.apache.commons.collections4.KeyValue">;
+ROR<"org.apache.commons.collections4.KeyValue">;
+ORU<"org.apache.commons.collections4.KeyValue">;
+LVR<"org.apache.commons.collections4.KeyValue">;
+STD<"org.apache.commons.collections4.KeyValue">;
+
+// Enable operators for org.apache.commons.collections4.Predicate
+AOR<"org.apache.commons.collections4.Predicate">;
+LOR<"org.apache.commons.collections4.Predicate">;
+SOR<"org.apache.commons.collections4.Predicate">;
+COR<"org.apache.commons.collections4.Predicate">;
+ROR<"org.apache.commons.collections4.Predicate">;
+ORU<"org.apache.commons.collections4.Predicate">;
+LVR<"org.apache.commons.collections4.Predicate">;
+STD<"org.apache.commons.collections4.Predicate">;
+
+// Enable operators for org.apache.commons.collections4.QueueUtils
+AOR<"org.apache.commons.collections4.QueueUtils">;
+LOR<"org.apache.commons.collections4.QueueUtils">;
+SOR<"org.apache.commons.collections4.QueueUtils">;
+COR<"org.apache.commons.collections4.QueueUtils">;
+ROR<"org.apache.commons.collections4.QueueUtils">;
+ORU<"org.apache.commons.collections4.QueueUtils">;
+LVR<"org.apache.commons.collections4.QueueUtils">;
+STD<"org.apache.commons.collections4.QueueUtils">;
+
+// Enable operators for org.apache.commons.collections4.IterableMap
+AOR<"org.apache.commons.collections4.IterableMap">;
+LOR<"org.apache.commons.collections4.IterableMap">;
+SOR<"org.apache.commons.collections4.IterableMap">;
+COR<"org.apache.commons.collections4.IterableMap">;
+ROR<"org.apache.commons.collections4.IterableMap">;
+ORU<"org.apache.commons.collections4.IterableMap">;
+LVR<"org.apache.commons.collections4.IterableMap">;
+STD<"org.apache.commons.collections4.IterableMap">;
+
+// Enable operators for org.apache.commons.collections4.OrderedBidiMap
+AOR<"org.apache.commons.collections4.OrderedBidiMap">;
+LOR<"org.apache.commons.collections4.OrderedBidiMap">;
+SOR<"org.apache.commons.collections4.OrderedBidiMap">;
+COR<"org.apache.commons.collections4.OrderedBidiMap">;
+ROR<"org.apache.commons.collections4.OrderedBidiMap">;
+ORU<"org.apache.commons.collections4.OrderedBidiMap">;
+LVR<"org.apache.commons.collections4.OrderedBidiMap">;
+STD<"org.apache.commons.collections4.OrderedBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.TrieUtils
+AOR<"org.apache.commons.collections4.TrieUtils">;
+LOR<"org.apache.commons.collections4.TrieUtils">;
+SOR<"org.apache.commons.collections4.TrieUtils">;
+COR<"org.apache.commons.collections4.TrieUtils">;
+ROR<"org.apache.commons.collections4.TrieUtils">;
+ORU<"org.apache.commons.collections4.TrieUtils">;
+LVR<"org.apache.commons.collections4.TrieUtils">;
+STD<"org.apache.commons.collections4.TrieUtils">;
+
+// Enable operators for org.apache.commons.collections4.Trie
+AOR<"org.apache.commons.collections4.Trie">;
+LOR<"org.apache.commons.collections4.Trie">;
+SOR<"org.apache.commons.collections4.Trie">;
+COR<"org.apache.commons.collections4.Trie">;
+ROR<"org.apache.commons.collections4.Trie">;
+ORU<"org.apache.commons.collections4.Trie">;
+LVR<"org.apache.commons.collections4.Trie">;
+STD<"org.apache.commons.collections4.Trie">;
+
+// Enable operators for org.apache.commons.collections4.Put
+AOR<"org.apache.commons.collections4.Put">;
+LOR<"org.apache.commons.collections4.Put">;
+SOR<"org.apache.commons.collections4.Put">;
+COR<"org.apache.commons.collections4.Put">;
+ROR<"org.apache.commons.collections4.Put">;
+ORU<"org.apache.commons.collections4.Put">;
+LVR<"org.apache.commons.collections4.Put">;
+STD<"org.apache.commons.collections4.Put">;
+
+// Enable operators for org.apache.commons.collections4.FactoryUtils
+AOR<"org.apache.commons.collections4.FactoryUtils">;
+LOR<"org.apache.commons.collections4.FactoryUtils">;
+SOR<"org.apache.commons.collections4.FactoryUtils">;
+COR<"org.apache.commons.collections4.FactoryUtils">;
+ROR<"org.apache.commons.collections4.FactoryUtils">;
+ORU<"org.apache.commons.collections4.FactoryUtils">;
+LVR<"org.apache.commons.collections4.FactoryUtils">;
+STD<"org.apache.commons.collections4.FactoryUtils">;
+
+// Enable operators for org.apache.commons.collections4.BoundedCollection
+AOR<"org.apache.commons.collections4.BoundedCollection">;
+LOR<"org.apache.commons.collections4.BoundedCollection">;
+SOR<"org.apache.commons.collections4.BoundedCollection">;
+COR<"org.apache.commons.collections4.BoundedCollection">;
+ROR<"org.apache.commons.collections4.BoundedCollection">;
+ORU<"org.apache.commons.collections4.BoundedCollection">;
+LVR<"org.apache.commons.collections4.BoundedCollection">;
+STD<"org.apache.commons.collections4.BoundedCollection">;
+
+// Enable operators for org.apache.commons.collections4.SplitMapUtils
+AOR<"org.apache.commons.collections4.SplitMapUtils">;
+LOR<"org.apache.commons.collections4.SplitMapUtils">;
+SOR<"org.apache.commons.collections4.SplitMapUtils">;
+COR<"org.apache.commons.collections4.SplitMapUtils">;
+ROR<"org.apache.commons.collections4.SplitMapUtils">;
+ORU<"org.apache.commons.collections4.SplitMapUtils">;
+LVR<"org.apache.commons.collections4.SplitMapUtils">;
+STD<"org.apache.commons.collections4.SplitMapUtils">;
+
+// Enable operators for org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter
+AOR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+LOR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+SOR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+COR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+ROR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+ORU<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+LVR<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+STD<"org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter">;
+
+// Enable operators for org.apache.commons.collections4.map.StaticBucketMap
+AOR<"org.apache.commons.collections4.map.StaticBucketMap">;
+LOR<"org.apache.commons.collections4.map.StaticBucketMap">;
+SOR<"org.apache.commons.collections4.map.StaticBucketMap">;
+COR<"org.apache.commons.collections4.map.StaticBucketMap">;
+ROR<"org.apache.commons.collections4.map.StaticBucketMap">;
+ORU<"org.apache.commons.collections4.map.StaticBucketMap">;
+LVR<"org.apache.commons.collections4.map.StaticBucketMap">;
+STD<"org.apache.commons.collections4.map.StaticBucketMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractSortedMapDecorator
+AOR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+LOR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+SOR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+COR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+ROR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+ORU<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+LVR<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+STD<"org.apache.commons.collections4.map.AbstractSortedMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.map.DefaultedMap
+AOR<"org.apache.commons.collections4.map.DefaultedMap">;
+LOR<"org.apache.commons.collections4.map.DefaultedMap">;
+SOR<"org.apache.commons.collections4.map.DefaultedMap">;
+COR<"org.apache.commons.collections4.map.DefaultedMap">;
+ROR<"org.apache.commons.collections4.map.DefaultedMap">;
+ORU<"org.apache.commons.collections4.map.DefaultedMap">;
+LVR<"org.apache.commons.collections4.map.DefaultedMap">;
+STD<"org.apache.commons.collections4.map.DefaultedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.ListOrderedMap
+AOR<"org.apache.commons.collections4.map.ListOrderedMap">;
+LOR<"org.apache.commons.collections4.map.ListOrderedMap">;
+SOR<"org.apache.commons.collections4.map.ListOrderedMap">;
+COR<"org.apache.commons.collections4.map.ListOrderedMap">;
+ROR<"org.apache.commons.collections4.map.ListOrderedMap">;
+ORU<"org.apache.commons.collections4.map.ListOrderedMap">;
+LVR<"org.apache.commons.collections4.map.ListOrderedMap">;
+STD<"org.apache.commons.collections4.map.ListOrderedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.FixedSizeSortedMap
+AOR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+LOR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+SOR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+COR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+ROR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+ORU<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+LVR<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+STD<"org.apache.commons.collections4.map.FixedSizeSortedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.LazyMap
+AOR<"org.apache.commons.collections4.map.LazyMap">;
+LOR<"org.apache.commons.collections4.map.LazyMap">;
+SOR<"org.apache.commons.collections4.map.LazyMap">;
+COR<"org.apache.commons.collections4.map.LazyMap">;
+ROR<"org.apache.commons.collections4.map.LazyMap">;
+ORU<"org.apache.commons.collections4.map.LazyMap">;
+LVR<"org.apache.commons.collections4.map.LazyMap">;
+STD<"org.apache.commons.collections4.map.LazyMap">;
+
+// Enable operators for org.apache.commons.collections4.map.MultiValueMap
+AOR<"org.apache.commons.collections4.map.MultiValueMap">;
+LOR<"org.apache.commons.collections4.map.MultiValueMap">;
+SOR<"org.apache.commons.collections4.map.MultiValueMap">;
+COR<"org.apache.commons.collections4.map.MultiValueMap">;
+ROR<"org.apache.commons.collections4.map.MultiValueMap">;
+ORU<"org.apache.commons.collections4.map.MultiValueMap">;
+LVR<"org.apache.commons.collections4.map.MultiValueMap">;
+STD<"org.apache.commons.collections4.map.MultiValueMap">;
+
+// Enable operators for org.apache.commons.collections4.map.PassiveExpiringMap
+AOR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+LOR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+SOR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+COR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+ROR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+ORU<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+LVR<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+STD<"org.apache.commons.collections4.map.PassiveExpiringMap">;
+
+// Enable operators for org.apache.commons.collections4.map.UnmodifiableEntrySet
+AOR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+LOR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+SOR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+COR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+ROR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+ORU<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+LVR<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+STD<"org.apache.commons.collections4.map.UnmodifiableEntrySet">;
+
+// Enable operators for org.apache.commons.collections4.map.SingletonMap
+AOR<"org.apache.commons.collections4.map.SingletonMap">;
+LOR<"org.apache.commons.collections4.map.SingletonMap">;
+SOR<"org.apache.commons.collections4.map.SingletonMap">;
+COR<"org.apache.commons.collections4.map.SingletonMap">;
+ROR<"org.apache.commons.collections4.map.SingletonMap">;
+ORU<"org.apache.commons.collections4.map.SingletonMap">;
+LVR<"org.apache.commons.collections4.map.SingletonMap">;
+STD<"org.apache.commons.collections4.map.SingletonMap">;
+
+// Enable operators for org.apache.commons.collections4.map.PredicatedSortedMap
+AOR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+LOR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+SOR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+COR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+ROR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+ORU<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+LVR<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+STD<"org.apache.commons.collections4.map.PredicatedSortedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractIterableMap
+AOR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+LOR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+SOR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+COR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+ROR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+ORU<"org.apache.commons.collections4.map.AbstractIterableMap">;
+LVR<"org.apache.commons.collections4.map.AbstractIterableMap">;
+STD<"org.apache.commons.collections4.map.AbstractIterableMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractMapDecorator
+AOR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+LOR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+SOR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+COR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+ROR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+ORU<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+LVR<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+STD<"org.apache.commons.collections4.map.AbstractMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractHashedMap
+AOR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+LOR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+SOR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+COR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+ROR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+ORU<"org.apache.commons.collections4.map.AbstractHashedMap">;
+LVR<"org.apache.commons.collections4.map.AbstractHashedMap">;
+STD<"org.apache.commons.collections4.map.AbstractHashedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator
+AOR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+LOR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+SOR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+COR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+ROR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+ORU<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+LVR<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+STD<"org.apache.commons.collections4.map.AbstractInputCheckedMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractOrderedMapDecorator
+AOR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+LOR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+SOR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+COR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+ROR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+ORU<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+LVR<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+STD<"org.apache.commons.collections4.map.AbstractOrderedMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.map.UnmodifiableMap
+AOR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+LOR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+SOR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+COR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+ROR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+ORU<"org.apache.commons.collections4.map.UnmodifiableMap">;
+LVR<"org.apache.commons.collections4.map.UnmodifiableMap">;
+STD<"org.apache.commons.collections4.map.UnmodifiableMap">;
+
+// Enable operators for org.apache.commons.collections4.map.TransformedMap
+AOR<"org.apache.commons.collections4.map.TransformedMap">;
+LOR<"org.apache.commons.collections4.map.TransformedMap">;
+SOR<"org.apache.commons.collections4.map.TransformedMap">;
+COR<"org.apache.commons.collections4.map.TransformedMap">;
+ROR<"org.apache.commons.collections4.map.TransformedMap">;
+ORU<"org.apache.commons.collections4.map.TransformedMap">;
+LVR<"org.apache.commons.collections4.map.TransformedMap">;
+STD<"org.apache.commons.collections4.map.TransformedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.HashedMap
+AOR<"org.apache.commons.collections4.map.HashedMap">;
+LOR<"org.apache.commons.collections4.map.HashedMap">;
+SOR<"org.apache.commons.collections4.map.HashedMap">;
+COR<"org.apache.commons.collections4.map.HashedMap">;
+ROR<"org.apache.commons.collections4.map.HashedMap">;
+ORU<"org.apache.commons.collections4.map.HashedMap">;
+LVR<"org.apache.commons.collections4.map.HashedMap">;
+STD<"org.apache.commons.collections4.map.HashedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.Flat3Map
+AOR<"org.apache.commons.collections4.map.Flat3Map">;
+LOR<"org.apache.commons.collections4.map.Flat3Map">;
+SOR<"org.apache.commons.collections4.map.Flat3Map">;
+COR<"org.apache.commons.collections4.map.Flat3Map">;
+ROR<"org.apache.commons.collections4.map.Flat3Map">;
+ORU<"org.apache.commons.collections4.map.Flat3Map">;
+LVR<"org.apache.commons.collections4.map.Flat3Map">;
+STD<"org.apache.commons.collections4.map.Flat3Map">;
+
+// Enable operators for org.apache.commons.collections4.map.CompositeMap
+AOR<"org.apache.commons.collections4.map.CompositeMap">;
+LOR<"org.apache.commons.collections4.map.CompositeMap">;
+SOR<"org.apache.commons.collections4.map.CompositeMap">;
+COR<"org.apache.commons.collections4.map.CompositeMap">;
+ROR<"org.apache.commons.collections4.map.CompositeMap">;
+ORU<"org.apache.commons.collections4.map.CompositeMap">;
+LVR<"org.apache.commons.collections4.map.CompositeMap">;
+STD<"org.apache.commons.collections4.map.CompositeMap">;
+
+// Enable operators for org.apache.commons.collections4.map.UnmodifiableOrderedMap
+AOR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+LOR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+SOR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+COR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+ROR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+ORU<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+LVR<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+STD<"org.apache.commons.collections4.map.UnmodifiableOrderedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.LinkedMap
+AOR<"org.apache.commons.collections4.map.LinkedMap">;
+LOR<"org.apache.commons.collections4.map.LinkedMap">;
+SOR<"org.apache.commons.collections4.map.LinkedMap">;
+COR<"org.apache.commons.collections4.map.LinkedMap">;
+ROR<"org.apache.commons.collections4.map.LinkedMap">;
+ORU<"org.apache.commons.collections4.map.LinkedMap">;
+LVR<"org.apache.commons.collections4.map.LinkedMap">;
+STD<"org.apache.commons.collections4.map.LinkedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.MultiKeyMap
+AOR<"org.apache.commons.collections4.map.MultiKeyMap">;
+LOR<"org.apache.commons.collections4.map.MultiKeyMap">;
+SOR<"org.apache.commons.collections4.map.MultiKeyMap">;
+COR<"org.apache.commons.collections4.map.MultiKeyMap">;
+ROR<"org.apache.commons.collections4.map.MultiKeyMap">;
+ORU<"org.apache.commons.collections4.map.MultiKeyMap">;
+LVR<"org.apache.commons.collections4.map.MultiKeyMap">;
+STD<"org.apache.commons.collections4.map.MultiKeyMap">;
+
+// Enable operators for org.apache.commons.collections4.map.ReferenceMap
+AOR<"org.apache.commons.collections4.map.ReferenceMap">;
+LOR<"org.apache.commons.collections4.map.ReferenceMap">;
+SOR<"org.apache.commons.collections4.map.ReferenceMap">;
+COR<"org.apache.commons.collections4.map.ReferenceMap">;
+ROR<"org.apache.commons.collections4.map.ReferenceMap">;
+ORU<"org.apache.commons.collections4.map.ReferenceMap">;
+LVR<"org.apache.commons.collections4.map.ReferenceMap">;
+STD<"org.apache.commons.collections4.map.ReferenceMap">;
+
+// Enable operators for org.apache.commons.collections4.map.CaseInsensitiveMap
+AOR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+LOR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+SOR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+COR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+ROR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+ORU<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+LVR<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+STD<"org.apache.commons.collections4.map.CaseInsensitiveMap">;
+
+// Enable operators for org.apache.commons.collections4.map.LRUMap
+AOR<"org.apache.commons.collections4.map.LRUMap">;
+LOR<"org.apache.commons.collections4.map.LRUMap">;
+SOR<"org.apache.commons.collections4.map.LRUMap">;
+COR<"org.apache.commons.collections4.map.LRUMap">;
+ROR<"org.apache.commons.collections4.map.LRUMap">;
+ORU<"org.apache.commons.collections4.map.LRUMap">;
+LVR<"org.apache.commons.collections4.map.LRUMap">;
+STD<"org.apache.commons.collections4.map.LRUMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractReferenceMap
+AOR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+LOR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+SOR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+COR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+ROR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+ORU<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+LVR<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+STD<"org.apache.commons.collections4.map.AbstractReferenceMap">;
+
+// Enable operators for org.apache.commons.collections4.map.FixedSizeMap
+AOR<"org.apache.commons.collections4.map.FixedSizeMap">;
+LOR<"org.apache.commons.collections4.map.FixedSizeMap">;
+SOR<"org.apache.commons.collections4.map.FixedSizeMap">;
+COR<"org.apache.commons.collections4.map.FixedSizeMap">;
+ROR<"org.apache.commons.collections4.map.FixedSizeMap">;
+ORU<"org.apache.commons.collections4.map.FixedSizeMap">;
+LVR<"org.apache.commons.collections4.map.FixedSizeMap">;
+STD<"org.apache.commons.collections4.map.FixedSizeMap">;
+
+// Enable operators for org.apache.commons.collections4.map.UnmodifiableSortedMap
+AOR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+LOR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+SOR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+COR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+ROR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+ORU<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+LVR<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+STD<"org.apache.commons.collections4.map.UnmodifiableSortedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.ReferenceIdentityMap
+AOR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+LOR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+SOR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+COR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+ROR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+ORU<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+LVR<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+STD<"org.apache.commons.collections4.map.ReferenceIdentityMap">;
+
+// Enable operators for org.apache.commons.collections4.map.AbstractLinkedMap
+AOR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+LOR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+SOR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+COR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+ROR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+ORU<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+LVR<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+STD<"org.apache.commons.collections4.map.AbstractLinkedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.PredicatedMap
+AOR<"org.apache.commons.collections4.map.PredicatedMap">;
+LOR<"org.apache.commons.collections4.map.PredicatedMap">;
+SOR<"org.apache.commons.collections4.map.PredicatedMap">;
+COR<"org.apache.commons.collections4.map.PredicatedMap">;
+ROR<"org.apache.commons.collections4.map.PredicatedMap">;
+ORU<"org.apache.commons.collections4.map.PredicatedMap">;
+LVR<"org.apache.commons.collections4.map.PredicatedMap">;
+STD<"org.apache.commons.collections4.map.PredicatedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.TransformedSortedMap
+AOR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+LOR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+SOR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+COR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+ROR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+ORU<"org.apache.commons.collections4.map.TransformedSortedMap">;
+LVR<"org.apache.commons.collections4.map.TransformedSortedMap">;
+STD<"org.apache.commons.collections4.map.TransformedSortedMap">;
+
+// Enable operators for org.apache.commons.collections4.map.LazySortedMap
+AOR<"org.apache.commons.collections4.map.LazySortedMap">;
+LOR<"org.apache.commons.collections4.map.LazySortedMap">;
+SOR<"org.apache.commons.collections4.map.LazySortedMap">;
+COR<"org.apache.commons.collections4.map.LazySortedMap">;
+ROR<"org.apache.commons.collections4.map.LazySortedMap">;
+ORU<"org.apache.commons.collections4.map.LazySortedMap">;
+LVR<"org.apache.commons.collections4.map.LazySortedMap">;
+STD<"org.apache.commons.collections4.map.LazySortedMap">;
+
+// Enable operators for org.apache.commons.collections4.list.CursorableLinkedList
+AOR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+LOR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+SOR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+COR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+ROR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+ORU<"org.apache.commons.collections4.list.CursorableLinkedList">;
+LVR<"org.apache.commons.collections4.list.CursorableLinkedList">;
+STD<"org.apache.commons.collections4.list.CursorableLinkedList">;
+
+// Enable operators for org.apache.commons.collections4.list.NodeCachingLinkedList
+AOR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+LOR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+SOR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+COR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+ROR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+ORU<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+LVR<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+STD<"org.apache.commons.collections4.list.NodeCachingLinkedList">;
+
+// Enable operators for org.apache.commons.collections4.list.TreeList
+AOR<"org.apache.commons.collections4.list.TreeList">;
+LOR<"org.apache.commons.collections4.list.TreeList">;
+SOR<"org.apache.commons.collections4.list.TreeList">;
+COR<"org.apache.commons.collections4.list.TreeList">;
+ROR<"org.apache.commons.collections4.list.TreeList">;
+ORU<"org.apache.commons.collections4.list.TreeList">;
+LVR<"org.apache.commons.collections4.list.TreeList">;
+STD<"org.apache.commons.collections4.list.TreeList">;
+
+// Enable operators for org.apache.commons.collections4.list.FixedSizeList
+AOR<"org.apache.commons.collections4.list.FixedSizeList">;
+LOR<"org.apache.commons.collections4.list.FixedSizeList">;
+SOR<"org.apache.commons.collections4.list.FixedSizeList">;
+COR<"org.apache.commons.collections4.list.FixedSizeList">;
+ROR<"org.apache.commons.collections4.list.FixedSizeList">;
+ORU<"org.apache.commons.collections4.list.FixedSizeList">;
+LVR<"org.apache.commons.collections4.list.FixedSizeList">;
+STD<"org.apache.commons.collections4.list.FixedSizeList">;
+
+// Enable operators for org.apache.commons.collections4.list.AbstractLinkedList
+AOR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+LOR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+SOR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+COR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+ROR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+ORU<"org.apache.commons.collections4.list.AbstractLinkedList">;
+LVR<"org.apache.commons.collections4.list.AbstractLinkedList">;
+STD<"org.apache.commons.collections4.list.AbstractLinkedList">;
+
+// Enable operators for org.apache.commons.collections4.list.GrowthList
+AOR<"org.apache.commons.collections4.list.GrowthList">;
+LOR<"org.apache.commons.collections4.list.GrowthList">;
+SOR<"org.apache.commons.collections4.list.GrowthList">;
+COR<"org.apache.commons.collections4.list.GrowthList">;
+ROR<"org.apache.commons.collections4.list.GrowthList">;
+ORU<"org.apache.commons.collections4.list.GrowthList">;
+LVR<"org.apache.commons.collections4.list.GrowthList">;
+STD<"org.apache.commons.collections4.list.GrowthList">;
+
+// Enable operators for org.apache.commons.collections4.list.PredicatedList
+AOR<"org.apache.commons.collections4.list.PredicatedList">;
+LOR<"org.apache.commons.collections4.list.PredicatedList">;
+SOR<"org.apache.commons.collections4.list.PredicatedList">;
+COR<"org.apache.commons.collections4.list.PredicatedList">;
+ROR<"org.apache.commons.collections4.list.PredicatedList">;
+ORU<"org.apache.commons.collections4.list.PredicatedList">;
+LVR<"org.apache.commons.collections4.list.PredicatedList">;
+STD<"org.apache.commons.collections4.list.PredicatedList">;
+
+// Enable operators for org.apache.commons.collections4.list.SetUniqueList
+AOR<"org.apache.commons.collections4.list.SetUniqueList">;
+LOR<"org.apache.commons.collections4.list.SetUniqueList">;
+SOR<"org.apache.commons.collections4.list.SetUniqueList">;
+COR<"org.apache.commons.collections4.list.SetUniqueList">;
+ROR<"org.apache.commons.collections4.list.SetUniqueList">;
+ORU<"org.apache.commons.collections4.list.SetUniqueList">;
+LVR<"org.apache.commons.collections4.list.SetUniqueList">;
+STD<"org.apache.commons.collections4.list.SetUniqueList">;
+
+// Enable operators for org.apache.commons.collections4.list.TransformedList
+AOR<"org.apache.commons.collections4.list.TransformedList">;
+LOR<"org.apache.commons.collections4.list.TransformedList">;
+SOR<"org.apache.commons.collections4.list.TransformedList">;
+COR<"org.apache.commons.collections4.list.TransformedList">;
+ROR<"org.apache.commons.collections4.list.TransformedList">;
+ORU<"org.apache.commons.collections4.list.TransformedList">;
+LVR<"org.apache.commons.collections4.list.TransformedList">;
+STD<"org.apache.commons.collections4.list.TransformedList">;
+
+// Enable operators for org.apache.commons.collections4.list.AbstractSerializableListDecorator
+AOR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+LOR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+SOR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+COR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+ROR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+ORU<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+LVR<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+STD<"org.apache.commons.collections4.list.AbstractSerializableListDecorator">;
+
+// Enable operators for org.apache.commons.collections4.list.AbstractListDecorator
+AOR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+LOR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+SOR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+COR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+ROR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+ORU<"org.apache.commons.collections4.list.AbstractListDecorator">;
+LVR<"org.apache.commons.collections4.list.AbstractListDecorator">;
+STD<"org.apache.commons.collections4.list.AbstractListDecorator">;
+
+// Enable operators for org.apache.commons.collections4.list.UnmodifiableList
+AOR<"org.apache.commons.collections4.list.UnmodifiableList">;
+LOR<"org.apache.commons.collections4.list.UnmodifiableList">;
+SOR<"org.apache.commons.collections4.list.UnmodifiableList">;
+COR<"org.apache.commons.collections4.list.UnmodifiableList">;
+ROR<"org.apache.commons.collections4.list.UnmodifiableList">;
+ORU<"org.apache.commons.collections4.list.UnmodifiableList">;
+LVR<"org.apache.commons.collections4.list.UnmodifiableList">;
+STD<"org.apache.commons.collections4.list.UnmodifiableList">;
+
+// Enable operators for org.apache.commons.collections4.list.LazyList
+AOR<"org.apache.commons.collections4.list.LazyList">;
+LOR<"org.apache.commons.collections4.list.LazyList">;
+SOR<"org.apache.commons.collections4.list.LazyList">;
+COR<"org.apache.commons.collections4.list.LazyList">;
+ROR<"org.apache.commons.collections4.list.LazyList">;
+ORU<"org.apache.commons.collections4.list.LazyList">;
+LVR<"org.apache.commons.collections4.list.LazyList">;
+STD<"org.apache.commons.collections4.list.LazyList">;
+
+// Enable operators for org.apache.commons.collections4.EnumerationUtils
+AOR<"org.apache.commons.collections4.EnumerationUtils">;
+LOR<"org.apache.commons.collections4.EnumerationUtils">;
+SOR<"org.apache.commons.collections4.EnumerationUtils">;
+COR<"org.apache.commons.collections4.EnumerationUtils">;
+ROR<"org.apache.commons.collections4.EnumerationUtils">;
+ORU<"org.apache.commons.collections4.EnumerationUtils">;
+LVR<"org.apache.commons.collections4.EnumerationUtils">;
+STD<"org.apache.commons.collections4.EnumerationUtils">;
+
+// Enable operators for org.apache.commons.collections4.SetValuedMap
+AOR<"org.apache.commons.collections4.SetValuedMap">;
+LOR<"org.apache.commons.collections4.SetValuedMap">;
+SOR<"org.apache.commons.collections4.SetValuedMap">;
+COR<"org.apache.commons.collections4.SetValuedMap">;
+ROR<"org.apache.commons.collections4.SetValuedMap">;
+ORU<"org.apache.commons.collections4.SetValuedMap">;
+LVR<"org.apache.commons.collections4.SetValuedMap">;
+STD<"org.apache.commons.collections4.SetValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.SortedBidiMap
+AOR<"org.apache.commons.collections4.SortedBidiMap">;
+LOR<"org.apache.commons.collections4.SortedBidiMap">;
+SOR<"org.apache.commons.collections4.SortedBidiMap">;
+COR<"org.apache.commons.collections4.SortedBidiMap">;
+ROR<"org.apache.commons.collections4.SortedBidiMap">;
+ORU<"org.apache.commons.collections4.SortedBidiMap">;
+LVR<"org.apache.commons.collections4.SortedBidiMap">;
+STD<"org.apache.commons.collections4.SortedBidiMap">;
+
+// Enable operators for org.apache.commons.collections4.IterableSortedMap
+AOR<"org.apache.commons.collections4.IterableSortedMap">;
+LOR<"org.apache.commons.collections4.IterableSortedMap">;
+SOR<"org.apache.commons.collections4.IterableSortedMap">;
+COR<"org.apache.commons.collections4.IterableSortedMap">;
+ROR<"org.apache.commons.collections4.IterableSortedMap">;
+ORU<"org.apache.commons.collections4.IterableSortedMap">;
+LVR<"org.apache.commons.collections4.IterableSortedMap">;
+STD<"org.apache.commons.collections4.IterableSortedMap">;
+
+// Enable operators for org.apache.commons.collections4.TransformerUtils
+AOR<"org.apache.commons.collections4.TransformerUtils">;
+LOR<"org.apache.commons.collections4.TransformerUtils">;
+SOR<"org.apache.commons.collections4.TransformerUtils">;
+COR<"org.apache.commons.collections4.TransformerUtils">;
+ROR<"org.apache.commons.collections4.TransformerUtils">;
+ORU<"org.apache.commons.collections4.TransformerUtils">;
+LVR<"org.apache.commons.collections4.TransformerUtils">;
+STD<"org.apache.commons.collections4.TransformerUtils">;
+
+// Enable operators for org.apache.commons.collections4.ListValuedMap
+AOR<"org.apache.commons.collections4.ListValuedMap">;
+LOR<"org.apache.commons.collections4.ListValuedMap">;
+SOR<"org.apache.commons.collections4.ListValuedMap">;
+COR<"org.apache.commons.collections4.ListValuedMap">;
+ROR<"org.apache.commons.collections4.ListValuedMap">;
+ORU<"org.apache.commons.collections4.ListValuedMap">;
+LVR<"org.apache.commons.collections4.ListValuedMap">;
+STD<"org.apache.commons.collections4.ListValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.OrderedMapIterator
+AOR<"org.apache.commons.collections4.OrderedMapIterator">;
+LOR<"org.apache.commons.collections4.OrderedMapIterator">;
+SOR<"org.apache.commons.collections4.OrderedMapIterator">;
+COR<"org.apache.commons.collections4.OrderedMapIterator">;
+ROR<"org.apache.commons.collections4.OrderedMapIterator">;
+ORU<"org.apache.commons.collections4.OrderedMapIterator">;
+LVR<"org.apache.commons.collections4.OrderedMapIterator">;
+STD<"org.apache.commons.collections4.OrderedMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.MultiValuedMap
+AOR<"org.apache.commons.collections4.MultiValuedMap">;
+LOR<"org.apache.commons.collections4.MultiValuedMap">;
+SOR<"org.apache.commons.collections4.MultiValuedMap">;
+COR<"org.apache.commons.collections4.MultiValuedMap">;
+ROR<"org.apache.commons.collections4.MultiValuedMap">;
+ORU<"org.apache.commons.collections4.MultiValuedMap">;
+LVR<"org.apache.commons.collections4.MultiValuedMap">;
+STD<"org.apache.commons.collections4.MultiValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.IterableGet
+AOR<"org.apache.commons.collections4.IterableGet">;
+LOR<"org.apache.commons.collections4.IterableGet">;
+SOR<"org.apache.commons.collections4.IterableGet">;
+COR<"org.apache.commons.collections4.IterableGet">;
+ROR<"org.apache.commons.collections4.IterableGet">;
+ORU<"org.apache.commons.collections4.IterableGet">;
+LVR<"org.apache.commons.collections4.IterableGet">;
+STD<"org.apache.commons.collections4.IterableGet">;
+
+// Enable operators for org.apache.commons.collections4.trie.KeyAnalyzer
+AOR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+LOR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+SOR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+COR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+ROR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+ORU<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+LVR<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+STD<"org.apache.commons.collections4.trie.KeyAnalyzer">;
+
+// Enable operators for org.apache.commons.collections4.trie.AbstractBitwiseTrie
+AOR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+LOR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+SOR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+COR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+ROR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+ORU<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+LVR<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+STD<"org.apache.commons.collections4.trie.AbstractBitwiseTrie">;
+
+// Enable operators for org.apache.commons.collections4.trie.AbstractPatriciaTrie
+AOR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+LOR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+SOR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+COR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+ROR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+ORU<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+LVR<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+STD<"org.apache.commons.collections4.trie.AbstractPatriciaTrie">;
+
+// Enable operators for org.apache.commons.collections4.trie.PatriciaTrie
+AOR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+LOR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+SOR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+COR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+ROR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+ORU<"org.apache.commons.collections4.trie.PatriciaTrie">;
+LVR<"org.apache.commons.collections4.trie.PatriciaTrie">;
+STD<"org.apache.commons.collections4.trie.PatriciaTrie">;
+
+// Enable operators for org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer
+AOR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+LOR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+SOR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+COR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+ROR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+ORU<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+LVR<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+STD<"org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer">;
+
+// Enable operators for org.apache.commons.collections4.trie.UnmodifiableTrie
+AOR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+LOR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+SOR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+COR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+ROR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+ORU<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+LVR<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+STD<"org.apache.commons.collections4.trie.UnmodifiableTrie">;
+
+// Enable operators for org.apache.commons.collections4.SortedBag
+AOR<"org.apache.commons.collections4.SortedBag">;
+LOR<"org.apache.commons.collections4.SortedBag">;
+SOR<"org.apache.commons.collections4.SortedBag">;
+COR<"org.apache.commons.collections4.SortedBag">;
+ROR<"org.apache.commons.collections4.SortedBag">;
+ORU<"org.apache.commons.collections4.SortedBag">;
+LVR<"org.apache.commons.collections4.SortedBag">;
+STD<"org.apache.commons.collections4.SortedBag">;
+
+// Enable operators for org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator
+AOR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+LOR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+SOR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+COR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+ROR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+ORU<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+LVR<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+STD<"org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.splitmap.TransformedSplitMap
+AOR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+LOR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+SOR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+COR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+ROR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+ORU<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+LVR<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+STD<"org.apache.commons.collections4.splitmap.TransformedSplitMap">;
+
+// Enable operators for org.apache.commons.collections4.comparators.TransformingComparator
+AOR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+LOR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+SOR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+COR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+ROR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+ORU<"org.apache.commons.collections4.comparators.TransformingComparator">;
+LVR<"org.apache.commons.collections4.comparators.TransformingComparator">;
+STD<"org.apache.commons.collections4.comparators.TransformingComparator">;
+
+// Enable operators for org.apache.commons.collections4.comparators.ComparatorChain
+AOR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+LOR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+SOR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+COR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+ROR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+ORU<"org.apache.commons.collections4.comparators.ComparatorChain">;
+LVR<"org.apache.commons.collections4.comparators.ComparatorChain">;
+STD<"org.apache.commons.collections4.comparators.ComparatorChain">;
+
+// Enable operators for org.apache.commons.collections4.comparators.FixedOrderComparator
+AOR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+LOR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+SOR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+COR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+ROR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+ORU<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+LVR<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+STD<"org.apache.commons.collections4.comparators.FixedOrderComparator">;
+
+// Enable operators for org.apache.commons.collections4.comparators.BooleanComparator
+AOR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+LOR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+SOR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+COR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+ROR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+ORU<"org.apache.commons.collections4.comparators.BooleanComparator">;
+LVR<"org.apache.commons.collections4.comparators.BooleanComparator">;
+STD<"org.apache.commons.collections4.comparators.BooleanComparator">;
+
+// Enable operators for org.apache.commons.collections4.comparators.ReverseComparator
+AOR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+LOR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+SOR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+COR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+ROR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+ORU<"org.apache.commons.collections4.comparators.ReverseComparator">;
+LVR<"org.apache.commons.collections4.comparators.ReverseComparator">;
+STD<"org.apache.commons.collections4.comparators.ReverseComparator">;
+
+// Enable operators for org.apache.commons.collections4.comparators.ComparableComparator
+AOR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+LOR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+SOR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+COR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+ROR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+ORU<"org.apache.commons.collections4.comparators.ComparableComparator">;
+LVR<"org.apache.commons.collections4.comparators.ComparableComparator">;
+STD<"org.apache.commons.collections4.comparators.ComparableComparator">;
+
+// Enable operators for org.apache.commons.collections4.comparators.NullComparator
+AOR<"org.apache.commons.collections4.comparators.NullComparator">;
+LOR<"org.apache.commons.collections4.comparators.NullComparator">;
+SOR<"org.apache.commons.collections4.comparators.NullComparator">;
+COR<"org.apache.commons.collections4.comparators.NullComparator">;
+ROR<"org.apache.commons.collections4.comparators.NullComparator">;
+ORU<"org.apache.commons.collections4.comparators.NullComparator">;
+LVR<"org.apache.commons.collections4.comparators.NullComparator">;
+STD<"org.apache.commons.collections4.comparators.NullComparator">;
+
+// Enable operators for org.apache.commons.collections4.ResettableIterator
+AOR<"org.apache.commons.collections4.ResettableIterator">;
+LOR<"org.apache.commons.collections4.ResettableIterator">;
+SOR<"org.apache.commons.collections4.ResettableIterator">;
+COR<"org.apache.commons.collections4.ResettableIterator">;
+ROR<"org.apache.commons.collections4.ResettableIterator">;
+ORU<"org.apache.commons.collections4.ResettableIterator">;
+LVR<"org.apache.commons.collections4.ResettableIterator">;
+STD<"org.apache.commons.collections4.ResettableIterator">;
+
+// Enable operators for org.apache.commons.collections4.multimap.MultiValuedHashMap
+AOR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+LOR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+SOR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+COR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+ROR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+ORU<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+LVR<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+STD<"org.apache.commons.collections4.multimap.MultiValuedHashMap">;
+
+// Enable operators for org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator
+AOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+LOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+SOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+COR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+ROR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+ORU<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+LVR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+STD<"org.apache.commons.collections4.multimap.AbstractMultiValuedMapDecorator">;
+
+// Enable operators for org.apache.commons.collections4.multimap.TransformedMultiValuedMap
+AOR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+LOR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+SOR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+COR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+ROR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+ORU<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+LVR<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+STD<"org.apache.commons.collections4.multimap.TransformedMultiValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.multimap.AbstractListValuedMap
+AOR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+LOR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+SOR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+COR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+ROR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+ORU<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+LVR<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+STD<"org.apache.commons.collections4.multimap.AbstractListValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.multimap.AbstractMultiValuedMap
+AOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+LOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+SOR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+COR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+ROR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+ORU<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+LVR<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+STD<"org.apache.commons.collections4.multimap.AbstractMultiValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.multimap.AbstractSetValuedMap
+AOR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+LOR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+SOR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+COR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+ROR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+ORU<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+LVR<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+STD<"org.apache.commons.collections4.multimap.AbstractSetValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap
+AOR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+LOR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+SOR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+COR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+ROR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+ORU<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+LVR<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+STD<"org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap">;
+
+// Enable operators for org.apache.commons.collections4.MultiMap
+AOR<"org.apache.commons.collections4.MultiMap">;
+LOR<"org.apache.commons.collections4.MultiMap">;
+SOR<"org.apache.commons.collections4.MultiMap">;
+COR<"org.apache.commons.collections4.MultiMap">;
+ROR<"org.apache.commons.collections4.MultiMap">;
+ORU<"org.apache.commons.collections4.MultiMap">;
+LVR<"org.apache.commons.collections4.MultiMap">;
+STD<"org.apache.commons.collections4.MultiMap">;
+
+// Enable operators for org.apache.commons.collections4.functors.NullIsFalsePredicate
+AOR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+LOR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+SOR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+COR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+ROR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+ORU<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+LVR<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+STD<"org.apache.commons.collections4.functors.NullIsFalsePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.AllPredicate
+AOR<"org.apache.commons.collections4.functors.AllPredicate">;
+LOR<"org.apache.commons.collections4.functors.AllPredicate">;
+SOR<"org.apache.commons.collections4.functors.AllPredicate">;
+COR<"org.apache.commons.collections4.functors.AllPredicate">;
+ROR<"org.apache.commons.collections4.functors.AllPredicate">;
+ORU<"org.apache.commons.collections4.functors.AllPredicate">;
+LVR<"org.apache.commons.collections4.functors.AllPredicate">;
+STD<"org.apache.commons.collections4.functors.AllPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.TruePredicate
+AOR<"org.apache.commons.collections4.functors.TruePredicate">;
+LOR<"org.apache.commons.collections4.functors.TruePredicate">;
+SOR<"org.apache.commons.collections4.functors.TruePredicate">;
+COR<"org.apache.commons.collections4.functors.TruePredicate">;
+ROR<"org.apache.commons.collections4.functors.TruePredicate">;
+ORU<"org.apache.commons.collections4.functors.TruePredicate">;
+LVR<"org.apache.commons.collections4.functors.TruePredicate">;
+STD<"org.apache.commons.collections4.functors.TruePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.NullIsExceptionPredicate
+AOR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+LOR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+SOR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+COR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+ROR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+ORU<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+LVR<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+STD<"org.apache.commons.collections4.functors.NullIsExceptionPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.IfTransformer
+AOR<"org.apache.commons.collections4.functors.IfTransformer">;
+LOR<"org.apache.commons.collections4.functors.IfTransformer">;
+SOR<"org.apache.commons.collections4.functors.IfTransformer">;
+COR<"org.apache.commons.collections4.functors.IfTransformer">;
+ROR<"org.apache.commons.collections4.functors.IfTransformer">;
+ORU<"org.apache.commons.collections4.functors.IfTransformer">;
+LVR<"org.apache.commons.collections4.functors.IfTransformer">;
+STD<"org.apache.commons.collections4.functors.IfTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.NotPredicate
+AOR<"org.apache.commons.collections4.functors.NotPredicate">;
+LOR<"org.apache.commons.collections4.functors.NotPredicate">;
+SOR<"org.apache.commons.collections4.functors.NotPredicate">;
+COR<"org.apache.commons.collections4.functors.NotPredicate">;
+ROR<"org.apache.commons.collections4.functors.NotPredicate">;
+ORU<"org.apache.commons.collections4.functors.NotPredicate">;
+LVR<"org.apache.commons.collections4.functors.NotPredicate">;
+STD<"org.apache.commons.collections4.functors.NotPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.InstanceofPredicate
+AOR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+LOR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+SOR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+COR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+ROR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+ORU<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+LVR<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+STD<"org.apache.commons.collections4.functors.InstanceofPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ExceptionPredicate
+AOR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+LOR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+SOR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+COR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+ROR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+ORU<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+LVR<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+STD<"org.apache.commons.collections4.functors.ExceptionPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.NullPredicate
+AOR<"org.apache.commons.collections4.functors.NullPredicate">;
+LOR<"org.apache.commons.collections4.functors.NullPredicate">;
+SOR<"org.apache.commons.collections4.functors.NullPredicate">;
+COR<"org.apache.commons.collections4.functors.NullPredicate">;
+ROR<"org.apache.commons.collections4.functors.NullPredicate">;
+ORU<"org.apache.commons.collections4.functors.NullPredicate">;
+LVR<"org.apache.commons.collections4.functors.NullPredicate">;
+STD<"org.apache.commons.collections4.functors.NullPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.CloneTransformer
+AOR<"org.apache.commons.collections4.functors.CloneTransformer">;
+LOR<"org.apache.commons.collections4.functors.CloneTransformer">;
+SOR<"org.apache.commons.collections4.functors.CloneTransformer">;
+COR<"org.apache.commons.collections4.functors.CloneTransformer">;
+ROR<"org.apache.commons.collections4.functors.CloneTransformer">;
+ORU<"org.apache.commons.collections4.functors.CloneTransformer">;
+LVR<"org.apache.commons.collections4.functors.CloneTransformer">;
+STD<"org.apache.commons.collections4.functors.CloneTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.MapTransformer
+AOR<"org.apache.commons.collections4.functors.MapTransformer">;
+LOR<"org.apache.commons.collections4.functors.MapTransformer">;
+SOR<"org.apache.commons.collections4.functors.MapTransformer">;
+COR<"org.apache.commons.collections4.functors.MapTransformer">;
+ROR<"org.apache.commons.collections4.functors.MapTransformer">;
+ORU<"org.apache.commons.collections4.functors.MapTransformer">;
+LVR<"org.apache.commons.collections4.functors.MapTransformer">;
+STD<"org.apache.commons.collections4.functors.MapTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.ExceptionFactory
+AOR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+LOR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+SOR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+COR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+ROR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+ORU<"org.apache.commons.collections4.functors.ExceptionFactory">;
+LVR<"org.apache.commons.collections4.functors.ExceptionFactory">;
+STD<"org.apache.commons.collections4.functors.ExceptionFactory">;
+
+// Enable operators for org.apache.commons.collections4.functors.SwitchTransformer
+AOR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+LOR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+SOR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+COR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+ROR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+ORU<"org.apache.commons.collections4.functors.SwitchTransformer">;
+LVR<"org.apache.commons.collections4.functors.SwitchTransformer">;
+STD<"org.apache.commons.collections4.functors.SwitchTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.NOPTransformer
+AOR<"org.apache.commons.collections4.functors.NOPTransformer">;
+LOR<"org.apache.commons.collections4.functors.NOPTransformer">;
+SOR<"org.apache.commons.collections4.functors.NOPTransformer">;
+COR<"org.apache.commons.collections4.functors.NOPTransformer">;
+ROR<"org.apache.commons.collections4.functors.NOPTransformer">;
+ORU<"org.apache.commons.collections4.functors.NOPTransformer">;
+LVR<"org.apache.commons.collections4.functors.NOPTransformer">;
+STD<"org.apache.commons.collections4.functors.NOPTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.SwitchClosure
+AOR<"org.apache.commons.collections4.functors.SwitchClosure">;
+LOR<"org.apache.commons.collections4.functors.SwitchClosure">;
+SOR<"org.apache.commons.collections4.functors.SwitchClosure">;
+COR<"org.apache.commons.collections4.functors.SwitchClosure">;
+ROR<"org.apache.commons.collections4.functors.SwitchClosure">;
+ORU<"org.apache.commons.collections4.functors.SwitchClosure">;
+LVR<"org.apache.commons.collections4.functors.SwitchClosure">;
+STD<"org.apache.commons.collections4.functors.SwitchClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.OrPredicate
+AOR<"org.apache.commons.collections4.functors.OrPredicate">;
+LOR<"org.apache.commons.collections4.functors.OrPredicate">;
+SOR<"org.apache.commons.collections4.functors.OrPredicate">;
+COR<"org.apache.commons.collections4.functors.OrPredicate">;
+ROR<"org.apache.commons.collections4.functors.OrPredicate">;
+ORU<"org.apache.commons.collections4.functors.OrPredicate">;
+LVR<"org.apache.commons.collections4.functors.OrPredicate">;
+STD<"org.apache.commons.collections4.functors.OrPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.TransformerClosure
+AOR<"org.apache.commons.collections4.functors.TransformerClosure">;
+LOR<"org.apache.commons.collections4.functors.TransformerClosure">;
+SOR<"org.apache.commons.collections4.functors.TransformerClosure">;
+COR<"org.apache.commons.collections4.functors.TransformerClosure">;
+ROR<"org.apache.commons.collections4.functors.TransformerClosure">;
+ORU<"org.apache.commons.collections4.functors.TransformerClosure">;
+LVR<"org.apache.commons.collections4.functors.TransformerClosure">;
+STD<"org.apache.commons.collections4.functors.TransformerClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.TransformerPredicate
+AOR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+LOR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+SOR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+COR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+ROR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+ORU<"org.apache.commons.collections4.functors.TransformerPredicate">;
+LVR<"org.apache.commons.collections4.functors.TransformerPredicate">;
+STD<"org.apache.commons.collections4.functors.TransformerPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.InstantiateTransformer
+AOR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+LOR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+SOR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+COR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+ROR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+ORU<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+LVR<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+STD<"org.apache.commons.collections4.functors.InstantiateTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.UniquePredicate
+AOR<"org.apache.commons.collections4.functors.UniquePredicate">;
+LOR<"org.apache.commons.collections4.functors.UniquePredicate">;
+SOR<"org.apache.commons.collections4.functors.UniquePredicate">;
+COR<"org.apache.commons.collections4.functors.UniquePredicate">;
+ROR<"org.apache.commons.collections4.functors.UniquePredicate">;
+ORU<"org.apache.commons.collections4.functors.UniquePredicate">;
+LVR<"org.apache.commons.collections4.functors.UniquePredicate">;
+STD<"org.apache.commons.collections4.functors.UniquePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.NOPClosure
+AOR<"org.apache.commons.collections4.functors.NOPClosure">;
+LOR<"org.apache.commons.collections4.functors.NOPClosure">;
+SOR<"org.apache.commons.collections4.functors.NOPClosure">;
+COR<"org.apache.commons.collections4.functors.NOPClosure">;
+ROR<"org.apache.commons.collections4.functors.NOPClosure">;
+ORU<"org.apache.commons.collections4.functors.NOPClosure">;
+LVR<"org.apache.commons.collections4.functors.NOPClosure">;
+STD<"org.apache.commons.collections4.functors.NOPClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.ChainedTransformer
+AOR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+LOR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+SOR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+COR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+ROR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+ORU<"org.apache.commons.collections4.functors.ChainedTransformer">;
+LVR<"org.apache.commons.collections4.functors.ChainedTransformer">;
+STD<"org.apache.commons.collections4.functors.ChainedTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.CatchAndRethrowClosure
+AOR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+LOR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+SOR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+COR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+ROR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+ORU<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+LVR<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+STD<"org.apache.commons.collections4.functors.CatchAndRethrowClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.NotNullPredicate
+AOR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+LOR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+SOR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+COR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+ROR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+ORU<"org.apache.commons.collections4.functors.NotNullPredicate">;
+LVR<"org.apache.commons.collections4.functors.NotNullPredicate">;
+STD<"org.apache.commons.collections4.functors.NotNullPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.WhileClosure
+AOR<"org.apache.commons.collections4.functors.WhileClosure">;
+LOR<"org.apache.commons.collections4.functors.WhileClosure">;
+SOR<"org.apache.commons.collections4.functors.WhileClosure">;
+COR<"org.apache.commons.collections4.functors.WhileClosure">;
+ROR<"org.apache.commons.collections4.functors.WhileClosure">;
+ORU<"org.apache.commons.collections4.functors.WhileClosure">;
+LVR<"org.apache.commons.collections4.functors.WhileClosure">;
+STD<"org.apache.commons.collections4.functors.WhileClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.ExceptionTransformer
+AOR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+LOR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+SOR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+COR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+ROR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+ORU<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+LVR<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+STD<"org.apache.commons.collections4.functors.ExceptionTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.InstantiateFactory
+AOR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+LOR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+SOR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+COR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+ROR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+ORU<"org.apache.commons.collections4.functors.InstantiateFactory">;
+LVR<"org.apache.commons.collections4.functors.InstantiateFactory">;
+STD<"org.apache.commons.collections4.functors.InstantiateFactory">;
+
+// Enable operators for org.apache.commons.collections4.functors.FalsePredicate
+AOR<"org.apache.commons.collections4.functors.FalsePredicate">;
+LOR<"org.apache.commons.collections4.functors.FalsePredicate">;
+SOR<"org.apache.commons.collections4.functors.FalsePredicate">;
+COR<"org.apache.commons.collections4.functors.FalsePredicate">;
+ROR<"org.apache.commons.collections4.functors.FalsePredicate">;
+ORU<"org.apache.commons.collections4.functors.FalsePredicate">;
+LVR<"org.apache.commons.collections4.functors.FalsePredicate">;
+STD<"org.apache.commons.collections4.functors.FalsePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ExceptionClosure
+AOR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+LOR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+SOR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+COR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+ROR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+ORU<"org.apache.commons.collections4.functors.ExceptionClosure">;
+LVR<"org.apache.commons.collections4.functors.ExceptionClosure">;
+STD<"org.apache.commons.collections4.functors.ExceptionClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.TransformedPredicate
+AOR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+LOR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+SOR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+COR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+ROR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+ORU<"org.apache.commons.collections4.functors.TransformedPredicate">;
+LVR<"org.apache.commons.collections4.functors.TransformedPredicate">;
+STD<"org.apache.commons.collections4.functors.TransformedPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ChainedClosure
+AOR<"org.apache.commons.collections4.functors.ChainedClosure">;
+LOR<"org.apache.commons.collections4.functors.ChainedClosure">;
+SOR<"org.apache.commons.collections4.functors.ChainedClosure">;
+COR<"org.apache.commons.collections4.functors.ChainedClosure">;
+ROR<"org.apache.commons.collections4.functors.ChainedClosure">;
+ORU<"org.apache.commons.collections4.functors.ChainedClosure">;
+LVR<"org.apache.commons.collections4.functors.ChainedClosure">;
+STD<"org.apache.commons.collections4.functors.ChainedClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.PredicateTransformer
+AOR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+LOR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+SOR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+COR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+ROR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+ORU<"org.apache.commons.collections4.functors.PredicateTransformer">;
+LVR<"org.apache.commons.collections4.functors.PredicateTransformer">;
+STD<"org.apache.commons.collections4.functors.PredicateTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.AndPredicate
+AOR<"org.apache.commons.collections4.functors.AndPredicate">;
+LOR<"org.apache.commons.collections4.functors.AndPredicate">;
+SOR<"org.apache.commons.collections4.functors.AndPredicate">;
+COR<"org.apache.commons.collections4.functors.AndPredicate">;
+ROR<"org.apache.commons.collections4.functors.AndPredicate">;
+ORU<"org.apache.commons.collections4.functors.AndPredicate">;
+LVR<"org.apache.commons.collections4.functors.AndPredicate">;
+STD<"org.apache.commons.collections4.functors.AndPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.FactoryTransformer
+AOR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+LOR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+SOR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+COR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+ROR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+ORU<"org.apache.commons.collections4.functors.FactoryTransformer">;
+LVR<"org.apache.commons.collections4.functors.FactoryTransformer">;
+STD<"org.apache.commons.collections4.functors.FactoryTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.AbstractQuantifierPredicate
+AOR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+LOR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+SOR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+COR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+ROR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+ORU<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+LVR<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+STD<"org.apache.commons.collections4.functors.AbstractQuantifierPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ConstantTransformer
+AOR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+LOR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+SOR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+COR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+ROR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+ORU<"org.apache.commons.collections4.functors.ConstantTransformer">;
+LVR<"org.apache.commons.collections4.functors.ConstantTransformer">;
+STD<"org.apache.commons.collections4.functors.ConstantTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.InvokerTransformer
+AOR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+LOR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+SOR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+COR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+ROR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+ORU<"org.apache.commons.collections4.functors.InvokerTransformer">;
+LVR<"org.apache.commons.collections4.functors.InvokerTransformer">;
+STD<"org.apache.commons.collections4.functors.InvokerTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.NonePredicate
+AOR<"org.apache.commons.collections4.functors.NonePredicate">;
+LOR<"org.apache.commons.collections4.functors.NonePredicate">;
+SOR<"org.apache.commons.collections4.functors.NonePredicate">;
+COR<"org.apache.commons.collections4.functors.NonePredicate">;
+ROR<"org.apache.commons.collections4.functors.NonePredicate">;
+ORU<"org.apache.commons.collections4.functors.NonePredicate">;
+LVR<"org.apache.commons.collections4.functors.NonePredicate">;
+STD<"org.apache.commons.collections4.functors.NonePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.IfClosure
+AOR<"org.apache.commons.collections4.functors.IfClosure">;
+LOR<"org.apache.commons.collections4.functors.IfClosure">;
+SOR<"org.apache.commons.collections4.functors.IfClosure">;
+COR<"org.apache.commons.collections4.functors.IfClosure">;
+ROR<"org.apache.commons.collections4.functors.IfClosure">;
+ORU<"org.apache.commons.collections4.functors.IfClosure">;
+LVR<"org.apache.commons.collections4.functors.IfClosure">;
+STD<"org.apache.commons.collections4.functors.IfClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.IdentityPredicate
+AOR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+LOR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+SOR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+COR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+ROR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+ORU<"org.apache.commons.collections4.functors.IdentityPredicate">;
+LVR<"org.apache.commons.collections4.functors.IdentityPredicate">;
+STD<"org.apache.commons.collections4.functors.IdentityPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ConstantFactory
+AOR<"org.apache.commons.collections4.functors.ConstantFactory">;
+LOR<"org.apache.commons.collections4.functors.ConstantFactory">;
+SOR<"org.apache.commons.collections4.functors.ConstantFactory">;
+COR<"org.apache.commons.collections4.functors.ConstantFactory">;
+ROR<"org.apache.commons.collections4.functors.ConstantFactory">;
+ORU<"org.apache.commons.collections4.functors.ConstantFactory">;
+LVR<"org.apache.commons.collections4.functors.ConstantFactory">;
+STD<"org.apache.commons.collections4.functors.ConstantFactory">;
+
+// Enable operators for org.apache.commons.collections4.functors.DefaultEquator
+AOR<"org.apache.commons.collections4.functors.DefaultEquator">;
+LOR<"org.apache.commons.collections4.functors.DefaultEquator">;
+SOR<"org.apache.commons.collections4.functors.DefaultEquator">;
+COR<"org.apache.commons.collections4.functors.DefaultEquator">;
+ROR<"org.apache.commons.collections4.functors.DefaultEquator">;
+ORU<"org.apache.commons.collections4.functors.DefaultEquator">;
+LVR<"org.apache.commons.collections4.functors.DefaultEquator">;
+STD<"org.apache.commons.collections4.functors.DefaultEquator">;
+
+// Enable operators for org.apache.commons.collections4.functors.ComparatorPredicate
+AOR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+LOR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+SOR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+COR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+ROR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+ORU<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+LVR<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+STD<"org.apache.commons.collections4.functors.ComparatorPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.StringValueTransformer
+AOR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+LOR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+SOR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+COR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+ROR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+ORU<"org.apache.commons.collections4.functors.StringValueTransformer">;
+LVR<"org.apache.commons.collections4.functors.StringValueTransformer">;
+STD<"org.apache.commons.collections4.functors.StringValueTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.EqualPredicate
+AOR<"org.apache.commons.collections4.functors.EqualPredicate">;
+LOR<"org.apache.commons.collections4.functors.EqualPredicate">;
+SOR<"org.apache.commons.collections4.functors.EqualPredicate">;
+COR<"org.apache.commons.collections4.functors.EqualPredicate">;
+ROR<"org.apache.commons.collections4.functors.EqualPredicate">;
+ORU<"org.apache.commons.collections4.functors.EqualPredicate">;
+LVR<"org.apache.commons.collections4.functors.EqualPredicate">;
+STD<"org.apache.commons.collections4.functors.EqualPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ClosureTransformer
+AOR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+LOR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+SOR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+COR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+ROR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+ORU<"org.apache.commons.collections4.functors.ClosureTransformer">;
+LVR<"org.apache.commons.collections4.functors.ClosureTransformer">;
+STD<"org.apache.commons.collections4.functors.ClosureTransformer">;
+
+// Enable operators for org.apache.commons.collections4.functors.AnyPredicate
+AOR<"org.apache.commons.collections4.functors.AnyPredicate">;
+LOR<"org.apache.commons.collections4.functors.AnyPredicate">;
+SOR<"org.apache.commons.collections4.functors.AnyPredicate">;
+COR<"org.apache.commons.collections4.functors.AnyPredicate">;
+ROR<"org.apache.commons.collections4.functors.AnyPredicate">;
+ORU<"org.apache.commons.collections4.functors.AnyPredicate">;
+LVR<"org.apache.commons.collections4.functors.AnyPredicate">;
+STD<"org.apache.commons.collections4.functors.AnyPredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.NullIsTruePredicate
+AOR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+LOR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+SOR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+COR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+ROR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+ORU<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+LVR<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+STD<"org.apache.commons.collections4.functors.NullIsTruePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.PredicateDecorator
+AOR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+LOR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+SOR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+COR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+ROR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+ORU<"org.apache.commons.collections4.functors.PredicateDecorator">;
+LVR<"org.apache.commons.collections4.functors.PredicateDecorator">;
+STD<"org.apache.commons.collections4.functors.PredicateDecorator">;
+
+// Enable operators for org.apache.commons.collections4.functors.OnePredicate
+AOR<"org.apache.commons.collections4.functors.OnePredicate">;
+LOR<"org.apache.commons.collections4.functors.OnePredicate">;
+SOR<"org.apache.commons.collections4.functors.OnePredicate">;
+COR<"org.apache.commons.collections4.functors.OnePredicate">;
+ROR<"org.apache.commons.collections4.functors.OnePredicate">;
+ORU<"org.apache.commons.collections4.functors.OnePredicate">;
+LVR<"org.apache.commons.collections4.functors.OnePredicate">;
+STD<"org.apache.commons.collections4.functors.OnePredicate">;
+
+// Enable operators for org.apache.commons.collections4.functors.ForClosure
+AOR<"org.apache.commons.collections4.functors.ForClosure">;
+LOR<"org.apache.commons.collections4.functors.ForClosure">;
+SOR<"org.apache.commons.collections4.functors.ForClosure">;
+COR<"org.apache.commons.collections4.functors.ForClosure">;
+ROR<"org.apache.commons.collections4.functors.ForClosure">;
+ORU<"org.apache.commons.collections4.functors.ForClosure">;
+LVR<"org.apache.commons.collections4.functors.ForClosure">;
+STD<"org.apache.commons.collections4.functors.ForClosure">;
+
+// Enable operators for org.apache.commons.collections4.functors.FunctorUtils
+AOR<"org.apache.commons.collections4.functors.FunctorUtils">;
+LOR<"org.apache.commons.collections4.functors.FunctorUtils">;
+SOR<"org.apache.commons.collections4.functors.FunctorUtils">;
+COR<"org.apache.commons.collections4.functors.FunctorUtils">;
+ROR<"org.apache.commons.collections4.functors.FunctorUtils">;
+ORU<"org.apache.commons.collections4.functors.FunctorUtils">;
+LVR<"org.apache.commons.collections4.functors.FunctorUtils">;
+STD<"org.apache.commons.collections4.functors.FunctorUtils">;
+
+// Enable operators for org.apache.commons.collections4.functors.PrototypeFactory
+AOR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+LOR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+SOR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+COR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+ROR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+ORU<"org.apache.commons.collections4.functors.PrototypeFactory">;
+LVR<"org.apache.commons.collections4.functors.PrototypeFactory">;
+STD<"org.apache.commons.collections4.functors.PrototypeFactory">;
+
+// Enable operators for org.apache.commons.collections4.Transformer
+AOR<"org.apache.commons.collections4.Transformer">;
+LOR<"org.apache.commons.collections4.Transformer">;
+SOR<"org.apache.commons.collections4.Transformer">;
+COR<"org.apache.commons.collections4.Transformer">;
+ROR<"org.apache.commons.collections4.Transformer">;
+ORU<"org.apache.commons.collections4.Transformer">;
+LVR<"org.apache.commons.collections4.Transformer">;
+STD<"org.apache.commons.collections4.Transformer">;
+
+// Enable operators for org.apache.commons.collections4.Equator
+AOR<"org.apache.commons.collections4.Equator">;
+LOR<"org.apache.commons.collections4.Equator">;
+SOR<"org.apache.commons.collections4.Equator">;
+COR<"org.apache.commons.collections4.Equator">;
+ROR<"org.apache.commons.collections4.Equator">;
+ORU<"org.apache.commons.collections4.Equator">;
+LVR<"org.apache.commons.collections4.Equator">;
+STD<"org.apache.commons.collections4.Equator">;
+
+// Enable operators for org.apache.commons.collections4.Bag
+AOR<"org.apache.commons.collections4.Bag">;
+LOR<"org.apache.commons.collections4.Bag">;
+SOR<"org.apache.commons.collections4.Bag">;
+COR<"org.apache.commons.collections4.Bag">;
+ROR<"org.apache.commons.collections4.Bag">;
+ORU<"org.apache.commons.collections4.Bag">;
+LVR<"org.apache.commons.collections4.Bag">;
+STD<"org.apache.commons.collections4.Bag">;
+
+// Enable operators for org.apache.commons.collections4.BagUtils
+AOR<"org.apache.commons.collections4.BagUtils">;
+LOR<"org.apache.commons.collections4.BagUtils">;
+SOR<"org.apache.commons.collections4.BagUtils">;
+COR<"org.apache.commons.collections4.BagUtils">;
+ROR<"org.apache.commons.collections4.BagUtils">;
+ORU<"org.apache.commons.collections4.BagUtils">;
+LVR<"org.apache.commons.collections4.BagUtils">;
+STD<"org.apache.commons.collections4.BagUtils">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EnumerationIterator
+AOR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+LOR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+SOR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+COR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+ROR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+ORU<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+LVR<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+STD<"org.apache.commons.collections4.iterators.EnumerationIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator
+AOR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+COR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+STD<"org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.TransformIterator
+AOR<"org.apache.commons.collections4.iterators.TransformIterator">;
+LOR<"org.apache.commons.collections4.iterators.TransformIterator">;
+SOR<"org.apache.commons.collections4.iterators.TransformIterator">;
+COR<"org.apache.commons.collections4.iterators.TransformIterator">;
+ROR<"org.apache.commons.collections4.iterators.TransformIterator">;
+ORU<"org.apache.commons.collections4.iterators.TransformIterator">;
+LVR<"org.apache.commons.collections4.iterators.TransformIterator">;
+STD<"org.apache.commons.collections4.iterators.TransformIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EmptyIterator
+AOR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+LOR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+SOR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+COR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+ROR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+ORU<"org.apache.commons.collections4.iterators.EmptyIterator">;
+LVR<"org.apache.commons.collections4.iterators.EmptyIterator">;
+STD<"org.apache.commons.collections4.iterators.EmptyIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ListIteratorWrapper
+AOR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+LOR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+SOR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+COR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+ROR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+ORU<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+LVR<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+STD<"org.apache.commons.collections4.iterators.ListIteratorWrapper">;
+
+// Enable operators for org.apache.commons.collections4.iterators.LoopingIterator
+AOR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+LOR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+SOR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+COR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+ROR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+ORU<"org.apache.commons.collections4.iterators.LoopingIterator">;
+LVR<"org.apache.commons.collections4.iterators.LoopingIterator">;
+STD<"org.apache.commons.collections4.iterators.LoopingIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractListIteratorDecorator
+AOR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+COR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+STD<"org.apache.commons.collections4.iterators.AbstractListIteratorDecorator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.IteratorChain
+AOR<"org.apache.commons.collections4.iterators.IteratorChain">;
+LOR<"org.apache.commons.collections4.iterators.IteratorChain">;
+SOR<"org.apache.commons.collections4.iterators.IteratorChain">;
+COR<"org.apache.commons.collections4.iterators.IteratorChain">;
+ROR<"org.apache.commons.collections4.iterators.IteratorChain">;
+ORU<"org.apache.commons.collections4.iterators.IteratorChain">;
+LVR<"org.apache.commons.collections4.iterators.IteratorChain">;
+STD<"org.apache.commons.collections4.iterators.IteratorChain">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EmptyOrderedIterator
+AOR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+LOR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+SOR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+COR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+ROR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+ORU<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+LVR<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+STD<"org.apache.commons.collections4.iterators.EmptyOrderedIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ArrayListIterator
+AOR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+LOR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+SOR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+COR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+ROR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+ORU<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+LVR<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+STD<"org.apache.commons.collections4.iterators.ArrayListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.LoopingListIterator
+AOR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+LOR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+SOR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+COR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+ROR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+ORU<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+LVR<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+STD<"org.apache.commons.collections4.iterators.LoopingListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.IteratorEnumeration
+AOR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+LOR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+SOR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+COR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+ROR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+ORU<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+LVR<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+STD<"org.apache.commons.collections4.iterators.IteratorEnumeration">;
+
+// Enable operators for org.apache.commons.collections4.iterators.UniqueFilterIterator
+AOR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+LOR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+SOR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+COR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+ROR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+ORU<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+LVR<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+STD<"org.apache.commons.collections4.iterators.UniqueFilterIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.IteratorIterable
+AOR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+LOR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+SOR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+COR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+ROR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+ORU<"org.apache.commons.collections4.iterators.IteratorIterable">;
+LVR<"org.apache.commons.collections4.iterators.IteratorIterable">;
+STD<"org.apache.commons.collections4.iterators.IteratorIterable">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractEmptyMapIterator
+AOR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+COR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+STD<"org.apache.commons.collections4.iterators.AbstractEmptyMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.FilterListIterator
+AOR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+LOR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+SOR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+COR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+ROR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+ORU<"org.apache.commons.collections4.iterators.FilterListIterator">;
+LVR<"org.apache.commons.collections4.iterators.FilterListIterator">;
+STD<"org.apache.commons.collections4.iterators.FilterListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.BoundedIterator
+AOR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+LOR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+SOR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+COR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+ROR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+ORU<"org.apache.commons.collections4.iterators.BoundedIterator">;
+LVR<"org.apache.commons.collections4.iterators.BoundedIterator">;
+STD<"org.apache.commons.collections4.iterators.BoundedIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.UnmodifiableListIterator
+AOR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+LOR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+SOR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+COR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+ROR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+ORU<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+LVR<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+STD<"org.apache.commons.collections4.iterators.UnmodifiableListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EmptyListIterator
+AOR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+LOR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+SOR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+COR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+ROR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+ORU<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+LVR<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+STD<"org.apache.commons.collections4.iterators.EmptyListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.SkippingIterator
+AOR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+LOR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+SOR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+COR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+ROR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+ORU<"org.apache.commons.collections4.iterators.SkippingIterator">;
+LVR<"org.apache.commons.collections4.iterators.SkippingIterator">;
+STD<"org.apache.commons.collections4.iterators.SkippingIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EmptyOrderedMapIterator
+AOR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+COR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+STD<"org.apache.commons.collections4.iterators.EmptyOrderedMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.LazyIteratorChain
+AOR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+LOR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+SOR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+COR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+ROR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+ORU<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+LVR<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+STD<"org.apache.commons.collections4.iterators.LazyIteratorChain">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ReverseListIterator
+AOR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+LOR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+SOR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+COR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+ROR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+ORU<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+LVR<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+STD<"org.apache.commons.collections4.iterators.ReverseListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ZippingIterator
+AOR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+LOR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+SOR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+COR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+ROR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+ORU<"org.apache.commons.collections4.iterators.ZippingIterator">;
+LVR<"org.apache.commons.collections4.iterators.ZippingIterator">;
+STD<"org.apache.commons.collections4.iterators.ZippingIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.PushbackIterator
+AOR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+LOR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+SOR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+COR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+ROR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+ORU<"org.apache.commons.collections4.iterators.PushbackIterator">;
+LVR<"org.apache.commons.collections4.iterators.PushbackIterator">;
+STD<"org.apache.commons.collections4.iterators.PushbackIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ArrayIterator
+AOR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+LOR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+SOR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+COR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+ROR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+ORU<"org.apache.commons.collections4.iterators.ArrayIterator">;
+LVR<"org.apache.commons.collections4.iterators.ArrayIterator">;
+STD<"org.apache.commons.collections4.iterators.ArrayIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractIteratorDecorator
+AOR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+COR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+STD<"org.apache.commons.collections4.iterators.AbstractIteratorDecorator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator
+AOR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+COR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+STD<"org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.UnmodifiableIterator
+AOR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+LOR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+SOR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+COR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+ROR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+ORU<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+LVR<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+STD<"org.apache.commons.collections4.iterators.UnmodifiableIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ObjectArrayListIterator
+AOR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+LOR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+SOR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+COR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+ROR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+ORU<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+LVR<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+STD<"org.apache.commons.collections4.iterators.ObjectArrayListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EmptyMapIterator
+AOR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+COR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+STD<"org.apache.commons.collections4.iterators.EmptyMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractEmptyIterator
+AOR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+COR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+STD<"org.apache.commons.collections4.iterators.AbstractEmptyIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator
+AOR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+COR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+STD<"org.apache.commons.collections4.iterators.AbstractOrderedMapIteratorDecorator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator
+AOR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+LOR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+SOR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+COR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+ROR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+ORU<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+LVR<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+STD<"org.apache.commons.collections4.iterators.AbstractMapIteratorDecorator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.PeekingIterator
+AOR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+LOR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+SOR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+COR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+ROR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+ORU<"org.apache.commons.collections4.iterators.PeekingIterator">;
+LVR<"org.apache.commons.collections4.iterators.PeekingIterator">;
+STD<"org.apache.commons.collections4.iterators.PeekingIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.CollatingIterator
+AOR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+LOR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+SOR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+COR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+ROR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+ORU<"org.apache.commons.collections4.iterators.CollatingIterator">;
+LVR<"org.apache.commons.collections4.iterators.CollatingIterator">;
+STD<"org.apache.commons.collections4.iterators.CollatingIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.FilterIterator
+AOR<"org.apache.commons.collections4.iterators.FilterIterator">;
+LOR<"org.apache.commons.collections4.iterators.FilterIterator">;
+SOR<"org.apache.commons.collections4.iterators.FilterIterator">;
+COR<"org.apache.commons.collections4.iterators.FilterIterator">;
+ROR<"org.apache.commons.collections4.iterators.FilterIterator">;
+ORU<"org.apache.commons.collections4.iterators.FilterIterator">;
+LVR<"org.apache.commons.collections4.iterators.FilterIterator">;
+STD<"org.apache.commons.collections4.iterators.FilterIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ObjectGraphIterator
+AOR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+LOR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+SOR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+COR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+ROR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+ORU<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+LVR<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+STD<"org.apache.commons.collections4.iterators.ObjectGraphIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.EntrySetMapIterator
+AOR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+COR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+STD<"org.apache.commons.collections4.iterators.EntrySetMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.UnmodifiableMapIterator
+AOR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+LOR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+SOR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+COR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+ROR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+ORU<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+LVR<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+STD<"org.apache.commons.collections4.iterators.UnmodifiableMapIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.SingletonListIterator
+AOR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+LOR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+SOR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+COR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+ROR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+ORU<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+LVR<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+STD<"org.apache.commons.collections4.iterators.SingletonListIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.PermutationIterator
+AOR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+LOR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+SOR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+COR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+ROR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+ORU<"org.apache.commons.collections4.iterators.PermutationIterator">;
+LVR<"org.apache.commons.collections4.iterators.PermutationIterator">;
+STD<"org.apache.commons.collections4.iterators.PermutationIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.SingletonIterator
+AOR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+LOR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+SOR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+COR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+ROR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+ORU<"org.apache.commons.collections4.iterators.SingletonIterator">;
+LVR<"org.apache.commons.collections4.iterators.SingletonIterator">;
+STD<"org.apache.commons.collections4.iterators.SingletonIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.ObjectArrayIterator
+AOR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+LOR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+SOR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+COR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+ROR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+ORU<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+LVR<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+STD<"org.apache.commons.collections4.iterators.ObjectArrayIterator">;
+
+// Enable operators for org.apache.commons.collections4.iterators.NodeListIterator
+AOR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+LOR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+SOR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+COR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+ROR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+ORU<"org.apache.commons.collections4.iterators.NodeListIterator">;
+LVR<"org.apache.commons.collections4.iterators.NodeListIterator">;
+STD<"org.apache.commons.collections4.iterators.NodeListIterator">;
+
+// Enable operators for org.apache.commons.collections4.OrderedMap
+AOR<"org.apache.commons.collections4.OrderedMap">;
+LOR<"org.apache.commons.collections4.OrderedMap">;
+SOR<"org.apache.commons.collections4.OrderedMap">;
+COR<"org.apache.commons.collections4.OrderedMap">;
+ROR<"org.apache.commons.collections4.OrderedMap">;
+ORU<"org.apache.commons.collections4.OrderedMap">;
+LVR<"org.apache.commons.collections4.OrderedMap">;
+STD<"org.apache.commons.collections4.OrderedMap">;
+
+// Enable operators for org.apache.commons.collections4.SetUtils
+AOR<"org.apache.commons.collections4.SetUtils">;
+LOR<"org.apache.commons.collections4.SetUtils">;
+SOR<"org.apache.commons.collections4.SetUtils">;
+COR<"org.apache.commons.collections4.SetUtils">;
+ROR<"org.apache.commons.collections4.SetUtils">;
+ORU<"org.apache.commons.collections4.SetUtils">;
+LVR<"org.apache.commons.collections4.SetUtils">;
+STD<"org.apache.commons.collections4.SetUtils">;
+
+// Enable operators for org.apache.commons.collections4.MapIterator
+AOR<"org.apache.commons.collections4.MapIterator">;
+LOR<"org.apache.commons.collections4.MapIterator">;
+SOR<"org.apache.commons.collections4.MapIterator">;
+COR<"org.apache.commons.collections4.MapIterator">;
+ROR<"org.apache.commons.collections4.MapIterator">;
+ORU<"org.apache.commons.collections4.MapIterator">;
+LVR<"org.apache.commons.collections4.MapIterator">;
+STD<"org.apache.commons.collections4.MapIterator">;
+
+// Enable operators for org.apache.commons.collections4.Get
+AOR<"org.apache.commons.collections4.Get">;
+LOR<"org.apache.commons.collections4.Get">;
+SOR<"org.apache.commons.collections4.Get">;
+COR<"org.apache.commons.collections4.Get">;
+ROR<"org.apache.commons.collections4.Get">;
+ORU<"org.apache.commons.collections4.Get">;
+LVR<"org.apache.commons.collections4.Get">;
+STD<"org.apache.commons.collections4.Get">;
+
+// Enable operators for org.apache.commons.collections4.BoundedMap
+AOR<"org.apache.commons.collections4.BoundedMap">;
+LOR<"org.apache.commons.collections4.BoundedMap">;
+SOR<"org.apache.commons.collections4.BoundedMap">;
+COR<"org.apache.commons.collections4.BoundedMap">;
+ROR<"org.apache.commons.collections4.BoundedMap">;
+ORU<"org.apache.commons.collections4.BoundedMap">;
+LVR<"org.apache.commons.collections4.BoundedMap">;
+STD<"org.apache.commons.collections4.BoundedMap">;
+
+// Enable operators for org.apache.commons.collections4.Closure
+AOR<"org.apache.commons.collections4.Closure">;
+LOR<"org.apache.commons.collections4.Closure">;
+SOR<"org.apache.commons.collections4.Closure">;
+COR<"org.apache.commons.collections4.Closure">;
+ROR<"org.apache.commons.collections4.Closure">;
+ORU<"org.apache.commons.collections4.Closure">;
+LVR<"org.apache.commons.collections4.Closure">;
+STD<"org.apache.commons.collections4.Closure">;
+
+// Enable operators for org.apache.commons.collections4.IterableUtils
+AOR<"org.apache.commons.collections4.IterableUtils">;
+LOR<"org.apache.commons.collections4.IterableUtils">;
+SOR<"org.apache.commons.collections4.IterableUtils">;
+COR<"org.apache.commons.collections4.IterableUtils">;
+ROR<"org.apache.commons.collections4.IterableUtils">;
+ORU<"org.apache.commons.collections4.IterableUtils">;
+LVR<"org.apache.commons.collections4.IterableUtils">;
+STD<"org.apache.commons.collections4.IterableUtils">;
+
+// Enable operators for org.apache.commons.collections4.Factory
+AOR<"org.apache.commons.collections4.Factory">;
+LOR<"org.apache.commons.collections4.Factory">;
+SOR<"org.apache.commons.collections4.Factory">;
+COR<"org.apache.commons.collections4.Factory">;
+ROR<"org.apache.commons.collections4.Factory">;
+ORU<"org.apache.commons.collections4.Factory">;
+LVR<"org.apache.commons.collections4.Factory">;
+STD<"org.apache.commons.collections4.Factory">;
+
+// Enable operators for org.apache.commons.collections4.BidiMap
+AOR<"org.apache.commons.collections4.BidiMap">;
+LOR<"org.apache.commons.collections4.BidiMap">;
+SOR<"org.apache.commons.collections4.BidiMap">;
+COR<"org.apache.commons.collections4.BidiMap">;
+ROR<"org.apache.commons.collections4.BidiMap">;
+ORU<"org.apache.commons.collections4.BidiMap">;
+LVR<"org.apache.commons.collections4.BidiMap">;
+STD<"org.apache.commons.collections4.BidiMap">;
+
+// Enable operators for org.apache.commons.collections4.ArrayStack
+AOR<"org.apache.commons.collections4.ArrayStack">;
+LOR<"org.apache.commons.collections4.ArrayStack">;
+SOR<"org.apache.commons.collections4.ArrayStack">;
+COR<"org.apache.commons.collections4.ArrayStack">;
+ROR<"org.apache.commons.collections4.ArrayStack">;
+ORU<"org.apache.commons.collections4.ArrayStack">;
+LVR<"org.apache.commons.collections4.ArrayStack">;
+STD<"org.apache.commons.collections4.ArrayStack">;
+
+// Enable operators for org.apache.commons.collections4.MultiMapUtils
+AOR<"org.apache.commons.collections4.MultiMapUtils">;
+LOR<"org.apache.commons.collections4.MultiMapUtils">;
+SOR<"org.apache.commons.collections4.MultiMapUtils">;
+COR<"org.apache.commons.collections4.MultiMapUtils">;
+ROR<"org.apache.commons.collections4.MultiMapUtils">;
+ORU<"org.apache.commons.collections4.MultiMapUtils">;
+LVR<"org.apache.commons.collections4.MultiMapUtils">;
+STD<"org.apache.commons.collections4.MultiMapUtils">;
+
+// Enable operators for org.apache.commons.collections4.FluentIterable
+AOR<"org.apache.commons.collections4.FluentIterable">;
+LOR<"org.apache.commons.collections4.FluentIterable">;
+SOR<"org.apache.commons.collections4.FluentIterable">;
+COR<"org.apache.commons.collections4.FluentIterable">;
+ROR<"org.apache.commons.collections4.FluentIterable">;
+ORU<"org.apache.commons.collections4.FluentIterable">;
+LVR<"org.apache.commons.collections4.FluentIterable">;
+STD<"org.apache.commons.collections4.FluentIterable">;
+
+// Enable operators for org.apache.commons.collections4.FunctorException
+AOR<"org.apache.commons.collections4.FunctorException">;
+LOR<"org.apache.commons.collections4.FunctorException">;
+SOR<"org.apache.commons.collections4.FunctorException">;
+COR<"org.apache.commons.collections4.FunctorException">;
+ROR<"org.apache.commons.collections4.FunctorException">;
+ORU<"org.apache.commons.collections4.FunctorException">;
+LVR<"org.apache.commons.collections4.FunctorException">;
+STD<"org.apache.commons.collections4.FunctorException">;
+
+// Enable operators for org.apache.commons.collections4.ComparatorUtils
+AOR<"org.apache.commons.collections4.ComparatorUtils">;
+LOR<"org.apache.commons.collections4.ComparatorUtils">;
+SOR<"org.apache.commons.collections4.ComparatorUtils">;
+COR<"org.apache.commons.collections4.ComparatorUtils">;
+ROR<"org.apache.commons.collections4.ComparatorUtils">;
+ORU<"org.apache.commons.collections4.ComparatorUtils">;
+LVR<"org.apache.commons.collections4.ComparatorUtils">;
+STD<"org.apache.commons.collections4.ComparatorUtils">;
+
+// Enable operators for org.apache.commons.collections4.bag.TransformedSortedBag
+AOR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+LOR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+SOR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+COR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+ROR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+ORU<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+LVR<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+STD<"org.apache.commons.collections4.bag.TransformedSortedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.SynchronizedBag
+AOR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+LOR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+SOR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+COR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+ROR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+ORU<"org.apache.commons.collections4.bag.SynchronizedBag">;
+LVR<"org.apache.commons.collections4.bag.SynchronizedBag">;
+STD<"org.apache.commons.collections4.bag.SynchronizedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.TreeBag
+AOR<"org.apache.commons.collections4.bag.TreeBag">;
+LOR<"org.apache.commons.collections4.bag.TreeBag">;
+SOR<"org.apache.commons.collections4.bag.TreeBag">;
+COR<"org.apache.commons.collections4.bag.TreeBag">;
+ROR<"org.apache.commons.collections4.bag.TreeBag">;
+ORU<"org.apache.commons.collections4.bag.TreeBag">;
+LVR<"org.apache.commons.collections4.bag.TreeBag">;
+STD<"org.apache.commons.collections4.bag.TreeBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.CollectionBag
+AOR<"org.apache.commons.collections4.bag.CollectionBag">;
+LOR<"org.apache.commons.collections4.bag.CollectionBag">;
+SOR<"org.apache.commons.collections4.bag.CollectionBag">;
+COR<"org.apache.commons.collections4.bag.CollectionBag">;
+ROR<"org.apache.commons.collections4.bag.CollectionBag">;
+ORU<"org.apache.commons.collections4.bag.CollectionBag">;
+LVR<"org.apache.commons.collections4.bag.CollectionBag">;
+STD<"org.apache.commons.collections4.bag.CollectionBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.UnmodifiableSortedBag
+AOR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+LOR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+SOR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+COR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+ROR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+ORU<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+LVR<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+STD<"org.apache.commons.collections4.bag.UnmodifiableSortedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.PredicatedSortedBag
+AOR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+LOR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+SOR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+COR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+ROR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+ORU<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+LVR<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+STD<"org.apache.commons.collections4.bag.PredicatedSortedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.TransformedBag
+AOR<"org.apache.commons.collections4.bag.TransformedBag">;
+LOR<"org.apache.commons.collections4.bag.TransformedBag">;
+SOR<"org.apache.commons.collections4.bag.TransformedBag">;
+COR<"org.apache.commons.collections4.bag.TransformedBag">;
+ROR<"org.apache.commons.collections4.bag.TransformedBag">;
+ORU<"org.apache.commons.collections4.bag.TransformedBag">;
+LVR<"org.apache.commons.collections4.bag.TransformedBag">;
+STD<"org.apache.commons.collections4.bag.TransformedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.AbstractSortedBagDecorator
+AOR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+LOR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+SOR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+COR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+ROR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+ORU<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+LVR<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+STD<"org.apache.commons.collections4.bag.AbstractSortedBagDecorator">;
+
+// Enable operators for org.apache.commons.collections4.bag.AbstractMapBag
+AOR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+LOR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+SOR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+COR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+ROR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+ORU<"org.apache.commons.collections4.bag.AbstractMapBag">;
+LVR<"org.apache.commons.collections4.bag.AbstractMapBag">;
+STD<"org.apache.commons.collections4.bag.AbstractMapBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.UnmodifiableBag
+AOR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+LOR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+SOR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+COR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+ROR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+ORU<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+LVR<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+STD<"org.apache.commons.collections4.bag.UnmodifiableBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.SynchronizedSortedBag
+AOR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+LOR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+SOR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+COR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+ROR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+ORU<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+LVR<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+STD<"org.apache.commons.collections4.bag.SynchronizedSortedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.HashBag
+AOR<"org.apache.commons.collections4.bag.HashBag">;
+LOR<"org.apache.commons.collections4.bag.HashBag">;
+SOR<"org.apache.commons.collections4.bag.HashBag">;
+COR<"org.apache.commons.collections4.bag.HashBag">;
+ROR<"org.apache.commons.collections4.bag.HashBag">;
+ORU<"org.apache.commons.collections4.bag.HashBag">;
+LVR<"org.apache.commons.collections4.bag.HashBag">;
+STD<"org.apache.commons.collections4.bag.HashBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.AbstractBagDecorator
+AOR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+LOR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+SOR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+COR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+ROR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+ORU<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+LVR<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+STD<"org.apache.commons.collections4.bag.AbstractBagDecorator">;
+
+// Enable operators for org.apache.commons.collections4.bag.PredicatedBag
+AOR<"org.apache.commons.collections4.bag.PredicatedBag">;
+LOR<"org.apache.commons.collections4.bag.PredicatedBag">;
+SOR<"org.apache.commons.collections4.bag.PredicatedBag">;
+COR<"org.apache.commons.collections4.bag.PredicatedBag">;
+ROR<"org.apache.commons.collections4.bag.PredicatedBag">;
+ORU<"org.apache.commons.collections4.bag.PredicatedBag">;
+LVR<"org.apache.commons.collections4.bag.PredicatedBag">;
+STD<"org.apache.commons.collections4.bag.PredicatedBag">;
+
+// Enable operators for org.apache.commons.collections4.bag.CollectionSortedBag
+AOR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+LOR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+SOR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+COR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+ROR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+ORU<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+LVR<"org.apache.commons.collections4.bag.CollectionSortedBag">;
+STD<"org.apache.commons.collections4.bag.CollectionSortedBag">;

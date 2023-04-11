@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local position to be used
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 57
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local length is replaced by local limit to be used
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 57
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field iPivot
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 57
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 58
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 45 with 46
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 9
+	First Index: 61
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 43 with 44
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 10
+	First Index: 64
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 59
+	Rank: 3
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 9
+	First Index: 62
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 59
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 8
+	First Index: 59
+	Rank: 3
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 1585
+	Block: 9
+	First Index: 62
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

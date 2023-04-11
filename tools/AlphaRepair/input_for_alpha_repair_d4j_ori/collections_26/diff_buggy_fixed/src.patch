@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/collections_26/src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java	2023-01-16 15:29:30.876124698 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/collections/26/patch/./org/apache/commons/collections4/keyvalue/MultiKey.java	2023-01-16 15:29:30.844124297 -0600
+@@ -274,7 +274,7 @@
+      * only stable for the same process).
+      * @return the instance with recalculated hash code
+      */
+-    private Object readResolve() {
++    protected Object readResolve() {
+         calculateHashCode(keys);
+         return this;
+     }

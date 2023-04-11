@@ -1,0 +1,5 @@
+    public String getValue(int index)
+        throws IndexOutOfBoundsException
+    {
+        return hasNoValues() ? null : (String) this.values.get(index);
+    }

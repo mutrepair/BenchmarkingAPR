@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local inputPtr is replaced by local inputEnd to be used
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local inputPtr is replaced by local safeInputEnd to be used
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local inputPtr is replaced by local safeOutputEnd to be used
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local inputPtr is replaced by local chunksBeforeLF to be used
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local inputPtr is replaced by access to field SHORT_WRITE
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local inputPtr is replaced by access to field _outputHead
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local inputPtr is replaced by access to field _outputTail
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local inputPtr is replaced by access to field _outputEnd
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 42
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 44
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 45
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1462
+	Block: 343
+	First Index: 42
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

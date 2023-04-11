@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5854/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.451797677 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -613,7 +613,7 @@
+                             throw new IOException("unexpected end of stream");
+                         }
+                     }
+-                    int zvec = (bsBuffShadow >> (bsLiveShadow % zn))
++                    int zvec = (bsBuffShadow >> (bsLiveShadow - zn))
+                         & ((1 << zn) - 1);
+                     bsLiveShadow -= zn;
+ 

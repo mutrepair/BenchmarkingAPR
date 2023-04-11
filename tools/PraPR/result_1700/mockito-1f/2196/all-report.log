@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wantedCount is replaced by local actualCount to be used
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 18
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local actualCount is replaced by local wantedCount to be used
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 19
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 20
+	Rank: 1
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 20
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 20
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderChecker.java
+	Line Number: 38
+	Block: 2
+	First Index: 20
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

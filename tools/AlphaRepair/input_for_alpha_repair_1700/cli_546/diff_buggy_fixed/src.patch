@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/546/org/apache/commons/cli/HelpFormatter.java	2022-10-31 19:47:31.263834378 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/HelpFormatter.java	2022-12-26 15:13:38.053475668 -0600
+@@ -604,7 +604,7 @@
+      */
+     public void printWrapped(PrintWriter pw, int width, String text)
+     {
+-        printWrapped(pw, width, -1, text);
++        printWrapped(pw, width, 0, text);
+     }
+ 
+     /**

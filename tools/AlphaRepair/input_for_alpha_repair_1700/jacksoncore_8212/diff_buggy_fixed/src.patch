@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/8212/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-10-31 19:47:45.215784031 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1093,7 +1093,7 @@
+         }
+         char ch = _inputBuffer[_inputPtr];
+         // if not followed by a number (probably '.'); return zero as is, to be included
+-        if (ch > '9') {
++        if (ch < '0' || ch > '9') {
+             return '0';
+         }
+         if (!isEnabled(Feature.ALLOW_NUMERIC_LEADING_ZEROS)) {

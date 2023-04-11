@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_77/src/main/java/org/jsoup/parser/XmlTreeBuilder.java	2023-01-16 15:29:57.184453230 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/77/patch/./org/jsoup/parser/XmlTreeBuilder.java	2023-01-16 15:29:57.136452630 -0600
+@@ -114,7 +114,7 @@
+      * @param endTag tag to close
+      */
+     private void popStackToClose(Token.EndTag endTag) {
+-        String elName = endTag.name();
++        String elName = endTag.normalName();
+         Element firstFound = null;
+ 
+         for (int pos = stack.size() -1; pos >= 0; pos--) {

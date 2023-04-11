@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/47033/com/google/javascript/jscomp/parsing/JsDocInfoParser.java	2022-10-31 19:47:37.895810527 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java	2022-10-29 06:55:08.070850577 -0500
+@@ -2305,7 +2305,7 @@
+    */
+   private boolean match(JsDocToken token) {
+     unreadToken = next();
+-    return false;
++    return unreadToken == token;
+   }
+ 
+   /**

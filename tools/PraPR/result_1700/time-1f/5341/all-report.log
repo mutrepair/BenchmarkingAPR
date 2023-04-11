@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local thisStart is replaced by local thisEnd to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 21
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local now is replaced by local thisStart to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 22
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local thisEnd is replaced by local thisStart to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 23
+	First Index: 26
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local thisStart is replaced by local now to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 21
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local now is replaced by local thisEnd to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 22
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local thisEnd is replaced by local now to be used
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 23
+	First Index: 26
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/joda/time/base/AbstractInterval::overlaps
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/joda/time/base/AbstractInterval::overlaps
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 24
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 23
+	First Index: 28
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 24
+	First Index: 29
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 25
+	First Index: 32
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 24
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 24
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 22
+	First Index: 24
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/joda/time/base/AbstractInterval.java
+	Line Number: 235
+	Block: 25
+	First Index: 34
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

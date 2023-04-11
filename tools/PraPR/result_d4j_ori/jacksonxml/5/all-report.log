@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _rootNameLookup is guarded using value null
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 59
+	Block: 2
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local src to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 59
+	Block: 2
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local src is replaced by local this to be used
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 59
+	Block: 2
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _rootNameLookup is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 59
+	Block: 2
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _rootNameLookup
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 59
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

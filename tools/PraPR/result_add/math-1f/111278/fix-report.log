@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 18:18:43 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 53
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 675
+	Block: 46
+	First Index: 347
+	Rank: 2
+	Total Rank: 53
+	Status: SURVIVED
+	Dump: mutant-52.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 675
+	Block: 46
+	First Index: 348
+	Rank: 2
+	Total Rank: 53
+	Status: SURVIVED
+	Dump: mutant-53.class
+------------------------------------------------

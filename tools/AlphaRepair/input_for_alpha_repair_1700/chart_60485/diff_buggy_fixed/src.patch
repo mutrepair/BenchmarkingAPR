@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/60485/org/jfree/chart/renderer/xy/XYDifferenceRenderer.java	2022-10-31 19:47:29.547840526 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/xy/XYDifferenceRenderer.java	2022-10-29 16:41:07.434717404 -0500
+@@ -1163,7 +1163,7 @@
+         }
+         XYDifferenceRenderer that = (XYDifferenceRenderer) obj;
+         if (!PaintUtilities.equal(this.positivePaint, that.positivePaint)) {
+-            return true;
++            return false;
+         }
+         if (!PaintUtilities.equal(this.negativePaint, that.negativePaint)) {
+             return false;

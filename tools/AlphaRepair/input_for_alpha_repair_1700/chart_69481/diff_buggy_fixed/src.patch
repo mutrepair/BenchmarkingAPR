@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/69481/org/jfree/data/general/DatasetUtilities.java	2022-10-31 19:47:29.631840225 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/general/DatasetUtilities.java	2022-10-29 16:41:07.438717383 -0500
+@@ -546,7 +546,7 @@
+         }
+ 
+         XYSeries series = new XYSeries(seriesKey);
+-        double step = (end - start) % (samples - 1);
++        double step = (end - start) / (samples - 1);
+         for (int i = 0; i < samples; i++) {
+             double x = start + (step * i);
+             series.add(x, f.getValue(x));

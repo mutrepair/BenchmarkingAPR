@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local clazz is replaced a call clazz.getSuperclass()
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 3
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::getModifiers()I is guarded using default value 0
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getModifiers()I is guarded returning default value false
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/google/gson/InnerClassExclusionStrategy::isStatic
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 9
+	First Index: 13
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/google/gson/InnerClassExclusionStrategy::isStatic
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 9
+	First Index: 13
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 5
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 8
+	First Index: 8
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 9
+	First Index: 11
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 6
+	Rank: 3
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 7
+	Rank: 3
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::getModifiers
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 7
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/gson/InnerClassExclusionStrategy.java
+	Line Number: 41
+	Block: 9
+	First Index: 13
+	Rank: 3
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------

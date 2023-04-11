@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to maxNumberOfInvocations is guarded using value 0
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to maxNumberOfInvocations is guarded using local foundSize
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to maxNumberOfInvocations is guarded using field maxNumberOfInvocations
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field maxNumberOfInvocations is replaced by access to local foundSize
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local foundSize is replaced by access to field maxNumberOfInvocations
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to maxNumberOfInvocations is guarded returning enclosing method
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/verification/AtMost.java
+	Line Number: 37
+	Block: 3
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

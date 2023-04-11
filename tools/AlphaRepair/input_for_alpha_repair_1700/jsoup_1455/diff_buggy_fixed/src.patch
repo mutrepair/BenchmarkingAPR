@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1455/org/jsoup/select/Selector.java	2022-10-31 19:47:50.423765072 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Selector.java	2022-12-26 15:13:53.649644217 -0600
+@@ -151,7 +151,7 @@
+             return byAttribute();
+         } else if (tq.matchChomp("*")) {
+             return allElements();
+-        } else if (true) {
++        } else if (tq.matchChomp(":lt(")) {
+             return indexLessThan();
+         } else if (tq.matchChomp(":gt(")) {
+             return indexGreaterThan();

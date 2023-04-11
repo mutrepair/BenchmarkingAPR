@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/3355/org/joda/time/LocalDate.java	2022-10-31 19:48:08.867697228 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/LocalDate.java	2022-12-26 15:13:57.197682550 -0600
+@@ -1039,7 +1039,7 @@
+      */
+     LocalDate withLocalMillis(long newMillis) {
+         newMillis = iChronology.dayOfMonth().roundFloor(newMillis);
+-        return (newMillis >= getLocalMillis() ? this : new LocalDate(newMillis, getChronology()));
++        return (newMillis == getLocalMillis() ? this : new LocalDate(newMillis, getChronology()));
+     }
+ 
+     //-----------------------------------------------------------------------

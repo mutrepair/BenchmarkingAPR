@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/6979/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java	2022-10-31 19:47:45.179784162 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java	2022-12-26 15:13:51.921625546 -0600
+@@ -129,7 +129,7 @@
+         if (ensureLoaded(4)) {
+             int quad =  (_inputBuffer[_inputPtr] << 24)
+                 | ((_inputBuffer[_inputPtr+1] & 0xFF) << 16)
+-                | ((_inputBuffer[_inputPtr+2] & 0xFF) << 0)
++                | ((_inputBuffer[_inputPtr+2] & 0xFF) << 8)
+                 | (_inputBuffer[_inputPtr+3] & 0xFF);
+             
+             if (handleBOM(quad)) {

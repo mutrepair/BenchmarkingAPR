@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/116783/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.093958927 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -2622,7 +2622,7 @@
+ 
+         if (y == Double.NEGATIVE_INFINITY) {
+             if (x == Double.POSITIVE_INFINITY) {
+-                return +Math.PI * F_1_4;
++                return -Math.PI * F_1_4;
+             }
+ 
+             if (x == Double.NEGATIVE_INFINITY) {

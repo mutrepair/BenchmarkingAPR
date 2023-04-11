@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_105/src/java/org/apache/commons/math/stat/regression/SimpleRegression.java	2023-01-16 15:30:07.672584201 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/105/patch/./org/apache/commons/math/stat/regression/SimpleRegression.java	2023-01-16 15:30:07.640583801 -0600
+@@ -261,7 +261,7 @@
+      * @return sum of squared errors associated with the regression model
+      */
+     public double getSumSquaredErrors() {
+-        return sumYY - sumXY * sumXY / sumXX;
++        return Math.max(0d, sumYY - sumXY * sumXY / sumXX);
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1860/com/google/gson/JsonParser.java	2022-10-31 19:47:43.703789518 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonParser.java	2022-12-26 15:13:51.393619841 -0600
+@@ -61,7 +61,7 @@
+    */
+   public JsonElement parse(JsonReader json) throws JsonParseException {
+     boolean lenient = json.isLenient();
+-    json.setLenient(false);
++    json.setLenient(true);
+     try {
+       return Streams.parse(json);
+     } catch (StackOverflowError e) {

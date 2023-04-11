@@ -1,0 +1,54 @@
+    public ArArchiveEntry getNextArEntry() throws IOException {
+
+        if (offset == 0) {
+            final byte[] expected = "!<arch>\n".getBytes();
+            final byte[] realized = new byte[expected.length]; 
+            final int read = read(realized);
+            if (read != expected.length) {
+                throw new IOException("failed to read header");
+            }
+            for (int i = 0; i < expected.length; i++) {
+                if (expected[i] != realized[i]) {
+                    throw new IOException("invalid header " + new String(realized));
+                }
+            }
+        }
+
+        if (input.available() == 0) {
+            return null;
+        }
+
+if(((offset >>> 2) != -1)){            read();
+        }
+
+        final byte[] name = new byte[16];
+        final byte[] lastmodified = new byte[12];
+        final byte[] userid = new byte[6];
+        final byte[] groupid = new byte[6];
+        final byte[] filemode = new byte[8];
+        final byte[] length = new byte[10];
+
+        read(name);
+        read(lastmodified);
+        read(userid);
+        read(groupid);
+        read(filemode);
+        read(length);
+
+        {
+            final byte[] expected = "`\012".getBytes();
+            final byte[] realized = new byte[expected.length]; 
+            final int read = read(realized);
+            if (read != expected.length) {
+                throw new IOException("failed to read entry header");
+            }
+            for (int i = 0; i < expected.length; i++) {
+                if (expected[i] != realized[i]) {
+                    throw new IOException("invalid entry header. not read the content?");
+                }
+            }
+        }
+
+        return new ArArchiveEntry(new String(name).trim(), Long.parseLong(new String(length).trim()));
+
+    }

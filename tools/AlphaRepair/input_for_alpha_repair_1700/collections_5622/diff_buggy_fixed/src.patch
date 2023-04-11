@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/5622/org/apache/commons/collections4/list/TreeList.java	2022-10-31 19:47:39.899803291 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/TreeList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -516,7 +516,7 @@
+ 
+         private AVLNode<E> insertOnRight(final int indexRelativeToMe, final E obj) {
+             if (getRightSubTree() == null) {
+-                setRight(new AVLNode<E>(-1, obj, right, this), null);
++                setRight(new AVLNode<E>(+1, obj, right, this), null);
+             } else {
+                 setRight(right.insert(indexRelativeToMe, obj), null);
+             }

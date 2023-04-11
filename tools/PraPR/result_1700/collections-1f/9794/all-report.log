@@ -1,0 +1,289 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 26
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to start is guarded using value 0
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to maxElements is guarded using value 0
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to start is guarded using local index
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to maxElements is guarded using local index
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to start is guarded using field start
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to maxElements is guarded using field start
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.queue.CircularFifoQueue.start is replaced by the call to org.apache.commons.collections4.queue.CircularFifoQueue::size()I
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.queue.CircularFifoQueue.maxElements is replaced by the call to org.apache.commons.collections4.queue.CircularFifoQueue::size()I
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.collections4.queue.CircularFifoQueue.start is replaced by the call to org.apache.commons.collections4.queue.CircularFifoQueue::maxSize()I
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.collections4.queue.CircularFifoQueue.maxElements is replaced by the call to org.apache.commons.collections4.queue.CircularFifoQueue::maxSize()I
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to start with an access to end
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to maxElements with an access to start
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to start with an access to maxElements
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to maxElements with an access to end
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field start is replaced by access to local index
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field maxElements is replaced by access to local index
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field start is replaced by access to local sz
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field maxElements is replaced by access to local sz
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local index is replaced by local sz to be used
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field start
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local index is replaced by access to field end
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local index is replaced by access to field maxElements
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to start is guarded returning default value null
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to maxElements is guarded returning default value null
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/collections4/queue/CircularFifoQueue.java
+	Line Number: 269
+	Block: 40
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

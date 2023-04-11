@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/115029/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.143729454 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -1984,7 +1984,7 @@
+         if (xb != 0.0) {
+             // tan' = 1 + tan^2      cot' = -(1 + cot^2)
+             // Approximate impact of xb
+-            double xbadj = xb - est * est * xb;
++            double xbadj = xb + est*est*xb;
+             if (cotanFlag) {
+                 xbadj = -xbadj;
+             }

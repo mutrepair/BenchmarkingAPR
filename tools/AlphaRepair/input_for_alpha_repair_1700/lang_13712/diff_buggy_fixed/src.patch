@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/13712/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.059740788 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -6290,7 +6290,7 @@
+         if (maxWidth < 4) {
+             throw new IllegalArgumentException("Minimum abbreviation width is 4");
+         }
+-        if (true) {
++        if (str.length() <= maxWidth) {
+             return str;
+         }
+         if (offset > str.length()) {

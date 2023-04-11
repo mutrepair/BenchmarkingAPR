@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4104/org/apache/commons/collections4/iterators/LoopingListIterator.java	2022-10-31 19:47:39.791803681 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/iterators/LoopingListIterator.java	2022-12-26 15:13:49.797602596 -0600
+@@ -141,7 +141,7 @@
+             throw new NoSuchElementException(
+                 "There are no elements for this iterator to loop on");
+         }
+-        if (false) {
++        if (iterator.hasPrevious() == false) {
+             E result = null;
+             while (iterator.hasNext()) {
+                 result = iterator.next();

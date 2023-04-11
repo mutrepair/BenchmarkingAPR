@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/4156/com/google/javascript/jscomp/NodeTraversal.java	2022-10-31 19:47:37.839810729 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/NodeTraversal.java	2022-10-29 13:19:18.154153632 -0500
+@@ -595,7 +595,7 @@
+   /** Gets the current scope. */
+   public Scope getScope() {
+     Scope scope = scopes.isEmpty() ? null : scopes.peek();
+-    if (true) {
++    if (scopeRoots.isEmpty()) {
+       return scope;
+     }
+ 

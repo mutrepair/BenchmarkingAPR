@@ -1,0 +1,2 @@
+  boolean isMessageName(String identifier, boolean isNewStyleMessage) {
+return (identifier.startsWith(MSG_FALLBACK_FUNCTION_NAME.CLOSURE) && ((style == JsMessage.Style.CLOSURE) || !identifier.endsWith(DESC_SUFFIX)));  }

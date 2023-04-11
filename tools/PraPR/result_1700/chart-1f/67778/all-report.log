@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/data/KeyedObjectComparator.java
+	Line Number: 140
+	Block: 21
+	First Index: 128
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/jfree/data/KeyedObjectComparator::compare
+	File Name: org/jfree/data/KeyedObjectComparator.java
+	Line Number: 140
+	Block: 21
+	First Index: 129
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jfree/data/KeyedObjectComparator.java
+	Line Number: 140
+	Block: 21
+	First Index: 129
+	Rank: 3
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------

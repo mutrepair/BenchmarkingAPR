@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to unicode is guarded using value '\0'
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 37
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to unicode is guarded using local c
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 37
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field unicode is replaced by access to local c
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 37
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to unicode is guarded returning default value null
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 37
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to unicode is guarded returning local m
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 37
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 39
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 39
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 39
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/compress/archivers/zip/Simple8BitZipEncoding.java
+	Line Number: 176
+	Block: 19
+	First Index: 39
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

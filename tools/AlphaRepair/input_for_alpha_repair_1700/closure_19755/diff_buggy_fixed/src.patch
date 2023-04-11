@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/19755/com/google/javascript/jscomp/BasicErrorManager.java	2022-10-31 19:47:37.679811306 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/BasicErrorManager.java	2022-10-29 12:47:15.064686841 -0500
+@@ -159,7 +159,7 @@
+       int lineno2 = p2.error.lineNumber;
+       if (lineno1 != lineno2) {
+         return lineno1 - lineno2;
+-      } else if (lineno1 < 0 && true) {
++      } else if (lineno1 < 0 && 0 <= lineno2) {
+         return P1_LT_P2;
+       } else if (0 <= lineno1 && lineno2 < 0) {
+         return P1_GT_P2;

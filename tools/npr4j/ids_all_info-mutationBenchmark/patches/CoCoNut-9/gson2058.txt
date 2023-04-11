@@ -1,0 +1,100 @@
+^( true ?0: owner.hashCode( ) )
+^( false ?0: owner.hashCode( ) )
+^( true , owner.hashCode( ) )
+^( ) ?0: owner.hashCode( ) )
+^( false , owner.hashCode( ) )
+^( false ? owner : owner.hashCode( ) )
+^(0?0: owner.hashCode( ) )
+^( true ? owner : owner.hashCode( ) )
+^(1?0: owner.hashCode( ) )
+^( true ?1: owner.hashCode( ) )
+^( false *0: owner.hashCode( ) )
+^( false ?1: owner.hashCode( ) )
+^( true &0: owner.hashCode( ) )
+^( true *0: owner.hashCode( ) )
+^( false &0: owner.hashCode( ) )
+^( true ?0: owner.hashCode( ) ;
+^( true ).hashCode( ) ;
+^( 'License'+ owner.hashCode( ) )
+^( 'AS IS'+ owner.hashCode( ) )
+^( true )
+^( false ).hashCode( ) ;
+^( ! owner.hashCode( ) )
+^( true : owner.hashCode( ) )
+^( false : owner.hashCode( ) )
+^(0, owner.hashCode( ) )
+^( false ) , owner.hashCode( ) )
+^( true ) : owner.hashCode( ) )
+^( false )
+^( true ) , owner.hashCode( ) )
+^( false ) : owner.hashCode( ) )
+^( owner.hashCode( ) )
+^(( int ) owner.hashCode( ) )
+^(( long ) owner.hashCode( ) )
+^( true || owner.hashCode( ) )
+^( true ) && owner.hashCode( ) )
+^( false ) && owner.hashCode( ) )
+^( true ) || owner.hashCode( ) )
+^( true && owner.hashCode( ) )
+^( true + owner.hashCode( ) )
+^( false || owner.hashCode( ) )
+^( false ) || owner.hashCode( ) )
+^( ).hashCode( ) ;
+^( false ).hashCode( ) )
+^( true.hashCode( ) )
+^( false && owner.hashCode( ) )
+^( true ).hashCode( ) )
+^( false ? owner.hashCode( ) )
+^1: owner.hashCode( ) )
+^ ! owner.hashCode( ) )
+^( false.hashCode( ) )
+^( true ?0: owner ) ;
+^( ).hashCode( ) )
+^( false ?0: owner ) ;
+^( true ) ;
+^( false ) ;
+^ ! owner.hashCode( ) ;
+^2.hashCode( ) ;
+^2008.hashCode( ) ;
+^0.hashCode( ) ;
+^( true , owner )
+^( true ).hashCode( )
+^( false ).hashCode( )
+^2.hashCode( ) )
+^2008.hashCode( ) )
+^0.hashCode( ) )
+^1.hashCode( ) ;
+^( true && owner != null )
+^( true ?0: owner ;
+^( false , owner )
+^1.hashCode( ) )
+^( false && owner != null )
+^( false ?0: owner ;
+^( true , owner , owner )
+^( true && owner == null )
+^( ) ;
+^( true || owner != null )
+^( false && owner == null )
+^( false , owner , owner )
+^( true +1)
+^( true ) )
+^( false ) )
+^( true ) ==0)
+^( true ==0)
+^( true ,0)
+^( 'License', owner )
+^( 'AS IS', owner )
+^( false +1)
+^( true !=0)
+^( false ==0)
+^( true -1)
+^( true *2)
+^( true *2008)
+^( true *0)
+^( true ;
+^(0)
+^( 'License') ;
+^( 'AS IS') ;
+^( -1)
+^( 'License')
+^( 'AS IS')

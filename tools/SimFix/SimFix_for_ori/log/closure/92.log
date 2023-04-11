@@ -1,0 +1,199 @@
+=================================================
+Project : closure_92	start : 23/02/07 01:38
+Current failed test : com.google.javascript.jscomp.ProcessClosurePrimitivesTest::testProvideInIndependentModules4 | 23/02/07 01:38
+Tue Feb 07 01:38:58 CST 2023 com.google.javascript.jscomp.ProcessClosurePrimitives,789
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int indexOfDot=namespace.lastIndexOf('.');
+if(indexOfDot==-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2217409186509385 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java=>0,0]
+for(String line : lines){
+int pos=line.lastIndexOf(SEPARATOR);
+if(pos<=0||pos==line.length()-1){
+throw new ParseException("Bad line: "+line,0);
+}
+map.put(line.substring(0,pos),line.substring(pos+1));
+}
+
+Time : 23/02/07 01:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java=>789,802]
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot==-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java=>789,802]
+int indexOfDot=namespace.lastIndexOf('.');
+if(indexOfDot==-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+compiler.reportCodeChange();
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(explicitNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,replacementNode);
+}
+
+Time : 23/02/07 01:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(explicitNode,replacementNode);
+}
+
+Time : 23/02/07 01:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+compiler.reportCodeChange();
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(explicitNode,parentName.replacementNode);
+}
+
+Time : 23/02/07 01:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+compiler.reportCodeChange();
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(replacementNode,replacementNode);
+}
+
+Time : 23/02/07 01:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+compiler.reportCodeChange();
+int indexOfDot=namespace.indexOf('.');
+if(indexOfDot!=-1){
+compiler.getNodeForCodeInsertion(minimumModule).addChildToBack(replacementNode);
+}else {
+ProvidedName parentName=providedNames.get(namespace.substring(0,indexOfDot));
+Preconditions.checkNotNull(parentName);
+Preconditions.checkNotNull(parentName.replacementNode);
+parentName.replacementNode.getParent().addChildAfter(explicitNode,replacementNode);
+}
+
+Time : 23/02/07 01:45
+----------------------------------------
+Success time : 23/02/07 01:48

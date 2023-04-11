@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicatesStandard(Lorg/apache/commons/jxpath/ri/EvalContext;Ljava/util/List;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.CollectionPointer using (Lorg/apache/commons/jxpath/ri/model/NodePointer;Ljava/lang/Object;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 113
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicatesStandard(Lorg/apache/commons/jxpath/ri/EvalContext;Ljava/util/List;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.PropertyPointer using (Lorg/apache/commons/jxpath/ri/model/NodePointer;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 113
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicatesStandard(Lorg/apache/commons/jxpath/ri/EvalContext;Ljava/util/List;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.CollectionPointer using (Ljava/lang/Object;Ljava/util/Locale;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 113
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local newList is replaced by local parents to be used
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 106
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local currentStep is replaced by local currentPredicate to be used
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 108
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local currentPredicate is replaced by local currentStep to be used
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 110
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local currentStep is replaced by access to field PERFECT_MATCH
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 108
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local currentPredicate is replaced by access to field PERFECT_MATCH
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 110
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 111
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 112
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doPredicatesStandard
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 113
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doPredicatesStandard
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 114
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doPredicatesStandard to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 590
+	Block: 112
+	First Index: 114
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

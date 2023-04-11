@@ -1,0 +1,2 @@
+            byte val3 = ((b3 & SIGN) == 0) ? (byte) (b3 >> 6) : (byte) ((b3) >> -6 ^ 0xfc);
+

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/682/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.955766780 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -84,7 +84,7 @@
+ 
+         @Override public boolean enabledByDefault() { return _defaultState; }
+         @Override public int getMask() { return _mask; }
+-        @Override public boolean enabledIn(int flags) { return (flags & getMask()) != 1; }
++        @Override public boolean enabledIn(int flags) { return (flags & getMask()) != 0; }
+     }
+ 
+     /*

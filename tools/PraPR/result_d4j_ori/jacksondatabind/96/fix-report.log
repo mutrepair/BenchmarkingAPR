@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 11:50:01 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to findImplicitParamName with a call to paramName
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------

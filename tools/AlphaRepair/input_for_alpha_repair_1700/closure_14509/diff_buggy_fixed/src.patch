@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/14509/com/google/javascript/jscomp/TypeCheck.java	2022-10-31 19:47:37.635811464 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeCheck.java	2022-10-29 13:14:31.331198812 -0500
+@@ -1351,7 +1351,7 @@
+     // pre order traversal of the FUNCTION, CATCH, LP and VAR nodes.
+     int parentNodeType = parent.getType();
+     if (parentNodeType == Token.FUNCTION ||
+-        parentNodeType <= Token.CATCH ||
++        parentNodeType == Token.CATCH ||
+         parentNodeType == Token.PARAM_LIST ||
+         parentNodeType == Token.VAR) {
+       return false;

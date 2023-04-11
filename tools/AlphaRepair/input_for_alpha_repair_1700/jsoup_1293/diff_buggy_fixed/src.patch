@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1293/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.347765349 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -70,7 +70,7 @@
+     public boolean matches(String seq) {
+         int len = seq.length();
+         if (len > queue.size())
+-            return true;
++            return false;
+         List<Character> chars = queue.subList(0, len);
+         char[] seqChars = seq.toCharArray();
+         for (int i = 0; i < len; i++) {

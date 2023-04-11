@@ -1,0 +1,421 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 38
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _outputTail is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _outputEnd is guarded using value 0
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _outputTail is guarded using local offset
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _outputEnd is guarded using local offset
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _outputTail is guarded using field SURR1_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _outputEnd is guarded using field SURR1_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _outputTail with an access to _outputEnd
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _outputEnd with an access to _outputTail
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _outputTail with an access to _outputMaxContiguous
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _outputEnd with an access to _outputMaxContiguous
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _outputTail with an access to _charBufferLength
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _outputEnd with an access to _charBufferLength
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _outputTail is replaced by access to local offset
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _outputEnd is replaced by access to local offset
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _outputTail is replaced by access to local end
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _outputEnd is replaced by access to local end
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local end is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local end to be used
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local end is replaced by access to field SURR1_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field SURR1_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local end is replaced by access to field SURR1_LAST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field SURR1_LAST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local end is replaced by access to field SURR2_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local offset is replaced by access to field SURR2_FIRST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local end is replaced by access to field SURR2_LAST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local offset is replaced by access to field SURR2_LAST
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local end is replaced by access to field MAX_BYTES_TO_BUFFER
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 6
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local offset is replaced by access to field MAX_BYTES_TO_BUFFER
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 7
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _outputTail is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 4
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _outputEnd is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 12
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 13
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -6 with -5
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 5
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 8
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 9
+	Rank: null
+	Total Rank: 36
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 10
+	Rank: 1
+	Total Rank: 36
+	Status: SURVIVED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 13
+	Rank: 3
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 13
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1255
+	Block: 281
+	First Index: 13
+	Rank: 3
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------

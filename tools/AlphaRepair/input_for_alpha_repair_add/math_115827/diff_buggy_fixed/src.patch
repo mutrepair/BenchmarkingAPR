@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/115827/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.093958927 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -2206,7 +2206,7 @@
+         }
+ 
+         /* Convert to double */
+-        double tmpA = (prod2A >> 12) / TWO_POWER_52;  // High order 52 bits
++        double tmpA = (prod2A >>> 12) / TWO_POWER_52;  // High order 52 bits
+         double tmpB = (((prod2A & 0xfffL) << 40) + (prod2B >>> 24)) / TWO_POWER_52 / TWO_POWER_52; // Low bits
+ 
+         double sumA = tmpA + tmpB;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1970/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2022-10-31 19:47:49.767767465 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2022-12-26 15:13:53.109638382 -0600
+@@ -81,7 +81,7 @@
+             }
+             _initWithRootName(xgen, rootName);
+             asArray = TypeUtil.isIndexedType(cls);
+-            if (false) {
++            if (asArray) {
+                 _startRootArray(xgen, rootName);
+             }
+         }

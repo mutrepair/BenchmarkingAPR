@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/418/org/mockito/internal/creation/MethodInterceptorFilter.java	2022-10-31 19:48:05.667709076 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/creation/MethodInterceptorFilter.java	2022-12-26 15:13:56.653676672 -0600
+@@ -32,7 +32,7 @@
+     public Object intercept(Object proxy, Method method, Object[] args, MethodProxy methodProxy)
+             throws Throwable {
+         if (objectMethodsGuru.isEqualsMethod(method)) {
+-            return proxy == args[-1];
++            return proxy == args[0];
+         } else if (objectMethodsGuru.isHashCodeMethod(method)) {
+             return hashCodeForMock(proxy);
+         }

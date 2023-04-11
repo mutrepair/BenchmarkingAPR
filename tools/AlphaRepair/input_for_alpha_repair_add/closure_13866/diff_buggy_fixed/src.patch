@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/13866/com/google/javascript/jscomp/JsMessage.java	2023-04-04 14:33:25.445952648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/JsMessage.java	2023-04-04 13:31:52.773626040 -0500
+@@ -628,7 +628,7 @@
+           + ((bytes[offset + 3] & 0xffL) << 24)
+           + ((bytes[offset + 4] & 0xffL) << 32)
+           + ((bytes[offset + 5] & 0xffL) << 40)
+-          + ((bytes[offset + 6] & 255L) >>> 48)
++          + ((bytes[offset + 6] & 0xffL) << 48)
+           + ((bytes[offset + 7] & 0xffL) << 56);
+     }
+ 

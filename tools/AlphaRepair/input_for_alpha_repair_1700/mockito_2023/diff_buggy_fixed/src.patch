@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2023/org/mockito/internal/verification/AtLeast.java	2022-10-31 19:48:05.583709387 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/AtLeast.java	2022-12-26 15:13:56.657676716 -0600
+@@ -46,7 +46,7 @@
+         MissingInvocationInOrderChecker missingInvocation = new MissingInvocationInOrderChecker();
+         AtLeastXNumberOfInvocationsInOrderChecker numberOfCalls = new AtLeastXNumberOfInvocationsInOrderChecker(data.getOrderingContext());
+         
+-        if (wantedCount == -1) {
++        if (wantedCount == 1) {
+             missingInvocation.check(allInvocations, wanted, this, data.getOrderingContext());
+         }
+         

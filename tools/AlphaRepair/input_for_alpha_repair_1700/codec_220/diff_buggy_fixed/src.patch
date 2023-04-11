@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/220/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:38.983806600 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -302,7 +302,7 @@
+         int dataIndex = 0;
+         int i = 0;
+         int nextSeparatorIndex = CHUNK_SIZE;
+-        int chunksSoFar = 1;
++        int chunksSoFar = 0;
+ 
+         // log.debug("number of triplets = " + numberTriplets);
+         for (i = 0; i < tripletCount; i++) {

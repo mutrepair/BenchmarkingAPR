@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/43661/org/jfree/chart/plot/ValueMarker.java	2022-10-31 19:47:29.487840740 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/ValueMarker.java	2022-10-29 00:43:07.554213765 -0500
+@@ -148,7 +148,7 @@
+             return false;
+         }
+         ValueMarker that = (ValueMarker) obj;
+-        if (true) {
++        if (this.value != that.value) {
+             return false;
+         }
+         return true;

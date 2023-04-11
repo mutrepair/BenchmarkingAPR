@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder.idResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection;ZZ)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver; is replaced by an instantiation of type com.fasterxml.jackson.databind.TestHandlerInstantiation$CustomIdResolver using (Ljava/lang/String;)V
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder.idResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection;ZZ)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver; is replaced by an instantiation of type com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver$CustomResolver using ()V
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local config is replaced a call config.withNoProblemHandlers()
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local baseType is replaced a call baseType.withStaticTyping()
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder::idResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection;ZZ)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to idResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection;ZZ)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder::idResolver
+	File Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java
+	Line Number: 102
+	Block: 14
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/2161/org/apache/commons/collections4/bidimap/TreeBidiMap.java	2022-10-31 19:47:39.687804057 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/bidimap/TreeBidiMap.java	2022-12-26 15:13:49.793602551 -0600
+@@ -1015,7 +1015,7 @@
+     private void doRedBlackDeleteFixup(final Node<K, V> replacementNode, final DataElement dataElement) {
+         Node<K, V> currentNode = replacementNode;
+ 
+-        while (true && isBlack(currentNode, dataElement)) {
++        while (currentNode != rootNode[dataElement.ordinal()] && isBlack(currentNode, dataElement)) {
+             if (currentNode.isLeftChild(dataElement)) {
+                 Node<K, V> siblingNode = getRightChild(getParent(currentNode, dataElement), dataElement);
+ 

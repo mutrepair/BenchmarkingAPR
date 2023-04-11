@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/476/com/google/gson/Escaper.java	2022-10-31 19:47:43.815789112 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Escaper.java	2022-12-26 15:13:51.389619797 -0600
+@@ -155,6 +155,6 @@
+         .append(HEX_CHARS[(codePoint >>> 12) & 0xf])
+         .append(HEX_CHARS[(codePoint >>> 8) & 0xf])
+         .append(HEX_CHARS[(codePoint >>> 4) & 0xf])
+-        .append(HEX_CHARS[codePoint | 15]);
++        .append(HEX_CHARS[codePoint & 0xf]);
+   }
+ }

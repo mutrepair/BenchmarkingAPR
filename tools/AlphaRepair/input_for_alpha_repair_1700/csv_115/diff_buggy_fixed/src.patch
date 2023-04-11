@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/115/org/apache/commons/csv/CSVLexer.java	2022-10-31 19:47:42.011795650 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVLexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -55,6 +55,7 @@
+         //  empty line detection: eol AND (last char was EOL or beginning)
+         if (emptyLinesIgnored) {
+             while (eol
++                    && (lastChar == '\n' || lastChar == '\r' || lastChar == ExtendedBufferedReader.UNDEFINED)
+                     && !isEndOfFile(lastChar)) {
+                 // go on char ahead ...
+                 lastChar = c;

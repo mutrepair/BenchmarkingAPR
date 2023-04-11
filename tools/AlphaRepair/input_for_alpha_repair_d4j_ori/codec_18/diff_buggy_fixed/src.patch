@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/codec_18/src/main/java/org/apache/commons/codec/binary/StringUtils.java	2023-01-16 15:29:27.616083987 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/codec/18/patch/./org/apache/commons/codec/binary/StringUtils.java	2023-01-16 15:29:27.584083588 -0600
+@@ -78,7 +78,7 @@
+         if (cs1 instanceof String && cs2 instanceof String) {
+             return cs1.equals(cs2);
+         }
+-        return CharSequenceUtils.regionMatches(cs1, false, 0, cs2, 0, Math.max(cs1.length(), cs2.length()));
++        return cs1.length() == cs2.length() && CharSequenceUtils.regionMatches(cs1, false, 0, cs2, 0, cs1.length());
+     }
+ 
+     /**

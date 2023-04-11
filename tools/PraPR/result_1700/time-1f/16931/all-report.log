@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1000 with 1001
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1127
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long addition with subtraction
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1127
+	Block: 22
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

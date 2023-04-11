@@ -1,0 +1,399 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+AOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+LOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+SOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+COR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+ROR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+ORU<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+LVR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+STD<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
+AOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+LOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+SOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+COR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+ROR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+ORU<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+LVR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+STD<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText
+AOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+LOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+SOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+COR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+ROR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+ORU<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+LVR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+STD<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData
+AOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+LOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+SOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+COR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+ROR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+ORU<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+LVR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+STD<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlCData">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
+AOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+LOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+SOR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+COR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+ROR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+ORU<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+LVR<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+STD<"com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase
+AOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+LOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+SOR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+COR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+ROR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+ORU<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+LVR<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+STD<"com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector
+AOR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+LOR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+SOR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+COR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+ROR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+ORU<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+LVR<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+STD<"com.fasterxml.jackson.dataformat.xml.jaxb.XmlJaxbAnnotationIntrospector">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.PackageVersion
+AOR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+LOR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+SOR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+COR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+ROR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+ORU<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+LVR<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+STD<"com.fasterxml.jackson.dataformat.xml.PackageVersion">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.XmlInfo
+AOR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.XmlInfo">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.TypeUtil
+AOR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.TypeUtil">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.StaxUtil
+AOR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.StaxUtil">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil
+AOR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.AnnotationUtil">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter
+AOR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.DefaultXmlPrettyPrinter">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup
+AOR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+LOR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+SOR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+COR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+ROR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+ORU<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+LVR<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+STD<"com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.XmlMapper
+AOR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+LOR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+SOR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+COR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+ROR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+ORU<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+LVR<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+STD<"com.fasterxml.jackson.dataformat.xml.XmlMapper">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.XmlFactory
+AOR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+LOR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+SOR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+COR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+ROR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+ORU<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+LVR<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+STD<"com.fasterxml.jackson.dataformat.xml.XmlFactory">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector
+AOR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+LOR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+SOR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+COR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+ROR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+ORU<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+LVR<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+STD<"com.fasterxml.jackson.dataformat.xml.XmlAnnotationIntrospector">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector
+AOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+LOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+SOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+COR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+ROR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+ORU<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+LVR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+STD<"com.fasterxml.jackson.dataformat.xml.JacksonXmlAnnotationIntrospector">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.JacksonXmlModule
+AOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+LOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+SOR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+COR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+ROR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+ORU<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+LVR<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+STD<"com.fasterxml.jackson.dataformat.xml.JacksonXmlModule">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.XmlTextDeserializer">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.XmlBeanDeserializerModifier">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.WrapperHandlingDeserializer">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
+AOR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+LOR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+SOR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+COR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+ROR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+ORU<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+LVR<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+STD<"com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder
+AOR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+LOR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+SOR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+COR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+ROR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+ORU<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+LVR<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+STD<"com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder">;
+
+// Enable operators for com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter
+AOR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+LOR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+SOR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+COR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+ROR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+ORU<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+LVR<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;
+STD<"com.fasterxml.jackson.dataformat.xml.XmlPrettyPrinter">;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/9109/org/apache/commons/lang3/text/StrBuilder.java	2022-10-31 19:47:57.411739495 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java	2022-12-26 15:13:54.777656404 -0600
+@@ -1576,7 +1576,7 @@
+             buffer[index++] = 'r';
+             buffer[index++] = 'u';
+             buffer[index] = 'e';
+-            size += -4;
++            size += 4;
+         } else {
+             ensureCapacity(size + 5);
+             System.arraycopy(buffer, index, buffer, index + 5, size - index);

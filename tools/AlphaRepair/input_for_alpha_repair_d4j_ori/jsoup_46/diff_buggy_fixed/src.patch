@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_46/src/main/java/org/jsoup/nodes/Entities.java	2023-01-16 15:29:52.500394737 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/46/patch/./org/jsoup/nodes/Entities.java	2023-01-16 15:29:52.468394337 -0600
+@@ -115,7 +115,7 @@
+                         if (escapeMode != EscapeMode.xhtml)
+                             accum.append("&nbsp;");
+                         else
+-                            accum.append(c);
++                            accum.append("&#xa0;");
+                         break;
+                     case '<':
+                         if (!inAttribute)

@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Feb 14 13:51:23 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/LightweightMessageFormatter.java
+	Line Number: 97
+	Block: 15
+	First Index: 139
+	Rank: 2
+	Total Rank: 24
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/google/javascript/jscomp/LightweightMessageFormatter.java
+	Line Number: 97
+	Block: 15
+	First Index: 139
+	Rank: 2
+	Total Rank: 24
+	Status: SURVIVED
+	Dump: mutant-24.class
+------------------------------------------------

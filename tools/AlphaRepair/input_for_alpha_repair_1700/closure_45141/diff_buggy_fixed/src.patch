@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/45141/com/google/javascript/jscomp/deps/JsFileParser.java	2022-10-31 19:47:37.879810585 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/deps/JsFileParser.java	2022-10-29 06:45:53.155063662 -0500
+@@ -141,7 +141,7 @@
+     // Quick sanity check that will catch most cases. This is a performance
+     // win for people with a lot of JS.
+     if (line.indexOf("provide") != -1 ||
+-        true ||
++        line.indexOf("require") != -1 ||
+         line.indexOf("addDependency") != -1) {
+       // Iterate over the provides/requires.
+       googMatcher.reset(line);

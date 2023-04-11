@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4949/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-10-31 19:47:39.851803464 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -976,7 +976,7 @@
+ 
+         @Override
+         public void add(final int index, final E obj) {
+-            rangeCheck(index, size - 1);
++            rangeCheck(index, size + 1);
+             checkModCount();
+             parent.add(index + offset, obj);
+             expectedModCount = parent.modCount;

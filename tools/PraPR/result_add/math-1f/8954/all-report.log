@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Double.valueOf(D)Ljava/lang/Double; is replaced by an instantiation of type java.lang.Double using (Ljava/lang/String;)V
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 394
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Double.valueOf(D)Ljava/lang/Double; is replaced by an instantiation of type java.lang.Double using (D)V
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 394
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to valueOf(D)Ljava/lang/Double; with a call to valueOf(Ljava/lang/String;)Ljava/lang/Double;
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 394
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local points is replaced by local previousPoints to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 391
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local idx is replaced by local numberOfPoints to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 393
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local points is replaced by local weights to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 391
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local idx is replaced by local lastNumPoints to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 393
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local idx is replaced by local iMax to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 393
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local idx is replaced by local i to be used
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 393
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Double::valueOf
+	File Name: org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java
+	Line Number: 156
+	Block: 19
+	First Index: 394
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

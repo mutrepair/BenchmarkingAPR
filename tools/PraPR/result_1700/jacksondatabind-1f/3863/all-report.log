@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local anyViews is replaced by access to field _ignoreAllUnknown
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerBuilder.java
+	Line Number: 335
+	Block: 44
+	First Index: 58
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerBuilder.java
+	Line Number: 335
+	Block: 44
+	First Index: 57
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(C)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(I)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded returning local s
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded returning local doublequoteEscape
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::append
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::append with receiver
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1015
+	Block: 352
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

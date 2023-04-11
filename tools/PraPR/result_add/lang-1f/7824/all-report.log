@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to ordinal with a call to hashCode
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Enum::ordinal()I is guarded using default value 0
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to ordinal()I is guarded returning default value null
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to ordinal()I is guarded returning local result
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 64 with 65
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 83
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 87
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 84
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 91
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 92
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 94
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Enum::ordinal
+	File Name: org/apache/commons/lang3/EnumUtils.java
+	Line Number: 179
+	Block: 23
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

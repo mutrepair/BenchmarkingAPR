@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10130/com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.java	2022-10-31 19:47:46.427779627 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.java	2022-12-26 15:13:52.505631856 -0600
+@@ -151,7 +151,7 @@
+                 return true;
+             }
+         }
+-        return true;
++        return false;
+     }
+ 
+     private boolean hasInterfaceStartingWith(Class<?> type, String prefix)

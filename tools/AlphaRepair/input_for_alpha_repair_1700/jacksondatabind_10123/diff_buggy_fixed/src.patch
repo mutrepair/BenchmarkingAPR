@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/10123/com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.java	2022-10-31 19:47:46.423779641 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.java	2022-12-26 15:13:52.505631856 -0600
+@@ -141,7 +141,7 @@
+     {
+         // first, superclasses
+         for (Class<?> supertype = rawType.getSuperclass(); supertype != null; supertype = supertype.getSuperclass()) {
+-            if (false) {
++            if (supertype.getName().startsWith(prefix)) {
+                 return true;
+             }
+         }

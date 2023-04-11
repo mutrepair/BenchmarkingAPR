@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/119032/org/apache/commons/math3/util/FastMath.java	2022-10-31 19:48:00.163729380 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2022-12-26 15:13:55.685666215 -0600
+@@ -3833,7 +3833,7 @@
+             while (true) {
+                 double a = -k * 1.570796251296997;
+                 remA = xa + a;
+-                remB = -(remA - xa + a);
++                remB = -(remA - xa - a);
+ 
+                 a = -k * 7.549789948768648E-8;
+                 double b = remA;

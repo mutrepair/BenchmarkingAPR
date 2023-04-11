@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java	2023-01-16 15:30:16.452693843 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/58/patch/./org/apache/commons/math/optimization/fitting/GaussianFitter.java	2023-01-16 15:30:16.420693443 -0600
+@@ -118,7 +118,7 @@
+      */
+     public double[] fit() {
+         final double[] guess = (new ParameterGuesser(getObservations())).guess();
+-        return fit(new Gaussian.Parametric(), guess);
++        return fit(guess);
+     }
+ 
+     /**

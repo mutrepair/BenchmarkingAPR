@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/43580/org/jfree/chart/plot/RingPlot.java	2022-10-31 19:47:29.483840755 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/RingPlot.java	2022-10-29 00:54:39.179756393 -0500
+@@ -488,7 +488,7 @@
+         }
+         if (!ObjectUtilities.equal(this.separatorStroke,
+                 that.separatorStroke)) {
+-            return true;
++            return false;
+         }
+         if (!PaintUtilities.equal(this.separatorPaint, that.separatorPaint)) {
+             return false;

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body>
+
+    <canvas id="myChart"></canvas>
+<script>
+
+(() => {
+  $.get("http://localhost:8080/data-d4j")
+    .done( data => {
+    
+    const lines = data.trim().split("\n");
+    //lines.shift();
+    
+    const trainingData = lines.map(line => {
+      const values = line.split(",");
+      return {
+        patchesCreated: values[0],
+        patchesCompiled: values[1],
+        patchesPassed: values[2],
+        timestamp: moment(values[3], "DDMMYYYY-HHmm")
+      }
+    })
+
+
+    var labels = trainingData.map( item => {
+        return item.timestamp;
+    })
+
+    var data = trainingData.map( item => {
+        return item.patchesPassed;
+    })
+
+    var data2 = trainingData.map( item => {
+        return item.patchesCompiled;
+    })
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [
+            {
+                label: 'compiling patches over time',
+                borderColor: 'rgb(99, 255, 132)',
+                data: data2
+            },
+            {
+                label: 'passing patches over time',
+                borderColor: 'rgb(255, 99, 132)',
+                data
+            }]
+        },
+        options: {
+          scales: {
+              xAxes: [{
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Training increments by date'
+                },
+                type: 'time',
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                },
+                distribution: 'linear'
+              }],
+              yAxes: [
+              {
+                scaleLabel: {
+                  display: true,
+                  labelString: 'patches'
+                }
+              }]
+          }
+        }
+    });
+  });
+})();
+
+</script>
+ 
+</body>
+</html>

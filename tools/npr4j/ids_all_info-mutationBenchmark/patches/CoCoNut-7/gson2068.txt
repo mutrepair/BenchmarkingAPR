@@ -1,0 +1,100 @@
+checkArgument( true ) ;
+checkArgument( false ) ;
+checkArgument( true , true ) ;
+checkArgument( false , true ) ;
+checkArgument( true , false ) ;
+checkArgument( 'License', true ) ;
+checkArgument( 'AS IS', true ) ;
+checkArgument( 'condition failed: ', true ) ;
+if( checkArgument( true ) ) {
+checkArgument( false , false ) ;
+this.checkArgument( true ) ;
+checkArgument( 'License') ;
+checkArgument( 'AS IS') ;
+checkArgument( 'condition failed: ') ;
+if( ! checkArgument( true ) ) {
+if( checkArgument( false ) ) {
+return checkArgument( true ) ;
+checkArgument( 'License', false ) ;
+checkArgument( 'AS IS', false ) ;
+checkArgument( 'condition failed: ', false ) ;
+checkArgument( true , true , true ) ;
+checkArgument( true , true , false ) ;
+checkArgument( null , true ) ;
+if( checkArgument( true ) ) ;
+throw new IllegalArgumentException( 'License') ;
+throw new IllegalArgumentException( 'AS IS') ;
+throw new IllegalArgumentException( 'condition failed: ') ;
+checkArgument( true , false , true ) ;
+if( ! checkArgument( false ) ) {
+this.checkArgument( false ) ;
+if( checkArgument( ) ) ;
+checkArgument(1, true ) ;
+return checkArgument( false ) ;
+checkArgument( ) ;
+checkArgument(2, true ) ;
+checkArgument(2008, true ) ;
+checkArgument(0, true ) ;
+System.out.println( 'License') ;
+System.out.println( 'AS IS') ;
+System.out.println( 'condition failed: ') ;
+if( ! checkArgument( ) ) ;
+if( checkArgument( false ) ) ;
+super.checkArgument( true ) ;
+checkArgument(( int ) true ) ;
+if( ! isArgument( ) ) ;
+checkNotNull( true ) ;
+if( ! isArgument( ) ) {
+checkArgument(0, true ) ;
+if( ! checkArgument( ) ) {
+checkArgument(( Object ) true ) ;
+checkArgument( null , false ) ;
+Utils.checkArgument( true ) ;
+if( isArgument( ) ) ;
+checkArgument( true , null ) ;
+throw new RuntimeException( 'License') ;
+throw new RuntimeException( 'AS IS') ;
+throw new RuntimeException( 'condition failed: ') ;
+if( isArgument( true ) ) {
+if( checkArgument( ) ) {
+! checkArgument( true ) ;
+checkArgument( null ) ;
+return checkArgument( true , true ) ;
+checkArgument( Boolean.TRUE ) ;
+throw new IllegalArgumentException( ) ;
+Log.d( TAG , 'License') ;
+Log.d( TAG , 'AS IS') ;
+Log.d( TAG , 'condition failed: ') ;
+if( isArgument( ) ) {
+checkArgument(1, false ) ;
+throw checkArgument( true ) ;
+return checkArgument( true , false ) ;
+checkArgument( true , 'License') ;
+checkArgument( true , 'AS IS') ;
+checkArgument( true , 'condition failed: ') ;
+Assert.checkArgument( true ) ;
+checkArgument( 'License', 'License') ;
+checkArgument( 'AS IS', 'AS IS') ;
+checkArgument( 'condition failed: ', 'condition failed: ') ;
+super.checkArgument( false ) ;
+checkNotNull( false ) ;
+checkCustomArgument( true ) ;
+return checkArgument( false , true ) ;
+checkArgument( -1) ;
+Log.d( 'License', 'License') ;
+Log.d( 'AS IS', 'AS IS') ;
+Log.d( 'condition failed: ', 'condition failed: ') ;
+checkArgument( false , null ) ;
+checkArgument(2, false ) ;
+checkArgument(2008, false ) ;
+checkArgument(0, false ) ;
+checkArgument( Boolean.FALSE ) ;
+checkArgument( new Object( ) ) ;
+if( isArgument( false ) ) {
+checkArgument( e ) ;
+if( ! isConnected( ) ) {
+checkArgument(1) ;
+! checkArgument( false ) ;
+this.checkArgument( ) ;
+updateArgument( true ) ;
+else checkArgument( true ) ;

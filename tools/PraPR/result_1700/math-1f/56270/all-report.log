@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to secondary is guarded using value null
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to secondary is guarded using local hK
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to secondary is guarded using field main
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.linear.TriDiagonalTransformer.secondary is replaced by the call to org.apache.commons.math3.linear.TriDiagonalTransformer::getMainDiagonalRef()[D
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.linear.TriDiagonalTransformer.secondary is replaced by the call to org.apache.commons.math3.linear.TriDiagonalTransformer::getSecondaryDiagonalRef()[D
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to secondary with an access to main
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field secondary is replaced by access to local hK
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local k is replaced by local m to be used
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 73
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to secondary is guarded returning default value null
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to secondary is guarded returning field cachedQ
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 74
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/linear/TriDiagonalTransformer.java
+	Line Number: 108
+	Block: 8
+	First Index: 77
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

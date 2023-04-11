@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/185/org/apache/commons/csv/CSVLexer.java	2022-10-31 19:47:42.075795418 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVLexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -186,7 +186,7 @@
+         while (true) {
+             c = in.read();
+             
+-            if (false) {
++            if (isEscape(c)) {
+                 tkn.content.append((char) readEscape(c));
+             } else if (isEncapsulator(c)) {
+                 if (isEncapsulator(in.lookAhead())) {

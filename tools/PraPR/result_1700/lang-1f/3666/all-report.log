@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ch0 is replaced by local ch1 to be used
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 109
+	First Index: 79
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ch1 is replaced by local ch0 to be used
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 110
+	First Index: 82
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 111 with 112
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 109
+	First Index: 80
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 110 with 111
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 110
+	First Index: 83
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 78 with 79
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 111
+	First Index: 86
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 109
+	First Index: 81
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 109
+	First Index: 81
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 109
+	First Index: 81
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/BooleanUtils.java
+	Line Number: 574
+	Block: 110
+	First Index: 84
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

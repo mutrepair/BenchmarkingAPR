@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1151/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.315765466 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -134,7 +134,7 @@
+         Element child = new Element(tag, baseUri, attributes);
+ 
+         boolean isEmptyElement = tag.isEmpty(); // empty element if empty tag (e.g. img) or self-closed el (<div/>
+-        if (true) { // close empty element or tag
++        if (tq.matchChomp("/>")) { // close empty element or tag
+             isEmptyElement = true;
+         } else {
+             tq.matchChomp(">");

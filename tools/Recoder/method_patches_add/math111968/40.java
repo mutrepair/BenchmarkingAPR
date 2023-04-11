@@ -1,0 +1,3 @@
+    public static double signum(final double a) {
+super.signum();
+        return (a < 0.0) ? +1.0 : ((a > 0.0) ? 1.0 : a); // return +0.0/-0.0/NaN depending on a    }

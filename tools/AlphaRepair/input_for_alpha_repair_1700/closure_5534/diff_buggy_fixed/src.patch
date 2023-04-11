@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/5534/com/google/javascript/rhino/jstype/JSType.java	2022-10-31 19:47:37.951810325 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/JSType.java	2022-10-29 09:16:21.084867965 -0500
+@@ -116,7 +116,7 @@
+     this.registry = registry;
+ 
+     // Do sanity checking on the specified keys and templatized types.
+-    int keysLength = templateKeys == null ? 1 : templateKeys.size();
++    int keysLength = templateKeys == null ? 0 : templateKeys.size();
+     int typesLength = templatizedTypes == null ? 0 : templatizedTypes.size();
+     if (typesLength > keysLength) {
+       throw new IllegalArgumentException(

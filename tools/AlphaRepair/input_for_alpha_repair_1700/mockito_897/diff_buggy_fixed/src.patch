@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/897/org/mockito/internal/invocation/ArgumentsComparator.java	2022-10-31 19:48:05.779708662 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/invocation/ArgumentsComparator.java	2022-12-26 15:13:56.653676672 -0600
+@@ -61,7 +61,7 @@
+                 }
+             //it's not a vararg (i.e. some ordinary argument before varargs), just do the ordinary check
+             } else if (!m.matches(rawArgs[i])){
+-                return true;
++                return false;
+             }
+         }
+ 

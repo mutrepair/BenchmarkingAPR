@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/14638/org/apache/commons/lang3/builder/CompareToBuilder.java	2022-10-31 19:47:57.079740714 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java	2022-12-26 15:13:54.765656275 -0600
+@@ -315,7 +315,7 @@
+         for (int i = 0; i < fields.length && builder.comparison == 0; i++) {
+             final Field f = fields[i];
+             if (!ArrayUtils.contains(excludeFields, f.getName())
+-                && (f.getName().indexOf('$') == 0)
++                && (f.getName().indexOf('$') == -1)
+                 && (useTransients || !Modifier.isTransient(f.getModifiers()))
+                 && (!Modifier.isStatic(f.getModifiers()))) {
+                 try {

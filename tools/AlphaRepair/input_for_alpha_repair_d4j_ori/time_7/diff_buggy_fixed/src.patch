@@ -1,0 +1,13 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/time_7/src/main/java/org/joda/time/format/DateTimeFormatter.java	2023-01-16 15:30:30.644871064 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/time/7/patch/./org/joda/time/format/DateTimeFormatter.java	2023-01-16 15:30:30.616870715 -0600
+@@ -705,9 +705,9 @@
+         
+         long instantMillis = instant.getMillis();
+         Chronology chrono = instant.getChronology();
++        int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);
+         long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
+         chrono = selectChronology(chrono);
+-        int defaultYear = chrono.year().get(instantLocal);
+         
+         DateTimeParserBucket bucket = new DateTimeParserBucket(
+             instantLocal, chrono, iLocale, iPivotYear, defaultYear);

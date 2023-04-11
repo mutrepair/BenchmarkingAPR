@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/12908/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.907785149 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1950,7 +1950,7 @@
+          * (as well as error reporting for unescaped control chars)
+          */
+         // 4 bytes per quad, except last one maybe less
+-        int byteLen = (qlen << 2) - 4 - lastQuadBytes;
++        int byteLen = (qlen << 2) - 4 + lastQuadBytes;
+ 
+         /* And last one is not correctly aligned (leading zero bytes instead
+          * need to shift a bit, instead of trailing). Only need to shift it

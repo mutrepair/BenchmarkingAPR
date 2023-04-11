@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2192/org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java	2022-10-31 19:48:05.623709239 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/checkers/NumberOfInvocationsChecker.java	2022-12-26 15:13:56.657676716 -0600
+@@ -39,7 +39,7 @@
+         } else if (wantedCount == 0 && actualCount > 0) {
+             Location firstUndesired = actualInvocations.get(wantedCount).getLocation();
+             reporter.neverWantedButInvoked(wanted, firstUndesired); 
+-        } else if (false) {
++        } else if (wantedCount < actualCount) {
+             Location firstUndesired = actualInvocations.get(wantedCount).getLocation();
+             reporter.tooManyActualInvocations(wantedCount, actualCount, wanted, firstUndesired);
+         }

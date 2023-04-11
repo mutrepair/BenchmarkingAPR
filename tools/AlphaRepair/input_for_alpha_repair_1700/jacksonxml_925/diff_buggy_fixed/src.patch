@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/925/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.995766634 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -786,7 +786,7 @@
+             	// should we consider pretty-printing or not?
+                 _xmlWriter.writeBoolean(value);
+             } else {
+-                if (true) {
++                if (_xmlPrettyPrinter != null) {
+                 	_xmlPrettyPrinter.writeLeafElement(_xmlWriter,
+                 			_nextName.getNamespaceURI(), _nextName.getLocalPart(),
+                 			value);

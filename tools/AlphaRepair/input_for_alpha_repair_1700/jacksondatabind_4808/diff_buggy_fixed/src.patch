@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4808/com/fasterxml/jackson/databind/ObjectMapper.java	2022-10-31 19:47:46.711778594 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java	2022-12-26 15:13:52.493631727 -0600
+@@ -1673,7 +1673,7 @@
+         JsonDeserializer<?> deser = _findRootDeserializer(ctxt, valueType);
+         // false -> do NOT close JsonParser (since caller passed it)
+         return new MappingIterator<T>(valueType, jp, ctxt, deser,
+-                true, null);
++                false, null);
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/387/org/apache/commons/csv/ExtendedBufferedReader.java	2022-10-31 19:47:42.231794853 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	2022-12-26 15:13:50.881614309 -0600
+@@ -143,7 +143,7 @@
+      * @throws IOException if there is an error in reading
+      */
+     int lookAhead() throws IOException {
+-        super.mark(0);
++        super.mark(1);
+         int c = super.read();
+         super.reset();
+ 

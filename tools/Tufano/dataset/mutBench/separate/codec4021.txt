@@ -1,0 +1,1 @@
+static int METHOD_1 ( String VAR_1 , String VAR_2 ) { if ( VAR_1 == null || VAR_2 == null ) { return 0 ; } int VAR_3 = TYPE_1 . min ( VAR_1 . length ( ) , VAR_2 . length ( ) ) ; int diff = 0 ; for ( int i = 0 ; i <= VAR_3 ; i ++ ) { if ( VAR_1 . METHOD_2 ( i ) == VAR_2 . METHOD_2 ( i ) ) { diff ++ ; } } return diff ; }

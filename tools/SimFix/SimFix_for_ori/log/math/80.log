@@ -1,0 +1,710 @@
+=================================================
+Project : math_80	start : 23/02/07 13:19
+Current failed test : org.apache.commons.math.linear.EigenDecompositionImplTest::testMathpbx02 | 23/02/07 13:19
+Tue Feb 07 13:19:33 CST 2023 org.apache.commons.math.linear.EigenDecompositionImpl,1135
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=0;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7306342730804514 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int k=0;k<max;k+=m){
+sum+=jacobian[k+i]*jacobian[k+j];
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=0;k<0;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.507538440350735 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int k=n;k>0;--k){
+value+=1.0/Math.pow(k,m);
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<0;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=pingPong;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4490587759279514 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+qtbpj=-sin*work[k]+cos*qtbpj;
+work[k]=temp;
+for(int i=k+1;i<solvedCols;++i){
+double rik=jacobian[i*cols+pk];
+ final double temp2=cos*rik+sin*lmDiag[i];
+lmDiag[i]=-sin*rik+cos*lmDiag[i];
+jacobian[i*cols+pk]=temp2;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=pingPong;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=pingPong;k<0;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3282083711901524 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int dk=cols-1;dk>0;--dk){
+double gamma=0;
+for(int j=k;j<jacobian.length;++j){
+gamma+=jacobian[j][pk]*jacobian[j][permutation[k+dk]];
+}
+gamma*=betak;
+for(int j=k;j<jacobian.length;++j){
+jacobian[j][permutation[k+dk]]-=gamma*jacobian[j][pk];
+}
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=pingPong;k<0;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=step;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3071470312989977 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int p=pStart;p<pEnd;++p){
+int k=(p-p0)*jWidth+qStart-q0;
+for(int q=qStart;q<qEnd;++q){
+visitor.visit(p,q,block[k]);
+++k;
+}
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=step;k<pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=step;k<=pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2991496745780915 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int k=ileft;k<=iright;++k){
+ final double xk=xval[k];
+ final double yk=yval[k];
+ final double dist=(k<i)?x-xk:xk-x;
+ final double w=tricube(dist*denom)*robustnessWeights[k];
+ final double xkw=xk*w;
+sumWeights+=w;
+sumX+=xkw;
+sumXSquared+=xk*xkw;
+sumY+=yk*w;
+sumXY+=yk*xkw;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=step;k<=pingPong;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int k=0;k<4;k+=step){
+i=1;
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1893164778549092 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+long l=(l0^((l1^(l1>>30))*1664525l))+seed[j];
+mt[i]=(int)(l&0xffffffffl);
+i++;
+j++;
+if(i>=N){
+mt[0]=mt[N-1];
+i=1;
+}
+
+Time : 23/02/07 13:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+i=1;
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+i++;
+for(int k=0;k<4;k+=step){
+i=1;
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.096211741077596 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+mt[i]=(int)(l&0xffffffffL);
+i++;
+if(i>=N){
+mt[0]=mt[N-1];
+i=1;
+}
+
+Time : 23/02/07 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1137,1141]
+i++;
+for(int k=0;k<4;k+=step){
+i=1;
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+
+Time : 23/02/07 13:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<j;i+=4){
+for(int k=j-1;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<pingPong;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1341871264089387 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int i4=np;i4>=4*start+2+pingPong;i4-=4){
+if(b2==0.0){
+break;
+}
+b1=b2;
+if(work[i4]>work[i4-2]){
+return ;
+}
+b2=b2*(work[i4]/work[i4-2]);
+a2=a2+b2;
+if(100*Math.max(b2,b1)<a2||cnst1<a2){
+break;
+}
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1136,1143]
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1136,1143]
+for(int i=0;i<pingPong;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=pingPong;i<pingPong;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1306268331899072 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int i4=4*end-9+pingPong;i4>=4*start+2+pingPong;i4-=4){
+if(work[i4]>work[i4-2]){
+return ;
+}
+b1*=work[i4]/work[i4-2];
+b2+=b1;
+if(100*b1<b2){
+break;
+}
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1136,1143]
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1136,1143]
+for(int i=pingPong;i<pingPong;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+
+Time : 23/02/07 13:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(1.5*work[pingPong]<TOLERANCE_2*dMin){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.602656524668849 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int i=4*(n-2)+pingPong;i>=0;i-=4){
+if(work[i+2]<=TOLERANCE_2*d){
+work[i+2]=-0.0;
+d=work[i];
+}else {
+d*=work[i]/(d+work[i+2]);
+}
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1133,1145]
+if(1.5*work[pingPong]<work[4*(n-1)+pingPong]){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1133,1145]
+if(1.5*work[pingPong]<TOLERANCE_2*dMin){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(1.5*work[pingPong]<=TOLERANCE_2*dMin){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4512232506019642 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>0,0]
+for(int i=2+pingPong;i<4*n-2;i+=4){
+ final int j=i-2*pingPong-1;
+work[j]=d+work[i];
+if(work[i]<=TOLERANCE_2*d){
+work[i]=-0.0;
+work[j]=d;
+work[j+2]=0.0;
+d=work[i+2];
+}else if((MathUtils.SAFE_MIN*work[i+2]<work[j])&&(MathUtils.SAFE_MIN*work[j]<work[i+2])){
+ final double tmp=work[i+2]/work[j];
+work[j+2]=work[i]*tmp;
+d*=tmp;
+}else {
+work[j+2]=work[i+2]*(work[i]/work[j]);
+d*=work[i+2]/work[j];
+}
+}
+work[4*n-3-pingPong]=d;
+pingPong=1-pingPong;
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1133,1145]
+if(1.5*work[pingPong]<work[4*(n-1)+pingPong]){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java=>1133,1145]
+if(1.5*work[pingPong]<=TOLERANCE_2*dMin){
+int j=4*n-1;
+for(int i=0;i<j;i+=4){
+for(int k=0;k<4;k+=step){
+ final double tmp=work[i+k];
+work[i+k]=work[j-k];
+work[j-k]=tmp;
+}
+j-=4;
+}
+return true;
+}
+
+Time : 23/02/07 13:32
+----------------------------------------
+Success time : 23/02/07 13:35

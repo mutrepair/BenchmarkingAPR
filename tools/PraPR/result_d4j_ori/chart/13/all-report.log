@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;)V with a call to <init>(Lorg/jfree/data/Range;Lorg/jfree/data/Range;)V
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 199
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;)V with a call to <init>(Lorg/jfree/data/Range;D)V
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 199
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;)V with a call to <init>(DLorg/jfree/data/Range;)V
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 199
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;DLorg/jfree/data/Range;Lorg/jfree/chart/block/LengthConstraintType;)V with a call to <init>(DD)V
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 199
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to RANGE with an access to NONE
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 193
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to FIXED with an access to NONE
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 198
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to RANGE with an access to FIXED
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 193
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to FIXED with an access to RANGE
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 198
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local w is replaced by local h to be used
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 188
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local h is replaced by local w to be used
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 194
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local constraint is replaced a call constraint.toUnconstrainedWidth()
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 186
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getWidth with a call to getHeight
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 187
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jfree.chart.block.RectangleConstraint::getWidth()D is guarded using default value 0.D
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 187
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getWidth()D is guarded returning default value null
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 187
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/jfree/data/Range::<init>
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 192
+	Rank: 2
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/jfree/chart/block/RectangleConstraint::<init>
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 199
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0.0 with 1.0
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 182
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 189
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 195
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 191
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jfree/chart/block/RectangleConstraint::getWidth
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 454
+	Block: 67
+	First Index: 187
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

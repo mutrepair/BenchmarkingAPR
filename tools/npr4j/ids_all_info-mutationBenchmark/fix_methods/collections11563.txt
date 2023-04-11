@@ -1,0 +1,3 @@
+            public boolean hasNext() {
+                return next != null && !compare(next.key, excludedKey);
+            }

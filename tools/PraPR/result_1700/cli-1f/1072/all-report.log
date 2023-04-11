@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.substring(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.substring(I)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to substring(I)Ljava/lang/String; with a call to substring(II)Ljava/lang/String;
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to tokens is guarded using value null
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to tokens is guarded using field tokens
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local token is replaced by local ch to be used
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local tokenLength to be used
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local token is replaced a call token.toLowerCase()
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to add with a call to contains
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to add with a call to remove
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::substring(I)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.ArrayList::add(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to tokens is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to substring(I)Ljava/lang/String; is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(Ljava/lang/Object;)Z is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 73
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 74
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::substring
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/ArrayList::add
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::substring with receiver
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 294
+	Block: 39
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

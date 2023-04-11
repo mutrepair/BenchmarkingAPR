@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isAssignableFrom with a call to isAnnotationPresent
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::isAssignableFrom(Ljava/lang/Class;)Z is guarded using default value false
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isAssignableFrom(Ljava/lang/Class;)Z is guarded returning default value null
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isAssignableFrom(Ljava/lang/Class;)Z is guarded returning local target
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 3
+	First Index: 35
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 38
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 3
+	First Index: 35
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::isAssignableFrom
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 4
+	First Index: 41
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 3
+	First Index: 35
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/jxpath/functions/MethodFunction.java
+	Line Number: 55
+	Block: 3
+	First Index: 35
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local m is replaced by local n to be used
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 166
+	Block: 41
+	First Index: 35
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local m to be used
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 166
+	Block: 41
+	First Index: 36
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 166
+	Block: 41
+	First Index: 37
+	Rank: 1
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------

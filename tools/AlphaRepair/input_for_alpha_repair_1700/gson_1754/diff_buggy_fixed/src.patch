@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1754/com/google/gson/GsonBuilder.java	2022-10-31 19:47:43.683789591 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/GsonBuilder.java	2022-12-26 15:13:51.393619841 -0600
+@@ -562,7 +562,7 @@
+       if (!serializers.hasSpecificHandlerFor(Date.class)) {
+         serializers.register(Date.class, dateTypeAdapter);
+       }
+-      if (!true) {
++      if (!deserializers.hasSpecificHandlerFor(Date.class)) {
+         deserializers.register(Date.class, dateTypeAdapter);
+       }
+     }

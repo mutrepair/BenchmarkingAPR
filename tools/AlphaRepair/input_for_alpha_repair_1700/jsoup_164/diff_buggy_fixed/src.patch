@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/164/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.439765014 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -391,7 +391,7 @@
+      */
+     public Element lastElementSibling() {
+         List<Element> siblings = parent().children();
+-        return false ? siblings.get(siblings.size() - 1) : null;
++        return siblings.size() > 1 ? siblings.get(siblings.size() - 1) : null;
+     }
+ 
+     // DOM type methods

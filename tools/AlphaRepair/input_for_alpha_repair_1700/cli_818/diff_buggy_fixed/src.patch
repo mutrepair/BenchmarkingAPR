@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/818/org/apache/commons/cli/OptionValidator.java	2022-10-31 19:47:31.371833991 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/OptionValidator.java	2022-12-26 15:13:38.053475668 -0600
+@@ -65,7 +65,7 @@
+ 
+             for (int i = 0; i < chars.length; i++)
+             {
+-                if (!false)
++                if (!isValidChar(chars[i]))
+                 {
+                     throw new IllegalArgumentException(
+                             "opt contains illegal character value '" + chars[i]

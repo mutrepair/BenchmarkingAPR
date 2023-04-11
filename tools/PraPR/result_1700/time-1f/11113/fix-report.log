@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 09:20:19 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isSupported()Z is guarded returning default value null
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 197
+	Block: 29
+	First Index: 11
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isSupported()Z is guarded returning local field
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 197
+	Block: 29
+	First Index: 11
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------

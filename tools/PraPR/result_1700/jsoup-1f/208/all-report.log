@@ -1,0 +1,410 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 37
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.jsoup.nodes.Element.parent()Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Element using (Lorg/jsoup/parser/Tag;Ljava/lang/String;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.jsoup.nodes.Element.parent()Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Document using (Ljava/lang/String;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.jsoup.nodes.Element.parent()Lorg/jsoup/nodes/Element; is replaced by an instantiation of type org.jsoup.nodes.Element using (Lorg/jsoup/parser/Tag;Ljava/lang/String;Lorg/jsoup/nodes/Attributes;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to tag is guarded using value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 4
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to tag is guarded using field tag
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 4
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.nodes.Element.tag is replaced by the call to org.jsoup.nodes.Element::tag()Lorg/jsoup/parser/Tag;
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 4
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.parent()
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 3
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to preserveWhitespace with a call to isBlock
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to parent with a call to empty
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to preserveWhitespace with a call to canContainBlock
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to parent with a call to nextElementSibling
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to preserveWhitespace with a call to hasText
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 85
+	First Index: 17
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to preserveWhitespace with a call to isInline
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to parent with a call to previousElementSibling
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to preserveWhitespace with a call to isData
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to parent with a call to firstElementSibling
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to preserveWhitespace with a call to isEmpty
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to parent with a call to lastElementSibling
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.parser.Tag::preserveWhitespace()Z is guarded using default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Element::parent()Lorg/jsoup/nodes/Element; is guarded using default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Element::preserveWhitespace()Z is guarded using default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 85
+	First Index: 17
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to tag is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 4
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to preserveWhitespace()Z is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to parent()Lorg/jsoup/nodes/Element; is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 37
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to preserveWhitespace()Z is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 85
+	First Index: 17
+	Rank: 1
+	Total Rank: 37
+	Status: SURVIVED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jsoup/nodes/Element::preserveWhitespace
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 87
+	First Index: 25
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/jsoup/nodes/Element::preserveWhitespace
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 87
+	First Index: 25
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 84
+	First Index: 10
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 85
+	First Index: 13
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 6
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/parser/Tag::preserveWhitespace
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 5
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Element::parent
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Element::preserveWhitespace
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 85
+	First Index: 17
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 6
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 82
+	First Index: 6
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 87
+	First Index: 25
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to org/jsoup/nodes/Element::parent with receiver
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 585
+	Block: 83
+	First Index: 8
+	Rank: null
+	Total Rank: 34
+	Status: KILLED
+------------------------------------------------

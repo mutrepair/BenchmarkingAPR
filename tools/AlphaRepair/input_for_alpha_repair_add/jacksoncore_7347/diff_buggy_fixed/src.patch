@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/7347/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java	2023-04-04 13:31:53.213631268 -0500
+@@ -461,7 +461,7 @@
+     {
+         if ((i16 & 0xFF00) == 0) { // UTF-16BE
+             _bigEndian = true;
+-        } else if ((i16 | 255) == 0) { // UTF-16LE
++        } else if ((i16 & 0x00FF) == 0) { // UTF-16LE
+             _bigEndian = false;
+         } else { // nope, not  UTF-16
+             return false;

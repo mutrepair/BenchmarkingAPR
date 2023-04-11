@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicate(Lorg/apache/commons/jxpath/ri/EvalContext;Lorg/apache/commons/jxpath/ri/model/NodePointer;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.CollectionPointer using (Lorg/apache/commons/jxpath/ri/model/NodePointer;Ljava/lang/Object;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicate(Lorg/apache/commons/jxpath/ri/EvalContext;Lorg/apache/commons/jxpath/ri/model/NodePointer;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.PropertyPointer using (Lorg/apache/commons/jxpath/ri/model/NodePointer;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.doPredicate(Lorg/apache/commons/jxpath/ri/EvalContext;Lorg/apache/commons/jxpath/ri/model/NodePointer;[Lorg/apache/commons/jxpath/ri/compiler/Step;I[Lorg/apache/commons/jxpath/ri/compiler/Expression;I)Lorg/apache/commons/jxpath/ri/model/NodePointer; is replaced by an instantiation of type org.apache.commons.jxpath.ri.model.beans.CollectionPointer using (Ljava/lang/Object;Ljava/util/Locale;)V
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local currentStep is replaced by local axis to be used
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 27
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local currentStep is replaced by access to field PERFECT_MATCH
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 27
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to doPredicate with a call to doPredicateName
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to doPredicate with a call to doPredicateIndex
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to doPredicate with a call to createNullPointerForPredicates
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doPredicate with argument
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 29
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doPredicate
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 30
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doStepPredicatesStandard
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 31
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/jxpath/ri/axes/SimplePathInterpreter::doStepPredicatesStandard to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java
+	Line Number: 356
+	Block: 56
+	First Index: 31
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

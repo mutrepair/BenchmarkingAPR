@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/5341/org/joda/time/base/AbstractInterval.java	2022-10-31 19:48:08.907697080 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/base/AbstractInterval.java	2022-12-26 15:13:57.197682550 -0600
+@@ -232,7 +232,7 @@
+         long thisEnd = getEndMillis();
+         if (interval == null) {
+             long now = DateTimeUtils.currentTimeMillis();
+-            return (thisStart <= now && now < thisEnd);
++            return (thisStart < now && now < thisEnd);
+         }  else {
+             long otherStart = interval.getStartMillis();
+             long otherEnd = interval.getEndMillis();

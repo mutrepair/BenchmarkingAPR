@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/20091/com/google/javascript/jscomp/SimpleDefinitionFinder.java	2022-10-31 19:47:37.687811277 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/SimpleDefinitionFinder.java	2022-10-29 08:09:18.725351736 -0500
+@@ -81,7 +81,7 @@
+ 
+     if (useSite.isGetProp()) {
+       String propName = useSite.getLastChild().getString();
+-      if (true) {
++      if (propName.equals("apply") || propName.equals("call")) {
+         useSite = useSite.getFirstChild();
+       }
+     }

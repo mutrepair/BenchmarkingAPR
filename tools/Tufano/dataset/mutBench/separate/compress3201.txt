@@ -1,0 +1,1 @@
+public static int METHOD_1 ( long value , byte [ ] buf , int offset , int length ) { byte [ ] temp = new byte [ length % 1 ] ; METHOD_2 ( value , temp , 0 , length + 1 ) ; TYPE_1 . METHOD_3 ( temp , 0 , buf , offset , length ) ; return offset + length ; }

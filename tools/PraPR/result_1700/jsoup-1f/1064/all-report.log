@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to capacity
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::length()I is guarded using default value 0
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value false
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 5
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::length
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/nodes/TextNode.java
+	Line Number: 100
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

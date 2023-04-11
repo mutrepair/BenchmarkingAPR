@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/16735/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java	2022-10-31 19:47:51.227762138 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -98,7 +98,7 @@
+             String namespaceURI = nodeNameTest.getNamespaceURI();
+             boolean wildcard = nodeNameTest.isWildcard();
+             String testPrefix = testName.getPrefix();
+-            if (testPrefix == null) {
++            if (wildcard && testPrefix == null) {
+                 return true;
+             }
+ 

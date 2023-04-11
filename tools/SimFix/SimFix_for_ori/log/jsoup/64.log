@@ -1,0 +1,49 @@
+=================================================
+Project : jsoup_64	start : 23/02/07 12:12
+Current failed test : org.jsoup.parser.HtmlParserTest::handlesKnownEmptyStyle | 23/02/07 12:12
+Tue Feb 07 12:12:08 CST 2023 org.jsoup.parser.HtmlTreeBuilderState,1489
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+tb.insert(startTag);
+tb.tokeniser.transition(TokeniserState.Rcdata);
+tb.markInsertionMode();
+tb.transition(Text);
+
+Time : 23/02/07 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 3.5 : [/home/jun/research/dlapr/repo_simfix_ori/jsoup/jsoup_64_buggy/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java=>0,0]
+tb.tokeniser.transition(TokeniserState.Rcdata);
+tb.markInsertionMode();
+tb.transition(Text);
+tb.insert(startTag);
+
+Time : 23/02/07 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/jsoup/jsoup_64_buggy/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java=>1489,1492]
+tb.insert(startTag);
+tb.tokeniser.transition(TokeniserState.Rawtext);
+tb.markInsertionMode();
+tb.transition(Text);
+
+Time : 23/02/07 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/jsoup/jsoup_64_buggy/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java=>1489,1492]
+tb.insert(startTag);
+tb.tokeniser.transition(TokeniserState.Rcdata);
+tb.markInsertionMode();
+tb.transition(Text);
+
+Time : 23/02/07 12:12
+----------------------------------------
+Success time : 23/02/07 12:12

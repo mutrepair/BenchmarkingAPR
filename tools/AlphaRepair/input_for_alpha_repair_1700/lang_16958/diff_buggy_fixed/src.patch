@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/16958/org/apache/commons/lang3/math/Fraction.java	2022-10-31 19:47:57.107740612 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/Fraction.java	2022-12-26 15:13:54.773656362 -0600
+@@ -471,7 +471,7 @@
+             return equals(ZERO) ? this : ZERO;
+         }
+         final int gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+-        if (gcd == 0) {
++        if (gcd == 1) {
+             return this;
+         }
+         return Fraction.getFraction(numerator / gcd, denominator / gcd);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/3904/org/apache/commons/lang3/BooleanUtils.java	2022-10-31 19:47:57.303739892 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/BooleanUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -619,7 +619,7 @@
+                 if ((ch0 == 'f' || ch0 == 'F') &&
+                     (ch1 == 'a' || ch1 == 'A') &&
+                     (ch2 == 'l' || ch2 == 'L') &&
+-                    (ch3 == 's') &&
++                    (ch3 == 's' || ch3 == 'S') &&
+                     (ch4 == 'e' || ch4 == 'E') ) {
+                     return Boolean.FALSE;
+                 }

@@ -1,0 +1,311 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 28
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iMax is guarded using value 0
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to iMax is guarded using local months
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iMax is guarded using field MIN
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.chrono.BasicMonthOfYearDateTimeField.iMax is replaced by the call to org.joda.time.chrono.BasicMonthOfYearDateTimeField::getMinimumValue()I
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.joda.time.chrono.BasicMonthOfYearDateTimeField.iMax is replaced by the call to org.joda.time.chrono.BasicMonthOfYearDateTimeField::getMaximumValue()I
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to iMax with an access to iLeapMonth
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field iMax is replaced by access to local months
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field iMax is replaced by access to local thisYear
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field iMax is replaced by access to local thisMonth
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local remMonthToUse is replaced by local months to be used
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local yearToUse is replaced by local months to be defined
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local remMonthToUse is replaced by local thisYear to be used
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local yearToUse is replaced by local thisYear to be defined
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local remMonthToUse is replaced by local thisMonth to be used
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local yearToUse is replaced by local thisMonth to be defined
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local remMonthToUse is replaced by local monthToUse to be used
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local yearToUse is replaced by local monthToUse to be defined
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local remMonthToUse is replaced by local yearToUse to be used
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local yearToUse is replaced by local remMonthToUse to be defined
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local remMonthToUse is replaced by access to field MIN
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local remMonthToUse is replaced by access to field iMax
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local remMonthToUse is replaced by access to field iLeapMonth
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 99
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iMax is guarded returning default value 0L
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to iMax is guarded returning local instant
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iMax is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 101
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 100
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/joda/time/chrono/BasicMonthOfYearDateTimeField.java
+	Line Number: 125
+	Block: 8
+	First Index: 102
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

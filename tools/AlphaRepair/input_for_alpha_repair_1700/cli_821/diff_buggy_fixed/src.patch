@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/821/org/apache/commons/cli/OptionValidator.java	2022-10-31 19:47:31.375833977 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/OptionValidator.java	2022-12-26 15:13:38.053475668 -0600
+@@ -84,7 +84,7 @@
+      */
+     private static boolean isValidOpt(char c)
+     {
+-        return (isValidChar(c) || (c >= ' ') || (c == '?') || c == '@');
++        return (isValidChar(c) || (c == ' ') || (c == '?') || c == '@');
+     }
+ 
+     /**

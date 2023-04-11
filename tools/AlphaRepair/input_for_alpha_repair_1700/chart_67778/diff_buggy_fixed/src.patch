@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/67778/org/jfree/data/KeyedObjectComparator.java	2022-10-31 19:47:29.599840339 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/KeyedObjectComparator.java	2022-10-29 00:57:04.535117459 -0500
+@@ -137,7 +137,7 @@
+                 return -1;
+             }
+             if (n1 == null) {
+-                return -1;
++                return 1;
+             }
+             if (this.order.equals(SortOrder.ASCENDING)) {
+                 return c1.compareTo(c2);

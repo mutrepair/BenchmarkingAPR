@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1528/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.927806802 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -315,7 +315,7 @@
+             index += 2;
+         } else {
+             result.append('K');
+-            if (true) { 
++            if (contains(value, index + 1, 2, " C", " Q", " G")) { 
+                 //-- Mac Caffrey, Mac Gregor --//
+                 index += 3;
+             } else if (contains(value, index + 1, 1, "C", "K", "Q") && 

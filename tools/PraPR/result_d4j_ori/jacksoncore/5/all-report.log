@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(I)C is guarded returning local len
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to charAt(I)C is guarded returning local i
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 32
+	Rank: null
+	Total Rank: 7
+	Status: TIMED_OUT
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 33
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/JsonPointer.java
+	Line Number: 193
+	Block: 42
+	First Index: 32
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------

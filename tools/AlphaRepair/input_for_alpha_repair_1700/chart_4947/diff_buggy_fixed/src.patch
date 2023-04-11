@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/4947/org/jfree/chart/plot/XYPlot.java	2022-10-31 19:47:29.531840583 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/XYPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -1768,7 +1768,7 @@
+         for (int i = 0; i < this.datasets.size(); i++) {
+             if (this.datasets.get(i) == dataset) {
+                 result = (XYItemRenderer) this.renderers.get(i);
+-                if (false) {
++                if (result == null) {
+                     result = getRenderer();
+                 }
+                 break;

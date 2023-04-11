@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1620/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-10-31 19:47:45.039784670 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -724,7 +724,7 @@
+             if (++i < blen) {
+                 x = (x << 8) | (wordBytes[i] & 0xFF);
+                 if (++i < blen) {
+-                    x = (x >>> 8) | (wordBytes[i] & 0xFF);
++                    x = (x << 8) | (wordBytes[i] & 0xFF);
+                     if (++i < blen) {
+                         x = (x << 8) | (wordBytes[i] & 0xFF);
+                     }

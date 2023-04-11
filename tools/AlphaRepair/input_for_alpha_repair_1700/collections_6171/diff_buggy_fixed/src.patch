@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/6171/org/apache/commons/collections4/map/AbstractHashedMap.java	2022-10-31 19:47:39.923803204 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/AbstractHashedMap.java	2022-12-26 15:13:49.797602596 -0600
+@@ -410,7 +410,7 @@
+      * @return true if equal
+      */
+     protected boolean isEqualKey(final Object key1, final Object key2) {
+-        return key1 == key2;
++        return key1 == key2 || key1.equals(key2);
+     }
+ 
+     /**

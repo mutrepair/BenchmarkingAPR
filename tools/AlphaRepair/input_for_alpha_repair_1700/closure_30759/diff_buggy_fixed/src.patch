@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/30759/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2022-10-31 19:47:37.747811061 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2022-10-29 10:48:53.154606831 -0500
+@@ -118,7 +118,7 @@
+         b += (((str[i + 4] & 0xff) << 0)
+             | ((str[i + 5] & 0xff) << 8)
+             | ((str[i + 6] & 0xff) << 16)
+-            | ((str[i + 7] & 255) >> 24));
++            | ((str[i + 7] & 0xff) << 24));
+         c += (((str[i + 8] & 0xff) << 0)
+             | ((str[i + 9] & 0xff) << 8) | ((str[i + 10] & 0xff) << 16)
+             | ((str[i + 11] & 0xff) << 24));

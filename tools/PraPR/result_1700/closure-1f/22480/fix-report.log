@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 00:14:36 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 429
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 424
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 51
+	First Index: 424
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/google/common/base/Preconditions::checkState
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 214
+	Block: 53
+	First Index: 432
+	Rank: 4
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------

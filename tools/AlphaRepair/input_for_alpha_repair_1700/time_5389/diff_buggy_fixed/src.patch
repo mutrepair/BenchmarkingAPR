@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/5389/org/joda/time/base/AbstractInterval.java	2022-10-31 19:48:08.911697065 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/base/AbstractInterval.java	2022-12-26 15:13:57.197682550 -0600
+@@ -412,7 +412,7 @@
+      */
+     public Duration toDuration() {
+         long durMillis = toDurationMillis();
+-        if (false) {
++        if (durMillis == 0) {
+             return Duration.ZERO;
+         } else {
+             return new Duration(durMillis);

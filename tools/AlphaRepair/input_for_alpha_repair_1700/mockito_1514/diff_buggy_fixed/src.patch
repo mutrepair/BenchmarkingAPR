@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1514/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-10-31 19:48:05.475709786 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -617,7 +617,7 @@
+             this.setEquals(false);
+             return this;
+         }
+-        for (int i = 0; i <= lhs.length && isEquals; ++i) {
++        for (int i = 0; i < lhs.length && isEquals; ++i) {
+             append(lhs[i], rhs[i]);
+         }
+         return this;

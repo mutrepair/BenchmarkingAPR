@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local s is replaced by local seriesCount to be used
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 11
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local seriesCount is replaced by local s to be used
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 12
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 13
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 4
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 8
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 13
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 13
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/general/AbstractSeriesDataset.java
+	Line Number: 99
+	Block: 1
+	First Index: 13
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

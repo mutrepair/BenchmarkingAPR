@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3947/org/apache/commons/codec/language/Soundex.java	2022-10-31 19:47:39.127806080 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/Soundex.java	2022-12-26 15:13:39.225488336 -0600
+@@ -256,7 +256,7 @@
+         }
+         char out[] = {'0', '0', '0', '0'};
+         char last, mapped;
+-        int incount = 1, count = 0;
++        int incount = 1, count = 1;
+         out[0] = str.charAt(0);
+         // getMappingCode() throws IllegalArgumentException
+         last = getMappingCode(str, 0);

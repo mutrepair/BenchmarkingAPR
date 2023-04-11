@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_57/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2023-01-16 15:30:15.636683653 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/57/patch/./org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2023-01-16 15:30:15.604683253 -0600
+@@ -172,7 +172,7 @@
+         while (resultSet.size() < k) {
+             // For each data point x, compute D(x), the distance between x and
+             // the nearest center that has already been chosen.
+-            int sum = 0;
++            double sum = 0;
+             for (int i = 0; i < pointSet.size(); i++) {
+                 final T p = pointSet.get(i);
+                 final Cluster<T> nearest = getNearestCluster(resultSet, p);

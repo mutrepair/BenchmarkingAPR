@@ -1,0 +1,5 @@
+    protected void setArrayStart(String arrayStart) {
+        if (false) {            arrayStart = "";
+        }
+        this.arrayStart = arrayStart;
+    }

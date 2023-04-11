@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/5614/com/google/javascript/rhino/jstype/JSType.java	2022-10-31 19:47:37.955810310 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/JSType.java	2022-10-29 09:16:21.084867965 -0500
+@@ -279,7 +279,7 @@
+   }
+ 
+   public boolean isUnknownType() {
+-    return true;
++    return false;
+   }
+ 
+   public boolean isCheckedUnknownType() {

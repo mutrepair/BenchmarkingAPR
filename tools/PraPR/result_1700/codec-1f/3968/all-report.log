@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local count is replaced by local incount to be used
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local count is replaced by access to field maxLength
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/codec/language/Soundex.java
+	Line Number: 265
+	Block: 30
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

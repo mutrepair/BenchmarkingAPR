@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/5974/org/apache/commons/collections4/list/TreeList.java	2022-10-31 19:47:39.915803233 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/TreeList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -1063,7 +1063,7 @@
+                 throw new NoSuchElementException("Already at start of list.");
+             }
+             if (next == null) {
+-                next = parent.root.get(nextIndex - -1);
++                next = parent.root.get(nextIndex - 1);
+             } else {
+                 next = next.previous();
+             }

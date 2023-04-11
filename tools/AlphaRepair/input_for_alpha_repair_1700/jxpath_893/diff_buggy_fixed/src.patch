@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/893/org/apache/commons/jxpath/ri/model/NodePointer.java	2022-10-31 19:47:51.459761290 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/NodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -614,7 +614,7 @@
+             buffer.append(parent.asPath());
+         }
+ 
+-        if (buffer.length() >= 0
++        if (buffer.length() == 0
+             || buffer.charAt(buffer.length() - 1) != '/') {
+             buffer.append('/');
+         }

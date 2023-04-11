@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/compress_38/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java	2023-01-16 15:29:32.524145278 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/compress/38/patch/./org/apache/commons/compress/archivers/tar/TarArchiveEntry.java	2023-01-16 15:29:32.496144929 -0600
+@@ -856,7 +856,7 @@
+             return true;
+         }
+ 
+-        if (getName().endsWith("/")) {
++        if (!isPaxHeader() && !isGlobalPaxHeader() && getName().endsWith("/")) {
+             return true;
+         }
+ 

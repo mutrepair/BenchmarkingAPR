@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10143/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-10-31 19:47:39.611804331 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-12-26 15:13:49.801602638 -0600
+@@ -194,7 +194,7 @@
+                 }
+ 
+                 int x = vDown[i];
+-                int y = x - start1 - start2 - k;
++                int y = x - start1 + start2 - k;
+ 
+                 while (x < end1 && y < end2 && equator.equate(sequence1.get(x), sequence2.get(y))) {
+                     vDown[i] = ++x;

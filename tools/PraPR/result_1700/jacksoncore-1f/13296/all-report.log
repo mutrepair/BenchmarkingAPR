@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local max is replaced by local outPtr to be defined
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 75
+	Rank: null
+	Total Rank: 10
+	Status: RUN_ERROR
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local max is replaced by local ptr to be defined
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 75
+	Rank: null
+	Total Rank: 10
+	Status: RUN_ERROR
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local codes is replaced by access to field sInputCodesUtf8
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 69
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local inputBuffer is replaced by access to field _inputBuffer
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 70
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local max is replaced by access to field _quad1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 75
+	Rank: null
+	Total Rank: 10
+	Status: RUN_ERROR
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local codes is replaced by access to field sInputCodesLatin1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 69
+	Rank: null
+	Total Rank: 10
+	Status: RUN_ERROR
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local codes is replaced by access to field _quadBuffer
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 69
+	Rank: null
+	Total Rank: 10
+	Status: RUN_ERROR
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 71
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 255 with 256
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 73
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 74
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+	Line Number: 2118
+	Block: 505
+	First Index: 71
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

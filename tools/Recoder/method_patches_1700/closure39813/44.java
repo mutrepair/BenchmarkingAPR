@@ -1,0 +1,15 @@
+  public void process(Node externs, Node root) {
+    CollectTweaksResult result = collectTweaks(root);
+    applyCompilerDefaultValueOverrides(result.tweakInfos);
+
+    boolean changed = false;
+
+applyCompilerDefaultValueOverrides(result.tweakInfos);
+    if (false) {      changed = stripAllCalls(result.tweakInfos);
+    } else if (!compilerDefaultValueOverrides.isEmpty()) {
+      changed = replaceGetCompilerOverridesCalls(result.getOverridesCalls);
+    }
+    if (changed) {
+      compiler.reportCodeChange();
+    }
+  }

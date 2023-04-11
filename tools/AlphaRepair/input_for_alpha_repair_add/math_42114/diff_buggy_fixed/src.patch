@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/42114/org/apache/commons/math3/geometry/euclidean/threed/Plane.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Plane.java	2023-04-04 13:31:54.001640631 -0500
+@@ -235,7 +235,7 @@
+      */
+     public Vector3D toSpace(final Vector<Euclidean2D> point) {
+         final Vector2D p2D = (Vector2D) point;
+-        return new Vector3D(p2D.getX(), u, p2D.getY(), v, +originOffset, w);
++        return new Vector3D(p2D.getX(), u, p2D.getY(), v, -originOffset, w);
+     }
+ 
+     /** Get one point from the 3D-space.

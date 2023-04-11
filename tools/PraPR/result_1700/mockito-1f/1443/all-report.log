@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local lhs is replaced by local rhs to be used
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 550
+	Block: 112
+	First Index: 21
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 550
+	Block: 112
+	First Index: 22
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 550
+	Block: 112
+	First Index: 22
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 550
+	Block: 112
+	First Index: 22
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,926 @@
+
+compile:
+
+gradle.compile:
+
+ant.compile:
+
+clean:
+
+prepare:
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/classes
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/test-classes
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/reports/junit
+
+compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/build.xml:76: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 230 source files to /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/classes
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/configuration/DefaultMockitoConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/configuration/IMockitoConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/GlobalConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/runners/JUnit44RunnerImpl.java:7: warning: [deprecation] InitializationError in org.junit.internal.runners has been deprecated
+    [javac] import org.junit.internal.runners.InitializationError;
+    [javac]                                  ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/runners/JUnit44RunnerImpl.java:8: warning: [deprecation] JUnit4ClassRunner in org.junit.internal.runners has been deprecated
+    [javac] import org.junit.internal.runners.JUnit4ClassRunner;
+    [javac]                                  ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/stubbing/answers/AnswerReturnValuesAdapter.java:9: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/DefaultAnnotationEngine.java:32: warning: [deprecation] createMockFor(Annotation,Field) in AnnotationEngine has been deprecated
+    [javac]     public Object createMockFor(Annotation annotation, Field field) {
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/SpyAnnotationEngine.java:23: warning: [deprecation] createMockFor(Annotation,Field) in AnnotationEngine has been deprecated
+    [javac]     public Object createMockFor(Annotation annotation, Field field) {
+    [javac]                   ^
+    [javac] 8 warnings
+
+gradle.compile.mutants:
+
+ant.compile.mutants:
+     [exec] /home/yicheng/research/apr/experiments/defects4j/framework/projects/Mockito/chooseDepedencyVersion.sh: line 8: ./gradlew: No such file or directory
+
+compile.tests:
+
+gradle.compile.tests:
+
+ant.compile.tests:
+
+clean:
+
+prepare:
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/classes
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/test-classes
+    [mkdir] Created dir: /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/reports/junit
+
+compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/build.xml:76: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 230 source files to /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/classes
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/configuration/DefaultMockitoConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/configuration/IMockitoConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/GlobalConfiguration.java:7: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/runners/JUnit44RunnerImpl.java:7: warning: [deprecation] InitializationError in org.junit.internal.runners has been deprecated
+    [javac] import org.junit.internal.runners.InitializationError;
+    [javac]                                  ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/runners/JUnit44RunnerImpl.java:8: warning: [deprecation] JUnit4ClassRunner in org.junit.internal.runners has been deprecated
+    [javac] import org.junit.internal.runners.JUnit4ClassRunner;
+    [javac]                                  ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/stubbing/answers/AnswerReturnValuesAdapter.java:9: warning: [deprecation] ReturnValues in org.mockito has been deprecated
+    [javac] import org.mockito.ReturnValues;
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/DefaultAnnotationEngine.java:32: warning: [deprecation] createMockFor(Annotation,Field) in AnnotationEngine has been deprecated
+    [javac]     public Object createMockFor(Annotation annotation, Field field) {
+    [javac]                   ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/src/org/mockito/internal/configuration/SpyAnnotationEngine.java:23: warning: [deprecation] createMockFor(Annotation,Field) in AnnotationEngine has been deprecated
+    [javac]     public Object createMockFor(Annotation annotation, Field field) {
+    [javac]                   ^
+    [javac] 8 warnings
+
+compile.test:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/build.xml:82: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 223 source files to /home/yicheng/research/mutd4j/d4jProj/mockito-13f/target/test-classes
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/junitrunner/JUnit44RunnerTest.java:17: warning: [deprecation] MockitoJUnit44Runner in org.mockito.runners has been deprecated
+    [javac] import org.mockito.runners.MockitoJUnit44Runner;
+    [javac]                           ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationTest.java:14: warning: [deprecation] MockitoJUnit44Runner in org.mockito.runners has been deprecated
+    [javac] import org.mockito.runners.MockitoJUnit44Runner;
+    [javac]                           ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/annotation/AnnotationsTest.java:37: warning: [deprecation] Mock in MockitoAnnotations has been deprecated
+    [javac]     @MockitoAnnotations.Mock List listTwo;
+    [javac]                        ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/junitrunner/JUnit44RunnerTest.java:19: warning: [deprecation] MockitoJUnit44Runner in org.mockito.runners has been deprecated
+    [javac] @RunWith(MockitoJUnit44Runner.class)
+    [javac]          ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationTest.java:20: warning: [deprecation] MockitoJUnit44Runner in org.mockito.runners has been deprecated
+    [javac] @RunWith(MockitoJUnit44Runner.class)
+    [javac]          ^
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:51: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(expected).on().clear();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:62: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(new ExceptionOne()).on().clear();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:63: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(new ExceptionTwo()).on().clear();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:124: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(new ExceptionTwo()).on().clear();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:126: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mockTwo).toThrow(new ExceptionThree()).on().clear();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:157: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(new RuntimeException()).on().clone();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] /home/yicheng/research/mutd4j/d4jProj/mockito-13f/test/org/mockitousage/stubbing/StubbingWithThrowablesTest.java:177: warning: [deprecation] <T>stubVoid(T) in Mockito has been deprecated
+    [javac]         stubVoid(mock).toThrow(new RuntimeException()).on().clone();
+    [javac]         ^
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in method <T>stubVoid(T)
+    [javac] 12 warnings
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 188 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 31.09 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 2231
+    [junit] MAJOR: Mutants covered:   2146 (96.19%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 188 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/188 - org.mockito.internal.util.IdentitySetTest (4ms / 4):
+    [junit] MAJOR: 40 (4 / 4 / 4) -> AVG-RTPM: 10ms
+    [junit] MAJOR: Mutants killed / live: 4 (4-0-0) / 2142
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/188 - org.mockito.exceptions.PluralizerTest (6ms / 21):
+    [junit] MAJOR: 478 (14 / 21 / 21) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 18 (9-7-1) / 2128
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/188 - org.mockito.runners.ConsoleSpammingMockitoJUnitRunnerTest (6ms / 28):
+    [junit] MAJOR: 837 (2 / 19 / 28) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 20 (9-9-1) / 2126
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/188 - org.mockito.runners.RunnersValidateFrameworkUsageTest$DummyTest (6ms / 16):
+    [junit] MAJOR: 925 (0 / 7 / 16) -> AVG-RTPM: 12ms
+    [junit] MAJOR: Mutants killed / live: 20 (9-9-1) / 2126
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/188 - org.mockitousage.stubbing.ReturningMockValuesTest (6ms / 16):
+    [junit] MAJOR: 1030 (0 / 7 / 16) -> AVG-RTPM: 15ms
+    [junit] MAJOR: Mutants killed / live: 20 (9-9-1) / 2126
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/188 - org.mockito.exceptions.base.MockitoAssertionErrorTest (7ms / 20):
+    [junit] MAJOR: 1225 (1 / 11 / 20) -> AVG-RTPM: 17ms
+    [junit] MAJOR: Mutants killed / live: 21 (9-10-1) / 2125
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/188 - org.mockito.internal.matchers.EqualityTest (7ms / 50):
+    [junit] MAJOR: 1968 (24 / 41 / 50) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 45 (28-15-1) / 2101
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/188 - org.mockito.internal.progress.AtLeastTest (7ms / 26):
+    [junit] MAJOR: 2255 (3 / 17 / 26) -> AVG-RTPM: 16ms
+    [junit] MAJOR: Mutants killed / live: 48 (29-17-1) / 2098
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/188 - org.mockito.internal.util.DecamelizerTest (7ms / 34):
+    [junit] MAJOR: 2705 (15 / 25 / 34) -> AVG-RTPM: 17ms
+    [junit] MAJOR: Mutants killed / live: 63 (44-17-1) / 2083
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/188 - org.mockito.internal.util.reflection.FieldReaderTest (7ms / 21):
+    [junit] MAJOR: 2908 (4 / 12 / 21) -> AVG-RTPM: 16ms
+    [junit] MAJOR: Mutants killed / live: 67 (45-20-1) / 2079
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/188 - org.mockitousage.internal.debugging.LocationTest (7ms / 65):
+    [junit] MAJOR: 3935 (27 / 56 / 65) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 94 (66-26-1) / 2052
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/188 - org.mockitousage.internal.invocation.realmethod.FilteredCGLIBProxyRealMethodTest (7ms / 69):
+    [junit] MAJOR: 4699 (14 / 40 / 69) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 108 (80-26-1) / 2038
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/188 - org.mockito.internal.exceptions.base.ConditionalStackTraceFilterTest (8ms / 79):
+    [junit] MAJOR: 5446 (2 / 36 / 79) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 110 (82-26-1) / 2036
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/188 - org.mockito.internal.progress.TimesTest (8ms / 26):
+    [junit] MAJOR: 5748 (1 / 15 / 26) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 111 (83-26-1) / 2035
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/188 - org.mockito.internal.runners.util.TestMethodsFinderTest (8ms / 20):
+    [junit] MAJOR: 5968 (4 / 11 / 20) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 115 (87-26-1) / 2031
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/188 - org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValuesTest (8ms / 86):
+    [junit] MAJOR: 7434 (22 / 77 / 86) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 137 (93-42-1) / 2009
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/188 - org.mockito.internal.stubbing.defaultanswers.ReturnsMoreEmptyValuesTest (8ms / 32):
+    [junit] MAJOR: 7815 (4 / 22 / 32) -> AVG-RTPM: 17ms
+    [junit] MAJOR: Mutants killed / live: 141 (95-44-1) / 2005
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/188 - org.mockito.internal.util.SimpleMockitoLoggerTest (8ms / 17):
+    [junit] MAJOR: 7933 (1 / 8 / 17) -> AVG-RTPM: 14ms
+    [junit] MAJOR: Mutants killed / live: 142 (96-44-1) / 2004
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/188 - org.mockitousage.annotation.CaptorAnnotationUnhappyPathTest (8ms / 25):
+    [junit] MAJOR: 8231 (2 / 15 / 25) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 144 (98-44-1) / 2002
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/188 - org.mockitousage.basicapi.ObjectsSerializationTest (8ms / 16):
+    [junit] MAJOR: 8351 (0 / 6 / 16) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 144 (98-44-1) / 2002
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/188 - org.mockito.ArgumentCaptorTest (9ms / 73):
+    [junit] MAJOR: 8884 (3 / 28 / 73) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 147 (98-47-1) / 1999
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/188 - org.mockito.internal.progress.HandyReturnValuesTest (9ms / 77):
+    [junit] MAJOR: 10291 (20 / 66 / 77) -> AVG-RTPM: 21ms
+    [junit] MAJOR: Mutants killed / live: 167 (115-48-2) / 1979
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/188 - org.mockito.internal.util.ArrayUtilsTest (9ms / 39):
+    [junit] MAJOR: 10797 (12 / 28 / 39) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 179 (118-57-2) / 1967
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/188 - org.mockitousage.junitrunner.JUnit44RunnerTest (9ms / 480):
+    [junit] MAJOR: 52174 (161 / 421 / 480) -> AVG-RTPM: 98ms
+    [junit] MAJOR: Mutants killed / live: 340 (161-172-2) / 1806
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/188 - org.mockitousage.junitrunner.JUnit45RunnerTest (9ms / 480):
+    [junit] MAJOR: 80413 (0 / 260 / 480) -> AVG-RTPM: 108ms
+    [junit] MAJOR: Mutants killed / live: 340 (161-172-2) / 1806
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/188 - org.mockitoutil.CustomAssertionsTest (9ms / 16):
+    [junit] MAJOR: 80525 (0 / 6 / 16) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 340 (161-172-2) / 1806
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/188 - org.mockito.internal.runners.util.RunnerProviderTest (10ms / 20):
+    [junit] MAJOR: 80722 (2 / 9 / 20) -> AVG-RTPM: 21ms
+    [junit] MAJOR: Mutants killed / live: 342 (163-172-2) / 1804
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/188 - org.mockito.internal.util.MockNameTest (10ms / 31):
+    [junit] MAJOR: 81227 (12 / 21 / 31) -> AVG-RTPM: 24ms
+    [junit] MAJOR: Mutants killed / live: 354 (168-179-2) / 1792
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/188 - org.mockito.internal.util.ObjectMethodsGuruTest (10ms / 66):
+    [junit] MAJOR: 82110 (19 / 36 / 66) -> AVG-RTPM: 24ms
+    [junit] MAJOR: Mutants killed / live: 373 (185-181-2) / 1773
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/188 - org.mockito.internal.util.reflection.WhiteboxTest (10ms / 30):
+    [junit] MAJOR: 82865 (10 / 20 / 30) -> AVG-RTPM: 37ms
+    [junit] MAJOR: Mutants killed / live: 383 (186-188-3) / 1763
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/188 - org.mockito.internal.matchers.CapturingMatcherTest (11ms / 32):
+    [junit] MAJOR: 83407 (7 / 20 / 32) -> AVG-RTPM: 27ms
+    [junit] MAJOR: Mutants killed / live: 390 (188-193-3) / 1756
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/188 - org.mockito.internal.matchers.MatchersPrinterTest (11ms / 46):
+    [junit] MAJOR: 84170 (16 / 30 / 46) -> AVG-RTPM: 25ms
+    [junit] MAJOR: Mutants killed / live: 406 (203-194-3) / 1740
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/188 - org.mockito.runners.RunnersValidateFrameworkUsageTest (11ms / 40):
+    [junit] MAJOR: 84665 (4 / 19 / 40) -> AVG-RTPM: 26ms
+    [junit] MAJOR: Mutants killed / live: 410 (207-194-3) / 1736
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/188 - org.mockitousage.stacktrace.PointingStackTraceToActualInvocationTest (11ms / 512):
+    [junit] MAJOR: 119461 (21 / 263 / 512) -> AVG-RTPM: 132ms
+    [junit] MAJOR: Mutants killed / live: 431 (225-197-3) / 1715
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/188 - org.concurrentmockito.ThreadsRunAllTestsHalfManualTest (12ms / 16):
+    [junit] MAJOR: 119602 (0 / 6 / 16) -> AVG-RTPM: 23ms
+    [junit] MAJOR: Mutants killed / live: 431 (225-197-3) / 1715
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/188 - org.mockito.internal.matchers.ComparableMatchersTest (12ms / 42):
+    [junit] MAJOR: 120427 (26 / 32 / 42) -> AVG-RTPM: 25ms
+    [junit] MAJOR: Mutants killed / live: 457 (251-197-3) / 1689
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/188 - org.mockito.internal.creation.SerializableMockitoMethodProxyTest (13ms / 26):
+    [junit] MAJOR: 120828 (0 / 11 / 26) -> AVG-RTPM: 36ms
+    [junit] MAJOR: Mutants killed / live: 457 (251-197-3) / 1689
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/188 - org.mockito.internal.matchers.LocalizedMatcherTest (13ms / 89):
+    [junit] MAJOR: 121899 (9 / 36 / 89) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 466 (257-200-3) / 1680
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/188 - org.mockito.internal.util.junit.JUnitFailureHackerTest (13ms / 47):
+    [junit] MAJOR: 122577 (8 / 23 / 47) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 474 (265-200-3) / 1672
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/188 - org.mockitousage.debugging.PrintingInvocationsWhenStubNotUsedTest (13ms / 594):
+    [junit] MAJOR: 165242 (75 / 334 / 594) -> AVG-RTPM: 127ms
+    [junit] MAJOR: Mutants killed / live: 549 (291-248-3) / 1597
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/188 - org.mockito.internal.creation.MockSettingsImplTest (14ms / 58):
+    [junit] MAJOR: 166322 (18 / 36 / 58) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 567 (301-256-3) / 1579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/188 - org.mockito.internal.util.ListUtilTest (14ms / 19):
+    [junit] MAJOR: 166504 (0 / 6 / 19) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 567 (301-256-3) / 1579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/188 - org.mockito.internal.verification.argumentmatching.ArgumentMatchingToolTest (14ms / 79):
+    [junit] MAJOR: 167734 (11 / 41 / 79) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 578 (310-258-3) / 1568
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/188 - org.mockito.internal.runners.RunnerFactoryTest (15ms / 33):
+    [junit] MAJOR: 168178 (2 / 14 / 33) -> AVG-RTPM: 31ms
+    [junit] MAJOR: Mutants killed / live: 580 (310-260-3) / 1566
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/188 - org.mockito.internal.util.MockCreationValidatorTest (15ms / 51):
+    [junit] MAJOR: 168970 (8 / 26 / 51) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 588 (315-263-3) / 1558
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/188 - org.mockito.internal.exceptions.base.StackTraceFilterTest (16ms / 75):
+    [junit] MAJOR: 169721 (4 / 25 / 75) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 592 (316-266-3) / 1554
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/188 - org.mockito.internal.invocation.SerializableMethodTest (16ms / 49):
+    [junit] MAJOR: 170752 (13 / 33 / 49) -> AVG-RTPM: 31ms
+    [junit] MAJOR: Mutants killed / live: 605 (329-266-3) / 1541
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/188 - org.mockitousage.basicapi.MockingMultipleInterfacesTest (17ms / 58):
+    [junit] MAJOR: 171647 (1 / 19 / 58) -> AVG-RTPM: 47ms
+    [junit] MAJOR: Mutants killed / live: 606 (330-266-3) / 1540
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 49/188 - org.mockito.internal.matchers.EqualsTest (18ms / 84):
+    [junit] MAJOR: 172919 (20 / 43 / 84) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 626 (340-276-3) / 1520
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 50/188 - org.mockitousage.stacktrace.PointingStackTraceToActualInvocationChunkInOrderTest (20ms / 599):
+    [junit] MAJOR: 224927 (48 / 298 / 599) -> AVG-RTPM: 174ms
+    [junit] MAJOR: Mutants killed / live: 674 (375-289-3) / 1472
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 51/188 - org.mockito.internal.creation.MethodInterceptorFilterTest (21ms / 335):
+    [junit] MAJOR: 243502 (10 / 127 / 335) -> AVG-RTPM: 146ms
+    [junit] MAJOR: Mutants killed / live: 684 (378-296-3) / 1462
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 52/188 - org.mockitousage.stacktrace.PointingStackTraceToActualInvocationInOrderTest (23ms / 609):
+    [junit] MAJOR: 296057 (9 / 258 / 609) -> AVG-RTPM: 203ms
+    [junit] MAJOR: Mutants killed / live: 693 (382-301-3) / 1453
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 53/188 - org.mockito.internal.matchers.MatchersToStringTest (24ms / 50):
+    [junit] MAJOR: 297874 (29 / 35 / 50) -> AVG-RTPM: 51ms
+    [junit] MAJOR: Mutants killed / live: 722 (408-301-4) / 1424
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 54/188 - org.mockitousage.spies.PartialMockingWithSpiesTest (24ms / 478):
+    [junit] MAJOR: 338780 (42 / 220 / 478) -> AVG-RTPM: 185ms
+    [junit] MAJOR: Mutants killed / live: 764 (418-332-4) / 1382
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 55/188 - org.mockitousage.examples.use.ExampleTest (25ms / 626):
+    [junit] MAJOR: 395486 (9 / 261 / 626) -> AVG-RTPM: 217ms
+    [junit] MAJOR: Mutants killed / live: 773 (422-336-4) / 1373
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 56/188 - org.mockito.internal.stubbing.answers.AnswersValidatorTest (30ms / 384):
+    [junit] MAJOR: 431056 (37 / 162 / 384) -> AVG-RTPM: 219ms
+    [junit] MAJOR: Mutants killed / live: 810 (439-356-4) / 1336
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 57/188 - org.mockito.internal.util.reflection.LenientCopyToolTest (31ms / 447):
+    [junit] MAJOR: 468432 (2 / 170 / 447) -> AVG-RTPM: 219ms
+    [junit] MAJOR: Mutants killed / live: 812 (441-356-4) / 1334
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 58/188 - org.mockitousage.matchers.CapturingArgumentsTest (42ms / 630):
+    [junit] MAJOR: 533533 (16 / 246 / 630) -> AVG-RTPM: 264ms
+    [junit] MAJOR: Mutants killed / live: 828 (447-366-4) / 1318
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 59/188 - org.mockitousage.misuse.DetectingFinalMethodsTest (44ms / 264):
+    [junit] MAJOR: 555470 (7 / 112 / 264) -> AVG-RTPM: 195ms
+    [junit] MAJOR: Mutants killed / live: 835 (449-371-4) / 1311
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 60/188 - org.mockitousage.packageprotected.MockingPackageProtectedTest (47ms / 118):
+    [junit] MAJOR: 565463 (0 / 50 / 118) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 835 (449-371-4) / 1311
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 61/188 - org.mockitousage.bugs.ActualInvocationHasNullArgumentNPEBugTest (49ms / 587):
+    [junit] MAJOR: 615399 (0 / 209 / 587) -> AVG-RTPM: 238ms
+    [junit] MAJOR: Mutants killed / live: 835 (449-371-4) / 1311
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 62/188 - org.mockitousage.bugs.CovariantOverrideTest (49ms / 405):
+    [junit] MAJOR: 645980 (0 / 133 / 405) -> AVG-RTPM: 229ms
+    [junit] MAJOR: Mutants killed / live: 835 (449-371-4) / 1311
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 63/188 - org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest (50ms / 252):
+    [junit] MAJOR: 663739 (6 / 89 / 252) -> AVG-RTPM: 199ms
+    [junit] MAJOR: Mutants killed / live: 841 (452-374-4) / 1305
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 64/188 - org.mockitousage.annotation.DeprecatedAnnotationEngineApiTest (50ms / 222):
+    [junit] MAJOR: 685551 (5 / 98 / 222) -> AVG-RTPM: 222ms
+    [junit] MAJOR: Mutants killed / live: 846 (457-374-4) / 1300
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 65/188 - org.mockitousage.PlaygroundTest (51ms / 160):
+    [junit] MAJOR: 704140 (0 / 72 / 160) -> AVG-RTPM: 258ms
+    [junit] MAJOR: Mutants killed / live: 846 (457-374-4) / 1300
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 66/188 - org.mockitousage.puzzlers.OverloadingPuzzleTest (51ms / 415):
+    [junit] MAJOR: 738396 (2 / 135 / 415) -> AVG-RTPM: 253ms
+    [junit] MAJOR: Mutants killed / live: 848 (459-374-4) / 1298
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 67/188 - org.mockitousage.annotation.SpyInjectionTest (52ms / 273):
+    [junit] MAJOR: 768933 (9 / 112 / 273) -> AVG-RTPM: 272ms
+    [junit] MAJOR: Mutants killed / live: 857 (459-381-5) / 1289
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 68/188 - org.mockitousage.stubbing.CloningParameterTest (52ms / 498):
+    [junit] MAJOR: 818772 (5 / 170 / 498) -> AVG-RTPM: 293ms
+    [junit] MAJOR: Mutants killed / live: 862 (461-384-5) / 1284
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 69/188 - org.mockitousage.basicapi.ReplacingObjectMethodsTest (53ms / 280):
+    [junit] MAJOR: 843521 (13 / 96 / 280) -> AVG-RTPM: 257ms
+    [junit] MAJOR: Mutants killed / live: 875 (471-387-5) / 1271
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 70/188 - org.mockitousage.puzzlers.BridgeMethodPuzzleTest (53ms / 442):
+    [junit] MAJOR: 883496 (3 / 142 / 442) -> AVG-RTPM: 281ms
+    [junit] MAJOR: Mutants killed / live: 878 (473-388-5) / 1268
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 71/188 - org.mockito.internal.creation.jmock.ClassImposterizerTest (54ms / 87):
+    [junit] MAJOR: 890985 (2 / 32 / 87) -> AVG-RTPM: 234ms
+    [junit] MAJOR: Mutants killed / live: 880 (475-388-5) / 1266
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 72/188 - org.mockito.internal.matchers.apachecommons.EqualsBuilderTest (54ms / 417):
+    [junit] MAJOR: 923224 (264 / 407 / 417) -> AVG-RTPM: 79ms
+    [junit] MAJOR: Mutants killed / live: 1144 (666-459-5) / 1002
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 73/188 - org.mockitousage.annotation.CaptorAnnotationTest (54ms / 475):
+    [junit] MAJOR: 976291 (3 / 163 / 475) -> AVG-RTPM: 325ms
+    [junit] MAJOR: Mutants killed / live: 1147 (667-461-5) / 999
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 74/188 - org.mockitousage.bugs.MultipleInOrdersTest (54ms / 408):
+    [junit] MAJOR: 1013386 (1 / 119 / 408) -> AVG-RTPM: 311ms
+    [junit] MAJOR: Mutants killed / live: 1148 (667-462-5) / 998
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 75/188 - org.mockitousage.misuse.RestrictedObjectMethodsTest (55ms / 356):
+    [junit] MAJOR: 1054212 (4 / 124 / 356) -> AVG-RTPM: 329ms
+    [junit] MAJOR: Mutants killed / live: 1152 (670-463-5) / 994
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 76/188 - org.mockito.internal.stubbing.defaultanswers.ReturnsMocksTest (56ms / 308):
+    [junit] MAJOR: 1081075 (4 / 98 / 308) -> AVG-RTPM: 274ms
+    [junit] MAJOR: Mutants killed / live: 1156 (672-465-5) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 77/188 - org.mockitousage.PlaygroundWithDemoOfUnclonedParametersProblemTest (56ms / 532):
+    [junit] MAJOR: 1138747 (0 / 167 / 532) -> AVG-RTPM: 345ms
+    [junit] MAJOR: Mutants killed / live: 1156 (672-465-5) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 78/188 - org.mockitousage.debugging.PrintingInvocationsDetectsUnusedStubTest (56ms / 497):
+    [junit] MAJOR: 1196555 (0 / 164 / 497) -> AVG-RTPM: 352ms
+    [junit] MAJOR: Mutants killed / live: 1156 (672-465-5) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 79/188 - org.mockitousage.matchers.GenericMatchersTest (56ms / 449):
+    [junit] MAJOR: 1247426 (0 / 147 / 449) -> AVG-RTPM: 346ms
+    [junit] MAJOR: Mutants killed / live: 1156 (672-465-5) / 990
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 80/188 - org.mockitousage.annotation.SpyAnnotationInitializedInBaseClassTest (57ms / 195):
+    [junit] MAJOR: 1273419 (3 / 70 / 195) -> AVG-RTPM: 371ms
+    [junit] MAJOR: Mutants killed / live: 1159 (675-465-5) / 987
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 81/188 - org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest (57ms / 694):
+    [junit] MAJOR: 1387743 (44 / 285 / 694) -> AVG-RTPM: 401ms
+    [junit] MAJOR: Mutants killed / live: 1203 (683-499-6) / 943
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 82/188 - org.mockitousage.spies.SpyingOnInterfacesTest (57ms / 425):
+    [junit] MAJOR: 1466898 (40 / 132 / 425) -> AVG-RTPM: 599ms
+    [junit] MAJOR: Mutants killed / live: 1243 (684-501-24) / 903
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 83/188 - org.mockitousage.bugs.VarargsErrorWhenCallingRealMethodTest (58ms / 377):
+    [junit] MAJOR: 1540620 (70 / 70 / 377) -> AVG-RTPM: 1053ms
+    [junit] MAJOR: Mutants killed / live: 1313 (684-501-59) / 833
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 84/188 - org.mockito.internal.AllInvocationsFinderTest (59ms / 349):
+    [junit] MAJOR: 1580587 (37 / 37 / 349) -> AVG-RTPM: 1080ms
+    [junit] MAJOR: Mutants killed / live: 1350 (684-501-77) / 796
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 85/188 - org.mockitousage.annotation.WrongSetOfAnnotationsTest (59ms / 183):
+    [junit] MAJOR: 1642027 (32 / 32 / 183) -> AVG-RTPM: 1920ms
+    [junit] MAJOR: Mutants killed / live: 1382 (684-501-80) / 764
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 86/188 - org.mockitousage.misuse.DetectingMisusedMatchersTest (59ms / 276):
+    [junit] MAJOR: 1654674 (12 / 12 / 276) -> AVG-RTPM: 1053ms
+    [junit] MAJOR: Mutants killed / live: 1394 (684-501-86) / 752
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 87/188 - org.mockitousage.stubbing.CallingRealMethodTest (59ms / 503):
+    [junit] MAJOR: 1665333 (9 / 9 / 503) -> AVG-RTPM: 1184ms
+    [junit] MAJOR: Mutants killed / live: 1403 (684-501-90) / 743
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 88/188 - org.mockito.internal.configuration.ReadingConfigurationFromClasspathTest (60ms / 237):
+    [junit] MAJOR: 1665333 (0 / 0 / 237) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1403 (684-501-90) / 743
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 89/188 - org.mockito.internal.progress.ThreadSafeMockingProgressTest (60ms / 215):
+    [junit] MAJOR: 1665333 (0 / 0 / 215) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1403 (684-501-90) / 743
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 90/188 - org.mockitousage.bugs.AIOOBExceptionWithAtLeastTest (60ms / 401):
+    [junit] MAJOR: 1688376 (22 / 22 / 401) -> AVG-RTPM: 1047ms
+    [junit] MAJOR: Mutants killed / live: 1425 (684-501-101) / 721
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 91/188 - org.mockitousage.misuse.ExplicitFrameworkValidationTest (60ms / 403):
+    [junit] MAJOR: 1692579 (4 / 4 / 403) -> AVG-RTPM: 1050ms
+    [junit] MAJOR: Mutants killed / live: 1429 (684-501-103) / 717
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 92/188 - org.mockitousage.stacktrace.ClickableStackTracesWhenFrameworkMisusedTest (60ms / 419):
+    [junit] MAJOR: 1692579 (0 / 0 / 419) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1429 (684-501-103) / 717
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 93/188 - org.mockito.internal.verification.NoMoreInteractionsTest (61ms / 225):
+    [junit] MAJOR: 1700961 (9 / 9 / 225) -> AVG-RTPM: 931ms
+    [junit] MAJOR: Mutants killed / live: 1438 (684-501-108) / 708
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 94/188 - org.mockitousage.matchers.CustomMatcherDoesYieldCCETest (61ms / 539):
+    [junit] MAJOR: 1745831 (40 / 40 / 539) -> AVG-RTPM: 1121ms
+    [junit] MAJOR: Mutants killed / live: 1478 (684-501-127) / 668
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 95/188 - org.concurrentmockito.VerificationInOrderFromMultipleThreadsTest (62ms / 389):
+    [junit] MAJOR: 1762556 (17 / 17 / 389) -> AVG-RTPM: 983ms
+    [junit] MAJOR: Mutants killed / live: 1495 (684-501-136) / 651
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 96/188 - org.mockitousage.configuration.CustomizedAnnotationForSmartMockTest (62ms / 471):
+    [junit] MAJOR: 1762556 (0 / 0 / 471) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1495 (684-501-136) / 651
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 97/188 - org.mockitousage.spies.SpyingOnRealObjectsTest (62ms / 702):
+    [junit] MAJOR: 1879433 (48 / 52 / 702) -> AVG-RTPM: 2247ms
+    [junit] MAJOR: Mutants killed / live: 1543 (685-502-136) / 603
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 98/188 - org.mockitousage.verification.DescriptiveMessagesWhenTimesXVerificationFailsTest (62ms / 412):
+    [junit] MAJOR: 1881700 (1 / 1 / 412) -> AVG-RTPM: 2267ms
+    [junit] MAJOR: Mutants killed / live: 1544 (685-502-136) / 602
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 99/188 - org.mockitousage.matchers.ReflectionMatchersTest (63ms / 567):
+    [junit] MAJOR: 1906497 (23 / 23 / 567) -> AVG-RTPM: 1078ms
+    [junit] MAJOR: Mutants killed / live: 1567 (685-502-148) / 579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 100/188 - org.mockitousage.spies.StubbingSpiesDoesNotYieldNPETest (63ms / 255):
+    [junit] MAJOR: 1906498 (0 / 0 / 255) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1567 (685-502-148) / 579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 101/188 - org.mockito.exceptions.ReporterTest (64ms / 229):
+    [junit] MAJOR: 1906498 (0 / 0 / 229) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1567 (685-502-148) / 579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 102/188 - org.mockitousage.annotation.CaptorAnnotationBasicTest (64ms / 482):
+    [junit] MAJOR: 1906498 (0 / 0 / 482) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1567 (685-502-148) / 579
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 103/188 - org.mockitousage.matchers.AnyXMatchersAcceptNullsTest (64ms / 445):
+    [junit] MAJOR: 1910952 (3 / 3 / 445) -> AVG-RTPM: 1484ms
+    [junit] MAJOR: Mutants killed / live: 1570 (685-502-149) / 576
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 104/188 - org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest (65ms / 273):
+    [junit] MAJOR: 1910952 (0 / 0 / 273) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1570 (685-502-149) / 576
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 105/188 - org.mockito.verification.TimeoutTest (65ms / 500):
+    [junit] MAJOR: 1939866 (25 / 25 / 500) -> AVG-RTPM: 1156ms
+    [junit] MAJOR: Mutants killed / live: 1595 (685-502-162) / 551
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 106/188 - org.mockito.internal.MockHandlerTest (66ms / 212):
+    [junit] MAJOR: 1939866 (0 / 0 / 212) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1595 (685-502-162) / 551
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 107/188 - org.mockito.internal.progress.MockingProgressImplTest (66ms / 473):
+    [junit] MAJOR: 1946652 (3 / 3 / 473) -> AVG-RTPM: 2262ms
+    [junit] MAJOR: Mutants killed / live: 1598 (685-502-162) / 548
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 108/188 - org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest (66ms / 542):
+    [junit] MAJOR: 1978487 (28 / 28 / 542) -> AVG-RTPM: 1136ms
+    [junit] MAJOR: Mutants killed / live: 1626 (685-502-176) / 520
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 109/188 - org.mockitousage.matchers.MoreMatchersTest (66ms / 527):
+    [junit] MAJOR: 1978487 (0 / 0 / 527) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1626 (685-502-176) / 520
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 110/188 - org.mockitousage.misuse.CleaningUpPotentialStubbingTest (66ms / 558):
+    [junit] MAJOR: 1978487 (0 / 0 / 558) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1626 (685-502-176) / 520
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 111/188 - org.mockitousage.verification.OnlyVerificationTest (66ms / 525):
+    [junit] MAJOR: 2016690 (33 / 33 / 525) -> AVG-RTPM: 1157ms
+    [junit] MAJOR: Mutants killed / live: 1659 (685-502-192) / 487
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 112/188 - org.mockitousage.misuse.DescriptiveMessagesOnMisuseTest (67ms / 371):
+    [junit] MAJOR: 2027912 (11 / 11 / 371) -> AVG-RTPM: 1020ms
+    [junit] MAJOR: Mutants killed / live: 1670 (685-502-198) / 476
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 113/188 - org.mockitousage.stubbing.ReturningDefaultValuesTest (67ms / 399):
+    [junit] MAJOR: 2027912 (0 / 0 / 399) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1670 (685-502-198) / 476
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 114/188 - org.mockitousage.verification.AtLeastXVerificationTest (67ms / 498):
+    [junit] MAJOR: 2057365 (3 / 4 / 498) -> AVG-RTPM: 7363ms
+    [junit] MAJOR: Mutants killed / live: 1673 (685-502-198) / 473
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 115/188 - org.mockitousage.verification.OrdinaryVerificationPrintsAllInteractionsTest (67ms / 473):
+    [junit] MAJOR: 2076056 (5 / 5 / 473) -> AVG-RTPM: 3738ms
+    [junit] MAJOR: Mutants killed / live: 1678 (685-502-198) / 468
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 116/188 - org.mockito.internal.util.MockUtilTest (68ms / 162):
+    [junit] MAJOR: 2076056 (0 / 0 / 162) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1678 (685-502-198) / 468
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 117/188 - org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest (68ms / 243):
+    [junit] MAJOR: 2078068 (1 / 1 / 243) -> AVG-RTPM: 2012ms
+    [junit] MAJOR: Mutants killed / live: 1679 (685-502-198) / 467
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 118/188 - org.mockitousage.annotation.SpyAnnotationInitializedInBaseClassTest$SubTest (68ms / 195):
+    [junit] MAJOR: 2132705 (8 / 8 / 195) -> AVG-RTPM: 6829ms
+    [junit] MAJOR: Mutants killed / live: 1687 (685-502-198) / 459
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 119/188 - org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest (68ms / 686):
+    [junit] MAJOR: 2190853 (8 / 8 / 686) -> AVG-RTPM: 7268ms
+    [junit] MAJOR: Mutants killed / live: 1695 (685-502-198) / 451
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 120/188 - org.mockitousage.verification.VerificationWithTimeoutTest (68ms / 160):
+    [junit] MAJOR: 2190853 (0 / 0 / 160) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1695 (685-502-198) / 451
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 121/188 - org.mockito.internal.verification.SmartPrinterTest (69ms / 377):
+    [junit] MAJOR: 2199155 (1 / 1 / 377) -> AVG-RTPM: 8302ms
+    [junit] MAJOR: Mutants killed / live: 1696 (685-502-198) / 450
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 122/188 - org.mockitousage.stubbing.StubbingWithExtraAnswersTest (69ms / 427):
+    [junit] MAJOR: 2228664 (8 / 8 / 427) -> AVG-RTPM: 3688ms
+    [junit] MAJOR: Mutants killed / live: 1704 (685-502-198) / 442
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 123/188 - org.mockito.MockitoTest (70ms / 411):
+    [junit] MAJOR: 2232467 (1 / 1 / 411) -> AVG-RTPM: 3803ms
+    [junit] MAJOR: Mutants killed / live: 1705 (685-502-198) / 441
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 124/188 - org.mockito.internal.verification.checkers.MissingInvocationInOrderCheckerTest (70ms / 293):
+    [junit] MAJOR: 2322166 (23 / 23 / 293) -> AVG-RTPM: 3899ms
+    [junit] MAJOR: Mutants killed / live: 1728 (685-502-198) / 418
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 125/188 - org.mockitousage.basicapi.UsingVarargsTest (70ms / 798):
+    [junit] MAJOR: 2355901 (9 / 9 / 798) -> AVG-RTPM: 3748ms
+    [junit] MAJOR: Mutants killed / live: 1737 (685-502-198) / 409
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 126/188 - org.mockitousage.matchers.HamcrestMatchersTest (70ms / 604):
+    [junit] MAJOR: 2355902 (0 / 0 / 604) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1737 (685-502-198) / 409
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 127/188 - org.mockitousage.matchers.InvalidUseOfMatchersTest (71ms / 473):
+    [junit] MAJOR: 2464906 (29 / 29 / 473) -> AVG-RTPM: 3758ms
+    [junit] MAJOR: Mutants killed / live: 1766 (685-502-198) / 380
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 128/188 - org.mockitousage.matchers.NewMatchersTest (71ms / 507):
+    [junit] MAJOR: 2464906 (0 / 0 / 507) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1766 (685-502-198) / 380
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 129/188 - org.mockitousage.stubbing.DeepStubbingTest (71ms / 530):
+    [junit] MAJOR: 2479917 (4 / 4 / 530) -> AVG-RTPM: 3752ms
+    [junit] MAJOR: Mutants killed / live: 1770 (685-502-198) / 376
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 130/188 - org.mockito.internal.verification.checkers.MissingInvocationCheckerTest (72ms / 245):
+    [junit] MAJOR: 2479917 (0 / 0 / 245) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1770 (685-502-198) / 376
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 131/188 - org.mockitousage.debugging.PrintingInvocationsWhenEverythingOkTest (72ms / 570):
+    [junit] MAJOR: 2506204 (7 / 7 / 570) -> AVG-RTPM: 3755ms
+    [junit] MAJOR: Mutants killed / live: 1777 (685-502-198) / 369
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 132/188 - org.mockitousage.stubbing.DeprecatedStubbingTest (72ms / 654):
+    [junit] MAJOR: 2547392 (11 / 11 / 654) -> AVG-RTPM: 3744ms
+    [junit] MAJOR: Mutants killed / live: 1788 (685-502-198) / 358
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 133/188 - org.mockito.exceptions.base.MockitoExceptionTest (74ms / 21):
+    [junit] MAJOR: 2547392 (0 / 0 / 21) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1788 (685-502-198) / 358
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 134/188 - org.mockitousage.basicapi.ResetTest (74ms / 648):
+    [junit] MAJOR: 2547392 (0 / 0 / 648) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1788 (685-502-198) / 358
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 135/188 - org.mockitousage.bugs.StubbingMocksThatAreConfiguredToReturnMocksTest (74ms / 402):
+    [junit] MAJOR: 2547392 (0 / 0 / 402) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1788 (685-502-198) / 358
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 136/188 - org.mockitousage.stubbing.StubbingWithCustomAnswerTest (75ms / 508):
+    [junit] MAJOR: 2551098 (1 / 1 / 508) -> AVG-RTPM: 3706ms
+    [junit] MAJOR: Mutants killed / live: 1789 (685-502-198) / 357
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 137/188 - org.mockitousage.verification.VerificationOnMultipleMocksUsingMatchersTest (75ms / 499):
+    [junit] MAJOR: 2551098 (0 / 0 / 499) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1789 (685-502-198) / 357
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 138/188 - org.mockito.internal.verification.RegisteredInvocationsTest (76ms / 256):
+    [junit] MAJOR: 2551098 (0 / 0 / 256) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1789 (685-502-198) / 357
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 139/188 - org.mockito.internal.verification.VerificationDataImplTest (76ms / 224):
+    [junit] MAJOR: 2551098 (0 / 0 / 224) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1789 (685-502-198) / 357
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 140/188 - org.mockitousage.stacktrace.ClickableStackTracesTest (76ms / 538):
+    [junit] MAJOR: 2551099 (0 / 0 / 538) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1789 (685-502-198) / 357
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 141/188 - org.mockitousage.verification.AtMostXVerificationTest (76ms / 453):
+    [junit] MAJOR: 2569368 (5 / 5 / 453) -> AVG-RTPM: 3653ms
+    [junit] MAJOR: Mutants killed / live: 1794 (685-502-198) / 352
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 142/188 - org.mockito.internal.InOrderImplTest (77ms / 240):
+    [junit] MAJOR: 2569368 (0 / 0 / 240) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1794 (685-502-198) / 352
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 143/188 - org.mockitousage.bugs.NPEWhenMockingThrowablesTest (77ms / 445):
+    [junit] MAJOR: 2569368 (0 / 0 / 445) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1794 (685-502-198) / 352
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 144/188 - org.mockitousage.bugs.NPEWithCertainMatchersTest (78ms / 489):
+    [junit] MAJOR: 2573063 (1 / 1 / 489) -> AVG-RTPM: 3695ms
+    [junit] MAJOR: Mutants killed / live: 1795 (685-502-198) / 351
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 145/188 - org.mockitousage.stacktrace.StackTraceFilteringTest (78ms / 662):
+    [junit] MAJOR: 2591355 (5 / 5 / 662) -> AVG-RTPM: 3658ms
+    [junit] MAJOR: Mutants killed / live: 1800 (685-502-198) / 346
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 146/188 - org.mockitousage.verification.NoMoreInteractionsVerificationTest (78ms / 559):
+    [junit] MAJOR: 2591355 (0 / 0 / 559) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1800 (685-502-198) / 346
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 147/188 - org.mockito.internal.invocation.InvocationsFinderTest (79ms / 387):
+    [junit] MAJOR: 2595125 (1 / 1 / 387) -> AVG-RTPM: 3770ms
+    [junit] MAJOR: Mutants killed / live: 1801 (685-502-198) / 345
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 148/188 - org.mockitousage.matchers.CustomMatchersTest (79ms / 611):
+    [junit] MAJOR: 2605902 (2 / 2 / 611) -> AVG-RTPM: 5388ms
+    [junit] MAJOR: Mutants killed / live: 1803 (685-502-198) / 343
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 149/188 - org.mockitousage.misuse.InvalidUsageTest (79ms / 526):
+    [junit] MAJOR: 2620399 (3 / 3 / 526) -> AVG-RTPM: 4832ms
+    [junit] MAJOR: Mutants killed / live: 1806 (685-502-198) / 340
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 150/188 - org.mockito.internal.invocation.InvocationTest (80ms / 339):
+    [junit] MAJOR: 2870375 (35 / 35 / 339) -> AVG-RTPM: 7142ms
+    [junit] MAJOR: Mutants killed / live: 1841 (685-502-198) / 305
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 151/188 - org.mockitousage.basicapi.MocksCreationTest (80ms / 380):
+    [junit] MAJOR: 2877696 (1 / 1 / 380) -> AVG-RTPM: 7321ms
+    [junit] MAJOR: Mutants killed / live: 1842 (685-502-198) / 304
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 152/188 - org.mockito.internal.invocation.ArgumentsComparatorTest (81ms / 432):
+    [junit] MAJOR: 2877696 (0 / 0 / 432) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1842 (685-502-198) / 304
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 153/188 - org.mockito.internal.invocation.InvocationMatcherTest (82ms / 513):
+    [junit] MAJOR: 2884855 (1 / 1 / 513) -> AVG-RTPM: 7159ms
+    [junit] MAJOR: Mutants killed / live: 1843 (685-502-198) / 303
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 154/188 - org.mockito.internal.InvalidStateDetectionTest (83ms / 614):
+    [junit] MAJOR: 2884855 (0 / 0 / 614) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1843 (685-502-198) / 303
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 155/188 - org.mockito.internal.debugging.WarningsPrinterImplTest (83ms / 511):
+    [junit] MAJOR: 2899595 (4 / 4 / 511) -> AVG-RTPM: 3685ms
+    [junit] MAJOR: Mutants killed / live: 1847 (685-502-198) / 299
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 156/188 - org.mockitousage.stubbing.SmartNullsStubbingTest (83ms / 517):
+    [junit] MAJOR: 2899595 (0 / 0 / 517) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1847 (685-502-198) / 299
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 157/188 - org.mockitousage.verification.FindingRedundantInvocationsInOrderTest (83ms / 531):
+    [junit] MAJOR: 2910560 (3 / 3 / 531) -> AVG-RTPM: 3655ms
+    [junit] MAJOR: Mutants killed / live: 1850 (685-502-198) / 296
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 158/188 - org.mockitousage.verification.PrintingVerboseTypesWithArgumentsTest (86ms / 547):
+    [junit] MAJOR: 2914362 (1 / 1 / 547) -> AVG-RTPM: 3802ms
+    [junit] MAJOR: Mutants killed / live: 1851 (685-502-198) / 295
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 159/188 - org.mockito.internal.debugging.WarningsFinderTest (87ms / 440):
+    [junit] MAJOR: 2944175 (7 / 7 / 440) -> AVG-RTPM: 4259ms
+    [junit] MAJOR: Mutants killed / live: 1858 (685-502-198) / 288
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 160/188 - org.mockitousage.annotation.AnnotationsTest (87ms / 501):
+    [junit] MAJOR: 2955302 (3 / 3 / 501) -> AVG-RTPM: 3709ms
+    [junit] MAJOR: Mutants killed / live: 1861 (685-502-198) / 285
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 161/188 - org.mockito.internal.creation.cglib.CGLIBHackerTest (90ms / 413):
+    [junit] MAJOR: 2955302 (0 / 0 / 413) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1861 (685-502-198) / 285
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 162/188 - org.mockito.internal.debugging.LoggingListenerTest (90ms / 463):
+    [junit] MAJOR: 2973828 (5 / 5 / 463) -> AVG-RTPM: 3705ms
+    [junit] MAJOR: Mutants killed / live: 1866 (685-502-198) / 280
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 163/188 - org.mockito.internal.stubbing.MockitoStubberTest (90ms / 344):
+    [junit] MAJOR: 2973828 (0 / 0 / 344) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1866 (685-502-198) / 280
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 164/188 - org.mockitousage.verification.ExactNumberOfTimesVerificationTest (91ms / 603):
+    [junit] MAJOR: 2973829 (0 / 0 / 603) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1866 (685-502-198) / 280
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 165/188 - org.mockitousage.verification.VerificationUsingMatchersTest (91ms / 640):
+    [junit] MAJOR: 3026092 (14 / 14 / 640) -> AVG-RTPM: 3733ms
+    [junit] MAJOR: Mutants killed / live: 1880 (685-502-198) / 266
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 166/188 - org.mockitousage.customization.BDDMockitoTest (92ms / 554):
+    [junit] MAJOR: 3026093 (0 / 0 / 554) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1880 (685-502-198) / 266
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 167/188 - org.mockitousage.verification.VerificationInOrderTest (93ms / 602):
+    [junit] MAJOR: 3048300 (6 / 6 / 602) -> AVG-RTPM: 3701ms
+    [junit] MAJOR: Mutants killed / live: 1886 (685-502-198) / 260
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 168/188 - org.mockitousage.stubbing.StubbingConsecutiveAnswersTest (95ms / 507):
+    [junit] MAJOR: 3055955 (2 / 2 / 507) -> AVG-RTPM: 3827ms
+    [junit] MAJOR: Mutants killed / live: 1888 (685-502-198) / 258
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 169/188 - org.mockitousage.stubbing.StubbingUsingDoReturnTest (96ms / 631):
+    [junit] MAJOR: 3067439 (3 / 3 / 631) -> AVG-RTPM: 3828ms
+    [junit] MAJOR: Mutants killed / live: 1891 (685-502-198) / 255
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 170/188 - org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest (99ms / 650):
+    [junit] MAJOR: 3074600 (2 / 2 / 650) -> AVG-RTPM: 3580ms
+    [junit] MAJOR: Mutants killed / live: 1893 (685-502-198) / 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 171/188 - org.mockitousage.annotation.SpyAnnotationTest (100ms / 412):
+    [junit] MAJOR: 3074601 (0 / 0 / 412) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1893 (685-502-198) / 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 172/188 - org.mockitousage.verification.SelectedMocksInOrderVerificationTest (101ms / 588):
+    [junit] MAJOR: 3074601 (0 / 0 / 588) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1893 (685-502-198) / 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 173/188 - org.mockitousage.verification.BasicVerificationTest (105ms / 715):
+    [junit] MAJOR: 3074601 (0 / 0 / 715) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1893 (685-502-198) / 253
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 174/188 - org.mockitousage.verification.DescriptiveMessagesWhenVerificationFailsTest (109ms / 745):
+    [junit] MAJOR: 3131428 (14 / 14 / 745) -> AVG-RTPM: 4059ms
+    [junit] MAJOR: Mutants killed / live: 1907 (685-502-198) / 239
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 175/188 - org.mockitousage.verification.RelaxedVerificationInOrderTest (116ms / 621):
+    [junit] MAJOR: 3131428 (0 / 0 / 621) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1907 (685-502-198) / 239
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 176/188 - org.mockitousage.annotation.MockInjectionTest (117ms / 321):
+    [junit] MAJOR: 3222120 (24 / 24 / 321) -> AVG-RTPM: 3778ms
+    [junit] MAJOR: Mutants killed / live: 1931 (685-502-198) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 177/188 - org.mockitousage.verification.DescriptiveMessagesOnVerificationInOrderErrorsTest (120ms / 641):
+    [junit] MAJOR: 3222121 (0 / 0 / 641) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1931 (685-502-198) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 178/188 - org.mockitousage.stubbing.BasicStubbingTest (121ms / 655):
+    [junit] MAJOR: 3222121 (0 / 0 / 655) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1931 (685-502-198) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 179/188 - org.mockitousage.verification.BasicVerificationInOrderTest (125ms / 659):
+    [junit] MAJOR: 3222121 (0 / 0 / 659) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1931 (685-502-198) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 180/188 - org.mockito.internal.invocation.InvocationMarkerTest (127ms / 243):
+    [junit] MAJOR: 3222121 (0 / 0 / 243) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 1931 (685-502-198) / 215
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 181/188 - org.mockitousage.matchers.MatchersTest (143ms / 846):
+    [junit] MAJOR: 3510569 (71 / 71 / 846) -> AVG-RTPM: 4062ms
+    [junit] MAJOR: Mutants killed / live: 2002 (685-502-198) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 182/188 - org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest (168ms / 467):
+    [junit] MAJOR: 3510570 (0 / 0 / 467) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 2002 (685-502-198) / 144
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 183/188 - org.mockitousage.bugs.VerifyingWithAnExtraCallToADifferentMockTest (194ms / 571):
+    [junit] MAJOR: 3514434 (1 / 1 / 571) -> AVG-RTPM: 3864ms
+    [junit] MAJOR: Mutants killed / live: 2003 (685-502-198) / 143
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 184/188 - org.mockitousage.basicapi.MocksSerializationTest (197ms / 682):
+    [junit] MAJOR: 3556282 (6 / 6 / 682) -> AVG-RTPM: 6974ms
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 185/188 - org.concurrentmockito.ThreadsShareAMockTest (220ms / 475):
+    [junit] MAJOR: 3556282 (0 / 0 / 475) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 186/188 - org.mockitousage.stubbing.StubbingWithThrowablesTest (256ms / 638):
+    [junit] MAJOR: 3556282 (0 / 0 / 638) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 187/188 - org.concurrentmockito.ThreadsShareGenerouslyStubbedMockTest (978ms / 468):
+    [junit] MAJOR: 3556282 (0 / 0 / 468) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 188/188 - org.concurrentmockito.ThreadVerifiesContinuoslyInteractingMockTest (1194ms / 438):
+    [junit] MAJOR: 3556282 (0 / 0 / 438) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  3556.3 seconds
+    [junit] MAJOR: Mutation score: 90.05% (93.62%)
+    [junit] MAJOR: Mutants killed / live: 2009 (685-502-198) / 137
+    [junit] MAJOR: Mutant executions: 8236
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/mockito-13f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 59 minutes 55 seconds

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_46/src/main/java/com/fasterxml/jackson/databind/type/ReferenceType.java	2023-01-16 15:29:42.688272206 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/46/patch/./com/fasterxml/jackson/databind/type/ReferenceType.java	2023-01-16 15:29:42.632271507 -0600
+@@ -153,7 +153,7 @@
+         _classSignature(_class, sb, false);
+         sb.append('<');
+         sb = _referencedType.getGenericSignature(sb);
+-        sb.append(';');
++        sb.append(">;");
+         return sb;
+     }
+     

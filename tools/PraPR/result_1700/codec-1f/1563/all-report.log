@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 11
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 88
+	First Index: 19
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 11
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 88
+	First Index: 19
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 11
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 88
+	First Index: 19
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 11
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 88
+	First Index: 19
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field VOWELS
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 3
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 4
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local value is replaced a call value.toLowerCase()
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 3
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 5
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 7
+	Rank: 2
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 6
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 12
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/DoubleMetaphone::contains
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 11
+	Rank: 2
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/DoubleMetaphone::contains
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 88
+	First Index: 19
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 12
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 338
+	Block: 87
+	First Index: 12
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------

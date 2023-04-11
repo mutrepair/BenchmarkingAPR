@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/14228/org/apache/commons/jxpath/ri/compiler/CoreFunction.java	2022-10-31 19:47:51.131762488 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/CoreFunction.java	2022-12-26 15:13:54.173649879 -0600
+@@ -414,7 +414,7 @@
+     }
+ 
+     protected Object functionConcat(EvalContext context) {
+-        if (getArgumentCount() != 2) {
++        if (getArgumentCount() < 2) {
+             assertArgCount(2);
+         }
+         StringBuffer buffer = new StringBuffer();

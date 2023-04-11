@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/301/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.775789257 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -135,7 +135,7 @@
+ 
+   private T getHandlerForTypeHierarchy(Class<?> type) {
+     for (Pair<Class<?>, T> entry : typeHierarchyList) {
+-      if (true) {
++      if (entry.first.isAssignableFrom(type)) {
+         return entry.second;
+       }
+     }

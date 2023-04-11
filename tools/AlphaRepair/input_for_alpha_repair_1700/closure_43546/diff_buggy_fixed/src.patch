@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/43546/com/google/javascript/jscomp/TypeInference.java	2022-10-31 19:47:37.863810642 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeInference.java	2022-10-29 11:54:34.643115585 -0500
+@@ -240,7 +240,7 @@
+         case ON_FALSE:
+           if (condition == null) {
+             condition = NodeUtil.getConditionExpression(source);
+-            if (false) {
++            if (condition == null && source.isCase()) {
+               condition = source;
+ 
+               // conditionFlowScope is cached from previous iterations

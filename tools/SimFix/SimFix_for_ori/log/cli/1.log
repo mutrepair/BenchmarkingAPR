@@ -1,0 +1,2084 @@
+=================================================
+Project : cli_1	start : 22/10/31 16:22
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/10/31 16:22
+Mon Oct 31 16:22:56 CDT 2022 org.apache.commons.cli.HelpFormatter,700
+Failed time : 22/10/31 16:30
+=================================================
+Project : cli_1	start : 22/10/31 16:30
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/10/31 16:30
+Mon Oct 31 16:30:30 CDT 2022 org.apache.commons.cli.HelpFormatter,700
+Failed time : 22/10/31 16:41
+=================================================
+Project : cli_1	start : 22/10/31 19:22
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/10/31 19:23
+Mon Oct 31 19:23:14 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,101
+Failed time : 22/10/31 19:39
+=================================================
+Project : cli_1	start : 22/10/31 19:39
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/10/31 19:39
+Mon Oct 31 19:39:36 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,101
+Failed time : 22/10/31 19:54
+=================================================
+Project : cli_1	start : 22/10/31 19:54
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/10/31 19:54
+Mon Oct 31 19:54:48 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,93
+Failed time : 22/10/31 21:57
+=================================================
+Project : cli_1	start : 22/10/31 21:57
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/10/31 21:57
+Mon Oct 31 21:57:18 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,93
+Failed time : 22/10/31 23:49
+=================================================
+Project : cli_1	start : 22/10/31 23:50
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/10/31 23:50
+Mon Oct 31 23:50:11 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,166
+Timeout time : 22/11/01 04:50
+=================================================
+Project : cli_1	start : 22/11/01 04:50
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/11/01 04:50
+Tue Nov 01 04:50:25 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,166
+Timeout time : 22/11/01 09:50
+=================================================
+Project : cli_1	start : 22/11/01 09:50
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/11/01 09:50
+Tue Nov 01 09:50:41 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,172
+Timeout time : 22/11/01 14:50
+=================================================
+Project : cli_1	start : 22/11/01 14:50
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/11/01 14:50
+Tue Nov 01 14:50:51 CDT 2022 org.apache.commons.cli.PatternOptionBuilder,172
+Failed time : 22/11/01 19:42
+=================================================
+Project : cli_1	start : 22/12/03 20:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:38
+Sat Dec 03 20:38:49 CST 2022 org.apache.commons.cli.CommandLine,173
+Failed time : 22/12/03 20:38
+=================================================
+Project : cli_1	start : 22/12/03 20:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:38
+Sat Dec 03 20:38:55 CST 2022 org.apache.commons.cli.CommandLine,173
+Failed time : 22/12/03 20:38
+=================================================
+Project : cli_1	start : 22/12/03 20:38
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:38
+Sat Dec 03 20:39:01 CST 2022 org.apache.commons.cli.HelpFormatter,700
+Failed time : 22/12/03 20:43
+=================================================
+Project : cli_1	start : 22/12/03 20:43
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:43
+Sat Dec 03 20:43:30 CST 2022 org.apache.commons.cli.HelpFormatter,700
+Failed time : 22/12/03 20:48
+=================================================
+Project : cli_1	start : 22/12/03 20:48
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:48
+Sat Dec 03 20:48:12 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/03 20:48
+=================================================
+Project : cli_1	start : 22/12/03 20:48
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:48
+Sat Dec 03 20:48:26 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/03 20:48
+=================================================
+Project : cli_1	start : 22/12/03 20:48
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:48
+Sat Dec 03 20:48:41 CST 2022 org.apache.commons.cli.Option,261
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4621617955015327 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>0,0]
+return (this.numberOfArgs>1)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(false);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+Success time : 22/12/03 20:49
+=================================================
+Project : cli_1	start : 22/12/03 20:49
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:49
+Sat Dec 03 20:49:22 CST 2022 org.apache.commons.cli.Option,261
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4621617955015327 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>0,0]
+return (this.numberOfArgs>1)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(false);
+
+Time : 22/12/03 20:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/03 20:49
+----------------------------------------
+Success time : 22/12/03 20:49
+=================================================
+Project : cli_1	start : 22/12/03 20:49
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/03 20:49
+Sat Dec 03 20:50:04 CST 2022 org.apache.commons.cli.HelpFormatter,748
+Failed time : 22/12/03 20:50
+=================================================
+Project : cli_1	start : 22/12/03 20:50
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/03 20:50
+Sat Dec 03 20:50:19 CST 2022 org.apache.commons.cli.HelpFormatter,748
+Failed time : 22/12/03 20:50
+=================================================
+Project : cli_1	start : 22/12/03 20:50
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testIllegalOptions | 22/12/03 20:50
+Sat Dec 03 20:50:35 CST 2022 org.apache.commons.cli.OptionValidator,87
+Failed time : 22/12/03 20:50
+=================================================
+Project : cli_1	start : 22/12/03 20:50
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testIllegalOptions | 22/12/03 20:50
+Sat Dec 03 20:50:42 CST 2022 org.apache.commons.cli.OptionValidator,87
+Failed time : 22/12/03 20:50
+=================================================
+Project : cli_1	start : 22/12/03 20:50
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:50
+Sat Dec 03 20:50:50 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 20:50
+=================================================
+Project : cli_1	start : 22/12/03 20:50
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:50
+Sat Dec 03 20:51:01 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 20:51
+=================================================
+Project : cli_1	start : 22/12/03 20:51
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/03 20:51
+Sat Dec 03 20:51:14 CST 2022 org.apache.commons.cli.HelpFormatter,870
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while((pos>=defaultLeftPad)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1994781694747996 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+while((pos>=startPos)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>870,873]
+while((pos>=0)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>870,873]
+while((pos>=defaultLeftPad)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+Success time : 22/12/03 20:51
+=================================================
+Project : cli_1	start : 22/12/03 20:51
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/03 20:51
+Sat Dec 03 20:51:30 CST 2022 org.apache.commons.cli.HelpFormatter,870
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while((pos>=defaultLeftPad)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1994781694747996 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+while((pos>=startPos)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>870,873]
+while((pos>=0)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>870,873]
+while((pos>=defaultLeftPad)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/03 20:51
+----------------------------------------
+Success time : 22/12/03 20:51
+=================================================
+Project : cli_1	start : 22/12/03 20:51
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 20:51
+Sat Dec 03 20:51:46 CST 2022 org.apache.commons.cli.PatternOptionBuilder,142
+Failed time : 22/12/03 20:51
+=================================================
+Project : cli_1	start : 22/12/03 20:51
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 20:51
+Sat Dec 03 20:51:53 CST 2022 org.apache.commons.cli.PatternOptionBuilder,142
+Failed time : 22/12/03 20:51
+=================================================
+Project : cli_1	start : 22/12/03 20:51
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:51
+Sat Dec 03 20:52:01 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:52
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:52
+Sat Dec 03 20:52:12 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:52
+Current failed test : org.apache.commons.cli.BugsTest::test11680 | 22/12/03 20:52
+Sat Dec 03 20:52:24 CST 2022 org.apache.commons.cli.CommandLine,124
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:52
+Current failed test : org.apache.commons.cli.BugsTest::test11680 | 22/12/03 20:52
+Sat Dec 03 20:52:37 CST 2022 org.apache.commons.cli.CommandLine,124
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:52
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/03 20:52
+Sat Dec 03 20:52:52 CST 2022 Sat Dec 03 20:52:52 CST 2022 : org.apache.commons.cli.HelpFormatter,811=>Find no block
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:52
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/03 20:52
+Sat Dec 03 20:52:58 CST 2022 Sat Dec 03 20:52:58 CST 2022 : org.apache.commons.cli.HelpFormatter,811=>Find no block
+Failed time : 22/12/03 20:52
+=================================================
+Project : cli_1	start : 22/12/03 20:53
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:53
+Sat Dec 03 20:53:06 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/03 20:53
+=================================================
+Project : cli_1	start : 22/12/03 20:53
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:53
+Sat Dec 03 20:53:22 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/03 20:53
+=================================================
+Project : cli_1	start : 22/12/03 20:53
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/03 20:53
+Sat Dec 03 20:53:40 CST 2022 org.apache.commons.cli.Options,244
+Failed time : 22/12/03 20:53
+=================================================
+Project : cli_1	start : 22/12/03 20:53
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/03 20:53
+Sat Dec 03 20:53:52 CST 2022 org.apache.commons.cli.Options,244
+Failed time : 22/12/03 20:53
+=================================================
+Project : cli_1	start : 22/12/03 20:53
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 20:53
+Sat Dec 03 20:54:04 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/03 20:54
+=================================================
+Project : cli_1	start : 22/12/03 20:54
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 20:54
+Sat Dec 03 20:54:11 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/03 20:54
+=================================================
+Project : cli_1	start : 22/12/03 20:54
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 20:54
+Sat Dec 03 20:54:20 CST 2022 org.apache.commons.cli.HelpFormatter,709
+Failed time : 22/12/03 20:54
+=================================================
+Project : cli_1	start : 22/12/03 20:54
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 20:54
+Sat Dec 03 20:54:47 CST 2022 org.apache.commons.cli.HelpFormatter,709
+Failed time : 22/12/03 20:55
+=================================================
+Project : cli_1	start : 22/12/03 20:55
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:55
+Sat Dec 03 20:55:16 CST 2022 org.apache.commons.cli.OptionValidator,52
+Failed time : 22/12/03 20:55
+=================================================
+Project : cli_1	start : 22/12/03 20:55
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 20:55
+Sat Dec 03 20:55:24 CST 2022 org.apache.commons.cli.OptionValidator,52
+Failed time : 22/12/03 20:55
+=================================================
+Project : cli_1	start : 22/12/03 20:55
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 20:55
+Sat Dec 03 20:55:32 CST 2022 org.apache.commons.cli.HelpFormatter,684
+Failed time : 22/12/03 20:55
+=================================================
+Project : cli_1	start : 22/12/03 20:55
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 20:55
+Sat Dec 03 20:55:55 CST 2022 org.apache.commons.cli.HelpFormatter,684
+Failed time : 22/12/03 20:56
+=================================================
+Project : cli_1	start : 22/12/03 20:56
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:56
+Sat Dec 03 20:56:19 CST 2022 org.apache.commons.cli.HelpFormatter,748
+Failed time : 22/12/03 20:56
+=================================================
+Project : cli_1	start : 22/12/03 20:56
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 20:56
+Sat Dec 03 20:56:28 CST 2022 org.apache.commons.cli.HelpFormatter,748
+Failed time : 22/12/03 20:56
+=================================================
+Project : cli_1	start : 22/12/03 20:56
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testTwoCompleteOptions | 22/12/03 20:56
+Sat Dec 03 20:56:38 CST 2022 org.apache.commons.cli.Option,343
+Failed time : 22/12/03 20:56
+=================================================
+Project : cli_1	start : 22/12/03 20:56
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testTwoCompleteOptions | 22/12/03 20:56
+Sat Dec 03 20:56:54 CST 2022 org.apache.commons.cli.Option,343
+Failed time : 22/12/03 20:57
+=================================================
+Project : cli_1	start : 22/12/03 20:57
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 20:57
+Sat Dec 03 20:57:12 CST 2022 org.apache.commons.cli.PatternOptionBuilder,101
+Failed time : 22/12/03 21:03
+=================================================
+Project : cli_1	start : 22/12/03 21:03
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 21:03
+Sat Dec 03 21:04:01 CST 2022 org.apache.commons.cli.PatternOptionBuilder,101
+Failed time : 22/12/03 21:09
+=================================================
+Project : cli_1	start : 22/12/03 21:09
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:09
+Sat Dec 03 21:09:48 CST 2022 org.apache.commons.cli.Util,37
+Failed time : 22/12/03 21:10
+=================================================
+Project : cli_1	start : 22/12/03 21:10
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:10
+Sat Dec 03 21:10:16 CST 2022 org.apache.commons.cli.Util,37
+Failed time : 22/12/03 21:10
+=================================================
+Project : cli_1	start : 22/12/03 21:10
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:10
+Sat Dec 03 21:10:44 CST 2022 org.apache.commons.cli.GnuParser,66
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+init();
+boolean eatTheRest=false;
+Option currentOption=null;
+
+Time : 22/12/03 21:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2348312050437509 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>0,0]
+cmd=new CommandLine();
+boolean eatTheRest=false;
+if(arguments==null){
+arguments=new String[0];
+}
+
+Time : 22/12/03 21:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>64,67]
+init();
+boolean eatTheRest=true;
+Option currentOption=null;
+
+Time : 22/12/03 21:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>64,67]
+init();
+boolean eatTheRest=false;
+Option currentOption=null;
+
+Time : 22/12/03 21:10
+----------------------------------------
+Success time : 22/12/03 21:10
+=================================================
+Project : cli_1	start : 22/12/03 21:10
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:10
+Sat Dec 03 21:10:59 CST 2022 org.apache.commons.cli.GnuParser,66
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+init();
+boolean eatTheRest=false;
+Option currentOption=null;
+
+Time : 22/12/03 21:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2348312050437509 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>0,0]
+cmd=new CommandLine();
+boolean eatTheRest=false;
+if(arguments==null){
+arguments=new String[0];
+}
+
+Time : 22/12/03 21:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>64,67]
+init();
+boolean eatTheRest=true;
+Option currentOption=null;
+
+Time : 22/12/03 21:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/GnuParser.java=>64,67]
+init();
+boolean eatTheRest=false;
+Option currentOption=null;
+
+Time : 22/12/03 21:11
+----------------------------------------
+Success time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:11
+Sat Dec 03 21:11:15 CST 2022 org.apache.commons.cli.Option,630
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:11
+Sat Dec 03 21:11:22 CST 2022 org.apache.commons.cli.Option,630
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.GnuParseTest::testStop | 22/12/03 21:11
+Sat Dec 03 21:11:30 CST 2022 org.apache.commons.cli.Parser,194
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.GnuParseTest::testStop | 22/12/03 21:11
+Sat Dec 03 21:11:37 CST 2022 org.apache.commons.cli.Parser,194
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/03 21:11
+Sat Dec 03 21:11:44 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/03 21:11
+Sat Dec 03 21:11:52 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:11
+Sat Dec 03 21:11:59 CST 2022 Sat Dec 03 21:11:59 CST 2022 : org.apache.commons.cli.GnuParser,89=>Find no block
+Failed time : 22/12/03 21:11
+=================================================
+Project : cli_1	start : 22/12/03 21:11
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:12
+Sat Dec 03 21:12:05 CST 2022 Sat Dec 03 21:12:05 CST 2022 : org.apache.commons.cli.GnuParser,89=>Find no block
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:12
+Sat Dec 03 21:12:13 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:12
+Sat Dec 03 21:12:23 CST 2022 org.apache.commons.cli.HelpFormatter,799
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:12
+Sat Dec 03 21:12:34 CST 2022 org.apache.commons.cli.Parser,366
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:12
+Sat Dec 03 21:12:40 CST 2022 org.apache.commons.cli.Parser,366
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:12
+Sat Dec 03 21:12:48 CST 2022 org.apache.commons.cli.PosixParser,115
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.ApplicationTest::testLs | 22/12/03 21:12
+Sat Dec 03 21:12:55 CST 2022 org.apache.commons.cli.PosixParser,115
+Failed time : 22/12/03 21:12
+=================================================
+Project : cli_1	start : 22/12/03 21:12
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/03 21:12
+Sat Dec 03 21:13:03 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/03 21:13
+=================================================
+Project : cli_1	start : 22/12/03 21:13
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/03 21:13
+Sat Dec 03 21:13:09 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/03 21:13
+=================================================
+Project : cli_1	start : 22/12/03 21:13
+Current failed test : org.apache.commons.cli.ArgumentIsOptionTest::testOptionWithArgument | 22/12/03 21:13
+Sat Dec 03 21:13:16 CST 2022 org.apache.commons.cli.Parser,323
+Failed time : 22/12/03 21:13
+=================================================
+Project : cli_1	start : 22/12/03 21:13
+Current failed test : org.apache.commons.cli.ArgumentIsOptionTest::testOptionWithArgument | 22/12/03 21:13
+Sat Dec 03 21:13:27 CST 2022 org.apache.commons.cli.Parser,323
+Failed time : 22/12/03 21:13
+=================================================
+Project : cli_1	start : 22/12/03 21:13
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 21:13
+Sat Dec 03 21:13:38 CST 2022 org.apache.commons.cli.HelpFormatter,714
+Failed time : 22/12/03 21:14
+=================================================
+Project : cli_1	start : 22/12/03 21:14
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintOptions | 22/12/03 21:14
+Sat Dec 03 21:14:58 CST 2022 org.apache.commons.cli.HelpFormatter,714
+Failed time : 22/12/03 21:16
+=================================================
+Project : cli_1	start : 22/12/03 21:16
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 21:16
+Sat Dec 03 21:16:26 CST 2022 org.apache.commons.cli.OptionBuilder,117
+Failed time : 22/12/03 21:16
+=================================================
+Project : cli_1	start : 22/12/03 21:16
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 21:16
+Sat Dec 03 21:16:36 CST 2022 org.apache.commons.cli.OptionBuilder,117
+Failed time : 22/12/03 21:16
+=================================================
+Project : cli_1	start : 22/12/03 21:16
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/03 21:16
+Sat Dec 03 21:16:47 CST 2022 org.apache.commons.cli.PosixParser,282
+Failed time : 22/12/03 21:18
+=================================================
+Project : cli_1	start : 22/12/03 21:18
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/03 21:18
+Sat Dec 03 21:18:37 CST 2022 org.apache.commons.cli.PosixParser,282
+Failed time : 22/12/03 21:20
+=================================================
+Project : cli_1	start : 22/12/03 21:20
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:20
+Sat Dec 03 21:20:44 CST 2022 org.apache.commons.cli.Util,41
+Failed time : 22/12/03 21:20
+=================================================
+Project : cli_1	start : 22/12/03 21:20
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:20
+Sat Dec 03 21:21:06 CST 2022 org.apache.commons.cli.Util,41
+Failed time : 22/12/03 21:21
+=================================================
+Project : cli_1	start : 22/12/03 21:21
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:21
+Sat Dec 03 21:21:29 CST 2022 org.apache.commons.cli.HelpFormatter,395
+Failed time : 22/12/03 21:25
+=================================================
+Project : cli_1	start : 22/12/03 21:25
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:25
+Sat Dec 03 21:25:55 CST 2022 org.apache.commons.cli.HelpFormatter,395
+Failed time : 22/12/03 21:29
+=================================================
+Project : cli_1	start : 22/12/03 21:29
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:29
+Sat Dec 03 21:29:59 CST 2022 org.apache.commons.cli.Option,133
+Failed time : 22/12/03 21:29
+=================================================
+Project : cli_1	start : 22/12/03 21:29
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:30
+Sat Dec 03 21:30:06 CST 2022 org.apache.commons.cli.Option,133
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:30
+Sat Dec 03 21:30:14 CST 2022 org.apache.commons.cli.Option,333
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 21:30
+Sat Dec 03 21:30:21 CST 2022 org.apache.commons.cli.Option,333
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test15046 | 22/12/03 21:30
+Sat Dec 03 21:30:29 CST 2022 org.apache.commons.cli.Option,495
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test15046 | 22/12/03 21:30
+Sat Dec 03 21:30:41 CST 2022 org.apache.commons.cli.Option,495
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/03 21:30
+Sat Dec 03 21:30:57 CST 2022 org.apache.commons.cli.HelpFormatter,863
+Failed time : 22/12/03 21:30
+=================================================
+Project : cli_1	start : 22/12/03 21:30
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/03 21:30
+Sat Dec 03 21:31:05 CST 2022 org.apache.commons.cli.HelpFormatter,863
+Failed time : 22/12/03 21:31
+=================================================
+Project : cli_1	start : 22/12/03 21:31
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:31
+Sat Dec 03 21:31:15 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/03 21:31
+=================================================
+Project : cli_1	start : 22/12/03 21:31
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:31
+Sat Dec 03 21:31:22 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/03 21:31
+=================================================
+Project : cli_1	start : 22/12/03 21:31
+Current failed test : org.apache.commons.cli.ParseTest::testMissingArg | 22/12/03 21:31
+Sat Dec 03 21:31:31 CST 2022 org.apache.commons.cli.PosixParser,292
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(currentOption.hasArg()&&(token.length()==(i+0))){
+tokens.add(token.substring(i+1));
+break;
+}
+
+Time : 22/12/03 21:31
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(currentOption.hasArg()&&(token.length()==0)){
+tokens.add(token.substring(i+1));
+break;
+}
+
+Time : 22/12/03 21:32
+----------------------------------------
+Failed time : 22/12/03 21:32
+=================================================
+Project : cli_1	start : 22/12/03 21:32
+Current failed test : org.apache.commons.cli.ParseTest::testMissingArg | 22/12/03 21:32
+Sat Dec 03 21:32:32 CST 2022 org.apache.commons.cli.PosixParser,292
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(currentOption.hasArg()&&(token.length()==(i+0))){
+tokens.add(token.substring(i+1));
+break;
+}
+
+Time : 22/12/03 21:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(currentOption.hasArg()&&(token.length()==0)){
+tokens.add(token.substring(i+1));
+break;
+}
+
+Time : 22/12/03 21:33
+----------------------------------------
+Failed time : 22/12/03 21:33
+=================================================
+Project : cli_1	start : 22/12/03 21:33
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:33
+Sat Dec 03 21:33:33 CST 2022 org.apache.commons.cli.Option,630
+Failed time : 22/12/03 21:33
+=================================================
+Project : cli_1	start : 22/12/03 21:33
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:33
+Sat Dec 03 21:33:42 CST 2022 org.apache.commons.cli.Option,630
+Failed time : 22/12/03 21:33
+=================================================
+Project : cli_1	start : 22/12/03 21:33
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:33
+Sat Dec 03 21:33:52 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 21:33
+=================================================
+Project : cli_1	start : 22/12/03 21:33
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/03 21:33
+Sat Dec 03 21:33:59 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 21:33
+=================================================
+Project : cli_1	start : 22/12/03 21:34
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 21:34
+Sat Dec 03 21:34:07 CST 2022 org.apache.commons.cli.PatternOptionBuilder,93
+Failed time : 22/12/03 22:41
+=================================================
+Project : cli_1	start : 22/12/03 22:41
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/03 22:41
+Sat Dec 03 22:41:13 CST 2022 org.apache.commons.cli.PatternOptionBuilder,93
+Failed time : 22/12/03 23:53
+=================================================
+Project : cli_1	start : 22/12/03 23:54
+Current failed test : org.apache.commons.cli.BugsTest::test12210 | 22/12/03 23:54
+Sat Dec 03 23:54:23 CST 2022 org.apache.commons.cli.Options,73
+Failed time : 22/12/03 23:54
+=================================================
+Project : cli_1	start : 22/12/03 23:54
+Current failed test : org.apache.commons.cli.BugsTest::test12210 | 22/12/03 23:54
+Sat Dec 03 23:54:44 CST 2022 org.apache.commons.cli.Options,73
+Failed time : 22/12/03 23:54
+=================================================
+Project : cli_1	start : 22/12/03 23:54
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 23:54
+Sat Dec 03 23:54:55 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 23:55
+Sat Dec 03 23:55:13 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/03 23:55
+Sat Dec 03 23:55:34 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/03 23:55
+Sat Dec 03 23:55:41 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.ValueTest::testLongOptionalNArgValues | 22/12/03 23:55
+Sat Dec 03 23:55:48 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.ValueTest::testLongOptionalNArgValues | 22/12/03 23:55
+Sat Dec 03 23:55:55 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/03 23:55
+=================================================
+Project : cli_1	start : 22/12/03 23:55
+Current failed test : org.apache.commons.cli.BugsTest::test13935 | 22/12/03 23:55
+Sat Dec 03 23:56:02 CST 2022 org.apache.commons.cli.Parser,377
+Failed time : 22/12/03 23:56
+=================================================
+Project : cli_1	start : 22/12/03 23:56
+Current failed test : org.apache.commons.cli.BugsTest::test13935 | 22/12/03 23:56
+Sat Dec 03 23:56:28 CST 2022 org.apache.commons.cli.Parser,377
+Failed time : 22/12/03 23:56
+=================================================
+Project : cli_1	start : 22/12/03 23:56
+Current failed test : org.apache.commons.cli.BugsTest::test31148 | 22/12/03 23:56
+Sat Dec 03 23:57:01 CST 2022 org.apache.commons.cli.Parser,246
+Failed time : 22/12/03 23:57
+=================================================
+Project : cli_1	start : 22/12/03 23:57
+Current failed test : org.apache.commons.cli.BugsTest::test31148 | 22/12/03 23:57
+Sat Dec 03 23:58:15 CST 2022 org.apache.commons.cli.Parser,246
+Failed time : 22/12/03 23:59
+=================================================
+Project : cli_1	start : 22/12/03 23:59
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/03 23:59
+Sat Dec 03 23:59:33 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/04 00:00
+=================================================
+Project : cli_1	start : 22/12/04 00:00
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 00:00
+Sun Dec 04 00:00:52 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/04 00:01
+=================================================
+Project : cli_1	start : 22/12/04 00:01
+Current failed test : org.apache.commons.cli.ArgumentIsOptionTest::testOptionAndOptionWithArgument | 22/12/04 00:01
+Sun Dec 04 00:02:17 CST 2022 org.apache.commons.cli.PosixParser,241
+Failed time : 22/12/04 00:03
+=================================================
+Project : cli_1	start : 22/12/04 00:03
+Current failed test : org.apache.commons.cli.ArgumentIsOptionTest::testOptionAndOptionWithArgument | 22/12/04 00:03
+Sun Dec 04 00:03:42 CST 2022 org.apache.commons.cli.PosixParser,241
+Failed time : 22/12/04 00:04
+=================================================
+Project : cli_1	start : 22/12/04 00:04
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:04
+Sun Dec 04 00:05:10 CST 2022 org.apache.commons.cli.CommandLine,124
+Failed time : 22/12/04 00:05
+=================================================
+Project : cli_1	start : 22/12/04 00:05
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:05
+Sun Dec 04 00:05:58 CST 2022 org.apache.commons.cli.CommandLine,124
+Failed time : 22/12/04 00:06
+=================================================
+Project : cli_1	start : 22/12/04 00:06
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 00:06
+Sun Dec 04 00:06:53 CST 2022 org.apache.commons.cli.PatternOptionBuilder,145
+Failed time : 22/12/04 00:06
+=================================================
+Project : cli_1	start : 22/12/04 00:06
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 00:06
+Sun Dec 04 00:07:24 CST 2022 org.apache.commons.cli.PatternOptionBuilder,145
+Failed time : 22/12/04 00:07
+=================================================
+Project : cli_1	start : 22/12/04 00:07
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:07
+Sun Dec 04 00:08:03 CST 2022 org.apache.commons.cli.GnuParser,71
+Failed time : 22/12/04 00:15
+=================================================
+Project : cli_1	start : 22/12/04 00:15
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:15
+Sun Dec 04 00:16:03 CST 2022 org.apache.commons.cli.GnuParser,71
+Failed time : 22/12/04 00:23
+=================================================
+Project : cli_1	start : 22/12/04 00:23
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:23
+Sun Dec 04 00:24:00 CST 2022 org.apache.commons.cli.OptionValidator,66
+Failed time : 22/12/04 00:24
+=================================================
+Project : cli_1	start : 22/12/04 00:24
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:24
+Sun Dec 04 00:24:40 CST 2022 org.apache.commons.cli.OptionValidator,66
+Failed time : 22/12/04 00:24
+=================================================
+Project : cli_1	start : 22/12/04 00:24
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 00:24
+Sun Dec 04 00:25:24 CST 2022 org.apache.commons.cli.HelpFormatter,416
+Failed time : 22/12/04 00:25
+=================================================
+Project : cli_1	start : 22/12/04 00:25
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 00:25
+Sun Dec 04 00:25:54 CST 2022 org.apache.commons.cli.HelpFormatter,416
+Failed time : 22/12/04 00:25
+=================================================
+Project : cli_1	start : 22/12/04 00:26
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 00:26
+Sun Dec 04 00:26:34 CST 2022 org.apache.commons.cli.HelpFormatter,846
+Failed time : 22/12/04 00:28
+=================================================
+Project : cli_1	start : 22/12/04 00:28
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 00:28
+Sun Dec 04 00:28:37 CST 2022 org.apache.commons.cli.HelpFormatter,846
+Failed time : 22/12/04 00:30
+=================================================
+Project : cli_1	start : 22/12/04 00:30
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 00:30
+Sun Dec 04 00:30:37 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 00:30
+=================================================
+Project : cli_1	start : 22/12/04 00:30
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 00:30
+Sun Dec 04 00:31:10 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 00:31
+=================================================
+Project : cli_1	start : 22/12/04 00:31
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:31
+Sun Dec 04 00:31:48 CST 2022 org.apache.commons.cli.Parser,397
+Failed time : 22/12/04 00:32
+=================================================
+Project : cli_1	start : 22/12/04 00:32
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:32
+Sun Dec 04 00:32:59 CST 2022 org.apache.commons.cli.Parser,397
+Failed time : 22/12/04 00:33
+=================================================
+Project : cli_1	start : 22/12/04 00:33
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:33
+Sun Dec 04 00:34:14 CST 2022 org.apache.commons.cli.Util,41
+Failed time : 22/12/04 00:35
+=================================================
+Project : cli_1	start : 22/12/04 00:35
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:35
+Sun Dec 04 00:35:44 CST 2022 org.apache.commons.cli.Util,41
+Failed time : 22/12/04 00:36
+=================================================
+Project : cli_1	start : 22/12/04 00:36
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 00:36
+Sun Dec 04 00:37:24 CST 2022 org.apache.commons.cli.HelpFormatter,772
+Failed time : 22/12/04 00:41
+=================================================
+Project : cli_1	start : 22/12/04 00:41
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 00:41
+Sun Dec 04 00:42:01 CST 2022 org.apache.commons.cli.HelpFormatter,772
+Failed time : 22/12/04 00:46
+=================================================
+Project : cli_1	start : 22/12/04 00:46
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 00:46
+Sun Dec 04 00:46:38 CST 2022 org.apache.commons.cli.TypeHandler,83
+Failed time : 22/12/04 00:46
+=================================================
+Project : cli_1	start : 22/12/04 00:46
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 00:47
+Sun Dec 04 00:47:27 CST 2022 org.apache.commons.cli.TypeHandler,83
+Failed time : 22/12/04 00:47
+=================================================
+Project : cli_1	start : 22/12/04 00:47
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 00:47
+Sun Dec 04 00:48:21 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/04 00:48
+=================================================
+Project : cli_1	start : 22/12/04 00:48
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 00:48
+Sun Dec 04 00:48:53 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/04 00:48
+=================================================
+Project : cli_1	start : 22/12/04 00:49
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:49
+Sun Dec 04 00:49:27 CST 2022 org.apache.commons.cli.Option,438
+Failed time : 22/12/04 00:50
+=================================================
+Project : cli_1	start : 22/12/04 00:50
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:50
+Sun Dec 04 00:50:44 CST 2022 org.apache.commons.cli.Option,438
+Failed time : 22/12/04 00:51
+=================================================
+Project : cli_1	start : 22/12/04 00:51
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:51
+Sun Dec 04 00:52:09 CST 2022 org.apache.commons.cli.GnuParser,94
+Failed time : 22/12/04 00:53
+=================================================
+Project : cli_1	start : 22/12/04 00:53
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:53
+Sun Dec 04 00:54:01 CST 2022 org.apache.commons.cli.GnuParser,94
+Failed time : 22/12/04 00:55
+=================================================
+Project : cli_1	start : 22/12/04 00:55
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 00:55
+Sun Dec 04 00:55:55 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 00:55
+=================================================
+Project : cli_1	start : 22/12/04 00:55
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 00:56
+Sun Dec 04 00:56:27 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 00:56
+=================================================
+Project : cli_1	start : 22/12/04 00:56
+Current failed test : org.apache.commons.cli.BugsTest::test15648 | 22/12/04 00:56
+Sun Dec 04 00:57:02 CST 2022 org.apache.commons.cli.Util,62
+Failed time : 22/12/04 00:57
+=================================================
+Project : cli_1	start : 22/12/04 00:57
+Current failed test : org.apache.commons.cli.BugsTest::test15648 | 22/12/04 00:57
+Sun Dec 04 00:58:18 CST 2022 org.apache.commons.cli.Util,62
+Failed time : 22/12/04 00:59
+=================================================
+Project : cli_1	start : 22/12/04 00:59
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 00:59
+Sun Dec 04 00:59:41 CST 2022 org.apache.commons.cli.Parser,163
+Failed time : 22/12/04 01:00
+=================================================
+Project : cli_1	start : 22/12/04 01:00
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 01:00
+Sun Dec 04 01:01:07 CST 2022 org.apache.commons.cli.Parser,163
+Failed time : 22/12/04 01:01
+=================================================
+Project : cli_1	start : 22/12/04 01:02
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 01:02
+Sun Dec 04 01:02:34 CST 2022 org.apache.commons.cli.HelpFormatter,256
+Failed time : 22/12/04 01:02
+=================================================
+Project : cli_1	start : 22/12/04 01:02
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 01:02
+Sun Dec 04 01:03:23 CST 2022 org.apache.commons.cli.HelpFormatter,256
+Failed time : 22/12/04 01:03
+=================================================
+Project : cli_1	start : 22/12/04 01:03
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testFindWrapPos | 22/12/04 01:03
+Sun Dec 04 01:04:22 CST 2022 org.apache.commons.cli.HelpFormatter,824
+Failed time : 22/12/04 01:08
+=================================================
+Project : cli_1	start : 22/12/04 01:08
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testFindWrapPos | 22/12/04 01:08
+Sun Dec 04 01:09:08 CST 2022 org.apache.commons.cli.HelpFormatter,824
+Failed time : 22/12/04 01:13
+=================================================
+Project : cli_1	start : 22/12/04 01:13
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 01:13
+Sun Dec 04 01:14:02 CST 2022 org.apache.commons.cli.Parser,176
+Failed time : 22/12/04 01:14
+=================================================
+Project : cli_1	start : 22/12/04 01:14
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 01:14
+Sun Dec 04 01:15:04 CST 2022 org.apache.commons.cli.Parser,176
+Failed time : 22/12/04 01:15
+=================================================
+Project : cli_1	start : 22/12/04 01:15
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 01:15
+Sun Dec 04 01:16:13 CST 2022 org.apache.commons.cli.PatternOptionBuilder,166
+Timeout time : 22/12/04 06:16
+=================================================
+Project : cli_1	start : 22/12/04 06:16
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 06:16
+Sun Dec 04 06:16:19 CST 2022 org.apache.commons.cli.PatternOptionBuilder,166
+Timeout time : 22/12/04 11:16
+=================================================
+Project : cli_1	start : 22/12/04 11:16
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:16
+Sun Dec 04 11:16:28 CST 2022 org.apache.commons.cli.PosixParser,294
+Failed time : 22/12/04 11:17
+=================================================
+Project : cli_1	start : 22/12/04 11:17
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:17
+Sun Dec 04 11:17:22 CST 2022 org.apache.commons.cli.PosixParser,294
+Failed time : 22/12/04 11:18
+=================================================
+Project : cli_1	start : 22/12/04 11:18
+Current failed test : org.apache.commons.cli.BugsTest::test13425 | 22/12/04 11:18
+Sun Dec 04 11:18:24 CST 2022 org.apache.commons.cli.OptionBuilder,79
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=false;
+numberOfArgs=Option.UNLIMITED_VALUES;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=true;
+numberOfArgs=Option.UNINITIALIZED;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=optionalArg;
+numberOfArgs=Option.UNINITIALIZED;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:18
+----------------------------------------
+Failed time : 22/12/04 11:18
+=================================================
+Project : cli_1	start : 22/12/04 11:18
+Current failed test : org.apache.commons.cli.BugsTest::test13425 | 22/12/04 11:18
+Sun Dec 04 11:18:48 CST 2022 org.apache.commons.cli.OptionBuilder,79
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=false;
+numberOfArgs=Option.UNLIMITED_VALUES;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=true;
+numberOfArgs=Option.UNINITIALIZED;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+description=null;
+argName="arg";
+longopt=null;
+type=null;
+required=optionalArg;
+numberOfArgs=Option.UNINITIALIZED;
+optionalArg=true;
+valuesep=(char)0;
+
+Time : 22/12/04 11:19
+----------------------------------------
+Failed time : 22/12/04 11:19
+=================================================
+Project : cli_1	start : 22/12/04 11:19
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:19
+Sun Dec 04 11:19:13 CST 2022 org.apache.commons.cli.Option,261
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>0,0]
+return (this.numberOfArgs>1)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(numberOfArgs>=UNLIMITED_VALUES);
+
+Time : 22/12/04 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:21
+----------------------------------------
+Success time : 22/12/04 11:21
+=================================================
+Project : cli_1	start : 22/12/04 11:21
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:21
+Sun Dec 04 11:21:26 CST 2022 org.apache.commons.cli.Option,261
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.0 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>0,0]
+return (this.numberOfArgs>1)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(numberOfArgs>=UNLIMITED_VALUES);
+
+Time : 22/12/04 11:23
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/Option.java=>261,261]
+return (this.numberOfArgs>0)||(this.numberOfArgs==UNLIMITED_VALUES);
+
+Time : 22/12/04 11:23
+----------------------------------------
+Success time : 22/12/04 11:23
+=================================================
+Project : cli_1	start : 22/12/04 11:23
+Current failed test : org.apache.commons.cli.GnuParseTest::testDoubleDash | 22/12/04 11:23
+Sun Dec 04 11:23:36 CST 2022 org.apache.commons.cli.Parser,157
+Failed time : 22/12/04 11:23
+=================================================
+Project : cli_1	start : 22/12/04 11:23
+Current failed test : org.apache.commons.cli.GnuParseTest::testDoubleDash | 22/12/04 11:23
+Sun Dec 04 11:24:05 CST 2022 org.apache.commons.cli.Parser,157
+Failed time : 22/12/04 11:24
+=================================================
+Project : cli_1	start : 22/12/04 11:24
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 11:24
+Sun Dec 04 11:24:36 CST 2022 org.apache.commons.cli.HelpFormatter,409
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if((header!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8984034995342731 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+if((footer!=null)&&(footer.trim().length()>0)){
+printWrapped(pw,width,footer);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(false)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if((footer!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8984034995342731 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+if((footer!=null)&&(footer.trim().length()>0)){
+printWrapped(pw,width,footer);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(false)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((footer!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:24
+----------------------------------------
+Success time : 22/12/04 11:24
+=================================================
+Project : cli_1	start : 22/12/04 11:24
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 11:24
+Sun Dec 04 11:24:58 CST 2022 org.apache.commons.cli.HelpFormatter,409
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if((header!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8984034995342731 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+if((footer!=null)&&(footer.trim().length()>0)){
+printWrapped(pw,width,footer);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(false)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if((footer!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8984034995342731 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+if((footer!=null)&&(footer.trim().length()>0)){
+printWrapped(pw,width,footer);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((header!=null)&&(false)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>409,412]
+if((footer!=null)&&(header.trim().length()>0)){
+printWrapped(pw,width,header);
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+Success time : 22/12/04 11:25
+=================================================
+Project : cli_1	start : 22/12/04 11:25
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 11:25
+Sun Dec 04 11:25:22 CST 2022 org.apache.commons.cli.HelpFormatter,810
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while((pos>0)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1994781694747996 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+while((pos>0)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>810,814]
+while((pos==startPos)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>810,814]
+while((pos>0)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:25
+----------------------------------------
+Success time : 22/12/04 11:25
+=================================================
+Project : cli_1	start : 22/12/04 11:25
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 11:25
+Sun Dec 04 11:25:56 CST 2022 org.apache.commons.cli.HelpFormatter,810
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while((pos>0)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1994781694747996 : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>0,0]
+while((pos>0)&&Character.isWhitespace(s.charAt(pos-1))){
+--pos;
+}
+
+Time : 22/12/04 11:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>810,814]
+while((pos==startPos)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/cli/cli_1_buggy/src/java/org/apache/commons/cli/HelpFormatter.java=>810,814]
+while((pos>0)&&((c=text.charAt(pos))!=' ')){
+--pos;
+}
+
+Time : 22/12/04 11:26
+----------------------------------------
+Success time : 22/12/04 11:26
+=================================================
+Project : cli_1	start : 22/12/04 11:26
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:26
+Sun Dec 04 11:26:31 CST 2022 org.apache.commons.cli.PosixParser,294
+Failed time : 22/12/04 11:27
+=================================================
+Project : cli_1	start : 22/12/04 11:27
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:27
+Sun Dec 04 11:27:32 CST 2022 org.apache.commons.cli.PosixParser,294
+Failed time : 22/12/04 11:28
+=================================================
+Project : cli_1	start : 22/12/04 11:28
+Current failed test : org.apache.commons.cli.BugsTest::test15648 | 22/12/04 11:28
+Sun Dec 04 11:28:37 CST 2022 org.apache.commons.cli.Util,62
+Failed time : 22/12/04 11:28
+=================================================
+Project : cli_1	start : 22/12/04 11:28
+Current failed test : org.apache.commons.cli.BugsTest::test15648 | 22/12/04 11:28
+Sun Dec 04 11:29:01 CST 2022 org.apache.commons.cli.Util,62
+Failed time : 22/12/04 11:29
+=================================================
+Project : cli_1	start : 22/12/04 11:29
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:29
+Sun Dec 04 11:29:26 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 11:29
+=================================================
+Project : cli_1	start : 22/12/04 11:29
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:29
+Sun Dec 04 11:29:35 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 11:29
+=================================================
+Project : cli_1	start : 22/12/04 11:29
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 11:29
+Sun Dec 04 11:29:45 CST 2022 org.apache.commons.cli.HelpFormatter,806
+Failed time : 22/12/04 11:31
+=================================================
+Project : cli_1	start : 22/12/04 11:31
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 11:31
+Sun Dec 04 11:31:48 CST 2022 org.apache.commons.cli.HelpFormatter,806
+Failed time : 22/12/04 11:33
+=================================================
+Project : cli_1	start : 22/12/04 11:33
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/04 11:33
+Sun Dec 04 11:33:46 CST 2022 org.apache.commons.cli.Option,513
+Failed time : 22/12/04 11:33
+=================================================
+Project : cli_1	start : 22/12/04 11:33
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/04 11:33
+Sun Dec 04 11:33:59 CST 2022 org.apache.commons.cli.Option,513
+Failed time : 22/12/04 11:34
+=================================================
+Project : cli_1	start : 22/12/04 11:34
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 11:34
+Sun Dec 04 11:34:14 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/04 11:34
+=================================================
+Project : cli_1	start : 22/12/04 11:34
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 11:34
+Sun Dec 04 11:34:35 CST 2022 org.apache.commons.cli.HelpFormatter,870
+Failed time : 22/12/04 11:34
+=================================================
+Project : cli_1	start : 22/12/04 11:34
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 11:34
+Sun Dec 04 11:34:58 CST 2022 org.apache.commons.cli.HelpFormatter,607
+Failed time : 22/12/04 11:35
+=================================================
+Project : cli_1	start : 22/12/04 11:35
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 11:35
+Sun Dec 04 11:35:13 CST 2022 org.apache.commons.cli.HelpFormatter,607
+Failed time : 22/12/04 11:35
+=================================================
+Project : cli_1	start : 22/12/04 11:35
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:35
+Sun Dec 04 11:35:29 CST 2022 org.apache.commons.cli.Option,441
+Failed time : 22/12/04 11:35
+=================================================
+Project : cli_1	start : 22/12/04 11:35
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:35
+Sun Dec 04 11:35:41 CST 2022 org.apache.commons.cli.Option,441
+Failed time : 22/12/04 11:35
+=================================================
+Project : cli_1	start : 22/12/04 11:35
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 11:35
+Sun Dec 04 11:35:55 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 11:35
+=================================================
+Project : cli_1	start : 22/12/04 11:35
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 11:35
+Sun Dec 04 11:36:03 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 11:36
+=================================================
+Project : cli_1	start : 22/12/04 11:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:36
+Sun Dec 04 11:36:13 CST 2022 org.apache.commons.cli.Parser,384
+Failed time : 22/12/04 11:36
+=================================================
+Project : cli_1	start : 22/12/04 11:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:36
+Sun Dec 04 11:36:33 CST 2022 org.apache.commons.cli.Parser,384
+Failed time : 22/12/04 11:36
+=================================================
+Project : cli_1	start : 22/12/04 11:36
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 11:36
+Sun Dec 04 11:36:56 CST 2022 org.apache.commons.cli.PosixParser,149
+Failed time : 22/12/04 11:36
+=================================================
+Project : cli_1	start : 22/12/04 11:36
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 11:36
+Sun Dec 04 11:37:04 CST 2022 org.apache.commons.cli.PosixParser,149
+Failed time : 22/12/04 11:37
+=================================================
+Project : cli_1	start : 22/12/04 11:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:37
+Sun Dec 04 11:37:13 CST 2022 org.apache.commons.cli.Options,244
+Failed time : 22/12/04 11:37
+=================================================
+Project : cli_1	start : 22/12/04 11:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:37
+Sun Dec 04 11:37:54 CST 2022 org.apache.commons.cli.Options,244
+Failed time : 22/12/04 11:38
+=================================================
+Project : cli_1	start : 22/12/04 11:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:38
+Sun Dec 04 11:38:35 CST 2022 org.apache.commons.cli.OptionValidator,68
+Failed time : 22/12/04 11:38
+=================================================
+Project : cli_1	start : 22/12/04 11:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 11:38
+Sun Dec 04 11:38:43 CST 2022 org.apache.commons.cli.OptionValidator,68
+Failed time : 22/12/04 11:38
+=================================================
+Project : cli_1	start : 22/12/04 11:38
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:38
+Sun Dec 04 11:38:52 CST 2022 org.apache.commons.cli.PosixParser,111
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(stopAtNonOption){
+if(token.indexOf('=')!=-1){
+tokens.add(token.substring(0,token.indexOf('=')));
+tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+}else {
+tokens.add(token);
+}
+}else if("-".equals(token)){
+processSingleHyphen(token);
+}else if(token.startsWith("-")){
+int tokenLength=token.length();
+if(tokenLength==2){
+processOptionToken(token,stopAtNonOption);
+}else if(options.hasOption(token)){
+tokens.add(token);
+}else {
+burstToken(token,stopAtNonOption);
+}
+}else {
+if(stopAtNonOption){
+process(token);
+}else {
+tokens.add(token);
+}
+}
+
+Time : 22/12/04 11:40
+----------------------------------------
+Failed time : 22/12/04 11:40
+=================================================
+Project : cli_1	start : 22/12/04 11:40
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 11:40
+Sun Dec 04 11:40:30 CST 2022 org.apache.commons.cli.PosixParser,111
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(stopAtNonOption){
+if(token.indexOf('=')!=-1){
+tokens.add(token.substring(0,token.indexOf('=')));
+tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+}else {
+tokens.add(token);
+}
+}else if("-".equals(token)){
+processSingleHyphen(token);
+}else if(token.startsWith("-")){
+int tokenLength=token.length();
+if(tokenLength==2){
+processOptionToken(token,stopAtNonOption);
+}else if(options.hasOption(token)){
+tokens.add(token);
+}else {
+burstToken(token,stopAtNonOption);
+}
+}else {
+if(stopAtNonOption){
+process(token);
+}else {
+tokens.add(token);
+}
+}
+
+Time : 22/12/04 11:42
+----------------------------------------
+Failed time : 22/12/04 11:42
+=================================================
+Project : cli_1	start : 22/12/04 11:42
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 11:42
+Sun Dec 04 11:42:11 CST 2022 org.apache.commons.cli.PatternOptionBuilder,172
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:36
+Sun Dec 04 12:36:14 CST 2022 org.apache.commons.cli.CommandLine,173
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:36
+Sun Dec 04 12:36:18 CST 2022 org.apache.commons.cli.CommandLine,173
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testIllegalOptions | 22/12/04 12:36
+Sun Dec 04 12:36:22 CST 2022 org.apache.commons.cli.OptionValidator,87
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.OptionBuilderTest::testIllegalOptions | 22/12/04 12:36
+Sun Dec 04 12:36:25 CST 2022 org.apache.commons.cli.OptionValidator,87
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:36
+Sun Dec 04 12:36:31 CST 2022 org.apache.commons.cli.PatternOptionBuilder,142
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:36
+Sun Dec 04 12:36:34 CST 2022 org.apache.commons.cli.PatternOptionBuilder,142
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 12:36
+Sun Dec 04 12:36:40 CST 2022 Sun Dec 04 12:36:40 CST 2022 : org.apache.commons.cli.HelpFormatter,811=>Find no block
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.TestHelpFormatter::testPrintWrapped | 22/12/04 12:36
+Sun Dec 04 12:36:43 CST 2022 Sun Dec 04 12:36:43 CST 2022 : org.apache.commons.cli.HelpFormatter,811=>Find no block
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:36
+Sun Dec 04 12:36:48 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:36
+Sun Dec 04 12:36:51 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:36
+Sun Dec 04 12:36:55 CST 2022 org.apache.commons.cli.OptionValidator,52
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:36
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:36
+Sun Dec 04 12:36:59 CST 2022 org.apache.commons.cli.OptionValidator,52
+Failed time : 22/12/04 12:36
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.GnuParseTest::testStop | 22/12/04 12:37
+Sun Dec 04 12:37:04 CST 2022 org.apache.commons.cli.Parser,194
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.GnuParseTest::testStop | 22/12/04 12:37
+Sun Dec 04 12:37:07 CST 2022 org.apache.commons.cli.Parser,194
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/04 12:37
+Sun Dec 04 12:37:11 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/04 12:37
+Sun Dec 04 12:37:14 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:18 CST 2022 Sun Dec 04 12:37:18 CST 2022 : org.apache.commons.cli.GnuParser,89=>Find no block
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:23 CST 2022 Sun Dec 04 12:37:23 CST 2022 : org.apache.commons.cli.GnuParser,89=>Find no block
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:28 CST 2022 org.apache.commons.cli.Parser,366
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:32 CST 2022 org.apache.commons.cli.Parser,366
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/04 12:37
+Sun Dec 04 12:37:38 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ValueTest::testPropertyOptionSingularValue | 22/12/04 12:37
+Sun Dec 04 12:37:42 CST 2022 org.apache.commons.cli.Parser,142
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:48 CST 2022 org.apache.commons.cli.Option,133
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:37
+Sun Dec 04 12:37:53 CST 2022 org.apache.commons.cli.Option,133
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 12:37
+Sun Dec 04 12:37:57 CST 2022 org.apache.commons.cli.Option,333
+Failed time : 22/12/04 12:37
+=================================================
+Project : cli_1	start : 22/12/04 12:37
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 12:37
+Sun Dec 04 12:38:01 CST 2022 org.apache.commons.cli.Option,333
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:38
+Sun Dec 04 12:38:05 CST 2022 org.apache.commons.cli.HelpFormatter,863
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:38
+Sun Dec 04 12:38:08 CST 2022 org.apache.commons.cli.HelpFormatter,863
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:38
+Sun Dec 04 12:38:12 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:38
+Sun Dec 04 12:38:16 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:38
+Sun Dec 04 12:38:19 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:38
+Sun Dec 04 12:38:23 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:38
+Sun Dec 04 12:38:27 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:38
+Sun Dec 04 12:38:31 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ValueTest::testLongOptionalNArgValues | 22/12/04 12:38
+Sun Dec 04 12:38:34 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.ValueTest::testLongOptionalNArgValues | 22/12/04 12:38
+Sun Dec 04 12:38:39 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test13935 | 22/12/04 12:38
+Sun Dec 04 12:38:43 CST 2022 org.apache.commons.cli.Parser,377
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test13935 | 22/12/04 12:38
+Sun Dec 04 12:38:47 CST 2022 org.apache.commons.cli.Parser,377
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:38
+Sun Dec 04 12:38:51 CST 2022 org.apache.commons.cli.PatternOptionBuilder,145
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:38
+Sun Dec 04 12:38:55 CST 2022 org.apache.commons.cli.PatternOptionBuilder,145
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:38
+Sun Dec 04 12:38:59 CST 2022 org.apache.commons.cli.HelpFormatter,416
+Failed time : 22/12/04 12:38
+=================================================
+Project : cli_1	start : 22/12/04 12:38
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:38
+Sun Dec 04 12:39:02 CST 2022 org.apache.commons.cli.HelpFormatter,416
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:39
+Sun Dec 04 12:39:06 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:39
+Sun Dec 04 12:39:10 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:39
+Sun Dec 04 12:39:14 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.BugsTest::test21215 | 22/12/04 12:39
+Sun Dec 04 12:39:19 CST 2022 org.apache.commons.cli.HelpFormatter,409
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:39
+Sun Dec 04 12:39:24 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.GnuParseTest::testSimpleLong | 22/12/04 12:39
+Sun Dec 04 12:39:28 CST 2022 org.apache.commons.cli.Option,476
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 12:39
+Sun Dec 04 12:39:33 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.BugsTest::test11456 | 22/12/04 12:39
+Sun Dec 04 12:39:37 CST 2022 org.apache.commons.cli.Parser,341
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:39
+Sun Dec 04 12:39:41 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern | 22/12/04 12:39
+Sun Dec 04 12:39:45 CST 2022 org.apache.commons.cli.PatternOptionBuilder,138
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 12:39
+Sun Dec 04 12:39:49 CST 2022 org.apache.commons.cli.PosixParser,149
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 12:39
+Sun Dec 04 12:39:52 CST 2022 org.apache.commons.cli.PosixParser,149
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:39
+Sun Dec 04 12:39:56 CST 2022 org.apache.commons.cli.OptionValidator,68
+Failed time : 22/12/04 12:39
+=================================================
+Project : cli_1	start : 22/12/04 12:39
+Current failed test : org.apache.commons.cli.ApplicationTest::testAnt | 22/12/04 12:39
+Sun Dec 04 12:40:00 CST 2022 org.apache.commons.cli.OptionValidator,68
+Failed time : 22/12/04 12:40
+=================================================
+Project : cli_1	start : 22/12/04 12:40
+Current failed test : org.apache.commons.cli.ParseTest::testSingleDash | 22/12/04 12:40
+Sun Dec 04 12:40:04 CST 2022 org.apache.commons.cli.PosixParser,126
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(tokenLength==2){
+eatTheRest=true;
+processOptionToken(token,stopAtNonOption);
+}else if(options.hasOption(token)){
+tokens.add(token);
+}else {
+burstToken(token,stopAtNonOption);
+}
+
+Time : 22/12/04 12:40
+----------------------------------------
+Failed time : 22/12/04 12:40
+=================================================
+Project : cli_1	start : 22/12/04 12:40
+Current failed test : org.apache.commons.cli.ParseTest::testSingleDash | 22/12/04 12:40
+Sun Dec 04 12:40:34 CST 2022 org.apache.commons.cli.PosixParser,126
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(tokenLength==2){
+eatTheRest=true;
+processOptionToken(token,stopAtNonOption);
+}else if(options.hasOption(token)){
+tokens.add(token);
+}else {
+burstToken(token,stopAtNonOption);
+}
+
+Time : 22/12/04 12:40
+----------------------------------------
+Failed time : 22/12/04 12:40
+=================================================
+Project : cli_1	start : 22/12/04 12:40
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 12:41
+Sun Dec 04 12:41:03 CST 2022 org.apache.commons.cli.HelpFormatter,846
+Failed time : 22/12/04 12:41
+=================================================
+Project : cli_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.cli.BugsTest::test13666 | 22/12/04 12:41
+Sun Dec 04 12:41:15 CST 2022 org.apache.commons.cli.HelpFormatter,846
+Failed time : 22/12/04 12:41
+=================================================
+Project : cli_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/04 12:41
+Sun Dec 04 12:41:28 CST 2022 org.apache.commons.cli.Option,151
+Failed time : 22/12/04 12:41
+=================================================
+Project : cli_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.cli.BugsTest::test11458 | 22/12/04 12:41
+Sun Dec 04 12:41:32 CST 2022 org.apache.commons.cli.Option,151
+Failed time : 22/12/04 12:41
+=================================================
+Project : cli_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 12:41
+Sun Dec 04 12:41:36 CST 2022 org.apache.commons.cli.PosixParser,172
+Failed time : 22/12/04 12:41
+=================================================
+Project : cli_1	start : 22/12/04 12:41
+Current failed test : org.apache.commons.cli.ParseTest::testStop | 22/12/04 12:41
+Sun Dec 04 12:41:46 CST 2022 org.apache.commons.cli.PosixParser,172
+Failed time : 22/12/04 12:41

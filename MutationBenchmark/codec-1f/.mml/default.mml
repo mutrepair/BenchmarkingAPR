@@ -1,0 +1,309 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.codec.EncoderException
+AOR<"org.apache.commons.codec.EncoderException">;
+LOR<"org.apache.commons.codec.EncoderException">;
+SOR<"org.apache.commons.codec.EncoderException">;
+COR<"org.apache.commons.codec.EncoderException">;
+ROR<"org.apache.commons.codec.EncoderException">;
+ORU<"org.apache.commons.codec.EncoderException">;
+LVR<"org.apache.commons.codec.EncoderException">;
+STD<"org.apache.commons.codec.EncoderException">;
+
+// Enable operators for org.apache.commons.codec.digest.DigestUtils
+AOR<"org.apache.commons.codec.digest.DigestUtils">;
+LOR<"org.apache.commons.codec.digest.DigestUtils">;
+SOR<"org.apache.commons.codec.digest.DigestUtils">;
+COR<"org.apache.commons.codec.digest.DigestUtils">;
+ROR<"org.apache.commons.codec.digest.DigestUtils">;
+ORU<"org.apache.commons.codec.digest.DigestUtils">;
+LVR<"org.apache.commons.codec.digest.DigestUtils">;
+STD<"org.apache.commons.codec.digest.DigestUtils">;
+
+// Enable operators for org.apache.commons.codec.BinaryDecoder
+AOR<"org.apache.commons.codec.BinaryDecoder">;
+LOR<"org.apache.commons.codec.BinaryDecoder">;
+SOR<"org.apache.commons.codec.BinaryDecoder">;
+COR<"org.apache.commons.codec.BinaryDecoder">;
+ROR<"org.apache.commons.codec.BinaryDecoder">;
+ORU<"org.apache.commons.codec.BinaryDecoder">;
+LVR<"org.apache.commons.codec.BinaryDecoder">;
+STD<"org.apache.commons.codec.BinaryDecoder">;
+
+// Enable operators for org.apache.commons.codec.language.Caverphone
+AOR<"org.apache.commons.codec.language.Caverphone">;
+LOR<"org.apache.commons.codec.language.Caverphone">;
+SOR<"org.apache.commons.codec.language.Caverphone">;
+COR<"org.apache.commons.codec.language.Caverphone">;
+ROR<"org.apache.commons.codec.language.Caverphone">;
+ORU<"org.apache.commons.codec.language.Caverphone">;
+LVR<"org.apache.commons.codec.language.Caverphone">;
+STD<"org.apache.commons.codec.language.Caverphone">;
+
+// Enable operators for org.apache.commons.codec.language.SoundexUtils
+AOR<"org.apache.commons.codec.language.SoundexUtils">;
+LOR<"org.apache.commons.codec.language.SoundexUtils">;
+SOR<"org.apache.commons.codec.language.SoundexUtils">;
+COR<"org.apache.commons.codec.language.SoundexUtils">;
+ROR<"org.apache.commons.codec.language.SoundexUtils">;
+ORU<"org.apache.commons.codec.language.SoundexUtils">;
+LVR<"org.apache.commons.codec.language.SoundexUtils">;
+STD<"org.apache.commons.codec.language.SoundexUtils">;
+
+// Enable operators for org.apache.commons.codec.language.DoubleMetaphone
+AOR<"org.apache.commons.codec.language.DoubleMetaphone">;
+LOR<"org.apache.commons.codec.language.DoubleMetaphone">;
+SOR<"org.apache.commons.codec.language.DoubleMetaphone">;
+COR<"org.apache.commons.codec.language.DoubleMetaphone">;
+ROR<"org.apache.commons.codec.language.DoubleMetaphone">;
+ORU<"org.apache.commons.codec.language.DoubleMetaphone">;
+LVR<"org.apache.commons.codec.language.DoubleMetaphone">;
+STD<"org.apache.commons.codec.language.DoubleMetaphone">;
+
+// Enable operators for org.apache.commons.codec.language.Soundex
+AOR<"org.apache.commons.codec.language.Soundex">;
+LOR<"org.apache.commons.codec.language.Soundex">;
+SOR<"org.apache.commons.codec.language.Soundex">;
+COR<"org.apache.commons.codec.language.Soundex">;
+ROR<"org.apache.commons.codec.language.Soundex">;
+ORU<"org.apache.commons.codec.language.Soundex">;
+LVR<"org.apache.commons.codec.language.Soundex">;
+STD<"org.apache.commons.codec.language.Soundex">;
+
+// Enable operators for org.apache.commons.codec.language.Metaphone
+AOR<"org.apache.commons.codec.language.Metaphone">;
+LOR<"org.apache.commons.codec.language.Metaphone">;
+SOR<"org.apache.commons.codec.language.Metaphone">;
+COR<"org.apache.commons.codec.language.Metaphone">;
+ROR<"org.apache.commons.codec.language.Metaphone">;
+ORU<"org.apache.commons.codec.language.Metaphone">;
+LVR<"org.apache.commons.codec.language.Metaphone">;
+STD<"org.apache.commons.codec.language.Metaphone">;
+
+// Enable operators for org.apache.commons.codec.language.RefinedSoundex
+AOR<"org.apache.commons.codec.language.RefinedSoundex">;
+LOR<"org.apache.commons.codec.language.RefinedSoundex">;
+SOR<"org.apache.commons.codec.language.RefinedSoundex">;
+COR<"org.apache.commons.codec.language.RefinedSoundex">;
+ROR<"org.apache.commons.codec.language.RefinedSoundex">;
+ORU<"org.apache.commons.codec.language.RefinedSoundex">;
+LVR<"org.apache.commons.codec.language.RefinedSoundex">;
+STD<"org.apache.commons.codec.language.RefinedSoundex">;
+
+// Enable operators for org.apache.commons.codec.binary.Hex
+AOR<"org.apache.commons.codec.binary.Hex">;
+LOR<"org.apache.commons.codec.binary.Hex">;
+SOR<"org.apache.commons.codec.binary.Hex">;
+COR<"org.apache.commons.codec.binary.Hex">;
+ROR<"org.apache.commons.codec.binary.Hex">;
+ORU<"org.apache.commons.codec.binary.Hex">;
+LVR<"org.apache.commons.codec.binary.Hex">;
+STD<"org.apache.commons.codec.binary.Hex">;
+
+// Enable operators for org.apache.commons.codec.binary.BinaryCodec
+AOR<"org.apache.commons.codec.binary.BinaryCodec">;
+LOR<"org.apache.commons.codec.binary.BinaryCodec">;
+SOR<"org.apache.commons.codec.binary.BinaryCodec">;
+COR<"org.apache.commons.codec.binary.BinaryCodec">;
+ROR<"org.apache.commons.codec.binary.BinaryCodec">;
+ORU<"org.apache.commons.codec.binary.BinaryCodec">;
+LVR<"org.apache.commons.codec.binary.BinaryCodec">;
+STD<"org.apache.commons.codec.binary.BinaryCodec">;
+
+// Enable operators for org.apache.commons.codec.binary.Base64
+AOR<"org.apache.commons.codec.binary.Base64">;
+LOR<"org.apache.commons.codec.binary.Base64">;
+SOR<"org.apache.commons.codec.binary.Base64">;
+COR<"org.apache.commons.codec.binary.Base64">;
+ROR<"org.apache.commons.codec.binary.Base64">;
+ORU<"org.apache.commons.codec.binary.Base64">;
+LVR<"org.apache.commons.codec.binary.Base64">;
+STD<"org.apache.commons.codec.binary.Base64">;
+
+// Enable operators for org.apache.commons.codec.StringEncoder
+AOR<"org.apache.commons.codec.StringEncoder">;
+LOR<"org.apache.commons.codec.StringEncoder">;
+SOR<"org.apache.commons.codec.StringEncoder">;
+COR<"org.apache.commons.codec.StringEncoder">;
+ROR<"org.apache.commons.codec.StringEncoder">;
+ORU<"org.apache.commons.codec.StringEncoder">;
+LVR<"org.apache.commons.codec.StringEncoder">;
+STD<"org.apache.commons.codec.StringEncoder">;
+
+// Enable operators for org.apache.commons.codec.Decoder
+AOR<"org.apache.commons.codec.Decoder">;
+LOR<"org.apache.commons.codec.Decoder">;
+SOR<"org.apache.commons.codec.Decoder">;
+COR<"org.apache.commons.codec.Decoder">;
+ROR<"org.apache.commons.codec.Decoder">;
+ORU<"org.apache.commons.codec.Decoder">;
+LVR<"org.apache.commons.codec.Decoder">;
+STD<"org.apache.commons.codec.Decoder">;
+
+// Enable operators for org.apache.commons.codec.BinaryEncoder
+AOR<"org.apache.commons.codec.BinaryEncoder">;
+LOR<"org.apache.commons.codec.BinaryEncoder">;
+SOR<"org.apache.commons.codec.BinaryEncoder">;
+COR<"org.apache.commons.codec.BinaryEncoder">;
+ROR<"org.apache.commons.codec.BinaryEncoder">;
+ORU<"org.apache.commons.codec.BinaryEncoder">;
+LVR<"org.apache.commons.codec.BinaryEncoder">;
+STD<"org.apache.commons.codec.BinaryEncoder">;
+
+// Enable operators for org.apache.commons.codec.DecoderException
+AOR<"org.apache.commons.codec.DecoderException">;
+LOR<"org.apache.commons.codec.DecoderException">;
+SOR<"org.apache.commons.codec.DecoderException">;
+COR<"org.apache.commons.codec.DecoderException">;
+ROR<"org.apache.commons.codec.DecoderException">;
+ORU<"org.apache.commons.codec.DecoderException">;
+LVR<"org.apache.commons.codec.DecoderException">;
+STD<"org.apache.commons.codec.DecoderException">;
+
+// Enable operators for org.apache.commons.codec.net.CharacterEncodingNames
+AOR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+LOR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+SOR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+COR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+ROR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+ORU<"org.apache.commons.codec.net.CharacterEncodingNames">;
+LVR<"org.apache.commons.codec.net.CharacterEncodingNames">;
+STD<"org.apache.commons.codec.net.CharacterEncodingNames">;
+
+// Enable operators for org.apache.commons.codec.net.QuotedPrintableCodec
+AOR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+LOR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+SOR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+COR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+ROR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+ORU<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+LVR<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+STD<"org.apache.commons.codec.net.QuotedPrintableCodec">;
+
+// Enable operators for org.apache.commons.codec.net.RFC1522Codec
+AOR<"org.apache.commons.codec.net.RFC1522Codec">;
+LOR<"org.apache.commons.codec.net.RFC1522Codec">;
+SOR<"org.apache.commons.codec.net.RFC1522Codec">;
+COR<"org.apache.commons.codec.net.RFC1522Codec">;
+ROR<"org.apache.commons.codec.net.RFC1522Codec">;
+ORU<"org.apache.commons.codec.net.RFC1522Codec">;
+LVR<"org.apache.commons.codec.net.RFC1522Codec">;
+STD<"org.apache.commons.codec.net.RFC1522Codec">;
+
+// Enable operators for org.apache.commons.codec.net.QCodec
+AOR<"org.apache.commons.codec.net.QCodec">;
+LOR<"org.apache.commons.codec.net.QCodec">;
+SOR<"org.apache.commons.codec.net.QCodec">;
+COR<"org.apache.commons.codec.net.QCodec">;
+ROR<"org.apache.commons.codec.net.QCodec">;
+ORU<"org.apache.commons.codec.net.QCodec">;
+LVR<"org.apache.commons.codec.net.QCodec">;
+STD<"org.apache.commons.codec.net.QCodec">;
+
+// Enable operators for org.apache.commons.codec.net.URLCodec
+AOR<"org.apache.commons.codec.net.URLCodec">;
+LOR<"org.apache.commons.codec.net.URLCodec">;
+SOR<"org.apache.commons.codec.net.URLCodec">;
+COR<"org.apache.commons.codec.net.URLCodec">;
+ROR<"org.apache.commons.codec.net.URLCodec">;
+ORU<"org.apache.commons.codec.net.URLCodec">;
+LVR<"org.apache.commons.codec.net.URLCodec">;
+STD<"org.apache.commons.codec.net.URLCodec">;
+
+// Enable operators for org.apache.commons.codec.net.BCodec
+AOR<"org.apache.commons.codec.net.BCodec">;
+LOR<"org.apache.commons.codec.net.BCodec">;
+SOR<"org.apache.commons.codec.net.BCodec">;
+COR<"org.apache.commons.codec.net.BCodec">;
+ROR<"org.apache.commons.codec.net.BCodec">;
+ORU<"org.apache.commons.codec.net.BCodec">;
+LVR<"org.apache.commons.codec.net.BCodec">;
+STD<"org.apache.commons.codec.net.BCodec">;
+
+// Enable operators for org.apache.commons.codec.Encoder
+AOR<"org.apache.commons.codec.Encoder">;
+LOR<"org.apache.commons.codec.Encoder">;
+SOR<"org.apache.commons.codec.Encoder">;
+COR<"org.apache.commons.codec.Encoder">;
+ROR<"org.apache.commons.codec.Encoder">;
+ORU<"org.apache.commons.codec.Encoder">;
+LVR<"org.apache.commons.codec.Encoder">;
+STD<"org.apache.commons.codec.Encoder">;
+
+// Enable operators for org.apache.commons.codec.StringDecoder
+AOR<"org.apache.commons.codec.StringDecoder">;
+LOR<"org.apache.commons.codec.StringDecoder">;
+SOR<"org.apache.commons.codec.StringDecoder">;
+COR<"org.apache.commons.codec.StringDecoder">;
+ROR<"org.apache.commons.codec.StringDecoder">;
+ORU<"org.apache.commons.codec.StringDecoder">;
+LVR<"org.apache.commons.codec.StringDecoder">;
+STD<"org.apache.commons.codec.StringDecoder">;
+
+// Enable operators for org.apache.commons.codec.StringEncoderComparator
+AOR<"org.apache.commons.codec.StringEncoderComparator">;
+LOR<"org.apache.commons.codec.StringEncoderComparator">;
+SOR<"org.apache.commons.codec.StringEncoderComparator">;
+COR<"org.apache.commons.codec.StringEncoderComparator">;
+ROR<"org.apache.commons.codec.StringEncoderComparator">;
+ORU<"org.apache.commons.codec.StringEncoderComparator">;
+LVR<"org.apache.commons.codec.StringEncoderComparator">;
+STD<"org.apache.commons.codec.StringEncoderComparator">;

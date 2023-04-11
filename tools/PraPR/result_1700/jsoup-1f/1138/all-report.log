@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local tagName is replaced by access to field SQ
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 15
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local tagName is replaced by access to field DQ
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 15
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local tagName is replaced by access to field baseUri
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 15
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local tagName is replaced a call tagName.toLowerCase()
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 15
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 16
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 16
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning enclosing method
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 16
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 17
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 18
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 16
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 18
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/Parser.java
+	Line Number: 120
+	Block: 24
+	First Index: 18
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

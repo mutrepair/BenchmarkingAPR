@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local s is replaced by local limitLast to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local s is replaced by local groupNo to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local s is replaced by local groupPos to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local s is replaced by local eob to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local s is replaced by local nextSym to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_5
+	Description: local s is replaced by local bsBuffShadow to be used
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local s is replaced by access to field last
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local s is replaced by access to field origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local s is replaced by access to field blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local s is replaced by access to field bsBuff
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local s is replaced by access to field bsLive
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 412
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 415
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from -1 to 1
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 413
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 414
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 415
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 415
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 415
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment -1
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 643
+	Block: 159
+	First Index: 413
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

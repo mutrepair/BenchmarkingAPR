@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to val is guarded using value null
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to val is guarded using field key
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.nodes.Attribute.val is replaced by the call to org.jsoup.nodes.Attribute::getKey()Ljava/lang/String;
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jsoup.nodes.Attribute.val is replaced by the call to org.jsoup.nodes.Attribute::getValue()Ljava/lang/String;
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jsoup.nodes.Attribute.val is replaced by the call to org.jsoup.nodes.Attribute::html()Ljava/lang/String;
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.jsoup.nodes.Attribute.val is replaced by the call to org.jsoup.nodes.Attribute::toString()Ljava/lang/String;
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to val with an access to key
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to val is guarded returning default value null
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to val is guarded returning field key
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/jsoup/nodes/Attribute::getValue
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/jsoup/nodes/Attribute::getValue to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/jsoup/nodes/Attribute.java
+	Line Number: 80
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

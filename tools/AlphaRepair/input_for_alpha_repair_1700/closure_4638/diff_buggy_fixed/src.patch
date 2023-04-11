@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/4638/com/google/javascript/rhino/jstype/JSTypeRegistry.java	2022-10-31 19:47:37.887810556 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/JSTypeRegistry.java	2022-10-29 11:49:43.056419312 -0500
+@@ -1605,7 +1605,7 @@
+         boolean isConstructor = false;
+         Node current = n.getFirstChild();
+         if (current.getType() == Token.THIS ||
+-            false) {
++            current.getType() == Token.NEW) {
+           Node contextNode = current.getFirstChild();
+           thisType =
+               ObjectType.cast(

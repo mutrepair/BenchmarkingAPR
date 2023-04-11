@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/610/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:39.271805560 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -419,7 +419,7 @@
+         }
+ 
+         for (int i = 0; i < numberQuadruple; i++) {
+-            dataIndex = i / 4;
++            dataIndex = i * 4;
+             marker0 = base64Data[dataIndex + 2];
+             marker1 = base64Data[dataIndex + 3];
+ 

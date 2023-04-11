@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local standardOffset is replaced by local saveMillis to be used
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local saveMillis is replaced by local standardOffset to be used
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local standardOffset is replaced by access to field iMonthOfYear
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local saveMillis is replaced by access to field iMonthOfYear
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local standardOffset is replaced by access to field iDayOfMonth
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local saveMillis is replaced by access to field iDayOfMonth
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local standardOffset is replaced by access to field iDayOfWeek
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local saveMillis is replaced by access to field iDayOfWeek
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local standardOffset is replaced by access to field iMillisOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local saveMillis is replaced by access to field iMillisOfDay
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/joda/time/tz/DateTimeZoneBuilder.java
+	Line Number: 550
+	Block: 13
+	First Index: 11
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------

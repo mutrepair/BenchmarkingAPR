@@ -1,0 +1,2 @@
+	    int getFinalCRC() {
+return getFinalCRC;	    }

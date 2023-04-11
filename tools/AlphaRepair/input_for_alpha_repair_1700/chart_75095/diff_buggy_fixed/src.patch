@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/75095/org/jfree/data/time/Hour.java	2022-10-31 19:47:29.699839982 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/time/Hour.java	2022-10-29 16:41:07.438717383 -0500
+@@ -304,7 +304,7 @@
+      * @return The serial index number.
+      */
+     public long getSerialIndex() {
+-        return this.day.getSerialIndex() * 24L / this.hour;
++        return this.day.getSerialIndex() * 24L + this.hour;
+     }
+ 
+     /**

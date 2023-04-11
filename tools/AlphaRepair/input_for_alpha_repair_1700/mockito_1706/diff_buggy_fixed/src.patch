@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1706/org/mockito/internal/progress/ArgumentMatcherStorageImpl.java	2022-10-31 19:48:05.527709594 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/progress/ArgumentMatcherStorageImpl.java	2022-12-26 15:13:56.653676672 -0600
+@@ -66,7 +66,7 @@
+ 
+     private List<Matcher> popLastArgumentMatchers(int count) {
+         assertState(!matcherStack.isEmpty(), "No matchers found.");
+-        assertState(matcherStack.size() == count,
++        assertState(matcherStack.size() >= count,
+                 "" + count + " matchers expected, " + matcherStack.size() + " recorded.");
+         List<Matcher> result = new LinkedList<Matcher>();
+         result.addAll(matcherStack.subList(matcherStack.size() - count, matcherStack.size()));

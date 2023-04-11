@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to CHUNK_SEPARATOR with an access to STANDARD_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to CHUNK_SEPARATOR with an access to URL_SAFE_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to CHUNK_SEPARATOR with an access to DECODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field CHUNK_SEPARATOR is replaced by access to local binaryData
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local binaryData is replaced by access to field CHUNK_SEPARATOR
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local binaryData is replaced by access to field STANDARD_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local binaryData is replaced by access to field URL_SAFE_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local binaryData is replaced by access to field DECODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 76 with 77
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/binary/Base64::getEncodeLength
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 827
+	Block: 111
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

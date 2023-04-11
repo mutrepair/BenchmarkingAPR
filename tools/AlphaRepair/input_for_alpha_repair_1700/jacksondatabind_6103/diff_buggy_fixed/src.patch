@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6103/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-10-31 19:47:46.771778376 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-12-26 15:13:52.497631769 -0600
+@@ -1342,7 +1342,7 @@
+             if (rawType == CLASS_ITERABLE) {
+                 // [Issue#199]: Can and should 'upgrade' to a Collection type:
+                 TypeFactory tf = ctxt.getTypeFactory();
+-                JavaType elemType = (type.containedTypeCount() > 0) ? type.containedType(1) : TypeFactory.unknownType();
++                JavaType elemType = (type.containedTypeCount() > 0) ? type.containedType(0) : TypeFactory.unknownType();
+                 CollectionType ct = tf.constructCollectionType(Collection.class, elemType);
+                 // Should we re-introspect beanDesc? For now let's not...
+                 return createCollectionDeserializer(ctxt, ct, beanDesc);

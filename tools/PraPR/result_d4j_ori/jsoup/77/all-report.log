@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.jsoup.parser.Token$EndTag.name()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.jsoup.parser.Token$EndTag.name()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to name with a call to toString
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.parser.Token$EndTag::name()Ljava/lang/String; is guarded using default value null
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to name()Ljava/lang/String; is guarded returning enclosing method
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/parser/Token$EndTag::name
+	File Name: org/jsoup/parser/XmlTreeBuilder.java
+	Line Number: 117
+	Block: 26
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

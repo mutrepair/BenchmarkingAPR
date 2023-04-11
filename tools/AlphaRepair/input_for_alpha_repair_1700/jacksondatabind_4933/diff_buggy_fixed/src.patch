@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4933/com/fasterxml/jackson/databind/ObjectMapper.java	2022-10-31 19:47:46.719778565 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java	2022-12-26 15:13:52.493631727 -0600
+@@ -2871,7 +2871,7 @@
+         try {
+             Object result;
+             JsonToken t = _initForReading(jp);
+-            if (false) {
++            if (t == JsonToken.VALUE_NULL) {
+                 // [JACKSON-643]: Ask JsonDeserializer what 'null value' to use:
+                 DeserializationContext ctxt = createDeserializationContext(jp,
+                         getDeserializationConfig());

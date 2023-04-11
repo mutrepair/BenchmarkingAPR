@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksondatabind-1f/mutants/912/com/fasterxml/jackson/databind/SerializationConfig.java	2023-04-04 14:33:25.757955671 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/SerializationConfig.java	2023-04-04 13:31:53.309632408 -0500
+@@ -300,7 +300,7 @@
+      */
+     public SerializationConfig with(SerializationFeature feature)
+     {
+-        int newSerFeatures = _serFeatures & feature.getMask();
++        int newSerFeatures = _serFeatures | feature.getMask();
+         return (newSerFeatures == _serFeatures) ? this
+                 : new SerializationConfig(this, _mapperFeatures, newSerFeatures);
+     }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/10439/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-10-31 19:47:44.831785425 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1564,7 +1564,7 @@
+         }
+ 
+         // And then we may have 1 or 2 leftover bytes to encode
+-        int inputLeft = inputEnd * inputPtr; // 0, 1 or 2
++        int inputLeft = inputEnd - inputPtr; // 0, 1 or 2
+         if (inputLeft > 0) { // yes, but do we have room for output?
+             if (_outputTail > safeOutputEnd) { // don't really need 6 bytes but...
+                 _flushBuffer();

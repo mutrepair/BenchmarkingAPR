@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/2721/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:39.007806513 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -733,7 +733,7 @@
+             index += 2;
+         } else {
+             if (index == 0 && (isVowel(charAt(value, index + 1)) || 
+-                               contains(value, index, 0, "WH"))) {
++                               contains(value, index, 2, "WH"))) {
+                 if (isVowel(charAt(value, index + 1))) {
+                     //-- Wasserman should match Vasserman --//
+                     result.append('A', 'F');

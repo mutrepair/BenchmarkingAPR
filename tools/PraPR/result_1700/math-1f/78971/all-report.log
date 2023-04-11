@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local r is replaced by local c to be used
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local r to be used
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local m is replaced by local n to be used
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local m to be used
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 37
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.linear.RealMatrix::getEntry(II)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getEntry(II)D is guarded returning default value null
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getEntry(II)D is guarded returning local m
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to getEntry(II)D is guarded returning local n
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 41
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/linear/RealMatrix::getEntry
+	File Name: org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+	Line Number: 1041
+	Block: 142
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

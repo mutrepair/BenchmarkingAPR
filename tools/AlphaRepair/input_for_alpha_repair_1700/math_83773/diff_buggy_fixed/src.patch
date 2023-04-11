@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/83773/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2022-10-31 19:48:00.579727849 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2022-12-26 15:13:55.677666129 -0600
+@@ -942,7 +942,7 @@
+      */
+     private int[] sortedIndices(final double[] doubles) {
+         final DoubleIndex[] dis = new DoubleIndex[doubles.length];
+-        for (int i = 1; i < doubles.length; i++) {
++        for (int i = 0; i < doubles.length; i++) {
+             dis[i] = new DoubleIndex(doubles[i], i);
+         }
+         Arrays.sort(dis);

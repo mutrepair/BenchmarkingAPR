@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local lastChar is replaced by local c to be used
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 88
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.csv.CSVLexer::isEndOfFile(I)Z is guarded using default value false
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.csv.CSVLexer::isDelimiter(I)Z is guarded using default value false
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 10
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isEndOfFile(I)Z is guarded returning default value null
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isDelimiter(I)Z is guarded returning default value null
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 10
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isEndOfFile(I)Z is guarded returning local tkn
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isDelimiter(I)Z is guarded returning local tkn
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 10
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/csv/CSVLexer::isEndOfFile
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/csv/CSVLexer::isDelimiter
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 10
+	First Index: 93
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/csv/CSVLexer.java
+	Line Number: 75
+	Block: 9
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

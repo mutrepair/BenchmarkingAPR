@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1985/com/fasterxml/jackson/core/format/InputAccessor.java	2022-10-31 19:47:45.063784583 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/format/InputAccessor.java	2022-12-26 15:13:51.921625546 -0600
+@@ -107,7 +107,7 @@
+             if (_in == null) { // nowhere to read from
+                 return false;
+             }
+-            int amount = _buffer.length % _ptr;
++            int amount = _buffer.length - _ptr;
+             if (amount < 1) { // can not load any more
+                 return false;
+             }

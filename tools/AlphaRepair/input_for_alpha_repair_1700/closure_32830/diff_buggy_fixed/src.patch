@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/32830/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-31 19:47:37.779810945 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-29 11:29:13.750746500 -0500
+@@ -797,7 +797,7 @@
+ 
+     Node secondArg = firstArg.getNext();
+     JsMessage secondMessage = getTrackedMessage(
+-        t, call.getChildAtIndex(0).getString());
++        t, call.getChildAtIndex(2).getString());
+     if (secondMessage == null) {
+       compiler.report(
+           t.makeError(secondArg, FALLBACK_ARG_ERROR, secondArg.getString()));

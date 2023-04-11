@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/12900/org/apache/commons/jxpath/ri/axes/ChildContext.java	2022-10-31 19:47:51.091762634 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/axes/ChildContext.java	2022-12-26 15:13:54.173649879 -0600
+@@ -87,7 +87,7 @@
+     }
+ 
+     public boolean nextNode() {
+-        return setPosition(getCurrentPosition() + -1);
++        return setPosition(getCurrentPosition() + 1);
+     }
+ 
+     public void reset() {

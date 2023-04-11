@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1016/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.531790142 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -339,7 +339,7 @@
+   public JsonToken peek() throws IOException {
+     quickPeek();
+ 
+-    if (false) {
++    if (token == null) {
+       decodeLiteral();
+     }
+ 

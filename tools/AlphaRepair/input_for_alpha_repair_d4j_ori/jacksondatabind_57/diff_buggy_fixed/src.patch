@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_57/src/main/java/com/fasterxml/jackson/databind/ObjectReader.java	2023-01-16 15:29:43.324280148 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/57/patch/./com/fasterxml/jackson/databind/ObjectReader.java	2023-01-16 15:29:43.292279749 -0600
+@@ -1438,7 +1438,7 @@
+         if (_dataFormatReaders != null) {
+             return _detectBindAndReadValues(_dataFormatReaders.findFormat(src, offset, length), false);
+         }
+-        return _bindAndReadValues(_considerFilter(_parserFactory.createParser(src), 
++        return _bindAndReadValues(_considerFilter(_parserFactory.createParser(src, offset, length),
+                 true));
+     }
+ 

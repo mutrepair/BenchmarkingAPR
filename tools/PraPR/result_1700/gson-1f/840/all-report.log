@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getParameterTypes with a call to getExceptionTypes
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Constructor::getParameterTypes()[Ljava/lang/Class; is guarded using default value null
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getParameterTypes()[Ljava/lang/Class; is guarded returning default value null
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getParameterTypes()[Ljava/lang/Class; is guarded returning local constructor
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 46
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 47
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Constructor::getParameterTypes
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 44
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 47
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 87
+	Block: 12
+	First Index: 47
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

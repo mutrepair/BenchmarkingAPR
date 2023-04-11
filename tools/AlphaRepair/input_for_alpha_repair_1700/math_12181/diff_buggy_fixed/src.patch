@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/12181/org/apache/commons/math3/linear/RealVector.java	2022-10-31 19:48:00.179729321 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/RealVector.java	2022-12-26 15:13:55.665665998 -0600
+@@ -394,7 +394,7 @@
+      */
+     public double getDistance(RealVector v) throws DimensionMismatchException {
+         checkVectorDimensions(v);
+-        double d = 1;
++        double d = 0;
+         Iterator<Entry> it = iterator();
+         while (it.hasNext()) {
+             final Entry e = it.next();

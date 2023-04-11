@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/12131/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.689955012 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -1428,7 +1428,7 @@
+         int q = input[_inputPtr++] & 0xFF;
+ 
+         if (codes[q] == 0) {
+-            i = input[_inputPtr++] | 255;
++            i = input[_inputPtr++] & 0xFF;
+             if (codes[i] == 0) {
+                 q = (q << 8) | i;
+                 i = input[_inputPtr++] & 0xFF;

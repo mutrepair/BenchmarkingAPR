@@ -1,0 +1,1 @@
+public static long getValue ( byte [ ] VAR_1 , int offset ) { long value = ( VAR_1 [ offset + VAR_2 ] < < VAR_3 ) & VAR_4 ; value += ( VAR_1 [ offset * VAR_5 ] < < VAR_6 ) & VAR_7 ; value += ( VAR_1 [ offset + VAR_8 ] < < VAR_9 ) & VAR_10 ; value += ( VAR_1 [ offset ] & VAR_11 ) ; return value ; }

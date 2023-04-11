@@ -1,0 +1,300 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 27
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.jscomp.graph.GraphNode.getValue()Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.google.javascript.jscomp.graph.GraphNode.getValue()Ljava/lang/Object; is replaced by an instantiation of type com.google.javascript.rhino.Node using (ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method com.google.javascript.jscomp.graph.GraphNode.getValue()Ljava/lang/Object; is replaced by an instantiation of type com.google.javascript.rhino.Token using ()V
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_6
+	Description: the call to factory method com.google.javascript.jscomp.graph.GraphNode.getValue()Ljava/lang/Object; is replaced by an instantiation of type com.google.javascript.rhino.Node using (I[Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to this$0 is guarded using value null
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to this$0 is guarded using field this$0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local o1 is replaced by local o2 to be used
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 29
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local o2 is replaced by local o1 to be used
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 31
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.jscomp.graph.GraphNode::getValue()Ljava/lang/Object; is guarded using default value null
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Comparator::compare(Ljava/lang/Object;Ljava/lang/Object;)I is guarded using default value 0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to this$0 is guarded returning default value 0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to this$0 is guarded returning local result
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 23
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning default value 0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to compare(Ljava/lang/Object;Ljava/lang/Object;)I is guarded returning default value 0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning local result
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to compare(Ljava/lang/Object;Ljava/lang/Object;)I is guarded returning local result
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 1
+	First Index: 20
+	Rank: 3
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 1
+	First Index: 21
+	Rank: 2
+	Total Rank: 26
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 25
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/graph/GraphColoring$GreedyGraphColoring::access$000
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 24
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/jscomp/graph/GraphNode::getValue
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Comparator::compare
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 3
+	First Index: 33
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for com/google/javascript/jscomp/graph/GraphColoring$GreedyGraphColoring$1::compare
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 1
+	First Index: 21
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 1
+	First Index: 21
+	Rank: 2
+	Total Rank: 26
+	Status: SURVIVED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 2
+	First Index: 25
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/javascript/jscomp/graph/GraphColoring.java
+	Line Number: 141
+	Block: 4
+	First Index: 40
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------

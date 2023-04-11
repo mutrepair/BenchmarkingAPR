@@ -1,0 +1,8 @@
+    public Duration toDuration() {
+        long durMillis = toDurationMillis();
+        if (durMillis == 0) {
+            return Duration.ZERO;
+        } else {
+            return new Duration(durMillis);
+        }
+    }

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/80734/org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java	2023-04-04 14:33:26.113959121 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java	2023-04-04 13:31:54.021640868 -0500
+@@ -436,7 +436,7 @@
+                 currentCost = computeCost(currentResiduals);
+ 
+                 // compute the scaled actual reduction
+-                double actRed = +1.0;
++                double actRed = -1.0;
+                 if (0.1 * currentCost < previousCost) {
+                     double r = currentCost / previousCost;
+                     actRed = 1.0 - r * r;

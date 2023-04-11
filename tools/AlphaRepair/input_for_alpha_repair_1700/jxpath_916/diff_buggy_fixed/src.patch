@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/916/org/apache/commons/jxpath/ri/model/NodePointer.java	2022-10-31 19:47:51.467761261 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/NodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -623,7 +623,7 @@
+         }
+         buffer.append(getName());
+ 
+-        if (index != WHOLE_COLLECTION == isCollection()) {
++        if (index != WHOLE_COLLECTION && isCollection()) {
+             buffer.append('[').append(index + 1).append(']');
+         }
+         return buffer.toString();

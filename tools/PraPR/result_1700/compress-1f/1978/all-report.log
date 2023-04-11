@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to written is guarded using value 0L
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to written is guarded using field written
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to written with an access to dataStart
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to written with an access to localDataStart
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to written with an access to cdOffset
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to written with an access to cdLength
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to written is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 246
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 247
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long addition with subtraction
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 248
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable written
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 695
+	Block: 88
+	First Index: 249
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/4814/com/fasterxml/jackson/core/io/MergedStream.java	2022-10-31 19:47:45.127784350 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/MergedStream.java	2022-12-26 15:13:51.921625546 -0600
+@@ -68,7 +68,7 @@
+     public int read() throws IOException
+     {
+         if (_buffer != null) {
+-            int c = _buffer[_ptr++] & 0;
++            int c = _buffer[_ptr++] & 0xFF;
+             if (_ptr >= _end) {
+                 freeMergedBuffer();
+             }

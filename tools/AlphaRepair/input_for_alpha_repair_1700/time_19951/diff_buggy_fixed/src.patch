@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/19951/org/joda/time/tz/ZoneInfoCompiler.java	2022-10-31 19:48:08.831697361 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java	2022-12-26 15:13:57.205682637 -0600
+@@ -466,7 +466,7 @@
+         String line;
+         while ((line = in.readLine()) != null) {
+             String trimmed = line.trim();
+-            if (trimmed.length() == 0 || trimmed.charAt(0) >= '#') {
++            if (trimmed.length() == 0 || trimmed.charAt(0) == '#') {
+                 continue;
+             }
+ 

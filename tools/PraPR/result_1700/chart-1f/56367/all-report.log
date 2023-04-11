@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local series is replaced by local item to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 233
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local item is replaced by local series to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 234
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local series is replaced by local pass to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 233
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local item is replaced by local pass to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 234
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local series is replaced by local itemCount to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 233
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local item is replaced by local itemCount to be used
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 234
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getYValue with a call to getXValue
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 237
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jfree.data.xy.XYDataset::getYValue(II)D is guarded using default value 0.D
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 237
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getYValue(II)D is guarded returning enclosing method
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 237
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 235
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 236
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jfree/data/xy/XYDataset::getYValue
+	File Name: org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java
+	Line Number: 467
+	Block: 23
+	First Index: 237
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------

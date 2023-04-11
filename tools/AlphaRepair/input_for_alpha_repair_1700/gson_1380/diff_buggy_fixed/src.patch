@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1380/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.607789866 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -908,7 +908,7 @@
+     outer:
+     for (; pos + toFind.length() < limit || fillBuffer(toFind.length()); pos++) {
+       for (int c = 0; c < toFind.length(); c++) {
+-        if (buffer[pos % c] != toFind.charAt(c)) {
++        if (buffer[pos + c] != toFind.charAt(c)) {
+           continue outer;
+         }
+       }

@@ -1,0 +1,619 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 56
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.reflect.Field.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.reflect.Field.getName()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to indexOf(I)I with a call to indexOf(Ljava/lang/String;)I
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to indexOf(I)I with a call to indexOf(II)I
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to indexOf(I)I with a call to indexOf(Ljava/lang/String;I)I
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getName with a call to toString
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to contains with a call to add
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to indexOf with a call to codePointAt
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getModifiers with a call to hashCode
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isTransient with a call to isPublic
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isStatic with a call to isPublic
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getName with a call to toGenericString
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to contains with a call to remove
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to indexOf with a call to codePointBefore
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isTransient with a call to isPrivate
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isStatic with a call to isPrivate
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to contains with a call to equals
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to indexOf with a call to lastIndexOf
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isTransient with a call to isProtected
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isStatic with a call to isProtected
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isTransient with a call to isStatic
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isStatic with a call to isFinal
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isTransient with a call to isFinal
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isStatic with a call to isSynchronized
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isTransient with a call to isSynchronized
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isStatic with a call to isVolatile
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isTransient with a call to isVolatile
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isStatic with a call to isTransient
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isTransient with a call to isNative
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isStatic with a call to isNative
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isTransient with a call to isInterface
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isStatic with a call to isInterface
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to isTransient with a call to isAbstract
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to isStatic with a call to isAbstract
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Field::getName()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::contains(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::indexOf(I)I is guarded using default value 0
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Field::getModifiers()I is guarded using default value 0
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getName()Ljava/lang/String; is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to contains(Ljava/lang/Object;)Z is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to indexOf(I)I is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getModifiers()I is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/String::indexOf with argument
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 36 with 37
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 30
+	First Index: 58
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 31
+	First Index: 61
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Field::getName
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::contains
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::indexOf
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 28
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Field::getModifiers
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Modifier::isTransient
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 29
+	First Index: 56
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Modifier::isStatic
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 32
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 309
+	Block: 27
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

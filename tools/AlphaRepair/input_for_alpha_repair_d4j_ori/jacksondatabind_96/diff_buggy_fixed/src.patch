@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_96/src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2023-01-16 15:29:45.648309170 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/96/patch/./com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2023-01-16 15:29:45.612308720 -0600
+@@ -732,7 +732,7 @@
+             // 25-May-2018, tatu: as per [databind#2051], looks like we have to get
+             //    not implicit name, but name with possible strategy-based-rename
+ //            paramName = candidate.findImplicitParamName(0);
+-            paramName = candidate.findImplicitParamName(0);
++            paramName = candidate.paramName(0);
+             useProps = (paramName != null) && paramDef.couldSerialize();
+         }
+         if (useProps) {

@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.gson.JsonSerializationContextDefault.serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is replaced by an instantiation of type com.google.gson.JsonElement using ()V
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method com.google.gson.JsonSerializationContextDefault.serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is replaced by an instantiation of type com.google.gson.JsonPrimitive using (Ljava/lang/String;)V
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NON_VIABLE
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.google.gson.JsonSerializationContextDefault.serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is replaced by an instantiation of type com.google.gson.JsonObject using ()V
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method com.google.gson.JsonSerializationContextDefault.serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is replaced by an instantiation of type com.google.gson.JsonArray using ()V
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method com.google.gson.JsonSerializationContextDefault.serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is replaced by an instantiation of type com.google.gson.JsonPrimitive using (Ljava/lang/Number;)V
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NON_VIABLE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; with a call to serialize(Ljava/lang/Object;)Lcom/google/gson/JsonElement;
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; with a call to serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;)Lcom/google/gson/JsonElement;
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.gson.JsonSerializationContextDefault::serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is guarded using default value null
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Z)Lcom/google/gson/JsonElement; is guarded returning default value null
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/gson/JsonSerializationContextDefault::serialize
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/google/gson/Gson::toJsonTree
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/google/gson/Gson::toJsonTree to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/google/gson/Gson.java
+	Line Number: 231
+	Block: 10
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1336/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.371765262 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -168,7 +168,7 @@
+      */
+     public String consumeToAny(String... seq) {
+         StringBuilder accum = new StringBuilder();
+-        while (!matchesAny(seq))
++        while (!queue.isEmpty() && !matchesAny(seq))
+             accum.append(consume());
+ 
+         return accum.toString();

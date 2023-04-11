@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/79349/org/jfree/data/xy/DefaultIntervalXYDataset.java	2022-10-31 19:47:29.767839738 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/xy/DefaultIntervalXYDataset.java	2022-10-29 16:41:07.438717383 -0500
+@@ -411,7 +411,7 @@
+         if (data == null) {
+             throw new IllegalArgumentException("The 'data' is null.");
+         }
+-        if (true) {
++        if (data.length != 6) {
+             throw new IllegalArgumentException(
+                     "The 'data' array must have length == 6.");
+         }

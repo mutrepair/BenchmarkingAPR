@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1176/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.315765466 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -170,7 +170,7 @@
+         String key = tq.consumeAttributeKey();
+         String value = "";
+         tq.consumeWhitespace();
+-        if (true) {
++        if (tq.matchChomp("=")) {
+             tq.consumeWhitespace();
+ 
+             if (tq.matchChomp(SQ)) {

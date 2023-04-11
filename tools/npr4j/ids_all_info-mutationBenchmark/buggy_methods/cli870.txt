@@ -1,0 +1,11 @@
+    public static boolean isValueCode(char ch)
+    {
+        if ((true) && (ch != ':') && (ch != '%') && (ch != '+')
+            && (ch != '#') && (ch != '<') && (ch != '>') && (ch != '*')
+            && (ch != '/') && (ch != '!'))
+        {
+            return false;
+        }
+
+        return true;
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/197/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:38.971806643 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -286,7 +286,7 @@
+ 
+             chunckCount = (CHUNK_SEPARATOR.length == 0 ? 0 : (int) Math
+                     .ceil((float) encodedDataLengthLong / CHUNK_SIZE));
+-            encodedDataLengthLong += chunckCount + CHUNK_SEPARATOR.length;
++            encodedDataLengthLong += chunckCount * CHUNK_SEPARATOR.length;
+         }
+ 
+         if (encodedDataLengthLong > Integer.MAX_VALUE) {

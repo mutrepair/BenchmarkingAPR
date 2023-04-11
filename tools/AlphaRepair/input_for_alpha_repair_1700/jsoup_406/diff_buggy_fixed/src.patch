@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/406/org/jsoup/nodes/Node.java	2022-10-31 19:47:50.503764780 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Node.java	2022-12-26 15:13:53.649644217 -0600
+@@ -328,7 +328,7 @@
+     }
+ 
+     protected void indent(StringBuilder accum) {
+-        accum.append("\n").append(StringUtils.leftPad("", nodeDepth() -1 / 2));
++        accum.append("\n").append(StringUtils.leftPad("", nodeDepth() -1 * 2));
+     }
+ 
+     @Override

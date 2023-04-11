@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/102/org/apache/commons/cli/Options.java	2022-10-31 19:47:31.067835081 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Options.java	2022-12-26 15:13:38.053475668 -0600
+@@ -70,7 +70,7 @@
+     {
+         Iterator options = group.getOptions().iterator();
+ 
+-        if (true)
++        if (group.isRequired())
+         {
+             requiredOpts.add(group);
+         }

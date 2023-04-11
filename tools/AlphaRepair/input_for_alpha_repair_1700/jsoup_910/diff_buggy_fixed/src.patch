@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/910/org/jsoup/select/Elements.java	2022-10-31 19:47:50.583764488 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Elements.java	2022-12-26 15:13:53.649644217 -0600
+@@ -51,7 +51,7 @@
+      */
+     public boolean hasAttr(String attributeKey) {
+         for (Element element : contents) {
+-            if (true)
++            if (element.hasAttr(attributeKey))
+                 return true;
+         }
+         return false;

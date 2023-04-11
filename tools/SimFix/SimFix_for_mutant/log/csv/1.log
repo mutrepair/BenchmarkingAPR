@@ -1,0 +1,3274 @@
+=================================================
+Project : csv_1	start : 22/12/05 11:19
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:19
+Mon Dec 05 11:19:12 CST 2022 org.apache.commons.csv.CSVFormat,176
+Failed time : 22/12/05 11:19
+=================================================
+Project : csv_1	start : 22/12/05 11:19
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:19
+Mon Dec 05 11:19:44 CST 2022 org.apache.commons.csv.CSVFormat,176
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:20
+Mon Dec 05 11:20:17 CST 2022 Mon Dec 05 11:20:17 CST 2022 : org.apache.commons.csv.CSVPrinter,213=>Find no block
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:20
+Mon Dec 05 11:20:24 CST 2022 Mon Dec 05 11:20:24 CST 2022 : org.apache.commons.csv.CSVPrinter,213=>Find no block
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVParserTest::testHeader | 22/12/05 11:20
+Mon Dec 05 11:20:34 CST 2022 org.apache.commons.csv.CSVParser,175
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVParserTest::testHeader | 22/12/05 11:20
+Mon Dec 05 11:20:41 CST 2022 org.apache.commons.csv.CSVParser,175
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:20
+Mon Dec 05 11:20:50 CST 2022 org.apache.commons.csv.Lexer,96
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:20
+Mon Dec 05 11:20:58 CST 2022 org.apache.commons.csv.Lexer,96
+Failed time : 22/12/05 11:20
+=================================================
+Project : csv_1	start : 22/12/05 11:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:21
+Mon Dec 05 11:21:06 CST 2022 org.apache.commons.csv.Lexer,132
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return c==encapsulator;
+
+Time : 22/12/05 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3428090415820635 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return c==delimiter;
+
+Time : 22/12/05 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c>=encapsulator;
+
+Time : 22/12/05 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return c==encapsulator;
+
+Time : 22/12/05 11:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 11:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3333333333333335 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 11:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c>=encapsulator;
+
+Time : 22/12/05 11:22
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 11:22
+----------------------------------------
+Success time : 22/12/05 11:23
+=================================================
+Project : csv_1	start : 22/12/05 11:23
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:23
+Mon Dec 05 11:23:50 CST 2022 org.apache.commons.csv.Lexer,132
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return c==encapsulator;
+
+Time : 22/12/05 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3428090415820635 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return c==delimiter;
+
+Time : 22/12/05 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c>=encapsulator;
+
+Time : 22/12/05 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return c==encapsulator;
+
+Time : 22/12/05 11:24
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3333333333333335 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c>=encapsulator;
+
+Time : 22/12/05 11:25
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>132,132]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 11:25
+----------------------------------------
+Success time : 22/12/05 11:26
+=================================================
+Project : csv_1	start : 22/12/05 11:26
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:26
+Mon Dec 05 11:26:24 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:27
+=================================================
+Project : csv_1	start : 22/12/05 11:27
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:27
+Mon Dec 05 11:27:15 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:27
+=================================================
+Project : csv_1	start : 22/12/05 11:27
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCR | 22/12/05 11:27
+Mon Dec 05 11:28:06 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 11:28
+=================================================
+Project : csv_1	start : 22/12/05 11:28
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCR | 22/12/05 11:28
+Mon Dec 05 11:28:14 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 11:28
+=================================================
+Project : csv_1	start : 22/12/05 11:28
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:28
+Mon Dec 05 11:28:22 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:28
+=================================================
+Project : csv_1	start : 22/12/05 11:28
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:29
+Mon Dec 05 11:29:05 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:29
+=================================================
+Project : csv_1	start : 22/12/05 11:29
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCRLF | 22/12/05 11:29
+Mon Dec 05 11:29:47 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,58
+Failed time : 22/12/05 11:29
+=================================================
+Project : csv_1	start : 22/12/05 11:29
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCRLF | 22/12/05 11:29
+Mon Dec 05 11:29:54 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,58
+Failed time : 22/12/05 11:29
+=================================================
+Project : csv_1	start : 22/12/05 11:29
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 11:29
+Mon Dec 05 11:30:04 CST 2022 Mon Dec 05 11:30:04 CST 2022 : org.apache.commons.csv.CSVLexer,203=>Find no block
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 11:30
+Mon Dec 05 11:30:11 CST 2022 Mon Dec 05 11:30:11 CST 2022 : org.apache.commons.csv.CSVLexer,203=>Find no block
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVParserTest::testDefaultFormat | 22/12/05 11:30
+Mon Dec 05 11:30:19 CST 2022 org.apache.commons.csv.CSVParser,171
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVParserTest::testDefaultFormat | 22/12/05 11:30
+Mon Dec 05 11:30:28 CST 2022 org.apache.commons.csv.CSVParser,171
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:30
+Mon Dec 05 11:30:40 CST 2022 org.apache.commons.csv.Lexer,107
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:30
+Mon Dec 05 11:30:50 CST 2022 org.apache.commons.csv.Lexer,107
+Failed time : 22/12/05 11:30
+=================================================
+Project : csv_1	start : 22/12/05 11:30
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:30
+Mon Dec 05 11:31:00 CST 2022 org.apache.commons.csv.CSVLexer,57
+Failed time : 22/12/05 11:31
+=================================================
+Project : csv_1	start : 22/12/05 11:31
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:31
+Mon Dec 05 11:31:15 CST 2022 org.apache.commons.csv.CSVLexer,57
+Failed time : 22/12/05 11:31
+=================================================
+Project : csv_1	start : 22/12/05 11:31
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:31
+Mon Dec 05 11:31:39 CST 2022 org.apache.commons.csv.CSVLexer,56
+Failed time : 22/12/05 11:31
+=================================================
+Project : csv_1	start : 22/12/05 11:31
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 11:31
+Mon Dec 05 11:31:55 CST 2022 org.apache.commons.csv.CSVLexer,56
+Failed time : 22/12/05 11:32
+=================================================
+Project : csv_1	start : 22/12/05 11:32
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 11:32
+Mon Dec 05 11:32:20 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 11:32
+=================================================
+Project : csv_1	start : 22/12/05 11:32
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 11:32
+Mon Dec 05 11:33:04 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 11:33
+=================================================
+Project : csv_1	start : 22/12/05 11:33
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 11:33
+Mon Dec 05 11:33:49 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 11:34
+=================================================
+Project : csv_1	start : 22/12/05 11:34
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 11:34
+Mon Dec 05 11:34:08 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 11:34
+=================================================
+Project : csv_1	start : 22/12/05 11:34
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:34
+Mon Dec 05 11:34:35 CST 2022 org.apache.commons.csv.CSVPrinter,176
+Failed time : 22/12/05 11:34
+=================================================
+Project : csv_1	start : 22/12/05 11:34
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:34
+Mon Dec 05 11:35:02 CST 2022 org.apache.commons.csv.CSVPrinter,176
+Failed time : 22/12/05 11:35
+=================================================
+Project : csv_1	start : 22/12/05 11:35
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken5 | 22/12/05 11:35
+Mon Dec 05 11:35:28 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,146
+Failed time : 22/12/05 11:35
+=================================================
+Project : csv_1	start : 22/12/05 11:35
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken5 | 22/12/05 11:35
+Mon Dec 05 11:35:40 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,146
+Failed time : 22/12/05 11:35
+=================================================
+Project : csv_1	start : 22/12/05 11:35
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:35
+Mon Dec 05 11:35:54 CST 2022 org.apache.commons.csv.CSVPrinter,160
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:36
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:37
+----------------------------------------
+Success time : 22/12/05 11:37
+=================================================
+Project : csv_1	start : 22/12/05 11:37
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:37
+Mon Dec 05 11:37:53 CST 2022 org.apache.commons.csv.CSVPrinter,160
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.435694013977125 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c<='#'){
+quote=true;
+}else {
+while(pos<end){
+c=value.charAt(pos);
+if(c=='\n'||c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+pos++;
+}
+if(!quote){
+pos=end-1;
+c=value.charAt(pos);
+if(c<=' '){
+quote=true;
+}
+}
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<=end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>160,180]
+while(pos<end){
+char c=value.charAt(pos);
+if(c=='\r'||c=='\n'||c==escape||c==delim){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+pos++;
+}
+
+Time : 22/12/05 11:39
+----------------------------------------
+Success time : 22/12/05 11:39
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:40
+Mon Dec 05 11:40:07 CST 2022 org.apache.commons.csv.CSVLexer,161
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:40
+Mon Dec 05 11:40:15 CST 2022 org.apache.commons.csv.CSVLexer,161
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:40
+Mon Dec 05 11:40:24 CST 2022 org.apache.commons.csv.CSVFormat,169
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:40
+Mon Dec 05 11:40:32 CST 2022 org.apache.commons.csv.CSVFormat,169
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCR | 22/12/05 11:40
+Mon Dec 05 11:40:39 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,58
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCR | 22/12/05 11:40
+Mon Dec 05 11:40:45 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,58
+Failed time : 22/12/05 11:40
+=================================================
+Project : csv_1	start : 22/12/05 11:40
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:40
+Mon Dec 05 11:40:52 CST 2022 org.apache.commons.csv.CSVPrinter,143
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(newLine){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1803344441792554 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(!format.isCommentingEnabled()){
+return ;
+}
+if(!newLine){
+println();
+}
+out.append(format.getCommentStart());
+out.append(' ');
+
+Time : 22/12/05 11:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>143,147]
+if(true){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>143,147]
+if(newLine){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:41
+----------------------------------------
+Success time : 22/12/05 11:41
+=================================================
+Project : csv_1	start : 22/12/05 11:41
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:41
+Mon Dec 05 11:41:50 CST 2022 org.apache.commons.csv.CSVPrinter,143
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(newLine){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:42
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1803344441792554 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(!format.isCommentingEnabled()){
+return ;
+}
+if(!newLine){
+println();
+}
+out.append(format.getCommentStart());
+out.append(' ');
+
+Time : 22/12/05 11:42
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>143,147]
+if(true){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:42
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>143,147]
+if(newLine){
+newLine=false;
+}else {
+out.append(format.getDelimiter());
+}
+
+Time : 22/12/05 11:42
+----------------------------------------
+Success time : 22/12/05 11:42
+=================================================
+Project : csv_1	start : 22/12/05 11:42
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 11:42
+Mon Dec 05 11:42:44 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 11:42
+=================================================
+Project : csv_1	start : 22/12/05 11:42
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 11:42
+Mon Dec 05 11:42:51 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 11:42
+=================================================
+Project : csv_1	start : 22/12/05 11:42
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:42
+Mon Dec 05 11:42:58 CST 2022 org.apache.commons.csv.Lexer,84
+Failed time : 22/12/05 11:42
+=================================================
+Project : csv_1	start : 22/12/05 11:42
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:43
+Mon Dec 05 11:43:07 CST 2022 org.apache.commons.csv.Lexer,84
+Failed time : 22/12/05 11:43
+=================================================
+Project : csv_1	start : 22/12/05 11:43
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:43
+Mon Dec 05 11:43:18 CST 2022 org.apache.commons.csv.CSVPrinter,132
+Failed time : 22/12/05 11:43
+=================================================
+Project : csv_1	start : 22/12/05 11:43
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:43
+Mon Dec 05 11:43:48 CST 2022 org.apache.commons.csv.CSVPrinter,132
+Failed time : 22/12/05 11:44
+=================================================
+Project : csv_1	start : 22/12/05 11:44
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:44
+Mon Dec 05 11:44:21 CST 2022 org.apache.commons.csv.CSVFormat,192
+Failed time : 22/12/05 11:44
+=================================================
+Project : csv_1	start : 22/12/05 11:44
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:44
+Mon Dec 05 11:44:31 CST 2022 org.apache.commons.csv.CSVFormat,192
+Failed time : 22/12/05 11:44
+=================================================
+Project : csv_1	start : 22/12/05 11:44
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testDisabledComment | 22/12/05 11:44
+Mon Dec 05 11:44:40 CST 2022 org.apache.commons.csv.CSVFormat,279
+Failed time : 22/12/05 11:44
+=================================================
+Project : csv_1	start : 22/12/05 11:44
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testDisabledComment | 22/12/05 11:44
+Mon Dec 05 11:44:48 CST 2022 org.apache.commons.csv.CSVFormat,279
+Failed time : 22/12/05 11:44
+=================================================
+Project : csv_1	start : 22/12/05 11:44
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:44
+Mon Dec 05 11:44:54 CST 2022 org.apache.commons.csv.CSVFormat,192
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(true&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(true&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:46
+----------------------------------------
+Success time : 22/12/05 11:46
+=================================================
+Project : csv_1	start : 22/12/05 11:46
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:46
+Mon Dec 05 11:46:53 CST 2022 org.apache.commons.csv.CSVFormat,192
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(true&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(true&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>192,194]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 11:48
+----------------------------------------
+Success time : 22/12/05 11:48
+=================================================
+Project : csv_1	start : 22/12/05 11:48
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:48
+Mon Dec 05 11:48:50 CST 2022 org.apache.commons.csv.CSVFormat,188
+Failed time : 22/12/05 11:48
+=================================================
+Project : csv_1	start : 22/12/05 11:48
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:48
+Mon Dec 05 11:48:58 CST 2022 org.apache.commons.csv.CSVFormat,188
+Failed time : 22/12/05 11:48
+=================================================
+Project : csv_1	start : 22/12/05 11:48
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 11:48
+Mon Dec 05 11:49:04 CST 2022 org.apache.commons.csv.CSVPrinter,104
+Failed time : 22/12/05 11:49
+=================================================
+Project : csv_1	start : 22/12/05 11:49
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 11:49
+Mon Dec 05 11:49:10 CST 2022 org.apache.commons.csv.CSVPrinter,104
+Failed time : 22/12/05 11:49
+=================================================
+Project : csv_1	start : 22/12/05 11:49
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:49
+Mon Dec 05 11:49:16 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:50
+=================================================
+Project : csv_1	start : 22/12/05 11:50
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:50
+Mon Dec 05 11:50:28 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:51
+=================================================
+Project : csv_1	start : 22/12/05 11:51
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:51
+Mon Dec 05 11:51:40 CST 2022 org.apache.commons.csv.CSVFormat,176
+Failed time : 22/12/05 11:52
+=================================================
+Project : csv_1	start : 22/12/05 11:52
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:52
+Mon Dec 05 11:52:05 CST 2022 org.apache.commons.csv.CSVFormat,176
+Failed time : 22/12/05 11:52
+=================================================
+Project : csv_1	start : 22/12/05 11:52
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:52
+Mon Dec 05 11:52:27 CST 2022 org.apache.commons.csv.CSVPrinter,223
+Failed time : 22/12/05 11:52
+=================================================
+Project : csv_1	start : 22/12/05 11:52
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:52
+Mon Dec 05 11:52:33 CST 2022 org.apache.commons.csv.CSVPrinter,223
+Failed time : 22/12/05 11:52
+=================================================
+Project : csv_1	start : 22/12/05 11:52
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:52
+Mon Dec 05 11:52:39 CST 2022 org.apache.commons.csv.CSVFormat,192
+Failed time : 22/12/05 11:52
+=================================================
+Project : csv_1	start : 22/12/05 11:52
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 11:52
+Mon Dec 05 11:53:03 CST 2022 org.apache.commons.csv.CSVFormat,192
+Failed time : 22/12/05 11:53
+=================================================
+Project : csv_1	start : 22/12/05 11:53
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter3 | 22/12/05 11:53
+Mon Dec 05 11:53:27 CST 2022 org.apache.commons.csv.CSVPrinter,260
+Failed time : 22/12/05 11:53
+=================================================
+Project : csv_1	start : 22/12/05 11:53
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter3 | 22/12/05 11:53
+Mon Dec 05 11:53:49 CST 2022 org.apache.commons.csv.CSVPrinter,260
+Failed time : 22/12/05 11:54
+=================================================
+Project : csv_1	start : 22/12/05 11:54
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:54
+Mon Dec 05 11:54:10 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:54
+=================================================
+Project : csv_1	start : 22/12/05 11:54
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:54
+Mon Dec 05 11:54:46 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 11:55
+=================================================
+Project : csv_1	start : 22/12/05 11:55
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:55
+Mon Dec 05 11:55:24 CST 2022 org.apache.commons.csv.CSVPrinter,193
+Failed time : 22/12/05 11:55
+=================================================
+Project : csv_1	start : 22/12/05 11:55
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 11:55
+Mon Dec 05 11:55:30 CST 2022 org.apache.commons.csv.CSVPrinter,193
+Failed time : 22/12/05 11:55
+=================================================
+Project : csv_1	start : 22/12/05 11:55
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:55
+Mon Dec 05 11:55:37 CST 2022 org.apache.commons.csv.CSVLexer,75
+Failed time : 22/12/05 11:55
+=================================================
+Project : csv_1	start : 22/12/05 11:55
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:55
+Mon Dec 05 11:55:51 CST 2022 org.apache.commons.csv.CSVLexer,75
+Failed time : 22/12/05 11:56
+=================================================
+Project : csv_1	start : 22/12/05 11:56
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:56
+Mon Dec 05 11:56:07 CST 2022 org.apache.commons.csv.CSVLexer,84
+Failed time : 22/12/05 11:56
+=================================================
+Project : csv_1	start : 22/12/05 11:56
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 11:56
+Mon Dec 05 11:56:14 CST 2022 org.apache.commons.csv.CSVLexer,84
+Failed time : 22/12/05 11:56
+=================================================
+Project : csv_1	start : 22/12/05 11:56
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 11:56
+Mon Dec 05 11:56:21 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 11:57
+=================================================
+Project : csv_1	start : 22/12/05 11:57
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 11:57
+Mon Dec 05 11:57:40 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 11:59
+=================================================
+Project : csv_1	start : 22/12/05 11:59
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:59
+Mon Dec 05 11:59:11 CST 2022 org.apache.commons.csv.CSVPrinter,176
+Failed time : 22/12/05 11:59
+=================================================
+Project : csv_1	start : 22/12/05 11:59
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 11:59
+Mon Dec 05 11:59:36 CST 2022 org.apache.commons.csv.CSVPrinter,176
+Failed time : 22/12/05 12:00
+=================================================
+Project : csv_1	start : 22/12/05 12:00
+Current failed test : org.apache.commons.csv.CSVParserTest::testExcelFormat1 | 22/12/05 12:00
+Mon Dec 05 12:00:18 CST 2022 org.apache.commons.csv.Lexer,107
+Failed time : 22/12/05 12:00
+=================================================
+Project : csv_1	start : 22/12/05 12:00
+Current failed test : org.apache.commons.csv.CSVParserTest::testExcelFormat1 | 22/12/05 12:00
+Mon Dec 05 12:00:33 CST 2022 org.apache.commons.csv.Lexer,107
+Failed time : 22/12/05 12:00
+=================================================
+Project : csv_1	start : 22/12/05 12:00
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:00
+Mon Dec 05 12:00:52 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 12:01
+=================================================
+Project : csv_1	start : 22/12/05 12:01
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:01
+Mon Dec 05 12:02:04 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 12:02
+=================================================
+Project : csv_1	start : 22/12/05 12:02
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter5 | 22/12/05 12:02
+Mon Dec 05 12:02:56 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:03
+----------------------------------------
+Success time : 22/12/05 12:04
+=================================================
+Project : csv_1	start : 22/12/05 12:04
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter5 | 22/12/05 12:04
+Mon Dec 05 12:04:34 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:04
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:05
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:05
+----------------------------------------
+Success time : 22/12/05 12:05
+=================================================
+Project : csv_1	start : 22/12/05 12:05
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:05
+Mon Dec 05 12:05:50 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 12:07
+=================================================
+Project : csv_1	start : 22/12/05 12:07
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:07
+Mon Dec 05 12:07:29 CST 2022 org.apache.commons.csv.CSVPrinter,264
+Failed time : 22/12/05 12:08
+=================================================
+Project : csv_1	start : 22/12/05 12:08
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:08
+Mon Dec 05 12:08:18 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:08
+=================================================
+Project : csv_1	start : 22/12/05 12:08
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:08
+Mon Dec 05 12:09:00 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:09
+=================================================
+Project : csv_1	start : 22/12/05 12:09
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:09
+Mon Dec 05 12:09:16 CST 2022 org.apache.commons.csv.CSVFormat,279
+Failed time : 22/12/05 12:09
+=================================================
+Project : csv_1	start : 22/12/05 12:09
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:09
+Mon Dec 05 12:09:24 CST 2022 org.apache.commons.csv.CSVFormat,279
+Failed time : 22/12/05 12:09
+=================================================
+Project : csv_1	start : 22/12/05 12:09
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:09
+Mon Dec 05 12:09:30 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.176466984897214 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(true||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.176466984897214 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(true||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:10
+----------------------------------------
+Success time : 22/12/05 12:11
+=================================================
+Project : csv_1	start : 22/12/05 12:11
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:11
+Mon Dec 05 12:11:14 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.176466984897214 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(true||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.176466984897214 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(true||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:12
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:12
+----------------------------------------
+Success time : 22/12/05 12:12
+=================================================
+Project : csv_1	start : 22/12/05 12:12
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping | 22/12/05 12:12
+Mon Dec 05 12:13:11 CST 2022 org.apache.commons.csv.CSVLexer,189
+Failed time : 22/12/05 12:16
+=================================================
+Project : csv_1	start : 22/12/05 12:16
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping | 22/12/05 12:16
+Mon Dec 05 12:16:12 CST 2022 org.apache.commons.csv.CSVLexer,189
+Failed time : 22/12/05 12:18
+=================================================
+Project : csv_1	start : 22/12/05 12:18
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:18
+Mon Dec 05 12:19:02 CST 2022 org.apache.commons.csv.CSVLexer,152
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:19
+Mon Dec 05 12:19:11 CST 2022 org.apache.commons.csv.CSVLexer,152
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:19
+Mon Dec 05 12:19:20 CST 2022 org.apache.commons.csv.CSVLexer,152
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:19
+Mon Dec 05 12:19:28 CST 2022 org.apache.commons.csv.CSVLexer,152
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:19
+Mon Dec 05 12:19:37 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:19
+Mon Dec 05 12:19:44 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:19
+Mon Dec 05 12:19:51 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,127
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:19
+Mon Dec 05 12:19:58 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,127
+Failed time : 22/12/05 12:19
+=================================================
+Project : csv_1	start : 22/12/05 12:19
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:20
+Mon Dec 05 12:20:05 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:20
+Mon Dec 05 12:20:13 CST 2022 org.apache.commons.csv.Lexer,111
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:20
+Mon Dec 05 12:20:21 CST 2022 org.apache.commons.csv.CSVLexer,75
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:20
+Mon Dec 05 12:20:28 CST 2022 org.apache.commons.csv.CSVLexer,75
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVFormatTest::testSerialization | 22/12/05 12:20
+Mon Dec 05 12:20:36 CST 2022 org.apache.commons.csv.CSVFormat,169
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVFormatTest::testSerialization | 22/12/05 12:20
+Mon Dec 05 12:20:42 CST 2022 org.apache.commons.csv.CSVFormat,169
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:20
+Mon Dec 05 12:20:49 CST 2022 org.apache.commons.csv.CSVLexer,161
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:20
+Mon Dec 05 12:20:56 CST 2022 org.apache.commons.csv.CSVLexer,161
+Failed time : 22/12/05 12:20
+=================================================
+Project : csv_1	start : 22/12/05 12:20
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:20
+Mon Dec 05 12:21:06 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:21
+=================================================
+Project : csv_1	start : 22/12/05 12:21
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:21
+Mon Dec 05 12:22:12 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:22
+=================================================
+Project : csv_1	start : 22/12/05 12:22
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:22
+Mon Dec 05 12:23:03 CST 2022 org.apache.commons.csv.Lexer,118
+Failed time : 22/12/05 12:25
+=================================================
+Project : csv_1	start : 22/12/05 12:25
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:25
+Mon Dec 05 12:25:46 CST 2022 org.apache.commons.csv.Lexer,118
+Failed time : 22/12/05 12:28
+=================================================
+Project : csv_1	start : 22/12/05 12:28
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:28
+Mon Dec 05 12:28:31 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:30
+=================================================
+Project : csv_1	start : 22/12/05 12:30
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:30
+Mon Dec 05 12:30:09 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:31
+=================================================
+Project : csv_1	start : 22/12/05 12:31
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:31
+Mon Dec 05 12:32:04 CST 2022 org.apache.commons.csv.Lexer,124
+Failed time : 22/12/05 12:32
+=================================================
+Project : csv_1	start : 22/12/05 12:32
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:32
+Mon Dec 05 12:33:02 CST 2022 org.apache.commons.csv.Lexer,124
+Failed time : 22/12/05 12:33
+=================================================
+Project : csv_1	start : 22/12/05 12:33
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 12:33
+Mon Dec 05 12:33:54 CST 2022 org.apache.commons.csv.CSVPrinter,109
+Failed time : 22/12/05 12:34
+=================================================
+Project : csv_1	start : 22/12/05 12:34
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 12:34
+Mon Dec 05 12:34:52 CST 2022 org.apache.commons.csv.CSVPrinter,109
+Failed time : 22/12/05 12:35
+=================================================
+Project : csv_1	start : 22/12/05 12:35
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 12:35
+Mon Dec 05 12:35:47 CST 2022 org.apache.commons.csv.CSVLexer,103
+Failed time : 22/12/05 12:35
+=================================================
+Project : csv_1	start : 22/12/05 12:35
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 12:35
+Mon Dec 05 12:36:00 CST 2022 org.apache.commons.csv.CSVLexer,103
+Failed time : 22/12/05 12:36
+=================================================
+Project : csv_1	start : 22/12/05 12:36
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:36
+Mon Dec 05 12:36:15 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,127
+Failed time : 22/12/05 12:36
+=================================================
+Project : csv_1	start : 22/12/05 12:36
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:36
+Mon Dec 05 12:36:27 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,127
+Failed time : 22/12/05 12:36
+=================================================
+Project : csv_1	start : 22/12/05 12:36
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testEmptyInput | 22/12/05 12:36
+Mon Dec 05 12:36:45 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,125
+Failed time : 22/12/05 12:36
+=================================================
+Project : csv_1	start : 22/12/05 12:36
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testEmptyInput | 22/12/05 12:36
+Mon Dec 05 12:37:06 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,125
+Failed time : 22/12/05 12:37
+=================================================
+Project : csv_1	start : 22/12/05 12:37
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:37
+Mon Dec 05 12:37:29 CST 2022 org.apache.commons.csv.Lexer,84
+Failed time : 22/12/05 12:37
+=================================================
+Project : csv_1	start : 22/12/05 12:37
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:37
+Mon Dec 05 12:37:47 CST 2022 org.apache.commons.csv.Lexer,84
+Failed time : 22/12/05 12:37
+=================================================
+Project : csv_1	start : 22/12/05 12:37
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:37
+Mon Dec 05 12:38:07 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:38
+=================================================
+Project : csv_1	start : 22/12/05 12:38
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:38
+Mon Dec 05 12:39:06 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:40
+=================================================
+Project : csv_1	start : 22/12/05 12:40
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:40
+Mon Dec 05 12:41:06 CST 2022 org.apache.commons.csv.CSVLexer,143
+Failed time : 22/12/05 12:41
+=================================================
+Project : csv_1	start : 22/12/05 12:41
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:41
+Mon Dec 05 12:42:04 CST 2022 org.apache.commons.csv.CSVLexer,143
+Failed time : 22/12/05 12:42
+=================================================
+Project : csv_1	start : 22/12/05 12:42
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:42
+Mon Dec 05 12:43:11 CST 2022 org.apache.commons.csv.CSVFormat,188
+Failed time : 22/12/05 12:44
+=================================================
+Project : csv_1	start : 22/12/05 12:44
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:44
+Mon Dec 05 12:44:11 CST 2022 org.apache.commons.csv.CSVFormat,188
+Failed time : 22/12/05 12:44
+=================================================
+Project : csv_1	start : 22/12/05 12:44
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:44
+Mon Dec 05 12:44:57 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,87
+Failed time : 22/12/05 12:45
+=================================================
+Project : csv_1	start : 22/12/05 12:45
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:45
+Mon Dec 05 12:45:15 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,87
+Failed time : 22/12/05 12:45
+=================================================
+Project : csv_1	start : 22/12/05 12:45
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:45
+Mon Dec 05 12:45:41 CST 2022 org.apache.commons.csv.CSVFormat,188
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(true&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(true&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:45
+----------------------------------------
+Success time : 22/12/05 12:46
+=================================================
+Project : csv_1	start : 22/12/05 12:46
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:46
+Mon Dec 05 12:46:24 CST 2022 org.apache.commons.csv.CSVFormat,188
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(true&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.502108652623949 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>0,0]
+if(escape!=DISABLED&&escape==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(true&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start character and the encapsulator cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVFormat.java=>188,190]
+if(encapsulator!=DISABLED&&encapsulator==commentStart){
+throw new IllegalArgumentException("The comment start and the escape character cannot be the same (\""+commentStart);
+}
+
+Time : 22/12/05 12:46
+----------------------------------------
+Success time : 22/12/05 12:46
+=================================================
+Project : csv_1	start : 22/12/05 12:46
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:46
+Mon Dec 05 12:47:05 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 12:47
+=================================================
+Project : csv_1	start : 22/12/05 12:47
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:47
+Mon Dec 05 12:47:13 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 12:47
+=================================================
+Project : csv_1	start : 22/12/05 12:47
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:47
+Mon Dec 05 12:47:22 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 12:47
+=================================================
+Project : csv_1	start : 22/12/05 12:47
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:47
+Mon Dec 05 12:47:28 CST 2022 org.apache.commons.csv.Lexer,128
+Failed time : 22/12/05 12:47
+=================================================
+Project : csv_1	start : 22/12/05 12:47
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:47
+Mon Dec 05 12:47:34 CST 2022 org.apache.commons.csv.Lexer,124
+Failed time : 22/12/05 12:48
+=================================================
+Project : csv_1	start : 22/12/05 12:48
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:48
+Mon Dec 05 12:48:16 CST 2022 org.apache.commons.csv.Lexer,124
+Failed time : 22/12/05 12:48
+=================================================
+Project : csv_1	start : 22/12/05 12:48
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:48
+Mon Dec 05 12:49:01 CST 2022 org.apache.commons.csv.CSVFormat,299
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVFormatTest::testValidation | 22/12/05 12:49
+Mon Dec 05 12:49:06 CST 2022 org.apache.commons.csv.CSVFormat,299
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:49
+Mon Dec 05 12:49:12 CST 2022 org.apache.commons.csv.Lexer,85
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:49
+Mon Dec 05 12:49:20 CST 2022 org.apache.commons.csv.Lexer,85
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:49
+Mon Dec 05 12:49:31 CST 2022 org.apache.commons.csv.Token,57
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:49
+Mon Dec 05 12:49:40 CST 2022 org.apache.commons.csv.Token,57
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVParserTest::testIgnoreEmptyLines | 22/12/05 12:49
+Mon Dec 05 12:49:50 CST 2022 Mon Dec 05 12:49:50 CST 2022 : org.apache.commons.csv.CSVLexer,58=>Find no block
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVParserTest::testIgnoreEmptyLines | 22/12/05 12:49
+Mon Dec 05 12:49:56 CST 2022 Mon Dec 05 12:49:56 CST 2022 : org.apache.commons.csv.CSVLexer,58=>Find no block
+Failed time : 22/12/05 12:49
+=================================================
+Project : csv_1	start : 22/12/05 12:49
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:49
+Mon Dec 05 12:50:01 CST 2022 org.apache.commons.csv.CSVLexer,103
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 12:50
+Mon Dec 05 12:50:10 CST 2022 org.apache.commons.csv.CSVLexer,103
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testEmptyInput | 22/12/05 12:50
+Mon Dec 05 12:50:18 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,82
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testEmptyInput | 22/12/05 12:50
+Mon Dec 05 12:50:24 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,82
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:50
+Mon Dec 05 12:50:32 CST 2022 org.apache.commons.csv.Token,57
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:50
+Mon Dec 05 12:50:42 CST 2022 org.apache.commons.csv.Token,57
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:50
+Mon Dec 05 12:50:52 CST 2022 Mon Dec 05 12:50:52 CST 2022 : org.apache.commons.csv.CSVLexer,58=>Find no block
+Failed time : 22/12/05 12:50
+=================================================
+Project : csv_1	start : 22/12/05 12:50
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 12:50
+Mon Dec 05 12:51:00 CST 2022 Mon Dec 05 12:51:00 CST 2022 : org.apache.commons.csv.CSVLexer,58=>Find no block
+Failed time : 22/12/05 12:51
+=================================================
+Project : csv_1	start : 22/12/05 12:51
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:51
+Mon Dec 05 12:51:08 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:51
+=================================================
+Project : csv_1	start : 22/12/05 12:51
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:51
+Mon Dec 05 12:51:54 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 12:52
+=================================================
+Project : csv_1	start : 22/12/05 12:52
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:52
+Mon Dec 05 12:52:45 CST 2022 org.apache.commons.csv.CSVPrinter,260
+Failed time : 22/12/05 12:53
+=================================================
+Project : csv_1	start : 22/12/05 12:53
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:53
+Mon Dec 05 12:53:13 CST 2022 org.apache.commons.csv.CSVPrinter,260
+Failed time : 22/12/05 12:53
+=================================================
+Project : csv_1	start : 22/12/05 12:53
+Current failed test : org.apache.commons.csv.CSVParserTest::testIterator | 22/12/05 12:53
+Mon Dec 05 12:53:37 CST 2022 org.apache.commons.csv.CSVParser,218
+Failed time : 22/12/05 12:53
+=================================================
+Project : csv_1	start : 22/12/05 12:53
+Current failed test : org.apache.commons.csv.CSVParserTest::testIterator | 22/12/05 12:53
+Mon Dec 05 12:53:44 CST 2022 org.apache.commons.csv.CSVParser,218
+Failed time : 22/12/05 12:53
+=================================================
+Project : csv_1	start : 22/12/05 12:53
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:53
+Mon Dec 05 12:53:53 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:54
+=================================================
+Project : csv_1	start : 22/12/05 12:54
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:54
+Mon Dec 05 12:54:19 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:54
+=================================================
+Project : csv_1	start : 22/12/05 12:54
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:54
+Mon Dec 05 12:54:41 CST 2022 org.apache.commons.csv.CSVPrinter,235
+Failed time : 22/12/05 12:54
+=================================================
+Project : csv_1	start : 22/12/05 12:54
+Current failed test : org.apache.commons.csv.CSVFormatTest::testFormat | 22/12/05 12:54
+Mon Dec 05 12:54:56 CST 2022 org.apache.commons.csv.CSVPrinter,235
+Failed time : 22/12/05 12:55
+=================================================
+Project : csv_1	start : 22/12/05 12:55
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:55
+Mon Dec 05 12:55:09 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:55
+=================================================
+Project : csv_1	start : 22/12/05 12:55
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 12:55
+Mon Dec 05 12:55:30 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 12:55
+=================================================
+Project : csv_1	start : 22/12/05 12:55
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:55
+Mon Dec 05 12:55:58 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+Success time : 22/12/05 12:56
+=================================================
+Project : csv_1	start : 22/12/05 12:56
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:56
+Mon Dec 05 12:56:27 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2470859666473397 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==encapsulator||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:56
+----------------------------------------
+Success time : 22/12/05 12:56
+=================================================
+Project : csv_1	start : 22/12/05 12:56
+Current failed test : org.apache.commons.csv.CSVParserTest::testEndOfFileBehaviourExcel | 22/12/05 12:56
+Mon Dec 05 12:57:06 CST 2022 org.apache.commons.csv.CSVLexer,205
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEncapsulator(c)){
+tkn.type=EOF;
+tkn.isReady=false;
+return tkn;
+}else if(isEndOfFile(c)){
+tkn.type=EORECORD;
+return tkn;
+}else if(!isWhitespace(c)){
+throw new IOException("(line "+getLineNumber());
+}
+
+Time : 22/12/05 12:57
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEncapsulator(c)){
+tkn.type=EOF;
+tkn.isReady=false;
+return tkn;
+}else if(isEndOfFile(c)){
+tkn.isReady=true;
+tkn.type=EORECORD;
+return tkn;
+}else if(!isWhitespace(c)){
+throw new IOException("(line "+getLineNumber());
+}
+
+Time : 22/12/05 12:57
+----------------------------------------
+Failed time : 22/12/05 12:57
+=================================================
+Project : csv_1	start : 22/12/05 12:57
+Current failed test : org.apache.commons.csv.CSVParserTest::testEndOfFileBehaviourExcel | 22/12/05 12:57
+Mon Dec 05 12:57:46 CST 2022 org.apache.commons.csv.CSVLexer,205
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEncapsulator(c)){
+tkn.type=EOF;
+tkn.isReady=false;
+return tkn;
+}else if(isEndOfFile(c)){
+tkn.type=EORECORD;
+return tkn;
+}else if(!isWhitespace(c)){
+throw new IOException("(line "+getLineNumber());
+}
+
+Time : 22/12/05 12:58
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEncapsulator(c)){
+tkn.type=EOF;
+tkn.isReady=false;
+return tkn;
+}else if(isEndOfFile(c)){
+tkn.isReady=true;
+tkn.type=EORECORD;
+return tkn;
+}else if(!isWhitespace(c)){
+throw new IOException("(line "+getLineNumber());
+}
+
+Time : 22/12/05 12:58
+----------------------------------------
+Failed time : 22/12/05 12:58
+=================================================
+Project : csv_1	start : 22/12/05 12:58
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:58
+Mon Dec 05 12:58:28 CST 2022 org.apache.commons.csv.CSVLexer,84
+Failed time : 22/12/05 12:58
+=================================================
+Project : csv_1	start : 22/12/05 12:58
+Current failed test : org.apache.commons.csv.CSVParserTest::testBackslashEscaping2 | 22/12/05 12:58
+Mon Dec 05 12:58:37 CST 2022 org.apache.commons.csv.CSVLexer,84
+Failed time : 22/12/05 12:58
+=================================================
+Project : csv_1	start : 22/12/05 12:58
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:58
+Mon Dec 05 12:58:48 CST 2022 org.apache.commons.csv.CSVPrinter,217
+Failed time : 22/12/05 12:58
+=================================================
+Project : csv_1	start : 22/12/05 12:58
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:58
+Mon Dec 05 12:58:53 CST 2022 org.apache.commons.csv.CSVPrinter,217
+Failed time : 22/12/05 12:58
+=================================================
+Project : csv_1	start : 22/12/05 12:58
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:58
+Mon Dec 05 12:58:59 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2289314375542615 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c=='\r'||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+Success time : 22/12/05 12:59
+=================================================
+Project : csv_1	start : 22/12/05 12:59
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testPrinter4 | 22/12/05 12:59
+Mon Dec 05 12:59:36 CST 2022 org.apache.commons.csv.CSVPrinter,227
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.2289314375542615 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>0,0]
+if(c=='\r'||c=='\n'||c==delim||c==escape){
+if(pos>start){
+out.append(value,start,pos);
+}
+if(c=='\n'){
+c='n';
+}else if(c=='\r'){
+c='r';
+}
+out.append(escape);
+out.append(c);
+start=pos+1;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\n'||c=='\r'||c==delim){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java=>227,230]
+if(c=='\r'||c=='\n'||c==delim||c==encapsulator){
+quote=true;
+break;
+}
+
+Time : 22/12/05 12:59
+----------------------------------------
+Success time : 22/12/05 12:59
+=================================================
+Project : csv_1	start : 22/12/05 12:59
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 12:59
+Mon Dec 05 13:00:06 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 13:00
+=================================================
+Project : csv_1	start : 22/12/05 13:00
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testRandom | 22/12/05 13:00
+Mon Dec 05 13:01:01 CST 2022 org.apache.commons.csv.CSVPrinter,162
+Failed time : 22/12/05 13:01
+=================================================
+Project : csv_1	start : 22/12/05 13:01
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 13:01
+Mon Dec 05 13:01:54 CST 2022 org.apache.commons.csv.CSVLexer,191
+Failed time : 22/12/05 13:03
+=================================================
+Project : csv_1	start : 22/12/05 13:03
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken4 | 22/12/05 13:03
+Mon Dec 05 13:03:20 CST 2022 org.apache.commons.csv.CSVLexer,191
+Failed time : 22/12/05 13:04
+=================================================
+Project : csv_1	start : 22/12/05 13:04
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 13:04
+Mon Dec 05 13:04:57 CST 2022 org.apache.commons.csv.CSVPrinter,109
+Failed time : 22/12/05 13:05
+=================================================
+Project : csv_1	start : 22/12/05 13:05
+Current failed test : org.apache.commons.csv.CSVPrinterTest::testSingleLineComment | 22/12/05 13:05
+Mon Dec 05 13:05:34 CST 2022 org.apache.commons.csv.CSVPrinter,109
+Failed time : 22/12/05 13:06
+=================================================
+Project : csv_1	start : 22/12/05 13:06
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 13:06
+Mon Dec 05 13:06:10 CST 2022 org.apache.commons.csv.Lexer,136
+Failed time : 22/12/05 13:06
+=================================================
+Project : csv_1	start : 22/12/05 13:06
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken2 | 22/12/05 13:06
+Mon Dec 05 13:06:18 CST 2022 org.apache.commons.csv.Lexer,136
+Failed time : 22/12/05 13:06
+=================================================
+Project : csv_1	start : 22/12/05 13:06
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 13:06
+Mon Dec 05 13:06:27 CST 2022 org.apache.commons.csv.Lexer,128
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return c==escape;
+
+Time : 22/12/05 13:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3819805060619657 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return c==delimiter;
+
+Time : 22/12/05 13:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping==(c==escape);
+
+Time : 22/12/05 13:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return c==escape;
+
+Time : 22/12/05 13:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 13:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.259153433105885 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 13:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping==(c==escape);
+
+Time : 22/12/05 13:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 13:08
+----------------------------------------
+Success time : 22/12/05 13:08
+=================================================
+Project : csv_1	start : 22/12/05 13:08
+Current failed test : org.apache.commons.csv.CSVLexerTest::testNextToken1 | 22/12/05 13:08
+Mon Dec 05 13:08:53 CST 2022 org.apache.commons.csv.Lexer,128
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return c==escape;
+
+Time : 22/12/05 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3819805060619657 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return c==delimiter;
+
+Time : 22/12/05 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping==(c==escape);
+
+Time : 22/12/05 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return c==escape;
+
+Time : 22/12/05 13:09
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.259153433105885 : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>0,0]
+return isEncapsulating&&c==encapsulator;
+
+Time : 22/12/05 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping==(c==escape);
+
+Time : 22/12/05 13:10
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/csv/csv_1_buggy/src/main/java/org/apache/commons/csv/Lexer.java=>128,128]
+return isEscaping&&c==escape;
+
+Time : 22/12/05 13:10
+----------------------------------------
+Success time : 22/12/05 13:11
+=================================================
+Project : csv_1	start : 22/12/05 13:11
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 13:11
+Mon Dec 05 13:11:17 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 13:11
+=================================================
+Project : csv_1	start : 22/12/05 13:11
+Current failed test : org.apache.commons.csv.ExtendedBufferedReaderTest::testReadLookahead2 | 22/12/05 13:11
+Mon Dec 05 13:11:39 CST 2022 org.apache.commons.csv.ExtendedBufferedReader,100
+Failed time : 22/12/05 13:11

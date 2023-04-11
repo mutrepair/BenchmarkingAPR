@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/7552/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-10-31 19:47:45.195784103 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -402,7 +402,7 @@
+     {
+         int outputPtr = 0;
+         final int outputEnd = buffer.length - 3;
+-        int outputCount = 1;
++        int outputCount = 0;
+ 
+         while (true) {
+             // first, we'll skip preceding white space, if any

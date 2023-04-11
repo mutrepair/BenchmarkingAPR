@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getInterfaces with a call to getClasses
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getInterfaces with a call to getDeclaredClasses
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::getClass()Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Class::getInterfaces()[Ljava/lang/Class; is guarded using default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getClass()Ljava/lang/Class; is guarded returning default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getInterfaces()[Ljava/lang/Class; is guarded returning default value null
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Object::getClass
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Class::getInterfaces
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/creation/ClassNameFinder.java
+	Line Number: 10
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

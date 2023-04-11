@@ -1,0 +1,205 @@
+=================================================
+Project : closure_18	start : 23/02/07 01:01
+Current failed test : com.google.javascript.jscomp.IntegrationTest::testDependencySorting | 23/02/07 01:01
+Tue Feb 07 01:06:23 CST 2023 com.google.javascript.jscomp.Compiler,1288
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(options.dependencyOptions.needsManagement()&&(options.removeAbstractMethods||options.removeClosureAsserts)){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0474928280673559 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>0,0]
+if(options.closurePass&&(options.removeAbstractMethods||options.removeClosureAsserts)){
+passes.add(closureCodeRemoval);
+}
+
+Time : 23/02/07 01:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>1288,1319]
+if(options.dependencyOptions.needsManagement()&&options.closurePass){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>1288,1319]
+if(options.dependencyOptions.needsManagement()&&(options.removeAbstractMethods||options.removeClosureAsserts)){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(options.dependencyOptions.needsManagement()&&options.removeAbstractMethods){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0474928280673559 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>0,0]
+if(options.closurePass&&(options.removeAbstractMethods||options.removeClosureAsserts)){
+passes.add(closureCodeRemoval);
+}
+
+Time : 23/02/07 01:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>1288,1319]
+if(options.dependencyOptions.needsManagement()&&options.closurePass){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java=>1288,1319]
+if(options.dependencyOptions.needsManagement()&&options.removeAbstractMethods){
+for(CompilerInput input : inputs){
+for(String provide : input.getProvides()){
+getTypeRegistry().forwardDeclareType(provide);
+}
+}
+try{
+inputs=(moduleGraph==null?new JSModuleGraph(modules):moduleGraph).manageDependencies(options.dependencyOptions,inputs);
+staleInputs=true;
+}catch (CircularDependencyException e) {
+  report(JSError.make(JSModule.CIRCULAR_DEPENDENCY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+catch (MissingProvideException e) {
+  report(JSError.make(MISSING_ENTRY_ERROR,e.getMessage()));
+  if (hasErrors()) {
+    return null;
+  }
+}
+
+}
+
+Time : 23/02/07 01:14
+----------------------------------------
+Success time : 23/02/07 01:14

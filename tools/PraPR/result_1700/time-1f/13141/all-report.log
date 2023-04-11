@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneOffset(Ljava/lang/String;Ljava/lang/String;ZII)Lorg/joda/time/format/DateTimeFormatterBuilder; is replaced by an instantiation of type org.joda.time.format.DateTimeFormatterBuilder using ()V
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to appendTimeZoneOffset(Ljava/lang/String;Ljava/lang/String;ZII)Lorg/joda/time/format/DateTimeFormatterBuilder; with a call to appendTimeZoneOffset(Ljava/lang/String;ZII)Lorg/joda/time/format/DateTimeFormatterBuilder;
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.format.DateTimeFormatterBuilder::appendTimeZoneOffset(Ljava/lang/String;Ljava/lang/String;ZII)Lorg/joda/time/format/DateTimeFormatterBuilder; is guarded using default value null
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to appendTimeZoneOffset(Ljava/lang/String;Ljava/lang/String;ZII)Lorg/joda/time/format/DateTimeFormatterBuilder; is guarded returning enclosing method
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 418
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 419
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 420
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/format/DateTimeFormatterBuilder::appendTimeZoneOffset
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to org/joda/time/format/DateTimeFormatterBuilder::appendTimeZoneOffset with receiver
+	File Name: org/joda/time/format/DateTimeFormat.java
+	Line Number: 558
+	Block: 57
+	First Index: 421
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

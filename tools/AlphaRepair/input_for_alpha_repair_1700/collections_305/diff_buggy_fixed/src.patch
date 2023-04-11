@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/305/org/apache/commons/collections4/CollectionUtils.java	2022-10-31 19:47:39.731803898 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/CollectionUtils.java	2022-12-26 15:13:49.789602509 -0600
+@@ -1249,7 +1249,7 @@
+      */
+     public static <I, O, R extends Collection<? super O>> R collect(final Iterator<? extends I> inputIterator,
+             final Transformer<? super I, ? extends O> transformer, final R outputCollection) {
+-        if (inputIterator != null == (transformer != null)) {
++        if (inputIterator != null && transformer != null) {
+             while (inputIterator.hasNext()) {
+                 final I item = inputIterator.next();
+                 final O value = transformer.transform(item);

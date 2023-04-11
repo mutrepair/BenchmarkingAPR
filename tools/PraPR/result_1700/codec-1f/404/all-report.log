@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b1 is replaced by local k to be used
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 394
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local b1 is replaced by local l to be used
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 394
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local b1 is replaced by local b2 to be used
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 394
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local b1 is replaced by local b3 to be used
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 394
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b1 is replaced by access to field PAD
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 394
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -128 with -127
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 395
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 39
+	First Index: 399
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 192 with 193
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 40
+	First Index: 408
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 396
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 39
+	First Index: 400
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 40
+	First Index: 409
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 397
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 397
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 353
+	Block: 38
+	First Index: 397
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

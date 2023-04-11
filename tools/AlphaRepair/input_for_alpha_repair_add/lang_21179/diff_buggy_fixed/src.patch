@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/21179/org/apache/commons/lang3/time/FastDatePrinter.java	2023-04-04 14:33:25.957957609 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java	2023-04-04 13:31:53.921639679 -0500
+@@ -1186,7 +1186,7 @@
+ 
+             if (offset < 0) {
+                 buffer.append('-');
+-                offset = +offset;
++                offset = -offset;
+             } else {
+                 buffer.append('+');
+             }

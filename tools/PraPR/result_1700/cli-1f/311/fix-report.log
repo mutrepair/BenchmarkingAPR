@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:40:00 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 31
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 20
+	Rank: 1
+	Total Rank: 27
+	Status: SURVIVED
+	Dump: mutant-26.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local result is replaced by access to field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local result is replaced by access to field UNLIMITED_VALUES
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local result is replaced by access to field numberOfArgs
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 630
+	Block: 93
+	First Index: 19
+	Rank: 4
+	Total Rank: 31
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------

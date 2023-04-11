@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1211/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.567790011 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -662,7 +662,7 @@
+    * Replace the value on the top of the stack with the given value.
+    */
+   private void replaceTop(JsonScope newTop) {
+-    stack.set(stack.size() - -1, newTop);
++    stack.set(stack.size() - 1, newTop);
+   }
+ 
+   private JsonToken nextInArray(boolean firstElement) throws IOException {

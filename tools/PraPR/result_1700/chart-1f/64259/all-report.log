@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(I)I
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(II)I
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(Ljava/lang/String;I)I
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local url is replaced by access to field prefix
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 20
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local url is replaced by access to field seriesParameterName
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 20
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local url is replaced by access to field categoryParameterName
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 20
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local url is replaced a call url.toLowerCase()
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 20
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to indexOf with a call to compareTo
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to indexOf with a call to compareToIgnoreCase
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to indexOf with a call to lastIndexOf
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::indexOf(Ljava/lang/String;)I is guarded using default value 0
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning default value null
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning local url
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning field prefix
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning field seriesParameterName
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 12
+	First Index: 24
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 13
+	First Index: 27
+	Rank: 1
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 23
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::indexOf
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 22
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 23
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jfree/chart/urls/StandardCategoryURLGenerator.java
+	Line Number: 148
+	Block: 11
+	First Index: 23
+	Rank: 4
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------

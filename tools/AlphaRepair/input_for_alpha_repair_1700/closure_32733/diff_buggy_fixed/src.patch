@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/32733/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-31 19:47:37.775810960 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/JsMessageVisitor.java	2022-10-29 11:29:13.750746500 -0500
+@@ -484,7 +484,7 @@
+       String desc = info.getDescription();
+       if (desc != null) {
+         builder.setDesc(desc);
+-        messageHasDesc = false;
++        messageHasDesc = true;
+       }
+       if (info.isHidden()) {
+         builder.setIsHidden(true);

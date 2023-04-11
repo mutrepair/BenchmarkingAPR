@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/11572/org/joda/time/convert/ConverterSet.java	2023-04-04 14:33:26.369961602 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/convert/ConverterSet.java	2023-04-04 13:31:54.469646192 -0500
+@@ -97,7 +97,7 @@
+         for (int i=0; i<length; i++) {
+             e = entries[i];
+             type = e.iType;
+-            index = type == null ? 0 : type.hashCode() ^ (newLength - 1);
++            index = type == null ? 0 : type.hashCode() & (newLength - 1);
+             while (newEntries[index] != null) {
+                 if (++index >= newLength) {
+                     index = 0;

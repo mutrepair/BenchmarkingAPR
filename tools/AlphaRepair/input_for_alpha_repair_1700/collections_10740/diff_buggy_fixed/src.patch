@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10740/org/apache/commons/collections4/trie/AbstractBitwiseTrie.java	2022-10-31 19:47:39.635804244 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/trie/AbstractBitwiseTrie.java	2022-12-26 15:13:49.801602638 -0600
+@@ -131,7 +131,7 @@
+             return false;
+         }
+ 
+-        return false;
++        return keyAnalyzer.compare(key, other) == 0;
+     }
+ 
+     /**

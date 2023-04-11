@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/7541/org/jfree/chart/axis/AxisLocation.java	2022-10-31 19:47:29.711839939 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/AxisLocation.java	2022-10-29 00:31:29.638222473 -0500
+@@ -125,7 +125,7 @@
+         if (!this.name.equals(location.toString())) {
+             return false;
+         }
+-        return false;
++        return true;
+ 
+     }
+ 

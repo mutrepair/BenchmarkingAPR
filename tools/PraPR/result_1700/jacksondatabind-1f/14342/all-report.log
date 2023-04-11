@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local year to be used
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 23
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local date is replaced by access to field GMT_ID
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 21
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to com/fasterxml/jackson/databind/util/ISO8601Utils::parseInt with argument
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 26
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 22
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from -2 to 2
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 24
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/util/ISO8601Utils::parseInt
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 26
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 22
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment -2
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 132
+	Block: 14
+	First Index: 24
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

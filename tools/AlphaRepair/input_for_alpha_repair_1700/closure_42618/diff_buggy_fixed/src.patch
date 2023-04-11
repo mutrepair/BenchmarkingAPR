@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/42618/com/google/javascript/jscomp/ShadowVariables.java	2022-10-31 19:47:37.851810686 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ShadowVariables.java	2022-10-29 05:37:52.493255570 -0500
+@@ -141,7 +141,7 @@
+       }
+ 
+       Var var = t.getScope().getVar(n.getString());
+-      if (false) {
++      if (var == null) {
+         // extern name or undefined name.
+         return;
+       }

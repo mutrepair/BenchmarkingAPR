@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local len to be used
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 40
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local len is replaced by local i to be used
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 41
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field DEFAULT_MAX_INPUT_LOOKAHEAD
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 40
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local len is replaced by access to field DEFAULT_MAX_INPUT_LOOKAHEAD
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 41
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field _maxInputLookahead
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 40
+	Rank: 2
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local len is replaced by access to field _maxInputLookahead
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 41
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 42
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 24
+	First Index: 62
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 36
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 42
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 42
+	Rank: 5
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.java
+	Line Number: 200
+	Block: 23
+	First Index: 42
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

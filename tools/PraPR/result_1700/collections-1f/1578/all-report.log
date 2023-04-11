@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to remove(Ljava/lang/Object;I)Z with a call to remove(Ljava/lang/Object;)Z
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to remove with a call to add
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.bag.CollectionSortedBag::remove(Ljava/lang/Object;I)Z is guarded using default value false
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to remove(Ljava/lang/Object;I)Z is guarded returning default value false
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/collections4/bag/CollectionSortedBag::remove
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/collections4/bag/CollectionSortedBag::remove
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 5
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/bag/CollectionSortedBag::remove
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/collections4/bag/CollectionSortedBag.java
+	Line Number: 120
+	Block: 15
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

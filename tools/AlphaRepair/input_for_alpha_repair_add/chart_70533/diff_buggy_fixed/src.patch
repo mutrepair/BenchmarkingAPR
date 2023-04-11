@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/chart-1f/mutants/70533/org/jfree/data/xy/XYSeries.java	2023-04-04 14:33:25.097949275 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/chart/source/org/jfree/data/xy/XYSeries.java	2023-04-04 13:31:52.453622237 -0500
+@@ -832,7 +832,7 @@
+             // append the value to the list...
+             item = (XYDataItem) item.clone();
+             if (this.autoSort) {
+-                this.data.add(~index - 1, item);
++                this.data.add(-index - 1, item);
+             }
+             else {
+                 this.data.add(item);

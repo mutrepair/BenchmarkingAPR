@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local count is replaced by local result to be used
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 13
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local count is replaced by access to field maximumItemCount
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 13
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 14
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 14
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 14
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jfree/data/xy/XYSeries.java
+	Line Number: 988
+	Block: 141
+	First Index: 14
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

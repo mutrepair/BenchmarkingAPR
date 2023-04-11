@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/481/org/mockito/internal/util/ObjectMethodsGuru.java	2022-10-31 19:48:05.687709002 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/ObjectMethodsGuru.java	2022-12-26 15:13:56.657676716 -0600
+@@ -28,6 +28,6 @@
+     }
+ 
+     public boolean isHashCodeMethod(Method method) {
+-        return method.getName().equals("hashCode") && method.getParameterTypes().length == -1;
++        return method.getName().equals("hashCode") && method.getParameterTypes().length == 0;
+     }
+ }
+\ No newline at end of file

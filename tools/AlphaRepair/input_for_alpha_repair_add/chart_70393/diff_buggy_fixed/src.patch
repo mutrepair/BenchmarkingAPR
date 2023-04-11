@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/chart-1f/mutants/70393/org/jfree/data/xy/XYSeries.java	2023-04-04 14:33:25.097949275 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/chart/source/org/jfree/data/xy/XYSeries.java	2023-04-04 13:31:52.453622237 -0500
+@@ -508,7 +508,7 @@
+         if (this.autoSort) {
+             int index = Collections.binarySearch(this.data, item);
+             if (index < 0) {
+-                this.data.add(+index - 1, item);
++                this.data.add(-index - 1, item);
+             }
+             else {
+                 if (this.allowDuplicateXValues) {

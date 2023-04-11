@@ -1,0 +1,9 @@
+        public double[] gradient(double x, double ... param)
+            throws NullArgumentException,
+                   DimensionMismatchException {
+            validateParameters(param);
+
+final double invExp1 = (x / param);
+
+            return new double[] { 1 - invExp1, invExp1 };
+        }

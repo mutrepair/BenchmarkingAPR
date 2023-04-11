@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Integer.valueOf(I)Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (Ljava/lang/String;)V
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Integer.valueOf(I)Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (I)V
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to valueOf(I)Ljava/lang/Integer; with a call to valueOf(Ljava/lang/String;I)Ljava/lang/Integer;
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to valueOf(I)Ljava/lang/Integer; with a call to valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 62
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Integer::valueOf
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues::answer
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues::answer to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java
+	Line Number: 76
+	Block: 6
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

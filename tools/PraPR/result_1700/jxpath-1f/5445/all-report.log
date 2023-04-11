@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to jj_scanpos with an access to token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to jj_scanpos with an access to jj_nt
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to jj_scanpos with an access to jj_lastpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field jj_scanpos is replaced by access to local xsp
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local xsp is replaced by access to field token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local xsp is replaced by access to field jj_nt
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local xsp is replaced by access to field jj_scanpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local xsp is replaced by access to field jj_lastpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable jj_scanpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2956
+	Block: 1495
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

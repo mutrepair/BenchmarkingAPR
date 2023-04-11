@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/179/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:38.951806716 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -276,7 +276,7 @@
+             encodedDataLengthLong = (tripletCount + 1) * 4;
+         } else {
+             // 16 or 8 bit
+-            encodedDataLengthLong = tripletCount - 4;
++            encodedDataLengthLong = tripletCount * 4;
+         }
+ 
+         // If the output is to be "chunked" into 76 character sections,

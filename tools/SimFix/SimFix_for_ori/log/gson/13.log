@@ -1,0 +1,916 @@
+=================================================
+Project : gson_13	start : 23/02/07 01:58
+Current failed test : com.google.gson.stream.JsonReaderTest::testNegativeZero | 23/02/07 01:58
+Tue Feb 07 01:58:12 CST 2023 com.google.gson.stream.JsonReader,731
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&last==NUMBER_CHAR_FRACTION_DIGIT){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&last==NUMBER_CHAR_EXP_SIGN){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(pos==NUMBER_CHAR_DIGIT&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:06
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(pos==NUMBER_CHAR_DIGIT&&fitsInLong&&!fillBuffer(i+1)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:07
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(pos==i&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:07
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(pos==i&&fitsInLong&&!fillBuffer(i+1)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:08
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:17
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED||last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||p==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&fitsInLong&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED||last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||p==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||p==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&fitsInLong&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&fitsInLong&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&fitsInLong&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&fitsInLong&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||p==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED||last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&fitsInLong&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&fitsInLong&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==PEEKED_SINGLE_QUOTED&&last==PEEKED_DOUBLE_QUOTED&&(value!=Long.MIN_VALUE||negative)){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(p==NUMBER_CHAR_DIGIT&&last==PEEKED_DOUBLE_QUOTED&&last==PEEKED_UNQUOTED){
+if(last==PEEKED_UNQUOTED){
+peekedString=nextUnquotedValue();
+}else {
+peekedString=nextQuotedValue(last==PEEKED_SINGLE_QUOTED?'\'':'\"');
+}
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&buffer[pos]=='>'){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(lineNumber==0&&lineStart==0&&limit>0&&buffer[0]=='﻿'){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(last==NUMBER_CHAR_DIGIT&&fitsInLong&&buffer[0]=='﻿'){
+peekedLong=negative?value:-value;
+pos+=i;
+return peeked=PEEKED_LONG;
+}else if(last==NUMBER_CHAR_DIGIT||last==NUMBER_CHAR_FRACTION_DIGIT||last==NUMBER_CHAR_EXP_DIGIT){
+peekedNumberLength=i;
+return peeked=PEEKED_NUMBER;
+}else {
+return PEEKED_NONE;
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+Failed time : 23/02/07 02:21

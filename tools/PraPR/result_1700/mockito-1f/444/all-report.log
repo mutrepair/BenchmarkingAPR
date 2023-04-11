@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local namingPolicyField is replaced by local createInfoField to be used
+	File Name: org/mockito/internal/creation/cglib/CGLIBHacker.java
+	Line Number: 24
+	Block: 1
+	First Index: 32
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setAccessible(Z)V is guarded returning enclosing method
+	File Name: org/mockito/internal/creation/cglib/CGLIBHacker.java
+	Line Number: 24
+	Block: 1
+	First Index: 34
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.lang.reflect.Field::setAccessible(Z)V is guarded
+	File Name: org/mockito/internal/creation/cglib/CGLIBHacker.java
+	Line Number: 24
+	Block: 1
+	First Index: 34
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/creation/cglib/CGLIBHacker.java
+	Line Number: 24
+	Block: 1
+	First Index: 33
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Field::setAccessible
+	File Name: org/mockito/internal/creation/cglib/CGLIBHacker.java
+	Line Number: 24
+	Block: 1
+	First Index: 34
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

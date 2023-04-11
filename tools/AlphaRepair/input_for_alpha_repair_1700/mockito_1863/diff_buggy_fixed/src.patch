@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1863/org/mockito/internal/stubbing/answers/AnswersValidator.java	2022-10-31 19:48:05.551709505 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/stubbing/answers/AnswersValidator.java	2022-12-26 15:13:56.657676716 -0600
+@@ -66,7 +66,7 @@
+             return;
+         }
+         
+-        if (!true) {
++        if (!invocation.isValidException(throwable)) {
+             reporter.checkedExceptionInvalid(throwable);
+         }
+     }

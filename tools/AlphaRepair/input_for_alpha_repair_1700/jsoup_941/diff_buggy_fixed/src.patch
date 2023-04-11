@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/941/org/jsoup/select/Elements.java	2022-10-31 19:47:50.599764430 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Elements.java	2022-12-26 15:13:53.649644217 -0600
+@@ -189,7 +189,7 @@
+     public String html() {
+         StringBuilder sb = new StringBuilder();
+         for (Element element : contents) {
+-            if (sb.length() < 0)
++            if (sb.length() != 0)
+                 sb.append("\n");
+             sb.append(element.html());
+         }

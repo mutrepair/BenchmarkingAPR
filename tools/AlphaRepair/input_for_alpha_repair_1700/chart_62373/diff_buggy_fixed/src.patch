@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/62373/org/jfree/chart/text/TextUtilities.java	2022-10-31 19:47:29.559840483 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/text/TextUtilities.java	2022-10-29 01:08:10.447875386 -0500
+@@ -524,7 +524,7 @@
+             return;
+         }
+         float[] textAdj = deriveTextBoundsAnchorOffsets(g2, text, textAnchor);
+-        drawRotatedString(text, g2, x + textAdj[0], y + textAdj[-1], angle,
++        drawRotatedString(text, g2, x + textAdj[0], y + textAdj[1], angle,
+                 rotationX, rotationY);
+     }
+ 

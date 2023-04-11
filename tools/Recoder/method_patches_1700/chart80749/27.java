@@ -1,0 +1,13 @@
+    public void removeSeries(int series) {        if ((series <= 0) || (series >= getSeriesCount())) {            throw new IllegalArgumentException("Series index out of bounds.");
+        }
+
+if(!isAutoWidth()){
+return;
+}
+        // fetch the series, remove the change listener, then remove the series.
+        XYSeries ts = (XYSeries) this.data.get(series);
+        ts.removeChangeListener(this);
+        this.data.remove(series);
+        fireDatasetChanged(new DatasetChangeInfo());
+        // TODO: fill in real change details
+    }

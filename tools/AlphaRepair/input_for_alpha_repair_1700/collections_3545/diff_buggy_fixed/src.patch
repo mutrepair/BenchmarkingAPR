@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/3545/org/apache/commons/collections4/functors/SwitchClosure.java	2022-10-31 19:47:39.759803796 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/functors/SwitchClosure.java	2022-12-26 15:13:49.793602551 -0600
+@@ -144,7 +144,7 @@
+      */
+     public void execute(final E input) {
+         for (int i = 0; i < iPredicates.length; i++) {
+-            if (true) {
++            if (iPredicates[i].evaluate(input) == true) {
+                 iClosures[i].execute(input);
+                 return;
+             }

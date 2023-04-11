@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_62/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java	2023-01-16 15:29:55.948437795 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/62/patch/./org/jsoup/parser/HtmlTreeBuilderState.java	2023-01-16 15:29:55.920437445 -0600
+@@ -761,7 +761,7 @@
+         }
+ 
+         boolean anyOtherEndTag(Token t, HtmlTreeBuilder tb) {
+-            String name = t.asEndTag().normalName();
++            String name = t.asEndTag().name(); // matches with case sensitivity if enabled
+             ArrayList<Element> stack = tb.getStack();
+             for (int pos = stack.size() -1; pos >= 0; pos--) {
+                 Element node = stack.get(pos);

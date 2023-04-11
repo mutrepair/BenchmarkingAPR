@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to ordinal with a call to getMask
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature::ordinal()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to ordinal()I is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator$Feature::ordinal
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _mask
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java
+	Line Number: 82
+	Block: 4
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

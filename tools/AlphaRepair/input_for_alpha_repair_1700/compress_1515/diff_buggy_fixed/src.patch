@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/1515/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java	2022-10-31 19:47:41.111798908 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java	2022-12-26 15:13:50.345608516 -0600
+@@ -138,7 +138,7 @@
+         // CheckStyle:MagicNumberCheck OFF - no point
+         setExternalAttributes((mode << SHORT_SHIFT)
+                               // MS-DOS read-only attribute
+-                              | ((mode & 0200) == 0 ? 0 : 0)
++                              | ((mode & 0200) == 0 ? 1 : 0)
+                               // MS-DOS directory flag
+                               | (isDirectory() ? 0x10 : 0));
+         // CheckStyle:MagicNumberCheck ON

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/196/org/apache/commons/cli/Option.java	2022-10-31 19:47:31.159834751 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Option.java	2022-12-26 15:13:38.053475668 -0600
+@@ -340,7 +340,7 @@
+      */
+     public boolean hasArgs()
+     {
+-        return (this.numberOfArgs > -1) 
++        return (this.numberOfArgs > 1) 
+                 || (this.numberOfArgs == UNLIMITED_VALUES);
+     }
+ 

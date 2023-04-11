@@ -1,0 +1,148 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 08:49:18 CST 2022
+Number of Plausible Fixes: 12
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isBridge with a call to isVarArgs
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isBridge with a call to isSynthetic
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isBridge with a call to isDefault
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.reflect.Method::isBridge()Z is guarded using default value false
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isBridge()Z is guarded returning default value 0
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 2
+	First Index: 6
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 5
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/reflect/Method::isBridge
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 4
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/mockito/internal/creation/jmock/ClassImposterizer$2::accept
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 3
+	First Index: 11
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 5
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 1
+	First Index: 5
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/mockito/internal/creation/jmock/ClassImposterizer.java
+	Line Number: 39
+	Block: 3
+	First Index: 11
+	Rank: 12
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------

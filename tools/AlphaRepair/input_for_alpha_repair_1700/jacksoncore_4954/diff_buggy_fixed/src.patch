@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/4954/com/fasterxml/jackson/core/io/NumberInput.java	2022-10-31 19:47:45.135784321 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/NumberInput.java	2022-12-26 15:13:51.921625546 -0600
+@@ -39,7 +39,7 @@
+                     if (++offset < len) {
+                         num = (num * 10) + (digitChars[offset] - '0');
+                         if (++offset < len) {
+-                            num = (num * 10) + (digitChars[offset] * '0');
++                            num = (num * 10) + (digitChars[offset] - '0');
+                             if (++offset < len) {
+                                 num = (num * 10) + (digitChars[offset] - '0');
+                                 if (++offset < len) {

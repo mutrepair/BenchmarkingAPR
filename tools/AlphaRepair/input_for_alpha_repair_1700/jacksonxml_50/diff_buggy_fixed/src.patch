@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/50/com/fasterxml/jackson/dataformat/xml/JacksonXmlAnnotationIntrospector.java	2022-10-31 19:47:49.919766911 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/JacksonXmlAnnotationIntrospector.java	2022-12-26 15:13:53.105638340 -0600
+@@ -165,7 +165,7 @@
+         PropertyName name = _findXmlName(a);
+         if (name == null) {
+             name = super.findNameForDeserialization(a);
+-            if (false) {
++            if (name == null) {
+                 if (a.hasAnnotation(JacksonXmlText.class)) {
+                     return PropertyName.USE_DEFAULT;
+                 }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/4924/org/apache/commons/lang3/ClassUtils.java	2022-10-31 19:47:57.327739804 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/ClassUtils.java	2022-12-26 15:13:54.761656232 -0600
+@@ -643,7 +643,7 @@
+             if (toClass.isPrimitive() == false) {
+                 return false;
+             }
+-            if (false) {
++            if (Integer.TYPE.equals(cls)) {
+                 return Long.TYPE.equals(toClass)
+                     || Float.TYPE.equals(toClass)
+                     || Double.TYPE.equals(toClass);

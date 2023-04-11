@@ -1,0 +1,20 @@
+model_path: model/best_model.ckpt
+ids_path: ../npr4j/ids_all_info-mutatorDistribution/all.ids
+input_dir: ../npr4j/ids_all_info-mutatorDistribution
+search_size: 100
+classcontent_dir: processed_add
+output_dir: output_add
+valdatapkl_f: model/valdata.pkl
+nl_voc_f: model/nl_voc.pkl
+rule_f: model/rule.pkl
+code_voc_path: model/code_voc.pkl
+char_voc_path: model/char_voc.pkl
+rulead_path: model/rulead.pkl
+NL_voc_size: 41696
+code_voc_size: 41696
+voc_size: 83
+rule_num: 1265
+cnum: 764
+
+src_patch_dir: patch/src_patches_add/recoder
+method_patch_dir: tools/Recoder/method_patches_add

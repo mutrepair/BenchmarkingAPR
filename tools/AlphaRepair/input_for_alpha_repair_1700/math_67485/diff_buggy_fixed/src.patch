@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/67485/org/apache/commons/math3/ode/nonstiff/DormandPrince54Integrator.java	2022-10-31 19:48:00.519728070 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/ode/nonstiff/DormandPrince54Integrator.java	2022-12-26 15:13:55.669666042 -0600
+@@ -149,7 +149,7 @@
+         final double yScale = FastMath.max(FastMath.abs(y0[j]), FastMath.abs(y1[j]));
+         final double tol = (vecAbsoluteTolerance == null) ?
+                            (scalAbsoluteTolerance + scalRelativeTolerance * yScale) :
+-                               (vecAbsoluteTolerance[j] * (vecRelativeTolerance[j] * yScale));
++                               (vecAbsoluteTolerance[j] + vecRelativeTolerance[j] * yScale);
+         final double ratio  = h * errSum / tol;
+         error += ratio * ratio;
+ 

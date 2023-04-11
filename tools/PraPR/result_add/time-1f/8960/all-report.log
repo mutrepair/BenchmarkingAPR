@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iChronology is guarded using value null
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 10
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iChronology is guarded using field iChronology
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 10
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local subtrahendInstant is replaced by local minuendInstant to be used
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 11
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local minuendInstant is replaced by local subtrahendInstant to be used
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 12
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local subtrahendInstant is replaced by access to field serialVersionUID
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 11
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local minuendInstant is replaced by access to field serialVersionUID
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 12
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.chrono.BasicChronology::getYearDifference(JJ)J is guarded using default value 0L
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iChronology is guarded returning default value 0L
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 10
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to iChronology is guarded returning local minuendInstant
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 10
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iChronology is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 10
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getYearDifference(JJ)J is guarded returning default value 0L
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getYearDifference(JJ)J is guarded returning local minuendInstant
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to getYearDifference(JJ)J is guarded returning local subtrahendInstant
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getYearDifference(JJ)J is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/joda/time/chrono/BasicChronology::getYearDifference with argument
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 14
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 15
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/chrono/BasicChronology::getYearDifference
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 13
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced long return with 0 for org/joda/time/chrono/BasicYearDateTimeField::getDifferenceAsLong
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 16
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of long value with value + 1 for org/joda/time/chrono/BasicYearDateTimeField::getDifferenceAsLong
+	File Name: org/joda/time/chrono/BasicYearDateTimeField.java
+	Line Number: 90
+	Block: 12
+	First Index: 16
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------

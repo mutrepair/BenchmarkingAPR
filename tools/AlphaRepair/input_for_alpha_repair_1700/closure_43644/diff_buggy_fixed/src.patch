@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/43644/com/google/javascript/jscomp/TypeInference.java	2022-10-31 19:47:37.871810613 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeInference.java	2022-10-29 11:54:34.643115585 -0500
+@@ -551,7 +551,7 @@
+         if (!isVarDeclaration || var == null || var.isTypeInferred()) {
+           redeclareSimpleVar(scope, left, resultType);
+         }
+-        left.setJSType(isVarDeclaration ?
++        left.setJSType(isVarDeclaration || leftType == null ?
+             resultType : null);
+ 
+         if (var != null && var.isTypeInferred()) {

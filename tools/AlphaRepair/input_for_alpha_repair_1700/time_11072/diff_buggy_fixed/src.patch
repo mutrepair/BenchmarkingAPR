@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11072/org/joda/time/chrono/ZonedChronology.java	2022-10-31 19:48:08.631698103 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/ZonedChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -126,7 +126,7 @@
+         throws IllegalArgumentException
+     {
+         return localToUTC(getBase().getDateTimeMillis
+-                          (instant / getZone().getOffset(instant),
++                          (instant + getZone().getOffset(instant),
+                            hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond));
+     }
+ 

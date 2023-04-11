@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/67650/org/jfree/data/DefaultKeyedValues.java	2022-10-31 19:47:29.595840354 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/DefaultKeyedValues.java	2022-10-29 00:41:50.014659289 -0500
+@@ -267,7 +267,7 @@
+      * @since 1.0.6
+      */
+     public void insertValue(int position, Comparable key, Number value) {
+-        if (true) {
++        if (position < 0 || position > getItemCount()) {
+             throw new IllegalArgumentException("'position' out of bounds.");
+         }
+         if (key == null) {

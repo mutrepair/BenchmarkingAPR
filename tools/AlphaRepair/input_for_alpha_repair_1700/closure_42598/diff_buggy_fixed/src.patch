@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/42598/com/google/javascript/jscomp/ScopedAliases.java	2022-10-31 19:47:37.847810700 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ScopedAliases.java	2022-10-29 02:18:50.197778942 -0500
+@@ -464,7 +464,7 @@
+       if (typeNode.isString()) {
+         String name = typeNode.getString();
+         int endIndex = name.indexOf('.');
+-        if (endIndex == 0) {
++        if (endIndex == -1) {
+           endIndex = name.length();
+         }
+         String baseName = name.substring(0, endIndex);

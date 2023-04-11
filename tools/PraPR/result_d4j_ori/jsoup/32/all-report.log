@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local clone is replaced by local this to be used
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local clone is replaced a call clone.parent()
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Element::classNames()Ljava/util/Set; is guarded using default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to classNames()Ljava/util/Set; is guarded returning default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to classNames()Ljava/util/Set; is guarded returning local this
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to classNames()Ljava/util/Set; is guarded returning local clone
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Element::classNames
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1138
+	Block: 202
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

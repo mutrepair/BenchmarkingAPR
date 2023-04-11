@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Lcom/google/javascript/jscomp/AbstractCompiler;Ljava/lang/String;Z)V with a call to <init>(Lcom/google/javascript/jscomp/AbstractCompiler;Ljava/lang/String;)V
+	File Name: com/google/javascript/jscomp/RescopeGlobalSymbols.java
+	Line Number: 68
+	Block: 1
+	First Index: 7
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/RescopeGlobalSymbols.java
+	Line Number: 68
+	Block: 1
+	First Index: 6
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

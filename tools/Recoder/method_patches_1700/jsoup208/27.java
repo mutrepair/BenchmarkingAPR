@@ -1,0 +1,2 @@
+    boolean preserveWhitespace() {
+return false;    }

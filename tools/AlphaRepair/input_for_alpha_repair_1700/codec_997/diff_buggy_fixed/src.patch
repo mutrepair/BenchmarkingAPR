@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/997/org/apache/commons/codec/binary/BinaryCodec.java	2022-10-31 19:47:39.315805401 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/BinaryCodec.java	2022-12-26 15:13:39.225488336 -0600
+@@ -232,7 +232,7 @@
+         for (int ii = 0, jj = l_ascii.length - 1; ii < raw.length; ii++, jj -= 8) {
+             for (int bits = 0; bits < BITS.length; ++bits) {
+                 if ((raw[ii] & BITS[bits]) == 0) {
+-                    l_ascii[jj + bits] = '0';
++                    l_ascii[jj - bits] = '0';
+                 } else {
+                     l_ascii[jj - bits] = '1';
+                 }

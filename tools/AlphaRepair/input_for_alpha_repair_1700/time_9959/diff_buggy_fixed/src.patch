@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/9959/org/joda/time/chrono/JulianChronology.java	2022-10-31 19:48:09.011696694 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/JulianChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -258,7 +258,7 @@
+     }
+ 
+     long getApproxMillisAtEpochDividedByTwo() {
+-        return (1969L * MILLIS_PER_YEAR + 352L * DateTimeConstants.MILLIS_PER_DAY) * 2;
++        return (1969L * MILLIS_PER_YEAR + 352L * DateTimeConstants.MILLIS_PER_DAY) / 2;
+     }
+ 
+     protected void assemble(Fields fields) {

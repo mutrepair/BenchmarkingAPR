@@ -1,0 +1,269 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.jsoup.select.Selector
+AOR<"org.jsoup.select.Selector">;
+LOR<"org.jsoup.select.Selector">;
+SOR<"org.jsoup.select.Selector">;
+COR<"org.jsoup.select.Selector">;
+ROR<"org.jsoup.select.Selector">;
+ORU<"org.jsoup.select.Selector">;
+LVR<"org.jsoup.select.Selector">;
+STD<"org.jsoup.select.Selector">;
+
+// Enable operators for org.jsoup.select.Elements
+AOR<"org.jsoup.select.Elements">;
+LOR<"org.jsoup.select.Elements">;
+SOR<"org.jsoup.select.Elements">;
+COR<"org.jsoup.select.Elements">;
+ROR<"org.jsoup.select.Elements">;
+ORU<"org.jsoup.select.Elements">;
+LVR<"org.jsoup.select.Elements">;
+STD<"org.jsoup.select.Elements">;
+
+// Enable operators for org.jsoup.select.Collector
+AOR<"org.jsoup.select.Collector">;
+LOR<"org.jsoup.select.Collector">;
+SOR<"org.jsoup.select.Collector">;
+COR<"org.jsoup.select.Collector">;
+ROR<"org.jsoup.select.Collector">;
+ORU<"org.jsoup.select.Collector">;
+LVR<"org.jsoup.select.Collector">;
+STD<"org.jsoup.select.Collector">;
+
+// Enable operators for org.jsoup.examples.ListLinks
+AOR<"org.jsoup.examples.ListLinks">;
+LOR<"org.jsoup.examples.ListLinks">;
+SOR<"org.jsoup.examples.ListLinks">;
+COR<"org.jsoup.examples.ListLinks">;
+ROR<"org.jsoup.examples.ListLinks">;
+ORU<"org.jsoup.examples.ListLinks">;
+LVR<"org.jsoup.examples.ListLinks">;
+STD<"org.jsoup.examples.ListLinks">;
+
+// Enable operators for org.jsoup.nodes.DataNode
+AOR<"org.jsoup.nodes.DataNode">;
+LOR<"org.jsoup.nodes.DataNode">;
+SOR<"org.jsoup.nodes.DataNode">;
+COR<"org.jsoup.nodes.DataNode">;
+ROR<"org.jsoup.nodes.DataNode">;
+ORU<"org.jsoup.nodes.DataNode">;
+LVR<"org.jsoup.nodes.DataNode">;
+STD<"org.jsoup.nodes.DataNode">;
+
+// Enable operators for org.jsoup.nodes.Evaluator
+AOR<"org.jsoup.nodes.Evaluator">;
+LOR<"org.jsoup.nodes.Evaluator">;
+SOR<"org.jsoup.nodes.Evaluator">;
+COR<"org.jsoup.nodes.Evaluator">;
+ROR<"org.jsoup.nodes.Evaluator">;
+ORU<"org.jsoup.nodes.Evaluator">;
+LVR<"org.jsoup.nodes.Evaluator">;
+STD<"org.jsoup.nodes.Evaluator">;
+
+// Enable operators for org.jsoup.nodes.TextNode
+AOR<"org.jsoup.nodes.TextNode">;
+LOR<"org.jsoup.nodes.TextNode">;
+SOR<"org.jsoup.nodes.TextNode">;
+COR<"org.jsoup.nodes.TextNode">;
+ROR<"org.jsoup.nodes.TextNode">;
+ORU<"org.jsoup.nodes.TextNode">;
+LVR<"org.jsoup.nodes.TextNode">;
+STD<"org.jsoup.nodes.TextNode">;
+
+// Enable operators for org.jsoup.nodes.Document
+AOR<"org.jsoup.nodes.Document">;
+LOR<"org.jsoup.nodes.Document">;
+SOR<"org.jsoup.nodes.Document">;
+COR<"org.jsoup.nodes.Document">;
+ROR<"org.jsoup.nodes.Document">;
+ORU<"org.jsoup.nodes.Document">;
+LVR<"org.jsoup.nodes.Document">;
+STD<"org.jsoup.nodes.Document">;
+
+// Enable operators for org.jsoup.nodes.Attributes
+AOR<"org.jsoup.nodes.Attributes">;
+LOR<"org.jsoup.nodes.Attributes">;
+SOR<"org.jsoup.nodes.Attributes">;
+COR<"org.jsoup.nodes.Attributes">;
+ROR<"org.jsoup.nodes.Attributes">;
+ORU<"org.jsoup.nodes.Attributes">;
+LVR<"org.jsoup.nodes.Attributes">;
+STD<"org.jsoup.nodes.Attributes">;
+
+// Enable operators for org.jsoup.nodes.Element
+AOR<"org.jsoup.nodes.Element">;
+LOR<"org.jsoup.nodes.Element">;
+SOR<"org.jsoup.nodes.Element">;
+COR<"org.jsoup.nodes.Element">;
+ROR<"org.jsoup.nodes.Element">;
+ORU<"org.jsoup.nodes.Element">;
+LVR<"org.jsoup.nodes.Element">;
+STD<"org.jsoup.nodes.Element">;
+
+// Enable operators for org.jsoup.nodes.XmlDeclaration
+AOR<"org.jsoup.nodes.XmlDeclaration">;
+LOR<"org.jsoup.nodes.XmlDeclaration">;
+SOR<"org.jsoup.nodes.XmlDeclaration">;
+COR<"org.jsoup.nodes.XmlDeclaration">;
+ROR<"org.jsoup.nodes.XmlDeclaration">;
+ORU<"org.jsoup.nodes.XmlDeclaration">;
+LVR<"org.jsoup.nodes.XmlDeclaration">;
+STD<"org.jsoup.nodes.XmlDeclaration">;
+
+// Enable operators for org.jsoup.nodes.Comment
+AOR<"org.jsoup.nodes.Comment">;
+LOR<"org.jsoup.nodes.Comment">;
+SOR<"org.jsoup.nodes.Comment">;
+COR<"org.jsoup.nodes.Comment">;
+ROR<"org.jsoup.nodes.Comment">;
+ORU<"org.jsoup.nodes.Comment">;
+LVR<"org.jsoup.nodes.Comment">;
+STD<"org.jsoup.nodes.Comment">;
+
+// Enable operators for org.jsoup.nodes.Attribute
+AOR<"org.jsoup.nodes.Attribute">;
+LOR<"org.jsoup.nodes.Attribute">;
+SOR<"org.jsoup.nodes.Attribute">;
+COR<"org.jsoup.nodes.Attribute">;
+ROR<"org.jsoup.nodes.Attribute">;
+ORU<"org.jsoup.nodes.Attribute">;
+LVR<"org.jsoup.nodes.Attribute">;
+STD<"org.jsoup.nodes.Attribute">;
+
+// Enable operators for org.jsoup.nodes.Node
+AOR<"org.jsoup.nodes.Node">;
+LOR<"org.jsoup.nodes.Node">;
+SOR<"org.jsoup.nodes.Node">;
+COR<"org.jsoup.nodes.Node">;
+ROR<"org.jsoup.nodes.Node">;
+ORU<"org.jsoup.nodes.Node">;
+LVR<"org.jsoup.nodes.Node">;
+STD<"org.jsoup.nodes.Node">;
+
+// Enable operators for org.jsoup.Jsoup
+AOR<"org.jsoup.Jsoup">;
+LOR<"org.jsoup.Jsoup">;
+SOR<"org.jsoup.Jsoup">;
+COR<"org.jsoup.Jsoup">;
+ROR<"org.jsoup.Jsoup">;
+ORU<"org.jsoup.Jsoup">;
+LVR<"org.jsoup.Jsoup">;
+STD<"org.jsoup.Jsoup">;
+
+// Enable operators for org.jsoup.DataUtil
+AOR<"org.jsoup.DataUtil">;
+LOR<"org.jsoup.DataUtil">;
+SOR<"org.jsoup.DataUtil">;
+COR<"org.jsoup.DataUtil">;
+ROR<"org.jsoup.DataUtil">;
+ORU<"org.jsoup.DataUtil">;
+LVR<"org.jsoup.DataUtil">;
+STD<"org.jsoup.DataUtil">;
+
+// Enable operators for org.jsoup.parser.Parser
+AOR<"org.jsoup.parser.Parser">;
+LOR<"org.jsoup.parser.Parser">;
+SOR<"org.jsoup.parser.Parser">;
+COR<"org.jsoup.parser.Parser">;
+ROR<"org.jsoup.parser.Parser">;
+ORU<"org.jsoup.parser.Parser">;
+LVR<"org.jsoup.parser.Parser">;
+STD<"org.jsoup.parser.Parser">;
+
+// Enable operators for org.jsoup.parser.TokenQueue
+AOR<"org.jsoup.parser.TokenQueue">;
+LOR<"org.jsoup.parser.TokenQueue">;
+SOR<"org.jsoup.parser.TokenQueue">;
+COR<"org.jsoup.parser.TokenQueue">;
+ROR<"org.jsoup.parser.TokenQueue">;
+ORU<"org.jsoup.parser.TokenQueue">;
+LVR<"org.jsoup.parser.TokenQueue">;
+STD<"org.jsoup.parser.TokenQueue">;
+
+// Enable operators for org.jsoup.parser.Tag
+AOR<"org.jsoup.parser.Tag">;
+LOR<"org.jsoup.parser.Tag">;
+SOR<"org.jsoup.parser.Tag">;
+COR<"org.jsoup.parser.Tag">;
+ROR<"org.jsoup.parser.Tag">;
+ORU<"org.jsoup.parser.Tag">;
+LVR<"org.jsoup.parser.Tag">;
+STD<"org.jsoup.parser.Tag">;
+
+// Enable operators for org.jsoup.safety.Cleaner
+AOR<"org.jsoup.safety.Cleaner">;
+LOR<"org.jsoup.safety.Cleaner">;
+SOR<"org.jsoup.safety.Cleaner">;
+COR<"org.jsoup.safety.Cleaner">;
+ROR<"org.jsoup.safety.Cleaner">;
+ORU<"org.jsoup.safety.Cleaner">;
+LVR<"org.jsoup.safety.Cleaner">;
+STD<"org.jsoup.safety.Cleaner">;
+
+// Enable operators for org.jsoup.safety.Whitelist
+AOR<"org.jsoup.safety.Whitelist">;
+LOR<"org.jsoup.safety.Whitelist">;
+SOR<"org.jsoup.safety.Whitelist">;
+COR<"org.jsoup.safety.Whitelist">;
+ROR<"org.jsoup.safety.Whitelist">;
+ORU<"org.jsoup.safety.Whitelist">;
+LVR<"org.jsoup.safety.Whitelist">;
+STD<"org.jsoup.safety.Whitelist">;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/671/org/apache/commons/csv/CSVPrinter.java	2022-10-31 19:47:42.371794346 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVPrinter.java	2022-12-26 15:13:50.881614309 -0600
+@@ -257,7 +257,7 @@
+         // the need for encapsulation.
+         while (pos < end) {
+             char c = value.charAt(pos);
+-            if (c <= encapsulator) {
++            if (c == encapsulator) {
+                 // write out the chunk up until this point
+ 
+                 // add 1 to the length to write out the encapsulator also

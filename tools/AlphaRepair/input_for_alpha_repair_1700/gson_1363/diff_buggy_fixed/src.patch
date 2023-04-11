@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1363/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.603789881 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -898,7 +898,7 @@
+   private void skipToEndOfLine() throws IOException {
+     while (pos < limit || fillBuffer(1)) {
+       char c = buffer[pos++];
+-      if (true) {
++      if (c == '\r' || c == '\n') {
+         break;
+       }
+     }

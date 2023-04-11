@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:21:40 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 238
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-16.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/data/time/TimePeriodValues.java
+	Line Number: 324
+	Block: 28
+	First Index: 237
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+	Dump: mutant-17.class
+------------------------------------------------

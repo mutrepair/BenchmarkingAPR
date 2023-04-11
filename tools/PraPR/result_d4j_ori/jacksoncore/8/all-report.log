@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _hasSegments is guarded using value false
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _currentSegment is guarded using value null
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _hasSegments is guarded using field _hasSegments
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _currentSegment is guarded using field NO_CHARS
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._hasSegments is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::hasTextAsCharacters()Z
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::getTextBuffer()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::contentsAsArray()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::getCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::emptyAndGetCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.util.TextBuffer._currentSegment is replaced by the call to com.fasterxml.jackson.core.util.TextBuffer::finishCurrentSegment()[C
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _currentSegment with an access to _inputBuffer
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _currentSegment with an access to _resultArray
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _hasSegments is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _currentSegment is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _hasSegments is guarded returning field NO_CHARS
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 37
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _currentSegment is guarded returning field NO_CHARS
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 40
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 38
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/fasterxml/jackson/core/util/TextBuffer::getTextBuffer
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 41
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 38
+	Rank: 3
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 41
+	First Index: 38
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/fasterxml/jackson/core/util/TextBuffer::getTextBuffer to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/fasterxml/jackson/core/util/TextBuffer.java
+	Line Number: 307
+	Block: 42
+	First Index: 41
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

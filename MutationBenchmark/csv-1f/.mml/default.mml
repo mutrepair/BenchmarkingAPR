@@ -1,0 +1,139 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.csv.Lexer
+AOR<"org.apache.commons.csv.Lexer">;
+LOR<"org.apache.commons.csv.Lexer">;
+SOR<"org.apache.commons.csv.Lexer">;
+COR<"org.apache.commons.csv.Lexer">;
+ROR<"org.apache.commons.csv.Lexer">;
+ORU<"org.apache.commons.csv.Lexer">;
+LVR<"org.apache.commons.csv.Lexer">;
+STD<"org.apache.commons.csv.Lexer">;
+
+// Enable operators for org.apache.commons.csv.CSVParser
+AOR<"org.apache.commons.csv.CSVParser">;
+LOR<"org.apache.commons.csv.CSVParser">;
+SOR<"org.apache.commons.csv.CSVParser">;
+COR<"org.apache.commons.csv.CSVParser">;
+ROR<"org.apache.commons.csv.CSVParser">;
+ORU<"org.apache.commons.csv.CSVParser">;
+LVR<"org.apache.commons.csv.CSVParser">;
+STD<"org.apache.commons.csv.CSVParser">;
+
+// Enable operators for org.apache.commons.csv.Token
+AOR<"org.apache.commons.csv.Token">;
+LOR<"org.apache.commons.csv.Token">;
+SOR<"org.apache.commons.csv.Token">;
+COR<"org.apache.commons.csv.Token">;
+ROR<"org.apache.commons.csv.Token">;
+ORU<"org.apache.commons.csv.Token">;
+LVR<"org.apache.commons.csv.Token">;
+STD<"org.apache.commons.csv.Token">;
+
+// Enable operators for org.apache.commons.csv.CSVLexer
+AOR<"org.apache.commons.csv.CSVLexer">;
+LOR<"org.apache.commons.csv.CSVLexer">;
+SOR<"org.apache.commons.csv.CSVLexer">;
+COR<"org.apache.commons.csv.CSVLexer">;
+ROR<"org.apache.commons.csv.CSVLexer">;
+ORU<"org.apache.commons.csv.CSVLexer">;
+LVR<"org.apache.commons.csv.CSVLexer">;
+STD<"org.apache.commons.csv.CSVLexer">;
+
+// Enable operators for org.apache.commons.csv.CSVRecord
+AOR<"org.apache.commons.csv.CSVRecord">;
+LOR<"org.apache.commons.csv.CSVRecord">;
+SOR<"org.apache.commons.csv.CSVRecord">;
+COR<"org.apache.commons.csv.CSVRecord">;
+ROR<"org.apache.commons.csv.CSVRecord">;
+ORU<"org.apache.commons.csv.CSVRecord">;
+LVR<"org.apache.commons.csv.CSVRecord">;
+STD<"org.apache.commons.csv.CSVRecord">;
+
+// Enable operators for org.apache.commons.csv.ExtendedBufferedReader
+AOR<"org.apache.commons.csv.ExtendedBufferedReader">;
+LOR<"org.apache.commons.csv.ExtendedBufferedReader">;
+SOR<"org.apache.commons.csv.ExtendedBufferedReader">;
+COR<"org.apache.commons.csv.ExtendedBufferedReader">;
+ROR<"org.apache.commons.csv.ExtendedBufferedReader">;
+ORU<"org.apache.commons.csv.ExtendedBufferedReader">;
+LVR<"org.apache.commons.csv.ExtendedBufferedReader">;
+STD<"org.apache.commons.csv.ExtendedBufferedReader">;
+
+// Enable operators for org.apache.commons.csv.CSVPrinter
+AOR<"org.apache.commons.csv.CSVPrinter">;
+LOR<"org.apache.commons.csv.CSVPrinter">;
+SOR<"org.apache.commons.csv.CSVPrinter">;
+COR<"org.apache.commons.csv.CSVPrinter">;
+ROR<"org.apache.commons.csv.CSVPrinter">;
+ORU<"org.apache.commons.csv.CSVPrinter">;
+LVR<"org.apache.commons.csv.CSVPrinter">;
+STD<"org.apache.commons.csv.CSVPrinter">;
+
+// Enable operators for org.apache.commons.csv.CSVFormat
+AOR<"org.apache.commons.csv.CSVFormat">;
+LOR<"org.apache.commons.csv.CSVFormat">;
+SOR<"org.apache.commons.csv.CSVFormat">;
+COR<"org.apache.commons.csv.CSVFormat">;
+ROR<"org.apache.commons.csv.CSVFormat">;
+ORU<"org.apache.commons.csv.CSVFormat">;
+LVR<"org.apache.commons.csv.CSVFormat">;
+STD<"org.apache.commons.csv.CSVFormat">;

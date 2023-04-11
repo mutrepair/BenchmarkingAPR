@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field VLQ_BASE_SHIFT
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local value is replaced by access to field VLQ_BASE
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local value is replaced by access to field VLQ_BASE_MASK
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local value is replaced by access to field VLQ_CONTINUATION_BIT
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 18
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 20
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 19
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for com/google/debugging/sourcemap/Base64VLQ::toVLQSigned
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/debugging/sourcemap/Base64VLQ.java
+	Line Number: 67
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

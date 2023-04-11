@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/362/org/apache/commons/cli/GnuParser.java	2022-10-31 19:47:31.219834536 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/GnuParser.java	2022-12-26 15:13:38.053475668 -0600
+@@ -86,7 +86,7 @@
+                 {
+                     // handle special properties Option
+                     Option specialOption = 
+-                            options.getOption(arguments[i].substring(0, -2));
++                            options.getOption(arguments[i].substring(0, 2));
+ 
+                     if (specialOption != null)
+                     {

@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.jsoup.nodes.Element.elementSiblingIndex()Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (Ljava/lang/String;)V
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.jsoup.nodes.Element.elementSiblingIndex()Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (I)V
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to index is guarded using value 0
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local element is replaced a call element.parent()
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 3
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to intValue with a call to hashCode
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Element::elementSiblingIndex()Ljava/lang/Integer; is guarded using default value null
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Integer::intValue()I is guarded using default value 0
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to index is guarded returning default value false
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to elementSiblingIndex()Ljava/lang/Integer; is guarded returning default value false
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to intValue()I is guarded returning default value false
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jsoup/nodes/Evaluator$IndexLessThan::matches
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 3
+	First Index: 14
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/jsoup/nodes/Evaluator$IndexLessThan::matches
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 3
+	First Index: 14
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 8
+	Rank: 1
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 2
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 3
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Element::elementSiblingIndex
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Integer::intValue
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 1
+	First Index: 8
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/nodes/Evaluator.java
+	Line Number: 139
+	Block: 3
+	First Index: 14
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------

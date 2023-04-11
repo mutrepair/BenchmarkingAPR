@@ -1,0 +1,35 @@
+=================================================
+Project : jsoup_51	start : 23/02/07 11:40
+Current failed test : org.jsoup.parser.HtmlParserTest::testSupportsNonAsciiTags | 23/02/07 11:40
+Tue Feb 07 11:40:59 CST 2023 org.jsoup.parser.CharacterReader,300
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEmpty())return false;
+char c=input[pos];
+return c>='0'||(c>='a'&&c<='z');
+
+Time : 23/02/07 11:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEmpty())return false;
+char c=input[pos];
+return c>='0'||c<='9';
+
+Time : 23/02/07 11:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isEmpty())return false;
+char c=input[pos];
+return pos==pos;
+
+Time : 23/02/07 12:01
+----------------------------------------
+Failed time : 23/02/07 12:11

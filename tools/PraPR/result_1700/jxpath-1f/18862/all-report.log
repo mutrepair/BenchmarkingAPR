@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local count to be used
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 29
+	Rank: 5
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local count is replaced by local i to be used
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 30
+	Rank: 5
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field NO_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 29
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local count is replaced by access to field NO_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local i is replaced by access to field APPROXIMATE_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 29
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local count is replaced by access to field APPROXIMATE_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local i is replaced by access to field EXACT_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 29
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local count is replaced by access to field EXACT_MATCH
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 31
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 25
+	First Index: 64
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 25
+	Rank: 5
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 31
+	Rank: 5
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 31
+	Rank: 5
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 22
+	First Index: 31
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/apache/commons/jxpath/util/MethodLookupUtils.java
+	Line Number: 110
+	Block: 25
+	First Index: 64
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

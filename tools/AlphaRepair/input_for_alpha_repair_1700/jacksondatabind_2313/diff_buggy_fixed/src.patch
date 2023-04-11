@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/2313/com/fasterxml/jackson/databind/type/SimpleType.java	2022-10-31 19:47:46.639778856 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/type/SimpleType.java	2022-12-26 15:13:52.513631942 -0600
+@@ -136,7 +136,7 @@
+     {
+         StringBuilder sb = new StringBuilder();
+         sb.append(_class.getName());
+-        if (_typeParameters.length > 0) {
++        if (_typeParameters != null && _typeParameters.length > 0) {
+             sb.append('<');
+             boolean first = true;
+             for (JavaType t : _typeParameters) {

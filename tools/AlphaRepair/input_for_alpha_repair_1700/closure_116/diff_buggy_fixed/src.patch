@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/116/com/google/debugging/sourcemap/Base64VLQ.java	2022-10-31 19:47:37.603811580 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/Base64VLQ.java	2022-10-29 02:52:49.363504633 -0500
+@@ -88,7 +88,7 @@
+       throws IOException {
+     value = toVLQSigned(value);
+     do {
+-      int digit = value ^ VLQ_BASE_MASK;
++      int digit = value & VLQ_BASE_MASK;
+       value >>>= VLQ_BASE_SHIFT;
+       if (value > 0) {
+         digit |= VLQ_CONTINUATION_BIT;

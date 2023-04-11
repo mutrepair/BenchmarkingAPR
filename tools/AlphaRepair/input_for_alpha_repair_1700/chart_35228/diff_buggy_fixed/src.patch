@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/35228/org/jfree/chart/block/BorderArrangement.java	2022-10-31 19:47:29.459840841 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/block/BorderArrangement.java	2022-10-29 16:41:07.426717447 -0500
+@@ -309,7 +309,7 @@
+         }
+ 
+         h[2] = Math.max(h[2], h[3]);
+-        h[3] = h[0];
++        h[3] = h[2];
+ 
+         if (this.centerBlock != null) {
+             RectangleConstraint c4 = new RectangleConstraint(width - w[2]

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_47/src/main/java/org/jsoup/nodes/Entities.java	2023-01-16 15:29:53.084402030 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/47/patch/./org/jsoup/nodes/Entities.java	2023-01-16 15:29:53.052401630 -0600
+@@ -119,7 +119,7 @@
+                         break;
+                     case '<':
+                         // escape when in character data or when in a xml attribue val; not needed in html attr val
+-                        if (!inAttribute)
++                        if (!inAttribute || escapeMode == EscapeMode.xhtml)
+                             accum.append("&lt;");
+                         else
+                             accum.append(c);

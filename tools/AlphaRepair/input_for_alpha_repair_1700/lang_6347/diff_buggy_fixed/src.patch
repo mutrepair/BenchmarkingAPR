@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/6347/org/apache/commons/lang3/Conversion.java	2022-10-31 19:47:57.351739716 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/Conversion.java	2022-12-26 15:13:54.761656232 -0600
+@@ -909,7 +909,7 @@
+         }
+         long out = dstInit;
+         int shift = 0;
+-        for (int i = 0; i <= nHex; i++ ) {
++        for (int i = 0; i < nHex; i++ ) {
+             shift = i * 4 + dstPos;
+             final long bits = (0xfL & hexDigitToInt(src.charAt(i + srcPos))) << shift;
+             final long mask = 0xfL << shift;

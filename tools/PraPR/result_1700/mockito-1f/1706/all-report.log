@@ -1,0 +1,476 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 43
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append(I)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append(I)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.toString()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>()V with a call to <init>(Ljava/lang/CharSequence;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append([C)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(I)Ljava/lang/StringBuilder; with a call to append([C)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>()V with a call to <init>(Ljava/lang/String;)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(D)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(I)Ljava/lang/StringBuilder; with a call to append(D)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>()V with a call to <init>(I)V
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Z)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(I)Ljava/lang/StringBuilder; with a call to append(Z)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(I)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to matcherStack is guarded using value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to matcherStack is guarded using field matcherStack
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to append with a call to appendCodePoint
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to append with a call to deleteCharAt
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Stack::size()I is guarded using default value 0
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append(I)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::toString()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to matcherStack is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(I)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to toString()Ljava/lang/String; is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to assertState(ZLjava/lang/String;)V is guarded returning default value null
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.mockito.internal.progress.ArgumentMatcherStorageImpl::assertState(ZLjava/lang/String;)V is guarded
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/lang/StringBuilder::<init>
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 14
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Stack::size
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::append
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+39.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::toString
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+40.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+41.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 13
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+42.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/mockito/internal/progress/ArgumentMatcherStorageImpl::assertState
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+43.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::append with receiver
+	File Name: org/mockito/internal/progress/ArgumentMatcherStorageImpl.java
+	Line Number: 69
+	Block: 15
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

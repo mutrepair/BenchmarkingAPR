@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4233/org/apache/commons/codec/net/QuotedPrintableCodec.java	2022-10-31 19:47:39.163805950 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java	2022-12-26 15:13:39.229488380 -0600
+@@ -143,7 +143,7 @@
+             printable = PRINTABLE_CHARS;
+         }
+         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+-        for (int i = -1; i < bytes.length; i++) {
++        for (int i = 0; i < bytes.length; i++) {
+             int b = bytes[i];
+             if (b < 0) {
+                 b = 256 + b;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1653/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-10-31 19:47:49.671767815 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-12-26 15:13:53.109638382 -0600
+@@ -65,7 +65,7 @@
+         /* Then make sure attributes are sorted before elements, keep track
+          * of how many there are altogether
+          */
+-        int attrCount = 1;
++        int attrCount = 0;
+         for (BeanPropertyWriter bpw : _props) {
+             if (_isAttribute(bpw)) { // Yup: let's build re-ordered list then
+                 attrCount = _orderAttributesFirst(_props, _filteredProps);

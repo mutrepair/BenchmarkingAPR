@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10061/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-10-31 19:47:39.607804346 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-12-26 15:13:49.801602638 -0600
+@@ -179,7 +179,7 @@
+         final int sum    = n + m;
+         final int offset = (sum % 2 == 0 ? sum : sum + 1) / 2;
+         vDown[1+offset] = start1;
+-        vUp[1 - offset]   = end1 + 1;
++        vUp[1+offset]   = end1 + 1;
+ 
+         for (int d = 0; d <= offset ; ++d) {
+             // Down

@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.collections4.list.TreeList$AVLNode.getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is replaced by an instantiation of type org.apache.commons.collections4.list.TreeList$AVLNode using (ILjava/lang/Object;Lorg/apache/commons/collections4/list/TreeList$AVLNode;Lorg/apache/commons/collections4/list/TreeList$AVLNode;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.collections4.list.TreeList$AVLNode.getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is replaced by an instantiation of type org.apache.commons.collections4.list.TreeList$AVLNode using (Ljava/util/Collection;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field right
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.next()
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getRightSubTree with a call to next
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getRightSubTree with a call to previous
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getRightSubTree with a call to getLeftSubTree
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getRightSubTree with a call to max
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getRightSubTree with a call to min
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getRightSubTree with a call to removeMax
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getRightSubTree with a call to removeMin
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getRightSubTree with a call to removeSelf
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to getRightSubTree with a call to balance
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to getRightSubTree with a call to rotateLeft
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.list.TreeList$AVLNode::getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is guarded using default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is guarded returning local this
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is guarded returning field left
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getRightSubTree()Lorg/apache/commons/collections4/list/TreeList$AVLNode; is guarded returning field right
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList$AVLNode::getRightSubTree
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to org/apache/commons/collections4/list/TreeList$AVLNode::getRightSubTree with receiver
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 621
+	Block: 76
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

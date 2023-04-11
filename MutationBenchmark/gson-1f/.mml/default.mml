@@ -1,0 +1,959 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for com.google.gson.LowerCamelCaseSeparatorNamingPolicy
+AOR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+LOR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+SOR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+COR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+ROR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+ORU<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+LVR<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+STD<"com.google.gson.LowerCamelCaseSeparatorNamingPolicy">;
+
+// Enable operators for com.google.gson.ParameterizedTypeImpl
+AOR<"com.google.gson.ParameterizedTypeImpl">;
+LOR<"com.google.gson.ParameterizedTypeImpl">;
+SOR<"com.google.gson.ParameterizedTypeImpl">;
+COR<"com.google.gson.ParameterizedTypeImpl">;
+ROR<"com.google.gson.ParameterizedTypeImpl">;
+ORU<"com.google.gson.ParameterizedTypeImpl">;
+LVR<"com.google.gson.ParameterizedTypeImpl">;
+STD<"com.google.gson.ParameterizedTypeImpl">;
+
+// Enable operators for com.google.gson.JsonStreamParser
+AOR<"com.google.gson.JsonStreamParser">;
+LOR<"com.google.gson.JsonStreamParser">;
+SOR<"com.google.gson.JsonStreamParser">;
+COR<"com.google.gson.JsonStreamParser">;
+ROR<"com.google.gson.JsonStreamParser">;
+ORU<"com.google.gson.JsonStreamParser">;
+LVR<"com.google.gson.JsonStreamParser">;
+STD<"com.google.gson.JsonStreamParser">;
+
+// Enable operators for com.google.gson.Gson
+AOR<"com.google.gson.Gson">;
+LOR<"com.google.gson.Gson">;
+SOR<"com.google.gson.Gson">;
+COR<"com.google.gson.Gson">;
+ROR<"com.google.gson.Gson">;
+ORU<"com.google.gson.Gson">;
+LVR<"com.google.gson.Gson">;
+STD<"com.google.gson.Gson">;
+
+// Enable operators for com.google.gson.LruCache
+AOR<"com.google.gson.LruCache">;
+LOR<"com.google.gson.LruCache">;
+SOR<"com.google.gson.LruCache">;
+COR<"com.google.gson.LruCache">;
+ROR<"com.google.gson.LruCache">;
+ORU<"com.google.gson.LruCache">;
+LVR<"com.google.gson.LruCache">;
+STD<"com.google.gson.LruCache">;
+
+// Enable operators for com.google.gson.NullExclusionStrategy
+AOR<"com.google.gson.NullExclusionStrategy">;
+LOR<"com.google.gson.NullExclusionStrategy">;
+SOR<"com.google.gson.NullExclusionStrategy">;
+COR<"com.google.gson.NullExclusionStrategy">;
+ROR<"com.google.gson.NullExclusionStrategy">;
+ORU<"com.google.gson.NullExclusionStrategy">;
+LVR<"com.google.gson.NullExclusionStrategy">;
+STD<"com.google.gson.NullExclusionStrategy">;
+
+// Enable operators for com.google.gson.ExposeAnnotationDeserializationExclusionStrategy
+AOR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+LOR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+SOR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+COR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+ROR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+ORU<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+LVR<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+STD<"com.google.gson.ExposeAnnotationDeserializationExclusionStrategy">;
+
+// Enable operators for com.google.gson.JsonSerializer
+AOR<"com.google.gson.JsonSerializer">;
+LOR<"com.google.gson.JsonSerializer">;
+SOR<"com.google.gson.JsonSerializer">;
+COR<"com.google.gson.JsonSerializer">;
+ROR<"com.google.gson.JsonSerializer">;
+ORU<"com.google.gson.JsonSerializer">;
+LVR<"com.google.gson.JsonSerializer">;
+STD<"com.google.gson.JsonSerializer">;
+
+// Enable operators for com.google.gson.InstanceCreator
+AOR<"com.google.gson.InstanceCreator">;
+LOR<"com.google.gson.InstanceCreator">;
+SOR<"com.google.gson.InstanceCreator">;
+COR<"com.google.gson.InstanceCreator">;
+ROR<"com.google.gson.InstanceCreator">;
+ORU<"com.google.gson.InstanceCreator">;
+LVR<"com.google.gson.InstanceCreator">;
+STD<"com.google.gson.InstanceCreator">;
+
+// Enable operators for com.google.gson.JsonParseException
+AOR<"com.google.gson.JsonParseException">;
+LOR<"com.google.gson.JsonParseException">;
+SOR<"com.google.gson.JsonParseException">;
+COR<"com.google.gson.JsonParseException">;
+ROR<"com.google.gson.JsonParseException">;
+ORU<"com.google.gson.JsonParseException">;
+LVR<"com.google.gson.JsonParseException">;
+STD<"com.google.gson.JsonParseException">;
+
+// Enable operators for com.google.gson.TypeUtils
+AOR<"com.google.gson.TypeUtils">;
+LOR<"com.google.gson.TypeUtils">;
+SOR<"com.google.gson.TypeUtils">;
+COR<"com.google.gson.TypeUtils">;
+ROR<"com.google.gson.TypeUtils">;
+ORU<"com.google.gson.TypeUtils">;
+LVR<"com.google.gson.TypeUtils">;
+STD<"com.google.gson.TypeUtils">;
+
+// Enable operators for com.google.gson.ExclusionStrategy
+AOR<"com.google.gson.ExclusionStrategy">;
+LOR<"com.google.gson.ExclusionStrategy">;
+SOR<"com.google.gson.ExclusionStrategy">;
+COR<"com.google.gson.ExclusionStrategy">;
+ROR<"com.google.gson.ExclusionStrategy">;
+ORU<"com.google.gson.ExclusionStrategy">;
+LVR<"com.google.gson.ExclusionStrategy">;
+STD<"com.google.gson.ExclusionStrategy">;
+
+// Enable operators for com.google.gson.GsonBuilder
+AOR<"com.google.gson.GsonBuilder">;
+LOR<"com.google.gson.GsonBuilder">;
+SOR<"com.google.gson.GsonBuilder">;
+COR<"com.google.gson.GsonBuilder">;
+ROR<"com.google.gson.GsonBuilder">;
+ORU<"com.google.gson.GsonBuilder">;
+LVR<"com.google.gson.GsonBuilder">;
+STD<"com.google.gson.GsonBuilder">;
+
+// Enable operators for com.google.gson.JsonPrimitive
+AOR<"com.google.gson.JsonPrimitive">;
+LOR<"com.google.gson.JsonPrimitive">;
+SOR<"com.google.gson.JsonPrimitive">;
+COR<"com.google.gson.JsonPrimitive">;
+ROR<"com.google.gson.JsonPrimitive">;
+ORU<"com.google.gson.JsonPrimitive">;
+LVR<"com.google.gson.JsonPrimitive">;
+STD<"com.google.gson.JsonPrimitive">;
+
+// Enable operators for com.google.gson.DelegatingJsonElementVisitor
+AOR<"com.google.gson.DelegatingJsonElementVisitor">;
+LOR<"com.google.gson.DelegatingJsonElementVisitor">;
+SOR<"com.google.gson.DelegatingJsonElementVisitor">;
+COR<"com.google.gson.DelegatingJsonElementVisitor">;
+ROR<"com.google.gson.DelegatingJsonElementVisitor">;
+ORU<"com.google.gson.DelegatingJsonElementVisitor">;
+LVR<"com.google.gson.DelegatingJsonElementVisitor">;
+STD<"com.google.gson.DelegatingJsonElementVisitor">;
+
+// Enable operators for com.google.gson.JsonTreeNavigator
+AOR<"com.google.gson.JsonTreeNavigator">;
+LOR<"com.google.gson.JsonTreeNavigator">;
+SOR<"com.google.gson.JsonTreeNavigator">;
+COR<"com.google.gson.JsonTreeNavigator">;
+ROR<"com.google.gson.JsonTreeNavigator">;
+ORU<"com.google.gson.JsonTreeNavigator">;
+LVR<"com.google.gson.JsonTreeNavigator">;
+STD<"com.google.gson.JsonTreeNavigator">;
+
+// Enable operators for com.google.gson.Cache
+AOR<"com.google.gson.Cache">;
+LOR<"com.google.gson.Cache">;
+SOR<"com.google.gson.Cache">;
+COR<"com.google.gson.Cache">;
+ROR<"com.google.gson.Cache">;
+ORU<"com.google.gson.Cache">;
+LVR<"com.google.gson.Cache">;
+STD<"com.google.gson.Cache">;
+
+// Enable operators for com.google.gson.JavaFieldNamingPolicy
+AOR<"com.google.gson.JavaFieldNamingPolicy">;
+LOR<"com.google.gson.JavaFieldNamingPolicy">;
+SOR<"com.google.gson.JavaFieldNamingPolicy">;
+COR<"com.google.gson.JavaFieldNamingPolicy">;
+ROR<"com.google.gson.JavaFieldNamingPolicy">;
+ORU<"com.google.gson.JavaFieldNamingPolicy">;
+LVR<"com.google.gson.JavaFieldNamingPolicy">;
+STD<"com.google.gson.JavaFieldNamingPolicy">;
+
+// Enable operators for com.google.gson.LowerCaseNamingPolicy
+AOR<"com.google.gson.LowerCaseNamingPolicy">;
+LOR<"com.google.gson.LowerCaseNamingPolicy">;
+SOR<"com.google.gson.LowerCaseNamingPolicy">;
+COR<"com.google.gson.LowerCaseNamingPolicy">;
+ROR<"com.google.gson.LowerCaseNamingPolicy">;
+ORU<"com.google.gson.LowerCaseNamingPolicy">;
+LVR<"com.google.gson.LowerCaseNamingPolicy">;
+STD<"com.google.gson.LowerCaseNamingPolicy">;
+
+// Enable operators for com.google.gson.VersionConstants
+AOR<"com.google.gson.VersionConstants">;
+LOR<"com.google.gson.VersionConstants">;
+SOR<"com.google.gson.VersionConstants">;
+COR<"com.google.gson.VersionConstants">;
+ROR<"com.google.gson.VersionConstants">;
+ORU<"com.google.gson.VersionConstants">;
+LVR<"com.google.gson.VersionConstants">;
+STD<"com.google.gson.VersionConstants">;
+
+// Enable operators for com.google.gson.TypeInfoArray
+AOR<"com.google.gson.TypeInfoArray">;
+LOR<"com.google.gson.TypeInfoArray">;
+SOR<"com.google.gson.TypeInfoArray">;
+COR<"com.google.gson.TypeInfoArray">;
+ROR<"com.google.gson.TypeInfoArray">;
+ORU<"com.google.gson.TypeInfoArray">;
+LVR<"com.google.gson.TypeInfoArray">;
+STD<"com.google.gson.TypeInfoArray">;
+
+// Enable operators for com.google.gson.JsonDeserializationContextDefault
+AOR<"com.google.gson.JsonDeserializationContextDefault">;
+LOR<"com.google.gson.JsonDeserializationContextDefault">;
+SOR<"com.google.gson.JsonDeserializationContextDefault">;
+COR<"com.google.gson.JsonDeserializationContextDefault">;
+ROR<"com.google.gson.JsonDeserializationContextDefault">;
+ORU<"com.google.gson.JsonDeserializationContextDefault">;
+LVR<"com.google.gson.JsonDeserializationContextDefault">;
+STD<"com.google.gson.JsonDeserializationContextDefault">;
+
+// Enable operators for com.google.gson.InnerClassExclusionStrategy
+AOR<"com.google.gson.InnerClassExclusionStrategy">;
+LOR<"com.google.gson.InnerClassExclusionStrategy">;
+SOR<"com.google.gson.InnerClassExclusionStrategy">;
+COR<"com.google.gson.InnerClassExclusionStrategy">;
+ROR<"com.google.gson.InnerClassExclusionStrategy">;
+ORU<"com.google.gson.InnerClassExclusionStrategy">;
+LVR<"com.google.gson.InnerClassExclusionStrategy">;
+STD<"com.google.gson.InnerClassExclusionStrategy">;
+
+// Enable operators for com.google.gson.CompositionFieldNamingPolicy
+AOR<"com.google.gson.CompositionFieldNamingPolicy">;
+LOR<"com.google.gson.CompositionFieldNamingPolicy">;
+SOR<"com.google.gson.CompositionFieldNamingPolicy">;
+COR<"com.google.gson.CompositionFieldNamingPolicy">;
+ROR<"com.google.gson.CompositionFieldNamingPolicy">;
+ORU<"com.google.gson.CompositionFieldNamingPolicy">;
+LVR<"com.google.gson.CompositionFieldNamingPolicy">;
+STD<"com.google.gson.CompositionFieldNamingPolicy">;
+
+// Enable operators for com.google.gson.JsonElement
+AOR<"com.google.gson.JsonElement">;
+LOR<"com.google.gson.JsonElement">;
+SOR<"com.google.gson.JsonElement">;
+COR<"com.google.gson.JsonElement">;
+ROR<"com.google.gson.JsonElement">;
+ORU<"com.google.gson.JsonElement">;
+LVR<"com.google.gson.JsonElement">;
+STD<"com.google.gson.JsonElement">;
+
+// Enable operators for com.google.gson.MemoryRefStack
+AOR<"com.google.gson.MemoryRefStack">;
+LOR<"com.google.gson.MemoryRefStack">;
+SOR<"com.google.gson.MemoryRefStack">;
+COR<"com.google.gson.MemoryRefStack">;
+ROR<"com.google.gson.MemoryRefStack">;
+ORU<"com.google.gson.MemoryRefStack">;
+LVR<"com.google.gson.MemoryRefStack">;
+STD<"com.google.gson.MemoryRefStack">;
+
+// Enable operators for com.google.gson.VersionExclusionStrategy
+AOR<"com.google.gson.VersionExclusionStrategy">;
+LOR<"com.google.gson.VersionExclusionStrategy">;
+SOR<"com.google.gson.VersionExclusionStrategy">;
+COR<"com.google.gson.VersionExclusionStrategy">;
+ROR<"com.google.gson.VersionExclusionStrategy">;
+ORU<"com.google.gson.VersionExclusionStrategy">;
+LVR<"com.google.gson.VersionExclusionStrategy">;
+STD<"com.google.gson.VersionExclusionStrategy">;
+
+// Enable operators for com.google.gson.FieldNamingStrategy
+AOR<"com.google.gson.FieldNamingStrategy">;
+LOR<"com.google.gson.FieldNamingStrategy">;
+SOR<"com.google.gson.FieldNamingStrategy">;
+COR<"com.google.gson.FieldNamingStrategy">;
+ROR<"com.google.gson.FieldNamingStrategy">;
+ORU<"com.google.gson.FieldNamingStrategy">;
+LVR<"com.google.gson.FieldNamingStrategy">;
+STD<"com.google.gson.FieldNamingStrategy">;
+
+// Enable operators for com.google.gson.JsonObjectDeserializationVisitor
+AOR<"com.google.gson.JsonObjectDeserializationVisitor">;
+LOR<"com.google.gson.JsonObjectDeserializationVisitor">;
+SOR<"com.google.gson.JsonObjectDeserializationVisitor">;
+COR<"com.google.gson.JsonObjectDeserializationVisitor">;
+ROR<"com.google.gson.JsonObjectDeserializationVisitor">;
+ORU<"com.google.gson.JsonObjectDeserializationVisitor">;
+LVR<"com.google.gson.JsonObjectDeserializationVisitor">;
+STD<"com.google.gson.JsonObjectDeserializationVisitor">;
+
+// Enable operators for com.google.gson.JsonSerializationVisitor
+AOR<"com.google.gson.JsonSerializationVisitor">;
+LOR<"com.google.gson.JsonSerializationVisitor">;
+SOR<"com.google.gson.JsonSerializationVisitor">;
+COR<"com.google.gson.JsonSerializationVisitor">;
+ROR<"com.google.gson.JsonSerializationVisitor">;
+ORU<"com.google.gson.JsonSerializationVisitor">;
+LVR<"com.google.gson.JsonSerializationVisitor">;
+STD<"com.google.gson.JsonSerializationVisitor">;
+
+// Enable operators for com.google.gson.JsonDeserializationVisitor
+AOR<"com.google.gson.JsonDeserializationVisitor">;
+LOR<"com.google.gson.JsonDeserializationVisitor">;
+SOR<"com.google.gson.JsonDeserializationVisitor">;
+COR<"com.google.gson.JsonDeserializationVisitor">;
+ROR<"com.google.gson.JsonDeserializationVisitor">;
+ORU<"com.google.gson.JsonDeserializationVisitor">;
+LVR<"com.google.gson.JsonDeserializationVisitor">;
+STD<"com.google.gson.JsonDeserializationVisitor">;
+
+// Enable operators for com.google.gson.stream.JsonWriter
+AOR<"com.google.gson.stream.JsonWriter">;
+LOR<"com.google.gson.stream.JsonWriter">;
+SOR<"com.google.gson.stream.JsonWriter">;
+COR<"com.google.gson.stream.JsonWriter">;
+ROR<"com.google.gson.stream.JsonWriter">;
+ORU<"com.google.gson.stream.JsonWriter">;
+LVR<"com.google.gson.stream.JsonWriter">;
+STD<"com.google.gson.stream.JsonWriter">;
+
+// Enable operators for com.google.gson.stream.JsonScope
+AOR<"com.google.gson.stream.JsonScope">;
+LOR<"com.google.gson.stream.JsonScope">;
+SOR<"com.google.gson.stream.JsonScope">;
+COR<"com.google.gson.stream.JsonScope">;
+ROR<"com.google.gson.stream.JsonScope">;
+ORU<"com.google.gson.stream.JsonScope">;
+LVR<"com.google.gson.stream.JsonScope">;
+STD<"com.google.gson.stream.JsonScope">;
+
+// Enable operators for com.google.gson.stream.JsonToken
+AOR<"com.google.gson.stream.JsonToken">;
+LOR<"com.google.gson.stream.JsonToken">;
+SOR<"com.google.gson.stream.JsonToken">;
+COR<"com.google.gson.stream.JsonToken">;
+ROR<"com.google.gson.stream.JsonToken">;
+ORU<"com.google.gson.stream.JsonToken">;
+LVR<"com.google.gson.stream.JsonToken">;
+STD<"com.google.gson.stream.JsonToken">;
+
+// Enable operators for com.google.gson.stream.MalformedJsonException
+AOR<"com.google.gson.stream.MalformedJsonException">;
+LOR<"com.google.gson.stream.MalformedJsonException">;
+SOR<"com.google.gson.stream.MalformedJsonException">;
+COR<"com.google.gson.stream.MalformedJsonException">;
+ROR<"com.google.gson.stream.MalformedJsonException">;
+ORU<"com.google.gson.stream.MalformedJsonException">;
+LVR<"com.google.gson.stream.MalformedJsonException">;
+STD<"com.google.gson.stream.MalformedJsonException">;
+
+// Enable operators for com.google.gson.stream.JsonReader
+AOR<"com.google.gson.stream.JsonReader">;
+LOR<"com.google.gson.stream.JsonReader">;
+SOR<"com.google.gson.stream.JsonReader">;
+COR<"com.google.gson.stream.JsonReader">;
+ROR<"com.google.gson.stream.JsonReader">;
+ORU<"com.google.gson.stream.JsonReader">;
+LVR<"com.google.gson.stream.JsonReader">;
+STD<"com.google.gson.stream.JsonReader">;
+
+// Enable operators for com.google.gson.FieldNamingStrategy2Adapter
+AOR<"com.google.gson.FieldNamingStrategy2Adapter">;
+LOR<"com.google.gson.FieldNamingStrategy2Adapter">;
+SOR<"com.google.gson.FieldNamingStrategy2Adapter">;
+COR<"com.google.gson.FieldNamingStrategy2Adapter">;
+ROR<"com.google.gson.FieldNamingStrategy2Adapter">;
+ORU<"com.google.gson.FieldNamingStrategy2Adapter">;
+LVR<"com.google.gson.FieldNamingStrategy2Adapter">;
+STD<"com.google.gson.FieldNamingStrategy2Adapter">;
+
+// Enable operators for com.google.gson.TypeInfo
+AOR<"com.google.gson.TypeInfo">;
+LOR<"com.google.gson.TypeInfo">;
+SOR<"com.google.gson.TypeInfo">;
+COR<"com.google.gson.TypeInfo">;
+ROR<"com.google.gson.TypeInfo">;
+ORU<"com.google.gson.TypeInfo">;
+LVR<"com.google.gson.TypeInfo">;
+STD<"com.google.gson.TypeInfo">;
+
+// Enable operators for com.google.gson.Preconditions
+AOR<"com.google.gson.Preconditions">;
+LOR<"com.google.gson.Preconditions">;
+SOR<"com.google.gson.Preconditions">;
+COR<"com.google.gson.Preconditions">;
+ROR<"com.google.gson.Preconditions">;
+ORU<"com.google.gson.Preconditions">;
+LVR<"com.google.gson.Preconditions">;
+STD<"com.google.gson.Preconditions">;
+
+// Enable operators for com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy
+AOR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+LOR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+SOR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+COR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+ROR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+ORU<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+LVR<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+STD<"com.google.gson.SerializedNameAnnotationInterceptingNamingPolicy">;
+
+// Enable operators for com.google.gson.CamelCaseSeparatorNamingPolicy
+AOR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+LOR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+SOR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+COR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+ROR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+ORU<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+LVR<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+STD<"com.google.gson.CamelCaseSeparatorNamingPolicy">;
+
+// Enable operators for com.google.gson.JsonDeserializer
+AOR<"com.google.gson.JsonDeserializer">;
+LOR<"com.google.gson.JsonDeserializer">;
+SOR<"com.google.gson.JsonDeserializer">;
+COR<"com.google.gson.JsonDeserializer">;
+ROR<"com.google.gson.JsonDeserializer">;
+ORU<"com.google.gson.JsonDeserializer">;
+LVR<"com.google.gson.JsonDeserializer">;
+STD<"com.google.gson.JsonDeserializer">;
+
+// Enable operators for com.google.gson.TypeInfoFactory
+AOR<"com.google.gson.TypeInfoFactory">;
+LOR<"com.google.gson.TypeInfoFactory">;
+SOR<"com.google.gson.TypeInfoFactory">;
+COR<"com.google.gson.TypeInfoFactory">;
+ROR<"com.google.gson.TypeInfoFactory">;
+ORU<"com.google.gson.TypeInfoFactory">;
+LVR<"com.google.gson.TypeInfoFactory">;
+STD<"com.google.gson.TypeInfoFactory">;
+
+// Enable operators for com.google.gson.Streams
+AOR<"com.google.gson.Streams">;
+LOR<"com.google.gson.Streams">;
+SOR<"com.google.gson.Streams">;
+COR<"com.google.gson.Streams">;
+ROR<"com.google.gson.Streams">;
+ORU<"com.google.gson.Streams">;
+LVR<"com.google.gson.Streams">;
+STD<"com.google.gson.Streams">;
+
+// Enable operators for com.google.gson.reflect.TypeToken
+AOR<"com.google.gson.reflect.TypeToken">;
+LOR<"com.google.gson.reflect.TypeToken">;
+SOR<"com.google.gson.reflect.TypeToken">;
+COR<"com.google.gson.reflect.TypeToken">;
+ROR<"com.google.gson.reflect.TypeToken">;
+ORU<"com.google.gson.reflect.TypeToken">;
+LVR<"com.google.gson.reflect.TypeToken">;
+STD<"com.google.gson.reflect.TypeToken">;
+
+// Enable operators for com.google.gson.JsonSerializationContextDefault
+AOR<"com.google.gson.JsonSerializationContextDefault">;
+LOR<"com.google.gson.JsonSerializationContextDefault">;
+SOR<"com.google.gson.JsonSerializationContextDefault">;
+COR<"com.google.gson.JsonSerializationContextDefault">;
+ROR<"com.google.gson.JsonSerializationContextDefault">;
+ORU<"com.google.gson.JsonSerializationContextDefault">;
+LVR<"com.google.gson.JsonSerializationContextDefault">;
+STD<"com.google.gson.JsonSerializationContextDefault">;
+
+// Enable operators for com.google.gson.ObjectNavigatorFactory
+AOR<"com.google.gson.ObjectNavigatorFactory">;
+LOR<"com.google.gson.ObjectNavigatorFactory">;
+SOR<"com.google.gson.ObjectNavigatorFactory">;
+COR<"com.google.gson.ObjectNavigatorFactory">;
+ROR<"com.google.gson.ObjectNavigatorFactory">;
+ORU<"com.google.gson.ObjectNavigatorFactory">;
+LVR<"com.google.gson.ObjectNavigatorFactory">;
+STD<"com.google.gson.ObjectNavigatorFactory">;
+
+// Enable operators for com.google.gson.JsonParser
+AOR<"com.google.gson.JsonParser">;
+LOR<"com.google.gson.JsonParser">;
+SOR<"com.google.gson.JsonParser">;
+COR<"com.google.gson.JsonParser">;
+ROR<"com.google.gson.JsonParser">;
+ORU<"com.google.gson.JsonParser">;
+LVR<"com.google.gson.JsonParser">;
+STD<"com.google.gson.JsonParser">;
+
+// Enable operators for com.google.gson.Escaper
+AOR<"com.google.gson.Escaper">;
+LOR<"com.google.gson.Escaper">;
+SOR<"com.google.gson.Escaper">;
+COR<"com.google.gson.Escaper">;
+ROR<"com.google.gson.Escaper">;
+ORU<"com.google.gson.Escaper">;
+LVR<"com.google.gson.Escaper">;
+STD<"com.google.gson.Escaper">;
+
+// Enable operators for com.google.gson.MappedObjectConstructor
+AOR<"com.google.gson.MappedObjectConstructor">;
+LOR<"com.google.gson.MappedObjectConstructor">;
+SOR<"com.google.gson.MappedObjectConstructor">;
+COR<"com.google.gson.MappedObjectConstructor">;
+ROR<"com.google.gson.MappedObjectConstructor">;
+ORU<"com.google.gson.MappedObjectConstructor">;
+LVR<"com.google.gson.MappedObjectConstructor">;
+STD<"com.google.gson.MappedObjectConstructor">;
+
+// Enable operators for com.google.gson.ObjectNavigator
+AOR<"com.google.gson.ObjectNavigator">;
+LOR<"com.google.gson.ObjectNavigator">;
+SOR<"com.google.gson.ObjectNavigator">;
+COR<"com.google.gson.ObjectNavigator">;
+ROR<"com.google.gson.ObjectNavigator">;
+ORU<"com.google.gson.ObjectNavigator">;
+LVR<"com.google.gson.ObjectNavigator">;
+STD<"com.google.gson.ObjectNavigator">;
+
+// Enable operators for com.google.gson.UpperCamelCaseSeparatorNamingPolicy
+AOR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+LOR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+SOR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+COR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+ROR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+ORU<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+LVR<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+STD<"com.google.gson.UpperCamelCaseSeparatorNamingPolicy">;
+
+// Enable operators for com.google.gson.ModifierBasedExclusionStrategy
+AOR<"com.google.gson.ModifierBasedExclusionStrategy">;
+LOR<"com.google.gson.ModifierBasedExclusionStrategy">;
+SOR<"com.google.gson.ModifierBasedExclusionStrategy">;
+COR<"com.google.gson.ModifierBasedExclusionStrategy">;
+ROR<"com.google.gson.ModifierBasedExclusionStrategy">;
+ORU<"com.google.gson.ModifierBasedExclusionStrategy">;
+LVR<"com.google.gson.ModifierBasedExclusionStrategy">;
+STD<"com.google.gson.ModifierBasedExclusionStrategy">;
+
+// Enable operators for com.google.gson.GenericArrayTypeImpl
+AOR<"com.google.gson.GenericArrayTypeImpl">;
+LOR<"com.google.gson.GenericArrayTypeImpl">;
+SOR<"com.google.gson.GenericArrayTypeImpl">;
+COR<"com.google.gson.GenericArrayTypeImpl">;
+ROR<"com.google.gson.GenericArrayTypeImpl">;
+ORU<"com.google.gson.GenericArrayTypeImpl">;
+LVR<"com.google.gson.GenericArrayTypeImpl">;
+STD<"com.google.gson.GenericArrayTypeImpl">;
+
+// Enable operators for com.google.gson.Primitives
+AOR<"com.google.gson.Primitives">;
+LOR<"com.google.gson.Primitives">;
+SOR<"com.google.gson.Primitives">;
+COR<"com.google.gson.Primitives">;
+ROR<"com.google.gson.Primitives">;
+ORU<"com.google.gson.Primitives">;
+LVR<"com.google.gson.Primitives">;
+STD<"com.google.gson.Primitives">;
+
+// Enable operators for com.google.gson.ModifyFirstLetterNamingPolicy
+AOR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+LOR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+SOR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+COR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+ROR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+ORU<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+LVR<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+STD<"com.google.gson.ModifyFirstLetterNamingPolicy">;
+
+// Enable operators for com.google.gson.Pair
+AOR<"com.google.gson.Pair">;
+LOR<"com.google.gson.Pair">;
+SOR<"com.google.gson.Pair">;
+COR<"com.google.gson.Pair">;
+ROR<"com.google.gson.Pair">;
+ORU<"com.google.gson.Pair">;
+LVR<"com.google.gson.Pair">;
+STD<"com.google.gson.Pair">;
+
+// Enable operators for com.google.gson.JsonElementVisitor
+AOR<"com.google.gson.JsonElementVisitor">;
+LOR<"com.google.gson.JsonElementVisitor">;
+SOR<"com.google.gson.JsonElementVisitor">;
+COR<"com.google.gson.JsonElementVisitor">;
+ROR<"com.google.gson.JsonElementVisitor">;
+ORU<"com.google.gson.JsonElementVisitor">;
+LVR<"com.google.gson.JsonElementVisitor">;
+STD<"com.google.gson.JsonElementVisitor">;
+
+// Enable operators for com.google.gson.ObjectConstructor
+AOR<"com.google.gson.ObjectConstructor">;
+LOR<"com.google.gson.ObjectConstructor">;
+SOR<"com.google.gson.ObjectConstructor">;
+COR<"com.google.gson.ObjectConstructor">;
+ROR<"com.google.gson.ObjectConstructor">;
+ORU<"com.google.gson.ObjectConstructor">;
+LVR<"com.google.gson.ObjectConstructor">;
+STD<"com.google.gson.ObjectConstructor">;
+
+// Enable operators for com.google.gson.JsonFieldNameValidator
+AOR<"com.google.gson.JsonFieldNameValidator">;
+LOR<"com.google.gson.JsonFieldNameValidator">;
+SOR<"com.google.gson.JsonFieldNameValidator">;
+COR<"com.google.gson.JsonFieldNameValidator">;
+ROR<"com.google.gson.JsonFieldNameValidator">;
+ORU<"com.google.gson.JsonFieldNameValidator">;
+LVR<"com.google.gson.JsonFieldNameValidator">;
+STD<"com.google.gson.JsonFieldNameValidator">;
+
+// Enable operators for com.google.gson.SyntheticFieldExclusionStrategy
+AOR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+LOR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+SOR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+COR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+ROR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+ORU<"com.google.gson.SyntheticFieldExclusionStrategy">;
+LVR<"com.google.gson.SyntheticFieldExclusionStrategy">;
+STD<"com.google.gson.SyntheticFieldExclusionStrategy">;
+
+// Enable operators for com.google.gson.TypeInfoCollection
+AOR<"com.google.gson.TypeInfoCollection">;
+LOR<"com.google.gson.TypeInfoCollection">;
+SOR<"com.google.gson.TypeInfoCollection">;
+COR<"com.google.gson.TypeInfoCollection">;
+ROR<"com.google.gson.TypeInfoCollection">;
+ORU<"com.google.gson.TypeInfoCollection">;
+LVR<"com.google.gson.TypeInfoCollection">;
+STD<"com.google.gson.TypeInfoCollection">;
+
+// Enable operators for com.google.gson.JsonIOException
+AOR<"com.google.gson.JsonIOException">;
+LOR<"com.google.gson.JsonIOException">;
+SOR<"com.google.gson.JsonIOException">;
+COR<"com.google.gson.JsonIOException">;
+ROR<"com.google.gson.JsonIOException">;
+ORU<"com.google.gson.JsonIOException">;
+LVR<"com.google.gson.JsonIOException">;
+STD<"com.google.gson.JsonIOException">;
+
+// Enable operators for com.google.gson.ObjectTypePair
+AOR<"com.google.gson.ObjectTypePair">;
+LOR<"com.google.gson.ObjectTypePair">;
+SOR<"com.google.gson.ObjectTypePair">;
+COR<"com.google.gson.ObjectTypePair">;
+ROR<"com.google.gson.ObjectTypePair">;
+ORU<"com.google.gson.ObjectTypePair">;
+LVR<"com.google.gson.ObjectTypePair">;
+STD<"com.google.gson.ObjectTypePair">;
+
+// Enable operators for com.google.gson.FieldAttributes
+AOR<"com.google.gson.FieldAttributes">;
+LOR<"com.google.gson.FieldAttributes">;
+SOR<"com.google.gson.FieldAttributes">;
+COR<"com.google.gson.FieldAttributes">;
+ROR<"com.google.gson.FieldAttributes">;
+ORU<"com.google.gson.FieldAttributes">;
+LVR<"com.google.gson.FieldAttributes">;
+STD<"com.google.gson.FieldAttributes">;
+
+// Enable operators for com.google.gson.RecursiveFieldNamingPolicy
+AOR<"com.google.gson.RecursiveFieldNamingPolicy">;
+LOR<"com.google.gson.RecursiveFieldNamingPolicy">;
+SOR<"com.google.gson.RecursiveFieldNamingPolicy">;
+COR<"com.google.gson.RecursiveFieldNamingPolicy">;
+ROR<"com.google.gson.RecursiveFieldNamingPolicy">;
+ORU<"com.google.gson.RecursiveFieldNamingPolicy">;
+LVR<"com.google.gson.RecursiveFieldNamingPolicy">;
+STD<"com.google.gson.RecursiveFieldNamingPolicy">;
+
+// Enable operators for com.google.gson.UpperCaseNamingPolicy
+AOR<"com.google.gson.UpperCaseNamingPolicy">;
+LOR<"com.google.gson.UpperCaseNamingPolicy">;
+SOR<"com.google.gson.UpperCaseNamingPolicy">;
+COR<"com.google.gson.UpperCaseNamingPolicy">;
+ROR<"com.google.gson.UpperCaseNamingPolicy">;
+ORU<"com.google.gson.UpperCaseNamingPolicy">;
+LVR<"com.google.gson.UpperCaseNamingPolicy">;
+STD<"com.google.gson.UpperCaseNamingPolicy">;
+
+// Enable operators for com.google.gson.DisjunctionExclusionStrategy
+AOR<"com.google.gson.DisjunctionExclusionStrategy">;
+LOR<"com.google.gson.DisjunctionExclusionStrategy">;
+SOR<"com.google.gson.DisjunctionExclusionStrategy">;
+COR<"com.google.gson.DisjunctionExclusionStrategy">;
+ROR<"com.google.gson.DisjunctionExclusionStrategy">;
+ORU<"com.google.gson.DisjunctionExclusionStrategy">;
+LVR<"com.google.gson.DisjunctionExclusionStrategy">;
+STD<"com.google.gson.DisjunctionExclusionStrategy">;
+
+// Enable operators for com.google.gson.JsonDeserializerExceptionWrapper
+AOR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+LOR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+SOR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+COR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+ROR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+ORU<"com.google.gson.JsonDeserializerExceptionWrapper">;
+LVR<"com.google.gson.JsonDeserializerExceptionWrapper">;
+STD<"com.google.gson.JsonDeserializerExceptionWrapper">;
+
+// Enable operators for com.google.gson.JsonDeserializationContext
+AOR<"com.google.gson.JsonDeserializationContext">;
+LOR<"com.google.gson.JsonDeserializationContext">;
+SOR<"com.google.gson.JsonDeserializationContext">;
+COR<"com.google.gson.JsonDeserializationContext">;
+ROR<"com.google.gson.JsonDeserializationContext">;
+ORU<"com.google.gson.JsonDeserializationContext">;
+LVR<"com.google.gson.JsonDeserializationContext">;
+STD<"com.google.gson.JsonDeserializationContext">;
+
+// Enable operators for com.google.gson.LongSerializationPolicy
+AOR<"com.google.gson.LongSerializationPolicy">;
+LOR<"com.google.gson.LongSerializationPolicy">;
+SOR<"com.google.gson.LongSerializationPolicy">;
+COR<"com.google.gson.LongSerializationPolicy">;
+ROR<"com.google.gson.LongSerializationPolicy">;
+ORU<"com.google.gson.LongSerializationPolicy">;
+LVR<"com.google.gson.LongSerializationPolicy">;
+STD<"com.google.gson.LongSerializationPolicy">;
+
+// Enable operators for com.google.gson.JsonArrayDeserializationVisitor
+AOR<"com.google.gson.JsonArrayDeserializationVisitor">;
+LOR<"com.google.gson.JsonArrayDeserializationVisitor">;
+SOR<"com.google.gson.JsonArrayDeserializationVisitor">;
+COR<"com.google.gson.JsonArrayDeserializationVisitor">;
+ROR<"com.google.gson.JsonArrayDeserializationVisitor">;
+ORU<"com.google.gson.JsonArrayDeserializationVisitor">;
+LVR<"com.google.gson.JsonArrayDeserializationVisitor">;
+STD<"com.google.gson.JsonArrayDeserializationVisitor">;
+
+// Enable operators for com.google.gson.JsonSerializationContext
+AOR<"com.google.gson.JsonSerializationContext">;
+LOR<"com.google.gson.JsonSerializationContext">;
+SOR<"com.google.gson.JsonSerializationContext">;
+COR<"com.google.gson.JsonSerializationContext">;
+ROR<"com.google.gson.JsonSerializationContext">;
+ORU<"com.google.gson.JsonSerializationContext">;
+LVR<"com.google.gson.JsonSerializationContext">;
+STD<"com.google.gson.JsonSerializationContext">;
+
+// Enable operators for com.google.gson.TypeAdapter
+AOR<"com.google.gson.TypeAdapter">;
+LOR<"com.google.gson.TypeAdapter">;
+SOR<"com.google.gson.TypeAdapter">;
+COR<"com.google.gson.TypeAdapter">;
+ROR<"com.google.gson.TypeAdapter">;
+ORU<"com.google.gson.TypeAdapter">;
+LVR<"com.google.gson.TypeAdapter">;
+STD<"com.google.gson.TypeAdapter">;
+
+// Enable operators for com.google.gson.ParameterizedTypeHandlerMap
+AOR<"com.google.gson.ParameterizedTypeHandlerMap">;
+LOR<"com.google.gson.ParameterizedTypeHandlerMap">;
+SOR<"com.google.gson.ParameterizedTypeHandlerMap">;
+COR<"com.google.gson.ParameterizedTypeHandlerMap">;
+ROR<"com.google.gson.ParameterizedTypeHandlerMap">;
+ORU<"com.google.gson.ParameterizedTypeHandlerMap">;
+LVR<"com.google.gson.ParameterizedTypeHandlerMap">;
+STD<"com.google.gson.ParameterizedTypeHandlerMap">;
+
+// Enable operators for com.google.gson.annotations.SerializedName
+AOR<"com.google.gson.annotations.SerializedName">;
+LOR<"com.google.gson.annotations.SerializedName">;
+SOR<"com.google.gson.annotations.SerializedName">;
+COR<"com.google.gson.annotations.SerializedName">;
+ROR<"com.google.gson.annotations.SerializedName">;
+ORU<"com.google.gson.annotations.SerializedName">;
+LVR<"com.google.gson.annotations.SerializedName">;
+STD<"com.google.gson.annotations.SerializedName">;
+
+// Enable operators for com.google.gson.annotations.Until
+AOR<"com.google.gson.annotations.Until">;
+LOR<"com.google.gson.annotations.Until">;
+SOR<"com.google.gson.annotations.Until">;
+COR<"com.google.gson.annotations.Until">;
+ROR<"com.google.gson.annotations.Until">;
+ORU<"com.google.gson.annotations.Until">;
+LVR<"com.google.gson.annotations.Until">;
+STD<"com.google.gson.annotations.Until">;
+
+// Enable operators for com.google.gson.annotations.Expose
+AOR<"com.google.gson.annotations.Expose">;
+LOR<"com.google.gson.annotations.Expose">;
+SOR<"com.google.gson.annotations.Expose">;
+COR<"com.google.gson.annotations.Expose">;
+ROR<"com.google.gson.annotations.Expose">;
+ORU<"com.google.gson.annotations.Expose">;
+LVR<"com.google.gson.annotations.Expose">;
+STD<"com.google.gson.annotations.Expose">;
+
+// Enable operators for com.google.gson.annotations.Since
+AOR<"com.google.gson.annotations.Since">;
+LOR<"com.google.gson.annotations.Since">;
+SOR<"com.google.gson.annotations.Since">;
+COR<"com.google.gson.annotations.Since">;
+ROR<"com.google.gson.annotations.Since">;
+ORU<"com.google.gson.annotations.Since">;
+LVR<"com.google.gson.annotations.Since">;
+STD<"com.google.gson.annotations.Since">;
+
+// Enable operators for com.google.gson.JsonObject
+AOR<"com.google.gson.JsonObject">;
+LOR<"com.google.gson.JsonObject">;
+SOR<"com.google.gson.JsonObject">;
+COR<"com.google.gson.JsonObject">;
+ROR<"com.google.gson.JsonObject">;
+ORU<"com.google.gson.JsonObject">;
+LVR<"com.google.gson.JsonObject">;
+STD<"com.google.gson.JsonObject">;
+
+// Enable operators for com.google.gson.AnonymousAndLocalClassExclusionStrategy
+AOR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+LOR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+SOR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+COR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+ROR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+ORU<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+LVR<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+STD<"com.google.gson.AnonymousAndLocalClassExclusionStrategy">;
+
+// Enable operators for com.google.gson.ExposeAnnotationSerializationExclusionStrategy
+AOR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+LOR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+SOR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+COR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+ROR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+ORU<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+LVR<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+STD<"com.google.gson.ExposeAnnotationSerializationExclusionStrategy">;
+
+// Enable operators for com.google.gson.CircularReferenceException
+AOR<"com.google.gson.CircularReferenceException">;
+LOR<"com.google.gson.CircularReferenceException">;
+SOR<"com.google.gson.CircularReferenceException">;
+COR<"com.google.gson.CircularReferenceException">;
+ROR<"com.google.gson.CircularReferenceException">;
+ORU<"com.google.gson.CircularReferenceException">;
+LVR<"com.google.gson.CircularReferenceException">;
+STD<"com.google.gson.CircularReferenceException">;
+
+// Enable operators for com.google.gson.TypeInfoMap
+AOR<"com.google.gson.TypeInfoMap">;
+LOR<"com.google.gson.TypeInfoMap">;
+SOR<"com.google.gson.TypeInfoMap">;
+COR<"com.google.gson.TypeInfoMap">;
+ROR<"com.google.gson.TypeInfoMap">;
+ORU<"com.google.gson.TypeInfoMap">;
+LVR<"com.google.gson.TypeInfoMap">;
+STD<"com.google.gson.TypeInfoMap">;
+
+// Enable operators for com.google.gson.JsonNull
+AOR<"com.google.gson.JsonNull">;
+LOR<"com.google.gson.JsonNull">;
+SOR<"com.google.gson.JsonNull">;
+COR<"com.google.gson.JsonNull">;
+ROR<"com.google.gson.JsonNull">;
+ORU<"com.google.gson.JsonNull">;
+LVR<"com.google.gson.JsonNull">;
+STD<"com.google.gson.JsonNull">;
+
+// Enable operators for com.google.gson.JsonArray
+AOR<"com.google.gson.JsonArray">;
+LOR<"com.google.gson.JsonArray">;
+SOR<"com.google.gson.JsonArray">;
+COR<"com.google.gson.JsonArray">;
+ROR<"com.google.gson.JsonArray">;
+ORU<"com.google.gson.JsonArray">;
+LVR<"com.google.gson.JsonArray">;
+STD<"com.google.gson.JsonArray">;
+
+// Enable operators for com.google.gson.DefaultTypeAdapters
+AOR<"com.google.gson.DefaultTypeAdapters">;
+LOR<"com.google.gson.DefaultTypeAdapters">;
+SOR<"com.google.gson.DefaultTypeAdapters">;
+COR<"com.google.gson.DefaultTypeAdapters">;
+ROR<"com.google.gson.DefaultTypeAdapters">;
+ORU<"com.google.gson.DefaultTypeAdapters">;
+LVR<"com.google.gson.DefaultTypeAdapters">;
+STD<"com.google.gson.DefaultTypeAdapters">;
+
+// Enable operators for com.google.gson.JsonSyntaxException
+AOR<"com.google.gson.JsonSyntaxException">;
+LOR<"com.google.gson.JsonSyntaxException">;
+SOR<"com.google.gson.JsonSyntaxException">;
+COR<"com.google.gson.JsonSyntaxException">;
+ROR<"com.google.gson.JsonSyntaxException">;
+ORU<"com.google.gson.JsonSyntaxException">;
+LVR<"com.google.gson.JsonSyntaxException">;
+STD<"com.google.gson.JsonSyntaxException">;
+
+// Enable operators for com.google.gson.FieldNamingStrategy2
+AOR<"com.google.gson.FieldNamingStrategy2">;
+LOR<"com.google.gson.FieldNamingStrategy2">;
+SOR<"com.google.gson.FieldNamingStrategy2">;
+COR<"com.google.gson.FieldNamingStrategy2">;
+ROR<"com.google.gson.FieldNamingStrategy2">;
+ORU<"com.google.gson.FieldNamingStrategy2">;
+LVR<"com.google.gson.FieldNamingStrategy2">;
+STD<"com.google.gson.FieldNamingStrategy2">;
+
+// Enable operators for com.google.gson.FieldNamingPolicy
+AOR<"com.google.gson.FieldNamingPolicy">;
+LOR<"com.google.gson.FieldNamingPolicy">;
+SOR<"com.google.gson.FieldNamingPolicy">;
+COR<"com.google.gson.FieldNamingPolicy">;
+ROR<"com.google.gson.FieldNamingPolicy">;
+ORU<"com.google.gson.FieldNamingPolicy">;
+LVR<"com.google.gson.FieldNamingPolicy">;
+STD<"com.google.gson.FieldNamingPolicy">;

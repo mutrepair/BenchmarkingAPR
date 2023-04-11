@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/49179/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-31 19:47:37.931810397 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-29 13:33:24.571302875 -0500
+@@ -423,7 +423,7 @@
+         } else if ('1' <= ch && ch <= '9') {
+           ++pos;
+           int possibleGroupIndex = ch - '0';
+-          if (numCapturingGroups > possibleGroupIndex) {
++          if (numCapturingGroups >= possibleGroupIndex) {
+             if (pos < limit) {
+               char next = pattern.charAt(pos);
+               if ('0' <= next && next <= '9') {

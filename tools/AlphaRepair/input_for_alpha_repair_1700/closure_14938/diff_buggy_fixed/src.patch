@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/14938/com/google/javascript/jscomp/FunctionTypeBuilder.java	2022-10-31 19:47:37.639811450 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/FunctionTypeBuilder.java	2022-10-29 07:45:18.748260497 -0500
+@@ -313,7 +313,7 @@
+       makesDicts = info.makesDicts();
+       isInterface = info.isInterface();
+ 
+-      if (makesStructs == !isConstructor) {
++      if (makesStructs && !isConstructor) {
+         reportWarning(CONSTRUCTOR_REQUIRED, "@struct", fnName);
+       } else if (makesDicts && !isConstructor) {
+         reportWarning(CONSTRUCTOR_REQUIRED, "@dict", fnName);

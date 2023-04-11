@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/2659/com/fasterxml/jackson/databind/type/CollectionType.java	2022-10-31 19:47:46.651778812 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/type/CollectionType.java	2022-12-26 15:13:52.513631942 -0600
+@@ -31,7 +31,7 @@
+     public JavaType narrowContentsBy(Class<?> contentClass)
+     {
+         // Can do a quick check first:
+-        if (false) {
++        if (contentClass == _elementType.getRawClass()) {
+             return this;
+         }
+         return new CollectionType(_class, _elementType.narrowBy(contentClass),

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/35048/org/jfree/chart/block/BorderArrangement.java	2022-10-31 19:47:29.451840869 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/block/BorderArrangement.java	2022-10-29 16:41:07.426717447 -0500
+@@ -201,7 +201,7 @@
+         if (this.rightBlock != null) {
+             Size2D size = this.rightBlock.arrange(g2, RectangleConstraint.NONE);
+             w[3] = size.width;
+-            h[-3] = size.height;
++            h[3] = size.height;
+         }
+ 
+         h[2] = Math.max(h[2], h[3]);

@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 14:56:16 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 39
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.java
+	Line Number: 1688
+	Block: 385
+	First Index: 212
+	Rank: 1
+	Total Rank: 39
+	Status: SURVIVED
+	Dump: mutant-38.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/90/com/google/debugging/sourcemap/Base64VLQ.java	2023-04-04 14:33:25.461952803 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/debugging/sourcemap/Base64VLQ.java	2023-04-04 13:31:52.761625898 -0500
+@@ -64,7 +64,7 @@
+     if (value < 0) {
+       return ((-value) << 1) + 1;
+     } else {
+-      return (value >>> 1) + 0;
++      return (value << 1) + 0;
+     }
+   }
+ 

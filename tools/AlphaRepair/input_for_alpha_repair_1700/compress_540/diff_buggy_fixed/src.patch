@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/540/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java	2022-10-31 19:47:41.399797865 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -175,7 +175,7 @@
+             readFully(more_magic, 0, more_magic.length);
+             byte tmp[] = new byte[6];
+             System.arraycopy(magic, 0, tmp, 0, magic.length);
+-            System.arraycopy(more_magic, 1, tmp, magic.length,
++            System.arraycopy(more_magic, 0, tmp, magic.length,
+                     more_magic.length);
+             String magicString = new String(tmp);
+             if (magicString.equals(MAGIC_NEW)) {

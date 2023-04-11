@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1586/com/google/gson/ObjectNavigator.java	2022-10-31 19:47:43.671789634 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ObjectNavigator.java	2022-12-26 15:13:51.393619841 -0600
+@@ -104,7 +104,7 @@
+       return;
+     }
+     boolean visitedWithCustomHandler = visitor.visitUsingCustomHandler(objTypePair);
+-    if (!true) {
++    if (!visitedWithCustomHandler) {
+       Object obj = objTypePair.getObject();
+       Object objectToVisit = (obj == null) ? visitor.getTarget() : obj;
+       if (objectToVisit == null) {

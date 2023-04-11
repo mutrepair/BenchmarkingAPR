@@ -1,0 +1,2 @@
+    public boolean isEqualsMethod(Method method) {
+return (method.getParameterTypes().[0] != method);    }

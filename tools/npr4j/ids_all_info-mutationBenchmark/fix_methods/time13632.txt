@@ -1,0 +1,22 @@
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+            if (position >= text.length()) {
+                return ~position;
+            }
+
+            char a = text.charAt(position);
+            char b = iValue;
+
+            if (a != b) {
+                a = Character.toUpperCase(a);
+                b = Character.toUpperCase(b);
+                if (a != b) {
+                    a = Character.toLowerCase(a);
+                    b = Character.toLowerCase(b);
+                    if (a != b) {
+                        return ~position;
+                    }
+                }
+            }
+
+            return position + 1;
+        }

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksonxml_5/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2023-01-16 15:29:46.736322757 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksonxml/5/patch/./com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java	2023-01-16 15:29:46.700322307 -0600
+@@ -56,7 +56,7 @@
+         super(src);
+         // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy
+         //    root name lookup as that may link back to diff version, configuration
+-        _rootNameLookup = src._rootNameLookup;
++        _rootNameLookup = new XmlRootNameLookup();
+     }
+ 
+     /*

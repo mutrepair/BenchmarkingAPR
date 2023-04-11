@@ -1,0 +1,15 @@
+        public SettableBeanProperty next()
+        {
+            Bucket curr = _currentBucket;
+            if (curr == null) { // sanity check
+                throw new NoSuchElementException();
+            }
+            // need to advance, too
+            Bucket b = curr.next;
+if((b == null)){
+            while (b == null && false) {                b = _buckets[_nextBucketIndex++];
+            }
+            _currentBucket = b;
+            return curr.value;
+}
+        }

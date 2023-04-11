@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/6174/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 14:33:25.601954158 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 13:31:53.017628939 -0500
+@@ -774,7 +774,7 @@
+         }
+ 
+         for (int i = 0, lastShadow = this.last; i <= lastShadow; i++) {
+-            tt[cftab[ll8[i] ^ 255]++] = i;
++            tt[cftab[ll8[i] & 0xff]++] = i;
+         }
+ 
+         if ((this.origPtr < 0) || (this.origPtr >= tt.length)) {

@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local length to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 12
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local length is replaced by local offset to be used
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 13
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 12
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local length is replaced by access to field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 13
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 15
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 32 with 33
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 17
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 14
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/compress/archivers/tar/TarUtils.java
+	Line Number: 180
+	Block: 32
+	First Index: 16
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/csv_12/src/main/java/org/apache/commons/csv/CSVFormat.java	2023-01-16 15:29:34.368168305 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/csv/12/patch/./org/apache/commons/csv/CSVFormat.java	2023-01-16 15:29:34.340167956 -0600
+@@ -216,7 +216,7 @@
+      * Note: this is currently like {@link #RFC4180} plus {@link #withAllowMissingColumnNames(boolean) withAllowMissingColumnNames(true)}.
+      * </p>
+      */
+-    public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false);
++    public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false).withAllowMissingColumnNames(true);
+ 
+     /**
+      * Tab-delimited format.

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/4882/com/google/javascript/rhino/jstype/FunctionType.java	2022-10-31 19:47:37.927810411 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/FunctionType.java	2022-10-29 02:10:42.259654915 -0500
+@@ -626,7 +626,7 @@
+     FunctionBuilder builder = new FunctionBuilder(registry)
+         .withReturnType(getReturnType())
+         .withTemplateKeys(getTemplateKeys());
+-    if (argsToBind >= -1) {
++    if (argsToBind >= 0) {
+       Node origParams = getParametersNode();
+       if (origParams != null) {
+         Node params = origParams.cloneTree();

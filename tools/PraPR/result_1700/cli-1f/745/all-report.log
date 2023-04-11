@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local pos is replaced by access to field DEFAULT_WIDTH
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local pos is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local pos is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local pos is replaced by access to field defaultWidth
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local pos is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 870
+	Block: 107
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------

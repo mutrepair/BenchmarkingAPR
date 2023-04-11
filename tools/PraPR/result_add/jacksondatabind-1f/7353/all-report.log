@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _buckets is guarded using value null
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 11
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _buckets is guarded using field _buckets
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 11
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local name is replaced a call name.toLowerCase()
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.assignIndexes()
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hashCode with a call to length
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::hashCode()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _buckets is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 11
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hashCode()I is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 13
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 14
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 15
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::hashCode
+	File Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java
+	Line Number: 243
+	Block: 46
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

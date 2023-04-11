@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1058/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.547768267 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -1074,7 +1074,7 @@
+             try {
+                 while (true) {
+                     JsonStreamContext ctxt = getOutputContext();
+-                    if (true) {
++                    if (ctxt.inArray()) {
+                         writeEndArray();
+                     } else if (ctxt.inObject()) {
+                         writeEndObject();

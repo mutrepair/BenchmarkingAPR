@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/119014/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -3831,7 +3831,7 @@
+             double remA;
+             double remB;
+             while (true) {
+-                double a = ~k * 1.570796251296997;
++                double a = -k * 1.570796251296997;
+                 remA = xa + a;
+                 remB = -(remA - xa - a);
+ 

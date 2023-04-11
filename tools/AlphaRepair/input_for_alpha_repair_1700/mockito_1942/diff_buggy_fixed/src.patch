@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1942/org/mockito/internal/util/Decamelizer.java	2022-10-31 19:48:05.575709416 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/Decamelizer.java	2022-12-26 15:13:56.657676716 -0600
+@@ -12,7 +12,7 @@
+ private static final Pattern CAPS = Pattern.compile("([A-Z\\d][^A-Z\\d]*)");
+     
+     public static String decamelizeMatcher(String className) {
+-        if (false) {
++        if (className.length() == 0) {
+             return "<custom argument matcher>";
+         }
+         

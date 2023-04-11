@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1094/org/apache/commons/codec/binary/Hex.java	2022-10-31 19:47:38.859807048 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Hex.java	2022-12-26 15:13:39.225488336 -0600
+@@ -84,7 +84,7 @@
+      */
+     protected static int toDigit(char ch, int index) throws DecoderException {
+         int digit = Character.digit(ch, 16);
+-        if (false) {
++        if (digit == -1) {
+             throw new DecoderException("Illegal hexadecimal charcter " + ch + " at index " + index);
+         }
+         return digit;

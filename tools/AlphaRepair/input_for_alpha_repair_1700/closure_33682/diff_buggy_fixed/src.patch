@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/33682/com/google/javascript/jscomp/NameAnalyzer.java	2022-10-31 19:47:37.791810902 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/NameAnalyzer.java	2022-10-29 13:28:39.732240728 -0500
+@@ -633,7 +633,7 @@
+           NameInformation ns = createNameInformation(t, n);
+           Preconditions.checkNotNull(ns);
+           recordSet(ns.name, n);
+-        } else if (false) {
++        } else if (NodeUtil.isFunctionDeclaration(n)) {
+           Node nameNode = n.getFirstChild();
+           NameInformation ns = createNameInformation(t, nameNode);
+           if (ns != null) {

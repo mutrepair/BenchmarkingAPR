@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isEquals is guarded using value false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 60
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isEquals is guarded using field isEquals
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 60
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.mockito.internal.matchers.apachecommons.EqualsBuilder.isEquals is replaced by the call to org.mockito.internal.matchers.apachecommons.EqualsBuilder::isEquals()Z
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 60
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local lhs is replaced by local rhs to be used
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 56
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isEquals is guarded returning default value null
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 60
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to isEquals is guarded returning local this
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 60
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 58
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 145
+	First Index: 75
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 52
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 58
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 61
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 144
+	First Index: 61
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 58
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 620
+	Block: 143
+	First Index: 58
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

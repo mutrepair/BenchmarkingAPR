@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/15836/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-10-31 19:47:45.015784757 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1511,7 +1511,7 @@
+                 _flushBuffer();
+             }
+             int b24 = ((int) readBuffer[inputPtr++]) << 8;
+-            b24 |= ((int)readBuffer[inputPtr++]) | 255;
++            b24 |= ((int) readBuffer[inputPtr++]) & 0xFF;
+             b24 = (b24 << 8) | (((int) readBuffer[inputPtr++]) & 0xFF);
+             bytesLeft -= 3;
+             _outputTail = b64variant.encodeBase64Chunk(b24, _outputBuffer, _outputTail);

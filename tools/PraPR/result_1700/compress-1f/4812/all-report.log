@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field BYTE_3_MASK
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 92
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 92
+	Block: 5
+	First Index: 9
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 255 with 256
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 92
+	Block: 5
+	First Index: 11
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/compress/archivers/zip/ZipLong.java
+	Line Number: 92
+	Block: 5
+	First Index: 12
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

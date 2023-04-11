@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D with a call to fit([D)[D
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D with a call to fit()[D
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math.optimization.fitting.GaussianFitter::fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D is guarded using default value null
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D is guarded returning default value null
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to fit(Lorg/apache/commons/math/analysis/ParametricUnivariateRealFunction;[D)[D is guarded returning local guess
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math/optimization/fitting/GaussianFitter::fit with argument
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math/analysis/function/Gaussian$Parametric::<init>
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math/optimization/fitting/GaussianFitter::fit
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 17
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math/optimization/fitting/GaussianFitter::fit
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 18
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math/optimization/fitting/GaussianFitter::fit to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math/optimization/fitting/GaussianFitter.java
+	Line Number: 121
+	Block: 2
+	First Index: 18
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local txt is replaced by access to field VOWELS
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local txt is replaced by access to field FRONTV
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local txt is replaced by access to field VARSON
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local txt is replaced a call txt.toLowerCase()
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to length()I is guarded returning local txt
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to length()I is guarded returning field VOWELS
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to length()I is guarded returning field FRONTV
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 22
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 23
+	Rank: 3
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 21
+	Rank: 3
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 23
+	Rank: 3
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/codec/language/Metaphone.java
+	Line Number: 87
+	Block: 4
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

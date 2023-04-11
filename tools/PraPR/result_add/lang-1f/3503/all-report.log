@@ -1,0 +1,355 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 32
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _mask is guarded using value 0
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _shift_count is guarded using value 0
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _mask is guarded using local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _shift_count is guarded using local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _mask is guarded using field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _shift_count is guarded using field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _mask with an access to _shift_count
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _shift_count with an access to _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _mask is replaced by access to local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _shift_count is replaced by access to local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _mask is replaced by access to local value
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _shift_count is replaced by access to local value
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local holder is replaced by local value to be used
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local holder to be used
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 9
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local holder is replaced by access to field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 9
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local holder is replaced by access to field _shift_count
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local value is replaced by access to field _shift_count
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 9
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _mask is guarded returning default value 0
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _shift_count is guarded returning default value 0
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _mask is guarded returning local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _shift_count is guarded returning local holder
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _mask is guarded returning field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _shift_count is guarded returning field _mask
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 6
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 7
+	Rank: null
+	Total Rank: 32
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 8
+	Rank: null
+	Total Rank: 32
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 12
+	Rank: null
+	Total Rank: 32
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 15
+	Rank: 1
+	Total Rank: 32
+	Status: SURVIVED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: 32
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/lang3/BitField::setValue
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 17
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/lang3/BitField.java
+	Line Number: 153
+	Block: 14
+	First Index: 17
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/2410/org/joda/time/Period.java	2022-10-31 19:48:08.839697332 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Period.java	2022-12-26 15:13:57.197682550 -0600
+@@ -267,7 +267,7 @@
+                 throw new IllegalArgumentException("ReadablePartial objects must have the same set of fields");
+             }
+             types[i] = start.getFieldType(i).getDurationType();
+-            if (i >= 0 && types[i - 1] == types[i]) {
++            if (i > 0 && types[i - 1] == types[i]) {
+                 throw new IllegalArgumentException("ReadablePartial objects must not have overlapping fields");
+             }
+             values[i] = end.getValue(i) - start.getValue(i);

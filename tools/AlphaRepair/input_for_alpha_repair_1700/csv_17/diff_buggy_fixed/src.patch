@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/17/org/apache/commons/csv/CSVFormat.java	2022-10-31 19:47:42.051795505 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVFormat.java	2022-12-26 15:13:50.881614309 -0600
+@@ -173,7 +173,7 @@
+      * Verifies the consistency of the parameters and throws an IllegalArgumentException if necessary.
+      */
+     void validate() throws IllegalArgumentException {
+-        if (delimiter >= encapsulator) {
++        if (delimiter == encapsulator) {
+             throw new IllegalArgumentException("The encapsulator character and the delimiter cannot be the same (\"" + encapsulator + "\")");
+         }
+         

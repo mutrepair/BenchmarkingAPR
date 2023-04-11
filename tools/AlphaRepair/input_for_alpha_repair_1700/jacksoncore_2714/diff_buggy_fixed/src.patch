@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/2714/com/fasterxml/jackson/core/util/TextBuffer.java	2022-10-31 19:47:45.075784539 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -508,7 +508,7 @@
+         do {
+             expand(len);
+             int amount = Math.min(_currentSegment.length, len);
+-            str.getChars(offset, offset+amount, _currentSegment, -1);
++            str.getChars(offset, offset+amount, _currentSegment, 0);
+             _currentSize += amount;
+             offset += amount;
+             len -= amount;

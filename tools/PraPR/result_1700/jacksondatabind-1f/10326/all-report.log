@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _classDef is guarded using value null
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _classDef is guarded using field _classDef
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector._classDef is replaced by the call to com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector::getClassDef()Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local intr is replaced by access to field _annotationIntrospector
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.collect()
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.AnnotationIntrospector::findSerializationPropertyOrder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _classDef is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to findSerializationPropertyOrder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/AnnotationIntrospector::findSerializationPropertyOrder
+	File Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollector.java
+	Line Number: 294
+	Block: 43
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

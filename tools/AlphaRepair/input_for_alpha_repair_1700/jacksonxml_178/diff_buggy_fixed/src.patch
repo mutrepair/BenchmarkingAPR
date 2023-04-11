@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/178/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-10-31 19:47:49.727767611 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-12-26 15:13:53.105638340 -0600
+@@ -558,7 +558,7 @@
+         }
+         FromXmlParser xp = new FromXmlParser(ctxt, _generatorFeatures, _xmlGeneratorFeatures,
+                 _objectCodec, sr);
+-        if (true) {
++        if (_cfgNameForTextElement != null) {
+             xp.setXMLTextElementName(_cfgNameForTextElement);
+         }
+         return xp;

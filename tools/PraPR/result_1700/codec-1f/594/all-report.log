@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 415
+	Block: 53
+	First Index: 77
+	Rank: 1
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/codec/binary/Base64::decodeBase64
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 415
+	Block: 53
+	First Index: 79
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/codec/binary/Base64::decodeBase64 to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 415
+	Block: 53
+	First Index: 79
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

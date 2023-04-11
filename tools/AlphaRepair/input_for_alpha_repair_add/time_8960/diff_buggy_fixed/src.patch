@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/8960/org/joda/time/chrono/BasicYearDateTimeField.java	2023-04-04 14:33:26.381961718 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/chrono/BasicYearDateTimeField.java	2023-04-04 13:31:54.465646143 -0500
+@@ -87,7 +87,7 @@
+ 
+     public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+         if (minuendInstant < subtrahendInstant) {
+-            return ~iChronology.getYearDifference(subtrahendInstant, minuendInstant);
++            return -iChronology.getYearDifference(subtrahendInstant, minuendInstant);
+         }
+         return iChronology.getYearDifference(minuendInstant, subtrahendInstant);
+     }

@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.jxpath.ri.axes.ChildContext::getCurrentPosition()I is guarded using default value 0
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.jxpath.ri.axes.ChildContext::setPosition(I)Z is guarded using default value false
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getCurrentPosition()I is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setPosition(I)Z is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getCurrentPosition()I is guarded returning field startFromParentLocation
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to setPosition(I)Z is guarded returning field startFromParentLocation
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getCurrentPosition()I is guarded returning field reverse
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to setPosition(I)Z is guarded returning field reverse
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/jxpath/ri/axes/ChildContext::nextNode
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 9
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/jxpath/ri/axes/ChildContext::nextNode
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 9
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 6
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 7
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/ri/axes/ChildContext::getCurrentPosition
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/ri/axes/ChildContext::setPosition
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/jxpath/ri/axes/ChildContext.java
+	Line Number: 90
+	Block: 16
+	First Index: 9
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

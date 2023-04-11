@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to format is guarded using value null
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to format is guarded using field format
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getDelimiter with a call to getEncapsulator
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getDelimiter with a call to getCommentStart
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getDelimiter with a call to getEscape
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.csv.CSVFormat::getDelimiter()C is guarded using default value '\0'
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to format is guarded returning default value false
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to format is guarded returning field isEncapsulating
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getDelimiter()C is guarded returning default value false
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getDelimiter()C is guarded returning field isEncapsulating
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getDelimiter()C is guarded returning field isEscaping
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/csv/Lexer::isWhitespace
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/csv/Lexer::isWhitespace
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 14
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 15
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/csv/CSVFormat::getDelimiter
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 13
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 96
+	Block: 15
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

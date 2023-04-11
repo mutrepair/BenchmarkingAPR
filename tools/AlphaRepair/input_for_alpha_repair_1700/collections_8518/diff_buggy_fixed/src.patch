@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/8518/org/apache/commons/collections4/map/MultiKeyMap.java	2022-10-31 19:47:39.979803002 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/map/MultiKeyMap.java	2022-12-26 15:13:49.801602638 -0600
+@@ -693,7 +693,7 @@
+             final Object key1, final Object key2, final Object key3, final Object key4, final Object key5) {
+         final MultiKey<? extends K> multi = entry.getKey();
+         return
+-            false &&
++            multi.size() == 5 &&
+             (key1 == multi.getKey(0) || key1 != null && key1.equals(multi.getKey(0))) &&
+             (key2 == multi.getKey(1) || key2 != null && key2.equals(multi.getKey(1))) &&
+             (key3 == multi.getKey(2) || key3 != null && key3.equals(multi.getKey(2))) &&

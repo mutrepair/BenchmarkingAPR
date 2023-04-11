@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_168/src/com/google/javascript/jscomp/TypedScopeCreator.java	2023-01-16 15:29:18.327967997 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/168/patch/./com/google/javascript/jscomp/TypedScopeCreator.java	2023-01-16 15:29:18.295967597 -0600
+@@ -1993,7 +1993,7 @@
+         data.get(t.getScopeRoot()).recordNonEmptyReturn();
+       }
+ 
+-      if (t.getScopeDepth() <= 2) {
++      if (t.getScopeDepth() <= 1) {
+         // The first-order function analyzer looks at two types of variables:
+         //
+         // 1) Local variables that are assigned in inner scopes ("escaped vars")

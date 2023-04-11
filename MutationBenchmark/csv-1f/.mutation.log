@@ -1,0 +1,64 @@
+
+test-offline:
+
+get-deps:
+
+commons-csv-from-maven.compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/csv-1f/maven-build.xml:77: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+commons-csv-from-maven.compile-tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/csv-1f/maven-build.xml:110: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 5 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 7.14 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 695
+    [junit] MAJOR: Mutants covered:   622 (89.50%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 5 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/5 - org.apache.commons.csv.ExtendedBufferedReaderTest (8ms / 72):
+    [junit] MAJOR: 1748 (38 / 72 / 72) -> AVG-RTPM: 24ms
+    [junit] MAJOR: Mutants killed / live: 38 (22-16-0) / 584
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/5 - org.apache.commons.csv.CSVLexerTest (18ms / 267):
+    [junit] MAJOR: 12764 (145 / 247 / 267) -> AVG-RTPM: 44ms
+    [junit] MAJOR: Mutants killed / live: 183 (112-49-3) / 439
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/5 - org.apache.commons.csv.CSVParserTest (40ms / 341):
+    [junit] MAJOR: 20833 (105 / 182 / 341) -> AVG-RTPM: 44ms
+    [junit] MAJOR: Mutants killed / live: 288 (184-74-3) / 334
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/5 - org.apache.commons.csv.CSVFormatTest (149ms / 193):
+    [junit] MAJOR: 24015 (85 / 165 / 193) -> AVG-RTPM: 19ms
+    [junit] MAJOR: Mutants killed / live: 373 (252-88-4) / 249
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/5 - org.apache.commons.csv.CSVPrinterTest (587ms / 480):
+    [junit] MAJOR: 79310 (101 / 205 / 480) -> AVG-RTPM: 269ms
+    [junit] MAJOR: Mutants killed / live: 474 (342-98-4) / 148
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  79.3 seconds
+    [junit] MAJOR: Mutation score: 68.20% (76.21%)
+    [junit] MAJOR: Mutants killed / live: 474 (342-98-4) / 148
+    [junit] MAJOR: Mutant executions: 871
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/csv-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 1 minute 26 seconds

@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/collections4/keyvalue/DefaultKeyValue.java
+	Line Number: 130
+	Block: 13
+	First Index: 15
+	Rank: 3
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/keyvalue/DefaultKeyValue.java
+	Line Number: 130
+	Block: 13
+	First Index: 16
+	Rank: 3
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/keyvalue/DefaultKeyValue.java
+	Line Number: 130
+	Block: 13
+	First Index: 16
+	Rank: 3
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/keyvalue/DefaultKeyValue.java
+	Line Number: 130
+	Block: 13
+	First Index: 16
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

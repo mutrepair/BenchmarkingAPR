@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.base.BaseDuration.iMillis is replaced by the call to org.joda.time.base.BaseDuration::setMillis(J)V
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 32
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field iMillis is replaced by access to local startMillis
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 32
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field iMillis is replaced by access to local endMillis
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 32
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local endMillis is replaced by local startMillis to be used
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 29
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local startMillis is replaced by local endMillis to be used
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 30
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to safeAdd with a call to safeSubtract
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 31
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to safeAdd with a call to safeMultiply
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 31
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to safeAdd with a call to safeDivide
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 31
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/joda/time/field/FieldUtils::safeAdd with argument
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 31
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/field/FieldUtils::safeAdd
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 31
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable iMillis
+	File Name: org/joda/time/base/BaseDuration.java
+	Line Number: 91
+	Block: 4
+	First Index: 32
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

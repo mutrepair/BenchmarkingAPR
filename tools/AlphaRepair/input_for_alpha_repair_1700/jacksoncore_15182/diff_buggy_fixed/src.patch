@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/15182/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-10-31 19:47:44.995784830 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -878,7 +878,7 @@
+             && isEnabled(Feature.AUTO_CLOSE_JSON_CONTENT)) {
+             while (true) {
+                 JsonStreamContext ctxt = getOutputContext();
+-                if (true) {
++                if (ctxt.inArray()) {
+                     writeEndArray();
+                 } else if (ctxt.inObject()) {
+                     writeEndObject();

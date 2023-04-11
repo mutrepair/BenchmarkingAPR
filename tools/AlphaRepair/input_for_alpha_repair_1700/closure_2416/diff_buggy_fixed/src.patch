@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/2416/com/google/debugging/sourcemap/SourceMapLineDecoder.java	2022-10-31 19:47:37.715811176 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/SourceMapLineDecoder.java	2022-10-29 12:27:57.326238595 -0500
+@@ -63,7 +63,7 @@
+       idDigits = (value & 3);
+     } else {
+       char digit = reader.next();
+-      idDigits = addBase64Digit(digit, 1);
++      idDigits = addBase64Digit(digit, 0);
+ 
+       int value = 0;
+       for (int i = 0; i < repDigits; i++) {

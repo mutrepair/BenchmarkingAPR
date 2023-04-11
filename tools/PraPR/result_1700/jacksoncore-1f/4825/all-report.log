@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _end is guarded using value 0
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _ptr is guarded using value 0
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _end is guarded using local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _ptr is guarded using local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _end is guarded using field _ptr
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _ptr is guarded using field _ptr
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.io.MergedStream._end is replaced by the call to com.fasterxml.jackson.core.io.MergedStream::available()I
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.io.MergedStream._ptr is replaced by the call to com.fasterxml.jackson.core.io.MergedStream::available()I
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.io.MergedStream._end is replaced by the call to com.fasterxml.jackson.core.io.MergedStream::read()I
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.io.MergedStream._ptr is replaced by the call to com.fasterxml.jackson.core.io.MergedStream::read()I
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _end with an access to _ptr
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _ptr with an access to _end
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _end is replaced by access to local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _ptr is replaced by access to local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _end is replaced by access to local len
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _ptr is replaced by access to local len
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _end is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _ptr is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _end is guarded returning local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _ptr is guarded returning local off
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _end is guarded returning field _ptr
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _ptr is guarded returning field _ptr
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: com/fasterxml/jackson/core/io/MergedStream.java
+	Line Number: 90
+	Block: 17
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

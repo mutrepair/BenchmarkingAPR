@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.apache.commons.collections4.list.TreeList.listIterator(I)Ljava/util/ListIterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.AbstractListIteratorDecorator using (Ljava/util/ListIterator;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method org.apache.commons.collections4.list.TreeList.listIterator(I)Ljava/util/ListIterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.FilterListIterator using ()V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_7
+	Description: the call to factory method org.apache.commons.collections4.list.TreeList.listIterator(I)Ljava/util/ListIterator; is replaced by an instantiation of type org.apache.commons.collections4.iterators.FilterListIterator using (Ljava/util/ListIterator;)V
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to listIterator(I)Ljava/util/ListIterator; with a call to listIterator()Ljava/util/ListIterator;
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.list.TreeList::listIterator(I)Ljava/util/ListIterator; is guarded using default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to listIterator(I)Ljava/util/ListIterator; is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList::listIterator
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/collections4/list/TreeList::listIterator
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/collections4/list/TreeList::listIterator to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 134
+	Block: 6
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

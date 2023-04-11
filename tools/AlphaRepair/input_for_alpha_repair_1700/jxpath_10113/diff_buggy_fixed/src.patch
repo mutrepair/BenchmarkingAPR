@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/10113/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-10-31 19:47:51.035762839 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-12-26 15:13:54.181649966 -0600
+@@ -815,7 +815,7 @@
+    switch(curChar)
+    {
+       case 58:
+-         if ((active0 & 0L) != 0L)
++         if ((active0 & 0x2000000000L) != 0L)
+             return jjStopAtPos(7, 37);
+          break;
+       case 97:

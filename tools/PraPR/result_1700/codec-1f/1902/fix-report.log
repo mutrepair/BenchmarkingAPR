@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:08:34 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/DoubleMetaphone::contains
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 452
+	Block: 141
+	First Index: 236
+	Rank: 1
+	Total Rank: 22
+	Status: SURVIVED
+	Dump: mutant-20.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutatorSecondPhase_0
+	Description: replaced call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z with a call to contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 452
+	Block: 141
+	First Index: 236
+	Rank: 2
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/14220/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 14:33:25.693955051 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2023-04-04 13:31:53.217631315 -0500
+@@ -2878,7 +2878,7 @@
+             loadMoreGuaranteed();
+         }
+         d = (int) _inputBuffer[_inputPtr++];
+-        if ((d | 192) != 0x080) {
++        if ((d & 0xC0) != 0x080) {
+             _reportInvalidOther(d & 0xFF, _inputPtr);
+         }
+         c = (c << 6) | (d & 0x3F);

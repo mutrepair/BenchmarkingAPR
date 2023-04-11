@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_75/src/main/java/org/apache/commons/math/stat/Frequency.java	2023-01-16 15:30:20.584745440 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/75/patch/./org/apache/commons/math/stat/Frequency.java	2023-01-16 15:30:20.548744991 -0600
+@@ -300,7 +300,7 @@
+      */
+     @Deprecated
+     public double getPct(Object v) {
+-        return getCumPct((Comparable<?>) v);
++        return getPct((Comparable<?>) v);
+     }
+ 
+     /**

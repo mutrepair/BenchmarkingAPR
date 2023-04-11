@@ -1,0 +1,52 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 17:19:31 CST 2022
+Number of Plausible Fixes: 4
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local x is replaced by access to field PI
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local x is replaced by access to field E
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local x is replaced by access to field LOG_MAX_VALUE
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 17
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2706
+	Block: 449
+	First Index: 20
+	Rank: 4
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------

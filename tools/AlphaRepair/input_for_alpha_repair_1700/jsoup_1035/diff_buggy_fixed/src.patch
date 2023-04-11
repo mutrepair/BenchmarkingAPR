@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1035/org/jsoup/nodes/Evaluator.java	2022-10-31 19:47:50.291765554 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Evaluator.java	2022-12-26 15:13:53.649644217 -0600
+@@ -156,7 +156,7 @@
+         }
+ 
+         public boolean matches(Element element) {
+-            return false;
++            return element.elementSiblingIndex() == index;
+         }
+     }    
+     

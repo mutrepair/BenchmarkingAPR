@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to bitset is guarded using value 0
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to bitset is guarded using local mask
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to bitset is guarded using field bitset
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.javascript.rhino.JSDocInfo.bitset is replaced by the call to com.google.javascript.rhino.JSDocInfo::getParameterCount()I
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.javascript.rhino.JSDocInfo.bitset is replaced by the call to com.google.javascript.rhino.JSDocInfo::getImplementedInterfaceCount()I
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.google.javascript.rhino.JSDocInfo.bitset is replaced by the call to com.google.javascript.rhino.JSDocInfo::getExtendedInterfacesCount()I
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field bitset is replaced by access to local mask
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local mask is replaced by access to field bitset
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local mask is replaced by access to field MASK_FLAGS
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local mask is replaced by access to field MASK_CONSTANT
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local mask is replaced by access to field MASK_CONSTRUCTOR
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local mask is replaced by access to field MASK_DEFINE
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to bitset is guarded returning enclosing method
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable bitset
+	File Name: com/google/javascript/rhino/JSDocInfo.java
+	Line Number: 438
+	Block: 27
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

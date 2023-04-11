@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/6256/org/jfree/chart/plot/XYPlot.java	2022-10-31 19:47:29.567840454 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/XYPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -5443,7 +5443,7 @@
+         if (!this.domainAxes.equals(that.domainAxes)) {
+             return false;
+         }
+-        if (!false) {
++        if (!this.domainAxisLocations.equals(that.domainAxisLocations)) {
+             return false;
+         }
+         if (this.rangeCrosshairLockedOnData

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/lang-1f/mutants/7154/org/apache/commons/lang3/Conversion.java	2023-04-04 14:33:25.961957648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/lang/src/main/java/org/apache/commons/lang3/Conversion.java	2023-04-04 13:31:53.909639537 -0500
+@@ -1329,7 +1329,7 @@
+         int shift = 0;
+         for (int i = 0; i < nBytes; i++ ) {
+             shift = i * 8 + srcPos;
+-            dst[dstPos + i] = (byte)(0xff & (src << shift));
++            dst[dstPos + i] = (byte)(0xff & (src >> shift));
+         }
+         return dst;
+     }

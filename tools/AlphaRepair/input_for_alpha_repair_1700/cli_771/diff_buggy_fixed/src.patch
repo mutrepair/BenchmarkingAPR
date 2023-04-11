@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/771/org/apache/commons/cli/OptionBuilder.java	2022-10-31 19:47:31.355834048 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/OptionBuilder.java	2022-12-26 15:13:38.053475668 -0600
+@@ -114,7 +114,7 @@
+      */
+     public static OptionBuilder hasArg(boolean hasArg)
+     {
+-        OptionBuilder.numberOfArgs = (hasArg == true) ? -1 : Option.UNINITIALIZED;
++        OptionBuilder.numberOfArgs = (hasArg == true) ? 1 : Option.UNINITIALIZED;
+ 
+         return instance;
+     }

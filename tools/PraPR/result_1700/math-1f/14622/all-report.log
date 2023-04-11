@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local y is replaced by local x to be used
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 53
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local x is replaced by local y to be used
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 56
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver::computeObjectiveValue(D)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to computeObjectiveValue(D)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to computeObjectiveValue(D)D is guarded returning field DEFAULT_ABSOLUTE_ACCURACY
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to computeObjectiveValue(D)D is guarded returning field REDUCTION_FACTOR
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver::computeObjectiveValue with argument
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 54
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 57
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver::computeObjectiveValue
+	File Name: org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java
+	Line Number: 158
+	Block: 11
+	First Index: 59
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

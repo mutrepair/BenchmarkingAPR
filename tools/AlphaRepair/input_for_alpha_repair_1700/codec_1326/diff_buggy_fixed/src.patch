@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1326/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.903806889 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -145,7 +145,7 @@
+                 break;
+             case 'N':
+                 result.append('N');
+-                index = charAt(value, index + -1) == 'N' ? index + 2 : index + 1;
++                index = charAt(value, index + 1) == 'N' ? index + 2 : index + 1;
+                 break;
+             case '\u00D1':
+                 // N with a tilde (spanish ene)

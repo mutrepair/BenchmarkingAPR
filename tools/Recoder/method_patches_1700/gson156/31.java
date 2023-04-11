@@ -1,0 +1,2 @@
+  static ParameterizedTypeHandlerMap<JsonSerializer<?>> getDefaultSerializers() {
+return (ParameterizedTypeHandlerMap<JsonSerializer<?>>)getDefaultSerializers(true, LongSerializationPolicy.DEFAULT);  }

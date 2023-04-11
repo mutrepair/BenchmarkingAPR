@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local columnIndex is replaced by local rowIndex to be used
+	File Name: org/jfree/data/KeyedObjects2D.java
+	Line Number: 311
+	Block: 39
+	First Index: 35
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/data/KeyedObjects2D.java
+	Line Number: 311
+	Block: 39
+	First Index: 36
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/data/KeyedObjects2D.java
+	Line Number: 311
+	Block: 39
+	First Index: 36
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jfree/data/KeyedObjects2D.java
+	Line Number: 311
+	Block: 39
+	First Index: 36
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

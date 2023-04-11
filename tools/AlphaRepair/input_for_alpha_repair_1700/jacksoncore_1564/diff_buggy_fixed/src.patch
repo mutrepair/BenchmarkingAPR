@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1564/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-10-31 19:47:45.011784772 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -705,7 +705,7 @@
+             hash = (hash * MULT3) ^ quads[i];
+             // for longer entries, mess a bit in-between too
+             hash += (hash >>> 3);
+-            hash ^= (hash << 0);
++            hash ^= (hash << 7);
+         }
+         // and finally shuffle some more once done
+         hash += (hash >>> 15); // to get high-order bits to mix more

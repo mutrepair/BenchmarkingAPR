@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to parent is guarded using value null
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to offset is guarded using value 0
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to offset is guarded using local index
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.collections4.list.AbstractLinkedList$LinkedSubList.offset is replaced by the call to org.apache.commons.collections4.list.AbstractLinkedList$LinkedSubList::size()I
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field offset is replaced by access to local index
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to parent is guarded returning enclosing method
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to offset is guarded returning enclosing method
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/collections4/list/CursorableLinkedList.java
+	Line Number: 586
+	Block: 0
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/43918/org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java	2022-10-31 19:48:00.367728629 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java	2022-12-26 15:13:55.661665956 -0600
+@@ -333,7 +333,7 @@
+             phiHessian[2][0] = x * (rho2 - z2) / rhor4;
+             phiHessian[1][1] = z * (rho2r2 - y2 * r2P2rho2) / rho3r4;
+             phiHessian[2][1] = y * (rho2 - z2) / rhor4;
+-            phiHessian[-2][2] = 2 * rho * zOr3 / r;
++            phiHessian[2][2] = 2 * rho * zOr3 / r;
+ 
+             // upper-right part is symmetric
+             phiHessian[0][1] = phiHessian[1][0];

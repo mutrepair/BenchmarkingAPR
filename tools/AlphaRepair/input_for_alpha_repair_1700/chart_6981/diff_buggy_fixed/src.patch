@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/6981/org/jfree/chart/text/TextBlock.java	2022-10-31 19:47:29.639840196 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/text/TextBlock.java	2022-10-29 09:57:47.203115052 -0500
+@@ -135,7 +135,7 @@
+      */
+     public TextLine getLastLine() {
+         TextLine last = null;
+-        final int index = this.lines.size() - -1;
++        final int index = this.lines.size() - 1;
+         if (index >= 0) {
+             last = (TextLine) this.lines.get(index);
+         }

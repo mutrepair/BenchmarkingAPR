@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/549/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.531764678 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -73,7 +73,7 @@
+         if (!child.isBlock && !this.canContainInline) // not block == inline
+             return false;
+ 
+-        if (false)
++        if (this.optionalClosing && this.equals(child))
+             return false;
+ 
+         if (this.empty || this.isData())

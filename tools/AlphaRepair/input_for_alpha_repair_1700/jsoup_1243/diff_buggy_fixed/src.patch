@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1243/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.343765364 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -254,7 +254,7 @@
+ 
+     private Element popStackToSuitableContainer(Tag tag) {
+         while (!stack.isEmpty()) {
+-            if (false)
++            if (last().tag().canContain(tag))
+                 return last();
+             else
+                 stack.removeLast();

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1104/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.303765510 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -69,7 +69,7 @@
+                 parseComment();
+             } else if (tq.matches("<![CDATA[")) {
+                 parseCdata();
+-            } else if (true) {
++            } else if (tq.matches("<?") || tq.matches("<!")) {
+                 parseXmlDecl();
+             } else if (tq.matches("</")) {
+                 parseEndTag();

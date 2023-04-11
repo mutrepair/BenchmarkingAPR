@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/65808/org/jfree/chart/util/RelativeDateFormat.java	2022-10-31 19:47:29.587840382 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/util/RelativeDateFormat.java	2022-10-29 00:46:44.333455078 -0500
+@@ -479,7 +479,7 @@
+         double seconds = elapsed / 1000.0;
+ 
+         toAppendTo.append(signPrefix);
+-        if (days != -1 || this.showZeroDays) {
++        if (days != 0 || this.showZeroDays) {
+             toAppendTo.append(this.dayFormatter.format(days) + getDaySuffix());
+         }
+         if (hours != 0 || this.showZeroHours) {

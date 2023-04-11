@@ -1,0 +1,2 @@
+    protected boolean isKeyType(ReferenceStrength type) {
+return this.type.isKeyType();    }

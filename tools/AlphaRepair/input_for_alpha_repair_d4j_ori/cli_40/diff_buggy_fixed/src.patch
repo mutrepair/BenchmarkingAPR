@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/cli_40/src/main/java/org/apache/commons/cli/TypeHandler.java	2023-01-16 15:29:11.231879380 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/cli/40/patch/./org/apache/commons/cli/TypeHandler.java	2023-01-16 15:29:11.199878981 -0600
+@@ -100,7 +100,7 @@
+         }
+         else
+         {
+-            return null;
++            throw new ParseException("Unable to handle the class: " + clazz);
+         }
+     }
+ 

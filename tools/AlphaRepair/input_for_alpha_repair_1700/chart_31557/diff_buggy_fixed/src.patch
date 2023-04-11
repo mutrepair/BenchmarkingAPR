@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/31557/org/jfree/chart/axis/LogAxis.java	2022-10-31 19:47:29.435840926 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/LogAxis.java	2022-10-29 12:43:18.025222619 -0500
+@@ -416,7 +416,7 @@
+                 // apply the margins - these should apply to the exponent range
+                 double logUpper = calculateLog(upper);
+                 double logLower = calculateLog(lower);
+-                double logRange = logUpper + logLower;
++                double logRange = logUpper - logLower;
+                 logUpper = logUpper + getUpperMargin() * logRange;
+                 logLower = logLower - getLowerMargin() * logRange;
+                 upper = calculateValue(logUpper);

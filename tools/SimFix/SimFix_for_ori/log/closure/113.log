@@ -1,0 +1,66 @@
+=================================================
+Project : closure_113	start : 23/02/06 21:57
+=================================================
+Project : closure_113	start : 23/02/06 23:42
+Current failed test : com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass | 23/02/06 23:42
+Mon Feb 06 23:43:43 CST 2023 com.google.javascript.jscomp.ProcessClosurePrimitives,329
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(provided==null){
+parent.detachFromParent();
+compiler.reportCodeChange();
+}
+
+Time : 23/02/06 23:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+Preconditions.checkState(parent!=null,"Cannot find continue target.");
+if(provided==null){
+parent.detachFromParent();
+compiler.reportCodeChange();
+}
+
+Time : 23/02/06 23:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+left=left;
+if(provided==null){
+parent.detachFromParent();
+compiler.reportCodeChange();
+}
+
+Time : 23/02/06 23:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+Preconditions.checkState(parent!=null,"Cannot find continue target.");
+left=left;
+if(provided==null){
+parent.detachFromParent();
+compiler.reportCodeChange();
+}
+
+Time : 23/02/06 23:48
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(compiler!=null){
+parent.detachFromParent();
+compiler.reportCodeChange();
+}
+
+Time : 23/02/06 23:49
+----------------------------------------
+Failed time : 23/02/06 23:50

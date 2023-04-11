@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/4570/com/fasterxml/jackson/core/io/JsonStringEncoder.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/JsonStringEncoder.java	2023-04-04 13:31:53.213631268 -0500
+@@ -289,7 +289,7 @@
+                 outputPtr = 0;
+             }
+             if (c < 0x800) { // 2-byte
+-                outputBuffer[outputPtr++] = (byte) (0xc0 | (c << 6));
++                outputBuffer[outputPtr++] = (byte) (0xc0 | (c >> 6));
+             } else { // 3 or 4 bytes
+                 // Surrogates?
+                 if (c < SURR1_FIRST || c > SURR2_LAST) { // nope

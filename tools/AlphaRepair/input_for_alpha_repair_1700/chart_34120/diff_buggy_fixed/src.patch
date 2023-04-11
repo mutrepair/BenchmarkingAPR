@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/34120/org/jfree/chart/axis/SegmentedTimeline.java	2022-10-31 19:47:29.447840884 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/SegmentedTimeline.java	2022-10-29 16:41:07.426717447 -0500
+@@ -612,7 +612,7 @@
+             else {
+                 long shiftedSegmentedValue = millisecond - this.startTime;
+                 long x = shiftedSegmentedValue % this.segmentsGroupSize;
+-                long y = shiftedSegmentedValue - this.segmentsGroupSize;
++                long y = shiftedSegmentedValue / this.segmentsGroupSize;
+ 
+                 long wholeExceptionsBeforeDomainValue =
+                     getExceptionSegmentCount(this.startTime, millisecond - 1);

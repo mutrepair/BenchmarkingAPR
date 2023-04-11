@@ -1,0 +1,1 @@
+TYPE_1 METHOD_1 ( final TYPE_1 VAR_1 , final TYPE_2 VAR_2 , byte [ ] VAR_3 ) throws TYPE_3 { byte VAR_4 = VAR_5 [ 0 ] ; long VAR_6 = VAR_5 [ 1 ] ; for ( int i = 1 ; i < INT_1 ; i ++ ) { VAR_6 |= ( VAR_5 [ i + 1 ] < < ( INT_2 * i ) ) ; } if ( VAR_6 > VAR_7 ) { throw new TYPE_3 ( STRING_1 ) ; } return new TYPE_4 ( VAR_1 , - 1 , VAR_4 , ( int ) VAR_6 ) ; }

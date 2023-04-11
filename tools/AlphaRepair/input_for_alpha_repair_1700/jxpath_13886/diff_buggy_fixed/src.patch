@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/13886/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-10-31 19:47:51.123762517 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-12-26 15:13:54.173649879 -0600
+@@ -756,7 +756,7 @@
+         Step step = steps[currentStep];
+ 
+         int axis = step.getAxis();
+-        if (axis == Compiler.AXIS_ATTRIBUTE) {
++        if (axis == Compiler.AXIS_CHILD || axis == Compiler.AXIS_ATTRIBUTE) {
+             NullPropertyPointer pointer = new NullPropertyPointer(parent);
+             QName name = ((NodeNameTest) step.getNodeTest()).getNodeName();
+             pointer.setPropertyName(name.toString());

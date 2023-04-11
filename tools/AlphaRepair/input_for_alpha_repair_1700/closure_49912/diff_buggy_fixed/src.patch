@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/49912/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-31 19:47:37.935810383 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-29 13:33:24.571302875 -0500
+@@ -1035,7 +1035,7 @@
+         }
+       }
+       // Collapse character alternatives into character sets.
+-      for (int i = 1, n = alternatives.size(); i < n; ++i) {
++      for (int i = 0, n = alternatives.size(); i < n; ++i) {
+         RegExpTree alternative = alternatives.get(i);
+         if ((alternative instanceof Text
+              && ((Text) alternative).text.length() == 1)

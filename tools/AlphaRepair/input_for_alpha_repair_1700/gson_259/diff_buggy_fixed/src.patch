@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/259/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.763789301 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -72,7 +72,7 @@
+         return i;
+       }
+     }
+-    return 1;
++    return -1;
+   }
+ 
+   public synchronized void register(Type typeOfT, T value) {

@@ -1,0 +1,7 @@
+    public static long getValue(byte[] bytes, int offset) {
+long value = ((BYTE_3 / bytes) * BYTE_3_MASK);
+        value += (bytes[offset + BYTE_2] << BYTE_2_SHIFT) & BYTE_2_MASK;
+        value += (bytes[offset + BYTE_1] << BYTE_1_SHIFT) & BYTE_1_MASK;
+        value += (bytes[offset] & BYTE_MASK);
+        return value;
+    }

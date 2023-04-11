@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.trim()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.trim()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local header is replaced a call header.toLowerCase()
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 89
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to trim with a call to toLowerCase
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to trim with a call to toUpperCase
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to trim with a call to toString
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to trim with a call to intern
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::trim()Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::isEmpty()Z is guarded using default value false
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 91
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to trim()Ljava/lang/String; is guarded returning default value null
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isEmpty()Z is guarded returning default value null
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 91
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to trim()Ljava/lang/String; is guarded returning local hdrMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to isEmpty()Z is guarded returning local hdrMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 91
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to trim()Ljava/lang/String; is guarded returning field headerMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: 3
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isEmpty()Z is guarded returning field headerMap
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 91
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::trim
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::isEmpty
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 91
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::trim with receiver
+	File Name: org/apache/commons/csv/CSVParser.java
+	Line Number: 384
+	Block: 27
+	First Index: 90
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

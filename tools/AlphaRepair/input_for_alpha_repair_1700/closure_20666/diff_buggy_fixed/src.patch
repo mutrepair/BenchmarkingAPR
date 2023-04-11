@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/20666/com/google/javascript/jscomp/CheckGlobalNames.java	2022-10-31 19:47:37.695811248 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/CheckGlobalNames.java	2022-10-29 05:11:15.431026775 -0500
+@@ -170,7 +170,7 @@
+           // Prototype references are special, because in our reference graph,
+           // A.prototype counts as a reference to A.
+           boolean isPrototypeGet = (ref.type == Ref.Type.PROTOTYPE_GET);
+-          Name owner = true ? name : parent;
++          Name owner = isPrototypeGet ? name : parent;
+           boolean singleGlobalParentDecl =
+               owner != null &&
+               owner.getDeclaration() != null &&

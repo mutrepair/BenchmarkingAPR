@@ -1,0 +1,23 @@
+=================================================
+Project : lang_61	start : 23/02/07 12:45
+Current failed test : org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294 | 23/02/07 12:45
+Tue Feb 07 12:45:44 CST 2023 org.apache.commons.lang.text.StrBuilder,1776
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+char[] thisBuf=buffer;
+int len=size-strLen;
+outer: for (int i=startIndex; i < len; i++) {
+  for (int j=0; j < strLen; j++) {
+    if (str.charAt(j) != thisBuf[i + j]) {
+      continue outer;
+    }
+  }
+  return i;
+}
+
+
+Time : 23/02/07 12:45
+----------------------------------------
+Failed time : 23/02/07 12:46

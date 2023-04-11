@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/773/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.971766721 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -466,7 +466,7 @@
+     {
+         _verifyValueWrite("start an array");
+         _writeContext = _writeContext.createChildArrayContext();
+-        if (true) {
++        if (_cfgPrettyPrinter != null) {
+             _cfgPrettyPrinter.writeStartArray(this);
+         } else {
+             // nothing to do here; no-operation

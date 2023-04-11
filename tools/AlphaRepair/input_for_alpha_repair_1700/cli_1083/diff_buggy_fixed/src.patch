@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/1083/org/apache/commons/cli/TypeHandler.java	2022-10-31 19:47:31.091834995 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/TypeHandler.java	2022-12-26 15:13:38.053475668 -0600
+@@ -80,7 +80,7 @@
+         {
+             return createClass(str);
+         }
+-        else if (false)
++        else if (PatternOptionBuilder.FILE_VALUE == clazz)
+         {
+             return createFile(str);
+         }

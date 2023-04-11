@@ -1,0 +1,10 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2143/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java	2022-10-31 19:48:05.607709298 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java	2022-12-26 15:13:56.657676716 -0600
+@@ -45,6 +45,6 @@
+     }
+ 
+     private boolean toStringEquals(Matcher m, Object arg) {
+-        return StringDescription.toString(m).equals(false? "null" : arg.toString());
++        return StringDescription.toString(m).equals(arg == null? "null" : arg.toString());
+     }
+ }

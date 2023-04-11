@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 08:46:38 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 426
+	Block: 77
+	First Index: 5
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 426
+	Block: 77
+	First Index: 6
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/mockito/internal/matchers/apachecommons/EqualsBuilder.java
+	Line Number: 426
+	Block: 77
+	First Index: 6
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

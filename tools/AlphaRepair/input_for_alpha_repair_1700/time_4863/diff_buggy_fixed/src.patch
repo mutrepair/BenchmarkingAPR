@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/4863/org/joda/time/base/BaseDuration.java	2022-10-31 19:48:08.899697109 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/base/BaseDuration.java	2022-12-26 15:13:57.197682550 -0600
+@@ -88,7 +88,7 @@
+         } else {
+             long startMillis = DateTimeUtils.getInstantMillis(start);
+             long endMillis = DateTimeUtils.getInstantMillis(end);
+-            iMillis = FieldUtils.safeAdd(endMillis, +startMillis);
++            iMillis = FieldUtils.safeAdd(endMillis, -startMillis);
+         }
+     }
+ 

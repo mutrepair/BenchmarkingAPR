@@ -1,0 +1,168 @@
+=================================================
+Project : compress_19	start : 23/02/07 01:53
+Current failed test : org.apache.commons.compress.archivers.zip.ZipFileTest::testExcessDataInZip64ExtraField | 23/02/07 01:53
+Tue Feb 07 01:53:19 CST 2023 org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField,259
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(rawCentralDirectoryData.length==expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(-1==expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3485040136686708 : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>0,0]
+if(-1==read(rawCentralDirectoryData,0,result.length)){
+throw new ShortFileException();
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(rawCentralDirectoryData.length!=expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(-1==expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(rawCentralDirectoryData.length==-1){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0659496420037442 : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>0,0]
+long rem=value-skipped;
+int x=in.read(SKIP_BUF,0,(int)(SKIP_BUF.length>rem?rem:SKIP_BUF.length));
+if(x==-1){
+return ;
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(rawCentralDirectoryData.length!=expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(rawCentralDirectoryData.length==-1){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(rawCentralDirectoryData.length==expectedLength){
+if(expectedLength==-1){
+return ;
+}
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(rawCentralDirectoryData.length==-1){
+if(expectedLength==-1){
+return ;
+}
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:53
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.0659496420037442 : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>0,0]
+long rem=value-skipped;
+int x=in.read(SKIP_BUF,0,(int)(SKIP_BUF.length>rem?rem:SKIP_BUF.length));
+if(x==-1){
+return ;
+}
+
+Time : 23/02/07 01:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(rawCentralDirectoryData.length!=expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/compress/compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java=>259,266]
+if(rawCentralDirectoryData.length==-1){
+if(expectedLength==-1){
+return ;
+}
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:54
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(rawCentralDirectoryData[expectedLength]==expectedLength){
+throw new ZipException("central directory zip64 extended"+" information extra field\'s length"+expectedLength);
+}
+
+Time : 23/02/07 01:54
+----------------------------------------
+Success time : 23/02/07 01:54

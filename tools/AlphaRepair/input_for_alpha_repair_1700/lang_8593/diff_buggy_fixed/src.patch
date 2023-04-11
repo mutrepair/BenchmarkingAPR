@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/8593/org/apache/commons/lang3/text/StrBuilder.java	2022-10-31 19:47:57.391739569 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/text/StrBuilder.java	2022-12-26 15:13:54.777656404 -0600
+@@ -624,7 +624,7 @@
+             return appendNull();
+         }
+         final int strLen = str.length();
+-        if (false) {
++        if (strLen > 0) {
+             final int len = length();
+             ensureCapacity(len + strLen);
+             str.getChars(0, strLen, buffer, len);

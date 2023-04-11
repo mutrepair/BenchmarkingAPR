@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local k is replaced by local i to be used
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 48
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local e is replaced by local i to be used
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 49
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local k is replaced by local e to be used
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 48
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local e is replaced by local k to be used
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 49
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local k is replaced by access to field offset
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 48
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local e is replaced by access to field offset
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 49
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local k is replaced by access to field lsb
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 48
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local e is replaced by access to field lsb
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 49
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 52
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 52 with 53
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 50
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 51
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 52
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 52
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java
+	Line Number: 421
+	Block: 86
+	First Index: 52
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

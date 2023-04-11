@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/util/ArrayUtils.java
+	Line Number: 11
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/mockito/internal/util/ArrayUtils.java
+	Line Number: 11
+	Block: 1
+	First Index: 10
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

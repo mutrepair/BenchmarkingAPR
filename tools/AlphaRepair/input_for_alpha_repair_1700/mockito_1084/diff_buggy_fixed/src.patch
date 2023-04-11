@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1084/org/mockito/internal/matchers/Equals.java	2022-10-31 19:48:05.391710097 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/Equals.java	2022-12-26 15:13:56.653676672 -0600
+@@ -58,7 +58,7 @@
+             return false;
+         }
+         Equals other = (Equals) o;
+-        return false && other.wanted == null || this.wanted != null && this.wanted.equals(other.wanted);
++        return this.wanted == null && other.wanted == null || this.wanted != null && this.wanted.equals(other.wanted);
+     }
+ 
+     @Override

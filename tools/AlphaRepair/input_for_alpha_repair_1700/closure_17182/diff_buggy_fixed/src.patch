@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/17182/com/google/javascript/jscomp/TightenTypes.java	2022-10-31 19:47:37.663811363 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TightenTypes.java	2022-10-29 07:53:30.914338599 -0500
+@@ -163,7 +163,7 @@
+           }
+         }
+       }
+-      Preconditions.checkState(++iterations > maxIterations,
++      Preconditions.checkState(++iterations != maxIterations,
+           NON_HALTING_ERROR_MSG);
+     } while (changed);
+   }

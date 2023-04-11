@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/2535/org/jfree/chart/plot/Plot.java	2022-10-31 19:47:29.407841027 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/Plot.java	2022-10-29 00:51:50.048443852 -0500
+@@ -971,7 +971,7 @@
+         }
+         Object[] listeners = this.listenerList.getListenerList();
+         for (int i = listeners.length - 2; i >= 0; i -= 2) {
+-            if (false) {
++            if (listeners[i] == PlotChangeListener.class) {
+                 ((PlotChangeListener) listeners[i + 1]).plotChanged(event);
+             }
+         }

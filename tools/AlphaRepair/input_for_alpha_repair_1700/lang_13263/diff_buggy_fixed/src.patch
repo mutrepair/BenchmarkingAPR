@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/13263/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.031740891 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -5155,7 +5155,7 @@
+         if (str == null) {
+             return null;
+         }
+-        final int pads = size % str.length();
++        final int pads = size - str.length();
+         if (pads <= 0) {
+             return str; // returns original String when possible
+         }

@@ -1,0 +1,443 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 40
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.math3.complex.Complex.createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is replaced by an instantiation of type org.apache.commons.math3.complex.Complex using (DD)V
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.apache.commons.math3.complex.Complex.createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is replaced by an instantiation of type org.apache.commons.math3.complex.ComplexTest$TestComplex using (DD)V
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.math3.complex.Complex.createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is replaced by an instantiation of type org.apache.commons.math3.complex.Complex using (D)V
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method org.apache.commons.math3.complex.Complex.createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is replaced by an instantiation of type org.apache.commons.math3.complex.ComplexTest$TestComplex using (Lorg/apache/commons/math3/complex/Complex;)V
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to real is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to imaginary is guarded using value 0.D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to real is guarded using field imaginary
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to imaginary is guarded using field imaginary
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Complex.real is replaced by the call to org.apache.commons.math3.complex.Complex::abs()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.complex.Complex.imaginary is replaced by the call to org.apache.commons.math3.complex.Complex::abs()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Complex.real is replaced by the call to org.apache.commons.math3.complex.Complex::getImaginary()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.complex.Complex.imaginary is replaced by the call to org.apache.commons.math3.complex.Complex::getImaginary()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Complex.real is replaced by the call to org.apache.commons.math3.complex.Complex::getReal()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.complex.Complex.imaginary is replaced by the call to org.apache.commons.math3.complex.Complex::getReal()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Complex.real is replaced by the call to org.apache.commons.math3.complex.Complex::getArgument()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.complex.Complex.imaginary is replaced by the call to org.apache.commons.math3.complex.Complex::getArgument()D
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to real with an access to imaginary
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to imaginary with an access to real
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field I
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field NaN
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field INF
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.conjugate()
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.complex.Complex::createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is guarded using default value null
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to real is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to imaginary is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to real is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to imaginary is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to real is guarded returning field I
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to imaginary is guarded returning field I
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is guarded returning default value null
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is guarded returning local this
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is guarded returning field I
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to createComplex(DD)Lorg/apache/commons/math3/complex/Complex; is guarded returning field NaN
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/complex/Complex::createComplex
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/complex/Complex::negate
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/complex/Complex::negate to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to org/apache/commons/math3/complex/Complex::createComplex with receiver
+	File Name: org/apache/commons/math3/complex/Complex.java
+	Line Number: 505
+	Block: 105
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

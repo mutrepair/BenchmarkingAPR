@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/65219/org/jfree/chart/util/LineUtilities.java	2022-10-31 19:47:29.575840425 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/util/LineUtilities.java	2022-10-29 16:51:27.331544129 -0500
+@@ -102,7 +102,7 @@
+                 }
+                 else if ((f1 & Rectangle2D.OUT_TOP) == Rectangle2D.OUT_TOP
+                         && dy != 0.0) {
+-                    x1 = x1 + (minY - y1) * dx + dy;
++                    x1 = x1 + (minY - y1) * dx / dy;
+                     y1 = minY;
+                 }
+                 f1 = rect.outcode(x1, y1);

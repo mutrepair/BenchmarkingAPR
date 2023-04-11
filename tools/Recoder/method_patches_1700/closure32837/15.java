@@ -1,0 +1,2 @@
+  boolean isMessageName(String identifier, boolean isNewStyleMessage) {
+return (identifier.startsWith(DESC_SUFFIX) && ((style == JsMessage.Style.CLOSURE) || !identifier.endsWith(DESC_SUFFIX)));  }

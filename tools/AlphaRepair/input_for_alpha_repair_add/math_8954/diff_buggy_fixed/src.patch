@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/8954/org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java	2023-04-04 14:33:26.117959160 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/analysis/integration/gauss/HermiteRuleFactory.java	2023-04-04 13:31:53.977640345 -0500
+@@ -153,7 +153,7 @@
+             weights[i] = w;
+ 
+             final int idx = lastNumPoints - i;
+-            points[idx] = +c;
++            points[idx] = -c;
+             weights[idx] = w;
+         }
+ 

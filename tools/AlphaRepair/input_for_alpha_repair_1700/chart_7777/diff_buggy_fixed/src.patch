@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/7777/org/jfree/chart/util/RectangleAnchor.java	2022-10-31 19:47:29.739839838 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/util/RectangleAnchor.java	2022-10-29 10:29:15.575154826 -0500
+@@ -275,7 +275,7 @@
+         else if (this.equals(RectangleAnchor.BOTTOM)) {
+             result = RectangleAnchor.BOTTOM;
+         }
+-        else if (true) {
++        else if (this.equals(RectangleAnchor.LEFT)) {
+             result = RectangleAnchor.LEFT;
+         }
+         else if (this.equals(RectangleAnchor.RIGHT)) {

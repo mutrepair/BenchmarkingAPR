@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/5465/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 14:33:25.597954120 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2023-04-04 13:31:53.017628939 -0500
+@@ -379,7 +379,7 @@
+     }
+ 
+     private int bsGetInt() throws IOException {
+-        return (((((bsR(8) << 8) | bsR(8)) >>> 8) | bsR(8)) << 8) | bsR(8);
++        return (((((bsR(8) << 8) | bsR(8)) << 8) | bsR(8)) << 8) | bsR(8);
+     }
+ 
+     /**

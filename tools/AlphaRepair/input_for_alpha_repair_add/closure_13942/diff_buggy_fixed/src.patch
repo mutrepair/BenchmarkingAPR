@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/13942/com/google/javascript/jscomp/JsMessage.java	2023-04-04 14:33:25.445952648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/JsMessage.java	2023-04-04 13:31:52.773626040 -0500
+@@ -643,7 +643,7 @@
+       b -= c; b -= a; b ^= a << 23;
+       c -= a; c -= b; c ^= b >>> 5;
+       a -= b; a -= c; a ^= c >>> 35;
+-      b -= c; b -= a; b ^= a >> 49;
++      b -= c; b -= a; b ^= a << 49;
+       c -= a; c -= b; c ^= b >>> 11;
+       a -= b; a -= c; a ^= c >>> 12;
+       b -= c; b -= a; b ^= a << 18;

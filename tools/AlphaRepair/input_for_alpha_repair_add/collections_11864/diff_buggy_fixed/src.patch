@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/collections-25f/mutants/11864/org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java	2023-04-04 14:33:25.525953423 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/collections/src/main/java/org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java	2023-04-04 13:31:52.897627513 -0500
+@@ -119,7 +119,7 @@
+         final int index = bitIndex / LENGTH;
+         final int bit = bitIndex % LENGTH;
+ 
+-        return (key.charAt(index) | mask(bit)) != 0;
++        return (key.charAt(index) & mask(bit)) != 0;
+     }
+ 
+     @Override

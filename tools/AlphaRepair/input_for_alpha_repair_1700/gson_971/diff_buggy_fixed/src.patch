@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/971/com/google/gson/stream/JsonWriter.java	2022-10-31 19:47:43.887788851 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonWriter.java	2022-12-26 15:13:51.393619841 -0600
+@@ -489,7 +489,7 @@
+     }
+ 
+     out.write("\n");
+-    for (int i = 1; i <= stack.size(); i++) {
++    for (int i = 1; i < stack.size(); i++) {
+       out.write(indent);
+     }
+   }

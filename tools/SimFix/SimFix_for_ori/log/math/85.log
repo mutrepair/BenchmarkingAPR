@@ -1,0 +1,119 @@
+=================================================
+Project : math_85	start : 23/02/07 13:37
+Current failed test : org.apache.commons.math.distribution.NormalDistributionTest::testMath280 | 23/02/07 13:37
+Tue Feb 07 13:37:29 CST 2023 org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils,198
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fa*initial>=0.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fa*upperBound>=0.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3673989900565082 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>0,0]
+if(initial<lowerBound||initial>upperBound||lowerBound>=upperBound){
+throw MathRuntimeException.createIllegalArgumentException("invalid bracketing parameters:  lower bound={0},  initial={1}, upper bound={2}",lowerBound,initial,upperBound);
+}
+double a=initial;
+double b=initial;
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>198,205]
+if(fa*fb>=0.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>198,205]
+if(fa*upperBound>=0.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fa*initial>=0.0){
+throw MathRuntimeException.createIllegalArgumentException("invalid bracketing parameters:  lower bound={0},  initial={1}, upper bound={2}",fb,initial,fa);
+}
+
+Time : 23/02/07 13:37
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fa*fb>=1.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.022335625617706 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>0,0]
+if(x<a||a<1.0){
+ret=1.0-regularizedGammaP(a,x,epsilon,maxIterations);
+}else {
+ContinuedFraction cf=new ContinuedFraction(){
+  @Override protected double getA(  int n,  double x){
+    return ((2.0 * n) + 1.0) - a + x;
+  }
+  @Override protected double getB(  int n,  double x){
+    return n * (a - n);
+  }
+}
+;
+ret=1.0/cf.evaluate(x,epsilon,maxIterations);
+ret=Math.exp(-x+(a*Math.log(x))-logGamma(a))*ret;
+}
+
+Time : 23/02/07 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>198,205]
+if(fa*fb>=0.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java=>198,205]
+if(fa*fb>=1.0){
+throw new ConvergenceException("number of iterations={0}, maximum iterations={1}, "+"initial={2}, lower bound={3}, upper bound={4}, final a value={5}, ",numIterations,maximumIterations,initial,lowerBound,upperBound,a,b,fa,fb);
+}
+
+Time : 23/02/07 13:38
+----------------------------------------
+Success time : 23/02/07 13:38

@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field VOWELS
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 415
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 416
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local value is replaced a call value.toLowerCase()
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 415
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.codec.language.DoubleMetaphone::charAt(Ljava/lang/String;I)C is guarded using default value '\0'
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 419
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning default value null
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 419
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning local value
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 419
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning field VOWELS
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 419
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 417
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 86 with 87
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 420
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 40
+	First Index: 423
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 41
+	First Index: 429
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 418
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 41
+	First Index: 430
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 421
+	Rank: 3
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/DoubleMetaphone::charAt
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 419
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 421
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 173
+	Block: 39
+	First Index: 421
+	Rank: 3
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b is replaced by access to field UTF8_BOM_1
+	File Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java
+	Line Number: 368
+	Block: 90
+	First Index: 4
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local b is replaced by access to field UTF8_BOM_2
+	File Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java
+	Line Number: 368
+	Block: 90
+	First Index: 4
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local b is replaced by access to field UTF8_BOM_3
+	File Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java
+	Line Number: 368
+	Block: 90
+	First Index: 4
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 255 with 256
+	File Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java
+	Line Number: 368
+	Block: 90
+	First Index: 5
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.java
+	Line Number: 368
+	Block: 90
+	First Index: 6
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------

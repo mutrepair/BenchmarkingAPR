@@ -1,0 +1,2 @@
+    private boolean isSlavoGermanic(String value) {
+return (((value.indexOf("null") > -1) || (value.indexOf("null") > -1)) || ((((value.indexOf("null") > -1) || (value.indexOf("null") > -1)) || (value.indexOf("null") >= -1)) || (value.indexOf("null") > -1)));    }

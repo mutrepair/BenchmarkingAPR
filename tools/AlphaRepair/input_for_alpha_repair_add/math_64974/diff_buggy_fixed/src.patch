@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/64974/org/apache/commons/math3/ode/ContinuousOutputModel.java	2023-04-04 14:33:26.113959121 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/ode/ContinuousOutputModel.java	2023-04-04 13:31:54.013640773 -0500
+@@ -374,7 +374,7 @@
+     if (time > interval.getPreviousTime()) {
+       return -1;
+     } else if (time < interval.getCurrentTime()) {
+-      return ~1;
++      return +1;
+     } else {
+       return 0;
+     }

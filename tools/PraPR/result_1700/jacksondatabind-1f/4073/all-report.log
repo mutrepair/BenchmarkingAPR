@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local len to be used
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 55
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local len is replaced by local i to be used
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 56
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 57
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 13
+	First Index: 96
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 51
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 57
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 57
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java
+	Line Number: 166
+	Block: 9
+	First Index: 57
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

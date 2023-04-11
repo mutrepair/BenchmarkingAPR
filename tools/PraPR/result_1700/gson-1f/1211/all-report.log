@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.List.set(ILjava/lang/Object;)Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.util.List.set(ILjava/lang/Object;)Ljava/lang/Object; is replaced by an instantiation of type com.google.gson.ParamterizedTypeFixtures$MyParameterizedTypeAdapter using ()V
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to stack is guarded using value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to stack is guarded using field stack
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::set(ILjava/lang/Object;)Ljava/lang/Object; is guarded using default value null
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to stack is guarded returning enclosing method
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning enclosing method
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to set(ILjava/lang/Object;)Ljava/lang/Object; is guarded returning enclosing method
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/util/List::set with argument
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::set
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 665
+	Block: 109
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

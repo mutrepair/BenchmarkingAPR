@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/50253/org/apache/commons/math3/linear/BlockFieldMatrix.java	2022-10-31 19:48:00.395728526 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/BlockFieldMatrix.java	2022-12-26 15:13:55.665665998 -0600
+@@ -1226,7 +1226,7 @@
+         // perform transpose block-wise, to ensure good cache behavior
+         int blockIndex = 0;
+         for (int iBlock = 0; iBlock < blockColumns; ++iBlock) {
+-            for (int jBlock = -1; jBlock < blockRows; ++jBlock) {
++            for (int jBlock = 0; jBlock < blockRows; ++jBlock) {
+ 
+                 // transpose current block
+                 final T[] outBlock = out.blocks[blockIndex];

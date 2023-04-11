@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3231/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:39.027806441 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -886,7 +886,7 @@
+ 	 */
+     private boolean isSlavoGermanic(String value) {
+         return value.indexOf('W') > -1 || value.indexOf('K') > -1 || 
+-            value.indexOf("CZ") >= -1 || value.indexOf("WITZ") > -1;
++            value.indexOf("CZ") > -1 || value.indexOf("WITZ") > -1;
+     }
+ 
+     /**

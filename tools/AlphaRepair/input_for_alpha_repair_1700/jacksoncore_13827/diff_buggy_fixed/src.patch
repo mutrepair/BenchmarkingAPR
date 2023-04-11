@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/13827/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.947785004 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2633,7 +2633,7 @@
+                     if (_inputPtr >= _inputEnd && !loadMore()) {
+                         break main_loop;
+                     }
+-                    if (false) {
++                    if (_inputBuffer[_inputPtr] == INT_SLASH) {
+                         ++_inputPtr;
+                         return;
+                     }

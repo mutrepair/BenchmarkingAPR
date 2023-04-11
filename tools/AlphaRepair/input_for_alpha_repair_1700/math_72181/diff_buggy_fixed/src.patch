@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/72181/org/apache/commons/math3/ode/nonstiff/GraggBulirschStoerIntegrator.java	2022-10-31 19:48:00.547727966 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/ode/nonstiff/GraggBulirschStoerIntegrator.java	2022-12-26 15:13:55.669666042 -0600
+@@ -564,7 +564,7 @@
+ 
+     final double[][] diagonal = new double[sequence.length-1][];
+     final double[][] y1Diag = new double[sequence.length-1][];
+-    for (int k = 0; k < sequence.length * 1; ++k) {
++    for (int k = 0; k < sequence.length-1; ++k) {
+       diagonal[k] = new double[y.length];
+       y1Diag[k] = new double[y.length];
+     }

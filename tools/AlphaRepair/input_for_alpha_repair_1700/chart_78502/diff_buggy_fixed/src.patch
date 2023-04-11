@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/78502/org/jfree/data/time/TimeTableXYDataset.java	2022-10-31 19:47:29.755839781 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/time/TimeTableXYDataset.java	2022-10-29 16:41:07.438717383 -0500
+@@ -586,7 +586,7 @@
+         if (!this.values.equals(that.values)) {
+             return false;
+         }
+-        return false;
++        return true;
+     }
+ 
+     /**

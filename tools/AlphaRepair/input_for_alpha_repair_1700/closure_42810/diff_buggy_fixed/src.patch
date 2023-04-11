@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/42810/com/google/javascript/jscomp/SideEffectsAnalysis.java	2022-10-31 19:47:37.851810686 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/SideEffectsAnalysis.java	2022-10-29 09:07:03.437981195 -0500
+@@ -669,7 +669,7 @@
+ 
+       @Override
+       public boolean intersectsLocation(EffectLocation otherLocation) {
+-        return false;
++        return this == EVERY_LOCATION && otherLocation == EVERY_LOCATION;
+       }
+ 
+       @Override

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12258/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java	2022-10-31 19:47:46.519779292 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java	2022-12-26 15:13:52.509631900 -0600
+@@ -473,7 +473,7 @@
+                      */
+                     if (i > 0) {
+                         props.remove(i);
+-                        props.add(1, idProp);
++                        props.add(0, idProp);
+                     }
+                     break;
+                 }

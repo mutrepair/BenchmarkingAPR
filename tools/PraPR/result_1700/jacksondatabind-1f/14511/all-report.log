@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _member is guarded using value null
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _member is guarded using field _member
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition._member is replaced by the call to com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition::getAccessor()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition._member is replaced by the call to com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition::getMutator()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition._member is replaced by the call to com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition::getPrimaryMember()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getParameterCount with a call to getModifiers
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.introspect.AnnotatedMethod::getParameterCount()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _member is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getParameterCount()I is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 10
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 6
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 11
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/introspect/AnnotatedMethod::getParameterCount
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 10
+	Rank: 3
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 30
+	First Index: 6
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition.java
+	Line Number: 147
+	Block: 31
+	First Index: 11
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------

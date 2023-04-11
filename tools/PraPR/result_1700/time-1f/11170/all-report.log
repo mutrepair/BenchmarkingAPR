@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to add(JI)J with a call to add(JJ)J
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iField is guarded using value null
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iField is guarded using field iField
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field iField is replaced by access to local this
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local value to be used
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local offset to be used
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local instant is replaced by access to field serialVersionUID
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to add with a call to subtract
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.DurationField::add(JI)J is guarded using default value 0L
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iField is guarded returning default value 0L
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to iField is guarded returning local instant
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iField is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to add(JI)J is guarded returning default value 0L
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to add(JI)J is guarded returning local instant
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to add(JI)J is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/joda/time/DurationField::add with argument
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long multiplication with division
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/DurationField::add
+	File Name: org/joda/time/chrono/ZonedChronology.java
+	Line Number: 316
+	Block: 14
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

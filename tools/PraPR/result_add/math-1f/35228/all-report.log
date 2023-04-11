@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getQ0 with a call to getQ1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getQ0 with a call to getQ2
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getQ0 with a call to getQ3
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getQ0 with a call to getAngle
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ0()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getQ0()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getQ0()D is guarded returning local u
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Rotation::getQ0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java
+	Line Number: 941
+	Block: 116
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

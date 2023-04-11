@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/1737/org/joda/time/PeriodType.java	2022-10-31 19:48:08.807697450 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/PeriodType.java	2022-12-26 15:13:57.197682550 -0600
+@@ -109,7 +109,7 @@
+                     DurationFieldType.hours(), DurationFieldType.minutes(),
+                     DurationFieldType.seconds(), DurationFieldType.millis(),
+                 },
+-                new int[] { 0, 1, 2, 3, 4, 0, 6, 7, }
++                new int[] { 0, 1, 2, 3, 4, 5, 6, 7, }
+             );
+             cStandard = type;
+         }

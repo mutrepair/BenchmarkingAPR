@@ -1,0 +1,311 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 28
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to buffer is guarded using value null
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 42
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to size is guarded using value 0
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to size is guarded using local width
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to buffer is guarded using field buffer
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 42
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to size is guarded using field CAPACITY
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang.text.StrBuilder.buffer is replaced by the call to org.apache.commons.lang.text.StrBuilder::toCharArray()[C
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 42
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang.text.StrBuilder.size is replaced by the call to org.apache.commons.lang.text.StrBuilder::length()I
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.lang.text.StrBuilder.size is replaced by the call to org.apache.commons.lang.text.StrBuilder::capacity()I
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.lang.text.StrBuilder.size is replaced by the call to org.apache.commons.lang.text.StrBuilder::size()I
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.lang.text.StrBuilder.size is replaced by the call to org.apache.commons.lang.text.StrBuilder::hashCode()I
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field size is replaced by access to local width
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field size is replaced by access to local strLen
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local strLen is replaced by local width to be used
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 40
+	Rank: 1
+	Total Rank: 28
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local str is replaced by access to field newLine
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 38
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local strLen is replaced by access to field CAPACITY
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 40
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local str is replaced by access to field nullText
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 38
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local strLen is replaced by access to field size
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 40
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local str is replaced a call str.toLowerCase()
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 38
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.minimizeCapacity()
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 41
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to buffer is guarded returning default value null
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 42
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to size is guarded returning default value null
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to buffer is guarded returning local this
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 42
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to size is guarded returning local this
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 44
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getChars(II[CI)V is guarded returning default value null
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 45
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getChars(II[CI)V is guarded returning local this
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 45
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.lang.String::getChars(II[CI)V is guarded
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 45
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 39
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/String::getChars
+	File Name: org/apache/commons/lang/text/StrBuilder.java
+	Line Number: 884
+	Block: 172
+	First Index: 45
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------

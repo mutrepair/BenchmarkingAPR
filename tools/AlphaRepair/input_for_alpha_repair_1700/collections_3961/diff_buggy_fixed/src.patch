@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/3961/org/apache/commons/collections4/iterators/IteratorChain.java	2022-10-31 19:47:39.787803695 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/iterators/IteratorChain.java	2022-12-26 15:13:49.797602596 -0600
+@@ -220,7 +220,7 @@
+             lastUsedIterator = currentIterator;
+         }
+ 
+-        while (!iteratorChain.isEmpty()) {
++        while (currentIterator.hasNext() == false && !iteratorChain.isEmpty()) {
+             currentIterator = iteratorChain.remove();
+         }
+     }

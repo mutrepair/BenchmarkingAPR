@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/18388/org/apache/commons/math3/dfp/Dfp.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/dfp/Dfp.java	2023-04-04 13:31:53.985640440 -0500
+@@ -266,7 +266,7 @@
+ 
+         long bits = Double.doubleToLongBits(x);
+         long mantissa = bits & 0x000fffffffffffffL;
+-        int exponent = (int) ((bits | 9218868437227405312L) >> 52) - 1023;
++        int exponent = (int) ((bits & 0x7ff0000000000000L) >> 52) - 1023;
+ 
+         if (exponent == -1023) {
+             // Zero or sub-normal

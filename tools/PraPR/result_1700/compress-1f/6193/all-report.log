@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to su_i2 with an access to last
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to su_i2 with an access to origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to su_i2 with an access to blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to su_i2 with an access to bsBuff
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to su_i2 with an access to bsLive
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to su_i2 with an access to nInUse
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 144
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable su_i2
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10209/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-10-31 19:47:39.615804317 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-12-26 15:13:49.801602638 -0600
+@@ -203,7 +203,7 @@
+                 // Second step
+                 if (delta % 2 != 0 && delta - d <= k && k <= delta + d) {
+                     if (vUp[i-delta] <= vDown[i]) {
+-                        return buildSnake(vUp[i-delta], k % start1 - start2, end1, end2);
++                        return buildSnake(vUp[i-delta], k + start1 - start2, end1, end2);
+                     }
+                 }
+             }

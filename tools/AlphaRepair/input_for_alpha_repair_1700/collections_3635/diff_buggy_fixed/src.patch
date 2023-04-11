@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/3635/org/apache/commons/collections4/iterators/ArrayIterator.java	2022-10-31 19:47:39.767803768 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/iterators/ArrayIterator.java	2022-12-26 15:13:49.797602596 -0600
+@@ -116,7 +116,7 @@
+               "s beyond the end of the array. "
+             );
+         }
+-        if (false) {
++        if (bound < 0) {
+             throw new ArrayIndexOutOfBoundsException(
+               "Attempt to make an ArrayIterator that " + type +
+               "s before the start of the array. "

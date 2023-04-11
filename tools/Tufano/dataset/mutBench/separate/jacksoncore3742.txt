@@ -1,0 +1,1 @@
+public TYPE_1 METHOD_1 ( ) throws TYPE_2 , TYPE_3 { if ( VAR_1 != VAR_2 && VAR_1 != VAR_3 ) { return this ; } int open = 1 ; while ( true ) { TYPE_4 t = METHOD_2 ( ) ; if ( t == null ) { METHOD_3 ( ) ; return this ; } switch ( t ) { case VAR_4 : case VAR_5 : ++ open ; break ; case VAR_6 : case VAR_7 : if ( -- open == - 1 ) { return this ; } break ; } } }

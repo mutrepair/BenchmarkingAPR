@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2031/com/google/gson/ModifyFirstLetterNamingPolicy.java	2022-10-31 19:47:43.723789446 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ModifyFirstLetterNamingPolicy.java	2022-12-26 15:13:51.393619841 -0600
+@@ -88,7 +88,7 @@
+     }
+ 
+     boolean capitalizeFirstLetter = (letterModifier == LetterModifier.UPPER);
+-    if (false) {
++    if (capitalizeFirstLetter && !Character.isUpperCase(firstCharacter)) {
+       String modifiedTarget = modifyString(Character.toUpperCase(firstCharacter), target, ++index);
+       return fieldNameBuilder.append(modifiedTarget).toString();
+     } else if (!capitalizeFirstLetter && Character.isUpperCase(firstCharacter)) {

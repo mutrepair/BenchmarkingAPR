@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/202/org/jsoup/nodes/Element.java	2022-10-31 19:47:50.455764955 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Element.java	2022-12-26 15:13:53.649644217 -0600
+@@ -574,7 +574,7 @@
+ 
+             } else if (child instanceof Element) {
+                 Element element = (Element) child;
+-                if (false)
++                if (accum.length() > 0 && element.isBlock() && !TextNode.lastCharIsWhitespace(accum))
+                     accum.append(" ");
+                 element.text(accum);
+             }

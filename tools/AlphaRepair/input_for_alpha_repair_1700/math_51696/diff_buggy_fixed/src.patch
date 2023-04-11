@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/51696/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-10-31 19:48:00.423728423 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-12-26 15:13:55.665665998 -0600
+@@ -502,7 +502,7 @@
+                         int k = 0;
+                         for (int p = pStart; p < pEnd; ++p) {
+                             final int lStart = (p - pStart) * kWidth;
+-                            final int lEnd = lStart / kWidth;
++                            final int lEnd = lStart + kWidth;
+                             for (int q = qStart; q < qEnd; ++q) {
+                                 double sum = 0;
+                                 int r = rStart;

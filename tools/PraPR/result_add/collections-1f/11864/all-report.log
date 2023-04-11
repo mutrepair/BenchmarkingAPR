@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local index is replaced by local bitIndex to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local bit is replaced by local bitIndex to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local index is replaced by local lengthInBits to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local bit is replaced by local lengthInBits to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local index is replaced by local bit to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local bit is replaced by local index to be used
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field LENGTH
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local bit is replaced by access to field LENGTH
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local index is replaced by access to field MSB
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local bit is replaced by access to field MSB
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local key is replaced a call key.toLowerCase()
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value false
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer::mask with argument
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer::isBitSet
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 29
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer::isBitSet
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 29
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 28
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 29
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer::mask
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 27
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.java
+	Line Number: 122
+	Block: 29
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

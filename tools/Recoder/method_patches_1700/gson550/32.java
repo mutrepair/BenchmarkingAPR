@@ -1,0 +1,5 @@
+  public long getAsLong() {
+if((elements.size() == 1)){      return elements.get(0).getAsLong();
+    }
+    throw new IllegalStateException();
+  }

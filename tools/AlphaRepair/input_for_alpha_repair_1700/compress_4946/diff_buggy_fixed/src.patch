@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/4946/org/apache/commons/compress/archivers/zip/ZipUtil.java	2022-10-31 19:47:41.355798025 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ZipUtil.java	2022-12-26 15:13:50.345608516 -0600
+@@ -69,7 +69,7 @@
+      */
+     public static long adjustToLong(int i) {
+         if (i < 0) {
+-            return 2 * ((long)Integer.MAX_VALUE) / 2 + i;
++            return 2 * ((long) Integer.MAX_VALUE) + 2 + i;
+         } else {
+             return i;
+         }

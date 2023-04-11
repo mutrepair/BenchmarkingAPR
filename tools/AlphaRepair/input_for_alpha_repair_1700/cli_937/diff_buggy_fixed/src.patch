@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/937/org/apache/commons/cli/PatternOptionBuilder.java	2022-10-31 19:47:31.423833805 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PatternOptionBuilder.java	2022-12-26 15:13:38.053475668 -0600
+@@ -163,7 +163,7 @@
+ 
+         Options options = new Options();
+ 
+-        for (int i = 1; i < sz; i++)
++        for (int i = 0; i < sz; i++)
+         {
+             ch = pattern.charAt(i);
+ 

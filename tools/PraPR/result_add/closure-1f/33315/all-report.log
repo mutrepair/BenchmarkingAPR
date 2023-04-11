@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local aIsNull is replaced by local bIsNull to be used
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 48
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local bIsNull is replaced by local aIsNull to be used
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 49
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local aIsNull is replaced by access to field frozen
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 48
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local bIsNull is replaced by access to field frozen
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 49
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 50
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 51
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 51
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/LinkedFlowScope.java
+	Line Number: 320
+	Block: 80
+	First Index: 51
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

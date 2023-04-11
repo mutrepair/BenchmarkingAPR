@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/26277/org/jfree/chart/plot/IntervalMarker.java	2022-10-31 19:47:29.415840998 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/IntervalMarker.java	2022-10-29 00:37:57.107997348 -0500
+@@ -201,7 +201,7 @@
+         if (!(obj instanceof IntervalMarker)) {
+             return false;
+         }
+-        if (!false) {
++        if (!super.equals(obj)) {
+             return false;
+         }
+         IntervalMarker that = (IntervalMarker) obj;

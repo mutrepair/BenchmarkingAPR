@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/48375/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-31 19:47:37.919810440 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/CharRanges.java	2022-10-29 13:23:58.569183671 -0500
+@@ -226,7 +226,7 @@
+       k += m - i;
+     } else if (j < n) {
+       System.arraycopy(r, j, out, k, n - j);
+-      k += n % j;
++      k += n - j;
+     }
+     // We guessed at the output length above.  Cut off the tail.
+     if (k != out.length) {

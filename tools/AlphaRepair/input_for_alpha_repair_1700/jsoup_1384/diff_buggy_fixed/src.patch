@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1384/org/jsoup/safety/Cleaner.java	2022-10-31 19:47:50.403765145 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/safety/Cleaner.java	2022-12-26 15:13:53.649644217 -0600
+@@ -60,7 +60,7 @@
+ 
+         Document clean = Document.createShell(dirtyDocument.baseUri());
+         int numDiscarded = copySafeNodes(dirtyDocument.body(), clean.body());
+-        return numDiscarded >= 0;
++        return numDiscarded == 0;
+     }
+ 
+     /**

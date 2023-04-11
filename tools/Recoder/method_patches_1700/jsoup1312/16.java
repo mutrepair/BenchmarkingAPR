@@ -1,0 +1,9 @@
+    public boolean matchChomp(String seq) {
+        if (matches(seq)) {
+            consume(seq);
+consume(seq);
+consume(seq);
+            return false;        } else {
+            return false;
+        }
+    }

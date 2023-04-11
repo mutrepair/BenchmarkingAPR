@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local position to be used
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 11
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local position is replaced by local value to be used
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 19
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value 0
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(I)C is guarded returning local position
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to charAt(I)C is guarded returning local value
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 3 with 4
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 12
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 15
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 20
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 48 with 49
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 24
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 17
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 25
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/joda/time/format/FormatUtils::parseTwoDigits
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 26
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/joda/time/format/FormatUtils.java
+	Line Number: 353
+	Block: 106
+	First Index: 26
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

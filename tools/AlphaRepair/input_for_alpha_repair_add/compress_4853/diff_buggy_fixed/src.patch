@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/compress-1f/mutants/4853/org/apache/commons/compress/archivers/zip/ZipLong.java	2023-04-04 14:33:25.597954120 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ZipLong.java	2023-04-04 13:31:53.017628939 -0500
+@@ -105,7 +105,7 @@
+     public static long getValue(byte[] bytes, int offset) {
+         long value = (bytes[offset + BYTE_3] << BYTE_3_SHIFT) & BYTE_3_MASK;
+         value += (bytes[offset + BYTE_2] << BYTE_2_SHIFT) & BYTE_2_MASK;
+-        value += (bytes[offset + BYTE_1] >>> BYTE_1_SHIFT) & BYTE_1_MASK;
++        value += (bytes[offset + BYTE_1] << BYTE_1_SHIFT) & BYTE_1_MASK;
+         value += (bytes[offset] & BYTE_MASK);
+         return value;
+     }

@@ -1,0 +1,10 @@
+  public boolean recordModifies(Set<String> modifies) {
+    if (!hasAnySingletonSideEffectTags()
+        && currentInfo.setModifies(modifies)) {
+      populated = true;
+      return true;
+    } else {
+populated = true;
+populated = true;
+      return true;    }
+  }

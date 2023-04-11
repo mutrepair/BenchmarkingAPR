@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11693/org/joda/time/convert/ConverterSet.java	2022-10-31 19:48:08.667697969 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/convert/ConverterSet.java	2022-12-26 15:13:57.201682593 -0600
+@@ -263,7 +263,7 @@
+ 
+         // Haven't found exact match, so check what remains in the set.
+ 
+-        if (length == 0) {
++        if (type == null || length == 0) {
+             return null;
+         }
+         if (length == 1) {

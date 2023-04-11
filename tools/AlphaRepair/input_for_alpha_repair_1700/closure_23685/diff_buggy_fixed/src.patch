@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/23685/com/google/javascript/jscomp/CodePrinter.java	2022-10-31 19:47:37.711811190 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/CodePrinter.java	2022-10-29 09:25:34.847372091 -0500
+@@ -380,7 +380,7 @@
+             return false;
+           case Token.TRY:
+             // Don't break before catch
+-            return true;
++            return n != parent.getFirstChild();
+           case Token.CATCH:
+             // Don't break before finally
+             return !NodeUtil.hasFinally(getTryForCatch(parent));

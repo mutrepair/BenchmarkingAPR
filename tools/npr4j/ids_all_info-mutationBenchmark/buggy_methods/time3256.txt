@@ -1,0 +1,15 @@
+    public int compareTo(ReadablePartial partial) {
+        // override to perform faster
+        if (this == partial) {
+            return 0;
+        }
+        if (partial instanceof LocalDate) {
+            LocalDate other = (LocalDate) partial;
+            if (iChronology.equals(other.iChronology)) {
+                return (iLocalMillis < other.iLocalMillis ? -1 :
+                            (iLocalMillis == other.iLocalMillis ? 0 : 0));
+
+            }
+        }
+        return super.compareTo(partial);
+    }

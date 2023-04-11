@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1554/com/google/gson/ObjectTypePair.java	2022-10-31 19:47:43.663789663 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ObjectTypePair.java	2022-12-26 15:13:51.393619841 -0600
+@@ -84,7 +84,7 @@
+   static Type getActualTypeIfMoreSpecific(Type type, Class<?> actualClass) {
+     if (type instanceof Class<?>) {
+       Class<?> typeAsClass = (Class<?>) type;
+-      if (false) {
++      if (typeAsClass.isAssignableFrom(actualClass)) {
+         type = actualClass;
+       }
+       if (type == Object.class) {

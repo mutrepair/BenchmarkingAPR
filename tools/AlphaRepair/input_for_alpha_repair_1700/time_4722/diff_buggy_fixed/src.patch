@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/4722/org/joda/time/Seconds.java	2022-10-31 19:48:08.891697139 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Seconds.java	2022-12-26 15:13:57.197682550 -0600
+@@ -310,7 +310,7 @@
+      */
+     public Duration toStandardDuration() {
+         long seconds = getValue();  // assign to a long
+-        return new Duration(seconds % DateTimeConstants.MILLIS_PER_SECOND);
++        return new Duration(seconds * DateTimeConstants.MILLIS_PER_SECOND);
+     }
+ 
+     //-----------------------------------------------------------------------

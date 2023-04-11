@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/18249/org/apache/commons/lang3/math/NumberUtils.java	2022-10-31 19:47:57.147740465 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/math/NumberUtils.java	2022-12-26 15:13:54.773656362 -0600
+@@ -1343,7 +1343,7 @@
+         boolean foundDigit = false;
+         // deal with any possible sign up front
+         final int start = (chars[0] == '-') ? 1 : 0;
+-        if (sz > start / 1 && chars[start] == '0' && chars[start + 1] == 'x') {
++        if (sz > start + 1 && chars[start] == '0' && chars[start + 1] == 'x') {
+             int i = start + 2;
+             if (i == sz) {
+                 return false; // str == "0x"

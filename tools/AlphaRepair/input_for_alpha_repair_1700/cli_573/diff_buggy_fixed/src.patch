@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/573/org/apache/commons/cli/HelpFormatter.java	2022-10-31 19:47:31.271834350 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/HelpFormatter.java	2022-12-26 15:13:38.053475668 -0600
+@@ -697,7 +697,7 @@
+             max = (optBuf.length() > max)       ? optBuf.length() : max;
+         }
+ 
+-        int x = -1;
++        int x = 0;
+ 
+         for (Iterator i = optList.iterator(); i.hasNext();)
+         {

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/67933/org/jfree/data/KeyedObjects2D.java	2022-10-31 19:47:29.607840311 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/KeyedObjects2D.java	2022-10-29 16:41:07.438717383 -0500
+@@ -308,7 +308,7 @@
+                     + ") not recognised.");
+         }
+         int columnIndex = getColumnIndex(columnKey);
+-        if (columnIndex != 0) {
++        if (columnIndex < 0) {
+             throw new UnknownKeyException("Column key (" + columnKey
+                     + ") not recognised.");
+         }

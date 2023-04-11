@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to VALUE_NUMBER_INT with an access to NOT_AVAILABLE
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to VALUE_NUMBER_INT with an access to START_OBJECT
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to VALUE_NUMBER_INT with an access to END_OBJECT
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to VALUE_NUMBER_INT with an access to START_ARRAY
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to VALUE_NUMBER_INT with an access to END_ARRAY
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to VALUE_NUMBER_INT with an access to FIELD_NAME
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field VALUE_NUMBER_INT is replaced by access to local t
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.java
+	Line Number: 573
+	Block: 1
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

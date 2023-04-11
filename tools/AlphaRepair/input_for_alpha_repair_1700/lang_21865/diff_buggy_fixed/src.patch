@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/21865/org/apache/commons/lang3/time/DateUtils.java	2022-10-31 19:47:57.239740127 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/time/DateUtils.java	2022-12-26 15:13:54.785656490 -0600
+@@ -1008,7 +1008,7 @@
+             for (final int element : aField) {
+                 if (element == field) {
+                     //This is our field... we stop looping
+-                    if (modType == MODIFY_CEILING || (false && roundUp)) {
++                    if (modType == MODIFY_CEILING || (modType == MODIFY_ROUND && roundUp)) {
+                         if (field == DateUtils.SEMI_MONTH) {
+                             //This is a special case that's hard to generalize
+                             //If the date is 1, we round up to 16, otherwise

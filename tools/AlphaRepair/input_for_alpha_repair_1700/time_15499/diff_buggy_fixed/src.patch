@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/15499/org/joda/time/format/FormatUtils.java	2022-10-31 19:48:08.755697643 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/FormatUtils.java	2022-12-26 15:13:57.205682637 -0600
+@@ -74,7 +74,7 @@
+             int d = ((value + 1) * 13421772) >> 27;
+             buf.append((char) (d + '0'));
+             // Append remainder by calculating (value - d * 10).
+-            buf.append((char) ((value - (d << 3) - (d << 1)) % '0'));
++            buf.append((char) (value - (d << 3) - (d << 1) + '0'));
+         } else {
+             int digits;
+             if (value < 1000) {

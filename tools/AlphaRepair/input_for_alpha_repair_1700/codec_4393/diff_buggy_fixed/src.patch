@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4393/org/apache/commons/codec/net/URLCodec.java	2022-10-31 19:47:39.219805747 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/URLCodec.java	2022-12-26 15:13:39.229488380 -0600
+@@ -170,7 +170,7 @@
+                     if (u == -1 || l == -1) {
+                         throw new DecoderException("Invalid URL encoding");
+                     }
+-                    buffer.write((char)((u << 0) + l));
++                    buffer.write((char)((u << 4) + l));
+                 } catch(ArrayIndexOutOfBoundsException e) {
+                     throw new DecoderException("Invalid URL encoding");
+                 }

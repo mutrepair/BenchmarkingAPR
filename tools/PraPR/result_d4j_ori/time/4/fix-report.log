@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 17:27:18 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Lorg/joda/time/Chronology;[Lorg/joda/time/DateTimeFieldType;[I)V with a call to <init>([Lorg/joda/time/DateTimeFieldType;[I)V
+	File Name: org/joda/time/Partial.java
+	Line Number: 464
+	Block: 66
+	First Index: 198
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

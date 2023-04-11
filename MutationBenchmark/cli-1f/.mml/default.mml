@@ -1,0 +1,259 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.cli.Parser
+AOR<"org.apache.commons.cli.Parser">;
+LOR<"org.apache.commons.cli.Parser">;
+SOR<"org.apache.commons.cli.Parser">;
+COR<"org.apache.commons.cli.Parser">;
+ROR<"org.apache.commons.cli.Parser">;
+ORU<"org.apache.commons.cli.Parser">;
+LVR<"org.apache.commons.cli.Parser">;
+STD<"org.apache.commons.cli.Parser">;
+
+// Enable operators for org.apache.commons.cli.BasicParser
+AOR<"org.apache.commons.cli.BasicParser">;
+LOR<"org.apache.commons.cli.BasicParser">;
+SOR<"org.apache.commons.cli.BasicParser">;
+COR<"org.apache.commons.cli.BasicParser">;
+ROR<"org.apache.commons.cli.BasicParser">;
+ORU<"org.apache.commons.cli.BasicParser">;
+LVR<"org.apache.commons.cli.BasicParser">;
+STD<"org.apache.commons.cli.BasicParser">;
+
+// Enable operators for org.apache.commons.cli.ParseException
+AOR<"org.apache.commons.cli.ParseException">;
+LOR<"org.apache.commons.cli.ParseException">;
+SOR<"org.apache.commons.cli.ParseException">;
+COR<"org.apache.commons.cli.ParseException">;
+ROR<"org.apache.commons.cli.ParseException">;
+ORU<"org.apache.commons.cli.ParseException">;
+LVR<"org.apache.commons.cli.ParseException">;
+STD<"org.apache.commons.cli.ParseException">;
+
+// Enable operators for org.apache.commons.cli.Option
+AOR<"org.apache.commons.cli.Option">;
+LOR<"org.apache.commons.cli.Option">;
+SOR<"org.apache.commons.cli.Option">;
+COR<"org.apache.commons.cli.Option">;
+ROR<"org.apache.commons.cli.Option">;
+ORU<"org.apache.commons.cli.Option">;
+LVR<"org.apache.commons.cli.Option">;
+STD<"org.apache.commons.cli.Option">;
+
+// Enable operators for org.apache.commons.cli.MissingArgumentException
+AOR<"org.apache.commons.cli.MissingArgumentException">;
+LOR<"org.apache.commons.cli.MissingArgumentException">;
+SOR<"org.apache.commons.cli.MissingArgumentException">;
+COR<"org.apache.commons.cli.MissingArgumentException">;
+ROR<"org.apache.commons.cli.MissingArgumentException">;
+ORU<"org.apache.commons.cli.MissingArgumentException">;
+LVR<"org.apache.commons.cli.MissingArgumentException">;
+STD<"org.apache.commons.cli.MissingArgumentException">;
+
+// Enable operators for org.apache.commons.cli.HelpFormatter
+AOR<"org.apache.commons.cli.HelpFormatter">;
+LOR<"org.apache.commons.cli.HelpFormatter">;
+SOR<"org.apache.commons.cli.HelpFormatter">;
+COR<"org.apache.commons.cli.HelpFormatter">;
+ROR<"org.apache.commons.cli.HelpFormatter">;
+ORU<"org.apache.commons.cli.HelpFormatter">;
+LVR<"org.apache.commons.cli.HelpFormatter">;
+STD<"org.apache.commons.cli.HelpFormatter">;
+
+// Enable operators for org.apache.commons.cli.MissingOptionException
+AOR<"org.apache.commons.cli.MissingOptionException">;
+LOR<"org.apache.commons.cli.MissingOptionException">;
+SOR<"org.apache.commons.cli.MissingOptionException">;
+COR<"org.apache.commons.cli.MissingOptionException">;
+ROR<"org.apache.commons.cli.MissingOptionException">;
+ORU<"org.apache.commons.cli.MissingOptionException">;
+LVR<"org.apache.commons.cli.MissingOptionException">;
+STD<"org.apache.commons.cli.MissingOptionException">;
+
+// Enable operators for org.apache.commons.cli.OptionValidator
+AOR<"org.apache.commons.cli.OptionValidator">;
+LOR<"org.apache.commons.cli.OptionValidator">;
+SOR<"org.apache.commons.cli.OptionValidator">;
+COR<"org.apache.commons.cli.OptionValidator">;
+ROR<"org.apache.commons.cli.OptionValidator">;
+ORU<"org.apache.commons.cli.OptionValidator">;
+LVR<"org.apache.commons.cli.OptionValidator">;
+STD<"org.apache.commons.cli.OptionValidator">;
+
+// Enable operators for org.apache.commons.cli.Options
+AOR<"org.apache.commons.cli.Options">;
+LOR<"org.apache.commons.cli.Options">;
+SOR<"org.apache.commons.cli.Options">;
+COR<"org.apache.commons.cli.Options">;
+ROR<"org.apache.commons.cli.Options">;
+ORU<"org.apache.commons.cli.Options">;
+LVR<"org.apache.commons.cli.Options">;
+STD<"org.apache.commons.cli.Options">;
+
+// Enable operators for org.apache.commons.cli.PatternOptionBuilder
+AOR<"org.apache.commons.cli.PatternOptionBuilder">;
+LOR<"org.apache.commons.cli.PatternOptionBuilder">;
+SOR<"org.apache.commons.cli.PatternOptionBuilder">;
+COR<"org.apache.commons.cli.PatternOptionBuilder">;
+ROR<"org.apache.commons.cli.PatternOptionBuilder">;
+ORU<"org.apache.commons.cli.PatternOptionBuilder">;
+LVR<"org.apache.commons.cli.PatternOptionBuilder">;
+STD<"org.apache.commons.cli.PatternOptionBuilder">;
+
+// Enable operators for org.apache.commons.cli.GnuParser
+AOR<"org.apache.commons.cli.GnuParser">;
+LOR<"org.apache.commons.cli.GnuParser">;
+SOR<"org.apache.commons.cli.GnuParser">;
+COR<"org.apache.commons.cli.GnuParser">;
+ROR<"org.apache.commons.cli.GnuParser">;
+ORU<"org.apache.commons.cli.GnuParser">;
+LVR<"org.apache.commons.cli.GnuParser">;
+STD<"org.apache.commons.cli.GnuParser">;
+
+// Enable operators for org.apache.commons.cli.OptionGroup
+AOR<"org.apache.commons.cli.OptionGroup">;
+LOR<"org.apache.commons.cli.OptionGroup">;
+SOR<"org.apache.commons.cli.OptionGroup">;
+COR<"org.apache.commons.cli.OptionGroup">;
+ROR<"org.apache.commons.cli.OptionGroup">;
+ORU<"org.apache.commons.cli.OptionGroup">;
+LVR<"org.apache.commons.cli.OptionGroup">;
+STD<"org.apache.commons.cli.OptionGroup">;
+
+// Enable operators for org.apache.commons.cli.CommandLineParser
+AOR<"org.apache.commons.cli.CommandLineParser">;
+LOR<"org.apache.commons.cli.CommandLineParser">;
+SOR<"org.apache.commons.cli.CommandLineParser">;
+COR<"org.apache.commons.cli.CommandLineParser">;
+ROR<"org.apache.commons.cli.CommandLineParser">;
+ORU<"org.apache.commons.cli.CommandLineParser">;
+LVR<"org.apache.commons.cli.CommandLineParser">;
+STD<"org.apache.commons.cli.CommandLineParser">;
+
+// Enable operators for org.apache.commons.cli.CommandLine
+AOR<"org.apache.commons.cli.CommandLine">;
+LOR<"org.apache.commons.cli.CommandLine">;
+SOR<"org.apache.commons.cli.CommandLine">;
+COR<"org.apache.commons.cli.CommandLine">;
+ROR<"org.apache.commons.cli.CommandLine">;
+ORU<"org.apache.commons.cli.CommandLine">;
+LVR<"org.apache.commons.cli.CommandLine">;
+STD<"org.apache.commons.cli.CommandLine">;
+
+// Enable operators for org.apache.commons.cli.AlreadySelectedException
+AOR<"org.apache.commons.cli.AlreadySelectedException">;
+LOR<"org.apache.commons.cli.AlreadySelectedException">;
+SOR<"org.apache.commons.cli.AlreadySelectedException">;
+COR<"org.apache.commons.cli.AlreadySelectedException">;
+ROR<"org.apache.commons.cli.AlreadySelectedException">;
+ORU<"org.apache.commons.cli.AlreadySelectedException">;
+LVR<"org.apache.commons.cli.AlreadySelectedException">;
+STD<"org.apache.commons.cli.AlreadySelectedException">;
+
+// Enable operators for org.apache.commons.cli.PosixParser
+AOR<"org.apache.commons.cli.PosixParser">;
+LOR<"org.apache.commons.cli.PosixParser">;
+SOR<"org.apache.commons.cli.PosixParser">;
+COR<"org.apache.commons.cli.PosixParser">;
+ROR<"org.apache.commons.cli.PosixParser">;
+ORU<"org.apache.commons.cli.PosixParser">;
+LVR<"org.apache.commons.cli.PosixParser">;
+STD<"org.apache.commons.cli.PosixParser">;
+
+// Enable operators for org.apache.commons.cli.TypeHandler
+AOR<"org.apache.commons.cli.TypeHandler">;
+LOR<"org.apache.commons.cli.TypeHandler">;
+SOR<"org.apache.commons.cli.TypeHandler">;
+COR<"org.apache.commons.cli.TypeHandler">;
+ROR<"org.apache.commons.cli.TypeHandler">;
+ORU<"org.apache.commons.cli.TypeHandler">;
+LVR<"org.apache.commons.cli.TypeHandler">;
+STD<"org.apache.commons.cli.TypeHandler">;
+
+// Enable operators for org.apache.commons.cli.UnrecognizedOptionException
+AOR<"org.apache.commons.cli.UnrecognizedOptionException">;
+LOR<"org.apache.commons.cli.UnrecognizedOptionException">;
+SOR<"org.apache.commons.cli.UnrecognizedOptionException">;
+COR<"org.apache.commons.cli.UnrecognizedOptionException">;
+ROR<"org.apache.commons.cli.UnrecognizedOptionException">;
+ORU<"org.apache.commons.cli.UnrecognizedOptionException">;
+LVR<"org.apache.commons.cli.UnrecognizedOptionException">;
+STD<"org.apache.commons.cli.UnrecognizedOptionException">;
+
+// Enable operators for org.apache.commons.cli.Util
+AOR<"org.apache.commons.cli.Util">;
+LOR<"org.apache.commons.cli.Util">;
+SOR<"org.apache.commons.cli.Util">;
+COR<"org.apache.commons.cli.Util">;
+ROR<"org.apache.commons.cli.Util">;
+ORU<"org.apache.commons.cli.Util">;
+LVR<"org.apache.commons.cli.Util">;
+STD<"org.apache.commons.cli.Util">;
+
+// Enable operators for org.apache.commons.cli.OptionBuilder
+AOR<"org.apache.commons.cli.OptionBuilder">;
+LOR<"org.apache.commons.cli.OptionBuilder">;
+SOR<"org.apache.commons.cli.OptionBuilder">;
+COR<"org.apache.commons.cli.OptionBuilder">;
+ROR<"org.apache.commons.cli.OptionBuilder">;
+ORU<"org.apache.commons.cli.OptionBuilder">;
+LVR<"org.apache.commons.cli.OptionBuilder">;
+STD<"org.apache.commons.cli.OptionBuilder">;

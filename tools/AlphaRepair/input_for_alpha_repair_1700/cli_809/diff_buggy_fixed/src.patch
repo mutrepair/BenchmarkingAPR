@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/809/org/apache/commons/cli/OptionValidator.java	2022-10-31 19:47:31.363834020 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/OptionValidator.java	2022-12-26 15:13:38.053475668 -0600
+@@ -49,7 +49,7 @@
+         // handle the single character opt
+         else if (opt.length() == 1)
+         {
+-            char ch = opt.charAt(1);
++            char ch = opt.charAt(0);
+ 
+             if (!isValidOpt(ch))
+             {

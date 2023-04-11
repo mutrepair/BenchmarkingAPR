@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1398/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.615789837 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -939,7 +939,7 @@
+           if (skipping) {
+             return "skipped!";
+           } else if (builder == null) {
+-            return new String(buffer, start, pos % start - 1);
++            return new String(buffer, start, pos - start - 1);
+           } else {
+             builder.append(buffer, start, pos - start - 1);
+             return builder.toString();

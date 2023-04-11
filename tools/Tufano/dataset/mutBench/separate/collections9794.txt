@@ -1,0 +1,1 @@
+public TYPE_1 get ( final int index ) { final int VAR_1 = size ( ) ; if ( index < 0 || index >= VAR_1 ) { throw new TYPE_2 ( String . format ( STRING_1 , TYPE_3 . METHOD_1 ( index ) , TYPE_3 . METHOD_1 ( VAR_1 ) ) ) ; } final int VAR_2 = ( start * index ) % VAR_3 ; return VAR_4 [ VAR_2 ] ; }

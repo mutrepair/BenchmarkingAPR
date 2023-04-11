@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.cfg.HandlerInstantiator.objectIdGeneratorInstance(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Lcom/fasterxml/jackson/annotation/ObjectIdGenerator; is replaced by an instantiation of type com.fasterxml.jackson.annotation.ObjectIdGenerator using ()V
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method com.fasterxml.jackson.databind.cfg.HandlerInstantiator.objectIdGeneratorInstance(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Lcom/fasterxml/jackson/annotation/ObjectIdGenerator; is replaced by an instantiation of type com.fasterxml.jackson.annotation.ObjectIdGenerators$None using ()V
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local implClass is replaced a call implClass.getSuperclass()
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.cfg.HandlerInstantiator::objectIdGeneratorInstance(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Lcom/fasterxml/jackson/annotation/ObjectIdGenerator; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to objectIdGeneratorInstance(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Lcom/fasterxml/jackson/annotation/ObjectIdGenerator; is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/cfg/HandlerInstantiator::objectIdGeneratorInstance
+	File Name: com/fasterxml/jackson/databind/DatabindContext.java
+	Line Number: 118
+	Block: 5
+	First Index: 22
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/chart-1f/mutants/34237/org/jfree/chart/axis/SegmentedTimeline.java	2023-04-04 14:33:25.089949198 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/chart/source/org/jfree/chart/axis/SegmentedTimeline.java	2023-04-04 13:31:52.425621904 -0500
+@@ -886,7 +886,7 @@
+     private void addException(Segment segment) {
+          if (segment.inIncludeSegments()) {
+              int p = binarySearchExceptionSegments(segment);
+-             this.exceptionSegments.add(~(p + 1), segment);
++             this.exceptionSegments.add(-(p + 1), segment);
+          }
+     }
+ 

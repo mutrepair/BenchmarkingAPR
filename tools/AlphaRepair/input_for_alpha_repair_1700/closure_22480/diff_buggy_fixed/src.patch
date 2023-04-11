@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/22480/com/google/javascript/jscomp/CodeGenerator.java	2022-10-31 19:47:37.707811205 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/CodeGenerator.java	2022-10-29 11:04:11.602359354 -0500
+@@ -211,7 +211,7 @@
+         if (first == null || first.isEmpty()) {
+           addIdentifier(n.getString());
+         } else {
+-          Preconditions.checkState(childCount == -1);
++          Preconditions.checkState(childCount == 1);
+           addIdentifier(n.getString());
+           cc.addOp("=", true);
+           if (first.isComma()) {

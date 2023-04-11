@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to toDouble(Ljava/lang/String;D)D with a call to toDouble(Ljava/lang/String;)D
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/lang3/math/NumberUtils::toDouble with argument
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/math/NumberUtils::toDouble
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/lang3/math/NumberUtils::toDouble
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/lang3/math/NumberUtils::toDouble
+	File Name: org/apache/commons/lang3/math/NumberUtils.java
+	Line Number: 251
+	Block: 16
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

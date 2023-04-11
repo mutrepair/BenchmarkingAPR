@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1178/com/fasterxml/jackson/dataformat/xml/deser/XmlTokenStream.java	2022-10-31 19:47:49.575768165 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/XmlTokenStream.java	2022-12-26 15:13:53.109638382 -0600
+@@ -265,7 +265,7 @@
+     protected String convertToString() throws IOException
+     {
+         // only applicable to cases where START_OBJECT was induced by attributes
+-        if (_currentState != XML_ATTRIBUTE_NAME || _nextAttributeIndex != -1) {
++        if (_currentState != XML_ATTRIBUTE_NAME || _nextAttributeIndex != 0) {
+             return null;
+         }
+         try {

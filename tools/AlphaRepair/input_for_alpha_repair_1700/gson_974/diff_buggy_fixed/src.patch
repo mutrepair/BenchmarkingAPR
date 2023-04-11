@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/974/com/google/gson/stream/JsonWriter.java	2022-10-31 19:47:43.891788836 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonWriter.java	2022-12-26 15:13:51.393619841 -0600
+@@ -500,7 +500,7 @@
+    */
+   private void beforeName() throws IOException {
+     JsonScope context = peek();
+-    if (false) { // first in object
++    if (context == JsonScope.NONEMPTY_OBJECT) { // first in object
+       out.write(',');
+     } else if (context != JsonScope.EMPTY_OBJECT) { // not in an object!
+       throw new IllegalStateException("Nesting problem: " + stack);

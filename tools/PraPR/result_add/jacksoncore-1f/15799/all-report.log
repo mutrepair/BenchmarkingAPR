@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getMaxLineLength with a call to hashCode
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.core.Base64Variant::getMaxLineLength()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getMaxLineLength()I is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getMaxLineLength()I is guarded returning local bytesLeft
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to getMaxLineLength()I is guarded returning local inputPtr
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getMaxLineLength()I is guarded returning field SHORT_WRITE
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getMaxLineLength()I is guarded returning field _outputHead
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 24
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 25
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/Base64Variant::getMaxLineLength
+	File Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java
+	Line Number: 1499
+	Block: 349
+	First Index: 23
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

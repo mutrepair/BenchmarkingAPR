@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 05:45:55 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/math3/linear/BlockRealMatrix.java
+	Line Number: 695
+	Block: 126
+	First Index: 132
+	Rank: 1
+	Total Rank: 25
+	Status: SURVIVED
+	Dump: mutant-25.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/492/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-10-31 19:47:49.911766940 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-12-26 15:13:53.109638382 -0600
+@@ -539,7 +539,7 @@
+             return (_currToken = JsonToken.VALUE_STRING);
+         case XmlTokenStream.XML_TEXT:
+             _currText = _xmlTokens.getText();
+-            if (false) {
++            if (_mayBeLeaf) {
+                 _mayBeLeaf = false;
+                 /* One more refinement (pronunced like "hack") is that if
+                  * we had an empty String (or all white space), and we are

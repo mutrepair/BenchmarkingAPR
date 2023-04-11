@@ -1,0 +1,1 @@
+int len = size - strLen + 1;

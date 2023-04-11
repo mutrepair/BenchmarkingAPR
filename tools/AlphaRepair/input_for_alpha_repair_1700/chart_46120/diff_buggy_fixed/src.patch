@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/46120/org/jfree/chart/plot/dial/StandardDialScale.java	2022-10-31 19:47:29.507840669 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/dial/StandardDialScale.java	2022-10-29 01:14:07.302035348 -0500
+@@ -924,7 +924,7 @@
+             return false;
+         }
+         if (this.tickLabelOffset != that.tickLabelOffset) {
+-            return true;
++            return false;
+         }
+         if (!this.tickLabelFont.equals(that.tickLabelFont)) {
+             return false;

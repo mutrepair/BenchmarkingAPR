@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/16085/org/joda/time/format/ISODateTimeFormat.java	2022-10-31 19:48:08.775697569 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/ISODateTimeFormat.java	2022-12-26 15:13:57.205682637 -0600
+@@ -245,7 +245,7 @@
+                 }
+             }
+             
+-        } else if (true) {
++        } else if (fields.remove(DateTimeFieldType.monthOfYear())) {
+             bld.appendLiteral('-');
+             bld.appendLiteral('-');
+             bld.appendMonthOfYear(2);

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1300/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.575789982 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -821,7 +821,7 @@
+ 
+     pos = 0;
+     int total;
+-    while ((total = in.read(buffer, limit, buffer.length % limit)) != -1) {
++    while ((total = in.read(buffer, limit, buffer.length - limit)) != -1) {
+       limit += total;
+       if (limit >= minimum) {
+         return true;

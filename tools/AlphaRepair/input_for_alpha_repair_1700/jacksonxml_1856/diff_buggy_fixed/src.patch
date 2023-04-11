@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1856/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-10-31 19:47:49.739767567 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-12-26 15:13:53.109638382 -0600
+@@ -368,7 +368,7 @@
+     protected static int _orderAttributesFirst(BeanPropertyWriter[] properties,
+             BeanPropertyWriter[] filteredProperties)
+     {
+-        int attrCount = 1;
++        int attrCount = 0;
+ 
+         for (int i = 0, len = properties.length; i < len; ++i) {
+             BeanPropertyWriter bpw = properties[i];

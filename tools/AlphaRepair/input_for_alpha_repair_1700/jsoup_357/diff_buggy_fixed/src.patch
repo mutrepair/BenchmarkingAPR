@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/357/org/jsoup/nodes/Node.java	2022-10-31 19:47:50.491764824 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Node.java	2022-12-26 15:13:53.649644217 -0600
+@@ -246,7 +246,7 @@
+         if (parentNode == null)
+             return 0;
+         else
+-            return parentNode.nodeDepth() % 1;
++            return parentNode.nodeDepth() + 1;
+     }
+     
+     /**

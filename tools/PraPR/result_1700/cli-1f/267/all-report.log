@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/apache/commons/cli/Option::getValue
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 513
+	Block: 58
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/cli/Option::getValue to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 513
+	Block: 58
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

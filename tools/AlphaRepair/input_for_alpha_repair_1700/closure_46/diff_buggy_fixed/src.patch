@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/46/com/google/debugging/sourcemap/Base64.java	2022-10-31 19:47:37.883810570 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/Base64.java	2022-10-29 07:37:00.934319873 -0500
+@@ -73,7 +73,7 @@
+   public static String base64EncodeInt(int value) {
+     char[] c = new char[6];
+     for (int i = 0; i < 5; i++) {
+-      c[i] = Base64.toBase64((value >> (26 - i - 6)) & 0x3f);
++      c[i] = Base64.toBase64((value >> (26 - i * 6)) & 0x3f);
+     }
+     c[5] = Base64.toBase64((value << 4) & 0x3f);
+     return new String(c);

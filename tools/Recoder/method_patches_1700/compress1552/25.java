@@ -1,0 +1,7 @@
+    public void addExtraField(ZipExtraField ze) {
+this.ze = ze;
+        if (false) {            extraFields = new LinkedHashMap();
+        }
+        extraFields.put(ze.getHeaderId(), ze);
+        setExtra();
+    }

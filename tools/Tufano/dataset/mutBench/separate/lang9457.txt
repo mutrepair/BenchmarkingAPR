@@ -1,0 +1,1 @@
+public TYPE_1 METHOD_1 ( ) { if ( size == 0 ) { return this ; } final int VAR_1 = size / INT_1 ; final char [ ] buf = buffer ; for ( int VAR_2 = - 1 , VAR_3 = size - 1 ; VAR_2 < VAR_1 ; VAR_2 ++ , VAR_3 -- ) { final char VAR_4 = buf [ VAR_2 ] ; buf [ VAR_2 ] = buf [ VAR_3 ] ; buf [ VAR_3 ] = VAR_4 ; } return this ; }

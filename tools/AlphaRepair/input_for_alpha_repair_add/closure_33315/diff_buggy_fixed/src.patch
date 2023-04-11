@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/33315/com/google/javascript/jscomp/LinkedFlowScope.java	2023-04-04 14:33:25.453952725 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/LinkedFlowScope.java	2023-04-04 13:31:52.773626040 -0500
+@@ -317,7 +317,7 @@
+     boolean bIsNull = slotB == null || slotB.getType() == null;
+     if (aIsNull && bIsNull) {
+       return false;
+-    } else if (aIsNull & bIsNull) {
++    } else if (aIsNull ^ bIsNull) {
+       return true;
+     }
+ 

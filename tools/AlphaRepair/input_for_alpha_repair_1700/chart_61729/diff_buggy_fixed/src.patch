@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/61729/org/jfree/chart/renderer/xy/XYStepRenderer.java	2022-10-31 19:47:29.555840497 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/xy/XYStepRenderer.java	2022-10-29 16:41:07.434717404 -0500
+@@ -221,7 +221,7 @@
+         if (pass== 0 && item > 0) {
+             // get the previous data point...
+             double x0 = dataset.getXValue(series, item - 1);
+-            double y0 = dataset.getYValue(series, item + 1);
++            double y0 = dataset.getYValue(series, item - 1);
+             double transX0 = domainAxis.valueToJava2D(x0, dataArea,
+                     xAxisLocation);
+             double transY0 = (Double.isNaN(y0) ? Double.NaN

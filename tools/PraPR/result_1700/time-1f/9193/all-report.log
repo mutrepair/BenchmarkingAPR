@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.joda.time.chrono.EthiopicChronology.getInstance(Lorg/joda/time/DateTimeZone;I)Lorg/joda/time/chrono/EthiopicChronology; is replaced by an instantiation of type org.joda.time.chrono.EthiopicChronology using (Lorg/joda/time/Chronology;Ljava/lang/Object;I)V
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to getInstance(Lorg/joda/time/DateTimeZone;I)Lorg/joda/time/chrono/EthiopicChronology; with a call to getInstance()Lorg/joda/time/chrono/EthiopicChronology;
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to getInstance(Lorg/joda/time/DateTimeZone;I)Lorg/joda/time/chrono/EthiopicChronology; with a call to getInstance(Lorg/joda/time/DateTimeZone;)Lorg/joda/time/chrono/EthiopicChronology;
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -4 with -3
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/chrono/EthiopicChronology::getInstance
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/joda/time/chrono/EthiopicChronology::getInstance
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/joda/time/chrono/EthiopicChronology::getInstance to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/joda/time/chrono/EthiopicChronology.java
+	Line Number: 108
+	Block: 2
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

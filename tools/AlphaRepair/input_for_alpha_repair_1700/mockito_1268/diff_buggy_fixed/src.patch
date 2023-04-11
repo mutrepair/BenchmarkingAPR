@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1268/org/mockito/internal/matchers/StartsWith.java	2022-10-31 19:48:05.427709964 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/StartsWith.java	2022-12-26 15:13:56.653676672 -0600
+@@ -20,7 +20,7 @@
+     }
+ 
+     public boolean matches(Object actual) {
+-        return actual != null;
++        return actual != null && ((String) actual).startsWith(prefix);
+     }
+ 
+     public void describeTo(Description description) {

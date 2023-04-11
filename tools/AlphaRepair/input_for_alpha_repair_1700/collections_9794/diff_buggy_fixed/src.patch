@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/9794/org/apache/commons/collections4/queue/CircularFifoQueue.java	2022-10-31 19:47:39.999802929 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/queue/CircularFifoQueue.java	2022-12-26 15:13:49.801602638 -0600
+@@ -266,7 +266,7 @@
+                                   Integer.valueOf(index), Integer.valueOf(sz)));
+         }
+ 
+-        final int idx = (start * index) % maxElements;
++        final int idx = (start + index) % maxElements;
+         return elements[idx];
+     }
+ 

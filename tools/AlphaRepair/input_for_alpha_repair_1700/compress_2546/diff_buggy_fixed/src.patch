@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/2546/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java	2022-10-31 19:47:41.191798618 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -303,7 +303,7 @@
+         }
+ 
+         if ((numToRead + entryOffset) > entrySize) {
+-            numToRead = (int) (entrySize / entryOffset);
++            numToRead = (int) (entrySize - entryOffset);
+         }
+ 
+         if (readBuf != null) {

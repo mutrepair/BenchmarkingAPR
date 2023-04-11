@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local inputPtr to be used
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 67
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local inputLen to be used
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 67
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field _hashSeed
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 67
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 92 with 93
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 68
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 69
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 69
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1587
+	Block: 405
+	First Index: 69
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------

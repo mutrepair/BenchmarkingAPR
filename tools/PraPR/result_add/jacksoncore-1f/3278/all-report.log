@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _numTypesValid is guarded using value 0
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _numTypesValid is guarded using field _inputPtr
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.base.ParserBase._numTypesValid is replaced by the call to com.fasterxml.jackson.core.base.ParserBase::getTokenLineNr()I
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.base.ParserBase._numTypesValid is replaced by the call to com.fasterxml.jackson.core.base.ParserBase::getTokenColumnNr()I
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.base.ParserBase._numTypesValid is replaced by the call to com.fasterxml.jackson.core.base.ParserBase::getIntValue()I
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to _numTypesValid with an access to _inputPtr
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to _numTypesValid with an access to _inputEnd
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to _numTypesValid with an access to _currInputRow
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to _numTypesValid with an access to _currInputRowStart
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to _numTypesValid with an access to _tokenInputRow
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to _numTypesValid with an access to _tokenInputCol
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _numTypesValid is guarded returning default value 0L
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _numTypesValid is guarded returning field _currInputProcessed
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 22
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 23
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 24
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 25
+	Rank: 2
+	Total Rank: 18
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 25
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/core/base/ParserBase.java
+	Line Number: 656
+	Block: 74
+	First Index: 25
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

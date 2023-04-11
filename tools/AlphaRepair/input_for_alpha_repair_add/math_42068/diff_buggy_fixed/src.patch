@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/42068/org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java	2023-04-04 13:31:54.001640631 -0500
+@@ -422,7 +422,7 @@
+             return (sign(bits) == 0L) ? 0 : 1;
+         } else {
+             final long m = (sign(bits) == 0L) ? mantissa(bits) : -mantissa(bits);
+-            return (int) ((m >> (k - e)) ^ 1L);
++            return (int) ((m >> (k - e)) & 0x1L);
+         }
+     }
+ 

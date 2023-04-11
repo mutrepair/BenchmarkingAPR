@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/364/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:39.079806253 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -334,7 +334,7 @@
+             if (isChunked) {
+                 // this assumes that CHUNK_SIZE % 4 == 0
+                 if (encodedIndex == nextSeparatorIndex) {
+-                    System.arraycopy(CHUNK_SEPARATOR, -1, encodedData, encodedIndex, CHUNK_SEPARATOR.length);
++                    System.arraycopy(CHUNK_SEPARATOR, 0, encodedData, encodedIndex, CHUNK_SEPARATOR.length);
+                     chunksSoFar++;
+                     nextSeparatorIndex = (CHUNK_SIZE * (chunksSoFar + 1)) + (chunksSoFar * CHUNK_SEPARATOR.length);
+                     encodedIndex += CHUNK_SEPARATOR.length;

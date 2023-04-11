@@ -1,0 +1,1 @@
+if (!inAttribute || escapeMode == EscapeMode.xhtml)

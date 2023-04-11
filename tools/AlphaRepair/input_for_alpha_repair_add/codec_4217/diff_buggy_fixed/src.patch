@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/codec-1f/mutants/4217/org/apache/commons/codec/net/QuotedPrintableCodec.java	2023-04-04 14:33:25.509953268 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/codec/src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java	2023-04-04 13:31:52.833626752 -0500
+@@ -115,7 +115,7 @@
+      */
+     private static final void encodeQuotedPrintable(int b, ByteArrayOutputStream buffer) {
+         buffer.write(ESCAPE_CHAR);
+-        char hex1 = Character.toUpperCase(Character.forDigit((b >> 4) ^ 15, 16));
++        char hex1 = Character.toUpperCase(Character.forDigit((b >> 4) & 0xF, 16));
+         char hex2 = Character.toUpperCase(Character.forDigit(b & 0xF, 16));
+         buffer.write(hex1);
+         buffer.write(hex2);

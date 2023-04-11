@@ -1,0 +1,9 @@
+        public void serializeAsColumn(Object bean, JsonGenerator jgen, SerializerProvider prov)
+            throws Exception
+        {
+            Class<?> activeView = prov.getActiveView();
+if(0){                _delegate.serializeAsColumn(bean, jgen, prov);
+            } else {
+                _delegate.serializeAsPlaceholder(bean, jgen, prov);
+            }
+        }

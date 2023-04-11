@@ -1,0 +1,31 @@
+maxMultiProcess: 10  # max number of processes to run in parallel
+mutationBenchmarkPath: ../MutationBenchmark  # path to the mutation benchmark
+buggyD4jProjPath: ../d4j_buggy_repo  # path to the buggy defects4j projects
+logDirPath: logs  # path to the log directory
+finishedDirPath: finished  # path to the directory recording which projects have been finished
+d4jMvnProjDir: d4jMvnForUniapr/d4jMvnProj/  # path to the directory containing the maven version of the defects4j projects, used by UniApr
+d4jMvnProjTmpDir: d4jMvnProj-temp/  # temperary directory
+validationResultDirPath: validationResults  # path to the directory containing the validation results
+
+patches:  # path to the directory containing the compiled patches, key can be any user-defined string, value is the path to the directory
+  tbar: /home/xxx/validation/bin_patches/tbar_patches
+  rewardRepair: /home/xxx/validation/bin_patches/reward_repair_patches 
+  sequencer: /home/xxx/validation/bin_patches/sequencer_patches
+  recoder: /home/xxx/validation/bin_patches/recoder_patches 
+  cure: /home/xxx/validation/bin_patches/cure_patches 
+  coconut: /home/xxx/validation/bin_patches/coconut_patches 
+  edits: /home/xxx/validation/bin_patches/edits_patches
+  tufano: /home/xxx/validation/bin_patches/tufano_patches
+  selfapr: /home/xxx/validation/bin_patches/selfapr_patches
+  coconut-distribution: /home/xxx/validation/bin_patches-dist/coconut_patches
+  cure-distribution: /home/xxx/validation/bin_patches-dist/cure_patches
+  edits-distribution: /home/xxx/validation/bin_patches-dist/edits_patches
+  rewardRepair-distribution: /home/xxx/validation/bin_patches-dist/reward_repair_patches
+  selfapr-distribution: /home/xxx/validation/bin_patches-dist/selfapr_patches
+  sequencer-distribution: /home/xxx/validation/bin_patches-dist/sequencer_patches
+  tbar-distribution: /home/xxx/validation/bin_patches-dist/tbar_patches
+  tufano-distribution: /home/xxx/validation/bin_patches-dist/tufano_patches
+  alphaRepair-distribution: /home/xxx/validation/bin_patches-dist/alpha_repair_patches
+  recoder-distribution: /home/xxx/validation/patches/recoder_patches
+  alphaRepair-corner-1700: /home/xxx/validation/bin_patches-alphaRepair-corner/alpha_repair_patches-corner-1700
+  alphaRepair-corner-dist: /home/xxx/validation/bin_patches-alphaRepair-corner/alpha_repair_patches-corner-dist

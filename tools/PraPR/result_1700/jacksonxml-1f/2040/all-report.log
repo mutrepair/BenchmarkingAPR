@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local ns is replaced a call ns.toLowerCase()
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 51
+	First Index: 23
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::isEmpty()Z is guarded using default value false
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 53
+	First Index: 33
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isEmpty()Z is guarded returning default value null
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 53
+	First Index: 33
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isEmpty()Z is guarded returning field ROOT_NAME_FOR_NULL
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 53
+	First Index: 33
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 52
+	First Index: 25
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 53
+	First Index: 29
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 51
+	First Index: 24
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::isEmpty
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 53
+	First Index: 33
+	Rank: 2
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 51
+	First Index: 24
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java
+	Line Number: 248
+	Block: 51
+	First Index: 24
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

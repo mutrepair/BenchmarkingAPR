@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/7836/org/jfree/chart/block/BlockContainer.java	2022-10-31 19:47:29.755839781 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/block/BlockContainer.java	2022-10-29 16:41:07.426717447 -0500
+@@ -260,7 +260,7 @@
+         if (!this.arrangement.equals(that.arrangement)) {
+             return false;
+         }
+-        if (!true) {
++        if (!this.blocks.equals(that.blocks)) {
+             return false;
+         }
+         return true;

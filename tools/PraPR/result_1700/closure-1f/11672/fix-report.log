@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 23:20:29 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isInterface with a call to isConstructor
+	File Name: com/google/javascript/jscomp/SymbolTable.java
+	Line Number: 402
+	Block: 77
+	First Index: 61
+	Rank: 2
+	Total Rank: 17
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isInterface with a call to hasInstanceType
+	File Name: com/google/javascript/jscomp/SymbolTable.java
+	Line Number: 402
+	Block: 77
+	First Index: 61
+	Rank: 2
+	Total Rank: 17
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------

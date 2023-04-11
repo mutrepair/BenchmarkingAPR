@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/110955/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -562,7 +562,7 @@
+ 
+           // y = y - 1/y
+           temp = ya + ra;
+-          yb += +(temp - ya - ra);
++          yb += -(temp - ya - ra);
+           ya = temp;
+           temp = ya + rb;
+           yb += -(temp - ya - rb);

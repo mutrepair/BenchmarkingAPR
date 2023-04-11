@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field VOWELS
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field maxCodeLen
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 64
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local value is replaced a call value.toLowerCase()
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 63
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.codec.language.DoubleMetaphone::charAt(Ljava/lang/String;I)C is guarded using default value '\0'
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning default value 0
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning local index
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to charAt(Ljava/lang/String;I)C is guarded returning field maxCodeLen
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 90 with 91
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 304
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 305
+	First Index: 78
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/language/DoubleMetaphone::charAt
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/codec/language/DoubleMetaphone.java
+	Line Number: 799
+	Block: 303
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

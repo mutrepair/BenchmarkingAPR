@@ -1,0 +1,212 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 19
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local entry is replaced by access to field cpioEntry
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getTime with a call to getChksum
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getTime with a call to getDevice
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getTime with a call to getDeviceMaj
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getTime with a call to getDeviceMin
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getTime with a call to getSize
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getTime with a call to getGID
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getTime with a call to getHeaderSize
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getTime with a call to getInode
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to getTime with a call to getMode
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to getTime with a call to getNumberOfLinks
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.compress.archivers.cpio.CpioArchiveEntry::getTime()J is guarded using default value 0L
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getTime()J is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to writeAsciiLong(JII)V is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream::writeAsciiLong(JII)V is guarded
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -8 with -7
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/cpio/CpioArchiveEntry::getTime
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream::writeAsciiLong
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 201
+	Block: 20
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4699/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-10-31 19:47:39.827803551 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -279,7 +279,7 @@
+         boolean modified = false;
+         final Iterator<E> it = iterator();
+         while (it.hasNext()) {
+-            if (coll.contains(it.next())) {
++            if (coll.contains(it.next()) == false) {
+                 it.remove();
+                 modified = true;
+             }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/1096/com/fasterxml/jackson/databind/node/BooleanNode.java	2022-10-31 19:47:46.471779467 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/node/BooleanNode.java	2022-12-26 15:13:52.505631856 -0600
+@@ -67,7 +67,7 @@
+     }
+     @Override
+     public double asDouble(double defaultValue) {
+-        return true ? 1.0 : 0.0;
++        return _value ? 1.0 : 0.0;
+     }
+     
+     @Override

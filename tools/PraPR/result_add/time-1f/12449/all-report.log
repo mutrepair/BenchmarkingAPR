@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced long return with 0 for org/joda/time/field/FieldUtils::safeMultiply
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 141
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of long value with value + 1 for org/joda/time/field/FieldUtils::safeMultiply
+	File Name: org/joda/time/field/FieldUtils.java
+	Line Number: 141
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

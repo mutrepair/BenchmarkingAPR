@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(I)I
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(II)I
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to indexOf(Ljava/lang/String;)I with a call to indexOf(Ljava/lang/String;I)I
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local line is replaced by access to field BASE_JS_START
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local line is replaced a call line.toLowerCase()
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to indexOf with a call to compareTo
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to indexOf with a call to compareToIgnoreCase
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to indexOf with a call to lastIndexOf
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::indexOf(Ljava/lang/String;)I is guarded using default value 0
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning default value false
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning local lineHasProvidesOrRequires
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning field fileHasProvidesOrRequires
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to indexOf(Ljava/lang/String;)I is guarded returning field includeGoogBase
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::indexOf
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/deps/JsFileParser.java
+	Line Number: 143
+	Block: 5
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

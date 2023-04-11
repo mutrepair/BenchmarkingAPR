@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/collections-25f/mutants/2652/org/apache/commons/collections4/comparators/BooleanComparator.java	2023-04-04 14:33:25.525953423 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/collections/src/main/java/org/apache/commons/collections4/comparators/BooleanComparator.java	2023-04-04 13:31:52.877627276 -0500
+@@ -138,7 +138,7 @@
+         final boolean v1 = b1.booleanValue();
+         final boolean v2 = b2.booleanValue();
+ 
+-        return (v1 & v2) ? ( (v1 ^ trueFirst) ? 1 : -1 ) : 0;
++        return (v1 ^ v2) ? ( (v1 ^ trueFirst) ? 1 : -1 ) : 0;
+     }
+ 
+     //-----------------------------------------------------------------------

@@ -1,0 +1,784 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 71
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(DDDDZ)V with a call to <init>(Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 101
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(DDDDZ)V with a call to <init>(Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 101
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(DDDDZ)V with a call to <init>([[DD)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 101
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(DDDDZ)V with a call to <init>(Lorg/apache/commons/math3/geometry/euclidean/threed/RotationOrder;DDD)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 101
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q0 is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q1 is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q2 is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to q3 is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q0 is guarded using field q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q1 is guarded using field q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q2 is guarded using field q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to q3 is guarded using field q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q0 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ0()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q1 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ0()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q2 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ0()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q3 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ0()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q0 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ1()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q1 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ1()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q2 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ1()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q3 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ1()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q0 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ2()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q1 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ2()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q2 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ2()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q3 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ2()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q0 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ3()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q1 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ3()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q2 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ3()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q3 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getQ3()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q0 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getAngle()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q1 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getAngle()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q2 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getAngle()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Rotation.q3 is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Rotation::getAngle()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q0 with an access to q1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q1 with an access to q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q2 with an access to q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to q3 with an access to q0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q0 with an access to q2
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q1 with an access to q2
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q2 with an access to q1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to q3 with an access to q1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q0 with an access to q3
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q1 with an access to q3
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q2 with an access to q3
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to q3 with an access to q2
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local r is replaced by local this to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 5
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local r to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 8
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local r is replaced by access to field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 5
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 8
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local r is replaced a call r.revert()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 5
+	Rank: null
+	Total Rank: 71
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.revert()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 8
+	Rank: null
+	Total Rank: 71
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.revert()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 31
+	Rank: 1
+	Total Rank: 71
+	Status: SURVIVED
+------------------------------------------------
+52.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q0 is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q1 is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q2 is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to q3 is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q0 is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q1 is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q2 is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+59.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to q3 is guarded returning local this
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+60.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q0 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 6
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+61.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q1 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 12
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+62.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q2 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 17
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+63.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to q3 is guarded returning field IDENTITY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 23
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+64.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Rotation::<init>
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 101
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+65.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 100
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+66.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 7
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+67.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 10
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+68.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 21
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+69.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 28
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+70.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/geometry/euclidean/threed/Rotation::applyInverseTo
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 102
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------
+71.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/geometry/euclidean/threed/Rotation::applyInverseTo to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Rotation.java
+	Line Number: 920
+	Block: 108
+	First Index: 102
+	Rank: null
+	Total Rank: 68
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to toUpperCase with a call to toLowerCase
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to toUpperCase with a call to toTitleCase
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to toUpperCase with a call to reverseBytes
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/Character::toUpperCase with argument
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 9
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 15 with 16
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 11
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 13
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 10
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 12
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::forDigit
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 14
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Character::toUpperCase
+	File Name: org/apache/commons/codec/net/QuotedPrintableCodec.java
+	Line Number: 118
+	Block: 2
+	First Index: 15
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

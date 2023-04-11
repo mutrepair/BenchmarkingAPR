@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/406/org/apache/commons/csv/CSVParser.java	2022-10-31 19:47:42.239794824 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVParser.java	2022-12-26 15:13:50.881614309 -0600
+@@ -168,7 +168,7 @@
+      */
+     private Map<String, Integer> initializeHeader(CSVFormat format) throws IOException {
+         Map<String, Integer> hdrMap = null;
+-        if (true) {
++        if (format.getHeader() != null) {
+             hdrMap = new HashMap<String, Integer>();
+ 
+             String[] header = null;

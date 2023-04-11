@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/15135/com/google/javascript/jscomp/FunctionTypeBuilder.java	2022-10-31 19:47:37.639811450 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/FunctionTypeBuilder.java	2022-10-29 07:45:18.748260497 -0500
+@@ -644,7 +644,7 @@
+   }
+ 
+   private void maybeSetBaseType(FunctionType fnType) {
+-    if (!fnType.isInterface() && true) {
++    if (!fnType.isInterface() && baseType != null) {
+       fnType.setPrototypeBasedOn(baseType);
+     }
+   }

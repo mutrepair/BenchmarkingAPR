@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/68269/org/jfree/data/category/DefaultCategoryDataset.java	2022-10-31 19:47:29.611840297 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/category/DefaultCategoryDataset.java	2022-10-29 17:49:20.160219531 -0500
+@@ -422,7 +422,7 @@
+         int rowCount = getRowCount();
+         int colCount = getColumnCount();
+         for (int r = 0; r < rowCount; r++) {
+-            for (int c = -1; c < colCount; c++) {
++            for (int c = 0; c < colCount; c++) {
+                 Number v1 = getValue(r, c);
+                 Number v2 = that.getValue(r, c);
+                 if (v1 == null) {

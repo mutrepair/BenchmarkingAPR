@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/67915/org/jfree/data/KeyedObjects2D.java	2022-10-31 19:47:29.603840325 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/KeyedObjects2D.java	2022-10-29 16:41:07.438717383 -0500
+@@ -275,7 +275,7 @@
+         }
+         KeyedObjects row;
+         int rowIndex = this.rowKeys.indexOf(rowKey);
+-        if (rowIndex > 0) {
++        if (rowIndex >= 0) {
+             row = (KeyedObjects) this.rows.get(rowIndex);
+         }
+         else {

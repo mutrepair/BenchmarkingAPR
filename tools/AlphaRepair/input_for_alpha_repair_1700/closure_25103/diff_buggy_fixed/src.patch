@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/25103/com/google/javascript/jscomp/ControlFlowAnalysis.java	2022-10-31 19:47:37.719811162 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ControlFlowAnalysis.java	2022-10-29 01:53:57.271066088 -0500
+@@ -625,7 +625,7 @@
+       previous = cur;
+     }
+     Node iter = cur;
+-    if (false) {
++    if (cur.getChildCount() == 4) {
+       iter = cur.getFirstChild().getNext().getNext();
+     }
+ 

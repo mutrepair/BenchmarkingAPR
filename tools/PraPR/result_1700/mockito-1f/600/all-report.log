@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to invocations is guarded using value null
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to invocations is guarded using field invocations
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.mockito.internal.verification.RegisteredInvocations.invocations is replaced by the call to org.mockito.internal.verification.RegisteredInvocations::getAll()Ljava/util/List;
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to invocations is guarded returning enclosing method
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 4
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning enclosing method
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 6
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 7
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: org/mockito/internal/verification/RegisteredInvocations.java
+	Line Number: 25
+	Block: 2
+	First Index: 5
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

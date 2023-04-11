@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/11672/com/google/javascript/jscomp/SymbolTable.java	2022-10-31 19:47:37.603811580 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/SymbolTable.java	2022-10-29 05:55:12.741739098 -0500
+@@ -399,7 +399,7 @@
+           getSymbolDeclaredBy(type.toMaybeFunctionType());
+     } else if (type.isFunctionPrototypeType()) {
+       FunctionType ownerFn = ((ObjectType) type).getOwnerFunction();
+-      if (!ownerFn.isInterface()) {
++      if (!ownerFn.isConstructor() && !ownerFn.isInterface()) {
+         return null;
+       }
+       return linkToCtor ?

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/21772/com/google/javascript/jscomp/ClosureRewriteClass.java	2022-10-31 19:47:37.699811234 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ClosureRewriteClass.java	2022-10-29 13:40:35.830295404 -0500
+@@ -118,7 +118,7 @@
+   }
+ 
+   private void maybeRewriteClassDefinition(Node n) {
+-    if (false) {
++    if (n.isVar()) {
+       Node target = n.getFirstChild();
+       Node value = target.getFirstChild();
+       maybeRewriteClassDefinition(n, target, value);

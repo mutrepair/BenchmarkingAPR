@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local step to be used
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 26
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local n is replaced by access to field pingPong
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 26
+	Rank: 3
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local n is replaced by access to field tType
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 26
+	Rank: 3
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 25
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 28
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 27
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/math/linear/EigenDecompositionImpl.java
+	Line Number: 1135
+	Block: 161
+	First Index: 29
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------

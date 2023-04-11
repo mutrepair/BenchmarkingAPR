@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/1018/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-10-31 19:47:41.083799009 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -194,7 +194,7 @@
+ 
+     private void writeNewEntry(final CpioArchiveEntry entry) throws IOException {
+         writeAsciiLong(entry.getInode(), 8, 16);
+-        writeAsciiLong(entry.getMode(), 0, 16);
++        writeAsciiLong(entry.getMode(), 8, 16);
+         writeAsciiLong(entry.getUID(), 8, 16);
+         writeAsciiLong(entry.getGID(), 8, 16);
+         writeAsciiLong(entry.getNumberOfLinks(), 8, 16);

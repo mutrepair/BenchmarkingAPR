@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 17:24:11 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::toString()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java
+	Line Number: 48
+	Block: 12
+	First Index: 6
+	Rank: 2
+	Total Rank: 15
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to toString()Ljava/lang/String; is guarded returning default value false
+	File Name: org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java
+	Line Number: 48
+	Block: 12
+	First Index: 6
+	Rank: 2
+	Total Rank: 15
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

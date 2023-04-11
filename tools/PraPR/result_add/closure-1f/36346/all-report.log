@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rval is replaced by local lval to be used
+	File Name: com/google/javascript/jscomp/PeepholeFoldConstants.java
+	Line Number: 896
+	Block: 228
+	First Index: 128
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local lvalInt is replaced by local rvalInt to be defined
+	File Name: com/google/javascript/jscomp/PeepholeFoldConstants.java
+	Line Number: 896
+	Block: 228
+	First Index: 132
+	Rank: null
+	Total Rank: null
+	Status: NON_VIABLE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local rval is replaced by local result to be used
+	File Name: com/google/javascript/jscomp/PeepholeFoldConstants.java
+	Line Number: 896
+	Block: 228
+	First Index: 128
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local rval is replaced by access to field MAX_FOLD_NUMBER
+	File Name: com/google/javascript/jscomp/PeepholeFoldConstants.java
+	Line Number: 896
+	Block: 228
+	First Index: 128
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: com/google/javascript/jscomp/PeepholeFoldConstants.java
+	Line Number: 896
+	Block: 228
+	First Index: 130
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

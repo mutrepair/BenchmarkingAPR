@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_52/src/com/google/javascript/jscomp/CodeGenerator.java	2023-01-16 15:29:20.075989826 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/52/patch/./com/google/javascript/jscomp/CodeGenerator.java	2023-01-16 15:29:20.023989177 -0600
+@@ -742,7 +742,7 @@
+         return false;
+       }
+     }
+-    return len > 0;
++    return len > 0 && s.charAt(0) != '0';
+   }
+ 
+   static double getSimpleNumber(String s) {

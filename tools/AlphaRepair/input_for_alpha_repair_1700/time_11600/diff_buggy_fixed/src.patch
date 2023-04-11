@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11600/org/joda/time/convert/ConverterSet.java	2022-10-31 19:48:08.659697999 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/convert/ConverterSet.java	2022-12-26 15:13:57.201682593 -0600
+@@ -149,7 +149,7 @@
+                 return this;
+             }
+             
+-            if (false) {
++            if (converter.getSupportedType() == existing.getSupportedType()) {
+                 // Replace the converter.
+                 Converter[] copy = new Converter[length];
+                     

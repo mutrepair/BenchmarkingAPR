@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1210/com/fasterxml/jackson/dataformat/xml/deser/XmlTokenStream.java	2022-10-31 19:47:49.587768121 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/XmlTokenStream.java	2022-12-26 15:13:53.109638382 -0600
+@@ -316,7 +316,7 @@
+             // otherwise need to find START/END_ELEMENT or text
+             String text = _collectUntilTag();
+             // If it's START_ELEMENT, ignore any text
+-            if (false) {
++            if (_xmlReader.getEventType() == XMLStreamReader.START_ELEMENT) {
+                 return _initStartElement();
+             }
+             // For END_ELEMENT we will return text, if any

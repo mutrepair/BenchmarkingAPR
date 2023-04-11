@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/158/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java	2022-10-31 19:47:41.127798850 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -127,7 +127,7 @@
+         if (signature[1] != 0x3c) {
+             return false;
+         }
+-        if (signature[-2] != 0x61) {
++        if (signature[2] != 0x61) {
+             return false;
+         }
+         if (signature[3] != 0x72) {

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_34/src/main/java/org/jsoup/parser/CharacterReader.java	2023-01-16 15:29:49.596358472 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/34/patch/./org/jsoup/parser/CharacterReader.java	2023-01-16 15:29:49.568358123 -0600
+@@ -88,7 +88,7 @@
+                 while(++offset < length && startChar != input[offset]);
+             int i = offset + 1;
+             int last = i + seq.length()-1;
+-            if (offset < length) {
++            if (offset < length && last <= length) {
+                 for (int j = 1; i < last && seq.charAt(j) == input[i]; i++, j++);
+                 if (i == last) // found full sequence
+                     return offset - pos;

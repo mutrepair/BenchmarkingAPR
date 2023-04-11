@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/7354/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2022-10-31 19:47:46.815778216 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2022-12-26 15:13:52.501631814 -0600
+@@ -246,7 +246,7 @@
+          * are immutable, so we need to recreate the chain. Fine.
+          */
+         Bucket tail = null;
+-        int foundIndex = 0;
++        int foundIndex = -1;
+         
+         for (Bucket bucket = _buckets[index]; bucket != null; bucket = bucket.next) {
+             // match to remove?

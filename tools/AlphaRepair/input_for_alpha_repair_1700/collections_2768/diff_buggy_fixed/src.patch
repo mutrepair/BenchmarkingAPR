@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/2768/org/apache/commons/collections4/comparators/ComparatorChain.java	2022-10-31 19:47:39.719803941 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/comparators/ComparatorChain.java	2022-12-26 15:13:49.793602551 -0600
+@@ -278,7 +278,7 @@
+             if (retval != 0) {
+                 // invert the order if it is a reverse sort
+                 if (orderingBits.get(comparatorIndex) == true) {
+-                    if (false) {
++                    if (retval > 0) {
+                         retval = -1;
+                     } else {
+                         retval = 1;

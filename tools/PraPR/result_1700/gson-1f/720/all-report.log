@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/google/gson/JsonPrimitive::isIntegral
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 106
+	First Index: 33
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/google/gson/JsonPrimitive::isIntegral
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 106
+	First Index: 33
+	Rank: 4
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 105
+	First Index: 28
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 106
+	First Index: 31
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 101
+	First Index: 17
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 101
+	First Index: 17
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 104
+	First Index: 26
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 101
+	First Index: 17
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 104
+	First Index: 26
+	Rank: 3
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/gson/JsonPrimitive.java
+	Line Number: 371
+	Block: 106
+	First Index: 33
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

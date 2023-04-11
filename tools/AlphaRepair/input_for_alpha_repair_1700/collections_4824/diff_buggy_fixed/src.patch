@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/4824/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-10-31 19:47:39.843803493 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -553,7 +553,7 @@
+         if (index < size / 2) {
+             // Search forwards
+             node = header.next;
+-            for (int currentIndex = 1; currentIndex < index; currentIndex++) {
++            for (int currentIndex = 0; currentIndex < index; currentIndex++) {
+                 node = node.next;
+             }
+         } else {

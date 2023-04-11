@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/codec_7/src/java/org/apache/commons/codec/binary/Base64.java	2023-01-16 15:29:29.836111711 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/codec/7/patch/./org/apache/commons/codec/binary/Base64.java	2023-01-16 15:29:29.804111311 -0600
+@@ -667,7 +667,7 @@
+      * @since 1.4
+      */    
+     public static String encodeBase64String(byte[] binaryData) {
+-        return StringUtils.newStringUtf8(encodeBase64(binaryData, true));
++        return StringUtils.newStringUtf8(encodeBase64(binaryData, false));
+     }
+     
+     /**

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/5580/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-10-31 19:47:46.747778463 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-12-26 15:13:52.497631769 -0600
+@@ -377,7 +377,7 @@
+                 AnnotatedParameter param = propDef.getConstructorParameter();
+                 AnnotatedWithParams owner = param.getOwner();
+                 if (owner instanceof AnnotatedConstructor) {
+-                    if (false) {
++                    if (propertyCtor == null) {
+                         propertyCtor = (AnnotatedConstructor) owner;
+                         ctorPropNames = new String[propertyCtor.getParameterCount()];
+                     }

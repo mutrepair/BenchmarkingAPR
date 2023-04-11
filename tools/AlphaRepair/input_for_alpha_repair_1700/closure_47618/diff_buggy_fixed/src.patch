@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/47618/com/google/javascript/rhino/JSDocInfoBuilder.java	2022-10-31 19:47:37.907810484 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java	2022-10-29 06:37:52.012841958 -0500
+@@ -438,7 +438,7 @@
+       populated = true;
+       return true;
+     } else {
+-      return true;
++      return false;
+     }
+   }
+ 

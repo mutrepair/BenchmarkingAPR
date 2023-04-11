@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/31393/com/google/javascript/jscomp/InlineFunctions.java	2022-10-31 19:47:37.767810988 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/InlineFunctions.java	2022-10-29 09:43:44.436757821 -0500
+@@ -430,7 +430,7 @@
+     if (parent.isVar() || parent.isFunction()) {
+       // This is a declaration.  Duplicate declarations are handle during
+       // function candidate gathering.
+-      return false;
++      return true;
+     }
+ 
+     if (parent.isCall() && parent.getFirstChild() == name) {

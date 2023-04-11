@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to contains with a call to add
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to contains with a call to remove
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to contains with a call to equals
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Iterator::next()Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Collection::contains(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to next()Ljava/lang/Object; is guarded returning default value false
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to contains(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to next()Ljava/lang/Object; is guarded returning local modified
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to contains(Ljava/lang/Object;)Z is guarded returning local modified
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Collection::contains
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/list/AbstractLinkedList.java
+	Line Number: 282
+	Block: 53
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

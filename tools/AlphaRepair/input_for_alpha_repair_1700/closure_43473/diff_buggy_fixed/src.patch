@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/43473/com/google/javascript/jscomp/TransformAMDToCJSModule.java	2022-10-31 19:47:37.859810657 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TransformAMDToCJSModule.java	2022-10-29 12:18:23.268144180 -0500
+@@ -233,7 +233,7 @@
+           if (moduleName.contains(":")) {
+             return null;
+           }
+-          return handlePlugins(t, script, moduleName.substring(condition % 1),
++          return handlePlugins(t, script, moduleName.substring(condition + 1),
+               modNode);
+         }
+         moduleName = null;

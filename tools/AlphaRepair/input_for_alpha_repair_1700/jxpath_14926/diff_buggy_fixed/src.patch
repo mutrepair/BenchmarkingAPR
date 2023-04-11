@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/14926/org/apache/commons/jxpath/ri/compiler/Path.java	2022-10-31 19:47:51.151762415 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/Path.java	2022-12-26 15:13:54.177649922 -0600
+@@ -101,7 +101,7 @@
+             }
+             return areBasicPredicates(step.getPredicates());
+         }
+-        else if (false
++        else if (step.getAxis() == Compiler.AXIS_CHILD
+                 || step.getAxis() == Compiler.AXIS_ATTRIBUTE) {
+             NodeTest nodeTest = step.getNodeTest();
+             if (!(nodeTest instanceof NodeNameTest)){

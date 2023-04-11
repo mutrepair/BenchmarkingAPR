@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/cli_8/src/java/org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:11.807886574 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/cli/8/patch/./org/apache/commons/cli/HelpFormatter.java	2023-01-16 15:29:11.775886175 -0600
+@@ -809,7 +809,7 @@
+         while (true)
+         {
+             text = padding + text.substring(pos).trim();
+-            pos = findWrapPos(text, width, nextLineTabStop);
++            pos = findWrapPos(text, width, 0);
+ 
+             if (pos == -1)
+             {

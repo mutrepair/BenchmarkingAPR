@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13141/org/joda/time/format/DateTimeFormat.java	2022-10-31 19:48:08.699697851 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormat.java	2022-12-26 15:13:57.201682593 -0600
+@@ -555,7 +555,7 @@
+                 break;
+             case 'Z': // time zone offset
+                 if (tokenLen == 1) {
+-                    builder.appendTimeZoneOffset(null, "Z", false, 2, -2);
++                    builder.appendTimeZoneOffset(null, "Z", false, 2, 2);
+                 } else if (tokenLen == 2) {
+                     builder.appendTimeZoneOffset(null, "Z", true, 2, 2);
+                 } else {

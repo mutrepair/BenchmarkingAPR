@@ -1,0 +1,4 @@
+        public int hashCode() {
+            return (getKey() == null ? 0 : getKey().hashCode()) ^
+                   (getValue() == null ? 1 : getValue().hashCode());
+        }

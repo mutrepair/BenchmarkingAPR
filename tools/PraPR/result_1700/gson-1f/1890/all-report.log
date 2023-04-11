@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local child is replaced by local array to be used
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 46
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local childType is replaced by local arrayType to be used
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 47
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local childType is replaced by local componentType to be used
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 47
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to addAsArrayElement with a call to start
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 50
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to addAsArrayElement with a call to end
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 50
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to addAsArrayElement(Lcom/google/gson/ObjectTypePair;)V is guarded returning enclosing method
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 50
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.google.gson.JsonSerializationVisitor::addAsArrayElement(Lcom/google/gson/ObjectTypePair;)V is guarded
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 50
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to com/google/gson/ObjectTypePair::<init>
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 49
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 48
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/google/gson/JsonSerializationVisitor::addAsArrayElement
+	File Name: com/google/gson/JsonSerializationVisitor.java
+	Line Number: 82
+	Block: 11
+	First Index: 50
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

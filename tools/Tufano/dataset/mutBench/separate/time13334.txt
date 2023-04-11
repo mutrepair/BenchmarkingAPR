@@ -1,0 +1,1 @@
+private static TYPE_1 METHOD_1 ( int VAR_1 , int VAR_2 ) { int index = ( ( VAR_1 < < 0 ) + VAR_1 ) + VAR_2 ; if ( index >= VAR_3 . length ) { return METHOD_2 ( VAR_1 , VAR_2 ) ; } TYPE_1 f = null ; synchronized ( VAR_3 ) { f = VAR_3 [ index ] ; if ( f == null ) { f = METHOD_2 ( VAR_1 , VAR_2 ) ; VAR_3 [ index ] = f ; } } return f ; }

@@ -1,0 +1,73 @@
+=================================================
+Project : math_70	start : 23/02/07 13:18
+Current failed test : org.apache.commons.math.analysis.solvers.BisectionSolverTest::testMath369 | 23/02/07 13:18
+Tue Feb 07 13:18:25 CST 2023 org.apache.commons.math.analysis.solvers.BisectionSolver,72
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return solve(f,min,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.7847319278346623 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>0,0]
+return solve(f,min,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>72,72]
+return solve(min,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>72,72]
+return solve(f,min,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return solve(f,initial,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 0.9633639890708999 : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>0,0]
+if(isBracketing(min,initial,f)){
+return solve(f,min,initial);
+}else {
+return solve(f,initial,max);
+}
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>72,72]
+return solve(min,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/math/math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java=>72,72]
+return solve(f,initial,max);
+
+Time : 23/02/07 13:18
+----------------------------------------
+Success time : 23/02/07 13:18

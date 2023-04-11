@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to inUse is guarded using value null
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1035
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to inUse is guarded using local inUse16
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1035
+	Rank: null
+	Total Rank: 11
+	Status: NON_VIABLE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to inUse is guarded using field inUse
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1035
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field inUse is replaced by access to local inUse16
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1035
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1036
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local j is replaced by access to field SETMASK
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1039
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to inUse is guarded returning enclosing method
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1035
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1037
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1038
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1040
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1042
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1042
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java
+	Line Number: 820
+	Block: 187
+	First Index: 1042
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

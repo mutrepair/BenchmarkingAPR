@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11326/org/joda/time/chrono/ZonedChronology.java	2022-10-31 19:48:08.651698029 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/ZonedChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -507,7 +507,7 @@
+             int offset = getOffsetToAdd(subtrahendInstant);
+             return iField.getDifferenceAsLong
+                 (minuendInstant + (iTimeField ? offset : getOffsetToAdd(minuendInstant)),
+-                 subtrahendInstant % offset);
++                 subtrahendInstant + offset);
+         }
+ 
+         public final DurationField getDurationField() {

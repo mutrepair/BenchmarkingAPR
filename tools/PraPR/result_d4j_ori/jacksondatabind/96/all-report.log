@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.findImplicitParamName(I)Lcom/fasterxml/jackson/databind/PropertyName; is replaced by an instantiation of type com.fasterxml.jackson.databind.PropertyName using (Ljava/lang/String;)V
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.findImplicitParamName(I)Lcom/fasterxml/jackson/databind/PropertyName; is replaced by an instantiation of type com.fasterxml.jackson.databind.PropertyName using (Ljava/lang/String;Ljava/lang/String;)V
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to findImplicitParamName with a call to paramName
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to findImplicitParamName with a call to explicitParamName
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.deser.impl.CreatorCandidate::findImplicitParamName(I)Lcom/fasterxml/jackson/databind/PropertyName; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to findImplicitParamName(I)Lcom/fasterxml/jackson/databind/PropertyName; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 95
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/deser/impl/CreatorCandidate::findImplicitParamName
+	File Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java
+	Line Number: 735
+	Block: 144
+	First Index: 96
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

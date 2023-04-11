@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3385/org/apache/commons/codec/language/Metaphone.java	2022-10-31 19:47:39.055806340 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/Metaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -97,7 +97,7 @@
+         case 'K' : 
+         case 'G' : 
+         case 'P' : /* looking for KN, etc*/
+-            if (inwd[1] <= 'N') {
++            if (inwd[1] == 'N') {
+                 local.append(inwd, 1, inwd.length - 1);
+             } else {
+                 local.append(inwd);

@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local ch is replaced by access to field DEFAULT_XML_PARSER_FEATURE_FLAGS
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 9
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local ch is replaced by access to field DEFAULT_XML_GENERATOR_FEATURE_FLAGS
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 9
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 65 with 66
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 10
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 11
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 11
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/dataformat/xml/XmlFactory.java
+	Line Number: 779
+	Block: 135
+	First Index: 11
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------

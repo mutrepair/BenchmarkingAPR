@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/41313/com/google/javascript/jscomp/RenamePrototypes.java	2022-10-31 19:47:37.823810786 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/RenamePrototypes.java	2022-10-29 07:12:23.440738732 -0500
+@@ -156,7 +156,7 @@
+         int n1 = a1.count();
+         int n2 = a2.count();
+         if (n1 != n2) {
+-          return n2 + n1;
++          return n2 - n1;
+         }
+         return a1.oldName.compareTo(a2.oldName);
+       }

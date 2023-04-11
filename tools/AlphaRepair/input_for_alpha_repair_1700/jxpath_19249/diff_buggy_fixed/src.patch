@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/19249/org/apache/commons/jxpath/util/ValueUtils.java	2022-10-31 19:47:51.307761845 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/util/ValueUtils.java	2022-12-26 15:13:54.181649966 -0600
+@@ -550,7 +550,7 @@
+ 
+         // If the declaring class is public, we are done
+         Class clazz = method.getDeclaringClass();
+-        if (true) {
++        if (Modifier.isPublic(clazz.getModifiers())) {
+             return (method);
+         }
+ 

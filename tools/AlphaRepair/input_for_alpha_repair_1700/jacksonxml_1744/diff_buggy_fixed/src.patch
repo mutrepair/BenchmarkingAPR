@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1744/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-10-31 19:47:49.719767640 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.java	2022-12-26 15:13:53.109638382 -0600
+@@ -208,7 +208,7 @@
+                     xgen.setNextIsUnwrapped(false);
+                 }
+             }
+-            if (true) {
++            if (_anyGetterWriter != null) {
+                 // For [#117]: not a clean fix, but with @JsonTypeInfo, we'll end up
+                 // with accidental attributes otherwise
+                 xgen.setNextIsAttribute(false);

@@ -1,0 +1,64 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 01:39:54 CST 2022
+Number of Plausible Fixes: 5
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to su_i2 with an access to origPtr
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to su_i2 with an access to blockSize100k
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to su_i2 with an access to nInUse
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 144
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable su_i2
+	File Name: org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java
+	Line Number: 786
+	Block: 200
+	First Index: 145
+	Rank: 5
+	Total Rank: 8
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local pos is replaced by local offset to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 105
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local start is replaced by local offset to be defined
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 108
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local pos is replaced by local len to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 105
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local start is replaced by local len to be defined
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 108
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local pos is replaced by local start to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 105
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local start is replaced by local pos to be defined
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 108
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local pos is replaced by local end to be used
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 105
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local start is replaced by local end to be defined
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 108
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 106
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/csv/CSVPrinter.java
+	Line Number: 176
+	Block: 35
+	First Index: 107
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

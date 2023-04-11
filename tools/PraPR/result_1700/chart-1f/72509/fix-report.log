@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:13:53 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/jfree/data/statistics/HistogramDataset.java
+	Line Number: 178
+	Block: 13
+	First Index: 68
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/data/statistics/HistogramDataset.java
+	Line Number: 178
+	Block: 13
+	First Index: 69
+	Rank: 2
+	Total Rank: 6
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------

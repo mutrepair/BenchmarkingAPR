@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1879/com/google/gson/JsonSerializationVisitor.java	2022-10-31 19:47:43.711789489 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonSerializationVisitor.java	2022-12-26 15:13:51.393619841 -0600
+@@ -52,7 +52,7 @@
+     if (node == null) {
+       return;
+     }
+-    if (true) {
++    if (ancestors.contains(node)) {
+       throw new CircularReferenceException(node);
+     }
+     ancestors.push(node);

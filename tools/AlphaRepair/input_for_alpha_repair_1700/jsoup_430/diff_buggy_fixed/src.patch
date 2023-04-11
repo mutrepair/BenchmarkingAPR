@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/430/org/jsoup/nodes/Node.java	2022-10-31 19:47:50.511764751 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/nodes/Node.java	2022-12-26 15:13:53.649644217 -0600
+@@ -342,7 +342,7 @@
+     public int hashCode() {
+         int result = parentNode != null ? parentNode.hashCode() : 0;
+         // not children, or will block stack as they go back up to parent)
+-        result = 31 * result / (attributes != null ? attributes.hashCode() : 0);
++        result = 31 * result + (attributes != null ? attributes.hashCode() : 0);
+         return result;
+     }
+ }

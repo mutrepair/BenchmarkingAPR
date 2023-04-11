@@ -1,0 +1,454 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 41
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to phiHessian is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to r is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to r is guarded using local x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to phiHessian is guarded using field jacobian
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to r is guarded using field r
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates.r is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates::getR()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates.r is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates::getTheta()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates.r is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinates::getPhi()D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to phiHessian with an access to jacobian
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to r with an access to theta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to phiHessian with an access to rHessian
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to r with an access to phi
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to phiHessian with an access to thetaHessian
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field r is replaced by access to local x
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field r is replaced by access to local y
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field r is replaced by access to local z
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local rho is replaced by local x to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local zOr3 is replaced by local x to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local rho is replaced by local y to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local zOr3 is replaced by local y to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local rho is replaced by local z to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local zOr3 is replaced by local z to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local rho is replaced by local x2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local zOr3 is replaced by local x2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local rho is replaced by local y2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_4
+	Description: local zOr3 is replaced by local y2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_5
+	Description: local rho is replaced by local z2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_5
+	Description: local zOr3 is replaced by local z2 to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local rho is replaced by access to field r
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local zOr3 is replaced by access to field r
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local rho is replaced by access to field theta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local zOr3 is replaced by access to field theta
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local rho is replaced by access to field phi
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 431
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local zOr3 is replaced by access to field phi
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 433
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to phiHessian is guarded returning enclosing method
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 426
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to r is guarded returning enclosing method
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 436
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 427
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 429
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2.0 with 1.0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 430
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 432
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double division with multiplication
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java
+	Line Number: 336
+	Block: 11
+	First Index: 437
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

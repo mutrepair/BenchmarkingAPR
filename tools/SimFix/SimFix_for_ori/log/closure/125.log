@@ -1,0 +1,213 @@
+=================================================
+Project : closure_125	start : 23/02/07 00:04
+Current failed test : com.google.javascript.jscomp.TypeCheckTest::testIssue1002 | 23/02/07 00:04
+Tue Feb 07 00:10:58 CST 2023 com.google.javascript.jscomp.TypeCheck,1661
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fnType==null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:11
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fnType!=type){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fnType!=null&&fnType.isConstructor()){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4281141821488528 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>0,0]
+if(ct!=null&&ct.isConstructor()){
+backwardsInferenceFromCallSite(n,ct);
+ObjectType instanceType=ct.getInstanceType();
+Map<TemplateType,JSType> inferredTypes=inferTemplateTypesFromParameters(ct,n);
+if(inferredTypes.isEmpty()){
+type=instanceType;
+}else {
+type=registry.createTemplatizedType(instanceType,inferredTypes);
+}
+}
+
+Time : 23/02/07 00:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>1661,1666]
+if(fnType!=null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>1661,1666]
+if(fnType!=null&&fnType.isConstructor()){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(fnType!=null&&!type.isEmptyType()){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:17
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.3245072547892285 : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>0,0]
+FunctionType fnType=JSType.toMaybeFunctionType(type);
+if(fnType!=null&&!type.isEmptyType()){
+if((fnType.isConstructor()||fnType.isInterface())&&variableName.equals(fnType.getReferenceName())){
+finishConstructorDefinition(n,variableName,fnType,scopeToDeclareIn,input,newVar);
+}
+}
+if(shouldDeclareOnGlobalThis){
+ObjectType globalThis=typeRegistry.getNativeObjectType(GLOBAL_THIS);
+if(inferred){
+globalThis.defineInferredProperty(variableName,type==null?getNativeType(JSTypeNative.NO_TYPE):type,n);
+}else {
+globalThis.defineDeclaredProperty(variableName,type,n);
+}
+}
+
+Time : 23/02/07 00:17
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>1661,1666]
+if(fnType!=null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:17
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/closure/closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java=>1661,1666]
+if(fnType!=null&&!type.isEmptyType()){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:17
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(compiler.getCodingConvention().describeFunctionBind(n,true)==null){
+return ;
+}
+if(fnType!=null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:18
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(compiler.getCodingConvention().describeFunctionBind(n,true)==null){
+return ;
+}
+if(fnType==null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:19
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(compiler.getCodingConvention().describeFunctionBind(n,true)==null){
+return ;
+}
+n.setJSType(fnType.getBindReturnType(compiler.getCodingConvention().describeFunctionBind(n,true).getBoundParameterCount()+1));
+if(fnType!=null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:20
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(compiler.getCodingConvention().describeFunctionBind(n,true)==null){
+return ;
+}
+n.setJSType(fnType.getBindReturnType(compiler.getCodingConvention().describeFunctionBind(n,true).getBoundParameterCount()+1));
+if(fnType==null){
+visitParameterList(t,n,fnType);
+ensureTyped(t,n,fnType.getInstanceType());
+}else {
+ensureTyped(t,n);
+}
+
+Time : 23/02/07 00:21
+----------------------------------------
+Success time : 23/02/07 00:23

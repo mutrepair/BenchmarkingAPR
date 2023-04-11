@@ -1,0 +1,3 @@
+    public Element lastElementSibling() {
+        List<Element> siblings = parent().children();
+return ((siblings.get((siblings.size() - 1)) == 1))?siblings.get((siblings.size() - 1)):null;    }

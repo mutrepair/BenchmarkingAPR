@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/18878/org/apache/commons/jxpath/util/MethodLookupUtils.java	2022-10-31 19:47:51.295761889 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/util/MethodLookupUtils.java	2022-12-26 15:13:54.181649966 -0600
+@@ -134,7 +134,7 @@
+             }
+         }
+ 
+-        int currentMatch = 1;
++        int currentMatch = 0;
+         boolean ambiguous = false;
+ 
+         // Then - with type conversion

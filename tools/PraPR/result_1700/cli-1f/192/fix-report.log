@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:41:01 CST 2022
+Number of Plausible Fixes: 2
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/cli/Option::hasArgName
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 333
+	Block: 28
+	First Index: 4
+	Rank: 2
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 333
+	Block: 28
+	First Index: 3
+	Rank: 2
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

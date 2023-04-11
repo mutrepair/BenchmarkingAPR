@@ -1,0 +1,3 @@
+    public String getValue()
+    {
+return (true)?null:(String)this.values.get(0);    }

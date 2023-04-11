@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2134/com/google/gson/Streams.java	2022-10-31 19:47:43.743789373 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Streams.java	2022-12-26 15:13:51.393619841 -0600
+@@ -116,7 +116,7 @@
+       writer.beginObject();
+       for (Map.Entry<String, JsonElement> e : element.getAsJsonObject().entrySet()) {
+         JsonElement value = e.getValue();
+-        if (value.isJsonNull()) {
++        if (!serializeNulls && value.isJsonNull()) {
+           continue;
+         }
+         writer.name(e.getKey());

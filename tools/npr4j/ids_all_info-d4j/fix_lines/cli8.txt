@@ -1,0 +1,1 @@
+pos = findWrapPos(text, width, 0);

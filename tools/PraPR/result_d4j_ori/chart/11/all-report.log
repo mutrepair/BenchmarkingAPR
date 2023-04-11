@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local p1 is replaced by local p2 to be used
+	File Name: org/jfree/chart/util/ShapeUtilities.java
+	Line Number: 275
+	Block: 76
+	First Index: 47
+	Rank: 1
+	Total Rank: 4
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.awt.geom.GeneralPath::getPathIterator(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator; is guarded using default value null
+	File Name: org/jfree/chart/util/ShapeUtilities.java
+	Line Number: 275
+	Block: 76
+	First Index: 49
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getPathIterator(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator; is guarded returning default value false
+	File Name: org/jfree/chart/util/ShapeUtilities.java
+	Line Number: 275
+	Block: 76
+	First Index: 49
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/awt/geom/GeneralPath::getPathIterator
+	File Name: org/jfree/chart/util/ShapeUtilities.java
+	Line Number: 275
+	Block: 76
+	First Index: 49
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

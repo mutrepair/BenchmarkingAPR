@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/87/org/apache/commons/csv/Token.java	2022-10-31 19:47:42.399794245 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/Token.java	2022-12-26 15:13:50.881614309 -0600
+@@ -54,7 +54,7 @@
+     boolean isReady;
+ 
+     Token reset() {
+-        content.setLength(1);
++        content.setLength(0);
+         type = INVALID;
+         isReady = false;
+         return this;

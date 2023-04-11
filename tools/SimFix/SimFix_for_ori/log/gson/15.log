@@ -1,0 +1,125 @@
+=================================================
+Project : gson_15	start : 23/02/07 02:21
+Current failed test : com.google.gson.stream.JsonWriterTest::testNonFiniteDoublesWhenLenient | 23/02/07 02:21
+Tue Feb 07 02:21:24 CST 2023 com.google.gson.stream.JsonWriter,495
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!isLenient()&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.8186251592771647 : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>0,0]
+if(!isLenient()&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new IllegalArgumentException("JSON forbids NaN and infinities: "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(Double.isNaN(value)||Double.isInfinite(value)){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(!isLenient()&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!lenient&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6464768781315624 : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>0,0]
+if(!lenient&&(Double.isNaN(result)||Double.isInfinite(result))){
+throw new MalformedJsonException("JSON forbids NaN and infinities: "+result);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(Double.isNaN(value)||Double.isInfinite(value)){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(!lenient&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!isLenient()&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new NumberFormatException("JSON forbids NaN and infinities: "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5329108735628787 : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>0,0]
+if(!isLenient()&&(Double.isNaN(result)||Double.isInfinite(result))){
+throw new NumberFormatException("JSON forbids NaN and infinities: "+result);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(Double.isNaN(value)||Double.isInfinite(value)){
+throw new IllegalArgumentException("Numeric values must be finite, but was "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix_ori/gson/gson_15_buggy/gson/src/main/java/com/google/gson/stream/JsonWriter.java=>495,497]
+if(!isLenient()&&(Double.isNaN(value)||Double.isInfinite(value))){
+throw new NumberFormatException("JSON forbids NaN and infinities: "+value);
+}
+
+Time : 23/02/07 02:21
+----------------------------------------
+Success time : 23/02/07 02:21

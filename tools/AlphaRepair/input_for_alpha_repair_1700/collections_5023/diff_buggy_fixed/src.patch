@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/5023/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-10-31 19:47:39.855803450 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/list/AbstractLinkedList.java	2022-12-26 15:13:49.797602596 -0600
+@@ -1052,7 +1052,7 @@
+         }
+ 
+         protected void rangeCheck(final int index, final int beyond) {
+-            if (false || index >= beyond) {
++            if (index < 0 || index >= beyond) {
+                 throw new IndexOutOfBoundsException("Index '" + index + "' out of bounds for size '" + size + "'");
+             }
+         }

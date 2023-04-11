@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/16280/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-10-31 19:47:45.047784641 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1770,7 +1770,7 @@
+             return ptr;
+         }
+         if (escCode != CharacterEscapes.ESCAPE_CUSTOM) { // std, \\uXXXX
+-            if (ptr >= 5 && ptr < end) { // fits, prepend to buffer
++            if (ptr > 5 && ptr < end) { // fits, prepend to buffer
+                 ptr -= 6;
+                 buffer[ptr++] = '\\';
+                 buffer[ptr++] = 'u';

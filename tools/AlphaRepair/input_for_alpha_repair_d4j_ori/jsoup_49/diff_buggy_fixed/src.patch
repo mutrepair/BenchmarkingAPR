@@ -1,0 +1,12 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_49/src/main/java/org/jsoup/nodes/Node.java	2023-01-16 15:29:53.604408524 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/49/patch/./org/jsoup/nodes/Node.java	2023-01-16 15:29:53.572408123 -0600
+@@ -442,8 +442,8 @@
+             Node in = children[i];
+             reparentChild(in);
+             childNodes.add(index, in);
++            reindexChildren(index);
+         }
+-        reindexChildren(index);
+     }
+ 
+     protected void ensureChildNodes() {

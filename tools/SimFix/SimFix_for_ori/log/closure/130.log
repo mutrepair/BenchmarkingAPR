@@ -1,0 +1,132 @@
+=================================================
+Project : closure_130	start : 23/02/07 00:37
+Current failed test : com.google.javascript.jscomp.CollapsePropertiesTest::testIssue931 | 23/02/07 00:37
+Tue Feb 07 00:38:28 CST 2023 com.google.javascript.jscomp.CollapseProperties,172
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ref.type!=Type.ALIASING_GET&&ref.scope.isLocal()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:38
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(namespace==null&&ref.scope.isLocal()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ref.type==Type.ALIASING_GET&&name.canEliminate()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:40
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ref.type==Type.ALIASING_GET&&name.canEliminate()){
+ref.node=null;
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ref.node.getParent()!=null&&ref.node.getParent().isExprResult()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:42
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(ref.type==Type.ALIASING_GET&&ref.node.getParent().isExprResult()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+
+Time : 23/02/07 00:43
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(name.globalSets==1&&name.localSets==0&&name.localSets>0){
+List<Ref> refs=Lists.newArrayList(name.getRefs());
+for(Ref ref : refs){
+if(ref.type==Type.ALIASING_GET&&ref.scope.isLocal()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+}
+}
+
+Time : 23/02/07 00:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(name.globalSets==1&&name.localSets==0&&name.localSets>0){
+List<Ref> refs=Lists.newArrayList(name.getRefs());
+for(Ref ref : refs){
+if(ref==name.getDeclaration()){
+continue;
+}
+if(ref.type==Type.ALIASING_GET&&ref.scope.isLocal()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+}
+}
+
+Time : 23/02/07 00:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if((name.type==Name.Type.OBJECTLIT||name.type==Name.Type.FUNCTION)&&name.aliasingGets==0&&name.aliasingGets>0){
+List<Ref> refs=Lists.newArrayList(name.getRefs());
+for(Ref ref : refs){
+if(ref.type==Type.ALIASING_GET&&ref.scope.isLocal()){
+if(inlineAliasIfPossible(ref,namespace)){
+name.removeRef(ref);
+}
+}
+}
+}
+
+Time : 23/02/07 00:46
+----------------------------------------
+Failed time : 23/02/07 00:47

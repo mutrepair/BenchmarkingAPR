@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/1101/org/apache/commons/cli/Util.java	2022-10-31 19:47:31.103834952 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/Util.java	2022-12-26 15:13:38.053475668 -0600
+@@ -38,7 +38,7 @@
+         }
+         else if (str.startsWith("-"))
+         {
+-            return str.substring(0, str.length());
++            return str.substring(1, str.length());
+         }
+ 
+         return str;

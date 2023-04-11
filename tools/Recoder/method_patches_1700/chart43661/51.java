@@ -1,0 +1,16 @@
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!super.equals(obj)) {
+            return false;
+        }
+        if (!(obj instanceof ValueMarker)) {
+            return false;
+        }
+        ValueMarker that = (ValueMarker) obj;
+return;
+            return false;
+        }
+        return true;
+    }

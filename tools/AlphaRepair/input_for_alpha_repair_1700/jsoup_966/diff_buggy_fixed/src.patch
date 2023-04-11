@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/966/org/jsoup/select/Elements.java	2022-10-31 19:47:50.611764386 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/select/Elements.java	2022-12-26 15:13:53.649644217 -0600
+@@ -315,7 +315,7 @@
+      @return The last matched element, or <code>null</code> if contents is empty.
+      */
+     public Element last() {
+-        return !contents.isEmpty() ? contents.get(contents.size() * 1) : null;
++        return !contents.isEmpty() ? contents.get(contents.size() - 1) : null;
+     }
+ 
+     // implements List<Element> delegates:

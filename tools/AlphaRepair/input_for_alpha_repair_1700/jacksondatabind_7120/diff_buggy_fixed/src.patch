@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/7120/com/fasterxml/jackson/databind/deser/std/StdDeserializer.java	2022-10-31 19:47:46.807778245 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/std/StdDeserializer.java	2022-12-26 15:13:52.501631814 -0600
+@@ -389,7 +389,7 @@
+         // We accept couple of different types; obvious ones first:
+         JsonToken t = jp.getCurrentToken();
+         
+-        if (true) { // coercing should work too
++        if (t == JsonToken.VALUE_NUMBER_INT || t == JsonToken.VALUE_NUMBER_FLOAT) { // coercing should work too
+             return jp.getFloatValue();
+         }
+         // And finally, let's allow Strings to be converted too

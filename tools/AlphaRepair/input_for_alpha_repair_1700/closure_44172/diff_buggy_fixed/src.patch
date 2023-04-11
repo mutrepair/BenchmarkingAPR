@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/44172/com/google/javascript/jscomp/TypedCodeGenerator.java	2022-10-31 19:47:37.875810599 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypedCodeGenerator.java	2022-10-29 07:29:04.440573048 -0500
+@@ -48,7 +48,7 @@
+         Node rhs = n.getFirstChild().getLastChild();
+         add(getTypeAnnotation(rhs));
+       } else if (n.isVar()
+-          && true) {
++          && n.getFirstChild().getFirstChild() != null) {
+         add(getTypeAnnotation(n.getFirstChild().getFirstChild()));
+       }
+     }

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/15302/org/apache/commons/math3/analysis/solvers/BrentSolver.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/analysis/solvers/BrentSolver.java	2023-04-04 13:31:53.981640393 -0500
+@@ -194,7 +194,7 @@
+                     q = (q - 1) * (r - 1) * (s - 1);
+                 }
+                 if (p > 0) {
+-                    q = +q;
++                    q = -q;
+                 } else {
+                     p = -p;
+                 }

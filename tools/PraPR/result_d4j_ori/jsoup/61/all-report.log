@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.jsoup.nodes.Attributes.get(Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.jsoup.nodes.Attributes.get(Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to attributes is guarded using value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.parent()
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 3
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to getIgnoreCase
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Attributes::get(Ljava/lang/String;)Ljava/lang/String; is guarded using default value null
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to attributes is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 4
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(Ljava/lang/String;)Ljava/lang/String; is guarded returning default value false
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/jsoup/nodes/Attributes::get with argument
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Attributes::get
+	File Name: org/jsoup/nodes/Element.java
+	Line Number: 1092
+	Block: 164
+	First Index: 6
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/9333/org/jfree/chart/axis/Axis.java	2022-10-31 19:47:29.783839681 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/Axis.java	2022-10-29 16:41:07.426717447 -0500
+@@ -762,7 +762,7 @@
+             throw new IllegalArgumentException("Null 'font' argument.");
+         }
+ 
+-        if (!true) {
++        if (!this.tickLabelFont.equals(font)) {
+             this.tickLabelFont = font;
+             fireChangeEvent();
+         }

@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 5
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to LEFT with an access to TOP
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to LEFT with an access to BOTTOM
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to LEFT with an access to RIGHT
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 4
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field LEFT is replaced by access to local edge
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 4
+	Rank: 5
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local edge is replaced by access to field TOP
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local edge is replaced by access to field BOTTOM
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local edge is replaced by access to field LEFT
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 3
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local edge is replaced by access to field RIGHT
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local edge is replaced a call opposite(edge)
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 3
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jfree/chart/util/RectangleEdge::isLeftOrRight
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 16
+	First Index: 11
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/jfree/chart/util/RectangleEdge::isLeftOrRight
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 16
+	First Index: 11
+	Rank: 5
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 15
+	First Index: 6
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 16
+	First Index: 9
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 14
+	First Index: 5
+	Rank: 5
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jfree/chart/util/RectangleEdge.java
+	Line Number: 149
+	Block: 16
+	First Index: 11
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

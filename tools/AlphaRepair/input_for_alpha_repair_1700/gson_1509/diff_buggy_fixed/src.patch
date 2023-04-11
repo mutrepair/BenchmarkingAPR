@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1509/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.655789692 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -1075,7 +1075,7 @@
+       throw syntaxError("Expected literal value");
+     }
+     value = literal;
+-    hasToken = false;
++    hasToken = true;
+     return token = null; // use decodeLiteral() to get the token type
+   }
+ 

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/111278/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -672,7 +672,7 @@
+           double da = 2.0 + ya;
+           double db = -(da - 2.0 - ya);
+           double temp = da + yb;
+-          db += +(temp - da - yb);
++          db += -(temp - da - yb);
+           da = temp;
+ 
+           temp = da * HEX_40000000;

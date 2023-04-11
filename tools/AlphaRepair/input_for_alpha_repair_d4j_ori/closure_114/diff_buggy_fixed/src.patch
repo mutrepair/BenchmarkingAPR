@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_114/src/com/google/javascript/jscomp/NameAnalyzer.java	2023-01-16 15:29:14.691922589 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/114/patch/./com/google/javascript/jscomp/NameAnalyzer.java	2023-01-16 15:29:14.659922190 -0600
+@@ -575,7 +575,7 @@
+           } else {
+             recordDepScope(nameNode, ns);
+           }
+-        } else {
++        } else if (!(parent.isCall() && parent.getFirstChild() == n)) {
+           // The rhs of the assignment is the caller, so it's used by the
+           // context. Don't associate it w/ the lhs.
+           // FYI: this fixes only the specific case where the assignment is the

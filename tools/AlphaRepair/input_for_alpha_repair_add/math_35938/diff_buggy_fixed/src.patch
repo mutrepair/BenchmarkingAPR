@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/35938/org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java	2023-04-04 14:33:26.105959043 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/FieldVector3D.java	2023-04-04 13:31:54.001640631 -0500
+@@ -791,7 +791,7 @@
+      */
+     public FieldVector3D<T> crossProduct(final Vector3D v) {
+         return new FieldVector3D<T>(x.linearCombination(v.getZ(), y, -v.getY(), z),
+-                                    y.linearCombination(v.getX(), z, +v.getZ(), x),
++                                    y.linearCombination(v.getX(), z, -v.getZ(), x),
+                                     z.linearCombination(v.getY(), x, -v.getX(), y));
+     }
+ 

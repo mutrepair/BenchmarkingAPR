@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/42042/org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java	2022-10-31 19:48:00.347728703 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/partitioning/utilities/OrderedTuple.java	2022-12-26 15:13:55.665665998 -0600
+@@ -418,7 +418,7 @@
+             return 0;
+         } else if (k == offset) {
+             return (sign(bits) == 0L) ? 1 : 0;
+-        } else if (k >= (e + 52)) {
++        } else if (k > (e + 52)) {
+             return (sign(bits) == 0L) ? 0 : 1;
+         } else {
+             final long m = (sign(bits) == 0L) ? mantissa(bits) : -mantissa(bits);

@@ -1,0 +1,352 @@
+
+test-offline:
+
+get-deps:
+
+gson-from-maven.compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/gson-1f/gson/maven-build.xml:73: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+gson-from-maven.compile-tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/gson-1f/gson/maven-build.xml:101: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 77 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 5.58 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 2295
+    [junit] MAJOR: Mutants covered:   1933 (84.23%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 77 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/77 - com.google.gson.DisjunctionExclusionStrategyTest (3ms / 17):
+    [junit] MAJOR: 110 (15 / 17 / 17) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 15 (12-3-0) / 1918
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/77 - com.google.gson.LowerCaseNamingPolicyTest (3ms / 0):
+    [junit] MAJOR: 110 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 15 (12-3-0) / 1918
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/77 - com.google.gson.UpperCaseNamingPolicyTest (3ms / 0):
+    [junit] MAJOR: 110 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 15 (12-3-0) / 1918
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/77 - com.google.gson.FieldNamingStrategy2AdapterTest (4ms / 9):
+    [junit] MAJOR: 134 (0 / 3 / 9) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 15 (12-3-0) / 1918
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/77 - com.google.gson.LruCacheTest (4ms / 7):
+    [junit] MAJOR: 157 (5 / 5 / 7) -> AVG-RTPM: 4ms
+    [junit] MAJOR: Mutants killed / live: 20 (13-7-0) / 1913
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/77 - com.google.gson.NullExclusionStrategyTest (4ms / 10):
+    [junit] MAJOR: 175 (2 / 3 / 10) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 22 (15-7-0) / 1911
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/77 - com.google.gson.ParameterizedTypeImplTest (5ms / 22):
+    [junit] MAJOR: 326 (10 / 22 / 22) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 32 (21-11-0) / 1901
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/77 - com.google.gson.TypeUtilsTest (5ms / 5):
+    [junit] MAJOR: 355 (3 / 3 / 5) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 35 (23-12-0) / 1898
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/77 - com.google.gson.GenericArrayTypeImplTest (6ms / 6):
+    [junit] MAJOR: 382 (1 / 4 / 6) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 36 (23-13-0) / 1897
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/77 - com.google.gson.LongSerializationPolicyTest (6ms / 27):
+    [junit] MAJOR: 531 (8 / 25 / 27) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 44 (26-18-0) / 1889
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/77 - com.google.gson.LowerCamelCaseSeparatorNamingPolicyTest (6ms / 24):
+    [junit] MAJOR: 844 (15 / 20 / 24) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 59 (39-20-0) / 1874
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/77 - com.google.gson.DefaultMapJsonSerializerTest (7ms / 22):
+    [junit] MAJOR: 1112 (4 / 18 / 22) -> AVG-RTPM: 14ms
+    [junit] MAJOR: Mutants killed / live: 63 (39-24-0) / 1870
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/77 - com.google.gson.InnerClassExclusionStrategyTest (7ms / 19):
+    [junit] MAJOR: 1205 (8 / 12 / 19) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 71 (47-24-0) / 1862
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/77 - com.google.gson.MemoryRefStackTest (7ms / 16):
+    [junit] MAJOR: 1369 (7 / 12 / 16) -> AVG-RTPM: 13ms
+    [junit] MAJOR: Mutants killed / live: 78 (54-24-0) / 1855
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/77 - com.google.gson.UpperCamelCaseSeparatorNamingPolicyTest (8ms / 55):
+    [junit] MAJOR: 1726 (13 / 36 / 55) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 91 (64-25-1) / 1842
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/77 - com.google.gson.DefaultDateTypeAdapterTest (9ms / 22):
+    [junit] MAJOR: 1855 (1 / 14 / 22) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 92 (64-26-1) / 1841
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/77 - com.google.gson.JsonDeserializerExceptionWrapperTest (9ms / 96):
+    [junit] MAJOR: 2741 (5 / 85 / 96) -> AVG-RTPM: 10ms
+    [junit] MAJOR: Mutants killed / live: 97 (64-31-1) / 1836
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 18/77 - com.google.gson.TypeInfoMapTest (9ms / 13):
+    [junit] MAJOR: 2780 (4 / 5 / 13) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 101 (67-32-1) / 1832
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 19/77 - com.google.gson.VersionExclusionStrategyTest (9ms / 63):
+    [junit] MAJOR: 3701 (17 / 52 / 63) -> AVG-RTPM: 17ms
+    [junit] MAJOR: Mutants killed / live: 118 (78-37-1) / 1815
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 20/77 - com.google.gson.ExposeAnnotationDeserializationExclusionStrategyTest (10ms / 39):
+    [junit] MAJOR: 4126 (3 / 24 / 39) -> AVG-RTPM: 11ms
+    [junit] MAJOR: Mutants killed / live: 121 (80-38-1) / 1812
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 21/77 - com.google.gson.ExposeAnnotationSerializationExclusionStrategyTest (10ms / 39):
+    [junit] MAJOR: 4398 (3 / 24 / 39) -> AVG-RTPM: 11ms
+    [junit] MAJOR: Mutants killed / live: 124 (82-39-1) / 1809
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 22/77 - com.google.gson.FieldAttributesTest (10ms / 19):
+    [junit] MAJOR: 4529 (8 / 10 / 19) -> AVG-RTPM: 13ms
+    [junit] MAJOR: Mutants killed / live: 132 (90-39-1) / 1801
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 23/77 - com.google.gson.ModifyFirstLetterNamingPolicyTest (10ms / 35):
+    [junit] MAJOR: 4692 (10 / 18 / 35) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 142 (94-45-1) / 1791
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 24/77 - com.google.gson.CamelCaseSeparatorNamingPolicyTest (12ms / 22):
+    [junit] MAJOR: 4718 (2 / 4 / 22) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 144 (96-45-1) / 1789
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 25/77 - com.google.gson.TypeInfoTest (13ms / 26):
+    [junit] MAJOR: 4830 (7 / 18 / 26) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 151 (100-48-1) / 1782
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 26/77 - com.google.gson.JsonStreamParserTest (14ms / 175):
+    [junit] MAJOR: 7357 (84 / 166 / 175) -> AVG-RTPM: 15ms
+    [junit] MAJOR: Mutants killed / live: 235 (118-112-1) / 1698
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 27/77 - com.google.gson.SerializedNameAnnotationInterceptingNamingPolicyTest (14ms / 45):
+    [junit] MAJOR: 7607 (2 / 28 / 45) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 237 (118-114-1) / 1696
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 28/77 - com.google.gson.JsonFieldNameValidatorTest (16ms / 8):
+    [junit] MAJOR: 7622 (1 / 3 / 8) -> AVG-RTPM: 5ms
+    [junit] MAJOR: Mutants killed / live: 238 (119-114-1) / 1695
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 29/77 - com.google.gson.TypeInfoArrayTest (16ms / 31):
+    [junit] MAJOR: 7931 (2 / 15 / 31) -> AVG-RTPM: 20ms
+    [junit] MAJOR: Mutants killed / live: 240 (119-115-1) / 1693
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 30/77 - com.google.gson.JavaFieldNamingPolicyTest (17ms / 38):
+    [junit] MAJOR: 8129 (1 / 22 / 38) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 241 (119-116-1) / 1692
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 31/77 - com.google.gson.EscaperTest (20ms / 120):
+    [junit] MAJOR: 9230 (91 / 115 / 120) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 332 (205-121-1) / 1601
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 32/77 - com.google.gson.GsonBuilderTest (22ms / 223):
+    [junit] MAJOR: 13348 (44 / 218 / 223) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 376 (205-165-1) / 1557
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 33/77 - com.google.gson.TypeInfoFactoryTest (24ms / 28):
+    [junit] MAJOR: 13485 (12 / 20 / 28) -> AVG-RTPM: 6ms
+    [junit] MAJOR: Mutants killed / live: 388 (209-173-1) / 1545
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 34/77 - com.google.gson.JsonPrimitiveTest (25ms / 187):
+    [junit] MAJOR: 14534 (36 / 114 / 187) -> AVG-RTPM: 9ms
+    [junit] MAJOR: Mutants killed / live: 424 (240-178-1) / 1509
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 35/77 - com.google.gson.metrics.PerformanceTest (27ms / 176):
+    [junit] MAJOR: 16571 (0 / 131 / 176) -> AVG-RTPM: 15ms
+    [junit] MAJOR: Mutants killed / live: 424 (240-178-1) / 1509
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 36/77 - com.google.gson.functional.InterfaceTest (28ms / 495):
+    [junit] MAJOR: 26801 (117 / 403 / 495) -> AVG-RTPM: 25ms
+    [junit] MAJOR: Mutants killed / live: 541 (297-238-1) / 1392
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 37/77 - com.google.gson.ParameterizedTypeHandlerMapTest (29ms / 85):
+    [junit] MAJOR: 27152 (25 / 42 / 85) -> AVG-RTPM: 8ms
+    [junit] MAJOR: Mutants killed / live: 566 (315-245-1) / 1367
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 38/77 - com.google.gson.functional.JsonTreeTest (29ms / 562):
+    [junit] MAJOR: 35709 (25 / 314 / 562) -> AVG-RTPM: 27ms
+    [junit] MAJOR: Mutants killed / live: 591 (328-257-1) / 1342
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 39/77 - com.google.gson.functional.FieldExclusionTest (30ms / 554):
+    [junit] MAJOR: 44554 (24 / 303 / 554) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 615 (347-262-1) / 1318
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 40/77 - com.google.gson.stream.JsonWriterTest (30ms / 130):
+    [junit] MAJOR: 45194 (61 / 83 / 130) -> AVG-RTPM: 7ms
+    [junit] MAJOR: Mutants killed / live: 676 (393-277-1) / 1257
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 41/77 - com.google.gson.functional.PrintFormattingTest (31ms / 615):
+    [junit] MAJOR: 53954 (20 / 306 / 615) -> AVG-RTPM: 28ms
+    [junit] MAJOR: Mutants killed / live: 696 (399-291-1) / 1237
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 42/77 - com.google.gson.JsonObjectTest (32ms / 540):
+    [junit] MAJOR: 59948 (62 / 272 / 540) -> AVG-RTPM: 22ms
+    [junit] MAJOR: Mutants killed / live: 758 (413-338-1) / 1175
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 43/77 - com.google.gson.functional.CustomSerializerTest (33ms / 474):
+    [junit] MAJOR: 66977 (19 / 264 / 474) -> AVG-RTPM: 26ms
+    [junit] MAJOR: Mutants killed / live: 777 (419-351-1) / 1156
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 44/77 - com.google.gson.functional.JsonParserTest (33ms / 755):
+    [junit] MAJOR: 78005 (49 / 392 / 755) -> AVG-RTPM: 28ms
+    [junit] MAJOR: Mutants killed / live: 826 (440-379-1) / 1107
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 45/77 - com.google.gson.functional.ExclusionStrategyFunctionalTest (34ms / 642):
+    [junit] MAJOR: 86763 (7 / 282 / 642) -> AVG-RTPM: 31ms
+    [junit] MAJOR: Mutants killed / live: 833 (442-384-1) / 1100
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 46/77 - com.google.gson.functional.SecurityTest (35ms / 920):
+    [junit] MAJOR: 101284 (57 / 436 / 920) -> AVG-RTPM: 33ms
+    [junit] MAJOR: Mutants killed / live: 890 (469-413-1) / 1043
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 47/77 - com.google.gson.functional.TypeVariableTest (36ms / 914):
+    [junit] MAJOR: 115733 (67 / 399 / 914) -> AVG-RTPM: 36ms
+    [junit] MAJOR: Mutants killed / live: 957 (488-456-1) / 976
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 48/77 - com.google.gson.FunctionWithInternalDependenciesTest (37ms / 397):
+    [junit] MAJOR: 119579 (1 / 158 / 397) -> AVG-RTPM: 24ms
+    [junit] MAJOR: Mutants killed / live: 958 (489-456-1) / 975
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 49/77 - com.google.gson.functional.InstanceCreatorTest (37ms / 687):
+    [junit] MAJOR: 127976 (9 / 293 / 687) -> AVG-RTPM: 28ms
+    [junit] MAJOR: Mutants killed / live: 967 (496-458-1) / 966
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 50/77 - com.google.gson.functional.ReadersWritersTest (40ms / 930):
+    [junit] MAJOR: 139202 (25 / 368 / 930) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 992 (501-478-1) / 941
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 51/77 - com.google.gson.JsonParserTest (41ms / 865):
+    [junit] MAJOR: 148164 (8 / 307 / 865) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 1000 (504-483-1) / 933
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 52/77 - com.google.gson.functional.EnumTest (42ms / 836):
+    [junit] MAJOR: 156887 (10 / 290 / 836) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 1010 (507-490-1) / 923
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 53/77 - com.google.gson.GsonTypeAdapterTest (43ms / 759):
+    [junit] MAJOR: 164009 (6 / 273 / 759) -> AVG-RTPM: 26ms
+    [junit] MAJOR: Mutants killed / live: 1016 (508-495-1) / 917
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 54/77 - com.google.gson.functional.InternationalizationTest (43ms / 560):
+    [junit] MAJOR: 168954 (1 / 197 / 560) -> AVG-RTPM: 25ms
+    [junit] MAJOR: Mutants killed / live: 1017 (508-496-1) / 916
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 55/77 - com.google.gson.functional.PrettyPrintingTest (43ms / 658):
+    [junit] MAJOR: 176212 (10 / 243 / 658) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 1027 (516-498-1) / 906
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 56/77 - com.google.gson.functional.ExposeFieldsTest (45ms / 916):
+    [junit] MAJOR: 185968 (8 / 329 / 916) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 1035 (522-500-1) / 898
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 57/77 - com.google.gson.functional.InheritanceTest (47ms / 954):
+    [junit] MAJOR: 195883 (7 / 322 / 954) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 1042 (525-504-1) / 891
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 58/77 - com.google.gson.functional.StringTest (47ms / 693):
+    [junit] MAJOR: 201447 (8 / 213 / 693) -> AVG-RTPM: 26ms
+    [junit] MAJOR: Mutants killed / live: 1050 (533-504-1) / 883
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 59/77 - com.google.gson.functional.NamingPolicyTest (51ms / 901):
+    [junit] MAJOR: 211544 (3 / 306 / 901) -> AVG-RTPM: 32ms
+    [junit] MAJOR: Mutants killed / live: 1053 (536-504-1) / 880
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 60/77 - com.google.gson.CommentsTest (52ms / 519):
+    [junit] MAJOR: 216330 (30 / 207 / 519) -> AVG-RTPM: 23ms
+    [junit] MAJOR: Mutants killed / live: 1083 (538-532-1) / 850
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 61/77 - com.google.gson.functional.CustomDeserializerTest (53ms / 937):
+    [junit] MAJOR: 226681 (14 / 325 / 937) -> AVG-RTPM: 31ms
+    [junit] MAJOR: Mutants killed / live: 1097 (539-545-1) / 836
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 62/77 - com.google.gson.functional.CircularReferenceTest (54ms / 883):
+    [junit] MAJOR: 234898 (4 / 286 / 883) -> AVG-RTPM: 28ms
+    [junit] MAJOR: Mutants killed / live: 1101 (541-547-1) / 832
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 63/77 - com.google.gson.functional.NullObjectAndFieldTest (54ms / 915):
+    [junit] MAJOR: 244190 (15 / 302 / 915) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 1116 (548-555-1) / 817
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 64/77 - com.google.gson.stream.JsonReaderTest (57ms / 522):
+    [junit] MAJOR: 248898 (119 / 254 / 522) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 1235 (596-619-1) / 698
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 65/77 - com.google.gson.functional.CustomTypeAdaptersTest (59ms / 979):
+    [junit] MAJOR: 258999 (2 / 290 / 979) -> AVG-RTPM: 34ms
+    [junit] MAJOR: Mutants killed / live: 1237 (596-621-1) / 696
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 66/77 - com.google.gson.functional.VersioningTest (61ms / 897):
+    [junit] MAJOR: 268064 (9 / 276 / 897) -> AVG-RTPM: 32ms
+    [junit] MAJOR: Mutants killed / live: 1246 (604-622-1) / 687
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 67/77 - com.google.gson.functional.ParameterizedTypesTest (62ms / 1079):
+    [junit] MAJOR: 281290 (7 / 338 / 1079) -> AVG-RTPM: 39ms
+    [junit] MAJOR: Mutants killed / live: 1253 (604-629-1) / 680
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 68/77 - com.google.gson.MixedStreamTest (63ms / 928):
+    [junit] MAJOR: 289933 (14 / 283 / 928) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 1267 (614-633-1) / 666
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 69/77 - com.google.gson.functional.MapTest (69ms / 918):
+    [junit] MAJOR: 298710 (5 / 265 / 918) -> AVG-RTPM: 33ms
+    [junit] MAJOR: Mutants killed / live: 1272 (615-637-1) / 661
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 70/77 - com.google.gson.functional.ArrayTest (83ms / 1142):
+    [junit] MAJOR: 310288 (16 / 358 / 1142) -> AVG-RTPM: 32ms
+    [junit] MAJOR: Mutants killed / live: 1288 (625-643-1) / 645
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 71/77 - com.google.gson.functional.CollectionTest (84ms / 1032):
+    [junit] MAJOR: 320323 (3 / 290 / 1032) -> AVG-RTPM: 34ms
+    [junit] MAJOR: Mutants killed / live: 1291 (627-644-1) / 642
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 72/77 - com.google.gson.functional.DefaultTypeAdaptersTest (90ms / 1107):
+    [junit] MAJOR: 331681 (53 / 327 / 1107) -> AVG-RTPM: 34ms
+    [junit] MAJOR: Mutants killed / live: 1344 (656-668-1) / 589
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 73/77 - com.google.gson.functional.EscapingTest (94ms / 1013):
+    [junit] MAJOR: 339350 (2 / 256 / 1013) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 1346 (658-668-1) / 587
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 74/77 - com.google.gson.functional.ObjectTest (106ms / 1086):
+    [junit] MAJOR: 351101 (7 / 280 / 1086) -> AVG-RTPM: 41ms
+    [junit] MAJOR: Mutants killed / live: 1353 (661-672-1) / 580
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 75/77 - com.google.gson.functional.PrimitiveTest (107ms / 996):
+    [junit] MAJOR: 360694 (45 / 276 / 996) -> AVG-RTPM: 34ms
+    [junit] MAJOR: Mutants killed / live: 1398 (670-708-1) / 535
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 76/77 - com.google.gson.functional.ConcurrencyTest (126ms / 797):
+    [junit] MAJOR: 371531 (0 / 174 / 797) -> AVG-RTPM: 62ms
+    [junit] MAJOR: Mutants killed / live: 1398 (670-708-1) / 535
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 77/77 - com.google.gson.functional.UncategorizedTest (356ms / 951):
+    [junit] MAJOR: 378296 (1 / 225 / 951) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 1399 (671-708-1) / 534
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  378.3 seconds
+    [junit] MAJOR: Mutation score: 60.96% (72.37%)
+    [junit] MAJOR: Mutants killed / live: 1399 (671-708-1) / 534
+    [junit] MAJOR: Mutant executions: 13073
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/gson-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 6 minutes 24 seconds

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14712/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-10-31 19:47:46.595779016 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java	2022-12-26 15:13:52.513631942 -0600
+@@ -327,7 +327,7 @@
+                 // [JACKSON-334]: may be missing milliseconds... if so, add
+                 len = dateStr.length();
+                 // '+0000' (5 chars); should come after '.000' (4 chars) of milliseconds, so:
+-                c = dateStr.charAt(len + 9);
++                c = dateStr.charAt(len-9);
+                 if (Character.isDigit(c)) {
+                     StringBuilder sb = new StringBuilder(dateStr);
+                     sb.insert(len-5, ".000");

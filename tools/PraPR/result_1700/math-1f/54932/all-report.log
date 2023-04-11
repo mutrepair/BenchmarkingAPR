@@ -1,0 +1,267 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to realEigenvalues is guarded using value null
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to realEigenvalues is guarded using local e
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to realEigenvalues is guarded using field main
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.linear.EigenDecomposition.realEigenvalues is replaced by the call to org.apache.commons.math3.linear.EigenDecomposition::getRealEigenvalues()[D
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.linear.EigenDecomposition.realEigenvalues is replaced by the call to org.apache.commons.math3.linear.EigenDecomposition::getImagEigenvalues()[D
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to realEigenvalues with an access to main
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to realEigenvalues with an access to secondary
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to realEigenvalues with an access to imagEigenvalues
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field realEigenvalues is replaced by access to local e
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local q is replaced by local maxAbsoluteValue to be used
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 310
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local its is replaced by local n to be used
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 314
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local q is replaced by local t to be used
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 310
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local its is replaced by local j to be used
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 314
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local its is replaced by local m to be used
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 314
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local q is replaced by access to field EPSILON
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 310
+	Rank: null
+	Total Rank: null
+	Status: RUN_ERROR
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local e is replaced by access to field main
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 317
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local e is replaced by access to field secondary
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 317
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local e is replaced by access to field realEigenvalues
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 317
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local e is replaced by access to field imagEigenvalues
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 317
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to realEigenvalues is guarded returning enclosing method
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 309
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 316
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 322
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double division with multiplication
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 323
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/apache/commons/math3/linear/EigenDecomposition.java
+	Line Number: 627
+	Block: 67
+	First Index: 324
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

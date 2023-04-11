@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 14:49:52 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_3
+	Description: replaced call to compareTo(DDI)I with a call to compareTo(DDD)I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 47
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+	Dump: mutant-2.class
+------------------------------------------------

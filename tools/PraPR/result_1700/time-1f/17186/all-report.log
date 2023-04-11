@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iFieldType is guarded using value 0
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to iFieldType is guarded using local position
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iFieldType is guarded using field iMinPrintedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.iFieldType is replaced by the call to org.joda.time.format.PeriodFormatterBuilder$FieldFormatter::getFieldType()I
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to iFieldType with an access to iMinPrintedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to iFieldType with an access to iPrintZeroSetting
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to iFieldType with an access to iMaxParsedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field iFieldType is replaced by access to local position
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field iFieldType is replaced by access to local suffixPos
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_2
+	Description: access to field iFieldType is replaced by access to local limit
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iFieldType is guarded returning default value 0
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to iFieldType is guarded returning local position
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iFieldType is guarded returning field iMinPrintedDigits
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 271
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 84
+	First Index: 265
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 46 with 47
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 84
+	First Index: 264
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 44 with 45
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 85
+	First Index: 267
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 86
+	First Index: 272
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 9 with 10
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 87
+	First Index: 276
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 84
+	First Index: 265
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 85
+	First Index: 268
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 85
+	First Index: 268
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 84
+	First Index: 265
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/format/PeriodFormatterBuilder.java
+	Line Number: 1278
+	Block: 84
+	First Index: 265
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

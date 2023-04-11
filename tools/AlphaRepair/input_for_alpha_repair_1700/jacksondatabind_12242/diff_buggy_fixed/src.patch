@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12242/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java	2022-10-31 19:47:46.515779307 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java	2022-12-26 15:13:52.509631900 -0600
+@@ -449,7 +449,7 @@
+         throws JsonMappingException
+     {
+         ObjectIdInfo objectIdInfo = beanDesc.getObjectIdInfo();
+-        if (false) {
++        if (objectIdInfo == null) {
+             return null;
+         }
+         ObjectIdGenerator<?> gen;

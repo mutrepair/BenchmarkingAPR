@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14087/com/fasterxml/jackson/databind/util/ClassUtil.java	2022-10-31 19:47:46.555779161 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java	2022-12-26 15:13:52.513631942 -0600
+@@ -123,7 +123,7 @@
+             if (type.getEnclosingMethod() != null) {
+                 return null;
+             }
+-            if (!false) {
++            if (!Modifier.isStatic(type.getModifiers())) {
+                 return type.getEnclosingClass();
+             }
+         } catch (SecurityException e) { }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/69349/org/jfree/data/general/DatasetUtilities.java	2022-10-31 19:47:29.627840239 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/general/DatasetUtilities.java	2022-10-29 16:41:07.438717383 -0500
+@@ -286,7 +286,7 @@
+     public static PieDataset createConsolidatedPieDataset(PieDataset source,
+             Comparable key, double minimumPercent) {
+         return DatasetUtilities.createConsolidatedPieDataset(source, key,
+-                minimumPercent, -2);
++                minimumPercent, 2);
+     }
+ 
+     /**

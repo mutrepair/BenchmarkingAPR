@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/34760/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2022-10-31 19:48:00.299728879 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2022-12-26 15:13:55.661665956 -0600
+@@ -532,7 +532,7 @@
+             // and we can choose to have phi in the interval [-PI/2 ; +PI/2]
+             final FieldVector3D<T> v1 = applyTo(vector(0, 0, 1));
+             final FieldVector3D<T> v2 = applyInverseTo(vector(0, 1, 0));
+-            if ((v2.getZ().getReal() < -0.9999999999) || (v2.getZ().getReal() > (-0.9999999999))) {
++            if ((v2.getZ().getReal() < -0.9999999999) || (v2.getZ().getReal() > 0.9999999999)) {
+                 throw new CardanEulerSingularityException(true);
+             }
+             return buildArray(v1.getX().atan2(v1.getZ()),

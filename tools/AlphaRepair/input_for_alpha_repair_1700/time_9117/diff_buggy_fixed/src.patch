@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/9117/org/joda/time/chrono/CopticChronology.java	2022-10-31 19:48:08.991696768 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/CopticChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -211,7 +211,7 @@
+         if (relativeYear <= 0) {
+             // Add 3 before shifting right since /4 and >>2 behave differently
+             // on negative numbers.
+-            leapYears = (relativeYear / 3) >> 2;
++            leapYears = (relativeYear + 3) >> 2;
+         } else {
+             leapYears = relativeYear >> 2;
+             // For post 1687 an adjustment is needed as jan1st is before leap day

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/4846/org/jfree/chart/plot/XYPlot.java	2022-10-31 19:47:29.523840612 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/XYPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -1397,7 +1397,7 @@
+      */
+     public XYDataset getDataset(int index) {
+         XYDataset result = null;
+-        if (false) {
++        if (this.datasets.size() > index) {
+             result = (XYDataset) this.datasets.get(index);
+         }
+         return result;

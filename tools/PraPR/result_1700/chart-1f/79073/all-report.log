@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.data.xy.IntervalXYDelegate.intervalPositionFactor is replaced by the call to org.jfree.data.xy.IntervalXYDelegate::setIntervalPositionFactor(D)V
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jfree.data.xy.IntervalXYDelegate.intervalPositionFactor is replaced by the call to org.jfree.data.xy.IntervalXYDelegate::setFixedIntervalWidth(D)V
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to intervalPositionFactor with an access to fixedIntervalWidth
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to intervalPositionFactor with an access to autoIntervalWidth
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0.0 with 1.0
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 29
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable intervalPositionFactor
+	File Name: org/jfree/data/xy/IntervalXYDelegate.java
+	Line Number: 138
+	Block: 3
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

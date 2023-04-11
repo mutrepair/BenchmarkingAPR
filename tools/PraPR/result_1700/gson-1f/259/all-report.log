@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/ParameterizedTypeHandlerMap.java
+	Line Number: 75
+	Block: 12
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for com/google/gson/ParameterizedTypeHandlerMap::getIndexOfAnOverriddenHandler
+	File Name: com/google/gson/ParameterizedTypeHandlerMap.java
+	Line Number: 75
+	Block: 12
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/google/gson/ParameterizedTypeHandlerMap.java
+	Line Number: 75
+	Block: 12
+	First Index: 39
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

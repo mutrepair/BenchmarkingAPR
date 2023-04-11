@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/15736/org/apache/commons/math3/complex/Complex.java	2022-10-31 19:48:00.211729203 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/complex/Complex.java	2022-12-26 15:13:55.653665869 -0600
+@@ -256,7 +256,7 @@
+             return NaN;
+         }
+ 
+-        if (divisor.isInfinite()) {
++        if (divisor.isInfinite() && !isInfinite()) {
+             return ZERO;
+         }
+ 

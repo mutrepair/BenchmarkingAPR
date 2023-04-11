@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Integer.valueOf(I)Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (Ljava/lang/String;)V
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 67
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Integer.valueOf(I)Ljava/lang/Integer; is replaced by an instantiation of type java.lang.Integer using (I)V
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 67
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to valueOf(I)Ljava/lang/Integer; with a call to valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 67
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to setOffset(Ljava/lang/Integer;)V with a call to setOffset(I)V
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to valueOf(I)Ljava/lang/Integer; with a call to valueOf(Ljava/lang/String;I)Ljava/lang/Integer;
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 67
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_2
+	Description: replaced call to setOffset(Ljava/lang/Integer;)V with a call to setOffset(I)V
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to setOffset with a call to setPivotYear
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setOffset(Ljava/lang/Integer;)V is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to setOffset(Ljava/lang/Integer;)V is guarded returning local position
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to setOffset(Ljava/lang/Integer;)V is guarded returning local limit
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to setOffset(Ljava/lang/Integer;)V is guarded returning field iMinFields
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to setOffset(Ljava/lang/Integer;)V is guarded returning field iMaxFields
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.joda.time.format.DateTimeParserBucket::setOffset(Ljava/lang/Integer;)V is guarded
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 66
+	Rank: 2
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Integer::valueOf
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 67
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/joda/time/format/DateTimeParserBucket::setOffset
+	File Name: org/joda/time/format/DateTimeFormatterBuilder.java
+	Line Number: 2294
+	Block: 72
+	First Index: 68
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

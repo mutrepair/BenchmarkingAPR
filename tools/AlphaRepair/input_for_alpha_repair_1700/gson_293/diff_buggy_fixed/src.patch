@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/293/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.771789272 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -115,7 +115,7 @@
+   }
+ 
+   public synchronized void makeUnmodifiable() {
+-    modifiable = true;
++    modifiable = false;
+   }
+ 
+   public synchronized T getHandlerFor(Type type) {

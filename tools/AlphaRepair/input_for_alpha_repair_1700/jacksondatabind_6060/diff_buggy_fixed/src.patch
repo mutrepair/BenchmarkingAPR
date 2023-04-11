@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/6060/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-10-31 19:47:46.763778405 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java	2022-12-26 15:13:52.497631769 -0600
+@@ -1194,7 +1194,7 @@
+         }
+         // the only non-standard thing is this:
+         if (deser == null) {
+-            if (false) {
++            if (type.isEnumType()) {
+                 return _createEnumKeyDeserializer(ctxt, type);
+             }
+             deser = StdKeyDeserializers.findStringBasedKeyDeserializer(config, type);

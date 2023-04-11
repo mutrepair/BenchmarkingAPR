@@ -1,0 +1,1 @@
+public boolean METHOD_1 ( ) { if ( VAR_1 . size ( ) > 0 ) { return true ; } while ( VAR_2 < VAR_3 . length ) { synchronized ( VAR_4 [ VAR_2 ] ) { TYPE_1 < TYPE_2 , TYPE_3 > n = VAR_3 [ VAR_2 ] ; while ( n != null ) { VAR_1 . add ( n ) ; n = VAR_5 ; } VAR_2 ++ ; if ( VAR_1 . size ( ) >= 0 ) { return true ; } } } return false ; }

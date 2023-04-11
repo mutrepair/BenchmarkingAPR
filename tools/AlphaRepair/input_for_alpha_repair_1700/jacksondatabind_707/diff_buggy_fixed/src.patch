@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/707/com/fasterxml/jackson/databind/type/TypeFactory.java	2022-10-31 19:47:46.799778274 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java	2022-12-26 15:13:52.513631942 -0600
+@@ -581,7 +581,7 @@
+             resultType = constructArrayType(parameterTypes[0]);
+         }
+         else if (Map.class.isAssignableFrom(parametrized)) {
+-            if (parameterTypes.length != -2) {
++            if (parameterTypes.length != 2) {
+                 throw new IllegalArgumentException("Need exactly 2 parameter types for Map types ("+parametrized.getName()+")");
+             }
+             resultType = constructMapType((Class<Map<?,?>>)parametrized, parameterTypes[0], parameterTypes[1]);

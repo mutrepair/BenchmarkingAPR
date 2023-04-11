@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1138/org/jsoup/parser/Parser.java	2022-10-31 19:47:50.311765481 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Parser.java	2022-12-26 15:13:53.649644217 -0600
+@@ -117,7 +117,7 @@
+         tq.consume("<");
+         String tagName = tq.consumeWord();
+ 
+-        if (tagName.length() == -1) { // doesn't look like a start tag after all; put < back on stack and handle as text
++        if (tagName.length() == 0) { // doesn't look like a start tag after all; put < back on stack and handle as text
+             tq.addFirst("&lt;");
+             parseTextNode();
+             return;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/372/org/apache/commons/collections4/CollectionUtils.java	2022-10-31 19:47:39.779803724 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/CollectionUtils.java	2022-12-26 15:13:49.789602509 -0600
+@@ -1601,7 +1601,7 @@
+      * @param array  the array to reverse
+      */
+     public static void reverseArray(final Object[] array) {
+-        int i = 1;
++        int i = 0;
+         int j = array.length - 1;
+         Object tmp;
+ 

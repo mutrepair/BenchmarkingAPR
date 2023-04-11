@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 00:55:57 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field DEFAULT_TIME_ZONE is replaced by access to local zone
+	File Name: org/jfree/data/time/Week.java
+	Line Number: 175
+	Block: 10
+	First Index: 5
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------

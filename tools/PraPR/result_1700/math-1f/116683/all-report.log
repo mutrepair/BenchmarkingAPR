@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local negate is replaced by local leftPlane to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 579
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local leftPlane is replaced by local negate to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 580
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local negate is replaced by access to field RECOMPUTE_TABLES_AT_RUNTIME
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 579
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local leftPlane is replaced by access to field RECOMPUTE_TABLES_AT_RUNTIME
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 580
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 581
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 582
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 582
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 2567
+	Block: 388
+	First Index: 582
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

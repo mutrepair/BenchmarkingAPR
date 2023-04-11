@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/1269/com/google/debugging/sourcemap/SourceMapGeneratorV1.java	2022-10-31 19:47:37.611811551 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/SourceMapGeneratorV1.java	2022-10-29 12:08:34.309872293 -0500
+@@ -591,7 +591,7 @@
+       int nextCol = getAdjustedCol(m.endPosition);
+       // If this anything remaining in this mapping beyond the
+       // current line and column position, write it out now.
+-      if (line <= nextLine || (line == nextLine && col < nextCol)) {
++      if (line < nextLine || (line == nextLine && col < nextCol)) {
+         visit(v, m, nextLine, nextCol);
+       }
+     }

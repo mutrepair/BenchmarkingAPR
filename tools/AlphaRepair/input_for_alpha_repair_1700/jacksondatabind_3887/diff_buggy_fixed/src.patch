@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/3887/com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.java	2022-10-31 19:47:46.671778739 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/impl/JsonSerializerMap.java	2022-12-26 15:13:52.509631900 -0600
+@@ -22,7 +22,7 @@
+         Bucket[] buckets = new Bucket[size];
+         for (Map.Entry<TypeKey,JsonSerializer<Object>> entry : serializers.entrySet()) {
+             TypeKey key = entry.getKey();
+-            int index = key.hashCode() ^ hashMask;
++            int index = key.hashCode() & hashMask;
+             buckets[index] = new Bucket(buckets[index], key, entry.getValue());
+         }
+         _buckets = buckets;

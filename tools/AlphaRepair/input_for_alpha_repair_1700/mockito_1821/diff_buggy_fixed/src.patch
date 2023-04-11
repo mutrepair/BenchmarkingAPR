@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1821/org/mockito/internal/stubbing/StubberImpl.java	2022-10-31 19:48:05.543709535 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/stubbing/StubberImpl.java	2022-12-26 15:13:56.657676716 -0600
+@@ -27,7 +27,7 @@
+         if (mock == null) {
+             reporter.nullPassedToWhenMethod();
+         } else {
+-            if (!false) {
++            if (!mockUtil.isMock(mock)) {
+                 reporter.notAMockPassedToWhenMethod();
+             }
+         }

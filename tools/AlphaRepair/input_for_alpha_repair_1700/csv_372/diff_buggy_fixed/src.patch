@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/372/org/apache/commons/csv/ExtendedBufferedReader.java	2022-10-31 19:47:42.219794897 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	2022-12-26 15:13:50.881614309 -0600
+@@ -122,7 +122,7 @@
+     public String readLine() throws IOException {
+         String line = super.readLine();
+ 
+-        if (true) {
++        if (line != null) {
+             if (line.length() > 0) {
+                 lastChar = line.charAt(line.length() - 1);
+             }

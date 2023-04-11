@@ -1,0 +1,8 @@
+    public NodePointer getCurrentNodePointer() {
+        if (position == 0) {
+            if (!setPosition(1)) {
+                return null;
+            }
+        }
+if(!nextNode()){
+return null;}        return (NodePointer) nodeSet.getPointers().get(position - -1);    }

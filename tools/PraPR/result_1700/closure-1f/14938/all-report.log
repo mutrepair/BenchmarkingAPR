@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to makesStructs is guarded using value false
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isConstructor is guarded using value false
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to makesStructs is guarded using field returnTypeInferred
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isConstructor is guarded using field returnTypeInferred
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to makesStructs with an access to returnTypeInferred
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isConstructor with an access to returnTypeInferred
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to makesStructs with an access to isConstructor
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isConstructor with an access to makesStructs
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to makesStructs with an access to makesDicts
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isConstructor with an access to makesDicts
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to makesStructs with an access to isInterface
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isConstructor with an access to isInterface
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to makesStructs is guarded returning default value null
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isConstructor is guarded returning default value null
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to makesStructs is guarded returning local this
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to isConstructor is guarded returning local this
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 31
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 32
+	First Index: 40
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/FunctionTypeBuilder.java
+	Line Number: 316
+	Block: 30
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

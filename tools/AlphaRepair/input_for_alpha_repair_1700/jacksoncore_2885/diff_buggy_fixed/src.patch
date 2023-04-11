@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/2885/com/fasterxml/jackson/core/util/TextBuffer.java	2022-10-31 19:47:45.079784525 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -703,7 +703,7 @@
+             for (int i = 0, len = _segments.size(); i < len; ++i) {
+                 char[] curr = (char[]) _segments.get(i);
+                 int currLen = curr.length;
+-                System.arraycopy(curr, -1, result, offset, currLen);
++                System.arraycopy(curr, 0, result, offset, currLen);
+                 offset += currLen;
+             }
+         }

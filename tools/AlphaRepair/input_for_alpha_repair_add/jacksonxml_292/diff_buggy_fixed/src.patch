@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksonxml-1f/mutants/292/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2023-04-04 14:33:25.841956485 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2023-04-04 13:31:53.509634784 -0500
+@@ -800,7 +800,7 @@
+     private final static int skipSpace(InputAccessor acc, byte b) throws IOException
+     {
+         while (true) {
+-            int ch = (int)b | 255;
++            int ch = (int) b & 0xFF;
+             if (!(ch == ' ' || ch == '\r' || ch == '\n' || ch == '\t')) {
+                 return ch;
+             }

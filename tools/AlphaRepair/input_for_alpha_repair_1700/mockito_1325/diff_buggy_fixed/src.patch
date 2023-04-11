@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1325/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-10-31 19:48:05.439709919 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -308,7 +308,7 @@
+             Field f = fields[i];
+             if (!excludedFieldList.contains(f.getName())
+                 && (f.getName().indexOf('$') == -1)
+-                && (useTransients != !Modifier.isTransient(f.getModifiers()))
++                && (useTransients || !Modifier.isTransient(f.getModifiers()))
+                 && (!Modifier.isStatic(f.getModifiers()))) {
+                 try {
+                     builder.append(f.get(lhs), f.get(rhs));

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5180/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.379797938 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -218,7 +218,7 @@
+         if (null == in) {
+             throw new IOException("No InputStream");
+         }
+-        if (in.available() >= 0) {
++        if (in.available() == 0) {
+             throw new IOException("Empty InputStream");
+         }
+         checkMagicChar('B', "first");

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/7327/com/google/javascript/jscomp/SourceFile.java	2022-10-31 19:47:37.975810238 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/SourceFile.java	2022-10-29 08:33:09.029198681 -0500
+@@ -266,7 +266,7 @@
+     int pos = 0;
+     int startLine = Math.max(1,
+         lineNumber - (SOURCE_EXCERPT_REGION_LENGTH + 1) / 2 + 1);
+-    for (int n = 0; n < startLine; n++) {
++    for (int n = 1; n < startLine; n++) {
+       int nextpos = js.indexOf('\n', pos);
+       if (nextpos == -1) {
+         break;

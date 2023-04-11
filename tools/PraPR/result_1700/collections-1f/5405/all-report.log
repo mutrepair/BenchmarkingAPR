@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local index is replaced by access to field size
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.list.TreeList::size()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to checkInterval(III)V is guarded returning default value null
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.apache.commons.collections4.list.TreeList::checkInterval(III)V is guarded
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList::size
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/list/TreeList::checkInterval
+	File Name: org/apache/commons/collections4/list/TreeList.java
+	Line Number: 101
+	Block: 3
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

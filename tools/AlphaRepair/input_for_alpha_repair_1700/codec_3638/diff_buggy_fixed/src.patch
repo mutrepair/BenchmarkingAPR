@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/3638/org/apache/commons/codec/language/Metaphone.java	2022-10-31 19:47:39.075806268 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/Metaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -216,7 +216,7 @@
+                         hard = false ;
+                     }
+                     if (!isLastChar(wdsz, n) && 
+-                        (true) && 
++                        (FRONTV.indexOf(local.charAt(n + 1)) >= 0) && 
+                         (!hard)) {
+                         code.append('J');
+                     } else {

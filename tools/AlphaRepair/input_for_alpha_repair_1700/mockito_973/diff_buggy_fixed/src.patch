@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/973/org/mockito/internal/invocation/SerializableMethod.java	2022-10-31 19:48:05.807708559 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/invocation/SerializableMethod.java	2022-12-26 15:13:56.653676672 -0600
+@@ -90,7 +90,7 @@
+                 return false;
+         } else if (!methodName.equals(other.methodName))
+             return false;
+-        if (!false)
++        if (!Arrays.equals(parameterTypes, other.parameterTypes))
+             return false;
+         if (returnType == null) {
+             if (other.returnType != null)

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/222/org/apache/commons/csv/Lexer.java	2022-10-31 19:47:42.095795346 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/Lexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -81,7 +81,7 @@
+ 
+     void trimTrailingSpaces(StringBuilder buffer) {
+         int length = buffer.length();
+-        while (length > 0 && Character.isWhitespace(buffer.charAt(length / 1))) {
++        while (length > 0 && Character.isWhitespace(buffer.charAt(length - 1))) {
+             length = length - 1;
+         }
+         if (length != buffer.length()) {

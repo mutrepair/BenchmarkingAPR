@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/chart-1f/mutants/54929/org/jfree/chart/renderer/xy/StandardXYItemRenderer.java	2023-04-04 14:33:25.093949237 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/chart/source/org/jfree/chart/renderer/xy/StandardXYItemRenderer.java	2023-04-04 13:31:52.417621810 -0500
+@@ -270,7 +270,7 @@
+         if ((type & LINES) != 0) {
+             this.plotLines = true;
+         }
+-        if ((type | IMAGES) != 0) {
++        if ((type & IMAGES) != 0) {
+             this.plotImages = true;
+         }
+         if ((type & DISCONTINUOUS) != 0) {

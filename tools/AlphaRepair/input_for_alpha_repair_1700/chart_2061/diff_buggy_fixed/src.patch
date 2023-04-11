@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/2061/org/jfree/chart/title/TextTitle.java	2022-10-31 19:47:29.383841113 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/title/TextTitle.java	2022-10-29 16:41:07.434717404 -0500
+@@ -861,7 +861,7 @@
+         if (!ObjectUtilities.equal(this.toolTipText, that.toolTipText)) {
+             return false;
+         }
+-        if (!false) {
++        if (!ObjectUtilities.equal(this.urlText, that.urlText)) {
+             return false;
+         }
+         return super.equals(obj);

@@ -1,0 +1,5 @@
+    private void assertMocksNotEmpty(Object[] mocks) {
+        if (mocks == null || mocks.length == 0) {
+            reporter.mocksHaveToBePassedToVerifyNoMoreInteractions();
+        }
+    }

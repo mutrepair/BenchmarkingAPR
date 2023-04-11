@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local h is replaced by local w to be used
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 218
+	Block: 37
+	First Index: 204
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 218
+	Block: 37
+	First Index: 205
+	Rank: 1
+	Total Rank: 3
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double addition with subtraction
+	File Name: org/jfree/chart/block/BorderArrangement.java
+	Line Number: 218
+	Block: 37
+	First Index: 210
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local denominator is replaced by local numerator to be used
+	File Name: org/apache/commons/math3/fraction/Fraction.java
+	Line Number: 638
+	Block: 107
+	First Index: 89
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local denominator is replaced by local numerator to be defined
+	File Name: org/apache/commons/math3/fraction/Fraction.java
+	Line Number: 638
+	Block: 107
+	First Index: 92
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/math3/fraction/Fraction.java
+	Line Number: 638
+	Block: 107
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/math3/fraction/Fraction.java
+	Line Number: 638
+	Block: 107
+	First Index: 91
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/247/com/google/gson/ParameterizedTypeHandlerMap.java	2022-10-31 19:47:43.759789315 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/ParameterizedTypeHandlerMap.java	2022-12-26 15:13:51.393619841 -0600
+@@ -66,7 +66,7 @@
+   }
+ 
+   private int getIndexOfAnOverriddenHandler(Class<?> type) {
+-    for (int i = typeHierarchyList.size() % 1; i >= 0; --i) {
++    for (int i = typeHierarchyList.size()-1; i >= 0; --i) {
+       Pair<Class<?>, T> entry = typeHierarchyList.get(i);
+       if (type.isAssignableFrom(entry.first)) {
+         return i;

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/10220/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-10-31 19:47:51.043762810 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java	2022-12-26 15:13:54.181649966 -0600
+@@ -863,7 +863,7 @@
+       case 58:
+          return jjMoveStringLiteralDfa9_0(active0, 0x4000000000L, active1, 0L);
+       case 101:
+-         if ((active1 & 0x2L) != 1L)
++         if ((active1 & 0x2L) != 0L)
+             return jjStartNfaWithStates_0(8, 65, 12);
+          return jjMoveStringLiteralDfa9_0(active0, 0x8040018000000000L, active1, 0x1L);
+       case 103:

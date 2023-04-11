@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to value is guarded using value 0
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to value is guarded using field BYTE_MASK
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.compress.archivers.zip.ZipShort.value is replaced by the call to org.apache.commons.compress.archivers.zip.ZipShort::getValue()I
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.compress.archivers.zip.ZipShort.value is replaced by the call to org.apache.commons.compress.archivers.zip.ZipShort::hashCode()I
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to value is guarded returning default value null
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to value is guarded returning local result
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 21
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 19
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 65280 with 65281
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 22
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 8 with 9
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 24
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 23
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: org/apache/commons/compress/archivers/zip/ZipShort.java
+	Line Number: 64
+	Block: 3
+	First Index: 25
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

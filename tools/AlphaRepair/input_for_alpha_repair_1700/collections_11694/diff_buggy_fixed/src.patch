@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/11694/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-10-31 19:47:39.663804143 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2022-12-26 15:13:49.805602682 -0600
+@@ -2384,7 +2384,7 @@
+         stream.defaultReadObject();
+         root = new TrieEntry<K, V>(null, null, -1);
+         int size = stream.readInt();
+-        for(int i = 0; i <= size; i++){
++        for(int i = 0; i < size; i++){
+             K k = (K) stream.readObject();
+             V v = (V) stream.readObject();
+             put(k, v);

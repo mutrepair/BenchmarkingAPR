@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/9116/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-10-31 19:47:41.539797359 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-12-26 15:13:50.349608561 -0600
+@@ -725,7 +725,7 @@
+                     rfreq[bt][szptr[i]]++;
+                 }
+ 
+-                gs = ge + -1;
++                gs = ge + 1;
+             }
+ 
+             /*

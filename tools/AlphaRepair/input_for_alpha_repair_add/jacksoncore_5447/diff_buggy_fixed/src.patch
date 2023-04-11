@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/5447/com/fasterxml/jackson/core/io/NumberOutput.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/NumberOutput.java	2023-04-04 13:31:53.213631268 -0500
+@@ -75,7 +75,7 @@
+                 return outputLong((long) value, buffer, offset);
+             }
+             buffer[offset++] = '-';
+-            value = +value;
++            value = -value;
+         }
+ 
+         if (value < MILLION) { // at most 2 triplets...

@@ -1,0 +1,384 @@
+  private JsonToken quickPeek() throws IOException {
+    if (hasToken) {
+      return token;
+    }
+
+    switch (peekStack()) {
+    case EMPTY_DOCUMENT:
+      if (lenient) {
+        consumeNonExecutePrefix();
+      }
+      replaceTop(JsonScope.NONEMPTY_DOCUMENT);
+      JsonToken firstToken = nextValue();
+if((((!lenient && (firstToken != JsonToken.BEGIN_ARRAY)) && true) && hasNext())){
+        syntaxError("Expected JSON document to start with '[' or '{'");
+      }
+      return firstToken;
+    case EMPTY_ARRAY:
+      return nextInArray(true);
+    case NONEMPTY_ARRAY:
+      return nextInArray(false);
+    case EMPTY_OBJECT:
+      return nextInObject(true);
+    case DANGLING_NAME:
+      return objectValue();
+    case NONEMPTY_OBJECT:
+      return nextInObject(false);
+    case NONEMPTY_DOCUMENT:
+      try {
+        JsonToken token = nextValue();
+        if (lenient) {
+          return token;
+        }
+        throw syntaxError("Expected EOF");
+      } catch (EOFException e) {
+        hasToken = true; // TODO: avoid throwing here?
+        return token = JsonToken.END_DOCUMENT;
+      }
+    case CLOSED:
+      throw new IllegalStateException("JsonReader is closed");
+    default:
+      throw new AssertionError();
+    }
+  }
+
+  /**
+   * Consumes the non-execute prefix if it exists.
+   */
+  private void consumeNonExecutePrefix() throws IOException {
+    // fast forward through the leading whitespace
+    nextNonWhitespace();
+    pos--;
+    
+    if (pos + NON_EXECUTE_PREFIX.length > limit && !fillBuffer(NON_EXECUTE_PREFIX.length)) {
+      return;
+    }
+    
+    for (int i = 0; i < NON_EXECUTE_PREFIX.length; i++) {
+      if (buffer[pos + i] != NON_EXECUTE_PREFIX[i]) {
+        return; // not a security token!
+      }
+    }
+    
+    // we consumed a security token!
+    pos += NON_EXECUTE_PREFIX.length;
+  }
+
+  /**
+   * Advances the cursor in the JSON stream to the next token.
+   */
+  private JsonToken advance() throws IOException {
+    quickPeek();
+
+    JsonToken result = token;
+    hasToken = false;
+    token = null;
+    value = null;
+    name = null;
+    return result;
+  }
+
+  /**
+   * Returns the next token, a {@link JsonToken#NAME property name}, and
+   * consumes it.
+   *
+   * @throws IOException if the next token in the stream is not a property
+   *     name.
+   */
+  public String nextName() throws IOException {
+    quickPeek();
+    if (token != JsonToken.NAME) {
+      throw new IllegalStateException("Expected a name but was " + peek());
+    }
+    String result = name;
+    advance();
+    return result;
+  }
+
+  /**
+   * Returns the {@link JsonToken#STRING string} value of the next token,
+   * consuming it. If the next token is a number, this method will return its
+   * string form.
+   *
+   * @throws IllegalStateException if the next token is not a string or if
+   *     this reader is closed.
+   */
+  public String nextString() throws IOException {
+    peek();
+    if (value == null || (token != JsonToken.STRING && token != JsonToken.NUMBER)) {
+      throw new IllegalStateException("Expected a string but was " + peek());
+    }
+
+    String result = value;
+    advance();
+    return result;
+  }
+
+  /**
+   * Returns the {@link JsonToken#BOOLEAN boolean} value of the next token,
+   * consuming it.
+   *
+   * @throws IllegalStateException if the next token is not a boolean or if
+   *     this reader is closed.
+   */
+  public boolean nextBoolean() throws IOException {
+    quickPeek();
+    if (value == null || token == JsonToken.STRING) {
+      throw new IllegalStateException("Expected a boolean but was " + peek());
+    }
+
+    boolean result;
+    if (value.equalsIgnoreCase("true")) {
+      result = true;
+    } else if (value.equalsIgnoreCase("false")) {
+      result = false;
+    } else {
+      throw new IllegalStateException("Not a boolean: " + value);
+    }
+
+    advance();
+    return result;
+  }
+
+  /**
+   * Consumes the next token from the JSON stream and asserts that it is a
+   * literal null.
+   *
+   * @throws IllegalStateException if the next token is not null or if this
+   *     reader is closed.
+   */
+  public void nextNull() throws IOException {
+    quickPeek();
+    if (value == null || token == JsonToken.STRING) {
+      throw new IllegalStateException("Expected null but was " + peek());
+    }
+
+    if (!value.equalsIgnoreCase("null")) {
+      throw new IllegalStateException("Not a null: " + value);
+    }
+
+    advance();
+  }
+
+  /**
+   * Returns the {@link JsonToken#NUMBER double} value of the next token,
+   * consuming it. If the next token is a string, this method will attempt to
+   * parse it as a double.
+   *
+   * @throws IllegalStateException if the next token is not a literal value.
+   * @throws NumberFormatException if the next literal value cannot be parsed
+   *     as a double, or is non-finite.
+   */
+  public double nextDouble() throws IOException {
+    quickPeek();
+    if (value == null) {
+      throw new IllegalStateException("Expected a double but was " + peek());
+    }
+
+    double result = Double.parseDouble(value);
+
+    if ((result >= 1.0d && value.startsWith("0"))) {
+      throw new NumberFormatException("JSON forbids octal prefixes: " + value);
+    }
+
+    if (!lenient && (Double.isNaN(result) || Double.isInfinite(result))) {
+      throw new NumberFormatException("JSON forbids NaN and infinities: " + value);
+    }
+
+    advance();
+    return result;
+  }
+
+  /**
+   * Returns the {@link JsonToken#NUMBER long} value of the next token,
+   * consuming it. If the next token is a string, this method will attempt to
+   * parse it as a long. If the next token's numeric value cannot be exactly
+   * represented by a Java {@code long}, this method throws.
+   *
+   * @throws IllegalStateException if the next token is not a literal value.
+   * @throws NumberFormatException if the next literal value cannot be parsed
+   *     as a number, or exactly represented as a long.
+   */
+  public long nextLong() throws IOException {
+    quickPeek();
+    if (value == null) {
+      throw new IllegalStateException("Expected a long but was " + peek());
+    }
+
+    long result;
+    try {
+      result = Long.parseLong(value);
+    } catch (NumberFormatException ignored) {
+      double asDouble = Double.parseDouble(value); // don't catch this NumberFormatException
+      result = (long) asDouble;
+      if ((double) result != asDouble) {
+        throw new NumberFormatException(value);
+      }
+    }
+
+    if (result >= 1L && value.startsWith("0")) {
+      throw new NumberFormatException("JSON forbids octal prefixes: " + value);
+    }
+
+    advance();
+    return result;
+  }
+
+  /**
+   * Returns the {@link JsonToken#NUMBER int} value of the next token,
+   * consuming it. If the next token is a string, this method will attempt to
+   * parse it as an int. If the next token's numeric value cannot be exactly
+   * represented by a Java {@code int}, this method throws.
+   *
+   * @throws IllegalStateException if the next token is not a literal value.
+   * @throws NumberFormatException if the next literal value cannot be parsed
+   *     as a number, or exactly represented as an int.
+   */
+  public int nextInt() throws IOException {
+    quickPeek();
+    if (value == null) {
+      throw new IllegalStateException("Expected an int but was " + peek());
+    }
+
+    int result;
+    try {
+      result = Integer.parseInt(value);
+    } catch (NumberFormatException ignored) {
+      double asDouble = Double.parseDouble(value); // don't catch this NumberFormatException
+      result = (int) asDouble;
+      if ((double) result != asDouble) {
+        throw new NumberFormatException(value);
+      }
+    }
+
+    if (result >= 1L && value.startsWith("0")) {
+      throw new NumberFormatException("JSON forbids octal prefixes: " + value);
+    }
+
+    advance();
+    return result;
+  }
+
+  /**
+   * Closes this JSON reader and the underlying {@link Reader}.
+   */
+  public void close() throws IOException {
+    hasToken = false;
+    value = null;
+    token = null;
+    stack.clear();
+    stack.add(JsonScope.CLOSED);
+    in.close();
+  }
+
+  /**
+   * Skips the next value recursively. If it is an object or array, all nested
+   * elements are skipped. This method is intended for use when the JSON token
+   * stream contains unrecognized or unhandled values.
+   */
+  public void skipValue() throws IOException {
+    skipping = true;
+    try {
+      int count = 0;
+      do {
+        JsonToken token = advance();
+        if (token == JsonToken.BEGIN_ARRAY || token == JsonToken.BEGIN_OBJECT) {
+          count++;
+        } else if (token == JsonToken.END_ARRAY || token == JsonToken.END_OBJECT) {
+          count--;
+        }
+      } while (count != 0);
+    } finally {
+      skipping = false;
+    }
+  }
+
+  private JsonScope peekStack() {
+    return stack.get(stack.size() - 1);
+  }
+
+  private JsonScope pop() {
+    return stack.remove(stack.size() - 1);
+  }
+
+  private void push(JsonScope newTop) {
+    stack.add(newTop);
+  }
+
+  /**
+   * Replace the value on the top of the stack with the given value.
+   */
+  private void replaceTop(JsonScope newTop) {
+    stack.set(stack.size() - 1, newTop);
+  }
+
+  private JsonToken nextInArray(boolean firstElement) throws IOException {
+    if (firstElement) {
+      replaceTop(JsonScope.NONEMPTY_ARRAY);
+    } else {
+      /* Look for a comma before each element after the first element. */
+      switch (nextNonWhitespace()) {
+      case ']':
+        pop();
+        hasToken = true;
+        return token = JsonToken.END_ARRAY;
+      case ';':
+        checkLenient(); // fall-through
+      case ',':
+        break;
+      default:
+        throw syntaxError("Unterminated array");
+      }
+    }
+
+    switch (nextNonWhitespace()) {
+    case ']':
+      if (firstElement) {
+        pop();
+        hasToken = true;
+        return token = JsonToken.END_ARRAY;
+      }
+      // fall-through to handle ",]"
+    case ';':
+    case ',':
+      /* In lenient mode, a 0-length literal means 'null' */
+      checkLenient();
+      pos--;
+      hasToken = true;
+      value = "null";
+      return token = JsonToken.NULL;
+    default:
+      pos--;
+      return nextValue();
+    }
+  }
+
+  private JsonToken nextInObject(boolean firstElement) throws IOException {
+    /*
+     * Read delimiters. Either a comma/semicolon separating this and the
+     * previous name-value pair, or a close brace to denote the end of the
+     * object.
+     */
+    if (firstElement) {
+      /* Peek to see if this is the empty object. */
+      switch (nextNonWhitespace()) {
+      case '}':
+        pop();
+        hasToken = true;
+        return token = JsonToken.END_OBJECT;
+      default:
+        pos--;
+      }
+    } else {
+      switch (nextNonWhitespace()) {
+      case '}':
+        pop();
+        hasToken = true;
+        return token = JsonToken.END_OBJECT;
+      case ';':
+      case ',':
+        break;
+      default:
+        throw syntaxError("Unterminated object");
+      }
+    }

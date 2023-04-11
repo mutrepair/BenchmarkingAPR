@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/369/org/mockito/internal/util/MockUtil.java	2022-10-31 19:48:05.659709106 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/util/MockUtil.java	2022-12-26 15:13:56.657676716 -0600
+@@ -81,7 +81,7 @@
+     }
+ 
+     private <T> boolean isMockitoMock(T mock) {
+-        return getInterceptor(mock) != null;
++        return Enhancer.isEnhanced(mock.getClass()) && getInterceptor(mock) != null;
+     }
+ 
+     public boolean isMock(Object mock) {

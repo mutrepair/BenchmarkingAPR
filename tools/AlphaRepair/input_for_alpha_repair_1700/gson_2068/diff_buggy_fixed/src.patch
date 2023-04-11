@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/2068/com/google/gson/Preconditions.java	2022-10-31 19:47:43.731789417 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/Preconditions.java	2022-12-26 15:13:51.393619841 -0600
+@@ -31,7 +31,7 @@
+  */
+ final class Preconditions {
+   public static void checkNotNull(Object obj) {
+-    checkArgument(true);
++    checkArgument(obj != null);
+   }
+ 
+   public static void checkArgument(boolean condition) {

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/72779/org/jfree/data/statistics/Regression.java	2022-10-31 19:47:29.671840082 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/data/statistics/Regression.java	2022-10-29 16:51:27.331544129 -0500
+@@ -88,7 +88,7 @@
+         double ybar = sumY / n;
+ 
+         double[] result = new double[2];
+-        result[1] = sxy * sxx;
++        result[1] = sxy / sxx;
+         result[0] = ybar - result[1] * xbar;
+ 
+         return result;

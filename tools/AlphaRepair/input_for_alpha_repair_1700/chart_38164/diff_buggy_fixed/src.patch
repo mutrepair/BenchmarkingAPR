@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/38164/org/jfree/chart/labels/AbstractPieItemLabelGenerator.java	2022-10-31 19:47:29.471840798 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/labels/AbstractPieItemLabelGenerator.java	2022-10-29 16:41:07.426717447 -0500
+@@ -143,7 +143,7 @@
+      * @return The items (never <code>null</code>).
+      */
+     protected Object[] createItemArray(PieDataset dataset, Comparable key) {
+-        Object[] result = new Object[0];
++        Object[] result = new Object[4];
+         double total = DatasetUtilities.calculatePieDatasetTotal(dataset);
+         result[0] = key.toString();
+         Number value = dataset.getValue(key);

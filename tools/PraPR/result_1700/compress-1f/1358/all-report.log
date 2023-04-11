@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuffer.insert(ILjava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuffer.insert(ILjava/lang/String;)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/String;)V
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; with a call to insert(I[CII)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; with a call to insert(ILjava/lang/Object;)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; with a call to insert(IC)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; with a call to insert(IJ)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_23
+	Description: replaced call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; with a call to insert(IJ)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: NON_VIABLE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local tmp is replaced a call tmp.reverse()
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 66
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::insert(ILjava/lang/String;)Ljava/lang/StringBuffer; is guarded using default value null
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to insert(ILjava/lang/String;)Ljava/lang/StringBuffer; is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 67
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::insert
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuffer::insert with receiver
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java
+	Line Number: 381
+	Block: 61
+	First Index: 69
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------

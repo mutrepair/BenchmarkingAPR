@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/65286/org/jfree/chart/util/LineUtilities.java	2022-10-31 19:47:29.579840411 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/util/LineUtilities.java	2022-10-29 16:51:27.331544129 -0500
+@@ -117,7 +117,7 @@
+                 }
+                 else if ((f2 & Rectangle2D.OUT_RIGHT) == Rectangle2D.OUT_RIGHT
+                         && dx != 0.0) {
+-                    y2 = y2 + (maxX - x2) / dy / dx;
++                    y2 = y2 + (maxX - x2) * dy / dx;
+                     x2 = maxX;
+                 }
+                 else if ((f2 & Rectangle2D.OUT_BOTTOM) == Rectangle2D.OUT_BOTTOM

@@ -1,0 +1,10 @@
+beam: 100
+clearml: false
+datadir: RAW_DATA_DIR_PATH/preprocessed
+modelpath: NPR4J_PATH/models/CoCoNut_Trained/MODEL_NAME/checkpoint_best.pt
+nbest: 100
+outputfile: RAW_DATA_DIR_PATH/prediction/CoCoNut-VERSION.pred
+source: buggy
+target: fix
+taskname: CoCoNut
+use_context: true

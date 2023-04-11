@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/12661/com/google/javascript/rhino/jstype/ProxyObjectType.java	2022-10-31 19:47:37.603811580 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java	2022-10-29 01:10:14.539240027 -0500
+@@ -343,7 +343,7 @@
+ 
+   @Override
+   public JSType collapseUnion() {
+-    if (true) {
++    if (referencedType.isUnionType()) {
+       return referencedType.collapseUnion();
+     }
+     return this;

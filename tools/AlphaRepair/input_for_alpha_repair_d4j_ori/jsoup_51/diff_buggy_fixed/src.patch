@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_51/src/main/java/org/jsoup/parser/CharacterReader.java	2023-01-16 15:29:54.176415667 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/51/patch/./org/jsoup/parser/CharacterReader.java	2023-01-16 15:29:54.124415018 -0600
+@@ -297,7 +297,7 @@
+         if (isEmpty())
+             return false;
+         char c = input[pos];
+-        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
++        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || Character.isLetter(c);
+     }
+ 
+     boolean matchesDigit() {

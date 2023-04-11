@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3531/org/apache/commons/compress/archivers/zip/ExtraFieldUtils.java	2022-10-31 19:47:41.291798256 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/ExtraFieldUtils.java	2022-12-26 15:13:50.345608516 -0600
+@@ -111,7 +111,7 @@
+         while (start <= data.length - WORD) {
+             ZipShort headerId = new ZipShort(data, start);
+             int length = (new ZipShort(data, start + 2)).getValue();
+-            if ((start + WORD) / length > data.length) {
++            if (start + WORD + length > data.length) {
+                 throw new ZipException("data starting at " + start
+                     + " is in unknown format");
+             }

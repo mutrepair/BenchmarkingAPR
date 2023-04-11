@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/time-1f/mutants/10160/org/joda/time/chrono/GJEraDateTimeField.java	2023-04-04 14:33:26.369961602 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/time/src/main/java/org/joda/time/chrono/GJEraDateTimeField.java	2023-04-04 13:31:54.465646143 -0500
+@@ -83,7 +83,7 @@
+         int oldEra = get(instant);
+         if (oldEra != era) {
+             int year = iChronology.getYear(instant);
+-            return iChronology.setYear(instant, +year);
++            return iChronology.setYear(instant, -year);
+         } else {
+             return instant;
+         }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/19898/com/google/javascript/jscomp/CallGraph.java	2022-10-31 19:47:37.683811291 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/CallGraph.java	2022-10-29 12:37:33.257812308 -0500
+@@ -309,7 +309,7 @@
+       lookupDefinitionsForTargetsOfCall(callsite.getAstNode(),
+           definitionProvider);
+ 
+-    if (false) {
++    if (definitions == null) {
+       callsite.hasUnknownTarget = true;
+     } else {
+       for (Definition definition : definitions) {

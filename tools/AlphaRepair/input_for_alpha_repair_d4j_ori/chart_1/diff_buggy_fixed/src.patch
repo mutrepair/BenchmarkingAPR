@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/chart_1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2023-01-16 15:29:03.879787566 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/chart/1/patch/./org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2023-01-16 15:29:03.831786967 -0600
+@@ -1794,7 +1794,7 @@
+         }
+         int index = this.plot.getIndexOf(this);
+         CategoryDataset dataset = this.plot.getDataset(index);
+-        if (dataset != null) {
++        if (dataset == null) {
+             return result;
+         }
+         int seriesCount = dataset.getRowCount();

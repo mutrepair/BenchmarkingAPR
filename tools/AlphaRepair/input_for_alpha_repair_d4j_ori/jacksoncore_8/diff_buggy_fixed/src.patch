@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksoncore_8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	2023-01-16 15:29:38.704222454 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksoncore/8/patch/./com/fasterxml/jackson/core/util/TextBuffer.java	2023-01-16 15:29:38.672222055 -0600
+@@ -304,7 +304,7 @@
+             return (_resultArray = _resultString.toCharArray());
+         }
+         // Nope; but does it fit in just one segment?
+-        if (!_hasSegments)  return _currentSegment;
++        if (!_hasSegments && _currentSegment != null)  return _currentSegment;
+         // Nope, need to have/create a non-segmented array and return it
+         return contentsAsArray();
+     }

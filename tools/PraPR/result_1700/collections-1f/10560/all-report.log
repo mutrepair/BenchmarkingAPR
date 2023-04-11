@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Set::size()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 5
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 29
+	Rank: 3
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 5
+	First Index: 32
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 29
+	Rank: 3
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 5
+	First Index: 32
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Set::size
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 28
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 5
+	First Index: 31
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 29
+	Rank: null
+	Total Rank: 7
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 4
+	First Index: 29
+	Rank: 3
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/collections4/set/ListOrderedSet.java
+	Line Number: 84
+	Block: 5
+	First Index: 32
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

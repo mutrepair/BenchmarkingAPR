@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/96034/org/apache/commons/math3/special/Erf.java	2022-10-31 19:48:00.607727746 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/special/Erf.java	2022-12-26 15:13:55.681666171 -0600
+@@ -182,7 +182,7 @@
+             p =   1.8239629214389227755e-08 + p * w;
+             p =   1.5027403968909827627e-06 + p * w;
+             p =   -4.013867526981545969e-06 + p * w;
+-            p =   2.9234449089955446044e-06 + p - w;
++            p =   2.9234449089955446044e-06 + p * w;
+             p =   1.2475304481671778723e-05 + p * w;
+             p =  -4.7318229009055733981e-05 + p * w;
+             p =   6.8284851459573175448e-05 + p * w;

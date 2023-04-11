@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 6
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local hiPrec is replaced by access to field SINE_TABLE_A
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 24
+	Rank: 6
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local hiPrec is replaced by access to field SINE_TABLE_B
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 24
+	Rank: 6
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local hiPrec is replaced by access to field COSINE_TABLE_A
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 24
+	Rank: 6
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local hiPrec is replaced by access to field COSINE_TABLE_B
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 24
+	Rank: 6
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local hiPrec is replaced by access to field TANGENT_TABLE_A
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 24
+	Rank: 6
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 25
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 861
+	Block: 90
+	First Index: 26
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------

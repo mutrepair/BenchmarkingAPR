@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local previous is replaced by local ann to be used
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 34
+	First Index: 26
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ann is replaced by local previous to be used
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 35
+	First Index: 29
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.annotation.Annotation::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 35
+	First Index: 30
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning default value false
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 35
+	First Index: 30
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for com/fasterxml/jackson/databind/introspect/AnnotationMap::_add
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for com/fasterxml/jackson/databind/introspect/AnnotationMap::_add
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 36
+	First Index: 32
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 37
+	First Index: 36
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 34
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/annotation/Annotation::equals
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 35
+	First Index: 30
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 34
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 34
+	First Index: 27
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.java
+	Line Number: 112
+	Block: 37
+	First Index: 39
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

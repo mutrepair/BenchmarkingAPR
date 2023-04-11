@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local maxWidth to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local offset is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local offset is replaced by access to field PAD_LIMIT
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 67
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6303
+	Block: 1037
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

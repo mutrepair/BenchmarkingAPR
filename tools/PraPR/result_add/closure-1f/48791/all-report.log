@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.Integer.toString(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 78
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.Integer.toString(II)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 78
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append([C)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to toString(II)Ljava/lang/String; with a call to toString(I)Ljava/lang/String;
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 78
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(D)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Z)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to ranges is guarded using value null
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 70
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to ranges is guarded using field ranges
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 70
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field EMPTY
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 69
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ALL_CODE_UNITS
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 69
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local sb is replaced a call sb.reverse()
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 66
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to toString with a call to toUnsignedString
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 78
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to ranges is guarded returning default value null
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 70
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(Ljava/lang/String;)Ljava/lang/StringBuilder; is guarded returning default value null
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 74
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 77
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 75
+	Rank: 1
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 76
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::append
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/Integer::toString
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 78
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::append with receiver
+	File Name: com/google/javascript/jscomp/regex/CharRanges.java
+	Line Number: 405
+	Block: 132
+	First Index: 68
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------

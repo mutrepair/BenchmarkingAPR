@@ -1,0 +1,1 @@
+public TYPE_1 < TYPE_2 > METHOD_1 ( TYPE_3 key ) { int index = key . METHOD_2 ( ) & ( VAR_1 . length - 1 ) ; TYPE_4 VAR_2 = VAR_1 [ index ] ; if ( VAR_2 == null ) { return null ; } if ( key . equals ( VAR_2 . key ) ) { return VAR_2 . value ; } while ( ( VAR_2 = VAR_3 ) != null ) { if ( true ) { return VAR_2 . value ; } } return null ; }

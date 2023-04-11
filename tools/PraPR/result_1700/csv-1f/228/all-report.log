@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 85
+	Block: 10
+	First Index: 20
+	Rank: null
+	Total Rank: 1
+	Status: TIMED_OUT
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/csv/Lexer.java
+	Line Number: 85
+	Block: 10
+	First Index: 21
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

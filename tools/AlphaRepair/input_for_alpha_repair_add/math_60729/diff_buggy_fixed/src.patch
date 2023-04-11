@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/60729/org/apache/commons/math3/linear/SingularValueDecomposition.java	2023-04-04 14:33:26.109959081 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/linear/SingularValueDecomposition.java	2023-04-04 13:31:54.009640726 -0500
+@@ -121,7 +121,7 @@
+                 }
+                 if (singularValues[k] != 0) {
+                     if (A[k][k] < 0) {
+-                        singularValues[k] = +singularValues[k];
++                        singularValues[k] = -singularValues[k];
+                     }
+                     for (int i = k; i < m; i++) {
+                         A[i][k] /= singularValues[k];

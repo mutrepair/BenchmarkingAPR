@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local u is replaced by local p to be used
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 203
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local u is replaced by local q to be used
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 203
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local u is replaced by local v to be used
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 203
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_3
+	Description: local u is replaced by local t to be used
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 203
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 2
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 205
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 204
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 207
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long multiplication with division
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 208
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced long return with 0 for org/apache/commons/math3/util/ArithmeticUtils::gcd
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 209
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of long value with value + 1 for org/apache/commons/math3/util/ArithmeticUtils::gcd
+	File Name: org/apache/commons/math3/util/ArithmeticUtils.java
+	Line Number: 448
+	Block: 60
+	First Index: 209
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local that to be used
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field resolveResult
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.autoboxesTo()
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to isEmptyType with a call to hasDisplayName
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to isEmptyType with a call to isNoType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to isEmptyType with a call to isNoResolvedType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to isEmptyType with a call to isNoObjectType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to isEmptyType with a call to isNumberObjectType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to isEmptyType with a call to isNumberValueType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to isEmptyType with a call to isFunctionPrototypeType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to isEmptyType with a call to isStringObjectType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to isEmptyType with a call to isTheObjectType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_9
+	Description: replaced call to isEmptyType with a call to isStringValueType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.jstype.JSType::isEmptyType()Z is guarded using default value false
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to isEmptyType()Z is guarded returning default value false
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to isEmptyType()Z is guarded returning field resolved
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to isEmptyType()Z is guarded returning field inTemplatedCheckVisit
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/jstype/JSType::isEmptyType
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/rhino/jstype/JSType.java
+	Line Number: 976
+	Block: 262
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

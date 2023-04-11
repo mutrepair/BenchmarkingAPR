@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/5509/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-10-31 19:47:41.419797793 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -402,7 +402,7 @@
+         }
+ 
+         for (int i = 0; i < alphaSize; i++) {
+-            base[length[i] + -1]++;
++            base[length[i] + 1]++;
+         }
+ 
+         for (int i = 1, b = base[0]; i < MAX_CODE_LEN; i++) {

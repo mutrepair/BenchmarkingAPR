@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local testPrefix is replaced by local namespaceURI to be used
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local testPrefix is replaced by access to field XML_NAMESPACE_URI
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local testPrefix is replaced by access to field XMLNS_NAMESPACE_URI
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 53
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java
+	Line Number: 101
+	Block: 9
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

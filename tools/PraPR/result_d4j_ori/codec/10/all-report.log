@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.String.replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.String.replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local txt is replaced a call txt.toLowerCase()
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to replaceAll with a call to replaceFirst
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; is guarded returning default value null
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; is guarded returning local txt
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/lang/String::replaceAll with argument
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::replaceAll
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/String::replaceAll with receiver
+	File Name: org/apache/commons/codec/language/Caverphone.java
+	Line Number: 76
+	Block: 4
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

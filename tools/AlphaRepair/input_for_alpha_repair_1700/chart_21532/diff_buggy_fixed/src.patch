@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/21532/org/jfree/chart/axis/PeriodAxis.java	2022-10-31 19:47:29.387841098 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/axis/PeriodAxis.java	2022-10-29 16:41:07.426717447 -0500
+@@ -235,7 +235,7 @@
+         this.minorTickTimePeriodClass = RegularTimePeriod.downsize(
+                 this.majorTickTimePeriodClass);
+         setAutoRange(true);
+-        this.labelInfo = new PeriodAxisLabelInfo[0];
++        this.labelInfo = new PeriodAxisLabelInfo[2];
+         this.labelInfo[0] = new PeriodAxisLabelInfo(Month.class,
+                 new SimpleDateFormat("MMM", locale));
+         this.labelInfo[1] = new PeriodAxisLabelInfo(Year.class,

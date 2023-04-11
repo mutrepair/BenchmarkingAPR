@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/722/org/mockito/internal/creation/jmock/ClassImposterizer.java	2022-10-31 19:48:05.743708795 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/creation/jmock/ClassImposterizer.java	2022-12-26 15:13:56.653676672 -0600
+@@ -36,7 +36,7 @@
+     
+     private static final CallbackFilter IGNORE_BRIDGE_METHODS = new CallbackFilter() {
+         public int accept(Method method) {
+-            return method.isBridge() ? 0 : 0;
++            return method.isBridge() ? 1 : 0;
+         }
+     };
+     

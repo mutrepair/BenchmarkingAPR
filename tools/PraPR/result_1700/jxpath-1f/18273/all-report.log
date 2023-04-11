@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local count to be used
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 47
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value 0
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to size()I is guarded returning local count
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to size()I is guarded returning local i
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 50
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 43
+	Rank: 1
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 50
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 49
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 50
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java
+	Line Number: 656
+	Block: 234
+	First Index: 50
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

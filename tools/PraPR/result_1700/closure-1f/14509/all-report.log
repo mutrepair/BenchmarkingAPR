@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local parentNodeType is replaced by access to field typedCount
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 8
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local parentNodeType is replaced by access to field nullCount
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 8
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local parentNodeType is replaced by access to field unknownCount
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 8
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local parentNodeType is replaced by access to field noTypeCheckSection
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 8
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 276
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 105 with 106
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 9
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 120 with 121
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 276
+	First Index: 12
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 83 with 84
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 277
+	First Index: 15
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 118 with 119
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 278
+	First Index: 18
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 10
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 276
+	First Index: 13
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 10
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 275
+	First Index: 10
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 276
+	First Index: 13
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/google/javascript/jscomp/TypeCheck.java
+	Line Number: 1353
+	Block: 276
+	First Index: 13
+	Rank: 2
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to lenient is guarded using value false
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to lenient is guarded using field lenient
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.stream.JsonWriter.lenient is replaced by the call to com.google.gson.stream.JsonWriter::isLenient()Z
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.gson.stream.JsonWriter.lenient is replaced by the call to com.google.gson.stream.JsonWriter::isHtmlSafe()Z
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to lenient with an access to htmlSafe
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local string is replaced by access to field indent
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 40
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local string is replaced by access to field separator
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 40
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.beginArray()
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local string is replaced a call string.toLowerCase()
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 40
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to lenient is guarded returning default value null
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to lenient is guarded returning local this
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/google/gson/stream/JsonWriter.java
+	Line Number: 394
+	Block: 39
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

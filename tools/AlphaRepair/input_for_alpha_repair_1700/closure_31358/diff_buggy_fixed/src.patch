@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/31358/com/google/javascript/jscomp/InlineFunctions.java	2022-10-31 19:47:37.763811003 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/InlineFunctions.java	2022-10-29 09:43:44.436757821 -0500
+@@ -346,7 +346,7 @@
+     }
+ 
+     // Don't inline this special function
+-    if (false) {
++    if (RenameProperties.RENAME_PROPERTY_FUNCTION_NAME.equals(fnName)) {
+       return false;
+     }
+ 

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/51166/org/apache/commons/math3/linear/BlockFieldMatrix.java	2022-10-31 19:48:00.407728482 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/BlockFieldMatrix.java	2022-12-26 15:13:55.665665998 -0600
+@@ -1562,7 +1562,7 @@
+                 final int qEnd   = FastMath.min((jBlock + 1) * BLOCK_SIZE, 1 + endColumn);
+                 final T[] block = blocks[iBlock * blockColumns + jBlock];
+                 for (int p = pStart; p < pEnd; ++p) {
+-                    int k = (p / p0) * jWidth + qStart - q0;
++                    int k = (p - p0) * jWidth + qStart - q0;
+                     for (int q = qStart; q < qEnd; ++q) {
+                         visitor.visit(p, q, block[k]);
+                         ++k;

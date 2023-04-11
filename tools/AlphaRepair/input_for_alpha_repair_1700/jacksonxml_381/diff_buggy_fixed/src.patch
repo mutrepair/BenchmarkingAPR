@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/381/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-10-31 19:47:49.895766998 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-12-26 15:13:53.109638382 -0600
+@@ -301,7 +301,7 @@
+          *   problems with Lists-in-Lists properties
+          */
+         String name = _xmlTokens.getLocalName();
+-        if (name != null) {
++        if (name != null && namesToWrap.contains(name)) {
+             _xmlTokens.repeatStartElement();
+         }
+         _namesToWrap = namesToWrap;

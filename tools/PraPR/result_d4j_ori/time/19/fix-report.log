@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 17:26:27 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/DateTimeZone.java
+	Line Number: 900
+	Block: 134
+	First Index: 62
+	Rank: 2
+	Total Rank: 4
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/DateTimeZone.java
+	Line Number: 900
+	Block: 134
+	First Index: 62
+	Rank: 2
+	Total Rank: 4
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------

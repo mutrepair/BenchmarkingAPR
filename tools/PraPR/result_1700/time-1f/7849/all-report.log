@@ -1,0 +1,135 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local millis is replaced by access to field serialVersionUID
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local year is replaced by access to field MONTH_LENGTH
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local millis is replaced by access to field MILLIS_PER_YEAR
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local millis is replaced by access to field MILLIS_PER_MONTH
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.chrono.BasicFixedMonthChronology::getYearMillis(I)J is guarded using default value 0L
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getYearMillis(I)J is guarded returning default value 0
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getYearMillis(I)J is guarded returning local year
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getYearMillis(I)J is guarded returning field MONTH_LENGTH
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2592000000 with 2592000001
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long subtraction with addition
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced long modulus with multiplication
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/chrono/BasicFixedMonthChronology::getYearMillis
+	File Name: org/joda/time/chrono/BasicFixedMonthChronology.java
+	Line Number: 137
+	Block: 21
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

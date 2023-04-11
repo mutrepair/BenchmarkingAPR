@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1118/org/apache/commons/codec/binary/Hex.java	2022-10-31 19:47:38.863807033 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Hex.java	2022-12-26 15:13:39.225488336 -0600
+@@ -108,7 +108,7 @@
+            // two characters form the hex value.
+            for (int i = 0, j = 0; i < l; i++) {
+                out[j++] = DIGITS[(0xF0 & data[i]) >>> 4 ];
+-               out[j++] = DIGITS[ 15 | data[i] ];
++               out[j++] = DIGITS[ 0x0F & data[i] ];
+            }
+ 
+            return out;

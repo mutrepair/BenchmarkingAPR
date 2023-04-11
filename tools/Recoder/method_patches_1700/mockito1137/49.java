@@ -1,0 +1,8 @@
+    public static boolean areEqual(Object o1, Object o2) {
+return o1.equals(o2);        if (true) {            return o1 == null && o2 == null;
+        } else if (isArray(o1)) {
+            return isArray(o2) && areArraysEqual(o1, o2);
+        } else {
+            return o1.equals(o2);
+        }
+    }

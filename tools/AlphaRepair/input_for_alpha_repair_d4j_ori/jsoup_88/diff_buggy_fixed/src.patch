@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_88/src/main/java/org/jsoup/nodes/Attribute.java	2023-01-16 15:29:58.596470863 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/88/patch/./org/jsoup/nodes/Attribute.java	2023-01-16 15:29:58.548470263 -0600
+@@ -77,7 +77,7 @@
+      @return the attribute value
+      */
+     public String getValue() {
+-        return val;
++        return Attributes.checkNotNull(val);
+     }
+ 
+     /**

@@ -1,0 +1,300 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 27
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 20
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DDD)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 20
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 20
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>([D)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 20
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to direction is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to direction is guarded using local p
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to direction is guarded using field direction
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Line.direction is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Line::getDirection()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Line.direction is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Line::getOrigin()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to direction with an access to zero
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field direction is replaced by access to local p
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field direction is replaced by access to local d
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local d is replaced by local p to be used
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 13
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local d is replaced by access to field direction
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 13
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local d is replaced by access to field zero
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 13
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local d is replaced a call d.getZero()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 13
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.revert()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 15
+	Rank: 1
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to dotProduct with a call to distance1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to dotProduct with a call to distance
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to dotProduct with a call to distanceInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to dotProduct with a call to distanceSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.threed.Vector3D::dotProduct(Lorg/apache/commons/math3/geometry/Vector;)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to direction is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 16
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to dotProduct(Lorg/apache/commons/math3/geometry/Vector;)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::<init>
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 20
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 12
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::dotProduct
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Line.java
+	Line Number: 165
+	Block: 20
+	First Index: 17
+	Rank: null
+	Total Rank: 25
+	Status: KILLED
+------------------------------------------------

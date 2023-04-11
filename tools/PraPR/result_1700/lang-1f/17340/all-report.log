@@ -1,0 +1,784 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 71
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.lang3.math.Fraction.getReducedFraction(II)Lorg/apache/commons/lang3/math/Fraction; is replaced by an instantiation of type org.apache.commons.lang3.math.Fraction using (II)V
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to numerator is guarded using value 0
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to denominator is guarded using value 0
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to numerator is guarded using local d1
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to denominator is guarded using local d1
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to numerator is guarded using field numerator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to denominator is guarded using field numerator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.math.Fraction.numerator is replaced by the call to org.apache.commons.lang3.math.Fraction::getNumerator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.lang3.math.Fraction.denominator is replaced by the call to org.apache.commons.lang3.math.Fraction::getNumerator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.lang3.math.Fraction.numerator is replaced by the call to org.apache.commons.lang3.math.Fraction::getDenominator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.lang3.math.Fraction.denominator is replaced by the call to org.apache.commons.lang3.math.Fraction::getDenominator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.lang3.math.Fraction.numerator is replaced by the call to org.apache.commons.lang3.math.Fraction::getProperNumerator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.lang3.math.Fraction.denominator is replaced by the call to org.apache.commons.lang3.math.Fraction::getProperNumerator()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.lang3.math.Fraction.numerator is replaced by the call to org.apache.commons.lang3.math.Fraction::getProperWhole()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.lang3.math.Fraction.denominator is replaced by the call to org.apache.commons.lang3.math.Fraction::getProperWhole()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.lang3.math.Fraction.numerator is replaced by the call to org.apache.commons.lang3.math.Fraction::intValue()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.lang3.math.Fraction.denominator is replaced by the call to org.apache.commons.lang3.math.Fraction::intValue()I
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to numerator with an access to denominator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to denominator with an access to numerator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to numerator with an access to hashCode
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to denominator with an access to hashCode
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field numerator is replaced by access to local d1
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field denominator is replaced by access to local d1
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field numerator is replaced by access to local d2
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field denominator is replaced by access to local d2
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local fraction to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local d1 is replaced by local d2 to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local fraction is replaced by local this to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local d2 is replaced by local d1 to be used
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local d1 is replaced by access to field numerator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local fraction is replaced by access to field ZERO
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local d2 is replaced by access to field numerator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local d1 is replaced by access to field denominator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local fraction is replaced by access to field ONE
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local d2 is replaced by access to field denominator
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field ONE_HALF
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local d1 is replaced by access to field hashCode
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 44
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local fraction is replaced by access to field ONE_HALF
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local d2 is replaced by access to field hashCode
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 48
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field ONE_THIRD
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local fraction is replaced by access to field ONE_THIRD
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field TWO_THIRDS
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local fraction is replaced by access to field TWO_THIRDS
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.reduce()
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 42
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local fraction is replaced a call fraction.reduce()
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to mulAndCheck with a call to greatestCommonDivisor
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to mulPosAndCheck with a call to greatestCommonDivisor
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getReducedFraction with a call to getFraction
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to mulAndCheck with a call to mulPosAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to mulPosAndCheck with a call to mulAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to mulAndCheck with a call to addAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to mulPosAndCheck with a call to addAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to mulAndCheck with a call to subAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to mulPosAndCheck with a call to subAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to numerator is guarded returning default value null
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to denominator is guarded returning default value null
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+59.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to numerator is guarded returning local this
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+60.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to denominator is guarded returning local this
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+61.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to numerator is guarded returning field ZERO
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+62.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to denominator is guarded returning field ZERO
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+63.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/lang3/math/Fraction::mulAndCheck with argument
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+64.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/lang3/math/Fraction::mulPosAndCheck with argument
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+65.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+66.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+67.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/math/Fraction::mulAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+68.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/math/Fraction::mulPosAndCheck
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 59
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+69.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/math/Fraction::getReducedFraction
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 60
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+70.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/lang3/math/Fraction::multiplyBy
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 61
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+71.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/lang3/math/Fraction::multiplyBy to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/lang3/math/Fraction.java
+	Line Number: 807
+	Block: 159
+	First Index: 61
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

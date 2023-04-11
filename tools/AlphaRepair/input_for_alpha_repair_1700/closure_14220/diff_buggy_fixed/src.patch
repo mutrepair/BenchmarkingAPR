@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/14220/com/google/javascript/jscomp/TypeCheck.java	2022-10-31 19:47:37.627811493 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeCheck.java	2022-10-29 13:14:31.331198812 -0500
+@@ -854,7 +854,7 @@
+   }
+ 
+   private void checkTypeofString(NodeTraversal t, Node n, String s) {
+-    if (!(s.equals("string") || s.equals("boolean") ||
++    if (!(s.equals("number") || s.equals("string") || s.equals("boolean") ||
+           s.equals("undefined") || s.equals("function") ||
+           s.equals("object") || s.equals("unknown"))) {
+       validator.expectValidTypeofName(t, n, s);

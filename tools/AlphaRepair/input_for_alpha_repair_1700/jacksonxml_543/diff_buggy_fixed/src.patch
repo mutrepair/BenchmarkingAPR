@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/543/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-10-31 19:47:49.927766882 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-12-26 15:13:53.109638382 -0600
+@@ -620,7 +620,7 @@
+             }
+             if (_parsingContext.inArray()) {
+                 token = _xmlTokens.next();
+-                _mayBeLeaf = false;
++                _mayBeLeaf = true;
+                 continue;
+             }
+             String name = _xmlTokens.getLocalName();

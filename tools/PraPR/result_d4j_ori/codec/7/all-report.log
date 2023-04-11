@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.codec.binary.StringUtils.newStringUtf8([B)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BIILjava/lang/String;)V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.codec.binary.StringUtils.newStringUtf8([B)Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([BI)V
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to encodeBase64([BZ)[B with a call to encodeBase64([BZZI)[B
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to encodeBase64([BZ)[B with a call to encodeBase64([B)[B
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: 1
+	Total Rank: 19
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to encodeBase64([BZ)[B with a call to encodeBase64([BZZ)[B
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: null
+	Total Rank: 19
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local binaryData is replaced by access to field CHUNK_SEPARATOR
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 3
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local binaryData is replaced by access to field STANDARD_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 3
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local binaryData is replaced by access to field URL_SAFE_ENCODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 3
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local binaryData is replaced by access to field DECODE_TABLE
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 3
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to newStringUtf8 with a call to newStringIso8859_1
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to newStringUtf8 with a call to newStringUsAscii
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to newStringUtf8 with a call to newStringUtf16
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to newStringUtf8 with a call to newStringUtf16Be
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to newStringUtf8 with a call to newStringUtf16Le
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/codec/binary/Base64::encodeBase64 with argument
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.EmptyObjectReturnValsMutator
+	Description: replaced return value with "" for org/apache/commons/codec/binary/Base64::encodeBase64String
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 7
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 4
+	Rank: 2
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/binary/Base64::encodeBase64
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 5
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/codec/binary/StringUtils::newStringUtf8
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 6
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/codec/binary/Base64::encodeBase64String to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/codec/binary/Base64.java
+	Line Number: 670
+	Block: 94
+	First Index: 7
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------

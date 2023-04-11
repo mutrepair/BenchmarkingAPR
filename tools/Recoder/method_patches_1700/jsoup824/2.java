@@ -1,0 +1,5 @@
+    private Tag setContainInlineOnly() {
+canContainBlock = true;
+        canContainInline = true;
+        return this;
+    }

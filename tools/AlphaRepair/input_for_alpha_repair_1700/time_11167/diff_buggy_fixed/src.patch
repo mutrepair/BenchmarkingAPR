@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11167/org/joda/time/chrono/ZonedChronology.java	2022-10-31 19:48:08.643698058 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/ZonedChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -288,7 +288,7 @@
+         }
+ 
+         public boolean isPrecise() {
+-            return iTimeField ? iField.isPrecise() : iField.isPrecise();
++            return iTimeField ? iField.isPrecise() : iField.isPrecise() && this.iZone.isFixed();
+         }
+ 
+         public long getUnitMillis() {

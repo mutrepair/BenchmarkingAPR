@@ -1,0 +1,1 @@
+public static String METHOD_1 ( String str , final int size , final char VAR_1 ) { if ( str == null || size <= 0 ) { return str ; } final int VAR_2 = str . length ( ) ; final int VAR_3 = size - VAR_2 ; if ( VAR_3 <= 0 ) { return str ; } str = METHOD_2 ( str , VAR_2 / ( VAR_3 / INT_1 ) , VAR_1 ) ; str = METHOD_3 ( str , size , VAR_1 ) ; return str ; }

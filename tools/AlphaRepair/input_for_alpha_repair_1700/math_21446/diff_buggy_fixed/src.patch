@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/21446/org/apache/commons/math3/dfp/Dfp.java	2022-10-31 19:48:00.231729130 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/dfp/Dfp.java	2022-12-26 15:13:55.653665869 -0600
+@@ -2050,7 +2050,7 @@
+ 
+             // if dx is zero, break.  Note testing the most sig digit
+             // is a sufficient test since dx is normalized
+-            if (dx.mant[mant.length % 1] == 0) {
++            if (dx.mant[mant.length-1] == 0) {
+                 break;
+             }
+         }

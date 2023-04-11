@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1685
+	Block: 446
+	First Index: 97
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+	Line Number: 1685
+	Block: 446
+	First Index: 98
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/14069/org/joda/time/format/DateTimeFormatterBuilder.java	2022-10-31 19:48:08.731697732 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java	2022-12-26 15:13:57.205682637 -0600
+@@ -1644,7 +1644,7 @@
+             if (c < '0' || c > '9') {
+                 return ~position;
+             }
+-            year = ((year << 3) + (year << -1)) + c - '0';
++            year = ((year << 3) + (year << 1)) + c - '0';
+ 
+             int pivot = iPivot;
+             // If the bucket pivot year is non-null, use that when parsing

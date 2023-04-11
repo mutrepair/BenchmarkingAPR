@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/15959/org/joda/time/format/FormatUtils.java	2022-10-31 19:48:08.759697628 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/FormatUtils.java	2022-12-26 15:13:57.205682637 -0600
+@@ -350,7 +350,7 @@
+ 
+     static int parseTwoDigits(String text, int position) {
+         int value = text.charAt(position) - '0';
+-        return ((value >>> 3) + (value << 1)) + text.charAt(position + 1) - '0';
++        return ((value << 3) + (value << 1)) + text.charAt(position + 1) - '0';
+     }
+ 
+     static String createErrorMessage(final String text, final int errorPos) {

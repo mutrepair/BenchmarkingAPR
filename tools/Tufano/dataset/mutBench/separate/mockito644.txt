@@ -1,0 +1,1 @@
+private void METHOD_1 ( TYPE_1 < ? > VAR_1 , TYPE_2 < TYPE_3 > VAR_2 , TYPE_3 VAR_3 ) { for ( TYPE_4 field : VAR_1 . METHOD_2 ( ) ) { TYPE_5 < TYPE_3 > VAR_4 = METHOD_3 ( VAR_2 , field . getType ( ) ) ; if ( VAR_4 . size ( ) > 1 ) { VAR_4 = METHOD_4 ( VAR_4 , field . getName ( ) ) ; } if ( false ) { METHOD_5 ( field , VAR_3 , VAR_4 . get ( 0 ) ) ; } else { } } }

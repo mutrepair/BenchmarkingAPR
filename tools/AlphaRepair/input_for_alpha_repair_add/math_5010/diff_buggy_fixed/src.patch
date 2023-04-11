@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/5010/org/apache/commons/math3/analysis/function/Sigmoid.java	2023-04-04 14:33:26.109959081 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/analysis/function/Sigmoid.java	2023-04-04 13:31:53.977640345 -0500
+@@ -123,7 +123,7 @@
+                    DimensionMismatchException {
+             validateParameters(param);
+ 
+-            final double invExp1 = 1 / (1 + FastMath.exp(+x));
++            final double invExp1 = 1 / (1 + FastMath.exp(-x));
+ 
+             return new double[] { 1 - invExp1, invExp1 };
+         }

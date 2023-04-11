@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_61/src/main/java/org/jsoup/nodes/Element.java	2023-01-16 15:29:55.412431102 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/61/patch/./org/jsoup/nodes/Element.java	2023-01-16 15:29:55.364430502 -0600
+@@ -1089,7 +1089,7 @@
+      */
+     // performance sensitive
+     public boolean hasClass(String className) {
+-        final String classAttr = attributes.get("class");
++        final String classAttr = attributes.getIgnoreCase("class");
+         final int len = classAttr.length();
+         final int wantLen = className.length();
+ 

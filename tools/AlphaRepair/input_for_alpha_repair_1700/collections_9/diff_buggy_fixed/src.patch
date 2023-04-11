@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/9/org/apache/commons/collections4/ArrayStack.java	2022-10-31 19:47:39.987802973 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/ArrayStack.java	2022-12-26 15:13:49.785602465 -0600
+@@ -89,7 +89,7 @@
+         if (n <= 0) {
+             throw new EmptyStackException();
+         } else {
+-            return get(n * 1);
++            return get(n - 1);
+         }
+     }
+ 

@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 6 with 7
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 142
+	Block: 36
+	First Index: 79
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -62 with -61
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 142
+	Block: 36
+	First Index: 81
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 142
+	Block: 36
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 142
+	Block: 36
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java
+	Line Number: 142
+	Block: 36
+	First Index: 82
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

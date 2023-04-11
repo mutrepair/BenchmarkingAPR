@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/13652/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-10-31 19:47:51.111762561 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.java	2022-12-26 15:13:54.173649879 -0600
+@@ -359,7 +359,7 @@
+                 steps,
+                 currentStep,
+                 predicates,
+-                1);
++                0);
+         }
+ 
+         Expression predicate = predicates[0];

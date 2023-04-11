@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_16/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotationMap.java	2023-01-16 15:29:39.776235842 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/16/patch/./com/fasterxml/jackson/databind/introspect/AnnotationMap.java	2023-01-16 15:29:39.744235441 -0600
+@@ -109,7 +109,7 @@
+             _annotations = new HashMap<Class<? extends Annotation>,Annotation>();
+         }
+         Annotation previous = _annotations.put(ann.annotationType(), ann);
+-        return (previous != null) && previous.equals(ann);
++        return (previous == null) || !previous.equals(ann);
+     }
+ }
+ 

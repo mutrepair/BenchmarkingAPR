@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local n is replaced by local m to be used
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6674
+	Block: 1115
+	First Index: 68
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local n is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6674
+	Block: 1115
+	First Index: 68
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local n is replaced by access to field PAD_LIMIT
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6674
+	Block: 1115
+	First Index: 68
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6674
+	Block: 1115
+	First Index: 69
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/StringUtils.java
+	Line Number: 6674
+	Block: 1115
+	First Index: 70
+	Rank: null
+	Total Rank: 3
+	Status: KILLED
+------------------------------------------------

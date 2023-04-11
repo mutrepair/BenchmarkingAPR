@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/1711/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.939806759 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -419,7 +419,7 @@
+                         DoubleMetaphoneResult result, 
+                         int index, 
+                         boolean slavoGermanic) {
+-        if (false) {
++        if (charAt(value, index + 1) == 'H') {
+             index = handleGH(value, result, index);
+         } else if (charAt(value, index + 1) == 'N') {
+             if (index == 1 && isVowel(charAt(value, 0)) && !slavoGermanic) {

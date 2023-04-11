@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/collections-25f/mutants/10087/org/apache/commons/collections4/sequence/SequencesComparator.java	2023-04-04 14:33:25.521953384 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2023-04-04 13:31:52.893627466 -0500
+@@ -187,7 +187,7 @@
+                 // First step
+ 
+                 final int i = k + offset;
+-                if (k == ~d || k != d && vDown[i-1] < vDown[i+1]) {
++                if (k == -d || k != d && vDown[i-1] < vDown[i+1]) {
+                     vDown[i] = vDown[i+1];
+                 } else {
+                     vDown[i] = vDown[i-1] + 1;

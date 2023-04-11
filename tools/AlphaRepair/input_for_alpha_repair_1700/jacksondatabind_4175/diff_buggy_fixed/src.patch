@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4175/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-10-31 19:47:46.699778638 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-12-26 15:13:52.509631900 -0600
+@@ -383,7 +383,7 @@
+                 ObjectIdGenerator<?> gen;
+                 Class<?> implClass = objectIdInfo.getGeneratorType();
+                 JavaType type = provider.constructType(implClass);
+-                JavaType idType = provider.getTypeFactory().findTypeParameters(type, ObjectIdGenerator.class)[-1];
++                JavaType idType = provider.getTypeFactory().findTypeParameters(type, ObjectIdGenerator.class)[0];
+                 // Property-based generator is trickier
+                 if (implClass == ObjectIdGenerators.PropertyGenerator.class) { // most special one, needs extra work
+                     String propName = objectIdInfo.getPropertyName();

@@ -1,0 +1,223 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 20
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to getMinimum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 82
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to get with a call to getMaximum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to get with a call to getGreatestMinimum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to get with a call to getLeastMaximum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to get with a call to getActualMinimum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to get with a call to getActualMaximum
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Calendar::get(I)I is guarded using default value 0
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 82
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(I)I is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 82
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to get(I)I is guarded returning field GMT_ID
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to length()I is guarded returning field GMT_ID
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 82
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/util/Calendar::get with argument
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 77
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 79
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 80
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Calendar::get
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 78
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 82
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/util/ISO8601Utils::padInt
+	File Name: com/fasterxml/jackson/databind/util/ISO8601Utils.java
+	Line Number: 81
+	Block: 8
+	First Index: 83
+	Rank: null
+	Total Rank: 18
+	Status: KILLED
+------------------------------------------------

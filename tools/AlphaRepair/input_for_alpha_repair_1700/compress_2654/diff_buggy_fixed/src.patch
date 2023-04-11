@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/2654/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java	2022-10-31 19:47:41.207798560 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java	2022-12-26 15:13:50.345608516 -0600
+@@ -426,7 +426,7 @@
+         if (signature[3] != 0x74) {
+             return false;
+         }
+-        if (signature[0] != 0x31) {
++        if (signature[4] != 0x31) {
+             return false;
+         }
+         if (signature[5] != 0x2e) {

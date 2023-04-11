@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1716/com/google/gson/GsonBuilder.java	2022-10-31 19:47:43.679789605 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/GsonBuilder.java	2022-12-26 15:13:51.393619841 -0600
+@@ -509,7 +509,7 @@
+       serializationStrategies.add(innerClassExclusionStrategy);
+       deserializationStrategies.add(innerClassExclusionStrategy);
+     }
+-    if (ignoreVersionsAfter < VersionConstants.IGNORE_VERSIONS) {
++    if (ignoreVersionsAfter != VersionConstants.IGNORE_VERSIONS) {
+       serializationStrategies.add(new VersionExclusionStrategy(ignoreVersionsAfter));
+       deserializationStrategies.add(new VersionExclusionStrategy(ignoreVersionsAfter));
+     }

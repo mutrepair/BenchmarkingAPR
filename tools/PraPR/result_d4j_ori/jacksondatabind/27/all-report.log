@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local ext is replaced a call ext.start()
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 65
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local p is replaced a call p.skipChildren()
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 66
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local propName is replaced a call propName.toLowerCase()
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 68
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to handlePropertyValue with a call to handleTypePropertyValue
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler::handlePropertyValue(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;Ljava/lang/Object;)Z is guarded using default value false
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to handlePropertyValue(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;Ljava/lang/Object;)Z is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler::handlePropertyValue
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.java
+	Line Number: 794
+	Block: 207
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

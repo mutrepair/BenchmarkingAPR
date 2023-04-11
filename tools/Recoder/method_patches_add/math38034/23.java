@@ -1,0 +1,2 @@
+  public Rotation applyInverseTo(Rotation r) {
+return (((+r.q1 * q0) + (r.q0 * q1)) + ((r.q2 * q3) - (r.q3 * q2)));  }

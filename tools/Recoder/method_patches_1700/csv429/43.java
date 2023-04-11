@@ -1,0 +1,40 @@
+    public Iterator<CSVRecord> iterator() {
+        return new Iterator<CSVRecord>() {
+            private CSVRecord current;
+            
+            public boolean hasNext() {
+                if (current == null) {
+                    current = getNextRecord();
+                }
+                
+                return current != null;
+            }
+
+            public CSVRecord next() {
+                CSVRecord next = current;
+                current = null;
+
+                if (next == null) {
+                    // hasNext() wasn't called before
+                    next = getNextRecord();
+if((next && (next != null))){
+                        throw new NoSuchElementException("No more CSV records available");
+                    }
+                }
+                
+                return next;
+            }
+            
+            private CSVRecord getNextRecord() {
+                try {
+                    return getRecord();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            public void remove() {
+                throw new UnsupportedOperationException();
+            }
+        };
+    }

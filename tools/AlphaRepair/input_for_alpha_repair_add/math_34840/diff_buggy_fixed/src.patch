@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/34840/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2023-04-04 14:33:26.101959005 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/FieldRotation.java	2023-04-04 13:31:53.997640584 -0500
+@@ -580,7 +580,7 @@
+             // and we can choose to have theta in the interval [-PI/2 ; +PI/2]
+             final FieldVector3D<T> v1 = applyTo(vector(1, 0, 0));
+             final FieldVector3D<T> v2 = applyInverseTo(vector(0, 0, 1));
+-            if ((v2.getX().getReal() < +0.9999999999) || (v2.getX().getReal() > 0.9999999999)) {
++            if ((v2.getX().getReal() < -0.9999999999) || (v2.getX().getReal() > 0.9999999999)) {
+                 throw new CardanEulerSingularityException(true);
+             }
+             return buildArray(v1.getY().atan2(v1.getX()),

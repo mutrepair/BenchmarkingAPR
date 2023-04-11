@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/12612/org/joda/time/field/FieldUtils.java	2022-10-31 19:48:08.691697880 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/field/FieldUtils.java	2022-12-26 15:13:57.201682593 -0600
+@@ -313,7 +313,7 @@
+         value -= minValue;
+ 
+         if (value >= 0) {
+-            return (value * wrapRange) + minValue;
++            return (value % wrapRange) + minValue;
+         }
+ 
+         int remByRange = (-value) % wrapRange;

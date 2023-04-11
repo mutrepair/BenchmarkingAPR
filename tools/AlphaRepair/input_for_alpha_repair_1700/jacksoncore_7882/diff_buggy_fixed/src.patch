@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/7882/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-10-31 19:47:45.203784074 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -847,7 +847,7 @@
+          */
+         boolean negative = (ch == INT_MINUS);
+         int ptr = _inputPtr;
+-        int startPtr = ptr-0; // to include sign/digit already read
++        int startPtr = ptr-1; // to include sign/digit already read
+         final int inputLen = _inputEnd;
+ 
+         dummy_loop:

@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to parentNode is guarded using value null
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to parentNode is guarded using local this
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to parentNode is guarded using field parentNode
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.nodes.Node.parentNode is replaced by the call to org.jsoup.nodes.Node::parent()Lorg/jsoup/nodes/Node;
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jsoup.nodes.Node.parentNode is replaced by the call to org.jsoup.nodes.Node::nextSibling()Lorg/jsoup/nodes/Node;
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jsoup.nodes.Node.parentNode is replaced by the call to org.jsoup.nodes.Node::previousSibling()Lorg/jsoup/nodes/Node;
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field parentNode is replaced by access to local this
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field parentNode
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.parent()
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to nodeDepth with a call to hashCode
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.nodes.Node::nodeDepth()I is guarded using default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to parentNode is guarded returning default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to nodeDepth()I is guarded returning default value 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 16
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/nodes/Node::nodeDepth
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 14
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/jsoup/nodes/Node::nodeDepth
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/nodes/Node.java
+	Line Number: 249
+	Block: 38
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

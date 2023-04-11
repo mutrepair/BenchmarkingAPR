@@ -1,0 +1,1 @@
+private boolean METHOD_1 ( TYPE_1 < TYPE_2 > VAR_1 , TYPE_1 < TYPE_2 > VAR_2 ) { boolean VAR_3 = VAR_1 == null || VAR_1 . getType ( ) == null ; boolean VAR_4 = VAR_2 == null || VAR_2 . getType ( ) == null ; if ( VAR_3 && VAR_4 ) { return false ; } else if ( VAR_3 & VAR_4 ) { return true ; } return VAR_1 . getType ( ) . METHOD_2 ( VAR_2 . getType ( ) ) ; }

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_113/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java	2023-01-16 15:29:14.139915697 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/113/patch/./com/google/javascript/jscomp/ProcessClosurePrimitives.java	2023-01-16 15:29:14.107915297 -0600
+@@ -326,7 +326,7 @@
+       // the checks for broken requires turned off. In these cases, we
+       // allow broken requires to be preserved by the first run to
+       // let them be caught in the subsequent run.
+-      if (provided != null) {
++      if (provided != null || requiresLevel.isOn()) {
+         parent.detachFromParent();
+         compiler.reportCodeChange();
+       }

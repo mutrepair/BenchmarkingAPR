@@ -1,0 +1,132 @@
+
+init:
+
+get-deps:
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/xerces/xerces/1.2.3/xerces-1.2.3.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/xerces-1.2.3.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/servletapi/servletapi/2.2/servletapi-2.2.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/servletapi-2.2.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/junit/junit/3.8/junit-3.8.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/junit-3.8.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/ant/ant-optional/1.5.1/ant-optional-1.5.1.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/ant-optional-1.5.1.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/xml-apis/xml-apis/2.0.2/xml-apis-2.0.2.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/xml-apis-2.0.2.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/jdom/jdom/1.0/jdom-1.0.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/jdom-1.0.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/commons-beanutils/commons-beanutils/1.4/commons-beanutils-1.4.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/commons-beanutils-1.4.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/commons-logging-1.0.4.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/commons-collections/commons-collections/2.0/commons-collections-2.0.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/commons-collections-2.0.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/junit/junit/3.8.1/junit-3.8.1.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/junit-3.8.1.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/ant/ant/1.5/ant-1.5.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/ant-1.5.jar
+      [get] Getting: file:/home/yicheng/research/apr/experiments/defects4j/framework/projects/JxPath/lib/ant/ant-optional/1.5/ant-optional-1.5.jar
+      [get] To: /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/target/lib/ant-optional-1.5.jar
+
+compile:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/build.xml:36: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/build.xml:110: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 17 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 44.18 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 19278
+    [junit] MAJOR: Mutants covered:   13630 (70.70%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 17 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 1/17 - org.apache.commons.jxpath.util.BasicTypeConverterTest (29ms / 188):
+    [junit] MAJOR: 3405 (62 / 188 / 188) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 62 (35-27-0) / 13568
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 2/17 - org.apache.commons.jxpath.ri.compiler.ContextDependencyTest (44ms / 3104):
+    [junit] MAJOR: 163162 (755 / 3104 / 3104) -> AVG-RTPM: 51ms
+    [junit] MAJOR: Mutants killed / live: 817 (89-676-0) / 12813
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 3/17 - org.apache.commons.jxpath.ri.model.container.ContainerModelTest (69ms / 3696):
+    [junit] MAJOR: 326600 (614 / 3110 / 3696) -> AVG-RTPM: 52ms
+    [junit] MAJOR: Mutants killed / live: 1431 (262-1116-0) / 12199
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 4/17 - org.apache.commons.jxpath.ri.axes.RecursiveAxesTest (86ms / 3747):
+    [junit] MAJOR: 534622 (401 / 2861 / 3747) -> AVG-RTPM: 72ms
+    [junit] MAJOR: Mutants killed / live: 1832 (473-1250-18) / 11798
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 5/17 - org.apache.commons.jxpath.ri.compiler.VariableTest (93ms / 2863):
+    [junit] MAJOR: 648431 (228 / 2037 / 2863) -> AVG-RTPM: 55ms
+    [junit] MAJOR: Mutants killed / live: 2060 (541-1408-18) / 11570
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 6/17 - org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertiesModelTest (109ms / 4813):
+    [junit] MAJOR: 1026916 (343 / 3233 / 4813) -> AVG-RTPM: 117ms
+    [junit] MAJOR: Mutants killed / live: 2403 (689-1564-18) / 11227
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 7/17 - org.apache.commons.jxpath.ri.compiler.CoreFunctionTest (115ms / 5840):
+    [junit] MAJOR: 1313432 (1011 / 4450 / 5840) -> AVG-RTPM: 64ms
+    [junit] MAJOR: Mutants killed / live: 3414 (857-2403-18) / 10216
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 8/17 - org.apache.commons.jxpath.ri.JXPathCompiledExpressionTest (132ms / 6642):
+    [junit] MAJOR: 1588144 (978 / 4835 / 6642) -> AVG-RTPM: 56ms
+    [junit] MAJOR: Mutants killed / live: 4392 (1213-3025-18) / 9238
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 9/17 - org.apache.commons.jxpath.ri.compiler.ExtensionFunctionTest (146ms / 6552):
+    [junit] MAJOR: 1998519 (641 / 3985 / 6552) -> AVG-RTPM: 102ms
+    [junit] MAJOR: Mutants killed / live: 5033 (1312-3555-19) / 8597
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 10/17 - org.apache.commons.jxpath.ri.axes.SimplePathInterpreterTest (179ms / 5021):
+    [junit] MAJOR: 2301515 (252 / 2809 / 5021) -> AVG-RTPM: 107ms
+    [junit] MAJOR: Mutants killed / live: 5285 (1490-3627-19) / 8345
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 11/17 - org.apache.commons.jxpath.ri.model.MixedModelTest (181ms / 6174):
+    [junit] MAJOR: 2630511 (88 / 3163 / 6174) -> AVG-RTPM: 104ms
+    [junit] MAJOR: Mutants killed / live: 5373 (1531-3669-20) / 8257
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 12/17 - org.apache.commons.jxpath.ri.model.beans.BeanModelTest (205ms / 8369):
+    [junit] MAJOR: 3455952 (713 / 4756 / 8369) -> AVG-RTPM: 173ms
+    [junit] MAJOR: Mutants killed / live: 6086 (1918-3939-33) / 7544
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 13/17 - org.apache.commons.jxpath.ri.model.dom.DOMModelTest (237ms / 7568):
+    [junit] MAJOR: 4211098 (486 / 4086 / 7568) -> AVG-RTPM: 184ms
+    [junit] MAJOR: Mutants killed / live: 6572 (2164-4160-34) / 7058
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 14/17 - org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest (244ms / 8456):
+    [junit] MAJOR: 5229725 (91 / 4081 / 8456) -> AVG-RTPM: 249ms
+    [junit] MAJOR: Mutants killed / live: 6663 (2200-4199-36) / 6967
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 15/17 - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest (271ms / 7304):
+    [junit] MAJOR: 6414431 (350 / 3818 / 7304) -> AVG-RTPM: 310ms
+    [junit] MAJOR: Mutants killed / live: 7013 (2410-4328-36) / 6617
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 16/17 - org.apache.commons.jxpath.ri.compiler.CoreOperationTest (319ms / 2279):
+    [junit] MAJOR: 6605739 (61 / 1360 / 2279) -> AVG-RTPM: 140ms
+    [junit] MAJOR: Mutants killed / live: 7074 (2454-4343-37) / 6556
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: 17/17 - org.apache.commons.jxpath.ri.StressTest (5400ms / 2181):
+    [junit] MAJOR: 13229755 (3 / 1110 / 2181) -> AVG-RTPM: 5967ms
+    [junit] MAJOR: Mutants killed / live: 7077 (2454-4343-37) / 6553
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  13229.8 seconds
+    [junit] MAJOR: Mutation score: 36.71% (51.92%)
+    [junit] MAJOR: Mutants killed / live: 7077 (2454-4343-37) / 6553
+    [junit] MAJOR: Mutant executions: 52986
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /home/yicheng/research/mutd4j/d4jProj/jxpath-1f/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 221 minutes 14 seconds

@@ -1,0 +1,749 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for com.fasterxml.jackson.core.Base64Variants
+AOR<"com.fasterxml.jackson.core.Base64Variants">;
+LOR<"com.fasterxml.jackson.core.Base64Variants">;
+SOR<"com.fasterxml.jackson.core.Base64Variants">;
+COR<"com.fasterxml.jackson.core.Base64Variants">;
+ROR<"com.fasterxml.jackson.core.Base64Variants">;
+ORU<"com.fasterxml.jackson.core.Base64Variants">;
+LVR<"com.fasterxml.jackson.core.Base64Variants">;
+STD<"com.fasterxml.jackson.core.Base64Variants">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonLocation
+AOR<"com.fasterxml.jackson.core.JsonLocation">;
+LOR<"com.fasterxml.jackson.core.JsonLocation">;
+SOR<"com.fasterxml.jackson.core.JsonLocation">;
+COR<"com.fasterxml.jackson.core.JsonLocation">;
+ROR<"com.fasterxml.jackson.core.JsonLocation">;
+ORU<"com.fasterxml.jackson.core.JsonLocation">;
+LVR<"com.fasterxml.jackson.core.JsonLocation">;
+STD<"com.fasterxml.jackson.core.JsonLocation">;
+
+// Enable operators for com.fasterxml.jackson.core.Version
+AOR<"com.fasterxml.jackson.core.Version">;
+LOR<"com.fasterxml.jackson.core.Version">;
+SOR<"com.fasterxml.jackson.core.Version">;
+COR<"com.fasterxml.jackson.core.Version">;
+ROR<"com.fasterxml.jackson.core.Version">;
+ORU<"com.fasterxml.jackson.core.Version">;
+LVR<"com.fasterxml.jackson.core.Version">;
+STD<"com.fasterxml.jackson.core.Version">;
+
+// Enable operators for com.fasterxml.jackson.core.FormatSchema
+AOR<"com.fasterxml.jackson.core.FormatSchema">;
+LOR<"com.fasterxml.jackson.core.FormatSchema">;
+SOR<"com.fasterxml.jackson.core.FormatSchema">;
+COR<"com.fasterxml.jackson.core.FormatSchema">;
+ROR<"com.fasterxml.jackson.core.FormatSchema">;
+ORU<"com.fasterxml.jackson.core.FormatSchema">;
+LVR<"com.fasterxml.jackson.core.FormatSchema">;
+STD<"com.fasterxml.jackson.core.FormatSchema">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonParseException
+AOR<"com.fasterxml.jackson.core.JsonParseException">;
+LOR<"com.fasterxml.jackson.core.JsonParseException">;
+SOR<"com.fasterxml.jackson.core.JsonParseException">;
+COR<"com.fasterxml.jackson.core.JsonParseException">;
+ROR<"com.fasterxml.jackson.core.JsonParseException">;
+ORU<"com.fasterxml.jackson.core.JsonParseException">;
+LVR<"com.fasterxml.jackson.core.JsonParseException">;
+STD<"com.fasterxml.jackson.core.JsonParseException">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonEncoding
+AOR<"com.fasterxml.jackson.core.JsonEncoding">;
+LOR<"com.fasterxml.jackson.core.JsonEncoding">;
+SOR<"com.fasterxml.jackson.core.JsonEncoding">;
+COR<"com.fasterxml.jackson.core.JsonEncoding">;
+ROR<"com.fasterxml.jackson.core.JsonEncoding">;
+ORU<"com.fasterxml.jackson.core.JsonEncoding">;
+LVR<"com.fasterxml.jackson.core.JsonEncoding">;
+STD<"com.fasterxml.jackson.core.JsonEncoding">;
+
+// Enable operators for com.fasterxml.jackson.core.base.ParserMinimalBase
+AOR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+LOR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+SOR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+COR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+ROR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+ORU<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+LVR<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+STD<"com.fasterxml.jackson.core.base.ParserMinimalBase">;
+
+// Enable operators for com.fasterxml.jackson.core.base.ParserBase
+AOR<"com.fasterxml.jackson.core.base.ParserBase">;
+LOR<"com.fasterxml.jackson.core.base.ParserBase">;
+SOR<"com.fasterxml.jackson.core.base.ParserBase">;
+COR<"com.fasterxml.jackson.core.base.ParserBase">;
+ROR<"com.fasterxml.jackson.core.base.ParserBase">;
+ORU<"com.fasterxml.jackson.core.base.ParserBase">;
+LVR<"com.fasterxml.jackson.core.base.ParserBase">;
+STD<"com.fasterxml.jackson.core.base.ParserBase">;
+
+// Enable operators for com.fasterxml.jackson.core.base.GeneratorBase
+AOR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+LOR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+SOR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+COR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+ROR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+ORU<"com.fasterxml.jackson.core.base.GeneratorBase">;
+LVR<"com.fasterxml.jackson.core.base.GeneratorBase">;
+STD<"com.fasterxml.jackson.core.base.GeneratorBase">;
+
+// Enable operators for com.fasterxml.jackson.core.type.TypeReference
+AOR<"com.fasterxml.jackson.core.type.TypeReference">;
+LOR<"com.fasterxml.jackson.core.type.TypeReference">;
+SOR<"com.fasterxml.jackson.core.type.TypeReference">;
+COR<"com.fasterxml.jackson.core.type.TypeReference">;
+ROR<"com.fasterxml.jackson.core.type.TypeReference">;
+ORU<"com.fasterxml.jackson.core.type.TypeReference">;
+LVR<"com.fasterxml.jackson.core.type.TypeReference">;
+STD<"com.fasterxml.jackson.core.type.TypeReference">;
+
+// Enable operators for com.fasterxml.jackson.core.type.ResolvedType
+AOR<"com.fasterxml.jackson.core.type.ResolvedType">;
+LOR<"com.fasterxml.jackson.core.type.ResolvedType">;
+SOR<"com.fasterxml.jackson.core.type.ResolvedType">;
+COR<"com.fasterxml.jackson.core.type.ResolvedType">;
+ROR<"com.fasterxml.jackson.core.type.ResolvedType">;
+ORU<"com.fasterxml.jackson.core.type.ResolvedType">;
+LVR<"com.fasterxml.jackson.core.type.ResolvedType">;
+STD<"com.fasterxml.jackson.core.type.ResolvedType">;
+
+// Enable operators for com.fasterxml.jackson.core.format.InputAccessor
+AOR<"com.fasterxml.jackson.core.format.InputAccessor">;
+LOR<"com.fasterxml.jackson.core.format.InputAccessor">;
+SOR<"com.fasterxml.jackson.core.format.InputAccessor">;
+COR<"com.fasterxml.jackson.core.format.InputAccessor">;
+ROR<"com.fasterxml.jackson.core.format.InputAccessor">;
+ORU<"com.fasterxml.jackson.core.format.InputAccessor">;
+LVR<"com.fasterxml.jackson.core.format.InputAccessor">;
+STD<"com.fasterxml.jackson.core.format.InputAccessor">;
+
+// Enable operators for com.fasterxml.jackson.core.format.MatchStrength
+AOR<"com.fasterxml.jackson.core.format.MatchStrength">;
+LOR<"com.fasterxml.jackson.core.format.MatchStrength">;
+SOR<"com.fasterxml.jackson.core.format.MatchStrength">;
+COR<"com.fasterxml.jackson.core.format.MatchStrength">;
+ROR<"com.fasterxml.jackson.core.format.MatchStrength">;
+ORU<"com.fasterxml.jackson.core.format.MatchStrength">;
+LVR<"com.fasterxml.jackson.core.format.MatchStrength">;
+STD<"com.fasterxml.jackson.core.format.MatchStrength">;
+
+// Enable operators for com.fasterxml.jackson.core.format.DataFormatMatcher
+AOR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+LOR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+SOR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+COR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+ROR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+ORU<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+LVR<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+STD<"com.fasterxml.jackson.core.format.DataFormatMatcher">;
+
+// Enable operators for com.fasterxml.jackson.core.format.DataFormatDetector
+AOR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+LOR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+SOR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+COR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+ROR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+ORU<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+LVR<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+STD<"com.fasterxml.jackson.core.format.DataFormatDetector">;
+
+// Enable operators for com.fasterxml.jackson.core.util.BufferRecycler
+AOR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+LOR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+SOR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+COR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+ROR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+ORU<"com.fasterxml.jackson.core.util.BufferRecycler">;
+LVR<"com.fasterxml.jackson.core.util.BufferRecycler">;
+STD<"com.fasterxml.jackson.core.util.BufferRecycler">;
+
+// Enable operators for com.fasterxml.jackson.core.util.JsonGeneratorDelegate
+AOR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+LOR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+SOR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+COR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+ROR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+ORU<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+LVR<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+STD<"com.fasterxml.jackson.core.util.JsonGeneratorDelegate">;
+
+// Enable operators for com.fasterxml.jackson.core.util.ByteArrayBuilder
+AOR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+LOR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+SOR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+COR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+ROR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+ORU<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+LVR<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+STD<"com.fasterxml.jackson.core.util.ByteArrayBuilder">;
+
+// Enable operators for com.fasterxml.jackson.core.util.Instantiatable
+AOR<"com.fasterxml.jackson.core.util.Instantiatable">;
+LOR<"com.fasterxml.jackson.core.util.Instantiatable">;
+SOR<"com.fasterxml.jackson.core.util.Instantiatable">;
+COR<"com.fasterxml.jackson.core.util.Instantiatable">;
+ROR<"com.fasterxml.jackson.core.util.Instantiatable">;
+ORU<"com.fasterxml.jackson.core.util.Instantiatable">;
+LVR<"com.fasterxml.jackson.core.util.Instantiatable">;
+STD<"com.fasterxml.jackson.core.util.Instantiatable">;
+
+// Enable operators for com.fasterxml.jackson.core.util.DefaultPrettyPrinter
+AOR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+LOR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+SOR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+COR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+ROR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+ORU<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+LVR<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+STD<"com.fasterxml.jackson.core.util.DefaultPrettyPrinter">;
+
+// Enable operators for com.fasterxml.jackson.core.util.MinimalPrettyPrinter
+AOR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+LOR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+SOR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+COR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+ROR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+ORU<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+LVR<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+STD<"com.fasterxml.jackson.core.util.MinimalPrettyPrinter">;
+
+// Enable operators for com.fasterxml.jackson.core.util.JsonParserSequence
+AOR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+LOR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+SOR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+COR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+ROR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+ORU<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+LVR<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+STD<"com.fasterxml.jackson.core.util.JsonParserSequence">;
+
+// Enable operators for com.fasterxml.jackson.core.util.VersionUtil
+AOR<"com.fasterxml.jackson.core.util.VersionUtil">;
+LOR<"com.fasterxml.jackson.core.util.VersionUtil">;
+SOR<"com.fasterxml.jackson.core.util.VersionUtil">;
+COR<"com.fasterxml.jackson.core.util.VersionUtil">;
+ROR<"com.fasterxml.jackson.core.util.VersionUtil">;
+ORU<"com.fasterxml.jackson.core.util.VersionUtil">;
+LVR<"com.fasterxml.jackson.core.util.VersionUtil">;
+STD<"com.fasterxml.jackson.core.util.VersionUtil">;
+
+// Enable operators for com.fasterxml.jackson.core.util.InternCache
+AOR<"com.fasterxml.jackson.core.util.InternCache">;
+LOR<"com.fasterxml.jackson.core.util.InternCache">;
+SOR<"com.fasterxml.jackson.core.util.InternCache">;
+COR<"com.fasterxml.jackson.core.util.InternCache">;
+ROR<"com.fasterxml.jackson.core.util.InternCache">;
+ORU<"com.fasterxml.jackson.core.util.InternCache">;
+LVR<"com.fasterxml.jackson.core.util.InternCache">;
+STD<"com.fasterxml.jackson.core.util.InternCache">;
+
+// Enable operators for com.fasterxml.jackson.core.util.JsonParserDelegate
+AOR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+LOR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+SOR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+COR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+ROR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+ORU<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+LVR<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+STD<"com.fasterxml.jackson.core.util.JsonParserDelegate">;
+
+// Enable operators for com.fasterxml.jackson.core.util.TextBuffer
+AOR<"com.fasterxml.jackson.core.util.TextBuffer">;
+LOR<"com.fasterxml.jackson.core.util.TextBuffer">;
+SOR<"com.fasterxml.jackson.core.util.TextBuffer">;
+COR<"com.fasterxml.jackson.core.util.TextBuffer">;
+ROR<"com.fasterxml.jackson.core.util.TextBuffer">;
+ORU<"com.fasterxml.jackson.core.util.TextBuffer">;
+LVR<"com.fasterxml.jackson.core.util.TextBuffer">;
+STD<"com.fasterxml.jackson.core.util.TextBuffer">;
+
+// Enable operators for com.fasterxml.jackson.core.io.SerializedString
+AOR<"com.fasterxml.jackson.core.io.SerializedString">;
+LOR<"com.fasterxml.jackson.core.io.SerializedString">;
+SOR<"com.fasterxml.jackson.core.io.SerializedString">;
+COR<"com.fasterxml.jackson.core.io.SerializedString">;
+ROR<"com.fasterxml.jackson.core.io.SerializedString">;
+ORU<"com.fasterxml.jackson.core.io.SerializedString">;
+LVR<"com.fasterxml.jackson.core.io.SerializedString">;
+STD<"com.fasterxml.jackson.core.io.SerializedString">;
+
+// Enable operators for com.fasterxml.jackson.core.io.IOContext
+AOR<"com.fasterxml.jackson.core.io.IOContext">;
+LOR<"com.fasterxml.jackson.core.io.IOContext">;
+SOR<"com.fasterxml.jackson.core.io.IOContext">;
+COR<"com.fasterxml.jackson.core.io.IOContext">;
+ROR<"com.fasterxml.jackson.core.io.IOContext">;
+ORU<"com.fasterxml.jackson.core.io.IOContext">;
+LVR<"com.fasterxml.jackson.core.io.IOContext">;
+STD<"com.fasterxml.jackson.core.io.IOContext">;
+
+// Enable operators for com.fasterxml.jackson.core.io.NumberOutput
+AOR<"com.fasterxml.jackson.core.io.NumberOutput">;
+LOR<"com.fasterxml.jackson.core.io.NumberOutput">;
+SOR<"com.fasterxml.jackson.core.io.NumberOutput">;
+COR<"com.fasterxml.jackson.core.io.NumberOutput">;
+ROR<"com.fasterxml.jackson.core.io.NumberOutput">;
+ORU<"com.fasterxml.jackson.core.io.NumberOutput">;
+LVR<"com.fasterxml.jackson.core.io.NumberOutput">;
+STD<"com.fasterxml.jackson.core.io.NumberOutput">;
+
+// Enable operators for com.fasterxml.jackson.core.io.MergedStream
+AOR<"com.fasterxml.jackson.core.io.MergedStream">;
+LOR<"com.fasterxml.jackson.core.io.MergedStream">;
+SOR<"com.fasterxml.jackson.core.io.MergedStream">;
+COR<"com.fasterxml.jackson.core.io.MergedStream">;
+ROR<"com.fasterxml.jackson.core.io.MergedStream">;
+ORU<"com.fasterxml.jackson.core.io.MergedStream">;
+LVR<"com.fasterxml.jackson.core.io.MergedStream">;
+STD<"com.fasterxml.jackson.core.io.MergedStream">;
+
+// Enable operators for com.fasterxml.jackson.core.io.OutputDecorator
+AOR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+LOR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+SOR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+COR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+ROR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+ORU<"com.fasterxml.jackson.core.io.OutputDecorator">;
+LVR<"com.fasterxml.jackson.core.io.OutputDecorator">;
+STD<"com.fasterxml.jackson.core.io.OutputDecorator">;
+
+// Enable operators for com.fasterxml.jackson.core.io.UTF8Writer
+AOR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+LOR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+SOR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+COR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+ROR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+ORU<"com.fasterxml.jackson.core.io.UTF8Writer">;
+LVR<"com.fasterxml.jackson.core.io.UTF8Writer">;
+STD<"com.fasterxml.jackson.core.io.UTF8Writer">;
+
+// Enable operators for com.fasterxml.jackson.core.io.CharTypes
+AOR<"com.fasterxml.jackson.core.io.CharTypes">;
+LOR<"com.fasterxml.jackson.core.io.CharTypes">;
+SOR<"com.fasterxml.jackson.core.io.CharTypes">;
+COR<"com.fasterxml.jackson.core.io.CharTypes">;
+ROR<"com.fasterxml.jackson.core.io.CharTypes">;
+ORU<"com.fasterxml.jackson.core.io.CharTypes">;
+LVR<"com.fasterxml.jackson.core.io.CharTypes">;
+STD<"com.fasterxml.jackson.core.io.CharTypes">;
+
+// Enable operators for com.fasterxml.jackson.core.io.SegmentedStringWriter
+AOR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+LOR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+SOR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+COR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+ROR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+ORU<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+LVR<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+STD<"com.fasterxml.jackson.core.io.SegmentedStringWriter">;
+
+// Enable operators for com.fasterxml.jackson.core.io.CharacterEscapes
+AOR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+LOR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+SOR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+COR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+ROR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+ORU<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+LVR<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+STD<"com.fasterxml.jackson.core.io.CharacterEscapes">;
+
+// Enable operators for com.fasterxml.jackson.core.io.UTF32Reader
+AOR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+LOR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+SOR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+COR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+ROR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+ORU<"com.fasterxml.jackson.core.io.UTF32Reader">;
+LVR<"com.fasterxml.jackson.core.io.UTF32Reader">;
+STD<"com.fasterxml.jackson.core.io.UTF32Reader">;
+
+// Enable operators for com.fasterxml.jackson.core.io.BaseReader
+AOR<"com.fasterxml.jackson.core.io.BaseReader">;
+LOR<"com.fasterxml.jackson.core.io.BaseReader">;
+SOR<"com.fasterxml.jackson.core.io.BaseReader">;
+COR<"com.fasterxml.jackson.core.io.BaseReader">;
+ROR<"com.fasterxml.jackson.core.io.BaseReader">;
+ORU<"com.fasterxml.jackson.core.io.BaseReader">;
+LVR<"com.fasterxml.jackson.core.io.BaseReader">;
+STD<"com.fasterxml.jackson.core.io.BaseReader">;
+
+// Enable operators for com.fasterxml.jackson.core.io.InputDecorator
+AOR<"com.fasterxml.jackson.core.io.InputDecorator">;
+LOR<"com.fasterxml.jackson.core.io.InputDecorator">;
+SOR<"com.fasterxml.jackson.core.io.InputDecorator">;
+COR<"com.fasterxml.jackson.core.io.InputDecorator">;
+ROR<"com.fasterxml.jackson.core.io.InputDecorator">;
+ORU<"com.fasterxml.jackson.core.io.InputDecorator">;
+LVR<"com.fasterxml.jackson.core.io.InputDecorator">;
+STD<"com.fasterxml.jackson.core.io.InputDecorator">;
+
+// Enable operators for com.fasterxml.jackson.core.io.NumberInput
+AOR<"com.fasterxml.jackson.core.io.NumberInput">;
+LOR<"com.fasterxml.jackson.core.io.NumberInput">;
+SOR<"com.fasterxml.jackson.core.io.NumberInput">;
+COR<"com.fasterxml.jackson.core.io.NumberInput">;
+ROR<"com.fasterxml.jackson.core.io.NumberInput">;
+ORU<"com.fasterxml.jackson.core.io.NumberInput">;
+LVR<"com.fasterxml.jackson.core.io.NumberInput">;
+STD<"com.fasterxml.jackson.core.io.NumberInput">;
+
+// Enable operators for com.fasterxml.jackson.core.io.JsonStringEncoder
+AOR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+LOR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+SOR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+COR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+ROR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+ORU<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+LVR<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+STD<"com.fasterxml.jackson.core.io.JsonStringEncoder">;
+
+// Enable operators for com.fasterxml.jackson.core.ObjectCodec
+AOR<"com.fasterxml.jackson.core.ObjectCodec">;
+LOR<"com.fasterxml.jackson.core.ObjectCodec">;
+SOR<"com.fasterxml.jackson.core.ObjectCodec">;
+COR<"com.fasterxml.jackson.core.ObjectCodec">;
+ROR<"com.fasterxml.jackson.core.ObjectCodec">;
+ORU<"com.fasterxml.jackson.core.ObjectCodec">;
+LVR<"com.fasterxml.jackson.core.ObjectCodec">;
+STD<"com.fasterxml.jackson.core.ObjectCodec">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonToken
+AOR<"com.fasterxml.jackson.core.JsonToken">;
+LOR<"com.fasterxml.jackson.core.JsonToken">;
+SOR<"com.fasterxml.jackson.core.JsonToken">;
+COR<"com.fasterxml.jackson.core.JsonToken">;
+ROR<"com.fasterxml.jackson.core.JsonToken">;
+ORU<"com.fasterxml.jackson.core.JsonToken">;
+LVR<"com.fasterxml.jackson.core.JsonToken">;
+STD<"com.fasterxml.jackson.core.JsonToken">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonStreamContext
+AOR<"com.fasterxml.jackson.core.JsonStreamContext">;
+LOR<"com.fasterxml.jackson.core.JsonStreamContext">;
+SOR<"com.fasterxml.jackson.core.JsonStreamContext">;
+COR<"com.fasterxml.jackson.core.JsonStreamContext">;
+ROR<"com.fasterxml.jackson.core.JsonStreamContext">;
+ORU<"com.fasterxml.jackson.core.JsonStreamContext">;
+LVR<"com.fasterxml.jackson.core.JsonStreamContext">;
+STD<"com.fasterxml.jackson.core.JsonStreamContext">;
+
+// Enable operators for com.fasterxml.jackson.core.TreeNode
+AOR<"com.fasterxml.jackson.core.TreeNode">;
+LOR<"com.fasterxml.jackson.core.TreeNode">;
+SOR<"com.fasterxml.jackson.core.TreeNode">;
+COR<"com.fasterxml.jackson.core.TreeNode">;
+ROR<"com.fasterxml.jackson.core.TreeNode">;
+ORU<"com.fasterxml.jackson.core.TreeNode">;
+LVR<"com.fasterxml.jackson.core.TreeNode">;
+STD<"com.fasterxml.jackson.core.TreeNode">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonFactory
+AOR<"com.fasterxml.jackson.core.JsonFactory">;
+LOR<"com.fasterxml.jackson.core.JsonFactory">;
+SOR<"com.fasterxml.jackson.core.JsonFactory">;
+COR<"com.fasterxml.jackson.core.JsonFactory">;
+ROR<"com.fasterxml.jackson.core.JsonFactory">;
+ORU<"com.fasterxml.jackson.core.JsonFactory">;
+LVR<"com.fasterxml.jackson.core.JsonFactory">;
+STD<"com.fasterxml.jackson.core.JsonFactory">;
+
+// Enable operators for com.fasterxml.jackson.core.SerializableString
+AOR<"com.fasterxml.jackson.core.SerializableString">;
+LOR<"com.fasterxml.jackson.core.SerializableString">;
+SOR<"com.fasterxml.jackson.core.SerializableString">;
+COR<"com.fasterxml.jackson.core.SerializableString">;
+ROR<"com.fasterxml.jackson.core.SerializableString">;
+ORU<"com.fasterxml.jackson.core.SerializableString">;
+LVR<"com.fasterxml.jackson.core.SerializableString">;
+STD<"com.fasterxml.jackson.core.SerializableString">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonParser
+AOR<"com.fasterxml.jackson.core.JsonParser">;
+LOR<"com.fasterxml.jackson.core.JsonParser">;
+SOR<"com.fasterxml.jackson.core.JsonParser">;
+COR<"com.fasterxml.jackson.core.JsonParser">;
+ROR<"com.fasterxml.jackson.core.JsonParser">;
+ORU<"com.fasterxml.jackson.core.JsonParser">;
+LVR<"com.fasterxml.jackson.core.JsonParser">;
+STD<"com.fasterxml.jackson.core.JsonParser">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer
+AOR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+LOR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+SOR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+COR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+ROR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+ORU<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+LVR<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+STD<"com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.Name
+AOR<"com.fasterxml.jackson.core.sym.Name">;
+LOR<"com.fasterxml.jackson.core.sym.Name">;
+SOR<"com.fasterxml.jackson.core.sym.Name">;
+COR<"com.fasterxml.jackson.core.sym.Name">;
+ROR<"com.fasterxml.jackson.core.sym.Name">;
+ORU<"com.fasterxml.jackson.core.sym.Name">;
+LVR<"com.fasterxml.jackson.core.sym.Name">;
+STD<"com.fasterxml.jackson.core.sym.Name">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.NameN
+AOR<"com.fasterxml.jackson.core.sym.NameN">;
+LOR<"com.fasterxml.jackson.core.sym.NameN">;
+SOR<"com.fasterxml.jackson.core.sym.NameN">;
+COR<"com.fasterxml.jackson.core.sym.NameN">;
+ROR<"com.fasterxml.jackson.core.sym.NameN">;
+ORU<"com.fasterxml.jackson.core.sym.NameN">;
+LVR<"com.fasterxml.jackson.core.sym.NameN">;
+STD<"com.fasterxml.jackson.core.sym.NameN">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.Name3
+AOR<"com.fasterxml.jackson.core.sym.Name3">;
+LOR<"com.fasterxml.jackson.core.sym.Name3">;
+SOR<"com.fasterxml.jackson.core.sym.Name3">;
+COR<"com.fasterxml.jackson.core.sym.Name3">;
+ROR<"com.fasterxml.jackson.core.sym.Name3">;
+ORU<"com.fasterxml.jackson.core.sym.Name3">;
+LVR<"com.fasterxml.jackson.core.sym.Name3">;
+STD<"com.fasterxml.jackson.core.sym.Name3">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+AOR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+LOR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+SOR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+COR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+ROR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+ORU<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+LVR<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+STD<"com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.Name2
+AOR<"com.fasterxml.jackson.core.sym.Name2">;
+LOR<"com.fasterxml.jackson.core.sym.Name2">;
+SOR<"com.fasterxml.jackson.core.sym.Name2">;
+COR<"com.fasterxml.jackson.core.sym.Name2">;
+ROR<"com.fasterxml.jackson.core.sym.Name2">;
+ORU<"com.fasterxml.jackson.core.sym.Name2">;
+LVR<"com.fasterxml.jackson.core.sym.Name2">;
+STD<"com.fasterxml.jackson.core.sym.Name2">;
+
+// Enable operators for com.fasterxml.jackson.core.sym.Name1
+AOR<"com.fasterxml.jackson.core.sym.Name1">;
+LOR<"com.fasterxml.jackson.core.sym.Name1">;
+SOR<"com.fasterxml.jackson.core.sym.Name1">;
+COR<"com.fasterxml.jackson.core.sym.Name1">;
+ROR<"com.fasterxml.jackson.core.sym.Name1">;
+ORU<"com.fasterxml.jackson.core.sym.Name1">;
+LVR<"com.fasterxml.jackson.core.sym.Name1">;
+STD<"com.fasterxml.jackson.core.sym.Name1">;
+
+// Enable operators for com.fasterxml.jackson.core.PrettyPrinter
+AOR<"com.fasterxml.jackson.core.PrettyPrinter">;
+LOR<"com.fasterxml.jackson.core.PrettyPrinter">;
+SOR<"com.fasterxml.jackson.core.PrettyPrinter">;
+COR<"com.fasterxml.jackson.core.PrettyPrinter">;
+ROR<"com.fasterxml.jackson.core.PrettyPrinter">;
+ORU<"com.fasterxml.jackson.core.PrettyPrinter">;
+LVR<"com.fasterxml.jackson.core.PrettyPrinter">;
+STD<"com.fasterxml.jackson.core.PrettyPrinter">;
+
+// Enable operators for com.fasterxml.jackson.core.json.JsonGeneratorImpl
+AOR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+LOR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+SOR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+COR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+ROR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+ORU<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+LVR<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+STD<"com.fasterxml.jackson.core.json.JsonGeneratorImpl">;
+
+// Enable operators for com.fasterxml.jackson.core.json.ReaderBasedJsonParser
+AOR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+LOR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+SOR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+COR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+ROR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+ORU<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+LVR<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+STD<"com.fasterxml.jackson.core.json.ReaderBasedJsonParser">;
+
+// Enable operators for com.fasterxml.jackson.core.json.PackageVersion
+AOR<"com.fasterxml.jackson.core.json.PackageVersion">;
+LOR<"com.fasterxml.jackson.core.json.PackageVersion">;
+SOR<"com.fasterxml.jackson.core.json.PackageVersion">;
+COR<"com.fasterxml.jackson.core.json.PackageVersion">;
+ROR<"com.fasterxml.jackson.core.json.PackageVersion">;
+ORU<"com.fasterxml.jackson.core.json.PackageVersion">;
+LVR<"com.fasterxml.jackson.core.json.PackageVersion">;
+STD<"com.fasterxml.jackson.core.json.PackageVersion">;
+
+// Enable operators for com.fasterxml.jackson.core.json.JsonWriteContext
+AOR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+LOR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+SOR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+COR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+ROR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+ORU<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+LVR<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+STD<"com.fasterxml.jackson.core.json.JsonWriteContext">;
+
+// Enable operators for com.fasterxml.jackson.core.json.JsonReadContext
+AOR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+LOR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+SOR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+COR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+ROR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+ORU<"com.fasterxml.jackson.core.json.JsonReadContext">;
+LVR<"com.fasterxml.jackson.core.json.JsonReadContext">;
+STD<"com.fasterxml.jackson.core.json.JsonReadContext">;
+
+// Enable operators for com.fasterxml.jackson.core.json.UTF8StreamJsonParser
+AOR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+LOR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+SOR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+COR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+ROR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+ORU<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+LVR<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+STD<"com.fasterxml.jackson.core.json.UTF8StreamJsonParser">;
+
+// Enable operators for com.fasterxml.jackson.core.json.UTF8JsonGenerator
+AOR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+LOR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+SOR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+COR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+ROR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+ORU<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+LVR<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+STD<"com.fasterxml.jackson.core.json.UTF8JsonGenerator">;
+
+// Enable operators for com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper
+AOR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+LOR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+SOR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+COR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+ROR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+ORU<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+LVR<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+STD<"com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper">;
+
+// Enable operators for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator
+AOR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+LOR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+SOR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+COR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+ROR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+ORU<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+LVR<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+STD<"com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonGenerationException
+AOR<"com.fasterxml.jackson.core.JsonGenerationException">;
+LOR<"com.fasterxml.jackson.core.JsonGenerationException">;
+SOR<"com.fasterxml.jackson.core.JsonGenerationException">;
+COR<"com.fasterxml.jackson.core.JsonGenerationException">;
+ROR<"com.fasterxml.jackson.core.JsonGenerationException">;
+ORU<"com.fasterxml.jackson.core.JsonGenerationException">;
+LVR<"com.fasterxml.jackson.core.JsonGenerationException">;
+STD<"com.fasterxml.jackson.core.JsonGenerationException">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonProcessingException
+AOR<"com.fasterxml.jackson.core.JsonProcessingException">;
+LOR<"com.fasterxml.jackson.core.JsonProcessingException">;
+SOR<"com.fasterxml.jackson.core.JsonProcessingException">;
+COR<"com.fasterxml.jackson.core.JsonProcessingException">;
+ROR<"com.fasterxml.jackson.core.JsonProcessingException">;
+ORU<"com.fasterxml.jackson.core.JsonProcessingException">;
+LVR<"com.fasterxml.jackson.core.JsonProcessingException">;
+STD<"com.fasterxml.jackson.core.JsonProcessingException">;
+
+// Enable operators for com.fasterxml.jackson.core.JsonGenerator
+AOR<"com.fasterxml.jackson.core.JsonGenerator">;
+LOR<"com.fasterxml.jackson.core.JsonGenerator">;
+SOR<"com.fasterxml.jackson.core.JsonGenerator">;
+COR<"com.fasterxml.jackson.core.JsonGenerator">;
+ROR<"com.fasterxml.jackson.core.JsonGenerator">;
+ORU<"com.fasterxml.jackson.core.JsonGenerator">;
+LVR<"com.fasterxml.jackson.core.JsonGenerator">;
+STD<"com.fasterxml.jackson.core.JsonGenerator">;
+
+// Enable operators for com.fasterxml.jackson.core.Versioned
+AOR<"com.fasterxml.jackson.core.Versioned">;
+LOR<"com.fasterxml.jackson.core.Versioned">;
+SOR<"com.fasterxml.jackson.core.Versioned">;
+COR<"com.fasterxml.jackson.core.Versioned">;
+ROR<"com.fasterxml.jackson.core.Versioned">;
+ORU<"com.fasterxml.jackson.core.Versioned">;
+LVR<"com.fasterxml.jackson.core.Versioned">;
+STD<"com.fasterxml.jackson.core.Versioned">;
+
+// Enable operators for com.fasterxml.jackson.core.Base64Variant
+AOR<"com.fasterxml.jackson.core.Base64Variant">;
+LOR<"com.fasterxml.jackson.core.Base64Variant">;
+SOR<"com.fasterxml.jackson.core.Base64Variant">;
+COR<"com.fasterxml.jackson.core.Base64Variant">;
+ROR<"com.fasterxml.jackson.core.Base64Variant">;
+ORU<"com.fasterxml.jackson.core.Base64Variant">;
+LVR<"com.fasterxml.jackson.core.Base64Variant">;
+STD<"com.fasterxml.jackson.core.Base64Variant">;

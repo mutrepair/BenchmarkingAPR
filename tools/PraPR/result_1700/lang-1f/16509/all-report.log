@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local wrapperFrames is replaced by local causeFrames to be used
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 23
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 24
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::size()I is guarded using default value 0
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 24
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning enclosing method
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 24
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 25
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 26
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::size
+	File Name: org/apache/commons/lang3/exception/ExceptionUtils.java
+	Line Number: 555
+	Block: 78
+	First Index: 24
+	Rank: 2
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4021/org/apache/commons/codec/language/SoundexUtils.java	2022-10-31 19:47:39.135806051 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/SoundexUtils.java	2022-12-26 15:13:39.225488336 -0600
+@@ -112,7 +112,7 @@
+         }
+         int lengthToMatch = Math.min(es1.length(), es2.length());
+         int diff = 0;
+-        for (int i = 0; i <= lengthToMatch; i++) {
++        for (int i = 0; i < lengthToMatch; i++) {
+             if (es1.charAt(i) == es2.charAt(i)) {
+                 diff++;
+             }

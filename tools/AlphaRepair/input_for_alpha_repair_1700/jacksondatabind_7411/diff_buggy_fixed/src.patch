@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/7411/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2022-10-31 19:47:46.823778187 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java	2022-12-26 15:13:52.501631814 -0600
+@@ -385,7 +385,7 @@
+             }
+             // need to advance, too
+             Bucket b = curr.next;
+-            while (b == null && false) {
++            while (b == null && _nextBucketIndex < _buckets.length) {
+                 b = _buckets[_nextBucketIndex++];
+             }
+             _currentBucket = b;

@@ -1,0 +1,1629 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.joda.time.Minutes
+AOR<"org.joda.time.Minutes">;
+LOR<"org.joda.time.Minutes">;
+SOR<"org.joda.time.Minutes">;
+COR<"org.joda.time.Minutes">;
+ROR<"org.joda.time.Minutes">;
+ORU<"org.joda.time.Minutes">;
+LVR<"org.joda.time.Minutes">;
+STD<"org.joda.time.Minutes">;
+
+// Enable operators for org.joda.time.chrono.LimitChronology
+AOR<"org.joda.time.chrono.LimitChronology">;
+LOR<"org.joda.time.chrono.LimitChronology">;
+SOR<"org.joda.time.chrono.LimitChronology">;
+COR<"org.joda.time.chrono.LimitChronology">;
+ROR<"org.joda.time.chrono.LimitChronology">;
+ORU<"org.joda.time.chrono.LimitChronology">;
+LVR<"org.joda.time.chrono.LimitChronology">;
+STD<"org.joda.time.chrono.LimitChronology">;
+
+// Enable operators for org.joda.time.chrono.BasicGJChronology
+AOR<"org.joda.time.chrono.BasicGJChronology">;
+LOR<"org.joda.time.chrono.BasicGJChronology">;
+SOR<"org.joda.time.chrono.BasicGJChronology">;
+COR<"org.joda.time.chrono.BasicGJChronology">;
+ROR<"org.joda.time.chrono.BasicGJChronology">;
+ORU<"org.joda.time.chrono.BasicGJChronology">;
+LVR<"org.joda.time.chrono.BasicGJChronology">;
+STD<"org.joda.time.chrono.BasicGJChronology">;
+
+// Enable operators for org.joda.time.chrono.CopticChronology
+AOR<"org.joda.time.chrono.CopticChronology">;
+LOR<"org.joda.time.chrono.CopticChronology">;
+SOR<"org.joda.time.chrono.CopticChronology">;
+COR<"org.joda.time.chrono.CopticChronology">;
+ROR<"org.joda.time.chrono.CopticChronology">;
+ORU<"org.joda.time.chrono.CopticChronology">;
+LVR<"org.joda.time.chrono.CopticChronology">;
+STD<"org.joda.time.chrono.CopticChronology">;
+
+// Enable operators for org.joda.time.chrono.JulianChronology
+AOR<"org.joda.time.chrono.JulianChronology">;
+LOR<"org.joda.time.chrono.JulianChronology">;
+SOR<"org.joda.time.chrono.JulianChronology">;
+COR<"org.joda.time.chrono.JulianChronology">;
+ROR<"org.joda.time.chrono.JulianChronology">;
+ORU<"org.joda.time.chrono.JulianChronology">;
+LVR<"org.joda.time.chrono.JulianChronology">;
+STD<"org.joda.time.chrono.JulianChronology">;
+
+// Enable operators for org.joda.time.chrono.ISOYearOfEraDateTimeField
+AOR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+LOR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+SOR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+COR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+ROR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+ORU<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+LVR<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+STD<"org.joda.time.chrono.ISOYearOfEraDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BaseChronology
+AOR<"org.joda.time.chrono.BaseChronology">;
+LOR<"org.joda.time.chrono.BaseChronology">;
+SOR<"org.joda.time.chrono.BaseChronology">;
+COR<"org.joda.time.chrono.BaseChronology">;
+ROR<"org.joda.time.chrono.BaseChronology">;
+ORU<"org.joda.time.chrono.BaseChronology">;
+LVR<"org.joda.time.chrono.BaseChronology">;
+STD<"org.joda.time.chrono.BaseChronology">;
+
+// Enable operators for org.joda.time.chrono.IslamicChronology
+AOR<"org.joda.time.chrono.IslamicChronology">;
+LOR<"org.joda.time.chrono.IslamicChronology">;
+SOR<"org.joda.time.chrono.IslamicChronology">;
+COR<"org.joda.time.chrono.IslamicChronology">;
+ROR<"org.joda.time.chrono.IslamicChronology">;
+ORU<"org.joda.time.chrono.IslamicChronology">;
+LVR<"org.joda.time.chrono.IslamicChronology">;
+STD<"org.joda.time.chrono.IslamicChronology">;
+
+// Enable operators for org.joda.time.chrono.BuddhistChronology
+AOR<"org.joda.time.chrono.BuddhistChronology">;
+LOR<"org.joda.time.chrono.BuddhistChronology">;
+SOR<"org.joda.time.chrono.BuddhistChronology">;
+COR<"org.joda.time.chrono.BuddhistChronology">;
+ROR<"org.joda.time.chrono.BuddhistChronology">;
+ORU<"org.joda.time.chrono.BuddhistChronology">;
+LVR<"org.joda.time.chrono.BuddhistChronology">;
+STD<"org.joda.time.chrono.BuddhistChronology">;
+
+// Enable operators for org.joda.time.chrono.BasicChronology
+AOR<"org.joda.time.chrono.BasicChronology">;
+LOR<"org.joda.time.chrono.BasicChronology">;
+SOR<"org.joda.time.chrono.BasicChronology">;
+COR<"org.joda.time.chrono.BasicChronology">;
+ROR<"org.joda.time.chrono.BasicChronology">;
+ORU<"org.joda.time.chrono.BasicChronology">;
+LVR<"org.joda.time.chrono.BasicChronology">;
+STD<"org.joda.time.chrono.BasicChronology">;
+
+// Enable operators for org.joda.time.chrono.AssembledChronology
+AOR<"org.joda.time.chrono.AssembledChronology">;
+LOR<"org.joda.time.chrono.AssembledChronology">;
+SOR<"org.joda.time.chrono.AssembledChronology">;
+COR<"org.joda.time.chrono.AssembledChronology">;
+ROR<"org.joda.time.chrono.AssembledChronology">;
+ORU<"org.joda.time.chrono.AssembledChronology">;
+LVR<"org.joda.time.chrono.AssembledChronology">;
+STD<"org.joda.time.chrono.AssembledChronology">;
+
+// Enable operators for org.joda.time.chrono.GJChronology
+AOR<"org.joda.time.chrono.GJChronology">;
+LOR<"org.joda.time.chrono.GJChronology">;
+SOR<"org.joda.time.chrono.GJChronology">;
+COR<"org.joda.time.chrono.GJChronology">;
+ROR<"org.joda.time.chrono.GJChronology">;
+ORU<"org.joda.time.chrono.GJChronology">;
+LVR<"org.joda.time.chrono.GJChronology">;
+STD<"org.joda.time.chrono.GJChronology">;
+
+// Enable operators for org.joda.time.chrono.GJLocaleSymbols
+AOR<"org.joda.time.chrono.GJLocaleSymbols">;
+LOR<"org.joda.time.chrono.GJLocaleSymbols">;
+SOR<"org.joda.time.chrono.GJLocaleSymbols">;
+COR<"org.joda.time.chrono.GJLocaleSymbols">;
+ROR<"org.joda.time.chrono.GJLocaleSymbols">;
+ORU<"org.joda.time.chrono.GJLocaleSymbols">;
+LVR<"org.joda.time.chrono.GJLocaleSymbols">;
+STD<"org.joda.time.chrono.GJLocaleSymbols">;
+
+// Enable operators for org.joda.time.chrono.LenientChronology
+AOR<"org.joda.time.chrono.LenientChronology">;
+LOR<"org.joda.time.chrono.LenientChronology">;
+SOR<"org.joda.time.chrono.LenientChronology">;
+COR<"org.joda.time.chrono.LenientChronology">;
+ROR<"org.joda.time.chrono.LenientChronology">;
+ORU<"org.joda.time.chrono.LenientChronology">;
+LVR<"org.joda.time.chrono.LenientChronology">;
+STD<"org.joda.time.chrono.LenientChronology">;
+
+// Enable operators for org.joda.time.chrono.ZonedChronology
+AOR<"org.joda.time.chrono.ZonedChronology">;
+LOR<"org.joda.time.chrono.ZonedChronology">;
+SOR<"org.joda.time.chrono.ZonedChronology">;
+COR<"org.joda.time.chrono.ZonedChronology">;
+ROR<"org.joda.time.chrono.ZonedChronology">;
+ORU<"org.joda.time.chrono.ZonedChronology">;
+LVR<"org.joda.time.chrono.ZonedChronology">;
+STD<"org.joda.time.chrono.ZonedChronology">;
+
+// Enable operators for org.joda.time.chrono.GJMonthOfYearDateTimeField
+AOR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+LOR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+SOR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+COR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+ROR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+ORU<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+LVR<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+STD<"org.joda.time.chrono.GJMonthOfYearDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.EthiopicChronology
+AOR<"org.joda.time.chrono.EthiopicChronology">;
+LOR<"org.joda.time.chrono.EthiopicChronology">;
+SOR<"org.joda.time.chrono.EthiopicChronology">;
+COR<"org.joda.time.chrono.EthiopicChronology">;
+ROR<"org.joda.time.chrono.EthiopicChronology">;
+ORU<"org.joda.time.chrono.EthiopicChronology">;
+LVR<"org.joda.time.chrono.EthiopicChronology">;
+STD<"org.joda.time.chrono.EthiopicChronology">;
+
+// Enable operators for org.joda.time.chrono.ISOChronology
+AOR<"org.joda.time.chrono.ISOChronology">;
+LOR<"org.joda.time.chrono.ISOChronology">;
+SOR<"org.joda.time.chrono.ISOChronology">;
+COR<"org.joda.time.chrono.ISOChronology">;
+ROR<"org.joda.time.chrono.ISOChronology">;
+ORU<"org.joda.time.chrono.ISOChronology">;
+LVR<"org.joda.time.chrono.ISOChronology">;
+STD<"org.joda.time.chrono.ISOChronology">;
+
+// Enable operators for org.joda.time.chrono.GJDayOfWeekDateTimeField
+AOR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+LOR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+SOR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+COR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+ROR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+ORU<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+LVR<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+STD<"org.joda.time.chrono.GJDayOfWeekDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.GJEraDateTimeField
+AOR<"org.joda.time.chrono.GJEraDateTimeField">;
+LOR<"org.joda.time.chrono.GJEraDateTimeField">;
+SOR<"org.joda.time.chrono.GJEraDateTimeField">;
+COR<"org.joda.time.chrono.GJEraDateTimeField">;
+ROR<"org.joda.time.chrono.GJEraDateTimeField">;
+ORU<"org.joda.time.chrono.GJEraDateTimeField">;
+LVR<"org.joda.time.chrono.GJEraDateTimeField">;
+STD<"org.joda.time.chrono.GJEraDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.GJYearOfEraDateTimeField
+AOR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+LOR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+SOR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+COR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+ROR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+ORU<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+LVR<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+STD<"org.joda.time.chrono.GJYearOfEraDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicWeekyearDateTimeField
+AOR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+LOR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+SOR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+COR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+ROR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+ORU<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+LVR<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+STD<"org.joda.time.chrono.BasicWeekyearDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicFixedMonthChronology
+AOR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+LOR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+SOR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+COR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+ROR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+ORU<"org.joda.time.chrono.BasicFixedMonthChronology">;
+LVR<"org.joda.time.chrono.BasicFixedMonthChronology">;
+STD<"org.joda.time.chrono.BasicFixedMonthChronology">;
+
+// Enable operators for org.joda.time.chrono.GregorianChronology
+AOR<"org.joda.time.chrono.GregorianChronology">;
+LOR<"org.joda.time.chrono.GregorianChronology">;
+SOR<"org.joda.time.chrono.GregorianChronology">;
+COR<"org.joda.time.chrono.GregorianChronology">;
+ROR<"org.joda.time.chrono.GregorianChronology">;
+ORU<"org.joda.time.chrono.GregorianChronology">;
+LVR<"org.joda.time.chrono.GregorianChronology">;
+STD<"org.joda.time.chrono.GregorianChronology">;
+
+// Enable operators for org.joda.time.chrono.BasicDayOfMonthDateTimeField
+AOR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+LOR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+SOR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+COR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+ROR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+ORU<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+LVR<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+STD<"org.joda.time.chrono.BasicDayOfMonthDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicYearDateTimeField
+AOR<"org.joda.time.chrono.BasicYearDateTimeField">;
+LOR<"org.joda.time.chrono.BasicYearDateTimeField">;
+SOR<"org.joda.time.chrono.BasicYearDateTimeField">;
+COR<"org.joda.time.chrono.BasicYearDateTimeField">;
+ROR<"org.joda.time.chrono.BasicYearDateTimeField">;
+ORU<"org.joda.time.chrono.BasicYearDateTimeField">;
+LVR<"org.joda.time.chrono.BasicYearDateTimeField">;
+STD<"org.joda.time.chrono.BasicYearDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicSingleEraDateTimeField
+AOR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+LOR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+SOR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+COR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+ROR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+ORU<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+LVR<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+STD<"org.joda.time.chrono.BasicSingleEraDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicDayOfYearDateTimeField
+AOR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+LOR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+SOR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+COR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+ROR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+ORU<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+LVR<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+STD<"org.joda.time.chrono.BasicDayOfYearDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField
+AOR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+LOR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+SOR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+COR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+ROR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+ORU<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+LVR<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+STD<"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField">;
+
+// Enable operators for org.joda.time.chrono.StrictChronology
+AOR<"org.joda.time.chrono.StrictChronology">;
+LOR<"org.joda.time.chrono.StrictChronology">;
+SOR<"org.joda.time.chrono.StrictChronology">;
+COR<"org.joda.time.chrono.StrictChronology">;
+ROR<"org.joda.time.chrono.StrictChronology">;
+ORU<"org.joda.time.chrono.StrictChronology">;
+LVR<"org.joda.time.chrono.StrictChronology">;
+STD<"org.joda.time.chrono.StrictChronology">;
+
+// Enable operators for org.joda.time.chrono.BasicMonthOfYearDateTimeField
+AOR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+LOR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+SOR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+COR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+ROR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+ORU<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+LVR<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+STD<"org.joda.time.chrono.BasicMonthOfYearDateTimeField">;
+
+// Enable operators for org.joda.time.Chronology
+AOR<"org.joda.time.Chronology">;
+LOR<"org.joda.time.Chronology">;
+SOR<"org.joda.time.Chronology">;
+COR<"org.joda.time.Chronology">;
+ROR<"org.joda.time.Chronology">;
+ORU<"org.joda.time.Chronology">;
+LVR<"org.joda.time.Chronology">;
+STD<"org.joda.time.Chronology">;
+
+// Enable operators for org.joda.time.DateTime
+AOR<"org.joda.time.DateTime">;
+LOR<"org.joda.time.DateTime">;
+SOR<"org.joda.time.DateTime">;
+COR<"org.joda.time.DateTime">;
+ROR<"org.joda.time.DateTime">;
+ORU<"org.joda.time.DateTime">;
+LVR<"org.joda.time.DateTime">;
+STD<"org.joda.time.DateTime">;
+
+// Enable operators for org.joda.time.DateTimeConstants
+AOR<"org.joda.time.DateTimeConstants">;
+LOR<"org.joda.time.DateTimeConstants">;
+SOR<"org.joda.time.DateTimeConstants">;
+COR<"org.joda.time.DateTimeConstants">;
+ROR<"org.joda.time.DateTimeConstants">;
+ORU<"org.joda.time.DateTimeConstants">;
+LVR<"org.joda.time.DateTimeConstants">;
+STD<"org.joda.time.DateTimeConstants">;
+
+// Enable operators for org.joda.time.DateTimeField
+AOR<"org.joda.time.DateTimeField">;
+LOR<"org.joda.time.DateTimeField">;
+SOR<"org.joda.time.DateTimeField">;
+COR<"org.joda.time.DateTimeField">;
+ROR<"org.joda.time.DateTimeField">;
+ORU<"org.joda.time.DateTimeField">;
+LVR<"org.joda.time.DateTimeField">;
+STD<"org.joda.time.DateTimeField">;
+
+// Enable operators for org.joda.time.ReadableDateTime
+AOR<"org.joda.time.ReadableDateTime">;
+LOR<"org.joda.time.ReadableDateTime">;
+SOR<"org.joda.time.ReadableDateTime">;
+COR<"org.joda.time.ReadableDateTime">;
+ROR<"org.joda.time.ReadableDateTime">;
+ORU<"org.joda.time.ReadableDateTime">;
+LVR<"org.joda.time.ReadableDateTime">;
+STD<"org.joda.time.ReadableDateTime">;
+
+// Enable operators for org.joda.time.DateMidnight
+AOR<"org.joda.time.DateMidnight">;
+LOR<"org.joda.time.DateMidnight">;
+SOR<"org.joda.time.DateMidnight">;
+COR<"org.joda.time.DateMidnight">;
+ROR<"org.joda.time.DateMidnight">;
+ORU<"org.joda.time.DateMidnight">;
+LVR<"org.joda.time.DateMidnight">;
+STD<"org.joda.time.DateMidnight">;
+
+// Enable operators for org.joda.time.IllegalFieldValueException
+AOR<"org.joda.time.IllegalFieldValueException">;
+LOR<"org.joda.time.IllegalFieldValueException">;
+SOR<"org.joda.time.IllegalFieldValueException">;
+COR<"org.joda.time.IllegalFieldValueException">;
+ROR<"org.joda.time.IllegalFieldValueException">;
+ORU<"org.joda.time.IllegalFieldValueException">;
+LVR<"org.joda.time.IllegalFieldValueException">;
+STD<"org.joda.time.IllegalFieldValueException">;
+
+// Enable operators for org.joda.time.Seconds
+AOR<"org.joda.time.Seconds">;
+LOR<"org.joda.time.Seconds">;
+SOR<"org.joda.time.Seconds">;
+COR<"org.joda.time.Seconds">;
+ROR<"org.joda.time.Seconds">;
+ORU<"org.joda.time.Seconds">;
+LVR<"org.joda.time.Seconds">;
+STD<"org.joda.time.Seconds">;
+
+// Enable operators for org.joda.time.YearMonth
+AOR<"org.joda.time.YearMonth">;
+LOR<"org.joda.time.YearMonth">;
+SOR<"org.joda.time.YearMonth">;
+COR<"org.joda.time.YearMonth">;
+ROR<"org.joda.time.YearMonth">;
+ORU<"org.joda.time.YearMonth">;
+LVR<"org.joda.time.YearMonth">;
+STD<"org.joda.time.YearMonth">;
+
+// Enable operators for org.joda.time.DurationFieldType
+AOR<"org.joda.time.DurationFieldType">;
+LOR<"org.joda.time.DurationFieldType">;
+SOR<"org.joda.time.DurationFieldType">;
+COR<"org.joda.time.DurationFieldType">;
+ROR<"org.joda.time.DurationFieldType">;
+ORU<"org.joda.time.DurationFieldType">;
+LVR<"org.joda.time.DurationFieldType">;
+STD<"org.joda.time.DurationFieldType">;
+
+// Enable operators for org.joda.time.base.AbstractInterval
+AOR<"org.joda.time.base.AbstractInterval">;
+LOR<"org.joda.time.base.AbstractInterval">;
+SOR<"org.joda.time.base.AbstractInterval">;
+COR<"org.joda.time.base.AbstractInterval">;
+ROR<"org.joda.time.base.AbstractInterval">;
+ORU<"org.joda.time.base.AbstractInterval">;
+LVR<"org.joda.time.base.AbstractInterval">;
+STD<"org.joda.time.base.AbstractInterval">;
+
+// Enable operators for org.joda.time.base.BaseSingleFieldPeriod
+AOR<"org.joda.time.base.BaseSingleFieldPeriod">;
+LOR<"org.joda.time.base.BaseSingleFieldPeriod">;
+SOR<"org.joda.time.base.BaseSingleFieldPeriod">;
+COR<"org.joda.time.base.BaseSingleFieldPeriod">;
+ROR<"org.joda.time.base.BaseSingleFieldPeriod">;
+ORU<"org.joda.time.base.BaseSingleFieldPeriod">;
+LVR<"org.joda.time.base.BaseSingleFieldPeriod">;
+STD<"org.joda.time.base.BaseSingleFieldPeriod">;
+
+// Enable operators for org.joda.time.base.BaseDateTime
+AOR<"org.joda.time.base.BaseDateTime">;
+LOR<"org.joda.time.base.BaseDateTime">;
+SOR<"org.joda.time.base.BaseDateTime">;
+COR<"org.joda.time.base.BaseDateTime">;
+ROR<"org.joda.time.base.BaseDateTime">;
+ORU<"org.joda.time.base.BaseDateTime">;
+LVR<"org.joda.time.base.BaseDateTime">;
+STD<"org.joda.time.base.BaseDateTime">;
+
+// Enable operators for org.joda.time.base.AbstractPeriod
+AOR<"org.joda.time.base.AbstractPeriod">;
+LOR<"org.joda.time.base.AbstractPeriod">;
+SOR<"org.joda.time.base.AbstractPeriod">;
+COR<"org.joda.time.base.AbstractPeriod">;
+ROR<"org.joda.time.base.AbstractPeriod">;
+ORU<"org.joda.time.base.AbstractPeriod">;
+LVR<"org.joda.time.base.AbstractPeriod">;
+STD<"org.joda.time.base.AbstractPeriod">;
+
+// Enable operators for org.joda.time.base.BasePartial
+AOR<"org.joda.time.base.BasePartial">;
+LOR<"org.joda.time.base.BasePartial">;
+SOR<"org.joda.time.base.BasePartial">;
+COR<"org.joda.time.base.BasePartial">;
+ROR<"org.joda.time.base.BasePartial">;
+ORU<"org.joda.time.base.BasePartial">;
+LVR<"org.joda.time.base.BasePartial">;
+STD<"org.joda.time.base.BasePartial">;
+
+// Enable operators for org.joda.time.base.AbstractPartial
+AOR<"org.joda.time.base.AbstractPartial">;
+LOR<"org.joda.time.base.AbstractPartial">;
+SOR<"org.joda.time.base.AbstractPartial">;
+COR<"org.joda.time.base.AbstractPartial">;
+ROR<"org.joda.time.base.AbstractPartial">;
+ORU<"org.joda.time.base.AbstractPartial">;
+LVR<"org.joda.time.base.AbstractPartial">;
+STD<"org.joda.time.base.AbstractPartial">;
+
+// Enable operators for org.joda.time.base.AbstractInstant
+AOR<"org.joda.time.base.AbstractInstant">;
+LOR<"org.joda.time.base.AbstractInstant">;
+SOR<"org.joda.time.base.AbstractInstant">;
+COR<"org.joda.time.base.AbstractInstant">;
+ROR<"org.joda.time.base.AbstractInstant">;
+ORU<"org.joda.time.base.AbstractInstant">;
+LVR<"org.joda.time.base.AbstractInstant">;
+STD<"org.joda.time.base.AbstractInstant">;
+
+// Enable operators for org.joda.time.base.AbstractDateTime
+AOR<"org.joda.time.base.AbstractDateTime">;
+LOR<"org.joda.time.base.AbstractDateTime">;
+SOR<"org.joda.time.base.AbstractDateTime">;
+COR<"org.joda.time.base.AbstractDateTime">;
+ROR<"org.joda.time.base.AbstractDateTime">;
+ORU<"org.joda.time.base.AbstractDateTime">;
+LVR<"org.joda.time.base.AbstractDateTime">;
+STD<"org.joda.time.base.AbstractDateTime">;
+
+// Enable operators for org.joda.time.base.BaseInterval
+AOR<"org.joda.time.base.BaseInterval">;
+LOR<"org.joda.time.base.BaseInterval">;
+SOR<"org.joda.time.base.BaseInterval">;
+COR<"org.joda.time.base.BaseInterval">;
+ROR<"org.joda.time.base.BaseInterval">;
+ORU<"org.joda.time.base.BaseInterval">;
+LVR<"org.joda.time.base.BaseInterval">;
+STD<"org.joda.time.base.BaseInterval">;
+
+// Enable operators for org.joda.time.base.BaseDuration
+AOR<"org.joda.time.base.BaseDuration">;
+LOR<"org.joda.time.base.BaseDuration">;
+SOR<"org.joda.time.base.BaseDuration">;
+COR<"org.joda.time.base.BaseDuration">;
+ROR<"org.joda.time.base.BaseDuration">;
+ORU<"org.joda.time.base.BaseDuration">;
+LVR<"org.joda.time.base.BaseDuration">;
+STD<"org.joda.time.base.BaseDuration">;
+
+// Enable operators for org.joda.time.base.BasePeriod
+AOR<"org.joda.time.base.BasePeriod">;
+LOR<"org.joda.time.base.BasePeriod">;
+SOR<"org.joda.time.base.BasePeriod">;
+COR<"org.joda.time.base.BasePeriod">;
+ROR<"org.joda.time.base.BasePeriod">;
+ORU<"org.joda.time.base.BasePeriod">;
+LVR<"org.joda.time.base.BasePeriod">;
+STD<"org.joda.time.base.BasePeriod">;
+
+// Enable operators for org.joda.time.base.AbstractDuration
+AOR<"org.joda.time.base.AbstractDuration">;
+LOR<"org.joda.time.base.AbstractDuration">;
+SOR<"org.joda.time.base.AbstractDuration">;
+COR<"org.joda.time.base.AbstractDuration">;
+ROR<"org.joda.time.base.AbstractDuration">;
+ORU<"org.joda.time.base.AbstractDuration">;
+LVR<"org.joda.time.base.AbstractDuration">;
+STD<"org.joda.time.base.AbstractDuration">;
+
+// Enable operators for org.joda.time.base.BaseLocal
+AOR<"org.joda.time.base.BaseLocal">;
+LOR<"org.joda.time.base.BaseLocal">;
+SOR<"org.joda.time.base.BaseLocal">;
+COR<"org.joda.time.base.BaseLocal">;
+ROR<"org.joda.time.base.BaseLocal">;
+ORU<"org.joda.time.base.BaseLocal">;
+LVR<"org.joda.time.base.BaseLocal">;
+STD<"org.joda.time.base.BaseLocal">;
+
+// Enable operators for org.joda.time.YearMonthDay
+AOR<"org.joda.time.YearMonthDay">;
+LOR<"org.joda.time.YearMonthDay">;
+SOR<"org.joda.time.YearMonthDay">;
+COR<"org.joda.time.YearMonthDay">;
+ROR<"org.joda.time.YearMonthDay">;
+ORU<"org.joda.time.YearMonthDay">;
+LVR<"org.joda.time.YearMonthDay">;
+STD<"org.joda.time.YearMonthDay">;
+
+// Enable operators for org.joda.time.Years
+AOR<"org.joda.time.Years">;
+LOR<"org.joda.time.Years">;
+SOR<"org.joda.time.Years">;
+COR<"org.joda.time.Years">;
+ROR<"org.joda.time.Years">;
+ORU<"org.joda.time.Years">;
+LVR<"org.joda.time.Years">;
+STD<"org.joda.time.Years">;
+
+// Enable operators for org.joda.time.convert.StringConverter
+AOR<"org.joda.time.convert.StringConverter">;
+LOR<"org.joda.time.convert.StringConverter">;
+SOR<"org.joda.time.convert.StringConverter">;
+COR<"org.joda.time.convert.StringConverter">;
+ROR<"org.joda.time.convert.StringConverter">;
+ORU<"org.joda.time.convert.StringConverter">;
+LVR<"org.joda.time.convert.StringConverter">;
+STD<"org.joda.time.convert.StringConverter">;
+
+// Enable operators for org.joda.time.convert.AbstractConverter
+AOR<"org.joda.time.convert.AbstractConverter">;
+LOR<"org.joda.time.convert.AbstractConverter">;
+SOR<"org.joda.time.convert.AbstractConverter">;
+COR<"org.joda.time.convert.AbstractConverter">;
+ROR<"org.joda.time.convert.AbstractConverter">;
+ORU<"org.joda.time.convert.AbstractConverter">;
+LVR<"org.joda.time.convert.AbstractConverter">;
+STD<"org.joda.time.convert.AbstractConverter">;
+
+// Enable operators for org.joda.time.convert.DateConverter
+AOR<"org.joda.time.convert.DateConverter">;
+LOR<"org.joda.time.convert.DateConverter">;
+SOR<"org.joda.time.convert.DateConverter">;
+COR<"org.joda.time.convert.DateConverter">;
+ROR<"org.joda.time.convert.DateConverter">;
+ORU<"org.joda.time.convert.DateConverter">;
+LVR<"org.joda.time.convert.DateConverter">;
+STD<"org.joda.time.convert.DateConverter">;
+
+// Enable operators for org.joda.time.convert.ReadableInstantConverter
+AOR<"org.joda.time.convert.ReadableInstantConverter">;
+LOR<"org.joda.time.convert.ReadableInstantConverter">;
+SOR<"org.joda.time.convert.ReadableInstantConverter">;
+COR<"org.joda.time.convert.ReadableInstantConverter">;
+ROR<"org.joda.time.convert.ReadableInstantConverter">;
+ORU<"org.joda.time.convert.ReadableInstantConverter">;
+LVR<"org.joda.time.convert.ReadableInstantConverter">;
+STD<"org.joda.time.convert.ReadableInstantConverter">;
+
+// Enable operators for org.joda.time.convert.ConverterSet
+AOR<"org.joda.time.convert.ConverterSet">;
+LOR<"org.joda.time.convert.ConverterSet">;
+SOR<"org.joda.time.convert.ConverterSet">;
+COR<"org.joda.time.convert.ConverterSet">;
+ROR<"org.joda.time.convert.ConverterSet">;
+ORU<"org.joda.time.convert.ConverterSet">;
+LVR<"org.joda.time.convert.ConverterSet">;
+STD<"org.joda.time.convert.ConverterSet">;
+
+// Enable operators for org.joda.time.convert.PeriodConverter
+AOR<"org.joda.time.convert.PeriodConverter">;
+LOR<"org.joda.time.convert.PeriodConverter">;
+SOR<"org.joda.time.convert.PeriodConverter">;
+COR<"org.joda.time.convert.PeriodConverter">;
+ROR<"org.joda.time.convert.PeriodConverter">;
+ORU<"org.joda.time.convert.PeriodConverter">;
+LVR<"org.joda.time.convert.PeriodConverter">;
+STD<"org.joda.time.convert.PeriodConverter">;
+
+// Enable operators for org.joda.time.convert.ReadableDurationConverter
+AOR<"org.joda.time.convert.ReadableDurationConverter">;
+LOR<"org.joda.time.convert.ReadableDurationConverter">;
+SOR<"org.joda.time.convert.ReadableDurationConverter">;
+COR<"org.joda.time.convert.ReadableDurationConverter">;
+ROR<"org.joda.time.convert.ReadableDurationConverter">;
+ORU<"org.joda.time.convert.ReadableDurationConverter">;
+LVR<"org.joda.time.convert.ReadableDurationConverter">;
+STD<"org.joda.time.convert.ReadableDurationConverter">;
+
+// Enable operators for org.joda.time.convert.ReadableIntervalConverter
+AOR<"org.joda.time.convert.ReadableIntervalConverter">;
+LOR<"org.joda.time.convert.ReadableIntervalConverter">;
+SOR<"org.joda.time.convert.ReadableIntervalConverter">;
+COR<"org.joda.time.convert.ReadableIntervalConverter">;
+ROR<"org.joda.time.convert.ReadableIntervalConverter">;
+ORU<"org.joda.time.convert.ReadableIntervalConverter">;
+LVR<"org.joda.time.convert.ReadableIntervalConverter">;
+STD<"org.joda.time.convert.ReadableIntervalConverter">;
+
+// Enable operators for org.joda.time.convert.ReadablePeriodConverter
+AOR<"org.joda.time.convert.ReadablePeriodConverter">;
+LOR<"org.joda.time.convert.ReadablePeriodConverter">;
+SOR<"org.joda.time.convert.ReadablePeriodConverter">;
+COR<"org.joda.time.convert.ReadablePeriodConverter">;
+ROR<"org.joda.time.convert.ReadablePeriodConverter">;
+ORU<"org.joda.time.convert.ReadablePeriodConverter">;
+LVR<"org.joda.time.convert.ReadablePeriodConverter">;
+STD<"org.joda.time.convert.ReadablePeriodConverter">;
+
+// Enable operators for org.joda.time.convert.ReadablePartialConverter
+AOR<"org.joda.time.convert.ReadablePartialConverter">;
+LOR<"org.joda.time.convert.ReadablePartialConverter">;
+SOR<"org.joda.time.convert.ReadablePartialConverter">;
+COR<"org.joda.time.convert.ReadablePartialConverter">;
+ROR<"org.joda.time.convert.ReadablePartialConverter">;
+ORU<"org.joda.time.convert.ReadablePartialConverter">;
+LVR<"org.joda.time.convert.ReadablePartialConverter">;
+STD<"org.joda.time.convert.ReadablePartialConverter">;
+
+// Enable operators for org.joda.time.convert.ConverterManager
+AOR<"org.joda.time.convert.ConverterManager">;
+LOR<"org.joda.time.convert.ConverterManager">;
+SOR<"org.joda.time.convert.ConverterManager">;
+COR<"org.joda.time.convert.ConverterManager">;
+ROR<"org.joda.time.convert.ConverterManager">;
+ORU<"org.joda.time.convert.ConverterManager">;
+LVR<"org.joda.time.convert.ConverterManager">;
+STD<"org.joda.time.convert.ConverterManager">;
+
+// Enable operators for org.joda.time.convert.PartialConverter
+AOR<"org.joda.time.convert.PartialConverter">;
+LOR<"org.joda.time.convert.PartialConverter">;
+SOR<"org.joda.time.convert.PartialConverter">;
+COR<"org.joda.time.convert.PartialConverter">;
+ROR<"org.joda.time.convert.PartialConverter">;
+ORU<"org.joda.time.convert.PartialConverter">;
+LVR<"org.joda.time.convert.PartialConverter">;
+STD<"org.joda.time.convert.PartialConverter">;
+
+// Enable operators for org.joda.time.convert.NullConverter
+AOR<"org.joda.time.convert.NullConverter">;
+LOR<"org.joda.time.convert.NullConverter">;
+SOR<"org.joda.time.convert.NullConverter">;
+COR<"org.joda.time.convert.NullConverter">;
+ROR<"org.joda.time.convert.NullConverter">;
+ORU<"org.joda.time.convert.NullConverter">;
+LVR<"org.joda.time.convert.NullConverter">;
+STD<"org.joda.time.convert.NullConverter">;
+
+// Enable operators for org.joda.time.convert.InstantConverter
+AOR<"org.joda.time.convert.InstantConverter">;
+LOR<"org.joda.time.convert.InstantConverter">;
+SOR<"org.joda.time.convert.InstantConverter">;
+COR<"org.joda.time.convert.InstantConverter">;
+ROR<"org.joda.time.convert.InstantConverter">;
+ORU<"org.joda.time.convert.InstantConverter">;
+LVR<"org.joda.time.convert.InstantConverter">;
+STD<"org.joda.time.convert.InstantConverter">;
+
+// Enable operators for org.joda.time.convert.Converter
+AOR<"org.joda.time.convert.Converter">;
+LOR<"org.joda.time.convert.Converter">;
+SOR<"org.joda.time.convert.Converter">;
+COR<"org.joda.time.convert.Converter">;
+ROR<"org.joda.time.convert.Converter">;
+ORU<"org.joda.time.convert.Converter">;
+LVR<"org.joda.time.convert.Converter">;
+STD<"org.joda.time.convert.Converter">;
+
+// Enable operators for org.joda.time.convert.CalendarConverter
+AOR<"org.joda.time.convert.CalendarConverter">;
+LOR<"org.joda.time.convert.CalendarConverter">;
+SOR<"org.joda.time.convert.CalendarConverter">;
+COR<"org.joda.time.convert.CalendarConverter">;
+ROR<"org.joda.time.convert.CalendarConverter">;
+ORU<"org.joda.time.convert.CalendarConverter">;
+LVR<"org.joda.time.convert.CalendarConverter">;
+STD<"org.joda.time.convert.CalendarConverter">;
+
+// Enable operators for org.joda.time.convert.IntervalConverter
+AOR<"org.joda.time.convert.IntervalConverter">;
+LOR<"org.joda.time.convert.IntervalConverter">;
+SOR<"org.joda.time.convert.IntervalConverter">;
+COR<"org.joda.time.convert.IntervalConverter">;
+ROR<"org.joda.time.convert.IntervalConverter">;
+ORU<"org.joda.time.convert.IntervalConverter">;
+LVR<"org.joda.time.convert.IntervalConverter">;
+STD<"org.joda.time.convert.IntervalConverter">;
+
+// Enable operators for org.joda.time.convert.DurationConverter
+AOR<"org.joda.time.convert.DurationConverter">;
+LOR<"org.joda.time.convert.DurationConverter">;
+SOR<"org.joda.time.convert.DurationConverter">;
+COR<"org.joda.time.convert.DurationConverter">;
+ROR<"org.joda.time.convert.DurationConverter">;
+ORU<"org.joda.time.convert.DurationConverter">;
+LVR<"org.joda.time.convert.DurationConverter">;
+STD<"org.joda.time.convert.DurationConverter">;
+
+// Enable operators for org.joda.time.convert.LongConverter
+AOR<"org.joda.time.convert.LongConverter">;
+LOR<"org.joda.time.convert.LongConverter">;
+SOR<"org.joda.time.convert.LongConverter">;
+COR<"org.joda.time.convert.LongConverter">;
+ROR<"org.joda.time.convert.LongConverter">;
+ORU<"org.joda.time.convert.LongConverter">;
+LVR<"org.joda.time.convert.LongConverter">;
+STD<"org.joda.time.convert.LongConverter">;
+
+// Enable operators for org.joda.time.DateTimeComparator
+AOR<"org.joda.time.DateTimeComparator">;
+LOR<"org.joda.time.DateTimeComparator">;
+SOR<"org.joda.time.DateTimeComparator">;
+COR<"org.joda.time.DateTimeComparator">;
+ROR<"org.joda.time.DateTimeComparator">;
+ORU<"org.joda.time.DateTimeComparator">;
+LVR<"org.joda.time.DateTimeComparator">;
+STD<"org.joda.time.DateTimeComparator">;
+
+// Enable operators for org.joda.time.Months
+AOR<"org.joda.time.Months">;
+LOR<"org.joda.time.Months">;
+SOR<"org.joda.time.Months">;
+COR<"org.joda.time.Months">;
+ROR<"org.joda.time.Months">;
+ORU<"org.joda.time.Months">;
+LVR<"org.joda.time.Months">;
+STD<"org.joda.time.Months">;
+
+// Enable operators for org.joda.time.LocalDate
+AOR<"org.joda.time.LocalDate">;
+LOR<"org.joda.time.LocalDate">;
+SOR<"org.joda.time.LocalDate">;
+COR<"org.joda.time.LocalDate">;
+ROR<"org.joda.time.LocalDate">;
+ORU<"org.joda.time.LocalDate">;
+LVR<"org.joda.time.LocalDate">;
+STD<"org.joda.time.LocalDate">;
+
+// Enable operators for org.joda.time.format.DateTimeFormat
+AOR<"org.joda.time.format.DateTimeFormat">;
+LOR<"org.joda.time.format.DateTimeFormat">;
+SOR<"org.joda.time.format.DateTimeFormat">;
+COR<"org.joda.time.format.DateTimeFormat">;
+ROR<"org.joda.time.format.DateTimeFormat">;
+ORU<"org.joda.time.format.DateTimeFormat">;
+LVR<"org.joda.time.format.DateTimeFormat">;
+STD<"org.joda.time.format.DateTimeFormat">;
+
+// Enable operators for org.joda.time.format.DateTimePrinter
+AOR<"org.joda.time.format.DateTimePrinter">;
+LOR<"org.joda.time.format.DateTimePrinter">;
+SOR<"org.joda.time.format.DateTimePrinter">;
+COR<"org.joda.time.format.DateTimePrinter">;
+ROR<"org.joda.time.format.DateTimePrinter">;
+ORU<"org.joda.time.format.DateTimePrinter">;
+LVR<"org.joda.time.format.DateTimePrinter">;
+STD<"org.joda.time.format.DateTimePrinter">;
+
+// Enable operators for org.joda.time.format.PeriodPrinter
+AOR<"org.joda.time.format.PeriodPrinter">;
+LOR<"org.joda.time.format.PeriodPrinter">;
+SOR<"org.joda.time.format.PeriodPrinter">;
+COR<"org.joda.time.format.PeriodPrinter">;
+ROR<"org.joda.time.format.PeriodPrinter">;
+ORU<"org.joda.time.format.PeriodPrinter">;
+LVR<"org.joda.time.format.PeriodPrinter">;
+STD<"org.joda.time.format.PeriodPrinter">;
+
+// Enable operators for org.joda.time.format.PeriodFormatter
+AOR<"org.joda.time.format.PeriodFormatter">;
+LOR<"org.joda.time.format.PeriodFormatter">;
+SOR<"org.joda.time.format.PeriodFormatter">;
+COR<"org.joda.time.format.PeriodFormatter">;
+ROR<"org.joda.time.format.PeriodFormatter">;
+ORU<"org.joda.time.format.PeriodFormatter">;
+LVR<"org.joda.time.format.PeriodFormatter">;
+STD<"org.joda.time.format.PeriodFormatter">;
+
+// Enable operators for org.joda.time.format.DateTimeParser
+AOR<"org.joda.time.format.DateTimeParser">;
+LOR<"org.joda.time.format.DateTimeParser">;
+SOR<"org.joda.time.format.DateTimeParser">;
+COR<"org.joda.time.format.DateTimeParser">;
+ROR<"org.joda.time.format.DateTimeParser">;
+ORU<"org.joda.time.format.DateTimeParser">;
+LVR<"org.joda.time.format.DateTimeParser">;
+STD<"org.joda.time.format.DateTimeParser">;
+
+// Enable operators for org.joda.time.format.PeriodFormat
+AOR<"org.joda.time.format.PeriodFormat">;
+LOR<"org.joda.time.format.PeriodFormat">;
+SOR<"org.joda.time.format.PeriodFormat">;
+COR<"org.joda.time.format.PeriodFormat">;
+ROR<"org.joda.time.format.PeriodFormat">;
+ORU<"org.joda.time.format.PeriodFormat">;
+LVR<"org.joda.time.format.PeriodFormat">;
+STD<"org.joda.time.format.PeriodFormat">;
+
+// Enable operators for org.joda.time.format.ISOPeriodFormat
+AOR<"org.joda.time.format.ISOPeriodFormat">;
+LOR<"org.joda.time.format.ISOPeriodFormat">;
+SOR<"org.joda.time.format.ISOPeriodFormat">;
+COR<"org.joda.time.format.ISOPeriodFormat">;
+ROR<"org.joda.time.format.ISOPeriodFormat">;
+ORU<"org.joda.time.format.ISOPeriodFormat">;
+LVR<"org.joda.time.format.ISOPeriodFormat">;
+STD<"org.joda.time.format.ISOPeriodFormat">;
+
+// Enable operators for org.joda.time.format.DateTimeFormatterBuilder
+AOR<"org.joda.time.format.DateTimeFormatterBuilder">;
+LOR<"org.joda.time.format.DateTimeFormatterBuilder">;
+SOR<"org.joda.time.format.DateTimeFormatterBuilder">;
+COR<"org.joda.time.format.DateTimeFormatterBuilder">;
+ROR<"org.joda.time.format.DateTimeFormatterBuilder">;
+ORU<"org.joda.time.format.DateTimeFormatterBuilder">;
+LVR<"org.joda.time.format.DateTimeFormatterBuilder">;
+STD<"org.joda.time.format.DateTimeFormatterBuilder">;
+
+// Enable operators for org.joda.time.format.PeriodParser
+AOR<"org.joda.time.format.PeriodParser">;
+LOR<"org.joda.time.format.PeriodParser">;
+SOR<"org.joda.time.format.PeriodParser">;
+COR<"org.joda.time.format.PeriodParser">;
+ROR<"org.joda.time.format.PeriodParser">;
+ORU<"org.joda.time.format.PeriodParser">;
+LVR<"org.joda.time.format.PeriodParser">;
+STD<"org.joda.time.format.PeriodParser">;
+
+// Enable operators for org.joda.time.format.DateTimeParserBucket
+AOR<"org.joda.time.format.DateTimeParserBucket">;
+LOR<"org.joda.time.format.DateTimeParserBucket">;
+SOR<"org.joda.time.format.DateTimeParserBucket">;
+COR<"org.joda.time.format.DateTimeParserBucket">;
+ROR<"org.joda.time.format.DateTimeParserBucket">;
+ORU<"org.joda.time.format.DateTimeParserBucket">;
+LVR<"org.joda.time.format.DateTimeParserBucket">;
+STD<"org.joda.time.format.DateTimeParserBucket">;
+
+// Enable operators for org.joda.time.format.DateTimeFormatter
+AOR<"org.joda.time.format.DateTimeFormatter">;
+LOR<"org.joda.time.format.DateTimeFormatter">;
+SOR<"org.joda.time.format.DateTimeFormatter">;
+COR<"org.joda.time.format.DateTimeFormatter">;
+ROR<"org.joda.time.format.DateTimeFormatter">;
+ORU<"org.joda.time.format.DateTimeFormatter">;
+LVR<"org.joda.time.format.DateTimeFormatter">;
+STD<"org.joda.time.format.DateTimeFormatter">;
+
+// Enable operators for org.joda.time.format.ISODateTimeFormat
+AOR<"org.joda.time.format.ISODateTimeFormat">;
+LOR<"org.joda.time.format.ISODateTimeFormat">;
+SOR<"org.joda.time.format.ISODateTimeFormat">;
+COR<"org.joda.time.format.ISODateTimeFormat">;
+ROR<"org.joda.time.format.ISODateTimeFormat">;
+ORU<"org.joda.time.format.ISODateTimeFormat">;
+LVR<"org.joda.time.format.ISODateTimeFormat">;
+STD<"org.joda.time.format.ISODateTimeFormat">;
+
+// Enable operators for org.joda.time.format.FormatUtils
+AOR<"org.joda.time.format.FormatUtils">;
+LOR<"org.joda.time.format.FormatUtils">;
+SOR<"org.joda.time.format.FormatUtils">;
+COR<"org.joda.time.format.FormatUtils">;
+ROR<"org.joda.time.format.FormatUtils">;
+ORU<"org.joda.time.format.FormatUtils">;
+LVR<"org.joda.time.format.FormatUtils">;
+STD<"org.joda.time.format.FormatUtils">;
+
+// Enable operators for org.joda.time.format.PeriodFormatterBuilder
+AOR<"org.joda.time.format.PeriodFormatterBuilder">;
+LOR<"org.joda.time.format.PeriodFormatterBuilder">;
+SOR<"org.joda.time.format.PeriodFormatterBuilder">;
+COR<"org.joda.time.format.PeriodFormatterBuilder">;
+ROR<"org.joda.time.format.PeriodFormatterBuilder">;
+ORU<"org.joda.time.format.PeriodFormatterBuilder">;
+LVR<"org.joda.time.format.PeriodFormatterBuilder">;
+STD<"org.joda.time.format.PeriodFormatterBuilder">;
+
+// Enable operators for org.joda.time.ReadWritableDateTime
+AOR<"org.joda.time.ReadWritableDateTime">;
+LOR<"org.joda.time.ReadWritableDateTime">;
+SOR<"org.joda.time.ReadWritableDateTime">;
+COR<"org.joda.time.ReadWritableDateTime">;
+ROR<"org.joda.time.ReadWritableDateTime">;
+ORU<"org.joda.time.ReadWritableDateTime">;
+LVR<"org.joda.time.ReadWritableDateTime">;
+STD<"org.joda.time.ReadWritableDateTime">;
+
+// Enable operators for org.joda.time.Weeks
+AOR<"org.joda.time.Weeks">;
+LOR<"org.joda.time.Weeks">;
+SOR<"org.joda.time.Weeks">;
+COR<"org.joda.time.Weeks">;
+ROR<"org.joda.time.Weeks">;
+ORU<"org.joda.time.Weeks">;
+LVR<"org.joda.time.Weeks">;
+STD<"org.joda.time.Weeks">;
+
+// Enable operators for org.joda.time.Interval
+AOR<"org.joda.time.Interval">;
+LOR<"org.joda.time.Interval">;
+SOR<"org.joda.time.Interval">;
+COR<"org.joda.time.Interval">;
+ROR<"org.joda.time.Interval">;
+ORU<"org.joda.time.Interval">;
+LVR<"org.joda.time.Interval">;
+STD<"org.joda.time.Interval">;
+
+// Enable operators for org.joda.time.Days
+AOR<"org.joda.time.Days">;
+LOR<"org.joda.time.Days">;
+SOR<"org.joda.time.Days">;
+COR<"org.joda.time.Days">;
+ROR<"org.joda.time.Days">;
+ORU<"org.joda.time.Days">;
+LVR<"org.joda.time.Days">;
+STD<"org.joda.time.Days">;
+
+// Enable operators for org.joda.time.tz.Provider
+AOR<"org.joda.time.tz.Provider">;
+LOR<"org.joda.time.tz.Provider">;
+SOR<"org.joda.time.tz.Provider">;
+COR<"org.joda.time.tz.Provider">;
+ROR<"org.joda.time.tz.Provider">;
+ORU<"org.joda.time.tz.Provider">;
+LVR<"org.joda.time.tz.Provider">;
+STD<"org.joda.time.tz.Provider">;
+
+// Enable operators for org.joda.time.tz.ZoneInfoProvider
+AOR<"org.joda.time.tz.ZoneInfoProvider">;
+LOR<"org.joda.time.tz.ZoneInfoProvider">;
+SOR<"org.joda.time.tz.ZoneInfoProvider">;
+COR<"org.joda.time.tz.ZoneInfoProvider">;
+ROR<"org.joda.time.tz.ZoneInfoProvider">;
+ORU<"org.joda.time.tz.ZoneInfoProvider">;
+LVR<"org.joda.time.tz.ZoneInfoProvider">;
+STD<"org.joda.time.tz.ZoneInfoProvider">;
+
+// Enable operators for org.joda.time.tz.UTCProvider
+AOR<"org.joda.time.tz.UTCProvider">;
+LOR<"org.joda.time.tz.UTCProvider">;
+SOR<"org.joda.time.tz.UTCProvider">;
+COR<"org.joda.time.tz.UTCProvider">;
+ROR<"org.joda.time.tz.UTCProvider">;
+ORU<"org.joda.time.tz.UTCProvider">;
+LVR<"org.joda.time.tz.UTCProvider">;
+STD<"org.joda.time.tz.UTCProvider">;
+
+// Enable operators for org.joda.time.tz.ZoneInfoCompiler
+AOR<"org.joda.time.tz.ZoneInfoCompiler">;
+LOR<"org.joda.time.tz.ZoneInfoCompiler">;
+SOR<"org.joda.time.tz.ZoneInfoCompiler">;
+COR<"org.joda.time.tz.ZoneInfoCompiler">;
+ROR<"org.joda.time.tz.ZoneInfoCompiler">;
+ORU<"org.joda.time.tz.ZoneInfoCompiler">;
+LVR<"org.joda.time.tz.ZoneInfoCompiler">;
+STD<"org.joda.time.tz.ZoneInfoCompiler">;
+
+// Enable operators for org.joda.time.tz.NameProvider
+AOR<"org.joda.time.tz.NameProvider">;
+LOR<"org.joda.time.tz.NameProvider">;
+SOR<"org.joda.time.tz.NameProvider">;
+COR<"org.joda.time.tz.NameProvider">;
+ROR<"org.joda.time.tz.NameProvider">;
+ORU<"org.joda.time.tz.NameProvider">;
+LVR<"org.joda.time.tz.NameProvider">;
+STD<"org.joda.time.tz.NameProvider">;
+
+// Enable operators for org.joda.time.tz.DateTimeZoneBuilder
+AOR<"org.joda.time.tz.DateTimeZoneBuilder">;
+LOR<"org.joda.time.tz.DateTimeZoneBuilder">;
+SOR<"org.joda.time.tz.DateTimeZoneBuilder">;
+COR<"org.joda.time.tz.DateTimeZoneBuilder">;
+ROR<"org.joda.time.tz.DateTimeZoneBuilder">;
+ORU<"org.joda.time.tz.DateTimeZoneBuilder">;
+LVR<"org.joda.time.tz.DateTimeZoneBuilder">;
+STD<"org.joda.time.tz.DateTimeZoneBuilder">;
+
+// Enable operators for org.joda.time.tz.DefaultNameProvider
+AOR<"org.joda.time.tz.DefaultNameProvider">;
+LOR<"org.joda.time.tz.DefaultNameProvider">;
+SOR<"org.joda.time.tz.DefaultNameProvider">;
+COR<"org.joda.time.tz.DefaultNameProvider">;
+ROR<"org.joda.time.tz.DefaultNameProvider">;
+ORU<"org.joda.time.tz.DefaultNameProvider">;
+LVR<"org.joda.time.tz.DefaultNameProvider">;
+STD<"org.joda.time.tz.DefaultNameProvider">;
+
+// Enable operators for org.joda.time.tz.CachedDateTimeZone
+AOR<"org.joda.time.tz.CachedDateTimeZone">;
+LOR<"org.joda.time.tz.CachedDateTimeZone">;
+SOR<"org.joda.time.tz.CachedDateTimeZone">;
+COR<"org.joda.time.tz.CachedDateTimeZone">;
+ROR<"org.joda.time.tz.CachedDateTimeZone">;
+ORU<"org.joda.time.tz.CachedDateTimeZone">;
+LVR<"org.joda.time.tz.CachedDateTimeZone">;
+STD<"org.joda.time.tz.CachedDateTimeZone">;
+
+// Enable operators for org.joda.time.tz.FixedDateTimeZone
+AOR<"org.joda.time.tz.FixedDateTimeZone">;
+LOR<"org.joda.time.tz.FixedDateTimeZone">;
+SOR<"org.joda.time.tz.FixedDateTimeZone">;
+COR<"org.joda.time.tz.FixedDateTimeZone">;
+ROR<"org.joda.time.tz.FixedDateTimeZone">;
+ORU<"org.joda.time.tz.FixedDateTimeZone">;
+LVR<"org.joda.time.tz.FixedDateTimeZone">;
+STD<"org.joda.time.tz.FixedDateTimeZone">;
+
+// Enable operators for org.joda.time.MutableInterval
+AOR<"org.joda.time.MutableInterval">;
+LOR<"org.joda.time.MutableInterval">;
+SOR<"org.joda.time.MutableInterval">;
+COR<"org.joda.time.MutableInterval">;
+ROR<"org.joda.time.MutableInterval">;
+ORU<"org.joda.time.MutableInterval">;
+LVR<"org.joda.time.MutableInterval">;
+STD<"org.joda.time.MutableInterval">;
+
+// Enable operators for org.joda.time.Period
+AOR<"org.joda.time.Period">;
+LOR<"org.joda.time.Period">;
+SOR<"org.joda.time.Period">;
+COR<"org.joda.time.Period">;
+ROR<"org.joda.time.Period">;
+ORU<"org.joda.time.Period">;
+LVR<"org.joda.time.Period">;
+STD<"org.joda.time.Period">;
+
+// Enable operators for org.joda.time.JodaTimePermission
+AOR<"org.joda.time.JodaTimePermission">;
+LOR<"org.joda.time.JodaTimePermission">;
+SOR<"org.joda.time.JodaTimePermission">;
+COR<"org.joda.time.JodaTimePermission">;
+ROR<"org.joda.time.JodaTimePermission">;
+ORU<"org.joda.time.JodaTimePermission">;
+LVR<"org.joda.time.JodaTimePermission">;
+STD<"org.joda.time.JodaTimePermission">;
+
+// Enable operators for org.joda.time.ReadableInstant
+AOR<"org.joda.time.ReadableInstant">;
+LOR<"org.joda.time.ReadableInstant">;
+SOR<"org.joda.time.ReadableInstant">;
+COR<"org.joda.time.ReadableInstant">;
+ROR<"org.joda.time.ReadableInstant">;
+ORU<"org.joda.time.ReadableInstant">;
+LVR<"org.joda.time.ReadableInstant">;
+STD<"org.joda.time.ReadableInstant">;
+
+// Enable operators for org.joda.time.LocalDateTime
+AOR<"org.joda.time.LocalDateTime">;
+LOR<"org.joda.time.LocalDateTime">;
+SOR<"org.joda.time.LocalDateTime">;
+COR<"org.joda.time.LocalDateTime">;
+ROR<"org.joda.time.LocalDateTime">;
+ORU<"org.joda.time.LocalDateTime">;
+LVR<"org.joda.time.LocalDateTime">;
+STD<"org.joda.time.LocalDateTime">;
+
+// Enable operators for org.joda.time.DateTimeFieldType
+AOR<"org.joda.time.DateTimeFieldType">;
+LOR<"org.joda.time.DateTimeFieldType">;
+SOR<"org.joda.time.DateTimeFieldType">;
+COR<"org.joda.time.DateTimeFieldType">;
+ROR<"org.joda.time.DateTimeFieldType">;
+ORU<"org.joda.time.DateTimeFieldType">;
+LVR<"org.joda.time.DateTimeFieldType">;
+STD<"org.joda.time.DateTimeFieldType">;
+
+// Enable operators for org.joda.time.DateTimeUtils
+AOR<"org.joda.time.DateTimeUtils">;
+LOR<"org.joda.time.DateTimeUtils">;
+SOR<"org.joda.time.DateTimeUtils">;
+COR<"org.joda.time.DateTimeUtils">;
+ROR<"org.joda.time.DateTimeUtils">;
+ORU<"org.joda.time.DateTimeUtils">;
+LVR<"org.joda.time.DateTimeUtils">;
+STD<"org.joda.time.DateTimeUtils">;
+
+// Enable operators for org.joda.time.ReadWritableInstant
+AOR<"org.joda.time.ReadWritableInstant">;
+LOR<"org.joda.time.ReadWritableInstant">;
+SOR<"org.joda.time.ReadWritableInstant">;
+COR<"org.joda.time.ReadWritableInstant">;
+ROR<"org.joda.time.ReadWritableInstant">;
+ORU<"org.joda.time.ReadWritableInstant">;
+LVR<"org.joda.time.ReadWritableInstant">;
+STD<"org.joda.time.ReadWritableInstant">;
+
+// Enable operators for org.joda.time.ReadableInterval
+AOR<"org.joda.time.ReadableInterval">;
+LOR<"org.joda.time.ReadableInterval">;
+SOR<"org.joda.time.ReadableInterval">;
+COR<"org.joda.time.ReadableInterval">;
+ROR<"org.joda.time.ReadableInterval">;
+ORU<"org.joda.time.ReadableInterval">;
+LVR<"org.joda.time.ReadableInterval">;
+STD<"org.joda.time.ReadableInterval">;
+
+// Enable operators for org.joda.time.PeriodType
+AOR<"org.joda.time.PeriodType">;
+LOR<"org.joda.time.PeriodType">;
+SOR<"org.joda.time.PeriodType">;
+COR<"org.joda.time.PeriodType">;
+ROR<"org.joda.time.PeriodType">;
+ORU<"org.joda.time.PeriodType">;
+LVR<"org.joda.time.PeriodType">;
+STD<"org.joda.time.PeriodType">;
+
+// Enable operators for org.joda.time.Duration
+AOR<"org.joda.time.Duration">;
+LOR<"org.joda.time.Duration">;
+SOR<"org.joda.time.Duration">;
+COR<"org.joda.time.Duration">;
+ROR<"org.joda.time.Duration">;
+ORU<"org.joda.time.Duration">;
+LVR<"org.joda.time.Duration">;
+STD<"org.joda.time.Duration">;
+
+// Enable operators for org.joda.time.DateTimeZone
+AOR<"org.joda.time.DateTimeZone">;
+LOR<"org.joda.time.DateTimeZone">;
+SOR<"org.joda.time.DateTimeZone">;
+COR<"org.joda.time.DateTimeZone">;
+ROR<"org.joda.time.DateTimeZone">;
+ORU<"org.joda.time.DateTimeZone">;
+LVR<"org.joda.time.DateTimeZone">;
+STD<"org.joda.time.DateTimeZone">;
+
+// Enable operators for org.joda.time.LocalTime
+AOR<"org.joda.time.LocalTime">;
+LOR<"org.joda.time.LocalTime">;
+SOR<"org.joda.time.LocalTime">;
+COR<"org.joda.time.LocalTime">;
+ROR<"org.joda.time.LocalTime">;
+ORU<"org.joda.time.LocalTime">;
+LVR<"org.joda.time.LocalTime">;
+STD<"org.joda.time.LocalTime">;
+
+// Enable operators for org.joda.time.DurationField
+AOR<"org.joda.time.DurationField">;
+LOR<"org.joda.time.DurationField">;
+SOR<"org.joda.time.DurationField">;
+COR<"org.joda.time.DurationField">;
+ROR<"org.joda.time.DurationField">;
+ORU<"org.joda.time.DurationField">;
+LVR<"org.joda.time.DurationField">;
+STD<"org.joda.time.DurationField">;
+
+// Enable operators for org.joda.time.ReadWritableInterval
+AOR<"org.joda.time.ReadWritableInterval">;
+LOR<"org.joda.time.ReadWritableInterval">;
+SOR<"org.joda.time.ReadWritableInterval">;
+COR<"org.joda.time.ReadWritableInterval">;
+ROR<"org.joda.time.ReadWritableInterval">;
+ORU<"org.joda.time.ReadWritableInterval">;
+LVR<"org.joda.time.ReadWritableInterval">;
+STD<"org.joda.time.ReadWritableInterval">;
+
+// Enable operators for org.joda.time.TimeOfDay
+AOR<"org.joda.time.TimeOfDay">;
+LOR<"org.joda.time.TimeOfDay">;
+SOR<"org.joda.time.TimeOfDay">;
+COR<"org.joda.time.TimeOfDay">;
+ROR<"org.joda.time.TimeOfDay">;
+ORU<"org.joda.time.TimeOfDay">;
+LVR<"org.joda.time.TimeOfDay">;
+STD<"org.joda.time.TimeOfDay">;
+
+// Enable operators for org.joda.time.Hours
+AOR<"org.joda.time.Hours">;
+LOR<"org.joda.time.Hours">;
+SOR<"org.joda.time.Hours">;
+COR<"org.joda.time.Hours">;
+ROR<"org.joda.time.Hours">;
+ORU<"org.joda.time.Hours">;
+LVR<"org.joda.time.Hours">;
+STD<"org.joda.time.Hours">;
+
+// Enable operators for org.joda.time.Partial
+AOR<"org.joda.time.Partial">;
+LOR<"org.joda.time.Partial">;
+SOR<"org.joda.time.Partial">;
+COR<"org.joda.time.Partial">;
+ROR<"org.joda.time.Partial">;
+ORU<"org.joda.time.Partial">;
+LVR<"org.joda.time.Partial">;
+STD<"org.joda.time.Partial">;
+
+// Enable operators for org.joda.time.ReadablePeriod
+AOR<"org.joda.time.ReadablePeriod">;
+LOR<"org.joda.time.ReadablePeriod">;
+SOR<"org.joda.time.ReadablePeriod">;
+COR<"org.joda.time.ReadablePeriod">;
+ROR<"org.joda.time.ReadablePeriod">;
+ORU<"org.joda.time.ReadablePeriod">;
+LVR<"org.joda.time.ReadablePeriod">;
+STD<"org.joda.time.ReadablePeriod">;
+
+// Enable operators for org.joda.time.MutablePeriod
+AOR<"org.joda.time.MutablePeriod">;
+LOR<"org.joda.time.MutablePeriod">;
+SOR<"org.joda.time.MutablePeriod">;
+COR<"org.joda.time.MutablePeriod">;
+ROR<"org.joda.time.MutablePeriod">;
+ORU<"org.joda.time.MutablePeriod">;
+LVR<"org.joda.time.MutablePeriod">;
+STD<"org.joda.time.MutablePeriod">;
+
+// Enable operators for org.joda.time.ReadableDuration
+AOR<"org.joda.time.ReadableDuration">;
+LOR<"org.joda.time.ReadableDuration">;
+SOR<"org.joda.time.ReadableDuration">;
+COR<"org.joda.time.ReadableDuration">;
+ROR<"org.joda.time.ReadableDuration">;
+ORU<"org.joda.time.ReadableDuration">;
+LVR<"org.joda.time.ReadableDuration">;
+STD<"org.joda.time.ReadableDuration">;
+
+// Enable operators for org.joda.time.ReadWritablePeriod
+AOR<"org.joda.time.ReadWritablePeriod">;
+LOR<"org.joda.time.ReadWritablePeriod">;
+SOR<"org.joda.time.ReadWritablePeriod">;
+COR<"org.joda.time.ReadWritablePeriod">;
+ROR<"org.joda.time.ReadWritablePeriod">;
+ORU<"org.joda.time.ReadWritablePeriod">;
+LVR<"org.joda.time.ReadWritablePeriod">;
+STD<"org.joda.time.ReadWritablePeriod">;
+
+// Enable operators for org.joda.time.Instant
+AOR<"org.joda.time.Instant">;
+LOR<"org.joda.time.Instant">;
+SOR<"org.joda.time.Instant">;
+COR<"org.joda.time.Instant">;
+ROR<"org.joda.time.Instant">;
+ORU<"org.joda.time.Instant">;
+LVR<"org.joda.time.Instant">;
+STD<"org.joda.time.Instant">;
+
+// Enable operators for org.joda.time.MutableDateTime
+AOR<"org.joda.time.MutableDateTime">;
+LOR<"org.joda.time.MutableDateTime">;
+SOR<"org.joda.time.MutableDateTime">;
+COR<"org.joda.time.MutableDateTime">;
+ROR<"org.joda.time.MutableDateTime">;
+ORU<"org.joda.time.MutableDateTime">;
+LVR<"org.joda.time.MutableDateTime">;
+STD<"org.joda.time.MutableDateTime">;
+
+// Enable operators for org.joda.time.MonthDay
+AOR<"org.joda.time.MonthDay">;
+LOR<"org.joda.time.MonthDay">;
+SOR<"org.joda.time.MonthDay">;
+COR<"org.joda.time.MonthDay">;
+ROR<"org.joda.time.MonthDay">;
+ORU<"org.joda.time.MonthDay">;
+LVR<"org.joda.time.MonthDay">;
+STD<"org.joda.time.MonthDay">;
+
+// Enable operators for org.joda.time.ReadablePartial
+AOR<"org.joda.time.ReadablePartial">;
+LOR<"org.joda.time.ReadablePartial">;
+SOR<"org.joda.time.ReadablePartial">;
+COR<"org.joda.time.ReadablePartial">;
+ROR<"org.joda.time.ReadablePartial">;
+ORU<"org.joda.time.ReadablePartial">;
+LVR<"org.joda.time.ReadablePartial">;
+STD<"org.joda.time.ReadablePartial">;
+
+// Enable operators for org.joda.time.field.SkipDateTimeField
+AOR<"org.joda.time.field.SkipDateTimeField">;
+LOR<"org.joda.time.field.SkipDateTimeField">;
+SOR<"org.joda.time.field.SkipDateTimeField">;
+COR<"org.joda.time.field.SkipDateTimeField">;
+ROR<"org.joda.time.field.SkipDateTimeField">;
+ORU<"org.joda.time.field.SkipDateTimeField">;
+LVR<"org.joda.time.field.SkipDateTimeField">;
+STD<"org.joda.time.field.SkipDateTimeField">;
+
+// Enable operators for org.joda.time.field.ScaledDurationField
+AOR<"org.joda.time.field.ScaledDurationField">;
+LOR<"org.joda.time.field.ScaledDurationField">;
+SOR<"org.joda.time.field.ScaledDurationField">;
+COR<"org.joda.time.field.ScaledDurationField">;
+ROR<"org.joda.time.field.ScaledDurationField">;
+ORU<"org.joda.time.field.ScaledDurationField">;
+LVR<"org.joda.time.field.ScaledDurationField">;
+STD<"org.joda.time.field.ScaledDurationField">;
+
+// Enable operators for org.joda.time.field.MillisDurationField
+AOR<"org.joda.time.field.MillisDurationField">;
+LOR<"org.joda.time.field.MillisDurationField">;
+SOR<"org.joda.time.field.MillisDurationField">;
+COR<"org.joda.time.field.MillisDurationField">;
+ROR<"org.joda.time.field.MillisDurationField">;
+ORU<"org.joda.time.field.MillisDurationField">;
+LVR<"org.joda.time.field.MillisDurationField">;
+STD<"org.joda.time.field.MillisDurationField">;
+
+// Enable operators for org.joda.time.field.PreciseDateTimeField
+AOR<"org.joda.time.field.PreciseDateTimeField">;
+LOR<"org.joda.time.field.PreciseDateTimeField">;
+SOR<"org.joda.time.field.PreciseDateTimeField">;
+COR<"org.joda.time.field.PreciseDateTimeField">;
+ROR<"org.joda.time.field.PreciseDateTimeField">;
+ORU<"org.joda.time.field.PreciseDateTimeField">;
+LVR<"org.joda.time.field.PreciseDateTimeField">;
+STD<"org.joda.time.field.PreciseDateTimeField">;
+
+// Enable operators for org.joda.time.field.UnsupportedDurationField
+AOR<"org.joda.time.field.UnsupportedDurationField">;
+LOR<"org.joda.time.field.UnsupportedDurationField">;
+SOR<"org.joda.time.field.UnsupportedDurationField">;
+COR<"org.joda.time.field.UnsupportedDurationField">;
+ROR<"org.joda.time.field.UnsupportedDurationField">;
+ORU<"org.joda.time.field.UnsupportedDurationField">;
+LVR<"org.joda.time.field.UnsupportedDurationField">;
+STD<"org.joda.time.field.UnsupportedDurationField">;
+
+// Enable operators for org.joda.time.field.ZeroIsMaxDateTimeField
+AOR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+LOR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+SOR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+COR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+ROR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+ORU<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+LVR<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+STD<"org.joda.time.field.ZeroIsMaxDateTimeField">;
+
+// Enable operators for org.joda.time.field.DecoratedDateTimeField
+AOR<"org.joda.time.field.DecoratedDateTimeField">;
+LOR<"org.joda.time.field.DecoratedDateTimeField">;
+SOR<"org.joda.time.field.DecoratedDateTimeField">;
+COR<"org.joda.time.field.DecoratedDateTimeField">;
+ROR<"org.joda.time.field.DecoratedDateTimeField">;
+ORU<"org.joda.time.field.DecoratedDateTimeField">;
+LVR<"org.joda.time.field.DecoratedDateTimeField">;
+STD<"org.joda.time.field.DecoratedDateTimeField">;
+
+// Enable operators for org.joda.time.field.StrictDateTimeField
+AOR<"org.joda.time.field.StrictDateTimeField">;
+LOR<"org.joda.time.field.StrictDateTimeField">;
+SOR<"org.joda.time.field.StrictDateTimeField">;
+COR<"org.joda.time.field.StrictDateTimeField">;
+ROR<"org.joda.time.field.StrictDateTimeField">;
+ORU<"org.joda.time.field.StrictDateTimeField">;
+LVR<"org.joda.time.field.StrictDateTimeField">;
+STD<"org.joda.time.field.StrictDateTimeField">;
+
+// Enable operators for org.joda.time.field.RemainderDateTimeField
+AOR<"org.joda.time.field.RemainderDateTimeField">;
+LOR<"org.joda.time.field.RemainderDateTimeField">;
+SOR<"org.joda.time.field.RemainderDateTimeField">;
+COR<"org.joda.time.field.RemainderDateTimeField">;
+ROR<"org.joda.time.field.RemainderDateTimeField">;
+ORU<"org.joda.time.field.RemainderDateTimeField">;
+LVR<"org.joda.time.field.RemainderDateTimeField">;
+STD<"org.joda.time.field.RemainderDateTimeField">;
+
+// Enable operators for org.joda.time.field.LenientDateTimeField
+AOR<"org.joda.time.field.LenientDateTimeField">;
+LOR<"org.joda.time.field.LenientDateTimeField">;
+SOR<"org.joda.time.field.LenientDateTimeField">;
+COR<"org.joda.time.field.LenientDateTimeField">;
+ROR<"org.joda.time.field.LenientDateTimeField">;
+ORU<"org.joda.time.field.LenientDateTimeField">;
+LVR<"org.joda.time.field.LenientDateTimeField">;
+STD<"org.joda.time.field.LenientDateTimeField">;
+
+// Enable operators for org.joda.time.field.UnsupportedDateTimeField
+AOR<"org.joda.time.field.UnsupportedDateTimeField">;
+LOR<"org.joda.time.field.UnsupportedDateTimeField">;
+SOR<"org.joda.time.field.UnsupportedDateTimeField">;
+COR<"org.joda.time.field.UnsupportedDateTimeField">;
+ROR<"org.joda.time.field.UnsupportedDateTimeField">;
+ORU<"org.joda.time.field.UnsupportedDateTimeField">;
+LVR<"org.joda.time.field.UnsupportedDateTimeField">;
+STD<"org.joda.time.field.UnsupportedDateTimeField">;
+
+// Enable operators for org.joda.time.field.ImpreciseDateTimeField
+AOR<"org.joda.time.field.ImpreciseDateTimeField">;
+LOR<"org.joda.time.field.ImpreciseDateTimeField">;
+SOR<"org.joda.time.field.ImpreciseDateTimeField">;
+COR<"org.joda.time.field.ImpreciseDateTimeField">;
+ROR<"org.joda.time.field.ImpreciseDateTimeField">;
+ORU<"org.joda.time.field.ImpreciseDateTimeField">;
+LVR<"org.joda.time.field.ImpreciseDateTimeField">;
+STD<"org.joda.time.field.ImpreciseDateTimeField">;
+
+// Enable operators for org.joda.time.field.SkipUndoDateTimeField
+AOR<"org.joda.time.field.SkipUndoDateTimeField">;
+LOR<"org.joda.time.field.SkipUndoDateTimeField">;
+SOR<"org.joda.time.field.SkipUndoDateTimeField">;
+COR<"org.joda.time.field.SkipUndoDateTimeField">;
+ROR<"org.joda.time.field.SkipUndoDateTimeField">;
+ORU<"org.joda.time.field.SkipUndoDateTimeField">;
+LVR<"org.joda.time.field.SkipUndoDateTimeField">;
+STD<"org.joda.time.field.SkipUndoDateTimeField">;
+
+// Enable operators for org.joda.time.field.DelegatedDurationField
+AOR<"org.joda.time.field.DelegatedDurationField">;
+LOR<"org.joda.time.field.DelegatedDurationField">;
+SOR<"org.joda.time.field.DelegatedDurationField">;
+COR<"org.joda.time.field.DelegatedDurationField">;
+ROR<"org.joda.time.field.DelegatedDurationField">;
+ORU<"org.joda.time.field.DelegatedDurationField">;
+LVR<"org.joda.time.field.DelegatedDurationField">;
+STD<"org.joda.time.field.DelegatedDurationField">;
+
+// Enable operators for org.joda.time.field.DecoratedDurationField
+AOR<"org.joda.time.field.DecoratedDurationField">;
+LOR<"org.joda.time.field.DecoratedDurationField">;
+SOR<"org.joda.time.field.DecoratedDurationField">;
+COR<"org.joda.time.field.DecoratedDurationField">;
+ROR<"org.joda.time.field.DecoratedDurationField">;
+ORU<"org.joda.time.field.DecoratedDurationField">;
+LVR<"org.joda.time.field.DecoratedDurationField">;
+STD<"org.joda.time.field.DecoratedDurationField">;
+
+// Enable operators for org.joda.time.field.AbstractReadableInstantFieldProperty
+AOR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+LOR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+SOR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+COR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+ROR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+ORU<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+LVR<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+STD<"org.joda.time.field.AbstractReadableInstantFieldProperty">;
+
+// Enable operators for org.joda.time.field.PreciseDurationDateTimeField
+AOR<"org.joda.time.field.PreciseDurationDateTimeField">;
+LOR<"org.joda.time.field.PreciseDurationDateTimeField">;
+SOR<"org.joda.time.field.PreciseDurationDateTimeField">;
+COR<"org.joda.time.field.PreciseDurationDateTimeField">;
+ROR<"org.joda.time.field.PreciseDurationDateTimeField">;
+ORU<"org.joda.time.field.PreciseDurationDateTimeField">;
+LVR<"org.joda.time.field.PreciseDurationDateTimeField">;
+STD<"org.joda.time.field.PreciseDurationDateTimeField">;
+
+// Enable operators for org.joda.time.field.BaseDateTimeField
+AOR<"org.joda.time.field.BaseDateTimeField">;
+LOR<"org.joda.time.field.BaseDateTimeField">;
+SOR<"org.joda.time.field.BaseDateTimeField">;
+COR<"org.joda.time.field.BaseDateTimeField">;
+ROR<"org.joda.time.field.BaseDateTimeField">;
+ORU<"org.joda.time.field.BaseDateTimeField">;
+LVR<"org.joda.time.field.BaseDateTimeField">;
+STD<"org.joda.time.field.BaseDateTimeField">;
+
+// Enable operators for org.joda.time.field.OffsetDateTimeField
+AOR<"org.joda.time.field.OffsetDateTimeField">;
+LOR<"org.joda.time.field.OffsetDateTimeField">;
+SOR<"org.joda.time.field.OffsetDateTimeField">;
+COR<"org.joda.time.field.OffsetDateTimeField">;
+ROR<"org.joda.time.field.OffsetDateTimeField">;
+ORU<"org.joda.time.field.OffsetDateTimeField">;
+LVR<"org.joda.time.field.OffsetDateTimeField">;
+STD<"org.joda.time.field.OffsetDateTimeField">;
+
+// Enable operators for org.joda.time.field.PreciseDurationField
+AOR<"org.joda.time.field.PreciseDurationField">;
+LOR<"org.joda.time.field.PreciseDurationField">;
+SOR<"org.joda.time.field.PreciseDurationField">;
+COR<"org.joda.time.field.PreciseDurationField">;
+ROR<"org.joda.time.field.PreciseDurationField">;
+ORU<"org.joda.time.field.PreciseDurationField">;
+LVR<"org.joda.time.field.PreciseDurationField">;
+STD<"org.joda.time.field.PreciseDurationField">;
+
+// Enable operators for org.joda.time.field.DelegatedDateTimeField
+AOR<"org.joda.time.field.DelegatedDateTimeField">;
+LOR<"org.joda.time.field.DelegatedDateTimeField">;
+SOR<"org.joda.time.field.DelegatedDateTimeField">;
+COR<"org.joda.time.field.DelegatedDateTimeField">;
+ROR<"org.joda.time.field.DelegatedDateTimeField">;
+ORU<"org.joda.time.field.DelegatedDateTimeField">;
+LVR<"org.joda.time.field.DelegatedDateTimeField">;
+STD<"org.joda.time.field.DelegatedDateTimeField">;
+
+// Enable operators for org.joda.time.field.FieldUtils
+AOR<"org.joda.time.field.FieldUtils">;
+LOR<"org.joda.time.field.FieldUtils">;
+SOR<"org.joda.time.field.FieldUtils">;
+COR<"org.joda.time.field.FieldUtils">;
+ROR<"org.joda.time.field.FieldUtils">;
+ORU<"org.joda.time.field.FieldUtils">;
+LVR<"org.joda.time.field.FieldUtils">;
+STD<"org.joda.time.field.FieldUtils">;
+
+// Enable operators for org.joda.time.field.DividedDateTimeField
+AOR<"org.joda.time.field.DividedDateTimeField">;
+LOR<"org.joda.time.field.DividedDateTimeField">;
+SOR<"org.joda.time.field.DividedDateTimeField">;
+COR<"org.joda.time.field.DividedDateTimeField">;
+ROR<"org.joda.time.field.DividedDateTimeField">;
+ORU<"org.joda.time.field.DividedDateTimeField">;
+LVR<"org.joda.time.field.DividedDateTimeField">;
+STD<"org.joda.time.field.DividedDateTimeField">;
+
+// Enable operators for org.joda.time.field.BaseDurationField
+AOR<"org.joda.time.field.BaseDurationField">;
+LOR<"org.joda.time.field.BaseDurationField">;
+SOR<"org.joda.time.field.BaseDurationField">;
+COR<"org.joda.time.field.BaseDurationField">;
+ROR<"org.joda.time.field.BaseDurationField">;
+ORU<"org.joda.time.field.BaseDurationField">;
+LVR<"org.joda.time.field.BaseDurationField">;
+STD<"org.joda.time.field.BaseDurationField">;
+
+// Enable operators for org.joda.time.field.AbstractPartialFieldProperty
+AOR<"org.joda.time.field.AbstractPartialFieldProperty">;
+LOR<"org.joda.time.field.AbstractPartialFieldProperty">;
+SOR<"org.joda.time.field.AbstractPartialFieldProperty">;
+COR<"org.joda.time.field.AbstractPartialFieldProperty">;
+ROR<"org.joda.time.field.AbstractPartialFieldProperty">;
+ORU<"org.joda.time.field.AbstractPartialFieldProperty">;
+LVR<"org.joda.time.field.AbstractPartialFieldProperty">;
+STD<"org.joda.time.field.AbstractPartialFieldProperty">;
+
+// Enable operators for org.joda.time.IllegalInstantException
+AOR<"org.joda.time.IllegalInstantException">;
+LOR<"org.joda.time.IllegalInstantException">;
+SOR<"org.joda.time.IllegalInstantException">;
+COR<"org.joda.time.IllegalInstantException">;
+ROR<"org.joda.time.IllegalInstantException">;
+ORU<"org.joda.time.IllegalInstantException">;
+LVR<"org.joda.time.IllegalInstantException">;
+STD<"org.joda.time.IllegalInstantException">;

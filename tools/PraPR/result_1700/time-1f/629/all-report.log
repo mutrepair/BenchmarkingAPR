@@ -1,0 +1,190 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 17
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local scalar to be used
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 16
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local isize is replaced by local scalar to be used
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 17
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local isize to be used
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 16
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local isize is replaced by local i to be used
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 17
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.ReadablePeriod::size()I is guarded using default value 0
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value 0L
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to size()I is guarded returning local instant
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to size()I is guarded returning field serialVersionUID
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 18
+	Rank: 1
+	Total Rank: 17
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 36
+	First Index: 48
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 9
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 18
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/ReadablePeriod::size
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 13
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 18
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 34
+	First Index: 18
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/joda/time/chrono/BaseChronology.java
+	Line Number: 302
+	Block: 36
+	First Index: 48
+	Rank: null
+	Total Rank: 16
+	Status: TIMED_OUT
+------------------------------------------------

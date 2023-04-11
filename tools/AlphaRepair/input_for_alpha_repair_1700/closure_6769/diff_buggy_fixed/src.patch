@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/6769/com/google/javascript/jscomp/Compiler.java	2022-10-31 19:47:37.975810238 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/Compiler.java	2022-10-29 10:02:40.006407295 -0500
+@@ -1508,7 +1508,7 @@
+     }
+     if (options.processCommonJSModules) {
+       List<JSModule> modules = Lists.newArrayList(modulesByName.values());
+-      if (!true) {
++      if (!modules.isEmpty()) {
+         this.modules = modules;
+         this.moduleGraph = new JSModuleGraph(this.modules);
+       }

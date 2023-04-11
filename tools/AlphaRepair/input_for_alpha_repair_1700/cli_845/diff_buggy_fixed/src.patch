@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/845/org/apache/commons/cli/PatternOptionBuilder.java	2022-10-31 19:47:31.383833948 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/PatternOptionBuilder.java	2022-12-26 15:13:38.053475668 -0600
+@@ -90,7 +90,7 @@
+         {
+             return PatternOptionBuilder.OBJECT_VALUE;
+         }
+-        else if (ch >= ':')
++        else if (ch == ':')
+         {
+             return PatternOptionBuilder.STRING_VALUE;
+         }

@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to getDefaultSerializers(ZLcom/google/gson/LongSerializationPolicy;)Lcom/google/gson/ParameterizedTypeHandlerMap; with a call to getDefaultSerializers()Lcom/google/gson/ParameterizedTypeHandlerMap;
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to DEFAULT with an access to STRING
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/gson/DefaultTypeAdapters::getDefaultSerializers
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/google/gson/DefaultTypeAdapters::getDefaultSerializers
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/google/gson/DefaultTypeAdapters::getDefaultSerializers to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/google/gson/DefaultTypeAdapters.java
+	Line Number: 205
+	Block: 5
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

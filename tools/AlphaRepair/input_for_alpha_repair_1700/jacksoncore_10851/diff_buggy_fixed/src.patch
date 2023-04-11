@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/10851/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-10-31 19:47:44.839785396 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1785,7 +1785,7 @@
+             bbuf[outputPtr++] = BYTE_u;
+             
+             bbuf[outputPtr++] = HEX_CHARS[(ch >> 12) & 0xF];
+-            bbuf[outputPtr++] = HEX_CHARS[(ch >> 0) & 0xF];
++            bbuf[outputPtr++] = HEX_CHARS[(ch >> 8) & 0xF];
+             bbuf[outputPtr++] = HEX_CHARS[(ch >> 4) & 0xF];
+             bbuf[outputPtr++] = HEX_CHARS[ch & 0xF];
+         } else {

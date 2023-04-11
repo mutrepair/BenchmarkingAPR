@@ -1,0 +1,509 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 46
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to mem is guarded using value null
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isaacI is guarded using value 0
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isaacX is guarded using value 0
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isaacA is guarded using value 0
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isaacB is guarded using value 0
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to mem is guarded using field rsl
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isaacI is guarded using field SIZE_L
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isaacX is guarded using field SIZE_L
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isaacA is guarded using field SIZE_L
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isaacB is guarded using field SIZE_L
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to mem with an access to rsl
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isaacI with an access to count
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isaacX with an access to count
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: 2
+	Total Rank: 43
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isaacA with an access to count
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isaacB with an access to count
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to mem with an access to arr
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isaacI with an access to isaacA
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isaacX with an access to isaacA
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isaacA with an access to isaacB
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isaacB with an access to isaacA
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isaacI with an access to isaacB
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isaacX with an access to isaacB
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isaacA with an access to isaacC
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isaacB with an access to isaacC
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isaacI with an access to isaacC
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isaacX with an access to isaacC
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: 2
+	Total Rank: 43
+	Status: SURVIVED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isaacA with an access to isaacX
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isaacB with an access to isaacX
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isaacI with an access to isaacX
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isaacX with an access to isaacI
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isaacA with an access to isaacI
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isaacB with an access to isaacI
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to isaacI with an access to isaacJ
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to isaacX with an access to isaacJ
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to isaacA with an access to isaacJ
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to isaacB with an access to isaacJ
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 43
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to mem is guarded returning enclosing method
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 4
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isaacI is guarded returning enclosing method
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 6
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isaacX is guarded returning enclosing method
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isaacA is guarded returning enclosing method
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 17
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isaacB is guarded returning enclosing method
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 20
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1020 with 1021
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 11
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 13
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 12
+	Rank: null
+	Total Rank: 46
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 14
+	Rank: 3
+	Total Rank: 46
+	Status: SURVIVED
+------------------------------------------------
+46.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/math3/random/ISAACRandom.java
+	Line Number: 183
+	Block: 19
+	First Index: 18
+	Rank: null
+	Total Rank: 46
+	Status: KILLED
+------------------------------------------------

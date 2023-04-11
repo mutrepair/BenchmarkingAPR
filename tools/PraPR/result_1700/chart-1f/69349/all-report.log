@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset(Lorg/jfree/data/pie/PieDataset;Ljava/lang/Comparable;DI)Lorg/jfree/data/pie/PieDataset; is replaced by an instantiation of type org.jfree.data.category.CategoryToPieDataset using (Lorg/jfree/data/category/CategoryDataset;Lorg/jfree/chart/util/TableOrder;I)V
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset(Lorg/jfree/data/pie/PieDataset;Ljava/lang/Comparable;DI)Lorg/jfree/data/pie/PieDataset; is replaced by an instantiation of type org.jfree.data.pie.DefaultPieDataset using (Lorg/jfree/data/KeyedValues;)V
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_6
+	Description: the call to factory method org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset(Lorg/jfree/data/pie/PieDataset;Ljava/lang/Comparable;DI)Lorg/jfree/data/pie/PieDataset; is replaced by an instantiation of type org.jfree.data.pie.DefaultPieDataset using ()V
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to createConsolidatedPieDataset(Lorg/jfree/data/pie/PieDataset;Ljava/lang/Comparable;DI)Lorg/jfree/data/pie/PieDataset; with a call to createConsolidatedPieDataset(Lorg/jfree/data/pie/PieDataset;Ljava/lang/Comparable;D)Lorg/jfree/data/pie/PieDataset;
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/jfree/data/general/DatasetUtilities::createConsolidatedPieDataset with argument
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 6
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jfree/data/general/DatasetUtilities::createConsolidatedPieDataset
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 7
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/jfree/data/general/DatasetUtilities::createConsolidatedPieDataset
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 8
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/jfree/data/general/DatasetUtilities::createConsolidatedPieDataset to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 288
+	Block: 17
+	First Index: 8
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

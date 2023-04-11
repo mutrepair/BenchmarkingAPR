@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/80944/org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java	2022-10-31 19:48:00.563727908 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java	2022-12-26 15:13:55.673666084 -0600
+@@ -485,7 +485,7 @@
+                     firstIteration = false;
+                     xNorm = 0;
+                     for (int k = 0; k < nC; ++k) {
+-                        double xK = diag[k] + currentPoint[k];
++                        double xK = diag[k] * currentPoint[k];
+                         xNorm += xK * xK;
+                     }
+                     xNorm = FastMath.sqrt(xNorm);

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/6093/com/fasterxml/jackson/core/io/UTF32Reader.java	2023-04-04 14:33:25.701955128 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/io/UTF32Reader.java	2023-04-04 13:31:53.213631268 -0500
+@@ -95,7 +95,7 @@
+ 
+             if (_bigEndian) {
+                 ch = (_buffer[ptr] << 24) | ((_buffer[ptr+1] & 0xFF) << 16)
+-                    | ((_buffer[ptr+2] & 0xFF) << 8) | (_buffer[ptr + 3] ^ 255);
++                    | ((_buffer[ptr+2] & 0xFF) << 8) | (_buffer[ptr+3] & 0xFF);
+             } else {
+                 ch = (_buffer[ptr] & 0xFF) | ((_buffer[ptr+1] & 0xFF) << 8)
+                     | ((_buffer[ptr+2] & 0xFF) << 16) | (_buffer[ptr+3] << 24);

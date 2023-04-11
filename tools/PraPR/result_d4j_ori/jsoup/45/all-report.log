@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local last is replaced by access to field baseUriSetFromDoc
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 128
+	First Index: 66
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local last is replaced by access to field framesetOk
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 128
+	First Index: 66
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local last is replaced by access to field fosterInserts
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 128
+	First Index: 66
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local last is replaced by access to field fragmentParsing
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 128
+	First Index: 66
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local last is replaced by access to field $assertionsDisabled
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 128
+	First Index: 66
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local name is replaced a call name.toLowerCase()
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 59
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::equals(Ljava/lang/Object;)Z is guarded using default value false
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 60
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to equals(Ljava/lang/Object;)Z is guarded returning enclosing method
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 60
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 61
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 127
+	First Index: 65
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::equals
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 60
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 61
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 126
+	First Index: 61
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 127
+	First Index: 65
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------

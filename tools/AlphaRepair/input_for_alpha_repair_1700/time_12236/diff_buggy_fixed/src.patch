@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/12236/org/joda/time/field/DividedDateTimeField.java	2022-10-31 19:48:08.679697925 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/field/DividedDateTimeField.java	2022-12-26 15:13:57.201682593 -0600
+@@ -248,7 +248,7 @@
+     }
+ 
+     private int getRemainder(int value) {
+-        if (value == 0) {
++        if (value >= 0) {
+             return value % iDivisor;
+         } else {
+             return (iDivisor - 1) + ((value + 1) % iDivisor);

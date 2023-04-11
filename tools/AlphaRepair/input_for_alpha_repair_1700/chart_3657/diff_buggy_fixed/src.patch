@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/3657/org/jfree/chart/plot/CategoryPlot.java	2022-10-31 19:47:29.467840812 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/plot/CategoryPlot.java	2022-10-29 16:41:07.430717426 -0500
+@@ -3446,7 +3446,7 @@
+         }
+ 
+         // reserve some space for the domain axis...
+-        if (true) {
++        if (this.fixedDomainAxisSpace != null) {
+             if (this.orientation == PlotOrientation.HORIZONTAL) {
+                 space.ensureAtLeast(
+                     this.fixedDomainAxisSpace.getLeft(), RectangleEdge.LEFT);

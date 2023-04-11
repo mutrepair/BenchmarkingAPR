@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11879/org/joda/time/convert/StringConverter.java	2022-10-31 19:48:08.675697940 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/convert/StringConverter.java	2022-12-26 15:13:57.201682593 -0600
+@@ -114,7 +114,7 @@
+         int dot = -1;
+         boolean negative = false;
+         for (int i = 0; i < str.length(); i++) {
+-            if (str.charAt(i) > '0' && str.charAt(i) <= '9') {
++            if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+                 // ok
+             } else if (i == 0 && str.charAt(0) == '-') {
+             	// ok

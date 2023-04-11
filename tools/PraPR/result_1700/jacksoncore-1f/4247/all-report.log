@@ -1,0 +1,47 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 4
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _quoteBuffer is guarded using value null
+	File Name: com/fasterxml/jackson/core/io/JsonStringEncoder.java
+	Line Number: 67
+	Block: 0
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _quoteBuffer is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/io/JsonStringEncoder.java
+	Line Number: 67
+	Block: 0
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -2 with -1
+	File Name: com/fasterxml/jackson/core/io/JsonStringEncoder.java
+	Line Number: 67
+	Block: 0
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 48 with 49
+	File Name: com/fasterxml/jackson/core/io/JsonStringEncoder.java
+	Line Number: 67
+	Block: 0
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

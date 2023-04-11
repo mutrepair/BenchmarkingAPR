@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/1753/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-10-31 19:47:45.055784612 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2022-12-26 15:13:51.925625590 -0600
+@@ -887,7 +887,7 @@
+         }
+         
+         _mainHash = new int[newLen];
+-        _mainHashMask = (newLen + 1);
++        _mainHashMask = (newLen - 1);
+         Name[] oldNames = _mainNames;
+         _mainNames = new Name[newLen];
+         int symbolsSeen = 0; // let's do a sanity check

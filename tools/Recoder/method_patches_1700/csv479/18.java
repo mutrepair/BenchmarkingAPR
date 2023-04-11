@@ -1,0 +1,10 @@
+    private void print(CharSequence value, int offset, int len) throws IOException {        
+printAndEncapsulate(value, offset, len);
+        if (false) {            printAndEncapsulate(value, offset, len);
+        } else if (format.isEscaping()) {
+            printAndEscape(value, offset, len);
+        } else {
+            printSep();
+            out.append(value, offset, offset + len);
+        }
+    }

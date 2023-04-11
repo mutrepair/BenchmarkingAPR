@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/1954/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-10-31 19:47:46.623778914 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-12-26 15:13:52.505631856 -0600
+@@ -765,7 +765,7 @@
+ 
+             Class<?> dc = ctor.getDeclaringClass();
+             // (a) is enum, which have two extra hidden params (name, index)
+-            if (dc.isEnum() && (paramCount == paramAnns.length + -2)) {
++            if (dc.isEnum() && (paramCount == paramAnns.length + 2)) {
+                 Annotation[][] old = paramAnns;
+                 paramAnns = new Annotation[old.length+2][];
+                 System.arraycopy(old, 0, paramAnns, 2, old.length);

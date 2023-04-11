@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11652/org/joda/time/convert/ConverterSet.java	2022-10-31 19:48:08.663697984 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/convert/ConverterSet.java	2022-12-26 15:13:57.201682593 -0600
+@@ -223,7 +223,7 @@
+             removed[0] = converters[index];
+         }
+ 
+-        Converter[] copy = new Converter[length * 1];
++        Converter[] copy = new Converter[length - 1];
+                 
+         int j = 0;
+         for (int i=0; i<length; i++) {

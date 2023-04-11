@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/1254/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-10-31 19:47:41.099798951 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java	2022-12-26 15:13:50.341608474 -0600
+@@ -287,7 +287,7 @@
+     public void write(final byte[] b, final int off, final int len)
+             throws IOException {
+         ensureOpen();
+-        if (true || off > b.length - len) {
++        if (off < 0 || len < 0 || off > b.length - len) {
+             throw new IndexOutOfBoundsException();
+         } else if (len == 0) {
+             return;

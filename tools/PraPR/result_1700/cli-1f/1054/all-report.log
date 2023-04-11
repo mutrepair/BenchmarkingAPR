@@ -1,0 +1,267 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 24
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to currentOption is guarded using value null
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 58
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to currentOption is guarded using field currentOption
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 58
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local token is replaced by local ch to be used
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 61
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local tokenLength to be used
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 63
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local token is replaced a call token.toLowerCase()
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 61
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to hasArg with a call to hasOptionalArg
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to length with a call to hashCode
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 62
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to hasArg with a call to hasLongOpt
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to hasArg with a call to isRequired
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to hasArg with a call to hasArgName
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to hasArg with a call to hasArgs
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to hasArg with a call to hasValueSeparator
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.Option::hasArg()Z is guarded using default value false
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::length()I is guarded using default value 0
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 62
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to currentOption is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 58
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to hasArg()Z is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to length()I is guarded returning enclosing method
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 62
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 64
+	Rank: 1
+	Total Rank: 24
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 65
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 60
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::hasArg
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 59
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::length
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 38
+	First Index: 62
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 60
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/cli/PosixParser.java
+	Line Number: 292
+	Block: 37
+	First Index: 60
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------

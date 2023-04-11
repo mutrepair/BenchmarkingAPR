@@ -1,0 +1,1 @@
+public int METHOD_1 ( long VAR_1 ) { long [ ] VAR_2 = VAR_3 ; int i = TYPE_1 . METHOD_2 ( VAR_2 , VAR_1 ) ; if ( i >= 0 ) { return VAR_4 [ i ] ; } i = - i ; if ( i < VAR_2 . length ) { if ( i > 0 ) { return VAR_4 [ i - 1 ] ; } return 0 ; } if ( VAR_5 == null ) { return VAR_4 [ i - 1 ] ; } return VAR_5 . METHOD_1 ( VAR_1 ) ; }

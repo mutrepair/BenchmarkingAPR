@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/16021/org/joda/time/format/ISODateTimeFormat.java	2022-10-31 19:48:08.767697599 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/ISODateTimeFormat.java	2022-12-26 15:13:57.205682637 -0600
+@@ -163,7 +163,7 @@
+         // date
+         if (workingFields.contains(DateTimeFieldType.monthOfYear())) {
+             reducedPrec = dateByMonth(bld, workingFields, extended, strictISO);
+-        } else if (false) {
++        } else if (workingFields.contains(DateTimeFieldType.dayOfYear())) {
+             reducedPrec = dateByOrdinal(bld, workingFields, extended, strictISO);
+         } else if (workingFields.contains(DateTimeFieldType.weekOfWeekyear())) {
+             reducedPrec = dateByWeek(bld, workingFields, extended, strictISO);

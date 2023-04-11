@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksondatabind_71/src/main/java/com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.java	2023-01-16 15:29:44.476294535 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksondatabind/71/patch/./com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.java	2023-01-16 15:29:44.440294085 -0600
+@@ -72,7 +72,7 @@
+         int kind;
+ 
+         // first common types:
+-        if (raw == String.class || raw == Object.class) {
++        if (raw == String.class || raw == Object.class || raw == CharSequence.class) {
+             return StringKD.forType(raw);
+         } else if (raw == UUID.class) {
+             kind = TYPE_UUID;

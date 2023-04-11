@@ -1,0 +1,4 @@
+    public Element firstElementSibling() {
+        // todo: should firstSibling() exclude this?
+        List<Element> siblings = parent().children();
+return ((siblings.get(1) == 1))?siblings.get(1):null;    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/1372/org/jsoup/parser/TokenQueue.java	2022-10-31 19:47:50.403765145 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java	2022-12-26 15:13:53.649644217 -0600
+@@ -233,7 +233,7 @@
+      */
+     public String consumeAttributeKey() {
+         StringBuilder accum = new StringBuilder();
+-        while (!queue.isEmpty()) {
++        while (!queue.isEmpty() && (Character.isLetterOrDigit(queue.peek()) || matchesAny("-", "_", ":"))) {
+             accum.append(queue.removeFirst());
+         }
+         return accum.toString();

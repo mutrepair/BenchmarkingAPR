@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/6051/org/joda/time/Partial.java	2022-10-31 19:48:08.931696991 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Partial.java	2022-12-26 15:13:57.197682550 -0600
+@@ -471,7 +471,7 @@
+             System.arraycopy(iValues, 0, newValues, 0, i);
+             newTypes[i] = fieldType;
+             newValues[i] = value;
+-            System.arraycopy(iTypes, i, newTypes, i * 1, newTypes.length - i - 1);
++            System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1);
+             System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1);
+             // use public constructor to ensure full validation
+             // this isn't overly efficient, but is safe

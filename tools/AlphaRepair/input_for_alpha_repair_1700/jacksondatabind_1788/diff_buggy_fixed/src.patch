@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/1788/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-10-31 19:47:46.607778972 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-12-26 15:13:52.505631856 -0600
+@@ -354,7 +354,7 @@
+         // 14-Feb-2011, tatu: AnnotationIntrospector is null if annotations not enabled; if so, can skip:
+         if (_annotationIntrospector != null) {
+             if (_defaultConstructor != null) {
+-                if (true) {
++                if (_annotationIntrospector.hasIgnoreMarker(_defaultConstructor)) {
+                     _defaultConstructor = null;
+                 }
+             }

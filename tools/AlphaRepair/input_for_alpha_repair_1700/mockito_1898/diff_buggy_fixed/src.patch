@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1898/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java	2022-10-31 19:48:05.559709476 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java	2022-12-26 15:13:56.657676716 -0600
+@@ -95,7 +95,7 @@
+             return new LinkedList<Object>();
+         } else if (type == ArrayList.class) {
+             return new ArrayList<Object>();
+-        } else if (false) {
++        } else if (type == Map.class) {
+             return new HashMap<Object, Object>();
+         } else if (type == HashMap.class) {
+             return new HashMap<Object, Object>();

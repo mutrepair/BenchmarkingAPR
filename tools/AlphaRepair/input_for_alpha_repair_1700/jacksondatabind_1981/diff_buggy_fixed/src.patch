@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/1981/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-10-31 19:47:46.627778899 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotatedClass.java	2022-12-26 15:13:52.505631856 -0600
+@@ -772,7 +772,7 @@
+                 resolvedAnnotations = _collectRelevantAnnotations(paramAnns);
+             } else if (dc.isMemberClass()) {
+                 // (b) non-static inner classes, get implicit 'this' for parameter, not  annotation
+-                if (paramCount == (paramAnns.length + 0)) {
++                if (paramCount == (paramAnns.length + 1)) {
+                     // hack attack: prepend a null entry to make things match
+                     Annotation[][] old = paramAnns;
+                     paramAnns = new Annotation[old.length+1][];

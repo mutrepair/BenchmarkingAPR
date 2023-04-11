@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local other to be used
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field TWO
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field THREE
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field FOUR
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.negated()
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 7
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getValue with a call to getMonths
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 8
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.Months::getValue()I is guarded using default value 0
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 8
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()I is guarded returning default value false
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 8
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/joda/time/Months::isLessThan
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 57
+	First Index: 16
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/joda/time/Months::isLessThan
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 57
+	First Index: 16
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 10
+	Rank: 2
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 9
+	Rank: 1
+	Total Rank: 20
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 56
+	First Index: 11
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 57
+	First Index: 14
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/Months::getValue
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 8
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 55
+	First Index: 10
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/joda/time/Months.java
+	Line Number: 379
+	Block: 57
+	First Index: 16
+	Rank: null
+	Total Rank: 17
+	Status: KILLED
+------------------------------------------------

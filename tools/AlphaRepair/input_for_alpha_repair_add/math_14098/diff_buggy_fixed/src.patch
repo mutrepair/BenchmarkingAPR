@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/14098/org/apache/commons/math3/fraction/BigFraction.java	2023-04-04 14:33:26.097958966 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/fraction/BigFraction.java	2023-04-04 13:31:53.993640535 -0500
+@@ -190,7 +190,7 @@
+             m = -m;
+         }
+         int k = ((int) (exponent >> 52)) - 1075;
+-        while (((m & 0x001ffffffffffffeL) != 0) && ((m | 1) == 0)) {
++        while (((m & 0x001ffffffffffffeL) != 0) && ((m & 0x1) == 0)) {
+             m = m >> 1;
+             ++k;
+         }

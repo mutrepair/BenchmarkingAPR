@@ -1,0 +1,76 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 03:00:58 CST 2022
+Number of Plausible Fixes: 6
+Total Number of Patches: 26
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local tag to be used
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 61
+	First Index: 27
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local tag is replaced by local this to be used
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 61
+	First Index: 29
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/jsoup/parser/Tag::equals
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 62
+	First Index: 33
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-21.class
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 62
+	First Index: 32
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-22.class
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 61
+	First Index: 31
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-24.class
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 171
+	Block: 62
+	First Index: 33
+	Rank: 6
+	Total Rank: 26
+	Status: SURVIVED
+	Dump: mutant-26.class
+------------------------------------------------

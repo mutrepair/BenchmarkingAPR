@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/266/org/apache/commons/csv/Lexer.java	2022-10-31 19:47:42.131795216 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/Lexer.java	2022-12-26 15:13:50.881614309 -0600
+@@ -115,7 +115,7 @@
+      * @return true if the given character indicates end of file
+      */
+     boolean isEndOfFile(int c) {
+-        return c <= ExtendedBufferedReader.END_OF_STREAM;
++        return c == ExtendedBufferedReader.END_OF_STREAM;
+     }
+ 
+     abstract Token nextToken(Token reusableToken) throws IOException;

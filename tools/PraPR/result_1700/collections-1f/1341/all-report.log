@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 209
+	Block: 8
+	First Index: 42
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable canRemove
+	File Name: org/apache/commons/collections4/bag/AbstractMapBag.java
+	Line Number: 209
+	Block: 8
+	First Index: 43
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

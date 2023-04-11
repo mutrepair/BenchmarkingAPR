@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/63972/org/apache/commons/math3/ode/AbstractIntegrator.java	2023-04-04 14:33:26.109959081 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java	2023-04-04 13:31:54.013640773 -0500
+@@ -326,7 +326,7 @@
+             }
+ 
+             // search for next events that may occur during the step
+-            final int orderingSign = interpolator.isForward() ? ~1 : -1;
++            final int orderingSign = interpolator.isForward() ? +1 : -1;
+             SortedSet<EventState> occurringEvents = new TreeSet<EventState>(new Comparator<EventState>() {
+ 
+                 /** {@inheritDoc} */

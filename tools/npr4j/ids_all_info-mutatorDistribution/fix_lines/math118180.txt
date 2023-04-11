@@ -1,0 +1,2 @@
+                return Double.longBitsToDouble(sign | (((long) scaledExponent) << 52) | mantissa);
+

@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:15:25 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 12
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(III)V with a call to <init>(IZ)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 2
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-3.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(III)V with a call to <init>(FFFF)V
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 2
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-4.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to java/awt/Color::<init>
+	File Name: org/jfree/chart/plot/dial/ArcDialFrame.java
+	Line Number: 130
+	Block: 1
+	First Index: 18
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+	Dump: mutant-8.class
+------------------------------------------------

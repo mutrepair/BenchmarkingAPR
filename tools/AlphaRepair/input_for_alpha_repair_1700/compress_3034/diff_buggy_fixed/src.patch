@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3034/org/apache/commons/compress/archivers/tar/TarUtils.java	2022-10-31 19:47:41.231798473 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java	2022-12-26 15:13:50.345608516 -0600
+@@ -37,7 +37,7 @@
+      * @return The long value of the octal string.
+      */
+     public static long parseOctal(byte[] header, int offset, int length) {
+-        long    result = -1;
++        long    result = 0;
+         boolean stillPadding = true;
+         int     end = offset + length;
+ 

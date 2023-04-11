@@ -1,0 +1,1 @@
+public static TYPE_1 METHOD_1 ( String VAR_1 ) { TYPE_2 . METHOD_2 ( VAR_1 ) ; VAR_1 = VAR_1 . trim ( ) . toLowerCase ( ) ; TYPE_2 . METHOD_3 ( VAR_1 ) ; synchronized ( VAR_2 ) { TYPE_1 VAR_3 = VAR_2 . get ( VAR_1 ) ; if ( VAR_3 == null ) { VAR_3 = new TYPE_1 ( VAR_1 ) ; VAR_3 . METHOD_4 ( VAR_4 ) ; VAR_5 = true ; VAR_6 = true ; } return VAR_3 ; } }

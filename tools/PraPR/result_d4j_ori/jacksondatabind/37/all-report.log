@@ -1,0 +1,311 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 28
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Ljava/lang/Object;Z)V with a call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;ILjava/lang/Object;Ljava/lang/Object;Z)V
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 29
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Ljava/lang/Object;Z)V with a call to <init>(Lcom/fasterxml/jackson/databind/type/TypeBase;)V
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 29
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Ljava/lang/Object;Z)V with a call to <init>(Ljava/lang/Class;)V
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 29
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Ljava/lang/Object;Z)V with a call to <init>(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;)V
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 29
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _bindings is guarded using value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 18
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _superClass is guarded using value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 20
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _superInterfaces is guarded using value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 22
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _valueHandler is guarded using value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 24
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _typeHandler is guarded using value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 26
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _asStatic is guarded using value false
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 28
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.type.SimpleType._superClass is replaced by the call to com.fasterxml.jackson.databind.type.SimpleType::withStaticTyping()Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 20
+	Rank: 2
+	Total Rank: 28
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.type.SimpleType._asStatic is replaced by the call to com.fasterxml.jackson.databind.type.SimpleType::isContainerType()Z
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 28
+	Rank: null
+	Total Rank: 28
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _superClass is replaced by access to local this
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 20
+	Rank: 1
+	Total Rank: 26
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _valueHandler is replaced by access to local this
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 24
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _typeHandler is replaced by access to local this
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 26
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _valueHandler is replaced by access to local subclass
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 24
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_1
+	Description: access to field _typeHandler is replaced by access to local subclass
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 26
+	Rank: null
+	Total Rank: 26
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local subclass is replaced a call subclass.getSuperclass()
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 16
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.withStaticTyping()
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 17
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _bindings is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 18
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _superClass is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 20
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _superInterfaces is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 22
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _valueHandler is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 24
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _typeHandler is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 26
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _asStatic is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 28
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/type/SimpleType::<init>
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 29
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for com/fasterxml/jackson/databind/type/SimpleType::_narrow
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for com/fasterxml/jackson/databind/type/SimpleType::_narrow to ( if (x != null) null else throw new RuntimeException )
+	File Name: com/fasterxml/jackson/databind/type/SimpleType.java
+	Line Number: 135
+	Block: 15
+	First Index: 30
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------

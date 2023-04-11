@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/616/org/apache/commons/csv/CSVPrinter.java	2022-10-31 19:47:42.347794433 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVPrinter.java	2022-12-26 15:13:50.881614309 -0600
+@@ -220,7 +220,7 @@
+                 // Some other chars at the start of a value caused the parser to fail, so for now
+                 // encapsulate if we start in anything less than '#'.  We are being conservative
+                 // by including the default comment char too.
+-                quote = false;
++                quote = true;
+             } else {
+                 while (pos < end) {
+                     c = value.charAt(pos);

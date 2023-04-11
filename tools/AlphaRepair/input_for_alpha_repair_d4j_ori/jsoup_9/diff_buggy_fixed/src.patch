@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_9/src/main/java/org/jsoup/nodes/Entities.java	2023-01-16 15:29:59.288479504 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/9/patch/./org/jsoup/nodes/Entities.java	2023-01-16 15:29:59.240478904 -0600
+@@ -35,7 +35,7 @@
+     private static final Map<Character, String> xhtmlByVal;
+     private static final Map<Character, String> baseByVal;
+     private static final Map<Character, String> fullByVal;
+-    private static final Pattern unescapePattern = Pattern.compile("&(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?");
++    private static final Pattern unescapePattern = Pattern.compile("&(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+\\d*);?");
+ 
+     static String escape(String string, Document.OutputSettings out) {
+         return escape(string, out.encoder(), out.escapeMode());

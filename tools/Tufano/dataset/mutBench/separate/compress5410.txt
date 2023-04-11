@@ -1,0 +1,1 @@
+private boolean METHOD_1 ( ) throws TYPE_1 { int VAR_1 = this . VAR_2 ; int VAR_3 = this . VAR_4 ; if ( VAR_1 < 1 ) { int VAR_5 = this . VAR_6 . METHOD_2 ( ) ; if ( VAR_5 < 1 ) { throw new TYPE_1 ( STRING_1 ) ; } VAR_3 = ( VAR_3 < < INT_1 ) | VAR_5 ; VAR_1 += INT_1 ; this . VAR_4 = VAR_3 ; } this . VAR_2 = VAR_1 - 1 ; return ( ( VAR_3 > > ( VAR_1 - 1 ) ) & 1 ) != 0 ; }

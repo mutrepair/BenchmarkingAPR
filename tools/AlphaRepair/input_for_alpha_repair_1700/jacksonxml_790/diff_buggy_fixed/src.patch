@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/790/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.975766707 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -506,7 +506,7 @@
+             _reportError("Current context not an object but "+_writeContext.getTypeDesc());
+         }
+         _writeContext = _writeContext.getParent();
+-        if (true) {
++        if (_cfgPrettyPrinter != null) {
+             // as per [Issue#45], need to suppress indentation if only attributes written:
+             int count = _nextIsAttribute ? 0 : _writeContext.getEntryCount();
+             _cfgPrettyPrinter.writeEndObject(this, count);

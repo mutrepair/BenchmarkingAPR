@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Dec 21 03:29:32 CST 2022
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.java
+	Line Number: 477
+	Block: 210
+	First Index: 294
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+	Dump: mutant-7.class
+------------------------------------------------

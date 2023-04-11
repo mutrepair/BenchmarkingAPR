@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 6
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to entry is guarded using value null
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to entry is guarded using local ze
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to entry is guarded using field entry
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field entry is replaced by access to local ze
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getMethod with a call to getInternalAttributes
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getMethod with a call to getUnixMode
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getMethod with a call to getPlatform
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: 3
+	Total Rank: 12
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getMethod with a call to hashCode
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: null
+	Total Rank: 12
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.compress.archivers.zip.ZipArchiveEntry::getMethod()I is guarded using default value 0
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to entry is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 21
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getMethod()I is guarded returning enclosing method
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 23
+	Rank: 6
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/zip/ZipArchiveEntry::getMethod
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 22
+	Rank: 6
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 23
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+	Line Number: 424
+	Block: 32
+	First Index: 23
+	Rank: 6
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------

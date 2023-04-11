@@ -1,0 +1,1 @@
+private static < TYPE_1 extends TYPE_2 > TYPE_3 METHOD_1 ( TYPE_2 VAR_1 , TYPE_4 < TYPE_1 > VAR_2 ) { TYPE_5 . METHOD_2 ( VAR_1 ) ; TYPE_5 . METHOD_2 ( VAR_2 ) ; for ( int i = 0 ; i < VAR_2 . size ( ) ; i ++ ) { TYPE_1 element = VAR_2 . get ( i ) ; if ( element . equals ( VAR_1 ) ) return i ; } return null ; }

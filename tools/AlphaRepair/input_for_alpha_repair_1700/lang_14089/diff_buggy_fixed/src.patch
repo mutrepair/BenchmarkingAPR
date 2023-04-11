@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/14089/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:57.071740744 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -6694,7 +6694,7 @@
+             for (i = 1; i <= n; i++) {
+                 cost = s.charAt(i - 1) == t_j ? 0 : 1;
+                 // minimum of cell to the left+1, to the top+1, diagonally left and up +cost
+-                d[i] = Math.min(Math.min(d[i - 1] + 1, p[i] + 1), p[i + 1] + cost);
++                d[i] = Math.min(Math.min(d[i - 1] + 1, p[i] + 1), p[i - 1] + cost);
+             }
+ 
+             // copy current distance counts to 'previous row' distance counts

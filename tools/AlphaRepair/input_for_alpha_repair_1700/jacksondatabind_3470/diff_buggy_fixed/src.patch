@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/3470/com/fasterxml/jackson/databind/deser/SettableBeanProperty.java	2022-10-31 19:47:46.663778768 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/deser/SettableBeanProperty.java	2022-12-26 15:13:52.501631814 -0600
+@@ -263,7 +263,7 @@
+      * Method used to assign index for property.
+      */
+     public void assignIndex(int index) {
+-        if (_propertyIndex != 0) {
++        if (_propertyIndex != -1) {
+             throw new IllegalStateException("Property '"+getName()+"' already had index ("+_propertyIndex+"), trying to assign "+index);
+         }
+         _propertyIndex = index;

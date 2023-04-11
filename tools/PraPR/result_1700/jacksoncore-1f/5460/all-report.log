@@ -1,0 +1,80 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 7
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 44
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field MILLION
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 44
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local value is replaced by access to field BILLION
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 44
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 10 with 11
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 45
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 46
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 46
+	Rank: 1
+	Total Rank: 7
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: com/fasterxml/jackson/core/io/NumberOutput.java
+	Line Number: 83
+	Block: 6
+	First Index: 46
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

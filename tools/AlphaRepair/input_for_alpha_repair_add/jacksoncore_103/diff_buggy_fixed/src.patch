@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/103/com/fasterxml/jackson/core/Base64Variant.java	2023-04-04 14:33:25.685954972 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/Base64Variant.java	2023-04-04 13:31:53.209631219 -0500
+@@ -251,7 +251,7 @@
+ 
+     public void encodeBase64Chunk(StringBuilder sb, int b24)
+     {
+-        sb.append(_base64ToAsciiC[(b24 >> 18) | 63]);
++        sb.append(_base64ToAsciiC[(b24 >> 18) & 0x3F]);
+         sb.append(_base64ToAsciiC[(b24 >> 12) & 0x3F]);
+         sb.append(_base64ToAsciiC[(b24 >> 6) & 0x3F]);
+         sb.append(_base64ToAsciiC[b24 & 0x3F]);

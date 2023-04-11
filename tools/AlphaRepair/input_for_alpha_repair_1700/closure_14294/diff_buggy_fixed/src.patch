@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/14294/com/google/javascript/jscomp/TypeCheck.java	2022-10-31 19:47:37.631811479 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypeCheck.java	2022-10-29 13:14:31.331198812 -0500
+@@ -972,7 +972,7 @@
+       // variable with inferred type case
+       JSType rvalueType = getJSType(assign.getLastChild());
+       Var var = t.getScope().getVar(lvalue.getQualifiedName());
+-      if (true) {
++      if (var != null) {
+         if (var.isTypeInferred()) {
+           return;
+         }

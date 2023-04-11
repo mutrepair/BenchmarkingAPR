@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/4245/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-10-31 19:47:46.703778623 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java	2022-12-26 15:13:52.509631900 -0600
+@@ -506,7 +506,7 @@
+         final ObjectIdWriter w = _objectIdWriter;
+         WritableObjectId objectId = provider.findObjectId(bean, w.generator);
+         // If possible, write as id already
+-        if (false) {
++        if (objectId.writeAsId(jgen, provider, w)) {
+             return;
+         }
+         // If not, need to inject the id:

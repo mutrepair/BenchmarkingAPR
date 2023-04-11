@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local count is replaced by local position to be defined
+	File Name: org/apache/commons/jxpath/ri/model/beans/PropertyIterator.java
+	Line Number: 211
+	Block: 53
+	First Index: 139
+	Rank: null
+	Total Rank: 4
+	Status: RUN_ERROR
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local count is replaced by access to field startIndex
+	File Name: org/apache/commons/jxpath/ri/model/beans/PropertyIterator.java
+	Line Number: 211
+	Block: 53
+	First Index: 139
+	Rank: null
+	Total Rank: 4
+	Status: RUN_ERROR
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local count is replaced by access to field position
+	File Name: org/apache/commons/jxpath/ri/model/beans/PropertyIterator.java
+	Line Number: 211
+	Block: 53
+	First Index: 139
+	Rank: null
+	Total Rank: 4
+	Status: RUN_ERROR
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local count is replaced by access to field startPropertyIndex
+	File Name: org/apache/commons/jxpath/ri/model/beans/PropertyIterator.java
+	Line Number: 211
+	Block: 53
+	First Index: 139
+	Rank: null
+	Total Rank: 4
+	Status: RUN_ERROR
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/jxpath/ri/model/beans/PropertyIterator.java
+	Line Number: 211
+	Block: 53
+	First Index: 138
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------

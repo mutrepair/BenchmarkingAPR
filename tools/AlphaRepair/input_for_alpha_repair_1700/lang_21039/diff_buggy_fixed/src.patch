@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/21039/org/apache/commons/lang3/time/FastDatePrinter.java	2022-10-31 19:47:57.219740200 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java	2022-12-26 15:13:54.785656490 -0600
+@@ -897,7 +897,7 @@
+         @Override
+         public final void appendTo(final StringBuffer buffer, final int value) {
+             if (value < 100) {
+-                buffer.append((char)(value / 10 - '0'));
++                buffer.append((char)(value / 10 + '0'));
+                 buffer.append((char)(value % 10 + '0'));
+             } else {
+                 buffer.append(Integer.toString(value));

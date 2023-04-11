@@ -1,0 +1,2290 @@
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:12
+Mon Dec 05 17:12:14 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:12
+Mon Dec 05 17:12:20 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testOuterHtml | 22/12/05 17:12
+Mon Dec 05 17:12:26 CST 2022 org.jsoup.parser.Parser,89
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testOuterHtml | 22/12/05 17:12
+Mon Dec 05 17:12:30 CST 2022 org.jsoup.parser.Parser,89
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.parser.TagTest::defaultSemantics | 22/12/05 17:12
+Mon Dec 05 17:12:35 CST 2022 org.jsoup.parser.Tag,174
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.parser.TagTest::defaultSemantics | 22/12/05 17:12
+Mon Dec 05 17:12:40 CST 2022 org.jsoup.parser.Tag,174
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:12
+Mon Dec 05 17:12:45 CST 2022 org.jsoup.nodes.Element,375
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:12
+Mon Dec 05 17:12:52 CST 2022 org.jsoup.nodes.Element,375
+Failed time : 22/12/05 17:12
+=================================================
+Project : jsoup_1	start : 22/12/05 17:12
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:12
+Mon Dec 05 17:13:01 CST 2022 org.jsoup.nodes.Element,348
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.4897493266497985 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>347,350]
+if(siblings.size()>index+1)return siblings.get(index+-1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>347,350]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+Success time : 22/12/05 17:13
+=================================================
+Project : jsoup_1	start : 22/12/05 17:13
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:13
+Mon Dec 05 17:13:22 CST 2022 org.jsoup.nodes.Element,348
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.4897493266497985 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>347,350]
+if(siblings.size()>index+1)return siblings.get(index+-1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>347,350]
+if(siblings.size()>index+1)return siblings.get(index+1);else return null;
+
+Time : 22/12/05 17:13
+----------------------------------------
+Success time : 22/12/05 17:13
+=================================================
+Project : jsoup_1	start : 22/12/05 17:13
+Current failed test : org.jsoup.nodes.ElementTest::testGetElementById | 22/12/05 17:13
+Mon Dec 05 17:13:59 CST 2022 org.jsoup.nodes.Element,424
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(elements.size()>0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5124903846123208 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(wrapChildren.size()>1){
+for(int i=1;i<wrapChildren.size();i++){
+Element remainder=wrapChildren.get(i);
+remainder.parentNode.removeChild(remainder);
+wrap.appendChild(remainder);
+}
+}
+
+Time : 22/12/05 17:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>424,427]
+if(elements.size()>=0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>424,427]
+if(elements.size()>0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:14
+----------------------------------------
+Success time : 22/12/05 17:14
+=================================================
+Project : jsoup_1	start : 22/12/05 17:14
+Current failed test : org.jsoup.nodes.ElementTest::testGetElementById | 22/12/05 17:14
+Mon Dec 05 17:14:41 CST 2022 org.jsoup.nodes.Element,424
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(elements.size()>0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:14
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.5124903846123208 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(wrapChildren.size()>1){
+for(int i=1;i<wrapChildren.size();i++){
+Element remainder=wrapChildren.get(i);
+remainder.parentNode.removeChild(remainder);
+wrap.appendChild(remainder);
+}
+}
+
+Time : 22/12/05 17:15
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>424,427]
+if(elements.size()>=0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:15
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>424,427]
+if(elements.size()>0)return elements.get(0);else return null;
+
+Time : 22/12/05 17:15
+----------------------------------------
+Success time : 22/12/05 17:15
+=================================================
+Project : jsoup_1	start : 22/12/05 17:15
+Current failed test : org.jsoup.nodes.ElementTest::testNormalisesText | 22/12/05 17:15
+Mon Dec 05 17:15:28 CST 2022 org.jsoup.nodes.Element,577
+Failed time : 22/12/05 17:15
+=================================================
+Project : jsoup_1	start : 22/12/05 17:15
+Current failed test : org.jsoup.nodes.ElementTest::testNormalisesText | 22/12/05 17:15
+Mon Dec 05 17:15:48 CST 2022 org.jsoup.nodes.Element,577
+Failed time : 22/12/05 17:15
+=================================================
+Project : jsoup_1	start : 22/12/05 17:15
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:15
+Mon Dec 05 17:16:12 CST 2022 org.jsoup.parser.TokenQueue,171
+Failed time : 22/12/05 17:16
+=================================================
+Project : jsoup_1	start : 22/12/05 17:16
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:16
+Mon Dec 05 17:16:47 CST 2022 org.jsoup.parser.TokenQueue,171
+Failed time : 22/12/05 17:17
+=================================================
+Project : jsoup_1	start : 22/12/05 17:17
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:17
+Mon Dec 05 17:17:25 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:17
+=================================================
+Project : jsoup_1	start : 22/12/05 17:17
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:17
+Mon Dec 05 17:17:54 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.select.SelectorTest::mixCombinator | 22/12/05 17:18
+Mon Dec 05 17:18:08 CST 2022 org.jsoup.select.Selector,287
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.select.SelectorTest::mixCombinator | 22/12/05 17:18
+Mon Dec 05 17:18:14 CST 2022 org.jsoup.select.Selector,287
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:18
+Mon Dec 05 17:18:20 CST 2022 org.jsoup.parser.Parser,137
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:18
+Mon Dec 05 17:18:24 CST 2022 org.jsoup.parser.Parser,137
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.safety.CleanerTest::testIsValid | 22/12/05 17:18
+Mon Dec 05 17:18:29 CST 2022 org.jsoup.safety.Cleaner,63
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.safety.CleanerTest::testIsValid | 22/12/05 17:18
+Mon Dec 05 17:18:40 CST 2022 org.jsoup.safety.Cleaner,63
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.parser.ParserTest::handlesUnknownInlineTags | 22/12/05 17:18
+Mon Dec 05 17:18:52 CST 2022 org.jsoup.parser.Tag,55
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.parser.ParserTest::handlesUnknownInlineTags | 22/12/05 17:18
+Mon Dec 05 17:18:57 CST 2022 org.jsoup.parser.Tag,55
+Failed time : 22/12/05 17:18
+=================================================
+Project : jsoup_1	start : 22/12/05 17:18
+Current failed test : org.jsoup.safety.CleanerTest::testIsValid | 22/12/05 17:18
+Mon Dec 05 17:19:03 CST 2022 org.jsoup.safety.Cleaner,74
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.safety.CleanerTest::testIsValid | 22/12/05 17:19
+Mon Dec 05 17:19:09 CST 2022 org.jsoup.safety.Cleaner,74
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:16 CST 2022 org.jsoup.parser.TokenQueue,107
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:22 CST 2022 org.jsoup.parser.TokenQueue,107
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:19
+Mon Dec 05 17:19:30 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:19
+Mon Dec 05 17:19:34 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:39 CST 2022 org.jsoup.nodes.Element,813
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:43 CST 2022 org.jsoup.nodes.Element,813
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:48 CST 2022 org.jsoup.nodes.Node,345
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:19
+Mon Dec 05 17:19:54 CST 2022 org.jsoup.nodes.Node,345
+Failed time : 22/12/05 17:19
+=================================================
+Project : jsoup_1	start : 22/12/05 17:19
+Current failed test : org.jsoup.integration.ParseTest::testBinary | 22/12/05 17:19
+Mon Dec 05 17:20:02 CST 2022 org.jsoup.nodes.TextNode,103
+Failed time : 22/12/05 17:20
+=================================================
+Project : jsoup_1	start : 22/12/05 17:20
+Current failed test : org.jsoup.integration.ParseTest::testBinary | 22/12/05 17:20
+Mon Dec 05 17:20:15 CST 2022 org.jsoup.nodes.TextNode,103
+Failed time : 22/12/05 17:20
+=================================================
+Project : jsoup_1	start : 22/12/05 17:20
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:20
+Mon Dec 05 17:20:28 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:20
+=================================================
+Project : jsoup_1	start : 22/12/05 17:20
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:20
+Mon Dec 05 17:20:34 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:20
+=================================================
+Project : jsoup_1	start : 22/12/05 17:20
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:20
+Mon Dec 05 17:20:41 CST 2022 org.jsoup.nodes.Element,811
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9999999999999998 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>811,811]
+if(this==o)return false;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>811,811]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+Success time : 22/12/05 17:21
+=================================================
+Project : jsoup_1	start : 22/12/05 17:21
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:21
+Mon Dec 05 17:21:19 CST 2022 org.jsoup.nodes.Element,811
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.9999999999999998 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>811,811]
+if(this==o)return false;
+
+Time : 22/12/05 17:21
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>811,811]
+if(this==o)return true;
+
+Time : 22/12/05 17:21
+----------------------------------------
+Success time : 22/12/05 17:21
+=================================================
+Project : jsoup_1	start : 22/12/05 17:21
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:21
+Mon Dec 05 17:21:58 CST 2022 org.jsoup.parser.TokenQueue,74
+Failed time : 22/12/05 17:22
+=================================================
+Project : jsoup_1	start : 22/12/05 17:22
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:22
+Mon Dec 05 17:22:24 CST 2022 org.jsoup.parser.TokenQueue,74
+Failed time : 22/12/05 17:22
+=================================================
+Project : jsoup_1	start : 22/12/05 17:22
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:22
+Mon Dec 05 17:22:50 CST 2022 org.jsoup.parser.Tag,188
+Failed time : 22/12/05 17:22
+=================================================
+Project : jsoup_1	start : 22/12/05 17:22
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:22
+Mon Dec 05 17:22:58 CST 2022 org.jsoup.parser.Tag,188
+Failed time : 22/12/05 17:23
+=================================================
+Project : jsoup_1	start : 22/12/05 17:23
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:23
+Mon Dec 05 17:23:08 CST 2022 org.jsoup.parser.TokenQueue,76
+Failed time : 22/12/05 17:23
+=================================================
+Project : jsoup_1	start : 22/12/05 17:23
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:23
+Mon Dec 05 17:23:21 CST 2022 org.jsoup.parser.TokenQueue,76
+Failed time : 22/12/05 17:23
+=================================================
+Project : jsoup_1	start : 22/12/05 17:23
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:23
+Mon Dec 05 17:23:33 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:23
+=================================================
+Project : jsoup_1	start : 22/12/05 17:23
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:23
+Mon Dec 05 17:23:45 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:23
+=================================================
+Project : jsoup_1	start : 22/12/05 17:23
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:23
+Mon Dec 05 17:24:00 CST 2022 org.jsoup.select.Collector,28
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:24:04 CST 2022 org.jsoup.select.Collector,28
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:24:08 CST 2022 org.jsoup.parser.TokenQueue,73
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:24:13 CST 2022 org.jsoup.parser.TokenQueue,73
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.nodes.ElementTest::testWrap | 22/12/05 17:24
+Mon Dec 05 17:24:18 CST 2022 org.jsoup.nodes.Element,321
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.nodes.ElementTest::testWrap | 22/12/05 17:24
+Mon Dec 05 17:24:23 CST 2022 org.jsoup.nodes.Element,321
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:24:28 CST 2022 org.jsoup.nodes.Element,585
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:24:32 CST 2022 org.jsoup.nodes.Element,585
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testBinary | 22/12/05 17:24
+Mon Dec 05 17:24:37 CST 2022 org.jsoup.nodes.TextNode,103
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testBinary | 22/12/05 17:24
+Mon Dec 05 17:24:49 CST 2022 org.jsoup.nodes.TextNode,103
+Failed time : 22/12/05 17:24
+=================================================
+Project : jsoup_1	start : 22/12/05 17:24
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:24
+Mon Dec 05 17:25:02 CST 2022 org.jsoup.parser.TokenQueue,150
+Failed time : 22/12/05 17:25
+=================================================
+Project : jsoup_1	start : 22/12/05 17:25
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:25
+Mon Dec 05 17:25:12 CST 2022 org.jsoup.parser.TokenQueue,150
+Failed time : 22/12/05 17:25
+=================================================
+Project : jsoup_1	start : 22/12/05 17:25
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:25
+Mon Dec 05 17:25:21 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:25
+=================================================
+Project : jsoup_1	start : 22/12/05 17:25
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:25
+Mon Dec 05 17:25:34 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:25
+=================================================
+Project : jsoup_1	start : 22/12/05 17:25
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:25
+Mon Dec 05 17:25:47 CST 2022 org.jsoup.parser.Parser,245
+Failed time : 22/12/05 17:25
+=================================================
+Project : jsoup_1	start : 22/12/05 17:25
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:25
+Mon Dec 05 17:25:58 CST 2022 org.jsoup.parser.Parser,245
+Failed time : 22/12/05 17:26
+=================================================
+Project : jsoup_1	start : 22/12/05 17:26
+Current failed test : org.jsoup.nodes.DocumentTest::setTextPreservesDocumentStructure | 22/12/05 17:26
+Mon Dec 05 17:26:09 CST 2022 org.jsoup.parser.Parser,252
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1218325485224054 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>0,0]
+String value=el.absUrl(attr.getKey());
+attr.setValue(value);
+for(Protocol protocol : protocols){
+String prot=protocol.toString()+":";
+if(value.toString().toLowerCase().startsWith(prot)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>242,252]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return true;
+
+Time : 22/12/05 17:26
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>242,252]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:26
+----------------------------------------
+Success time : 22/12/05 17:26
+=================================================
+Project : jsoup_1	start : 22/12/05 17:26
+Current failed test : org.jsoup.nodes.DocumentTest::setTextPreservesDocumentStructure | 22/12/05 17:26
+Mon Dec 05 17:26:45 CST 2022 org.jsoup.parser.Parser,252
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.1218325485224054 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>0,0]
+String value=el.absUrl(attr.getKey());
+attr.setValue(value);
+for(Protocol protocol : protocols){
+String prot=protocol.toString()+":";
+if(value.toString().toLowerCase().startsWith(prot)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>242,252]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return true;
+
+Time : 22/12/05 17:27
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>242,252]
+if(stack.size()==1&&childTag.equals(htmlTag))return true;
+for(int i=stack.size()-1;i>=0;i--){
+Element el=stack.get(i);
+Tag parent2=el.tag();
+if(parent2.isValidParent(childTag)){
+return true;
+}
+}
+return false;
+
+Time : 22/12/05 17:27
+----------------------------------------
+Success time : 22/12/05 17:27
+=================================================
+Project : jsoup_1	start : 22/12/05 17:27
+Current failed test : org.jsoup.select.ElementsTest::filter | 22/12/05 17:27
+Mon Dec 05 17:27:22 CST 2022 org.jsoup.parser.TokenQueue,223
+Failed time : 22/12/05 17:27
+=================================================
+Project : jsoup_1	start : 22/12/05 17:27
+Current failed test : org.jsoup.select.ElementsTest::filter | 22/12/05 17:27
+Mon Dec 05 17:27:32 CST 2022 org.jsoup.parser.TokenQueue,223
+Failed time : 22/12/05 17:27
+=================================================
+Project : jsoup_1	start : 22/12/05 17:27
+Current failed test : org.jsoup.nodes.ElementTest::testClassUpdates | 22/12/05 17:27
+Mon Dec 05 17:27:42 CST 2022 org.jsoup.nodes.Element,724
+Failed time : 22/12/05 17:27
+=================================================
+Project : jsoup_1	start : 22/12/05 17:27
+Current failed test : org.jsoup.nodes.ElementTest::testClassUpdates | 22/12/05 17:27
+Mon Dec 05 17:27:46 CST 2022 org.jsoup.nodes.Element,724
+Failed time : 22/12/05 17:27
+=================================================
+Project : jsoup_1	start : 22/12/05 17:27
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:27
+Mon Dec 05 17:27:50 CST 2022 org.jsoup.parser.Parser,173
+Failed time : 22/12/05 17:28
+=================================================
+Project : jsoup_1	start : 22/12/05 17:28
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:28
+Mon Dec 05 17:28:10 CST 2022 org.jsoup.parser.Parser,173
+Failed time : 22/12/05 17:28
+=================================================
+Project : jsoup_1	start : 22/12/05 17:28
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:28
+Mon Dec 05 17:28:29 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:28
+=================================================
+Project : jsoup_1	start : 22/12/05 17:28
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:28
+Mon Dec 05 17:28:35 CST 2022 org.jsoup.nodes.Node,331
+Failed time : 22/12/05 17:28
+=================================================
+Project : jsoup_1	start : 22/12/05 17:28
+Current failed test : org.jsoup.parser.ParserTest::handlesInvalidStartTags | 22/12/05 17:28
+Mon Dec 05 17:28:41 CST 2022 org.jsoup.parser.Parser,120
+Failed time : 22/12/05 17:28
+=================================================
+Project : jsoup_1	start : 22/12/05 17:28
+Current failed test : org.jsoup.parser.ParserTest::handlesInvalidStartTags | 22/12/05 17:28
+Mon Dec 05 17:28:55 CST 2022 org.jsoup.parser.Parser,120
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.SelectorTest::testPseudoEquals | 22/12/05 17:29
+Mon Dec 05 17:29:10 CST 2022 org.jsoup.select.Selector,154
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.SelectorTest::testPseudoEquals | 22/12/05 17:29
+Mon Dec 05 17:29:17 CST 2022 org.jsoup.select.Selector,154
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.ElementsTest::hasText | 22/12/05 17:29
+Mon Dec 05 17:29:25 CST 2022 org.jsoup.nodes.Element,615
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.ElementsTest::hasText | 22/12/05 17:29
+Mon Dec 05 17:29:29 CST 2022 org.jsoup.nodes.Element,615
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.safety.CleanerTest::testHandlesEmptyAttributes | 22/12/05 17:29
+Mon Dec 05 17:29:33 CST 2022 org.jsoup.safety.Cleaner,108
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.safety.CleanerTest::testHandlesEmptyAttributes | 22/12/05 17:29
+Mon Dec 05 17:29:37 CST 2022 org.jsoup.safety.Cleaner,108
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.SelectorTest::testPseudoGreaterThan | 22/12/05 17:29
+Mon Dec 05 17:29:42 CST 2022 org.jsoup.nodes.Evaluator,149
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.select.SelectorTest::testPseudoGreaterThan | 22/12/05 17:29
+Mon Dec 05 17:29:49 CST 2022 org.jsoup.nodes.Evaluator,149
+Failed time : 22/12/05 17:29
+=================================================
+Project : jsoup_1	start : 22/12/05 17:29
+Current failed test : org.jsoup.parser.TagTest::imgSemantics | 22/12/05 17:29
+Mon Dec 05 17:29:56 CST 2022 org.jsoup.parser.Tag,74
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:29
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+Success time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.parser.TagTest::imgSemantics | 22/12/05 17:30
+Mon Dec 05 17:30:07 CST 2022 org.jsoup.parser.Tag,74
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(!child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.4723055853282467 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(!child.isBlock&&!this.canContainInline)return true;
+
+Time : 22/12/05 17:30
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>73,74]
+if(child.isBlock&&!this.canContainInline)return false;
+
+Time : 22/12/05 17:30
+----------------------------------------
+Success time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:30
+Mon Dec 05 17:30:18 CST 2022 org.jsoup.nodes.Node,212
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:30
+Mon Dec 05 17:30:22 CST 2022 org.jsoup.nodes.Node,212
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.parser.TagTest::defaultSemantics | 22/12/05 17:30
+Mon Dec 05 17:30:27 CST 2022 org.jsoup.parser.Tag,175
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.parser.TagTest::defaultSemantics | 22/12/05 17:30
+Mon Dec 05 17:30:31 CST 2022 org.jsoup.parser.Tag,175
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:30
+Mon Dec 05 17:30:36 CST 2022 org.jsoup.parser.TokenQueue,126
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:30
+Mon Dec 05 17:30:41 CST 2022 org.jsoup.parser.TokenQueue,126
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:30
+Mon Dec 05 17:30:48 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:30
+Mon Dec 05 17:30:55 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:30
+=================================================
+Project : jsoup_1	start : 22/12/05 17:30
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:30
+Mon Dec 05 17:31:03 CST 2022 org.jsoup.parser.Tag,185
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:31
+Mon Dec 05 17:31:11 CST 2022 org.jsoup.parser.Tag,185
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:31
+Mon Dec 05 17:31:20 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:31
+Mon Dec 05 17:31:24 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.select.ElementsTest::attributes | 22/12/05 17:31
+Mon Dec 05 17:31:29 CST 2022 org.jsoup.select.Elements,54
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.select.ElementsTest::attributes | 22/12/05 17:31
+Mon Dec 05 17:31:33 CST 2022 org.jsoup.select.Elements,54
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:31
+Mon Dec 05 17:31:38 CST 2022 org.jsoup.select.Selector,148
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:31
+Mon Dec 05 17:31:47 CST 2022 org.jsoup.select.Selector,148
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:31
+Mon Dec 05 17:31:57 CST 2022 org.jsoup.parser.Parser,249
+Failed time : 22/12/05 17:31
+=================================================
+Project : jsoup_1	start : 22/12/05 17:31
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:31
+Mon Dec 05 17:32:01 CST 2022 org.jsoup.parser.Parser,249
+Failed time : 22/12/05 17:32
+=================================================
+Project : jsoup_1	start : 22/12/05 17:32
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:32
+Mon Dec 05 17:32:06 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:32
+=================================================
+Project : jsoup_1	start : 22/12/05 17:32
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:32
+Mon Dec 05 17:32:16 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:32
+=================================================
+Project : jsoup_1	start : 22/12/05 17:32
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:32
+Mon Dec 05 17:32:26 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1662942100777527 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(c.equals('-')||c.equals('_'))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:32
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:32
+----------------------------------------
+Success time : 22/12/05 17:32
+=================================================
+Project : jsoup_1	start : 22/12/05 17:32
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:32
+Mon Dec 05 17:32:50 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.1662942100777527 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(c.equals('-')||c.equals('_'))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+Success time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:33
+Mon Dec 05 17:33:14 CST 2022 org.jsoup.nodes.Element,585
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:33
+Mon Dec 05 17:33:19 CST 2022 org.jsoup.nodes.Element,585
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:33
+Mon Dec 05 17:33:24 CST 2022 org.jsoup.DataUtil,70
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:33
+Mon Dec 05 17:33:28 CST 2022 org.jsoup.DataUtil,70
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.safety.CleanerTest::basicBehaviourTest | 22/12/05 17:33
+Mon Dec 05 17:33:33 CST 2022 org.jsoup.safety.Whitelist,326
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.safety.CleanerTest::basicBehaviourTest | 22/12/05 17:33
+Mon Dec 05 17:33:37 CST 2022 org.jsoup.safety.Whitelist,326
+Failed time : 22/12/05 17:33
+=================================================
+Project : jsoup_1	start : 22/12/05 17:33
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:33
+Mon Dec 05 17:33:41 CST 2022 org.jsoup.parser.Parser,281
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6626905077786613 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>0,0]
+for(int i=0;i<len;i++){
+consume();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>281,283]
+for(int i=0;i<=counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>281,283]
+for(int i=0;i<counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:33
+----------------------------------------
+Success time : 22/12/05 17:34
+=================================================
+Project : jsoup_1	start : 22/12/05 17:34
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:34
+Mon Dec 05 17:34:06 CST 2022 org.jsoup.parser.Parser,281
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=0;i<counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:34
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6626905077786613 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>0,0]
+for(int i=0;i<len;i++){
+consume();
+}
+
+Time : 22/12/05 17:34
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>281,283]
+for(int i=0;i<=counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:34
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Parser.java=>281,283]
+for(int i=0;i<counter;i++){
+stack.removeLast();
+}
+
+Time : 22/12/05 17:34
+----------------------------------------
+Success time : 22/12/05 17:34
+=================================================
+Project : jsoup_1	start : 22/12/05 17:34
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:34
+Mon Dec 05 17:34:31 CST 2022 org.jsoup.parser.TokenQueue,236
+Failed time : 22/12/05 17:34
+=================================================
+Project : jsoup_1	start : 22/12/05 17:34
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:34
+Mon Dec 05 17:34:40 CST 2022 org.jsoup.parser.TokenQueue,236
+Failed time : 22/12/05 17:34
+=================================================
+Project : jsoup_1	start : 22/12/05 17:34
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:34
+Mon Dec 05 17:34:49 CST 2022 org.jsoup.parser.Tag,171
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(canContainBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8894991799933214 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>171,171]
+if(canContainBlock!=tag.canContainBlock)return true;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>171,171]
+if(canContainBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+Success time : 22/12/05 17:35
+=================================================
+Project : jsoup_1	start : 22/12/05 17:35
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:35
+Mon Dec 05 17:35:29 CST 2022 org.jsoup.parser.Tag,171
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(canContainBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.8894991799933214 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+if(child.isBlock&&!this.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>171,171]
+if(canContainBlock!=tag.canContainBlock)return true;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>171,171]
+if(canContainBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:35
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(isBlock!=tag.canContainBlock)return false;
+
+Time : 22/12/05 17:36
+----------------------------------------
+Success time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.safety.CleanerTest::basicBehaviourTest | 22/12/05 17:36
+Mon Dec 05 17:36:10 CST 2022 org.jsoup.safety.Whitelist,306
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.safety.CleanerTest::basicBehaviourTest | 22/12/05 17:36
+Mon Dec 05 17:36:16 CST 2022 org.jsoup.safety.Whitelist,306
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.nodes.ElementTest::testWrap | 22/12/05 17:36
+Mon Dec 05 17:36:22 CST 2022 org.jsoup.nodes.Element,322
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.nodes.ElementTest::testWrap | 22/12/05 17:36
+Mon Dec 05 17:36:27 CST 2022 org.jsoup.nodes.Element,322
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:36
+Mon Dec 05 17:36:33 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.select.ElementsTest::html | 22/12/05 17:36
+Mon Dec 05 17:36:37 CST 2022 org.jsoup.select.Elements,192
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:36
+Mon Dec 05 17:36:42 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:36
+Mon Dec 05 17:36:49 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:36
+Mon Dec 05 17:36:56 CST 2022 org.jsoup.parser.Parser,257
+Failed time : 22/12/05 17:36
+=================================================
+Project : jsoup_1	start : 22/12/05 17:36
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:36
+Mon Dec 05 17:37:01 CST 2022 org.jsoup.parser.Parser,257
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.select.SelectorTest::testPseudoEquals | 22/12/05 17:37
+Mon Dec 05 17:37:05 CST 2022 org.jsoup.nodes.Evaluator,159
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.select.SelectorTest::testPseudoEquals | 22/12/05 17:37
+Mon Dec 05 17:37:09 CST 2022 org.jsoup.nodes.Evaluator,159
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:14 CST 2022 org.jsoup.parser.TokenQueue,209
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:24 CST 2022 org.jsoup.parser.TokenQueue,209
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:34 CST 2022 org.jsoup.parser.Parser,72
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:44 CST 2022 org.jsoup.parser.Parser,72
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:55 CST 2022 org.jsoup.parser.TokenQueue,79
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:37
+Mon Dec 05 17:37:59 CST 2022 org.jsoup.parser.TokenQueue,79
+Failed time : 22/12/05 17:37
+=================================================
+Project : jsoup_1	start : 22/12/05 17:37
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:38
+Mon Dec 05 17:38:03 CST 2022 org.jsoup.parser.Parser,183
+Failed time : 22/12/05 17:38
+=================================================
+Project : jsoup_1	start : 22/12/05 17:38
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:38
+Mon Dec 05 17:38:31 CST 2022 org.jsoup.parser.Parser,183
+Failed time : 22/12/05 17:38
+=================================================
+Project : jsoup_1	start : 22/12/05 17:38
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:38
+Mon Dec 05 17:38:58 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:39
+=================================================
+Project : jsoup_1	start : 22/12/05 17:39
+Current failed test : org.jsoup.parser.ParserTest::createsDocumentStructure | 22/12/05 17:39
+Mon Dec 05 17:39:08 CST 2022 org.jsoup.parser.Tag,85
+Failed time : 22/12/05 17:39
+=================================================
+Project : jsoup_1	start : 22/12/05 17:39
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:39
+Mon Dec 05 17:39:19 CST 2022 org.jsoup.nodes.Element,273
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=nodes.size()-1;i>-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7037593842362173 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+for(int i=stack.size()-1;i>0;i--){
+counter++;
+Element el=stack.get(i);
+Tag elTag=el.tag();
+if(elTag.equals(bodyTag)||elTag.equals(htmlTag)){
+break;
+}else if(elTag.equals(tag)){
+elToClose=el;
+break;
+}
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>273,277]
+for(int i=nodes.size()-1;i>=-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>273,277]
+for(int i=nodes.size()-1;i>-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+Success time : 22/12/05 17:39
+=================================================
+Project : jsoup_1	start : 22/12/05 17:39
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:39
+Mon Dec 05 17:39:32 CST 2022 org.jsoup.nodes.Element,273
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+for(int i=nodes.size()-1;i>-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7037593842362173 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>0,0]
+for(int i=stack.size()-1;i>0;i--){
+counter++;
+Element el=stack.get(i);
+Tag elTag=el.tag();
+if(elTag.equals(bodyTag)||elTag.equals(htmlTag)){
+break;
+}else if(elTag.equals(tag)){
+elToClose=el;
+break;
+}
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>273,277]
+for(int i=nodes.size()-1;i>=-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/nodes/Element.java=>273,277]
+for(int i=nodes.size()-1;i>-1;i--){
+Node node=nodes.get(i);
+node.parentNode=null;
+prependChild(node);
+}
+
+Time : 22/12/05 17:39
+----------------------------------------
+Success time : 22/12/05 17:39
+=================================================
+Project : jsoup_1	start : 22/12/05 17:39
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:39
+Mon Dec 05 17:39:45 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:39
+=================================================
+Project : jsoup_1	start : 22/12/05 17:39
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:39
+Mon Dec 05 17:39:57 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:40
+=================================================
+Project : jsoup_1	start : 22/12/05 17:40
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:40
+Mon Dec 05 17:40:09 CST 2022 org.jsoup.parser.TokenQueue,82
+Failed time : 22/12/05 17:40
+=================================================
+Project : jsoup_1	start : 22/12/05 17:40
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:40
+Mon Dec 05 17:40:30 CST 2022 org.jsoup.parser.TokenQueue,82
+Failed time : 22/12/05 17:40
+=================================================
+Project : jsoup_1	start : 22/12/05 17:40
+Current failed test : org.jsoup.nodes.ElementTest::testHasText | 22/12/05 17:40
+Mon Dec 05 17:40:53 CST 2022 org.jsoup.select.Elements,318
+Failed time : 22/12/05 17:40
+=================================================
+Project : jsoup_1	start : 22/12/05 17:40
+Current failed test : org.jsoup.nodes.ElementTest::testHasText | 22/12/05 17:40
+Mon Dec 05 17:41:00 CST 2022 org.jsoup.select.Elements,318
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.safety.CleanerTest::testHandlesEmptyAttributes | 22/12/05 17:41
+Mon Dec 05 17:41:08 CST 2022 org.jsoup.safety.Whitelist,242
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.safety.CleanerTest::testHandlesEmptyAttributes | 22/12/05 17:41
+Mon Dec 05 17:41:12 CST 2022 org.jsoup.safety.Whitelist,242
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.parser.ParserTest::handlesFrames | 22/12/05 17:41
+Mon Dec 05 17:41:17 CST 2022 org.jsoup.parser.Tag,85
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(defaultAncestor.equals(defaultAncestor)||child.tagName.equals("noscript")){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.tagName.equals("base")||defaultAncestor.equals(defaultAncestor)){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(defaultAncestor.equals(defaultAncestor)||defaultAncestor.equals(defaultAncestor)){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.parser.ParserTest::handlesFrames | 22/12/05 17:41
+Mon Dec 05 17:41:30 CST 2022 org.jsoup.parser.Tag,85
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(defaultAncestor.equals(defaultAncestor)||child.tagName.equals("noscript")){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(child.tagName.equals("base")||defaultAncestor.equals(defaultAncestor)){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(defaultAncestor.equals(defaultAncestor)||defaultAncestor.equals(defaultAncestor)){
+return true;
+}
+
+Time : 22/12/05 17:41
+----------------------------------------
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.parser.ParserTest::createsImplicitLists | 22/12/05 17:41
+Mon Dec 05 17:41:43 CST 2022 org.jsoup.parser.Tag,76
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.parser.ParserTest::createsImplicitLists | 22/12/05 17:41
+Mon Dec 05 17:41:47 CST 2022 org.jsoup.parser.Tag,76
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:41
+Mon Dec 05 17:41:52 CST 2022 org.jsoup.parser.TokenQueue,236
+Failed time : 22/12/05 17:41
+=================================================
+Project : jsoup_1	start : 22/12/05 17:41
+Current failed test : org.jsoup.integration.ParseTest::testSmhBizArticle | 22/12/05 17:41
+Mon Dec 05 17:42:02 CST 2022 org.jsoup.parser.TokenQueue,236
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.select.SelectorTest::deeperDescendant | 22/12/05 17:42
+Mon Dec 05 17:42:12 CST 2022 org.jsoup.select.Selector,271
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.select.SelectorTest::deeperDescendant | 22/12/05 17:42
+Mon Dec 05 17:42:16 CST 2022 org.jsoup.select.Selector,271
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:42
+Mon Dec 05 17:42:21 CST 2022 org.jsoup.parser.Parser,216
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:42
+Mon Dec 05 17:42:30 CST 2022 org.jsoup.parser.Parser,216
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:42
+Mon Dec 05 17:42:39 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:42
+Mon Dec 05 17:42:47 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:42
+=================================================
+Project : jsoup_1	start : 22/12/05 17:42
+Current failed test : org.jsoup.select.ElementsTest::filter | 22/12/05 17:42
+Mon Dec 05 17:42:58 CST 2022 org.jsoup.parser.TokenQueue,223
+Failed time : 22/12/05 17:43
+=================================================
+Project : jsoup_1	start : 22/12/05 17:43
+Current failed test : org.jsoup.select.ElementsTest::filter | 22/12/05 17:43
+Mon Dec 05 17:43:33 CST 2022 org.jsoup.parser.TokenQueue,223
+Failed time : 22/12/05 17:44
+=================================================
+Project : jsoup_1	start : 22/12/05 17:44
+Current failed test : org.jsoup.select.ElementsTest::classes | 22/12/05 17:44
+Mon Dec 05 17:44:24 CST 2022 org.jsoup.select.Elements,129
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(element.hasClass(className))return true;
+
+Time : 22/12/05 17:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6153499647171805 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>0,0]
+if(element.hasText())return true;
+
+Time : 22/12/05 17:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>128,129]
+if(element.hasClass(className))return false;
+
+Time : 22/12/05 17:44
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>128,129]
+if(element.hasClass(className))return true;
+
+Time : 22/12/05 17:44
+----------------------------------------
+Success time : 22/12/05 17:44
+=================================================
+Project : jsoup_1	start : 22/12/05 17:44
+Current failed test : org.jsoup.select.ElementsTest::classes | 22/12/05 17:44
+Mon Dec 05 17:44:58 CST 2022 org.jsoup.select.Elements,129
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(element.hasClass(className))return true;
+
+Time : 22/12/05 17:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.6153499647171805 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>0,0]
+if(element.hasText())return true;
+
+Time : 22/12/05 17:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>128,129]
+if(element.hasClass(className))return false;
+
+Time : 22/12/05 17:45
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/select/Elements.java=>128,129]
+if(element.hasClass(className))return true;
+
+Time : 22/12/05 17:45
+----------------------------------------
+Success time : 22/12/05 17:45
+=================================================
+Project : jsoup_1	start : 22/12/05 17:45
+Current failed test : org.jsoup.nodes.ElementTest::testNormalisesText | 22/12/05 17:45
+Mon Dec 05 17:45:34 CST 2022 org.jsoup.nodes.Element,570
+Failed time : 22/12/05 17:45
+=================================================
+Project : jsoup_1	start : 22/12/05 17:45
+Current failed test : org.jsoup.nodes.ElementTest::testNormalisesText | 22/12/05 17:45
+Mon Dec 05 17:45:53 CST 2022 org.jsoup.nodes.Element,570
+Failed time : 22/12/05 17:45
+=================================================
+Project : jsoup_1	start : 22/12/05 17:45
+Current failed test : org.jsoup.select.SelectorTest::testPseudoBetween | 22/12/05 17:46
+Mon Dec 05 17:46:16 CST 2022 org.jsoup.nodes.Evaluator,139
+Failed time : 22/12/05 17:46
+=================================================
+Project : jsoup_1	start : 22/12/05 17:46
+Current failed test : org.jsoup.select.SelectorTest::testPseudoBetween | 22/12/05 17:46
+Mon Dec 05 17:46:49 CST 2022 org.jsoup.nodes.Evaluator,139
+Failed time : 22/12/05 17:46
+=================================================
+Project : jsoup_1	start : 22/12/05 17:46
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:46
+Mon Dec 05 17:46:59 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.nodes.ElementTest::testGetSiblings | 22/12/05 17:47
+Mon Dec 05 17:47:06 CST 2022 org.jsoup.nodes.Element,394
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.select.SelectorTest::testCharactersInIdAndClass | 22/12/05 17:47
+Mon Dec 05 17:47:14 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.2870224656472367 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(c)||c.equals('-'))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+Success time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.select.SelectorTest::testCharactersInIdAndClass | 22/12/05 17:47
+Mon Dec 05 17:47:26 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.2870224656472367 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(c)||c.equals('-'))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:47
+----------------------------------------
+Success time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.nodes.ElementTest::testGetText | 22/12/05 17:47
+Mon Dec 05 17:47:38 CST 2022 org.jsoup.nodes.Element,577
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.nodes.ElementTest::testGetText | 22/12/05 17:47
+Mon Dec 05 17:47:44 CST 2022 org.jsoup.nodes.Element,577
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.select.SelectorTest::mixCombinator | 22/12/05 17:47
+Mon Dec 05 17:47:49 CST 2022 org.jsoup.select.Selector,290
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.select.SelectorTest::mixCombinator | 22/12/05 17:47
+Mon Dec 05 17:47:53 CST 2022 org.jsoup.select.Selector,290
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.parser.ParserTest::handlesTextArea | 22/12/05 17:47
+Mon Dec 05 17:47:58 CST 2022 org.jsoup.select.Elements,140
+Failed time : 22/12/05 17:47
+=================================================
+Project : jsoup_1	start : 22/12/05 17:47
+Current failed test : org.jsoup.parser.ParserTest::handlesTextArea | 22/12/05 17:47
+Mon Dec 05 17:48:02 CST 2022 org.jsoup.select.Elements,140
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:48
+Mon Dec 05 17:48:07 CST 2022 org.jsoup.parser.Tag,185
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:48
+Mon Dec 05 17:48:15 CST 2022 org.jsoup.parser.Tag,185
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:48
+Mon Dec 05 17:48:24 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.nodes.ElementTest::testFormatHtml | 22/12/05 17:48
+Mon Dec 05 17:48:37 CST 2022 org.jsoup.nodes.Node,249
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.nodes.DocumentTest::setTextPreservesDocumentStructure | 22/12/05 17:48
+Mon Dec 05 17:48:50 CST 2022 org.jsoup.parser.Tag,158
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.nodes.DocumentTest::setTextPreservesDocumentStructure | 22/12/05 17:48
+Mon Dec 05 17:48:54 CST 2022 org.jsoup.parser.Tag,158
+Failed time : 22/12/05 17:48
+=================================================
+Project : jsoup_1	start : 22/12/05 17:48
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:48
+Mon Dec 05 17:48:58 CST 2022 org.jsoup.nodes.TextNode,100
+Failed time : 22/12/05 17:49
+=================================================
+Project : jsoup_1	start : 22/12/05 17:49
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:49
+Mon Dec 05 17:49:09 CST 2022 org.jsoup.nodes.TextNode,100
+Failed time : 22/12/05 17:49
+=================================================
+Project : jsoup_1	start : 22/12/05 17:49
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:49
+Mon Dec 05 17:49:20 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.3545733829992095 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(true)){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+Success time : 22/12/05 17:49
+=================================================
+Project : jsoup_1	start : 22/12/05 17:49
+Current failed test : org.jsoup.integration.ParseTest::testGoogleSearchIpod | 22/12/05 17:49
+Mon Dec 05 17:49:40 CST 2022 org.jsoup.parser.TokenQueue,223
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 2.3545733829992095 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>0,0]
+StringBuilder accum=new StringBuilder();
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+}
+return accum.toString();
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(true)){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/TokenQueue.java=>223,226]
+while(!queue.isEmpty()&&(Character.isLetterOrDigit(queue.peek())||matchesAny("-","_",":"))){
+accum.append(queue.removeFirst());
+c=queue.peek();
+}
+
+Time : 22/12/05 17:49
+----------------------------------------
+Success time : 22/12/05 17:49
+=================================================
+Project : jsoup_1	start : 22/12/05 17:49
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:49
+Mon Dec 05 17:50:01 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:50
+=================================================
+Project : jsoup_1	start : 22/12/05 17:50
+Current failed test : org.jsoup.nodes.ElementTest::testPrependNewHtml | 22/12/05 17:50
+Mon Dec 05 17:50:10 CST 2022 org.jsoup.nodes.Element,273
+Failed time : 22/12/05 17:50
+=================================================
+Project : jsoup_1	start : 22/12/05 17:50
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:50
+Mon Dec 05 17:50:20 CST 2022 org.jsoup.parser.TokenQueue,126
+Failed time : 22/12/05 17:50
+=================================================
+Project : jsoup_1	start : 22/12/05 17:50
+Current failed test : org.jsoup.integration.ParseTest::testYahooJp | 22/12/05 17:50
+Mon Dec 05 17:50:25 CST 2022 org.jsoup.parser.TokenQueue,126
+Failed time : 22/12/05 17:50
+=================================================
+Project : jsoup_1	start : 22/12/05 17:50
+Current failed test : org.jsoup.nodes.ElementTest::testOuterHtml | 22/12/05 17:50
+Mon Dec 05 17:50:29 CST 2022 org.jsoup.parser.Tag,334
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+canContainBlock=false;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7958705948858225 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+canContainBlock=false;
+canContainInline=false;
+preserveWhitespace=true;
+return this;
+
+Time : 22/12/05 17:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>334,336]
+canContainBlock=true;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>334,336]
+canContainBlock=false;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:50
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+canContainBlock=false;
+canContainInline=true;
+preserveWhitespace=true;
+return this;
+
+Time : 22/12/05 17:50
+----------------------------------------
+Success time : 22/12/05 17:51
+=================================================
+Project : jsoup_1	start : 22/12/05 17:51
+Current failed test : org.jsoup.nodes.ElementTest::testOuterHtml | 22/12/05 17:51
+Mon Dec 05 17:51:06 CST 2022 org.jsoup.parser.Tag,334
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+canContainBlock=false;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Similar code block : 1.7958705948858225 : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>0,0]
+canContainBlock=false;
+canContainInline=false;
+preserveWhitespace=true;
+return this;
+
+Time : 22/12/05 17:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Original source code : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>334,336]
+canContainBlock=true;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Find a patch : [/home/jun/research/dlapr/repo_simfix/jsoup/jsoup_1_buggy/src/main/java/org/jsoup/parser/Tag.java=>334,336]
+canContainBlock=false;
+canContainInline=true;
+return this;
+
+Time : 22/12/05 17:51
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+canContainBlock=false;
+canContainInline=true;
+preserveWhitespace=true;
+return this;
+
+Time : 22/12/05 17:51
+----------------------------------------
+Success time : 22/12/05 17:51

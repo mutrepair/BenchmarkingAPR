@@ -1,0 +1,34 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1129/org/mockito/internal/matchers/EndsWith.java	2022-10-22 16:02:32.401471123 -0500
++++ /home/jun/research/dlapr/all_mutants/mockito-1f/src/org/mockito/internal/matchers/EndsWith.java	2022-10-22 16:02:47.681565697 -0500
+@@ -1,29 +1,29 @@
+ /*
+  * Copyright (c) 2007 Mockito contributors
+  * This program is made available under the terms of the MIT License.
+  */
+ package org.mockito.internal.matchers;
+ 
+ import java.io.Serializable;
+ 
+ import org.hamcrest.Description;
+ import org.mockito.ArgumentMatcher;
+ 
+ 
+ public class EndsWith extends ArgumentMatcher<String> implements Serializable {
+ 
+     private static final long serialVersionUID = 8556443228350129421L;
+     private final String suffix;
+ 
+     public EndsWith(String suffix) {
+         this.suffix = suffix;
+     }
+ 
+     public boolean matches(Object actual) {
+-        return actual != null;
++        return actual != null && ((String) actual).endsWith(suffix);
+     }
+ 
+     public void describeTo(Description description) {
+         description.appendText("endsWith(\"" + suffix + "\")");
+     }
+ }
+\ No newline at end of file

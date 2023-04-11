@@ -1,0 +1,36 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1.0 with 2.0
+	File Name: com/fasterxml/jackson/databind/node/BooleanNode.java
+	Line Number: 70
+	Block: 22
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for com/fasterxml/jackson/databind/node/BooleanNode::asDouble
+	File Name: com/fasterxml/jackson/databind/node/BooleanNode.java
+	Line Number: 70
+	Block: 22
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for com/fasterxml/jackson/databind/node/BooleanNode::asDouble
+	File Name: com/fasterxml/jackson/databind/node/BooleanNode.java
+	Line Number: 70
+	Block: 22
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

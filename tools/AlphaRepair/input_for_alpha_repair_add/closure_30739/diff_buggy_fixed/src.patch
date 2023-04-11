@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/30739/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 14:33:25.453952725 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/GoogleJsMessageIdGenerator.java	2023-04-04 13:31:52.769625991 -0500
+@@ -117,7 +117,7 @@
+             | ((str[i + 3] & 0xff) << 24));
+         b += (((str[i + 4] & 0xff) << 0)
+             | ((str[i + 5] & 0xff) << 8)
+-            | ((str[i + 6] ^ 255) << 16)
++            | ((str[i + 6] & 0xff) << 16)
+             | ((str[i + 7] & 0xff) << 24));
+         c += (((str[i + 8] & 0xff) << 0)
+             | ((str[i + 9] & 0xff) << 8) | ((str[i + 10] & 0xff) << 16)

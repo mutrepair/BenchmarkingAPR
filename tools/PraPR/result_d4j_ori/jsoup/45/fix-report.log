@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 11:52:29 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 127
+	First Index: 65
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/HtmlTreeBuilder.java
+	Line Number: 394
+	Block: 127
+	First Index: 65
+	Rank: 2
+	Total Rank: 14
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------

@@ -1,0 +1,28 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 09:33:26 CST 2023
+Number of Plausible Fixes: 2
+Total Number of Patches: 31
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local nextLineTabStop is replaced by access to field DEFAULT_LEFT_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 812
+	Block: 76
+	First Index: 65
+	Rank: 2
+	Total Rank: 31
+	Status: SURVIVED
+	Dump: mutant-14.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local nextLineTabStop is replaced by access to field defaultLeftPad
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 812
+	Block: 76
+	First Index: 65
+	Rank: 2
+	Total Rank: 31
+	Status: SURVIVED
+	Dump: mutant-25.class
+------------------------------------------------

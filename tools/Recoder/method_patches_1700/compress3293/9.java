@@ -1,0 +1,6 @@
+    public byte[] getCentralDirectoryData() {
+if((data != null)){
+            this.assembleData();
+        }
+        return data;
+    }

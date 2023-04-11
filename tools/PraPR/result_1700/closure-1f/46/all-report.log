@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local value to be used
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local value is replaced by local i to be used
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 26 with 27
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 20
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 6 with 7
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 63 with 64
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 25
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/debugging/sourcemap/Base64::toBase64
+	File Name: com/google/debugging/sourcemap/Base64.java
+	Line Number: 76
+	Block: 11
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

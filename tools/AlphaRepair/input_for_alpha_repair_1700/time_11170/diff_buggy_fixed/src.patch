@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/11170/org/joda/time/chrono/ZonedChronology.java	2022-10-31 19:48:08.647698043 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/ZonedChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -313,7 +313,7 @@
+ 
+         public long add(long instant, int value) {
+             int offset = getOffsetToAdd(instant);
+-            instant = iField.add(instant * offset, value);
++            instant = iField.add(instant + offset, value);
+             return instant - (iTimeField ? offset : getOffsetFromLocalToSubtract(instant));
+         }
+ 

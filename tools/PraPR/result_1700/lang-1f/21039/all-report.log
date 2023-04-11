@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuffer.append(C)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuffer.append(C)Ljava/lang/StringBuffer; is replaced by an instantiation of type java.lang.StringBuffer using (Ljava/lang/String;)V
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(C)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(C)Ljava/lang/StringBuffer; with a call to append([CII)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(C)Ljava/lang/StringBuffer; with a call to append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(C)Ljava/lang/StringBuffer; with a call to append([C)Ljava/lang/StringBuffer;
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local value is replaced by access to field mField
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 9
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local buffer is replaced a call buffer.reverse()
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuffer::append(C)Ljava/lang/StringBuffer; is guarded using default value null
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(C)Ljava/lang/StringBuffer; is guarded returning enclosing method
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 10 with 11
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 10
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 48 with 49
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 12
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 11
+	Rank: null
+	Total Rank: 16
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 13
+	Rank: 1
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuffer::append
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuffer::append with receiver
+	File Name: org/apache/commons/lang3/time/FastDatePrinter.java
+	Line Number: 900
+	Block: 4
+	First Index: 15
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

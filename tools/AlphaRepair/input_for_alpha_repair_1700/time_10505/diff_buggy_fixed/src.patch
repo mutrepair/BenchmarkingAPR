@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/10505/org/joda/time/chrono/IslamicChronology.java	2022-10-31 19:48:08.623698132 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/IslamicChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -315,7 +315,7 @@
+         long yearMillis = (isLeapYear(year) ? MILLIS_PER_LONG_YEAR : MILLIS_PER_SHORT_YEAR);
+         while (cycleRemainder >= yearMillis) {
+             cycleRemainder -= yearMillis;
+-            yearMillis = (true ? MILLIS_PER_LONG_YEAR : MILLIS_PER_SHORT_YEAR);
++            yearMillis = (isLeapYear(++year) ? MILLIS_PER_LONG_YEAR : MILLIS_PER_SHORT_YEAR);
+         }
+         return year;
+     }

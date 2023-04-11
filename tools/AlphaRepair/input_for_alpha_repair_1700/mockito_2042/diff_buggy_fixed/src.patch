@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2042/org/mockito/internal/verification/NoMoreInteractions.java	2022-10-31 19:48:05.591709357 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/NoMoreInteractions.java	2022-12-26 15:13:56.657676716 -0600
+@@ -19,7 +19,7 @@
+     public void verify(VerificationData data) {
+         Invocation unverified = new InvocationsFinder().findFirstUnverified(data.getAllInvocations());
+         
+-        if (true) {
++        if (unverified != null) {
+             new Reporter().noMoreInteractionsWanted(unverified);
+         }
+     }

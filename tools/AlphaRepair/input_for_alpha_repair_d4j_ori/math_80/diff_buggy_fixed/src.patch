@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/math_80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java	2023-01-16 15:30:21.452756280 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/math/80/patch/./org/apache/commons/math/linear/EigenDecompositionImpl.java	2023-01-16 15:30:21.416755831 -0600
+@@ -1132,7 +1132,7 @@
+     private boolean flipIfWarranted(final int n, final int step) {
+         if (1.5 * work[pingPong] < work[4 * (n - 1) + pingPong]) {
+             // flip array
+-            int j = 4 * n - 1;
++            int j = 4 * (n - 1);
+             for (int i = 0; i < j; i += 4) {
+                 for (int k = 0; k < 4; k += step) {
+                     final double tmp = work[i + k];

@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.lang.StringBuilder.append(C)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/CharSequence;)V
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method java.lang.StringBuilder.append(C)Ljava/lang/StringBuilder; is replaced by an instantiation of type java.lang.StringBuilder using (Ljava/lang/String;)V
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to append(C)Ljava/lang/StringBuilder; with a call to append([C)Ljava/lang/StringBuilder;
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to append(C)Ljava/lang/StringBuilder; with a call to append(D)Ljava/lang/StringBuilder;
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to append(C)Ljava/lang/StringBuilder; with a call to append(Z)Ljava/lang/StringBuilder;
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to append(C)Ljava/lang/StringBuilder; with a call to append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _base64ToAsciiC is guarded using value null
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _base64ToAsciiC is guarded using field _base64ToAsciiC
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b24 is replaced by access to field INT_SPACE
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local b24 is replaced by access to field BASE64_VALUE_INVALID
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local b24 is replaced by access to field BASE64_VALUE_PADDING
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local b24 is replaced by access to field _maxLineLength
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local sb is replaced a call sb.reverse()
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 3
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.StringBuilder::append(C)Ljava/lang/StringBuilder; is guarded using default value null
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _base64ToAsciiC is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 5
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(C)Ljava/lang/StringBuilder; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 18 with 19
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 63 with 64
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 9
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Right with Shift Left
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 8
+	Rank: null
+	Total Rank: 22
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 10
+	Rank: 1
+	Total Rank: 22
+	Status: SURVIVED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::append
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/StringBuilder::append with receiver
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 254
+	Block: 31
+	First Index: 12
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------

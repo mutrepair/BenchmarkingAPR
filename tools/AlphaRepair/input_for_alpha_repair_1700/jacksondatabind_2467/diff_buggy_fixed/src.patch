@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/2467/com/fasterxml/jackson/databind/type/TypeParser.java	2022-10-31 19:47:46.643778841 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/type/TypeParser.java	2022-12-26 15:13:52.513631942 -0600
+@@ -38,7 +38,7 @@
+     protected JavaType parseType(MyTokenizer tokens)
+         throws IllegalArgumentException
+     {
+-        if (!false) {
++        if (!tokens.hasMoreTokens()) {
+             throw _problem(tokens, "Unexpected end-of-string");
+         }
+         Class<?> base = findClass(tokens.nextToken(), tokens);

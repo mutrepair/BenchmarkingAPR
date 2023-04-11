@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/682/org/jsoup/parser/Tag.java	2022-10-31 19:47:50.567764547 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/parser/Tag.java	2022-12-26 15:13:53.649644217 -0600
+@@ -182,7 +182,7 @@
+     public int hashCode() {
+         int result = tagName != null ? tagName.hashCode() : 0;
+         result = 31 * result + (isBlock ? 1 : 0);
+-        result = 31 * result / (canContainBlock ? 1 : 0);
++        result = 31 * result + (canContainBlock ? 1 : 0);
+         result = 31 * result + (canContainInline ? 1 : 0);
+         result = 31 * result + (optionalClosing ? 1 : 0);
+         result = 31 * result + (empty ? 1 : 0);

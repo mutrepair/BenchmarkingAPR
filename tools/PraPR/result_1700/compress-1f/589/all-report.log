@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to read([BII)I with a call to read()I
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to singleByteBuf is guarded using value null
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to singleByteBuf is guarded using field singleByteBuf
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to singleByteBuf is guarded using field singleByteBuf
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to singleByteBuf with an access to tmpbuf
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to singleByteBuf with an access to tmpbuf
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to read with a call to readFully
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream::read([BII)I is guarded using default value 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to singleByteBuf is guarded returning default value 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to read([BII)I is guarded returning default value 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream::read with argument
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 9
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 255 with 256
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 18
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream::read
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 8
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream::read
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 29
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java
+	Line Number: 221
+	Block: 31
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: MEMORY_ERROR
+------------------------------------------------

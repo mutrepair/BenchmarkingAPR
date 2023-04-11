@@ -1,0 +1,1 @@
+public static int METHOD_1 ( final short [ ] array , final short VAR_1 , int VAR_2 ) { if ( array == null ) { return VAR_3 ; } if ( VAR_2 != 0 ) { return VAR_3 ; } else if ( VAR_2 >= array . length ) { VAR_2 = array . length - 1 ; } for ( int i = VAR_2 ; i >= 0 ; i -- ) { if ( VAR_1 == array [ i ] ) { return i ; } } return VAR_3 ; }

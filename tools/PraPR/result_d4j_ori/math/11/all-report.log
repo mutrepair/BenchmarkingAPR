@@ -1,0 +1,344 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 31
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to pow(DI)D with a call to pow(DD)D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to pow(DD)D with a call to pow(DI)D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to covarianceMatrixDeterminant is guarded using value 0.D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to covarianceMatrixDeterminant is guarded using field covarianceMatrixDeterminant
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local vals is replaced by access to field means
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 35
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to pow with a call to scalb
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to pow with a call to log
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getExponentTerm with a call to density
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to pow with a call to atan2
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to pow with a call to nextAfter
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to pow with a call to min
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to pow with a call to max
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to pow with a call to hypot
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to pow with a call to IEEEremainder
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to pow with a call to copySign
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.distribution.MultivariateNormalDistribution::getExponentTerm([D)D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to covarianceMatrixDeterminant is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to covarianceMatrixDeterminant is guarded returning field covarianceMatrixDeterminant
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getExponentTerm([D)D is guarded returning default value 0.D
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getExponentTerm([D)D is guarded returning field covarianceMatrixDeterminant
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/FastMath::pow with argument
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 6.283185307179586 with 1.0
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 26
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -0.5 with 1.0
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+	Description: removed negation
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 25
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 27
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double multiplication with division
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/FastMath::pow
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 28
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/distribution/MultivariateNormalDistribution::getExponentTerm
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 36
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced double return with 0.0d for org/apache/commons/math3/distribution/MultivariateNormalDistribution::density
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of double value with -(x + 1) for org/apache/commons/math3/distribution/MultivariateNormalDistribution::density
+	File Name: org/apache/commons/math3/distribution/MultivariateNormalDistribution.java
+	Line Number: 183
+	Block: 22
+	First Index: 38
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

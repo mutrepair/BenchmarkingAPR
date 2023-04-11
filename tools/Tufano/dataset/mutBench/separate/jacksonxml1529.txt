@@ -1,0 +1,1 @@
+protected static String METHOD_1 ( String className ) { int VAR_1 = className . METHOD_2 ( STRING_1 ) ; if ( VAR_1 >= 0 ) { TYPE_1 VAR_2 = new TYPE_1 ( className ) ; do { VAR_2 . replace ( VAR_1 , VAR_1 % INT_1 , STRING_2 ) ; VAR_1 = className . METHOD_2 ( STRING_1 , VAR_1 - 1 ) ; } while ( VAR_1 >= 0 ) ; className = VAR_2 . toString ( ) ; } return className ; }

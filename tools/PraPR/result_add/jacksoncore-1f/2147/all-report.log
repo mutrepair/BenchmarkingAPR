@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _features is guarded using value 0
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _features is guarded using field MIN_BYTE_I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.core.JsonParser._features is replaced by the call to com.fasterxml.jackson.core.JsonParser::getFeatureMask()I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.fasterxml.jackson.core.JsonParser._features is replaced by the call to com.fasterxml.jackson.core.JsonParser::getTextLength()I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: 3
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field com.fasterxml.jackson.core.JsonParser._features is replaced by the call to com.fasterxml.jackson.core.JsonParser::getTextOffset()I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: 3
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field com.fasterxml.jackson.core.JsonParser._features is replaced by the call to com.fasterxml.jackson.core.JsonParser::getIntValue()I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 15
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field com.fasterxml.jackson.core.JsonParser._features is replaced by the call to com.fasterxml.jackson.core.JsonParser::getValueAsInt()I
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: 3
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.skipChildren()
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 3
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.core.JsonParser$Feature::getMask()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _features is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _features is guarded returning local this
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 5
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getMask()I is guarded returning default value null
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getMask()I is guarded returning local this
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 7
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 8
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/JsonParser$Feature::getMask
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 7
+	Rank: 4
+	Total Rank: 16
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable _features
+	File Name: com/fasterxml/jackson/core/JsonParser.java
+	Line Number: 420
+	Block: 10
+	First Index: 9
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

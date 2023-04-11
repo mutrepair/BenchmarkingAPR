@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to setDataset(ILorg/jfree/data/xy/XYDataset;)V with a call to setDataset(Lorg/jfree/data/xy/XYDataset;)V
+	File Name: org/jfree/chart/plot/XYPlot.java
+	Line Number: 1416
+	Block: 100
+	First Index: 6
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setDataset(ILorg/jfree/data/xy/XYDataset;)V is guarded returning enclosing method
+	File Name: org/jfree/chart/plot/XYPlot.java
+	Line Number: 1416
+	Block: 100
+	First Index: 6
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to org.jfree.chart.plot.XYPlot::setDataset(ILorg/jfree/data/xy/XYDataset;)V is guarded
+	File Name: org/jfree/chart/plot/XYPlot.java
+	Line Number: 1416
+	Block: 100
+	First Index: 6
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/jfree/chart/plot/XYPlot.java
+	Line Number: 1416
+	Block: 100
+	First Index: 4
+	Rank: 1
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to org/jfree/chart/plot/XYPlot::setDataset
+	File Name: org/jfree/chart/plot/XYPlot.java
+	Line Number: 1416
+	Block: 100
+	First Index: 6
+	Rank: null
+	Total Rank: 4
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/812/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-10-31 19:47:49.979766692 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator.java	2022-12-26 15:13:53.109638382 -0600
+@@ -543,7 +543,7 @@
+             _nextIsAttribute = false;
+             _xmlWriter.writeEndElement();
+             // [databind-xml#172]: possibly also need indentation
+-            if ((_xmlPrettyPrinter != null)) {
++            if (_elementNameStack.isEmpty() && (_xmlPrettyPrinter != null)) {
+                 // ... but only if it is likely to succeed:
+                 if (!_stax2Emulation) {
+                     _xmlPrettyPrinter.writePrologLinefeed(_xmlWriter);

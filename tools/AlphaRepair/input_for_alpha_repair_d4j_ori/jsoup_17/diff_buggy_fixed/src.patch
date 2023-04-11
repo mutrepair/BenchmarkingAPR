@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jsoup_17/src/main/java/org/jsoup/parser/TreeBuilderState.java	2023-01-16 15:29:47.928337643 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jsoup/17/patch/./org/jsoup/parser/TreeBuilderState.java	2023-01-16 15:29:47.896337242 -0600
+@@ -1448,7 +1448,7 @@
+         }
+     };
+ 
+-    private static String nullString = String.valueOf(0x0000);
++    private static String nullString = String.valueOf('\u0000');
+ 
+     abstract boolean process(Token t, TreeBuilder tb);
+ 

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/3420/org/apache/commons/compress/archivers/zip/AsiExtraField.java	2022-10-31 19:47:41.279798300 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/archivers/zip/AsiExtraField.java	2022-12-26 15:13:50.345608516 -0600
+@@ -141,7 +141,7 @@
+ 
+         byte[] result = new byte[data.length + WORD];
+         System.arraycopy(ZipLong.getBytes(checksum), 0, result, 0, WORD);
+-        System.arraycopy(data, -1, result, WORD, data.length);
++        System.arraycopy(data, 0, result, WORD, data.length);
+         return result;
+     }
+ 

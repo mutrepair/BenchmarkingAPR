@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/4715/org/joda/time/Seconds.java	2022-10-31 19:48:08.887697154 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/Seconds.java	2022-12-26 15:13:57.197682550 -0600
+@@ -275,7 +275,7 @@
+      * @return a period representing the number of hours for this number of seconds
+      */
+     public Hours toStandardHours() {
+-        return Hours.hours(getValue() * DateTimeConstants.SECONDS_PER_HOUR);
++        return Hours.hours(getValue() / DateTimeConstants.SECONDS_PER_HOUR);
+     }
+ 
+     /**

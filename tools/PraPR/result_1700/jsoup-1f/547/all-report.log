@@ -1,0 +1,421 @@
+Number of Plausible Fixes: 8
+Total Number of Patches: 38
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to isBlock is guarded using value false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to canContainInline is guarded using value false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to isBlock is guarded using field isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to canContainInline is guarded using field isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.parser.Tag.isBlock is replaced by the call to org.jsoup.parser.Tag::isBlock()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jsoup.parser.Tag.canContainInline is replaced by the call to org.jsoup.parser.Tag::isBlock()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jsoup.parser.Tag.isBlock is replaced by the call to org.jsoup.parser.Tag::canContainBlock()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.jsoup.parser.Tag.canContainInline is replaced by the call to org.jsoup.parser.Tag::canContainBlock()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jsoup.parser.Tag.isBlock is replaced by the call to org.jsoup.parser.Tag::isInline()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: 4
+	Total Rank: 33
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.jsoup.parser.Tag.canContainInline is replaced by the call to org.jsoup.parser.Tag::isInline()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: 4
+	Total Rank: 33
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.jsoup.parser.Tag.isBlock is replaced by the call to org.jsoup.parser.Tag::isData()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.jsoup.parser.Tag.canContainInline is replaced by the call to org.jsoup.parser.Tag::isData()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.jsoup.parser.Tag.isBlock is replaced by the call to org.jsoup.parser.Tag::isEmpty()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: 4
+	Total Rank: 33
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.jsoup.parser.Tag.canContainInline is replaced by the call to org.jsoup.parser.Tag::isEmpty()Z
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 33
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to isBlock with an access to canContainBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to canContainInline with an access to isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to isBlock with an access to canContainInline
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to canContainInline with an access to canContainBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to isBlock with an access to optionalClosing
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to canContainInline with an access to optionalClosing
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to isBlock with an access to empty
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to canContainInline with an access to empty
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to isBlock with an access to preserveWhitespace
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to canContainInline with an access to preserveWhitespace
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local child is replaced by local this to be used
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 19
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local this is replaced by local child to be used
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 22
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local child is replaced by access to field defaultAncestor
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 19
+	Rank: 8
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field defaultAncestor
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 22
+	Rank: 8
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local child is replaced a call child.getImplicitParent()
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 19
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.getImplicitParent()
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 22
+	Rank: null
+	Total Rank: 13
+	Status: NON_VIABLE
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to isBlock is guarded returning default value false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to canContainInline is guarded returning default value false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to isBlock is guarded returning field isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 20
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to canContainInline is guarded returning field isBlock
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 23
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 21
+	Rank: 5
+	Total Rank: 35
+	Status: SURVIVED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 9
+	First Index: 24
+	Rank: null
+	Total Rank: 35
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 21
+	Rank: 8
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/jsoup/parser/Tag.java
+	Line Number: 73
+	Block: 8
+	First Index: 21
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/325/org/apache/commons/csv/ExtendedBufferedReader.java	2022-10-31 19:47:42.183795027 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	2022-12-26 15:13:50.881614309 -0600
+@@ -84,7 +84,7 @@
+         
+         int len = super.read(buf, offset, length);
+         
+-        if (false) {
++        if (len > 0) {
+ 
+             for (int i = offset; i < offset + len; i++) {
+                 char ch = buf[i];

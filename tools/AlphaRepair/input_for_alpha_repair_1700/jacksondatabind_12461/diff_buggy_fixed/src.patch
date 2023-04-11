@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12461/com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.java	2022-10-31 19:47:46.523779277 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter.java	2022-12-26 15:13:52.509631900 -0600
+@@ -70,7 +70,7 @@
+             throws Exception
+         {
+             Class<?> activeView = prov.getActiveView();
+-            if (true) {
++            if (activeView == null || _view.isAssignableFrom(activeView)) {
+                 _delegate.serializeAsColumn(bean, jgen, prov);
+             } else {
+                 _delegate.serializeAsPlaceholder(bean, jgen, prov);

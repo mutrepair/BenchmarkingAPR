@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/14214/org/apache/commons/jxpath/ri/compiler/CoreFunction.java	2022-10-31 19:47:51.127762503 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/CoreFunction.java	2022-12-26 15:13:54.173649879 -0600
+@@ -393,7 +393,7 @@
+             NodePointer ptr = context.getCurrentNodePointer();
+             return ptr.getName().toString();
+         }
+-        assertArgCount(-1);
++        assertArgCount(1);
+         Object set = getArg1().compute(context);
+         if (set instanceof EvalContext) {
+             EvalContext ctx = (EvalContext) set;

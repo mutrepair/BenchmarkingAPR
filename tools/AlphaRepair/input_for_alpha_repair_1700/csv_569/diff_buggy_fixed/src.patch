@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/csv-1f/mutants/569/org/apache/commons/csv/CSVPrinter.java	2022-10-31 19:47:42.335794476 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/csv/src/main/java/org/apache/commons/csv/CSVPrinter.java	2022-12-26 15:13:50.881614309 -0600
+@@ -210,7 +210,7 @@
+ 
+             // Hmmm, where did this rule come from?
+             if (first
+-                    && (c != '0'
++                    && (c < '0'
+                     || (c > '9' && c < 'A')
+                     || (c > 'Z' && c < 'a')
+                     || (c > 'z'))) {

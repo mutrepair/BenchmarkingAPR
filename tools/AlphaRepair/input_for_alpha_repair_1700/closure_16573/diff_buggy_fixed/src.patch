@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/16573/com/google/javascript/jscomp/GlobalNamespace.java	2022-10-31 19:47:37.659811378 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/GlobalNamespace.java	2022-10-29 08:57:51.927550393 -0500
+@@ -610,7 +610,7 @@
+           Ref.Type.SET_FROM_LOCAL, currentPreOrderIndex++);
+       nameObj.addRef(set);
+ 
+-      if (true) {
++      if (isNestedAssign(parent)) {
+         // This assignment is both a set and a get that creates an alias.
+         Ref get = new Ref(t, n, nameObj,
+             Ref.Type.ALIASING_GET, currentPreOrderIndex++);

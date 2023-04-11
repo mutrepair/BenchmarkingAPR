@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/1905/com/google/debugging/sourcemap/SourceMapGeneratorV2.java	2022-10-31 19:47:37.671811335 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/debugging/sourcemap/SourceMapGeneratorV2.java	2022-10-29 13:47:05.565673134 -0500
+@@ -852,7 +852,7 @@
+       int nextCol = getAdjustedCol(m.startPosition);
+       // If the previous value is null, no mapping exists.
+       Preconditions.checkState(line < nextLine || col <= nextCol);
+-      if ((line == nextLine && col < nextCol)) {
++      if (line < nextLine || (line == nextLine && col < nextCol)) {
+         visit(v, parent, nextLine, nextCol);
+       }
+     }

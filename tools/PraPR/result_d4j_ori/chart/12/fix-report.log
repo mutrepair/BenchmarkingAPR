@@ -1,0 +1,16 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 00:53:04 CST 2023
+Number of Plausible Fixes: 1
+Total Number of Patches: 3
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.jfree.chart.plot.MultiplePiePlot.dataset is replaced by the call to org.jfree.chart.plot.MultiplePiePlot::setDataset(Lorg/jfree/data/category/CategoryDataset;)V
+	File Name: org/jfree/chart/plot/MultiplePiePlot.java
+	Line Number: 145
+	Block: 1
+	First Index: 14
+	Rank: 1
+	Total Rank: 3
+	Status: SURVIVED
+	Dump: mutant-1.class
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java	2023-01-16 15:29:22.592021247 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/67/patch/./com/google/javascript/jscomp/AnalyzePrototypeProperties.java	2023-01-16 15:29:22.560020846 -0600
+@@ -315,7 +315,7 @@
+       Node n = assign.getFirstChild();
+       if (n != null && NodeUtil.isVarOrSimpleAssignLhs(n, assign)
+           && n.getType() == Token.GETPROP
+-          ) {
++          && assign.getParent().getType() == Token.EXPR_RESULT) {
+         // We want to exclude the assignment itself from the usage list
+         boolean isChainedProperty =
+             n.getFirstChild().getType() == Token.GETPROP;

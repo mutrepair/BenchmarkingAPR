@@ -1,0 +1,322 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 29
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.Map$Entry.getValue()Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.Map$Entry.getValue()Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.lang3.CharUtilsTest using ()V
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local found to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 117
+	Rank: 1
+	Total Rank: 27
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ct is replaced by local found to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 118
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local i is replaced by local ct to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 117
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local ct is replaced by local i to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 118
+	Rank: null
+	Total Rank: 27
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local i is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 117
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local ct is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 118
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getValue with a call to getKey
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to intValue with a call to hashCode
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Map$Entry::getValue()Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.lang3.mutable.MutableInt::intValue()I is guarded using default value 0
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning default value null
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to intValue()I is guarded returning default value null
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning local array
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to intValue()I is guarded returning local array
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning local values
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to intValue()I is guarded returning local values
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning field EMPTY_LONG_ARRAY
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to intValue()I is guarded returning field EMPTY_LONG_ARRAY
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 119
+	Rank: 3
+	Total Rank: 29
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1054
+	First Index: 143
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 108
+	Rank: 3
+	Total Rank: 29
+	Status: SURVIVED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 119
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Map$Entry::getValue
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 112
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/lang3/mutable/MutableInt::intValue
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 114
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 119
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1051
+	First Index: 119
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 5465
+	Block: 1054
+	First Index: 143
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------

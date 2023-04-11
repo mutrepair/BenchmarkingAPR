@@ -1,0 +1,245 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 22
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _base64ToAsciiC is guarded using value null
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to _base64ToAsciiC is guarded using local buffer
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _base64ToAsciiC is guarded using field _base64ToAsciiC
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field _base64ToAsciiC is replaced by access to local buffer
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local ptr is replaced by local b24 to be used
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local b24 is replaced by local ptr to be used
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local buffer is replaced by access to field _base64ToAsciiC
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local ptr is replaced by access to field INT_SPACE
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b24 is replaced by access to field INT_SPACE
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local ptr is replaced by access to field BASE64_VALUE_INVALID
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local b24 is replaced by access to field BASE64_VALUE_INVALID
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local ptr is replaced by access to field BASE64_VALUE_PADDING
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local b24 is replaced by access to field BASE64_VALUE_PADDING
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local ptr is replaced by access to field _maxLineLength
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local b24 is replaced by access to field _maxLineLength
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _base64ToAsciiC is guarded returning default value 0
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _base64ToAsciiC is guarded returning local b24
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to _base64ToAsciiC is guarded returning field INT_SPACE
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 49
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+	Description: Changed increment from 1 to -1
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 51
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise AND with OR
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.RemoveIncrementsMutator
+	Description: Removed increment 1
+	File Name: com/fasterxml/jackson/core/Base64Variant.java
+	Line Number: 248
+	Block: 30
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

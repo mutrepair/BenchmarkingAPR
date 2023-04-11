@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local quote to be used
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 235
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 237
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 373
+	First Index: 240
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 31 with 32
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 236
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 127 with -128
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 373
+	First Index: 239
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 237
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 237
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: com/google/javascript/jscomp/CodeGenerator.java
+	Line Number: 1045
+	Block: 372
+	First Index: 237
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------

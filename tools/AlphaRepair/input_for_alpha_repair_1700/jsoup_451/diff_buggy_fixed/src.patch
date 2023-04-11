@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/451/org/jsoup/safety/Whitelist.java	2022-10-31 19:47:50.515764736 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/safety/Whitelist.java	2022-12-26 15:13:53.649644217 -0600
+@@ -239,7 +239,7 @@
+         AttributeKey attrKey = AttributeKey.valueOf(key);
+         AttributeValue attrVal = AttributeValue.valueOf(value);
+ 
+-        if (true) {
++        if (enforcedAttributes.containsKey(tagName)) {
+             enforcedAttributes.get(tagName).put(attrKey, attrVal);
+         } else {
+             Map<AttributeKey, AttributeValue> attrMap = new HashMap<AttributeKey, AttributeValue>();

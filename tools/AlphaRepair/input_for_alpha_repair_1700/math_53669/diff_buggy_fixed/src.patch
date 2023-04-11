@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/53669/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-10-31 19:48:00.439728364 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java	2022-12-26 15:13:55.665665998 -0600
+@@ -1431,7 +1431,7 @@
+         for (int iBlock = startRow / BLOCK_SIZE; iBlock < 1 + endRow / BLOCK_SIZE; ++iBlock) {
+             final int p0 = iBlock * BLOCK_SIZE;
+             final int pStart = FastMath.max(startRow, p0);
+-            final int pEnd = FastMath.min((iBlock + 1) - BLOCK_SIZE, 1 + endRow);
++            final int pEnd = FastMath.min((iBlock + 1) * BLOCK_SIZE, 1 + endRow);
+             for (int p = pStart; p < pEnd; ++p) {
+                 for (int jBlock = startColumn / BLOCK_SIZE; jBlock < 1 + endColumn / BLOCK_SIZE; ++jBlock) {
+                     final int jWidth = blockWidth(jBlock);

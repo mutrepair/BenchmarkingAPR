@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local varArgs is replaced by local args to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 85
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local newArgs is replaced by local args to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 87
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local nonVarArgsCount is replaced by local varArgsCount to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 88
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local varArgsCount is replaced by local nonVarArgsCount to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local varArgs is replaced by local newArgs to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 85
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local newArgs is replaced by local varArgs to be used
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 87
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local nonVarArgsCount is replaced by access to field MAX_LINE_LENGTH
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 88
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local varArgsCount is replaced by access to field MAX_LINE_LENGTH
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 89
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 86
+	Rank: 1
+	Total Rank: 10
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/System::arraycopy
+	File Name: org/mockito/internal/invocation/Invocation.java
+	Line Number: 80
+	Block: 9
+	First Index: 90
+	Rank: null
+	Total Rank: 9
+	Status: KILLED
+------------------------------------------------

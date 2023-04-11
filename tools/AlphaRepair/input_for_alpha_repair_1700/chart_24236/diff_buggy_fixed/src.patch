@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/24236/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2022-10-31 19:47:29.399841055 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2022-10-29 16:41:07.434717404 -0500
+@@ -1431,7 +1431,7 @@
+                 series);
+         String description = label;
+         String toolTipText = null;
+-        if (true) {
++        if (this.legendItemToolTipGenerator != null) {
+             toolTipText = this.legendItemToolTipGenerator.generateLabel(
+                     dataset, series);
+         }

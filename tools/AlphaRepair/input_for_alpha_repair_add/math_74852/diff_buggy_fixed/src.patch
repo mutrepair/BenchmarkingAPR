@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/74852/org/apache/commons/math3/ode/nonstiff/HighamHall54StepInterpolator.java	2023-04-04 14:33:26.113959121 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/ode/nonstiff/HighamHall54StepInterpolator.java	2023-04-04 13:31:54.017640821 -0500
+@@ -98,7 +98,7 @@
+     } else {
+         final double theta2 = theta * theta;
+         final double b0 = h * (-1.0/12.0 + theta * (1.0 + theta * (-15.0/4.0 + theta * (16.0/3.0 + theta * -5.0/2.0))));
+-        final double b2 = h * (-27.0/32.0 + theta2 * (459.0/32.0 + theta * (+243.0/8.0 + theta * 135.0/8.0)));
++        final double b2 = h * (-27.0/32.0 + theta2 * (459.0/32.0 + theta * (-243.0/8.0 + theta * 135.0/8.0)));
+         final double b3 = h * (4.0/3.0 + theta2 * (-22.0 + theta * (152.0/3.0  + theta * -30.0)));
+         final double b4 = h * (-125.0/96.0 + theta2 * (375.0/32.0 + theta * (-625.0/24.0 + theta * 125.0/8.0)));
+         final double b5 = h * (-5.0/48.0 + theta2 * (-5.0/16.0 + theta * 5.0/12.0));

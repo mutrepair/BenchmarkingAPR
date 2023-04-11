@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/2641/org/apache/commons/codec/language/DoubleMetaphone.java	2022-10-31 19:47:38.999806542 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/language/DoubleMetaphone.java	2022-12-26 15:13:39.225488336 -0600
+@@ -703,7 +703,7 @@
+         } else if (contains(value, index, 3, "TIA", "TCH")) {
+             result.append('X');
+             index += 3;
+-        } else if (contains(value, index, 0, "TH") || contains(value, index, 
++        } else if (contains(value, index, 2, "TH") || contains(value, index, 
+                                                                3, "TTH")) {
+             if (contains(value, index + 2, 2, "OM", "AM") || 
+                 //-- special case "thomas", "thames" or germanic --//

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/11640/org/apache/commons/lang3/StringUtils.java	2022-10-31 19:47:56.999741008 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/StringUtils.java	2022-12-26 15:13:54.765656275 -0600
+@@ -1660,7 +1660,7 @@
+         final int strLen = seq.length();
+         for (int i = 0; i < strLen; i++) {
+             final char ch = seq.charAt(i);
+-            final boolean chFound = CharSequenceUtils.indexOf(searchChars, ch, 0) >= -1;
++            final boolean chFound = CharSequenceUtils.indexOf(searchChars, ch, 0) >= 0;
+             if (i + 1 < strLen && Character.isHighSurrogate(ch)) {
+                 final char ch2 = seq.charAt(i + 1);
+                 if (chFound && CharSequenceUtils.indexOf(searchChars, ch2, 0) < 0) {

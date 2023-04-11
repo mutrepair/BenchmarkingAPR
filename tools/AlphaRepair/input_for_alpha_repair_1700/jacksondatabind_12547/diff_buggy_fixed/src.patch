@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/12547/com/fasterxml/jackson/databind/ser/impl/IndexedListSerializer.java	2022-10-31 19:47:46.531779248 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/impl/IndexedListSerializer.java	2022-12-26 15:13:52.509631900 -0600
+@@ -139,7 +139,7 @@
+         if (len == 0) {
+             return;
+         }
+-        int i = -1;
++        int i = 0;
+         try {
+             final TypeSerializer typeSer = _valueTypeSerializer;
+             PropertySerializerMap serializers = _dynamicSerializers;

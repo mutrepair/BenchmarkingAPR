@@ -1,0 +1,289 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 26
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to commentStart is guarded using value '\0'
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to commentStart is guarded using field delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getDelimiter()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getEncapsulator()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getCommentStart()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getEscape()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to commentStart with an access to delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to commentStart with an access to encapsulator
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to commentStart with an access to escape
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field PRISTINE
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field DEFAULT
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field RFC4180
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field EXCEL
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field TDF
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 3
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to commentStart is guarded returning default value false
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to commentStart is guarded returning field surroundingSpacesIgnored
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 4
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanFalseReturnValsMutator
+	Description: replaced boolean return with false for org/apache/commons/csv/CSVFormat::isCommentingEnabled
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 35
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/csv/CSVFormat::isCommentingEnabled
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 35
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 65534 with 65535
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 5
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 34
+	First Index: 7
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 35
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 33
+	First Index: 6
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 279
+	Block: 35
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

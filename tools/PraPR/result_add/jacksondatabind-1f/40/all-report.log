@@ -1,0 +1,146 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 13
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to _deserFeatures is guarded using value 0
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to _deserFeatures is guarded using field _deserFeatures
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.fasterxml.jackson.databind.DeserializationConfig._deserFeatures is replaced by the call to com.fasterxml.jackson.databind.DeserializationConfig::getDeserializationFeatures()I
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.withNoProblemHandlers()
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 3
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.DeserializationFeature::getMask()I is guarded using default value 0
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 6
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to _deserFeatures is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to _deserFeatures is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 4
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getMask()I is guarded returning default value null
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 6
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to getMask()I is guarded returning local this
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 6
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 7
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 8
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced bitwise OR with AND
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 9
+	Rank: 1
+	Total Rank: 13
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/DeserializationFeature::getMask
+	File Name: com/fasterxml/jackson/databind/DeserializationConfig.java
+	Line Number: 367
+	Block: 71
+	First Index: 6
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

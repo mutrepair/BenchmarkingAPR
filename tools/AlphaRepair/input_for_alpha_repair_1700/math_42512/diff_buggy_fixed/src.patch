@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/42512/org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java	2022-10-31 19:48:00.351728688 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/SphericalCoordinates.java	2022-12-26 15:13:55.661665956 -0600
+@@ -167,7 +167,7 @@
+         // compose derivatives as gradient^T . J
+         // the expressions have been simplified since we know jacobian[1][2] = dTheta/dZ = 0
+         return new double[] {
+-            sGradient[0] * jacobian[0][0] + sGradient[1] * jacobian[1][0] + sGradient[2] * jacobian[0][0],
++            sGradient[0] * jacobian[0][0] + sGradient[1] * jacobian[1][0] + sGradient[2] * jacobian[2][0],
+             sGradient[0] * jacobian[0][1] + sGradient[1] * jacobian[1][1] + sGradient[2] * jacobian[2][1],
+             sGradient[0] * jacobian[0][2]                                 + sGradient[2] * jacobian[2][2]
+         };

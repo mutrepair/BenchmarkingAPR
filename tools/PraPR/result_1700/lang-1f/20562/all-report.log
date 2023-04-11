@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.lang.CharSequence.subSequence(II)Ljava/lang/CharSequence; is replaced by an instantiation of type org.apache.commons.lang3.StringUtilsEqualsIndexOfTest$CustomCharSequence using (Ljava/lang/CharSequence;)V
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.lang.CharSequence.subSequence(II)Ljava/lang/CharSequence; is replaced by an instantiation of type org.apache.commons.lang3.ObjectUtilsTest$NonComparableCharSequence using (Ljava/lang/String;)V
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method java.lang.CharSequence.subSequence(II)Ljava/lang/CharSequence; is replaced by an instantiation of type org.apache.commons.lang3.text.StrBuilder using (Ljava/lang/String;)V
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_7
+	Description: the call to factory method java.lang.CharSequence.subSequence(II)Ljava/lang/CharSequence; is replaced by an instantiation of type org.apache.commons.lang3.text.StrBuilder using (I)V
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local index is replaced by local i to be used
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 75
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local i is replaced by local index to be used
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 76
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.CharSequence::subSequence(II)Ljava/lang/CharSequence; is guarded using default value null
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to subSequence(II)Ljava/lang/CharSequence; is guarded returning default value 0
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to subSequence(II)Ljava/lang/CharSequence; is guarded returning local index
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_2
+	Description: the call to subSequence(II)Ljava/lang/CharSequence; is guarded returning local i
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 4 with 5
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 81
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 77
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 80
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/CharSequence::subSequence
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to java/lang/CharSequence::subSequence with receiver
+	File Name: org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+	Line Number: 50
+	Block: 10
+	First Index: 83
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

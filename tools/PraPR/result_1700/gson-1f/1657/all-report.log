@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to generateNonExecutableJson with an access to serializeInnerClasses
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to generateNonExecutableJson with an access to excludeFieldsWithoutExposeAnnotation
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to generateNonExecutableJson with an access to serializeNulls
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to generateNonExecutableJson with an access to serializeSpecialFloatingPointValues
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_4
+	Description: replaced access to generateNonExecutableJson with an access to escapeHtmlChars
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_5
+	Description: replaced access to generateNonExecutableJson with an access to prettyPrinting
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.generateNonExecutableJson()
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 3
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 4
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable generateNonExecutableJson
+	File Name: com/google/gson/GsonBuilder.java
+	Line Number: 153
+	Block: 3
+	First Index: 5
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

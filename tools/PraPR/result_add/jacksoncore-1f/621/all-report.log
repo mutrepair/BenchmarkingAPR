@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local b24 is replaced by access to field INITIAL_BLOCK_SIZE
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 62
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local b24 is replaced by access to field MAX_BLOCK_SIZE
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 62
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local b24 is replaced by access to field DEFAULT_BLOCK_ARRAY_SIZE
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 62
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local b24 is replaced by access to field _pastLen
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 62
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local b24 is replaced by access to field _currBlockPtr
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 62
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to append with a call to appendTwoBytes
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to append with a call to appendThreeBytes
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to append with a call to setCurrentSegmentLength
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to append with a call to write
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to append(I)V is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to com.fasterxml.jackson.core.util.ByteArrayBuilder::append(I)V is guarded
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 16 with 17
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 63
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Shift Left with Shift Right
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 64
+	Rank: 1
+	Total Rank: 14
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/core/util/ByteArrayBuilder::append
+	File Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.java
+	Line Number: 124
+	Block: 18
+	First Index: 65
+	Rank: null
+	Total Rank: 13
+	Status: KILLED
+------------------------------------------------

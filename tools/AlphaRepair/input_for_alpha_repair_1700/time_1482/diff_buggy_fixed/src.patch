@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/1482/org/joda/time/DateTime.java	2022-10-31 19:48:08.743697688 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/DateTime.java	2022-12-26 15:13:57.193682506 -0600
+@@ -828,7 +828,7 @@
+         if (fieldType == null) {
+             throw new IllegalArgumentException("Field must not be null");
+         }
+-        if (amount == 1) {
++        if (amount == 0) {
+             return this;
+         }
+         long instant = fieldType.getField(getChronology()).add(getMillis(), amount);

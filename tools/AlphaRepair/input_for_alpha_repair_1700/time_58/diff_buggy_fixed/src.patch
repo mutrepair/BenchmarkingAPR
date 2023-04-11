@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/58/org/joda/time/DateTimeZone.java	2022-10-31 19:48:08.915697050 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/DateTimeZone.java	2022-12-26 15:13:57.193682506 -0600
+@@ -273,7 +273,7 @@
+         if (hoursOffset == 0 && minutesOffset == 0) {
+             return DateTimeZone.UTC;
+         }
+-        if (hoursOffset < -23 || hoursOffset != 23) {
++        if (hoursOffset < -23 || hoursOffset > 23) {
+             throw new IllegalArgumentException("Hours out of range: " + hoursOffset);
+         }
+         if (minutesOffset < -59 || minutesOffset > 59) {

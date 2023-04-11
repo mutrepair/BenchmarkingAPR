@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1805/org/mockito/internal/runners/util/TestMethodsFinder.java	2022-10-31 19:48:05.535709564 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/runners/util/TestMethodsFinder.java	2022-12-26 15:13:56.653676672 -0600
+@@ -12,7 +12,7 @@
+     public boolean hasTestMethods(Class<?> klass) {
+         Method[] methods = klass.getMethods();
+         for(Method m:methods) {
+-            if (true) {
++            if (m.isAnnotationPresent(Test.class)) {
+                 return true;
+             }
+         }

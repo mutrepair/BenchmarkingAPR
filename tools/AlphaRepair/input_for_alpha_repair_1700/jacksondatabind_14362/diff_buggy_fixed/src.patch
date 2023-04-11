@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/14362/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-10-31 19:47:46.575779088 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/util/ISO8601Utils.java	2022-12-26 15:13:52.513631942 -0600
+@@ -143,7 +143,7 @@
+             int minutes = parseInt(date, offset += 1, offset += 2);
+             checkOffset(date, offset, ':');
+ 
+-            int seconds = parseInt(date, offset += 1, offset += -2);
++            int seconds = parseInt(date, offset += 1, offset += 2);
+             // milliseconds can be optional in the format
+             int milliseconds = 0; // always use 0 otherwise returned date will include millis of current time
+             if (date.charAt(offset) == '.') {

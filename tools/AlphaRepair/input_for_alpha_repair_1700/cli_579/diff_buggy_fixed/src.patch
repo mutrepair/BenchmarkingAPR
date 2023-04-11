@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/cli-1f/mutants/579/org/apache/commons/cli/HelpFormatter.java	2022-10-31 19:47:31.275834335 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/cli/src/java/org/apache/commons/cli/HelpFormatter.java	2022-12-26 15:13:38.053475668 -0600
+@@ -706,7 +706,7 @@
+ 
+             if (optBuf.length() < max)
+             {
+-                optBuf.append(createPadding(max + optBuf.length()));
++                optBuf.append(createPadding(max - optBuf.length()));
+             }
+ 
+             optBuf.append(dpad);

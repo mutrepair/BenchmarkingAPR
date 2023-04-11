@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/169/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-10-31 19:47:49.695767728 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java	2022-12-26 15:13:53.105638340 -0600
+@@ -486,7 +486,7 @@
+     public FromXmlParser createParser(XMLStreamReader sr) throws IOException
+     {
+         // note: should NOT move parser if already pointing to START_ELEMENT
+-        if (true) {
++        if (sr.getEventType() != XMLStreamConstants.START_ELEMENT) {
+             try {
+                 sr = _initializeXmlReader(sr);
+             } catch (XMLStreamException e) {

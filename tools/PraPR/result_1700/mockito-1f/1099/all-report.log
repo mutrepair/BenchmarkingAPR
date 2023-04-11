@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 2
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/mockito/internal/matchers/Equals.java
+	Line Number: 66
+	Block: 21
+	First Index: 3
+	Rank: 2
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/mockito/internal/matchers/Equals.java
+	Line Number: 66
+	Block: 21
+	First Index: 4
+	Rank: 2
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------

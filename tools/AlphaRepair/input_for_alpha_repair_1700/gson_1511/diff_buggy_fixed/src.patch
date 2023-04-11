@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1511/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.663789663 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -1083,7 +1083,7 @@
+    * Assigns {@code nextToken} based on the value of {@code nextValue}.
+    */
+   private void decodeLiteral() throws IOException {
+-    if (false) {
++    if (value.equalsIgnoreCase("null")) {
+       token = JsonToken.NULL;
+     } else if (value.equalsIgnoreCase("true") || value.equalsIgnoreCase("false")) {
+       token = JsonToken.BOOLEAN;

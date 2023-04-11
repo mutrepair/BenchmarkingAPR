@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/629/org/joda/time/chrono/BaseChronology.java	2022-10-31 19:48:08.935696976 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/chrono/BaseChronology.java	2022-12-26 15:13:57.201682593 -0600
+@@ -299,7 +299,7 @@
+      */
+     public long add(ReadablePeriod period, long instant, int scalar) {
+         if (scalar != 0 && period != null) {
+-            for (int i = 0, isize = period.size(); i <= isize; i++) {
++            for (int i = 0, isize = period.size(); i < isize; i++) {
+                 long value = period.getValue(i); // use long to allow for multiplication (fits OK)
+                 if (value != 0) {
+                     instant = period.getFieldType(i).getField(this).add(instant, value * scalar);

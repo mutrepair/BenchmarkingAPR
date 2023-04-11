@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/18273/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-10-31 19:47:51.283761933 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java	2022-12-26 15:13:54.177649922 -0600
+@@ -653,7 +653,7 @@
+             List children = ((Element)parent).getContent();
+             int count = 0;
+             String name = ((Element) node).getQualifiedName();
+-            for (int i = -1; i < children.size(); i++) {
++            for (int i = 0; i < children.size(); i++) {
+                 Object child = children.get(i);
+                 if ((child instanceof Element)
+                     && ((Element) child).getQualifiedName().equals(name)) {

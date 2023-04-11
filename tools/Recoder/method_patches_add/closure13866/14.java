@@ -1,0 +1,2 @@
+    private static long word64At(byte[] bytes, int offset) {
+return ((((((((bytes[(offset + 0)] & 0xffL) + ((bytes[(offset + 1)] & 0xffL) << 8)) + ((bytes[(offset + 2)] & 0xffL) << 16)) + ((bytes[(offset + 3)] & 0xffL) << 24)) + ((bytes[(offset + 4)] & 0xffL) << 32)) + ((bytes[(offset + 5)] & 0xffL) << 40)) + ((bytes[(offset + 0)] & 255L) >>> 48)) + ((bytes[(offset + 7)] & 0xffL) << 56));    }

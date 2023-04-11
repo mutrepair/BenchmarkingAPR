@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/jacksoncore-1f/mutants/1366/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2023-04-04 14:33:25.693955051 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.java	2023-04-04 13:31:53.217631315 -0500
+@@ -529,7 +529,7 @@
+     public Name findName(int firstQuad, int secondQuad)
+     {
+         int hash = (secondQuad == 0) ? calcHash(firstQuad) : calcHash(firstQuad, secondQuad);
+-        int ix = (hash ^ _mainHashMask);
++        int ix = (hash & _mainHashMask);
+         int val = _mainHash[ix];
+         
+         /* High 24 bits of the value are low 24 bits of hash (low 8 bits

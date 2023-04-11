@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/26657/com/google/javascript/jscomp/ExpandJqueryAliases.java	2022-10-31 19:47:37.723811147 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ExpandJqueryAliases.java	2022-10-29 08:17:17.816234827 -0500
+@@ -219,7 +219,7 @@
+       Node propValue = currentProp.removeFirstChild();
+ 
+       Node newProp;
+-      if(true) {
++      if(currentProp.isQuotedString()) {
+         newProp = IR.getelem(objectToExtend.cloneTree(),
+             currentProp).srcref(currentProp);
+       } else {

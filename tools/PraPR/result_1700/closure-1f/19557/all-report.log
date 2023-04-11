@@ -1,0 +1,399 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 36
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.rhino.Node.getFirstChild()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method com.google.javascript.rhino.Node.getNext()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method com.google.javascript.rhino.Node.getFirstChild()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node$NumberNode using (DII)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method com.google.javascript.rhino.Node.getNext()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node$NumberNode using (DII)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.google.javascript.rhino.Node.getFirstChild()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (I[Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method com.google.javascript.rhino.Node.getNext()Lcom/google/javascript/rhino/Node; is replaced by an instantiation of type com.google.javascript.rhino.Node using (I[Lcom/google/javascript/rhino/Node;II)V
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local n to be used
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local c is replaced by local n to be defined
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 34
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local n is replaced a call n.getFirstChild()
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local c is replaced a call c.getFirstChild()
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getFirstChild with a call to getLastChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getNext with a call to getFirstChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getFirstChild with a call to getNext
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getNext with a call to getLastChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getFirstChild with a call to getLastSibling
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getNext with a call to getLastSibling
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getFirstChild with a call to getParent
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getNext with a call to getParent
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getFirstChild with a call to detachFromParent
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getNext with a call to detachFromParent
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getFirstChild with a call to removeFirstChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getNext with a call to removeFirstChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getFirstChild with a call to removeChildren
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_6
+	Description: replaced call to getNext with a call to removeChildren
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getFirstChild with a call to cloneNode
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_7
+	Description: replaced call to getNext with a call to cloneNode
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to getFirstChild with a call to cloneTree
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_8
+	Description: replaced call to getNext with a call to cloneTree
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.Node::getFirstChild()Lcom/google/javascript/rhino/Node; is guarded using default value null
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.google.javascript.rhino.Node::getNext()Lcom/google/javascript/rhino/Node; is guarded using default value null
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getFirstChild()Lcom/google/javascript/rhino/Node; is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getNext()Lcom/google/javascript/rhino/Node; is guarded returning enclosing method
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::getFirstChild
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/google/javascript/rhino/Node::getNext
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to com/google/javascript/rhino/Node::getFirstChild with receiver
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.NakedReceiverMutator
+	Description: replaced call to com/google/javascript/rhino/Node::getNext with receiver
+	File Name: com/google/javascript/jscomp/AstValidator.java
+	Line Number: 632
+	Block: 129
+	First Index: 33
+	Rank: null
+	Total Rank: null
+	Status: TIMED_OUT
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/2145/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsChecker.java	2022-10-31 19:48:05.611709283 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsChecker.java	2022-12-26 15:13:56.657676716 -0600
+@@ -23,7 +23,7 @@
+         List<Invocation> actualInvocations = finder.findInvocations(invocations, wanted);
+         
+         int actualCount = actualInvocations.size();
+-        if (wantedCount >= actualCount) {
++        if (wantedCount > actualCount) {
+             Location lastLocation = finder.getLastLocation(actualInvocations);
+             reporter.tooLittleActualInvocations(new AtLeastDiscrepancy(wantedCount, actualCount), wanted, lastLocation);        
+         }

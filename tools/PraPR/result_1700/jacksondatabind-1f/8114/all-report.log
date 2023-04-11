@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 91
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; with a call to findTypeParameters(Ljava/lang/Class;Ljava/lang/Class;Lcom/fasterxml/jackson/databind/type/TypeBindings;)[Lcom/fasterxml/jackson/databind/JavaType;
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 91
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.DeserializationContext::getTypeFactory()Lcom/fasterxml/jackson/databind/type/TypeFactory; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 88
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to com.fasterxml.jackson.databind.type.TypeFactory::findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; is guarded using default value null
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 91
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getTypeFactory()Lcom/fasterxml/jackson/databind/type/TypeFactory; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 88
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to findTypeParameters(Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class;)[Lcom/fasterxml/jackson/databind/JavaType; is guarded returning enclosing method
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 91
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 92
+	Rank: 1
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/DeserializationContext::getTypeFactory
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 88
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to com/fasterxml/jackson/databind/type/TypeFactory::findTypeParameters
+	File Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java
+	Line Number: 381
+	Block: 65
+	First Index: 91
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------

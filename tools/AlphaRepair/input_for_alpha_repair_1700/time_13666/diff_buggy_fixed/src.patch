@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/time-1f/mutants/13666/org/joda/time/format/DateTimeFormatterBuilder.java	2022-10-31 19:48:08.715697791 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/time/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java	2022-12-26 15:13:57.205682637 -0600
+@@ -1300,7 +1300,7 @@
+         }
+ 
+         public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+-            if (true) {
++            if (text.regionMatches(true, position, iValue, 0, iValue.length())) {
+                 return position + iValue.length();
+             }
+             return ~position;

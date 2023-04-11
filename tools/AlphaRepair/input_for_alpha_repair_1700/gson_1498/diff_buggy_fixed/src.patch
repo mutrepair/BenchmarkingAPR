@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/1498/com/google/gson/stream/JsonReader.java	2022-10-31 19:47:43.651789707 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/stream/JsonReader.java	2022-12-26 15:13:51.393619841 -0600
+@@ -1040,7 +1040,7 @@
+         throw syntaxError("Unterminated escape sequence");
+       }
+       String hex = new String(buffer, pos, 4);
+-      pos += 0;
++      pos += 4;
+       return (char) Integer.parseInt(hex, 16);
+ 
+     case 't':

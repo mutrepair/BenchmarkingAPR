@@ -1,0 +1,421 @@
+Number of Plausible Fixes: 38
+Total Number of Patches: 38
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to jj_la is guarded using value 0
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to jj_scanpos is guarded using value null
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to jj_lastpos is guarded using value null
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to jj_la is guarded using field jj_la
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to jj_scanpos is guarded using field token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to jj_lastpos is guarded using field token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_la is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::CoreFunctionName()I
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_scanpos is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::getNextToken()Lorg/apache/commons/jxpath/ri/parser/Token;
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_lastpos is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::getNextToken()Lorg/apache/commons/jxpath/ri/parser/Token;
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_la is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::AxisSpecifier()I
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_la is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::AxisName()I
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_la is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::AbbreviatedAxisSpecifier()I
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.jxpath.ri.parser.XPathParser.jj_la is replaced by the call to org.apache.commons.jxpath.ri.parser.XPathParser::NodeType()I
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to jj_la with an access to jj_gen
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to jj_scanpos with an access to token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to jj_lastpos with an access to token
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to jj_la with an access to jj_gc
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to jj_scanpos with an access to jj_nt
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to jj_lastpos with an access to jj_nt
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to jj_la with an access to jj_kind
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to jj_scanpos with an access to jj_lastpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to jj_lastpos with an access to jj_scanpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_3
+	Description: replaced access to jj_la with an access to jj_endpos
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to jj_la is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to jj_scanpos is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to jj_lastpos is guarded returning default value false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to jj_la is guarded returning field lookingAhead
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 13
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to jj_scanpos is guarded returning field lookingAhead
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 16
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to jj_lastpos is guarded returning field lookingAhead
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 18
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.BooleanTrueReturnValsMutator
+	Description: replaced boolean return with true for org/apache/commons/jxpath/ri/parser/XPathParser::jj_3R_169
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 751
+	First Index: 21
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 14
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 751
+	First Index: 20
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+33.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 14
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+34.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 19
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+35.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 750
+	First Index: 19
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+36.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 14
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+37.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 749
+	First Index: 14
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------
+38.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/jxpath/ri/parser/XPathParser.java
+	Line Number: 2299
+	Block: 751
+	First Index: 21
+	Rank: 38
+	Total Rank: 38
+	Status: SURVIVED
+------------------------------------------------

@@ -1,0 +1,113 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 10
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to pos is guarded using value 0
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to pos is guarded using field pos
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field com.google.gson.stream.JsonReader.pos is replaced by the call to com.google.gson.stream.JsonReader::nextInt()I
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field com.google.gson.stream.JsonReader.pos is replaced by the call to com.google.gson.stream.JsonReader::nextNonWhitespace()I
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to pos with an access to limit
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to pos is guarded returning default value '\0'
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to pos is guarded returning local escaped
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 69
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 70
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 71
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.experimental.MemberVariableMutator
+	Description: Removed assignment to member variable pos
+	File Name: com/google/gson/stream/JsonReader.java
+	Line Number: 1043
+	Block: 209
+	First Index: 72
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

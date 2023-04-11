@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jxpath-1f/mutants/14672/org/apache/commons/jxpath/ri/compiler/CoreOperationEqual.java	2022-10-31 19:47:51.143762444 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jxpath/src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationEqual.java	2022-12-26 15:13:54.173649879 -0600
+@@ -31,7 +31,7 @@
+     }
+ 
+     public Object computeValue(EvalContext context) {
+-        return equal(context, args[1], args[1]) ? Boolean.TRUE : Boolean.FALSE;
++        return equal(context, args[0], args[1]) ? Boolean.TRUE : Boolean.FALSE;
+     }
+     
+     protected int getPrecedence() {

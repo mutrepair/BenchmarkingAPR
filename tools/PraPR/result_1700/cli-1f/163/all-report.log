@@ -1,0 +1,234 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 21
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.cli.Option.getKey()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using ([III)V
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_4
+	Description: the call to factory method org.apache.commons.cli.Option.getKey()Ljava/lang/String; is replaced by an instantiation of type java.lang.String using (Ljava/lang/StringBuffer;)V
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getKey with a call to getOpt
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getKey with a call to getLongOpt
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getKey with a call to getDescription
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getKey with a call to getArgName
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getKey with a call to getValue
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to getKey with a call to toString
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.cli.Option::getKey()Ljava/lang/String; is guarded using default value null
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.String::charAt(I)C is guarded using default value '\0'
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getKey()Ljava/lang/String; is guarded returning default value 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to charAt(I)C is guarded returning default value 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getKey()Ljava/lang/String; is guarded returning field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to charAt(I)C is guarded returning field UNINITIALIZED
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getKey()Ljava/lang/String; is guarded returning field UNLIMITED_VALUES
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to charAt(I)C is guarded returning field UNLIMITED_VALUES
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 5
+	Rank: 1
+	Total Rank: 21
+	Status: SURVIVED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/cli/Option::getKey
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 4
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/lang/String::charAt
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 6
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.PrimitiveReturnsMutator
+	Description: replaced int return with 0 for org/apache/commons/cli/Option::getId
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: replaced return of integer sized value with (x == 0 ? 1 : 0)
+	File Name: org/apache/commons/cli/Option.java
+	Line Number: 151
+	Block: 4
+	First Index: 7
+	Rank: null
+	Total Rank: 20
+	Status: KILLED
+------------------------------------------------

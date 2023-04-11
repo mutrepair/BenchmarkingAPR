@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/21832/com/google/javascript/jscomp/ClosureRewriteClass.java	2022-10-31 19:47:37.703811219 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/ClosureRewriteClass.java	2022-10-29 13:40:35.830295404 -0500
+@@ -226,7 +226,7 @@
+     Node statics = null;
+     Node staticsProp = extractProperty(description, "statics");
+     if (staticsProp != null) {
+-      if (validateObjLit(staticsProp)) {
++      if (staticsProp.isObjectLit() && validateObjLit(staticsProp)) {
+         statics = staticsProp;
+       } else if (staticsProp.isFunction()) {
+         classModifier = staticsProp;

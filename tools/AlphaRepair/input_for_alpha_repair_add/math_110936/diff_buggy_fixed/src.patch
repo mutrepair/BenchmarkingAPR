@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/math-1f/mutants/110936/org/apache/commons/math3/util/FastMath.java	2023-04-04 14:33:26.089958887 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/math/src/main/java/org/apache/commons/math3/util/FastMath.java	2023-04-04 13:31:54.041641105 -0500
+@@ -558,7 +558,7 @@
+ 
+           // Adjust for yb
+           rb += yb*denomr;                        // numerator
+-          rb += +ya * denomb * denomr * denomr;   // denominator
++          rb += -ya * denomb * denomr * denomr;   // denominator
+ 
+           // y = y - 1/y
+           temp = ya + ra;

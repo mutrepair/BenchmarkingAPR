@@ -1,0 +1,69 @@
+Number of Plausible Fixes: 3
+Total Number of Patches: 6
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local end is replaced by local start to be used
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 57
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local start is replaced by local end to be used
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 58
+	Rank: null
+	Total Rank: 2
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 61
+	Rank: 3
+	Total Rank: 6
+	Status: SURVIVED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double subtraction with addition
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 59
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 62
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced double modulus with multiplication
+	File Name: org/jfree/data/general/DatasetUtilities.java
+	Line Number: 549
+	Block: 75
+	First Index: 64
+	Rank: 2
+	Total Rank: 5
+	Status: SURVIVED
+------------------------------------------------

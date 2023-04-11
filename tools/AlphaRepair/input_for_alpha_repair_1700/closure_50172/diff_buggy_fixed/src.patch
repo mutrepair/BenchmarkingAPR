@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/50172/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-31 19:47:37.943810354 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/regex/RegExpTree.java	2022-10-29 13:33:24.571302875 -0500
+@@ -1446,7 +1446,7 @@
+             CharRanges withoutGroup = ranges.difference(group).union(
+                 rangesInterIeExplicits);
+             int complexity = DecomposedCharset.complexity(withoutGroup);
+-            if (false) {
++            if (complexity < minComplexity) {
+               simplest = withoutGroup;
+               groupName = namedGroup.getKey().charValue();
+               minComplexity = complexity;

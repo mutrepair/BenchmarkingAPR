@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/jacksoncore_25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2023-01-16 15:29:37.368205770 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/jacksoncore/25/patch/./com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	2023-01-16 15:29:37.316205121 -0600
+@@ -1960,7 +1960,7 @@
+             }
+             char c = _inputBuffer[_inputPtr];
+             int i = (int) c;
+-            if (i <= maxCode) {
++            if (i < maxCode) {
+                 if (codes[i] != 0) {
+                     break;
+                 }

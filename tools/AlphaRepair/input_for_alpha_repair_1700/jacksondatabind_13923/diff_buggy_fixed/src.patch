@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/13923/com/fasterxml/jackson/databind/ser/std/StringSerializer.java	2022-10-31 19:47:46.543779205 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/ser/std/StringSerializer.java	2022-12-26 15:13:52.513631942 -0600
+@@ -29,7 +29,7 @@
+      */
+     @Override
+     public boolean isEmpty(String value) {
+-        return (value == null) || (value.length() == 1);
++        return (value == null) || (value.length() == 0);
+     }
+     
+     @Override

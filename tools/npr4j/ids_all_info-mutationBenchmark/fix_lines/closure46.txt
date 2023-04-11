@@ -1,0 +1,2 @@
+      c[i] = Base64.toBase64((value >> (26 - i * 6)) & 0x3f);
+

@@ -1,0 +1,355 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 32
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to escape is guarded using value '\0'
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to commentStart is guarded using value '\0'
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to escape is guarded using field delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to commentStart is guarded using field delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.csv.CSVFormat.escape is replaced by the call to org.apache.commons.csv.CSVFormat::getDelimiter()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getDelimiter()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.csv.CSVFormat.escape is replaced by the call to org.apache.commons.csv.CSVFormat::getEncapsulator()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getEncapsulator()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.csv.CSVFormat.escape is replaced by the call to org.apache.commons.csv.CSVFormat::getCommentStart()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getCommentStart()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.csv.CSVFormat.escape is replaced by the call to org.apache.commons.csv.CSVFormat::getEscape()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.csv.CSVFormat.commentStart is replaced by the call to org.apache.commons.csv.CSVFormat::getEscape()C
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to escape with an access to delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to commentStart with an access to delimiter
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to escape with an access to encapsulator
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to commentStart with an access to encapsulator
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to escape with an access to commentStart
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to commentStart with an access to escape
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field PRISTINE
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field DEFAULT
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field RFC4180
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field EXCEL
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field TDF
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 103
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to escape is guarded returning enclosing method
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 104
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to commentStart is guarded returning enclosing method
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 110
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 65534 with 65535
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 105
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 111
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 15
+	First Index: 111
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/csv/CSVFormat.java
+	Line Number: 192
+	Block: 14
+	First Index: 106
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

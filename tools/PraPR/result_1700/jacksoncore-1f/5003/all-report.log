@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local num is replaced by local offset to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 149
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local offset is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 153
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local num is replaced by local offset to be defined
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 158
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local num is replaced by local len to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 149
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local offset is replaced by local num to be used
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 153
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_1
+	Description: local num is replaced by local len to be defined
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 158
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 10 with 11
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 150
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 48 with 49
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 155
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer modulus with multiplication
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 151
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 156
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: com/fasterxml/jackson/core/io/NumberInput.java
+	Line Number: 48
+	Block: 9
+	First Index: 157
+	Rank: null
+	Total Rank: 11
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,256 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 23
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to compareTo(DDI)I with a call to compareTo(DDD)I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 47
+	Rank: null
+	Total Rank: 23
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_3
+	Description: replaced call to compareTo(DDI)I with a call to compareTo(DDD)I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 47
+	Rank: 1
+	Total Rank: 23
+	Status: SURVIVED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to maxUlps is guarded using value 0
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_1
+	Description: the access to maxUlps is guarded using local i
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to maxUlps is guarded using field DEFAULT_ULPS
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.optimization.linear.SimplexTableau.maxUlps is replaced by the call to org.apache.commons.math3.optimization.linear.SimplexTableau::getNumObjectiveFunctions()I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.optimization.linear.SimplexTableau.maxUlps is replaced by the call to org.apache.commons.math3.optimization.linear.SimplexTableau::getWidth()I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.optimization.linear.SimplexTableau.maxUlps is replaced by the call to org.apache.commons.math3.optimization.linear.SimplexTableau::getHeight()I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.optimization.linear.SimplexTableau.maxUlps is replaced by the call to org.apache.commons.math3.optimization.linear.SimplexTableau::getSlackVariableOffset()I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_4
+	Description: the access to field org.apache.commons.math3.optimization.linear.SimplexTableau.maxUlps is replaced by the call to org.apache.commons.math3.optimization.linear.SimplexTableau::getArtificialVariableOffset()I
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to maxUlps with an access to numDecisionVariables
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to maxUlps with an access to numSlackVariables
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to maxUlps with an access to numArtificialVariables
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldToLocalAccessMutator_0
+	Description: access to field maxUlps is replaced by access to local i
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local entry is replaced by access to field epsilon
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 43
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to maxUlps is guarded returning enclosing method
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 46
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to org/apache/commons/math3/util/Precision::compareTo with argument
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 47
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 48
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0.0 with 1.0
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 44
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 48
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/util/Precision::compareTo
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 47
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 48
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/apache/commons/math3/optimization/linear/SimplexTableau.java
+	Line Number: 338
+	Block: 61
+	First Index: 48
+	Rank: null
+	Total Rank: 21
+	Status: KILLED
+------------------------------------------------

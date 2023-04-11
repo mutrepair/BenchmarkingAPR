@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/compress-1f/mutants/9226/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-10-31 19:47:41.539797359 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/compress/src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream.java	2022-12-26 15:13:50.349608561 -0600
+@@ -795,7 +795,7 @@
+ 
+         /* Transmit the mapping table. */
+         {
+-            boolean[] inUse16 = new boolean[0];
++            boolean[] inUse16 = new boolean[16];
+             for (i = 0; i < 16; i++) {
+                 inUse16[i] = false;
+                 for (j = 0; j < 16; j++) {

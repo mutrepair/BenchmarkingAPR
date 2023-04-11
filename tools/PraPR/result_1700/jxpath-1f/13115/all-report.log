@@ -1,0 +1,278 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 25
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_1
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.jxpath.NestedTestBean using ()V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method org.apache.commons.jxpath.NodeSet.getPointers()Ljava/util/List; is replaced by an instantiation of type org.apache.commons.collections.CursorableLinkedList using ()V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.jxpath.TestNull using ()V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: MethodNameMutator_3
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.jxpath.TestBean using ()V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: MethodNameMutator_5
+	Description: the call to factory method java.util.List.get(I)Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.jxpath.NestedTestBean using (Ljava/lang/String;)V
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to nodeSet is guarded using value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 20
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to position is guarded using value 0
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 23
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to nodeSet is guarded using field nodeSet
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 20
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.jxpath.ri.axes.NodeSetContext.nodeSet is replaced by the call to org.apache.commons.jxpath.ri.axes.NodeSetContext::getNodeSet()Lorg/apache/commons/jxpath/NodeSet;
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 20
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getPointers with a call to getNodes
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to remove
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getPointers with a call to getValues
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.jxpath.NodeSet::getPointers()Ljava/util/List; is guarded using default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.List::get(I)Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to nodeSet is guarded returning default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 20
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to position is guarded returning default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 23
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getPointers()Ljava/util/List; is guarded returning default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(I)Ljava/lang/Object; is guarded returning default value null
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 24
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer subtraction with addition
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 25
+	Rank: 1
+	Total Rank: 25
+	Status: SURVIVED
+------------------------------------------------
+22.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/jxpath/NodeSet::getPointers
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 21
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/List::get
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 26
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/jxpath/ri/axes/NodeSetContext::getCurrentNodePointer
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 28
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/jxpath/ri/axes/NodeSetContext::getCurrentNodePointer to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/jxpath/ri/axes/NodeSetContext.java
+	Line Number: 48
+	Block: 5
+	First Index: 28
+	Rank: null
+	Total Rank: 24
+	Status: KILLED
+------------------------------------------------

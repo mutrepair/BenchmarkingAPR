@@ -1,0 +1,49 @@
+=================================================
+Project : math_105	start : 23/02/07 12:46
+Current failed test : org.apache.commons.math.stat.regression.SimpleRegressionTest::testSSENonNegative | 23/02/07 12:46
+Tue Feb 07 12:46:46 CST 2023 org.apache.commons.math.stat.regression.SimpleRegression,264
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+return sumYY/sumXY;
+
+Time : 23/02/07 12:46
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(n<2){
+return Double.NaN;
+}
+return sumYY/sumXY;
+
+Time : 23/02/07 12:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(Math.abs(sumXY)<10*Double.MIN_VALUE){
+return Double.NaN;
+}
+return sumYY/sumXY;
+
+Time : 23/02/07 12:47
+----------------------------------------
+
+----------------------------------------
+----------------------------------------
+Pass Single Test : [=>0,0]
+if(n<2){
+return Double.NaN;
+}
+if(Math.abs(sumXY)<10*Double.MIN_VALUE){
+return Double.NaN;
+}
+return sumYY/sumXY;
+
+Time : 23/02/07 12:47
+----------------------------------------
+Failed time : 23/02/07 12:47

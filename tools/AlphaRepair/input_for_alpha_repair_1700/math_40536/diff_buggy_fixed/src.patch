@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/40536/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java	2022-10-31 19:48:00.331728762 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java	2022-12-26 15:13:55.661665956 -0600
+@@ -553,7 +553,7 @@
+                     y1 = point.getY();
+                     final double factor = x0 * y1 - y0 * x1;
+                     sum  += factor;
+-                    sumX += factor * (x0 * x1);
++                    sumX += factor * (x0 + x1);
+                     sumY += factor * (y0 + y1);
+                 }
+             }

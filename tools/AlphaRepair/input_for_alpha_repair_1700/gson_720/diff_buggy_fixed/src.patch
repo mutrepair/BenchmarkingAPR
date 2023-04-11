@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/gson-1f/mutants/720/com/google/gson/JsonPrimitive.java	2022-10-31 19:47:43.843789010 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/gson/gson/src/main/java/com/google/gson/JsonPrimitive.java	2022-12-26 15:13:51.393619841 -0600
+@@ -368,7 +368,7 @@
+   private static boolean isIntegral(JsonPrimitive primitive) {
+     if (primitive.value instanceof Number) {
+       Number number = (Number) primitive.value;
+-      return number instanceof BigInteger || number instanceof Long
++      return number instanceof BigInteger || number instanceof Long || number instanceof Integer
+       || number instanceof Short || number instanceof Byte;
+     }
+     return false;

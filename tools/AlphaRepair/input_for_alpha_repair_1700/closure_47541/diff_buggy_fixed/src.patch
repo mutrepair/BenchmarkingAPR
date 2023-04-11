@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/47541/com/google/javascript/rhino/JSDocInfoBuilder.java	2022-10-31 19:47:37.903810498 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java	2022-10-29 06:37:52.012841958 -0500
+@@ -281,7 +281,7 @@
+    */
+   public boolean recordParameterDescription(
+       String parameterName, String description) {
+-    if (true) {
++    if (currentInfo.documentParam(parameterName, description)) {
+       populated = true;
+       return true;
+     } else {

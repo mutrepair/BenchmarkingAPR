@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/36346/com/google/javascript/jscomp/PeepholeFoldConstants.java	2023-04-04 14:33:25.453952725 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/jscomp/PeepholeFoldConstants.java	2023-04-04 13:31:52.773626040 -0500
+@@ -893,7 +893,7 @@
+           result = lvalInt << rvalInt;
+           break;
+         case Token.RSH:
+-          result = lvalInt >>> rvalInt;
++          result = lvalInt >> rvalInt;
+           break;
+         case Token.URSH:
+           // JavaScript handles zero shifts on signed numbers differently than

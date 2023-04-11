@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/closure-1f/mutants/11445/com/google/javascript/rhino/JSDocInfo.java	2023-04-04 14:33:25.445952648 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/closure/src/com/google/javascript/rhino/JSDocInfo.java	2023-04-04 13:31:52.789626231 -0500
+@@ -1135,7 +1135,7 @@
+   }
+ 
+   private JSTypeExpression getType(int typefield) {
+-    if ((MASK_TYPEFIELD ^ bitset) == typefield) {
++    if ((MASK_TYPEFIELD & bitset) == typefield) {
+       return type;
+     } else {
+       return null;

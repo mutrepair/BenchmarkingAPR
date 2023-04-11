@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/850/org/apache/commons/codec/binary/Base64.java	2022-10-31 19:47:39.287805502 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2022-12-26 15:13:39.225488336 -0600
+@@ -586,7 +586,7 @@
+ 
+         // if bigInt is exactly byte-aligned, just skip signbit in copy
+         if((bigInt.bitLength() % 8) == 0) {
+-            startSrc = -1;
++            startSrc = 1;
+             len--;
+         }
+ 

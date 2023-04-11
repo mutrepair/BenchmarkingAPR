@@ -1,0 +1,9 @@
+    public void reset()
+    {
+appendTwoBytes(0);
+        _currBlockPtr = 0;
+
+        if (!_pastBlocks.isEmpty()) {
+            _pastBlocks.clear();
+        }
+    }

@@ -1,0 +1,157 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 14
+================================================
+1.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieEntry.getValue()Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+2.
+	Mutator: MethodNameMutator_0
+	Description: the call to factory method java.util.Map$Entry.getValue()Ljava/lang/Object; is replaced by an instantiation of type java.lang.Object using ()V
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+3.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieEntry.getValue()Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.collections4.MockTestCase using ()V
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+4.
+	Mutator: MethodNameMutator_2
+	Description: the call to factory method java.util.Map$Entry.getValue()Ljava/lang/Object; is replaced by an instantiation of type org.apache.commons.collections4.MockTestCase using ()V
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getValue with a call to getKey
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieEntry::getValue()Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Map$Entry::getValue()Ljava/lang/Object; is guarded using default value null
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()Ljava/lang/Object; is guarded returning default value false
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieEntry::getValue
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 43
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Map$Entry::getValue
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 45
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/collections4/trie/AbstractBitwiseTrie::compare
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 46
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+	Description: removed conditional - replaced equality check with false
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_IF
+	Description: removed conditional - replaced equality check with true
+	File Name: org/apache/commons/collections4/trie/AbstractPatriciaTrie.java
+	Line Number: 2025
+	Block: 27
+	First Index: 47
+	Rank: null
+	Total Rank: null
+	Status: NO_COVERAGE
+------------------------------------------------

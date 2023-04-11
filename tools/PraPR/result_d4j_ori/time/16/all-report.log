@@ -1,0 +1,201 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 18
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(JLorg/joda/time/Chronology;Ljava/util/Locale;Ljava/lang/Integer;I)V with a call to <init>(JLorg/joda/time/Chronology;Ljava/util/Locale;)V
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(JLorg/joda/time/Chronology;Ljava/util/Locale;Ljava/lang/Integer;I)V with a call to <init>(JLorg/joda/time/Chronology;Ljava/util/Locale;Ljava/lang/Integer;)V
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iLocale is guarded using value null
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iPivotYear is guarded using value null
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to iDefaultYear is guarded using value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iLocale is guarded using field iLocale
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iPivotYear is guarded using field iPivotYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to iDefaultYear is guarded using field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.format.DateTimeFormatter.iLocale is replaced by the call to org.joda.time.format.DateTimeFormatter::getLocale()Ljava/util/Locale;
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.format.DateTimeFormatter.iPivotYear is replaced by the call to org.joda.time.format.DateTimeFormatter::getPivotYear()Ljava/lang/Integer;
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.joda.time.format.DateTimeFormatter.iDefaultYear is replaced by the call to org.joda.time.format.DateTimeFormatter::getDefaultYear()I
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iLocale is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iPivotYear is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to iDefaultYear is guarded returning default value 0
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iLocale is guarded returning field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 50
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iPivotYear is guarded returning field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 52
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to iDefaultYear is guarded returning field iDefaultYear
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 54
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/joda/time/format/DateTimeParserBucket::<init>
+	File Name: org/joda/time/format/DateTimeFormatter.java
+	Line Number: 708
+	Block: 66
+	First Index: 55
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

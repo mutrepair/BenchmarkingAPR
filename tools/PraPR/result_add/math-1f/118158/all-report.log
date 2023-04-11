@@ -1,0 +1,91 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 8
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local bits is replaced by local sign to be used
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 84
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local bits is replaced by access to field HEX_40000000
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 84
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local bits is replaced by access to field MASK_30BITS
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 84
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local bits is replaced by access to field MASK_NON_SIGN_LONG
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 84
+	Rank: null
+	Total Rank: 6
+	Status: TIMED_OUT
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 52 with 53
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 85
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2047 with 2048
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 88
+	Rank: null
+	Total Rank: 6
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced Unsigned Shift Right with Shift Left
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 86
+	Rank: null
+	Total Rank: 8
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced XOR with AND
+	File Name: org/apache/commons/math3/util/FastMath.java
+	Line Number: 3078
+	Block: 515
+	First Index: 89
+	Rank: 1
+	Total Rank: 8
+	Status: SURVIVED
+------------------------------------------------

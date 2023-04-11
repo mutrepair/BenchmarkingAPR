@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/closure_71/src/com/google/javascript/jscomp/CheckAccessControls.java	2023-01-16 15:29:23.756035783 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/closure/71/patch/./com/google/javascript/jscomp/CheckAccessControls.java	2023-01-16 15:29:23.728035434 -0600
+@@ -413,7 +413,7 @@
+     if (objectType != null) {
+       // Is this a normal property access, or are we trying to override
+       // an existing property?
+-      boolean isOverride = t.inGlobalScope() &&
++      boolean isOverride = parent.getJSDocInfo() != null &&
+           parent.getType() == Token.ASSIGN &&
+           parent.getFirstChild() == getprop;
+ 

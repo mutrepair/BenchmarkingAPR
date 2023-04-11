@@ -1,0 +1,729 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 66
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_0
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_1
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DDD)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_12
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>([D)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ArgumentsListMutator_16
+	Description: replaced call to <init>(DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;DLorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)V with a call to <init>(DD)V
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to u is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to v is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to originOffset is guarded using value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to w is guarded using value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to u is guarded using field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to v is guarded using field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to originOffset is guarded using field originOffset
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to w is guarded using field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.u is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getOrigin()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.v is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getOrigin()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_0
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.w is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getOrigin()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.u is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getNormal()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+17.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.v is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getNormal()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+18.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_1
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.w is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getNormal()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+19.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.u is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getU()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+20.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.v is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getU()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+21.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_2
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.w is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getU()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+22.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.u is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getV()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+23.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.v is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getV()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+24.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldAccessToMethodCallMutator_3
+	Description: the access to field org.apache.commons.math3.geometry.euclidean.threed.Plane.w is replaced by the call to org.apache.commons.math3.geometry.euclidean.threed.Plane::getV()Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+25.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to u with an access to origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+26.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to v with an access to origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+27.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_0
+	Description: replaced access to w with an access to origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+28.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to u with an access to v
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+29.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to v with an access to u
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+30.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_1
+	Description: replaced access to w with an access to u
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+31.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to u with an access to w
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+32.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to v with an access to w
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+33.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.FieldNameMutator_2
+	Description: replaced access to w with an access to v
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+34.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local p2D is replaced a call p2D.getZero()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 10
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+35.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.copySelf()
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 12
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+36.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getX with a call to getY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+37.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getY with a call to getX
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+38.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getX with a call to getNorm1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+39.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to getY with a call to getNorm1
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+40.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getX with a call to getNorm
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+41.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to getY with a call to getNorm
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+42.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getX with a call to getNormSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+43.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to getY with a call to getNormSq
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+44.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getX with a call to getNormInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+45.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to getY with a call to getNormInf
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+46.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.twod.Vector2D::getX()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+47.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.apache.commons.math3.geometry.euclidean.twod.Vector2D::getY()D is guarded using default value 0.D
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+48.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to u is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+49.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to v is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+50.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to originOffset is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+51.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to w is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+52.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to u is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 13
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+53.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to v is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 17
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+54.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to originOffset is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 19
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+55.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_2
+	Description: the access to w is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 21
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+56.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getX()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+57.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getY()D is guarded returning default value null
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+58.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getX()D is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+59.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to getY()D is guarded returning field origin
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+60.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getX()D is guarded returning field u
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+61.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_4
+	Description: the call to getY()D is guarded returning field u
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+62.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/threed/Vector3D::<init>
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 22
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+63.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/twod/Vector2D::getX
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 11
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+64.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/apache/commons/math3/geometry/euclidean/twod/Vector2D::getY
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 15
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+65.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/apache/commons/math3/geometry/euclidean/threed/Plane::toSpace
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+66.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/apache/commons/math3/geometry/euclidean/threed/Plane::toSpace to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/apache/commons/math3/geometry/euclidean/threed/Plane.java
+	Line Number: 238
+	Block: 17
+	First Index: 23
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

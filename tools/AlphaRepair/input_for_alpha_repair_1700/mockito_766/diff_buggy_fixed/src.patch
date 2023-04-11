@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/766/org/mockito/internal/creation/jmock/ClassImposterizer.java	2022-10-31 19:48:05.751708766 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/creation/jmock/ClassImposterizer.java	2022-12-26 15:13:56.653676672 -0600
+@@ -116,7 +116,7 @@
+     private Class<?>[] prepend(Class<?> first, Class<?>... rest) {
+         Class<?>[] all = new Class<?>[rest.length+1];
+         all[0] = first;
+-        System.arraycopy(rest, 0, all, -1, rest.length);
++        System.arraycopy(rest, 0, all, 1, rest.length);
+         return all;
+     }
+     

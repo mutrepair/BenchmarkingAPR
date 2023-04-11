@@ -1,0 +1,25 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 2
+================================================
+1.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 0 with 1
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 85
+	Block: 11
+	First Index: 22
+	Rank: 1
+	Total Rank: 2
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/reflect/AccessibleObject::setAccessible
+	File Name: com/google/gson/MappedObjectConstructor.java
+	Line Number: 85
+	Block: 11
+	First Index: 23
+	Rank: null
+	Total Rank: 1
+	Status: KILLED
+------------------------------------------------

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/26053/com/google/javascript/jscomp/DisambiguateProperties.java	2022-10-31 19:47:37.719811162 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/DisambiguateProperties.java	2022-10-29 02:35:45.962819659 -0500
+@@ -146,7 +146,7 @@
+ 
+     /** Returns the types on which this field is referenced. */
+     UnionFind<T> getTypes() {
+-      if (false) {
++      if (types == null) {
+         types = new StandardUnionFind<T>();
+       }
+       return types;

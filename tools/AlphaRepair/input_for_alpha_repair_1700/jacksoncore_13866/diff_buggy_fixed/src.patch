@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/13866/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.951784990 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -2736,7 +2736,7 @@
+ 
+         // Ok, a hex escape. Need 4 characters
+         int value = 0;
+-        for (int i = 1; i < 4; ++i) {
++        for (int i = 0; i < 4; ++i) {
+             if (_inputPtr >= _inputEnd) {
+                 if (!loadMore()) {
+                     _reportInvalidEOF(" in character escape sequence");

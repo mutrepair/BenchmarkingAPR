@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jsoup-1f/mutants/473/org/jsoup/safety/Whitelist.java	2022-10-31 19:47:50.519764722 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jsoup/src/main/java/org/jsoup/safety/Whitelist.java	2022-12-26 15:13:53.649644217 -0600
+@@ -303,7 +303,7 @@
+                 if (protocols.containsKey(tag)) {
+                     Map<AttributeKey, Set<Protocol>> attrProts = protocols.get(tag);
+                     // ok if not defined protocol; otherwise test
+-                    return !attrProts.containsKey(key);
++                    return !attrProts.containsKey(key) || testValidProtocol(el, attr, attrProts.get(key));
+                 } else { // attribute found, no protocols defined, so OK
+                     return true;
+                 }

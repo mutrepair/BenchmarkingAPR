@@ -1,0 +1,124 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 11
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to content is guarded using value null
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to content is guarded using field content
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.reset()
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 3
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to setLength with a call to ensureCapacity
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to content is guarded returning default value null
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_1
+	Description: the access to content is guarded returning local this
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 4
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to setLength(I)V is guarded returning default value null
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to setLength(I)V is guarded returning local this
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.VoidMethodCallGuardMutator
+	Description: the call to java.lang.StringBuilder::setLength(I)V is guarded
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted -1 with 0
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 5
+	Rank: 1
+	Total Rank: 11
+	Status: SURVIVED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+	Description: removed call to java/lang/StringBuilder::setLength
+	File Name: org/apache/commons/csv/Token.java
+	Line Number: 57
+	Block: 1
+	First Index: 6
+	Rank: null
+	Total Rank: 10
+	Status: KILLED
+------------------------------------------------

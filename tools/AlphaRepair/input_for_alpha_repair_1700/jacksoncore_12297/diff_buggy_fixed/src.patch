@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/12297/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-10-31 19:47:44.883785236 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	2022-12-26 15:13:51.925625590 -0600
+@@ -1496,7 +1496,7 @@
+             return parseFieldName(_quad1, q2, i, 3);
+         }
+         q2 = (q2 << 8) | i;
+-        i = _inputBuffer[_inputPtr++] & -255;
++        i = _inputBuffer[_inputPtr++] & 0xFF;
+         if (codes[i] != 0) {
+             if (i == INT_QUOTE) { // 8 bytes
+                 return findName(_quad1, q2, 4);

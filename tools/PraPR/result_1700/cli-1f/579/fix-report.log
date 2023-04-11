@@ -1,0 +1,40 @@
+PraPR 2 (JDK 1.7) Fix Report - Tue Dec 20 22:39:21 CST 2022
+Number of Plausible Fixes: 3
+Total Number of Patches: 45
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local max is replaced by access to field DEFAULT_DESC_PAD
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: 1
+	Total Rank: 36
+	Status: SURVIVED
+	Dump: mutant-23.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_2
+	Description: local max is replaced by local descPad to be used
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 209
+	Rank: 2
+	Total Rank: 44
+	Status: SURVIVED
+	Dump: mutant-15.class
+------------------------------------------------
+3.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer addition with subtraction
+	File Name: org/apache/commons/cli/HelpFormatter.java
+	Line Number: 709
+	Block: 70
+	First Index: 212
+	Rank: 3
+	Total Rank: 45
+	Status: SURVIVED
+	Dump: mutant-41.class
+------------------------------------------------

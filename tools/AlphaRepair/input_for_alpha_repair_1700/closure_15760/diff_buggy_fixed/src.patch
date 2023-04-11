@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/15760/com/google/javascript/jscomp/TypedScopeCreator.java	2022-10-31 19:47:37.651811407 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/TypedScopeCreator.java	2022-10-29 12:42:30.337320046 -0500
+@@ -1226,7 +1226,7 @@
+       // be declared. See TypedScopeCreatorTest#testBogusPrototypeInit.
+       // Fortunately, other warnings will complain if this happens.
+       Var prototypeVar = scopeToDeclareIn.getVar(prototypeName);
+-      if (false) {
++      if (prototypeVar != null && prototypeVar.scope == scopeToDeclareIn) {
+         scopeToDeclareIn.undeclare(prototypeVar);
+       }
+ 

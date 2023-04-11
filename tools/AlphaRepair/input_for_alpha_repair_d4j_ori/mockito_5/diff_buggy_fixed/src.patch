@@ -1,0 +1,11 @@
+--- /home/jun/fastd/dlapr-mirror/validation/d4j_buggy_repo/mockito_5/src/org/mockito/internal/verification/VerificationOverTimeImpl.java	2023-01-16 15:30:27.936837249 -0600
++++ /home/jun/research/dlapr/d4j_scripts/resources/d4j_ori_oracle_patches/mockito/5/patch/./org/mockito/internal/verification/VerificationOverTimeImpl.java	2023-01-16 15:30:27.884836599 -0600
+@@ -88,7 +88,7 @@
+             } catch (MockitoAssertionError e) {
+                 error = handleVerifyException(e);
+             }
+-            catch (org.mockito.exceptions.verification.junit.ArgumentsAreDifferent e) {
++            catch (AssertionError e) {
+                 error = handleVerifyException(e);
+             }
+         }

@@ -1,0 +1,179 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local end is replaced by local start to be used
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 84
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local start is replaced by local end to be used
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 87
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to get with a call to getMinimum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_1
+	Description: replaced call to get with a call to getMaximum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_2
+	Description: replaced call to get with a call to getGreatestMinimum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_3
+	Description: replaced call to get with a call to getLeastMaximum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_4
+	Description: replaced call to get with a call to getActualMinimum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_5
+	Description: replaced call to get with a call to getActualMaximum
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.util.Calendar::get(I)I is guarded using default value 0
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to get(I)I is guarded returning default value null
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_1
+	Description: the call to get(I)I is guarded returning local format
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+12.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_3
+	Description: the call to get(I)I is guarded returning field ISO_EXTENDED_FORMAT_PATTERN
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ArgumentPropagationMutator
+	Description: replaced call to java/util/Calendar::get with argument
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 2 with 3
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 85
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 90
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+16.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to java/util/Calendar::get
+	File Name: org/apache/commons/lang3/time/DurationFormatUtils.java
+	Line Number: 293
+	Block: 22
+	First Index: 86
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

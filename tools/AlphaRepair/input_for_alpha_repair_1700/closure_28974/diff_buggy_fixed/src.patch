@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/28974/com/google/javascript/jscomp/NodeUtil.java	2022-10-31 19:47:37.735811104 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/NodeUtil.java	2022-10-29 12:32:46.234000113 -0500
+@@ -2463,7 +2463,7 @@
+     String[] parts = name.split("\\.");
+     for (String part : parts) {
+       if (!isValidSimpleName(part)) {
+-        return true;
++        return false;
+       }
+     }
+     return true;

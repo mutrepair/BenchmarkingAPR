@@ -1,0 +1,168 @@
+Number of Plausible Fixes: 1
+Total Number of Patches: 15
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local this is replaced by access to field ZERO
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_1
+	Description: access to local this is replaced by access to field ONE
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_2
+	Description: access to local this is replaced by access to field TWO
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_3
+	Description: access to local this is replaced by access to field THREE
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_4
+	Description: access to local this is replaced by access to field MAX_VALUE
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToMethodCallMutator_0
+	Description: the access to the local this is replaced a call this.negated()
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 3
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to getValue with a call to getSeconds
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 4
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.joda.time.Seconds::getValue()I is guarded using default value 0
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 4
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to getValue()I is guarded returning default value null
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 4
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+10.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 3600 with 3601
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 5
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+11.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer multiplication with division
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 6
+	Rank: 1
+	Total Rank: 15
+	Status: SURVIVED
+------------------------------------------------
+12.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/Seconds::getValue
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 4
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+13.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/joda/time/Hours::hours
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 7
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+14.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NullReturnValsMutator
+	Description: replaced return value with null for org/joda/time/Seconds::toStandardHours
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------
+15.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+	Description: mutated return of Object value for org/joda/time/Seconds::toStandardHours to ( if (x != null) null else throw new RuntimeException )
+	File Name: org/joda/time/Seconds.java
+	Line Number: 278
+	Block: 25
+	First Index: 8
+	Rank: null
+	Total Rank: 14
+	Status: KILLED
+------------------------------------------------

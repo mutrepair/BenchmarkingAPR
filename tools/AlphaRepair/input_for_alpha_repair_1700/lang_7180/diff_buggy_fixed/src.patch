@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/lang-1f/mutants/7180/org/apache/commons/lang3/Conversion.java	2022-10-31 19:47:57.367739657 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/lang/src/main/java/org/apache/commons/lang3/Conversion.java	2022-12-26 15:13:54.761656232 -0600
+@@ -1356,7 +1356,7 @@
+         if (0 == nBytes) {
+             return dst;
+         }
+-        if ((nBytes - 1) * 8 + srcPos >= 0) {
++        if ((nBytes - 1) * 8 + srcPos >= 16) {
+             throw new IllegalArgumentException(
+                 "(nBytes-1)*8+srcPos is greather or equal to than 16");
+         }

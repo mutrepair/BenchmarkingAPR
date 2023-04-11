@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/1228/org/mockito/internal/matchers/MatchersPrinter.java	2022-10-31 19:48:05.423709978 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/matchers/MatchersPrinter.java	2022-12-26 15:13:56.653676672 -0600
+@@ -32,7 +32,7 @@
+         List<SelfDescribing> withPrintSettings = new LinkedList<SelfDescribing>();
+         int i = 0;
+         for (final Matcher matcher : matchers) {
+-            if (matcher instanceof ContainsExtraTypeInformation == printSettings.extraTypeInfoFor(i)) {
++            if (matcher instanceof ContainsExtraTypeInformation && printSettings.extraTypeInfoFor(i)) {
+                 withPrintSettings.add(((ContainsExtraTypeInformation) matcher).withExtraTypeInfo());
+             } else {
+                 withPrintSettings.add(matcher);

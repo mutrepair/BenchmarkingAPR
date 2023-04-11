@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/82266/org/apache/commons/math3/optimization/direct/AbstractSimplex.java	2022-10-31 19:48:00.571727878 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/optimization/direct/AbstractSimplex.java	2022-12-26 15:13:55.677666129 -0600
+@@ -111,7 +111,7 @@
+         for (int i = 0; i < dimension; i++) {
+             final double[] vertexI = startConfiguration[i];
+             for (int j = 0; j < i + 1; j++) {
+-                if (steps[j] == 1) {
++                if (steps[j] == 0) {
+                     throw new ZeroException(LocalizedFormats.EQUAL_VERTICES_IN_SIMPLEX);
+                 }
+                 System.arraycopy(steps, 0, vertexI, 0, j + 1);

@@ -1,0 +1,88 @@
+PraPR 2 (JDK 1.7) Fix Report - Wed Feb 08 15:21:26 CST 2023
+Number of Plausible Fixes: 7
+Total Number of Patches: 16
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_0
+	Description: the access to wanted is guarded using value null
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 16
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-5.class
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.DereferenceGuardMutator_2
+	Description: the access to wanted is guarded using field wanted
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 16
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-6.class
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to java.lang.Object::toString()Ljava/lang/String; is guarded using default value null
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 17
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-9.class
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.hamcrest.Description::appendText(Ljava/lang/String;)Lorg/hamcrest/Description; is guarded using default value null
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 18
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-10.class
+------------------------------------------------
+5.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningDereferenceGuardMutator_0
+	Description: the access to wanted is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 16
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-11.class
+------------------------------------------------
+6.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to toString()Ljava/lang/String; is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 17
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-12.class
+------------------------------------------------
+7.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to appendText(Ljava/lang/String;)Lorg/hamcrest/Description; is guarded returning enclosing method
+	File Name: org/mockito/internal/matchers/Same.java
+	Line Number: 29
+	Block: 4
+	First Index: 18
+	Rank: 7
+	Total Rank: 16
+	Status: SURVIVED
+	Dump: mutant-13.class
+------------------------------------------------

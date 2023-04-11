@@ -1,0 +1,58 @@
+Number of Plausible Fixes: 0
+Total Number of Patches: 5
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local endIndexExclusive is replaced by local startIndexInclusive to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 1133
+	Block: 172
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalNameMutator_0
+	Description: local startIndexInclusive is replaced by local endIndexExclusive to be used
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 1133
+	Block: 172
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local endIndexExclusive is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 1133
+	Block: 172
+	First Index: 30
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.LocalToFieldAccessMutator_0
+	Description: access to local startIndexInclusive is replaced by access to field INDEX_NOT_FOUND
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 1133
+	Block: 172
+	First Index: 31
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+	Description: Replaced integer division with multiplication
+	File Name: org/apache/commons/lang3/ArrayUtils.java
+	Line Number: 1133
+	Block: 172
+	First Index: 32
+	Rank: null
+	Total Rank: null
+	Status: KILLED
+------------------------------------------------

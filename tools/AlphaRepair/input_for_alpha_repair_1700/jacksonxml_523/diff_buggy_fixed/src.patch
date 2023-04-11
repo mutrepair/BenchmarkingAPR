@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/523/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-10-31 19:47:49.923766896 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser.java	2022-12-26 15:13:53.109638382 -0600
+@@ -595,7 +595,7 @@
+     public String nextTextValue() throws IOException
+     {
+         _binaryValue = null;
+-        if (true) {
++        if (_nextToken != null) {
+             JsonToken t = _nextToken;
+             _currToken = t;
+             _nextToken = null;

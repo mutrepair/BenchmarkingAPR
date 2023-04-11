@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksondatabind-1f/mutants/11672/com/fasterxml/jackson/databind/node/FloatNode.java	2022-10-31 19:47:46.495779379 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksondatabind/src/main/java/com/fasterxml/jackson/databind/node/FloatNode.java	2022-12-26 15:13:52.505631856 -0600
+@@ -52,7 +52,7 @@
+     public boolean isFloat() { return true; }
+ 
+     @Override public boolean canConvertToInt() {
+-        return (_value == Integer.MIN_VALUE && _value <= Integer.MAX_VALUE);
++        return (_value >= Integer.MIN_VALUE && _value <= Integer.MAX_VALUE);
+     }
+ 
+     @Override public boolean canConvertToLong() {

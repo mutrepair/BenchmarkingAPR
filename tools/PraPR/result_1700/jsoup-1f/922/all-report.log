@@ -1,0 +1,102 @@
+Number of Plausible Fixes: 4
+Total Number of Patches: 9
+================================================
+1.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.MethodNameMutator_0
+	Description: replaced call to size with a call to hashCode
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 4
+	Rank: 4
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+2.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.NonVoidMethodCallGuardMutator_0
+	Description: the call to org.jsoup.select.Elements::size()I is guarded using default value 0
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 4
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+3.
+	Mutator: org.mudebug.prapr.core.mutationtest.engine.mutators.ReturningMethodCallGuardMutator_0
+	Description: the call to size()I is guarded returning default value null
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 4
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+4.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+	Description: changed conditional boundary
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 6
+	Rank: 4
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+5.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator
+	Description: Substituted 1 with 0
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 5
+	Rank: 4
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------
+6.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+	Description: negated conditional
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 6
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+7.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator
+	Description: removed call to org/jsoup/select/Elements::size
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 4
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+8.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+	Description: removed conditional - replaced comparison check with false
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 6
+	Rank: null
+	Total Rank: 5
+	Status: KILLED
+------------------------------------------------
+9.
+	Mutator: org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF
+	Description: removed conditional - replaced comparison check with true
+	File Name: org/jsoup/select/Elements.java
+	Line Number: 140
+	Block: 34
+	First Index: 6
+	Rank: 4
+	Total Rank: 9
+	Status: SURVIVED
+------------------------------------------------

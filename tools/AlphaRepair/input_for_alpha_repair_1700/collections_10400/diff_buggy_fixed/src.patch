@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/collections-1f/mutants/10400/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-10-31 19:47:39.623804288 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/collections/src/main/java/org/apache/commons/collections4/sequence/SequencesComparator.java	2022-12-26 15:13:49.801602638 -0600
+@@ -256,7 +256,7 @@
+ 
+         if (middle == null
+                 || middle.getStart() == end1 && middle.getDiag() == end1 - end2
+-                || middle.getEnd() == start1 == (middle.getDiag() == start1 - start2)) {
++                || middle.getEnd() == start1 && middle.getDiag() == start1 - start2) {
+ 
+             int i = start1;
+             int j = start2;

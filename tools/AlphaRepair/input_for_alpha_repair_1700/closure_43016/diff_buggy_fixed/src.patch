@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/closure-1f/mutants/43016/com/google/javascript/jscomp/StrictModeCheck.java	2022-10-31 19:47:37.855810671 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/closure/src/com/google/javascript/jscomp/StrictModeCheck.java	2022-10-29 09:34:25.053815334 -0500
+@@ -207,7 +207,7 @@
+       }
+       if (!key.isGetterDef()) {
+         // normal property and setter cases
+-        if (false) {
++        if (setters.contains(key.getString())) {
+           t.report(key, DUPLICATE_OBJECT_KEY);
+         } else {
+           setters.add(key.getString());

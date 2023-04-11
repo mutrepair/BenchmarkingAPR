@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksonxml-1f/mutants/1584/com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java	2022-10-31 19:47:49.651767888 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksonxml/src/main/java/com/fasterxml/jackson/dataformat/xml/deser/XmlBeanDeserializerModifier.java	2022-12-26 15:13:53.109638382 -0600
+@@ -59,7 +59,7 @@
+             // second: do we need to handle wrapping (for Lists)?
+             PropertyName wrapperName = prop.getWrapperName();
+             
+-            if (wrapperName != PropertyName.NO_NAME) {
++            if (wrapperName != null && wrapperName != PropertyName.NO_NAME) {
+                 String localName = wrapperName.getSimpleName();
+                 if ((localName != null && localName.length() > 0)
+                         && !localName.equals(prop.getName())) {

@@ -1,0 +1,11 @@
+--- /coconut/jun-data/artifact_repo/apreffectiveness/MutationBenchmark/codec-1f/mutants/316/org/apache/commons/codec/binary/Base64.java	2023-04-04 14:33:25.505953229 -0500
++++ /coconut/jun-data/artifact_repo/apreffectiveness/validation_repo/codec/src/java/org/apache/commons/codec/binary/Base64.java	2023-04-04 13:31:52.829626706 -0500
+@@ -318,7 +318,7 @@
+ 
+             byte val1 = ((b1 & SIGN) == 0) ? (byte) (b1 >> 2) : (byte) ((b1) >> 2 ^ 0xc0);
+             byte val2 = ((b2 & SIGN) == 0) ? (byte) (b2 >> 4) : (byte) ((b2) >> 4 ^ 0xf0);
+-            byte val3 = ((b3 & SIGN) == 0) ? (byte) (b3 >> 6) : (byte) ((b3) >> 6 | 252);
++            byte val3 = ((b3 & SIGN) == 0) ? (byte) (b3 >> 6) : (byte) ((b3) >> 6 ^ 0xfc);
+ 
+             encodedData[encodedIndex] = lookUpBase64Alphabet[val1];
+             // log.debug( "val2 = " + val2 );

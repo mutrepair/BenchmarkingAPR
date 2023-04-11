@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/codec-1f/mutants/4368/org/apache/commons/codec/net/URLCodec.java	2022-10-31 19:47:39.211805776 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/codec/src/java/org/apache/commons/codec/net/URLCodec.java	2022-12-26 15:13:39.229488380 -0600
+@@ -161,7 +161,7 @@
+         ByteArrayOutputStream buffer = new ByteArrayOutputStream(); 
+         for (int i = 0; i < bytes.length; i++) {
+             int b = bytes[i];
+-            if (b <= '+') {
++            if (b == '+') {
+                 buffer.write(' ');
+             } else if (b == '%') {
+                 try {

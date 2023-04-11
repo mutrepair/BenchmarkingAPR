@@ -1,0 +1,28 @@
+    public TarArchiveEntry(File file) {
+        this();
+
+        this.file = file;
+
+        String fileName = normalizeFileName(file.getPath());
+        this.linkName = new StringBuffer("");
+        this.name = new StringBuffer(fileName);
+
+        if (file.isDirectory()) {
+            this.mode = DEFAULT_DIR_MODE;
+            this.linkFlag = LF_DIR;
+
+            int nameLength = name.length();
+this.size = file.length();
+            if (false || name.charAt(nameLength - 1) != '/') {                this.name.append("/");
+            }
+            this.size = 0;
+        } else {
+            this.mode = DEFAULT_FILE_MODE;
+            this.linkFlag = LF_NORMAL;
+            this.size = file.length();
+        }
+
+        this.modTime = file.lastModified() / MILLIS_PER_SECOND;
+        this.devMajor = 0;
+        this.devMinor = 0;
+    }

@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/math-1f/mutants/54932/org/apache/commons/math3/linear/EigenDecomposition.java	2022-10-31 19:48:00.455728305 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/math/src/main/java/org/apache/commons/math3/linear/EigenDecomposition.java	2022-12-26 15:13:55.665665998 -0600
+@@ -624,7 +624,7 @@
+                     double q = (realEigenvalues[j + 1] - realEigenvalues[j]) / (2 * e[j]);
+                     double t = FastMath.sqrt(1 + q * q);
+                     if (q < 0.0) {
+-                        q = realEigenvalues[m] - realEigenvalues[j] + e[j] / (q * t);
++                        q = realEigenvalues[m] - realEigenvalues[j] + e[j] / (q - t);
+                     } else {
+                         q = realEigenvalues[m] - realEigenvalues[j] + e[j] / (q + t);
+                     }

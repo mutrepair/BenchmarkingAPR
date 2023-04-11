@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/jacksoncore-1f/mutants/3279/com/fasterxml/jackson/core/base/ParserBase.java	2022-10-31 19:47:45.083784510 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/jacksoncore/src/main/java/com/fasterxml/jackson/core/base/ParserBase.java	2022-12-26 15:13:51.921625546 -0600
+@@ -653,7 +653,7 @@
+             if (_numTypesValid == NR_UNKNOWN) {
+                 _parseNumericValue(NR_LONG);
+             }
+-            if ((_numTypesValid | NR_LONG) == 0) {
++            if ((_numTypesValid & NR_LONG) == 0) {
+                 convertNumberToLong();
+             }
+         }

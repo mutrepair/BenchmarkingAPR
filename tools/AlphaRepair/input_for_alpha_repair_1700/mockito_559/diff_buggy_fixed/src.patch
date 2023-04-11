@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/mockito-1f/mutants/559/org/mockito/internal/stubbing/InvocationContainerImpl.java	2022-10-31 19:48:05.707708928 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/mockito/src/org/mockito/internal/stubbing/InvocationContainerImpl.java	2022-12-26 15:13:56.657676716 -0600
+@@ -43,7 +43,7 @@
+ 
+     public void addAnswer(Answer answer) {
+         registeredInvocations.removeLast();
+-        addAnswer(answer, true);
++        addAnswer(answer, false);
+     }
+ 
+     public void addConsecutiveAnswer(Answer answer) {

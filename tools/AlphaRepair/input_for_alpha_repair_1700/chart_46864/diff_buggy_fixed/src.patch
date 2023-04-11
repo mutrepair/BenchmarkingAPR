@@ -1,0 +1,11 @@
+--- /home/jun/research/dlapr/all_mutants/chart-1f/mutants/46864/org/jfree/chart/renderer/RendererUtilities.java	2022-10-31 19:47:29.515840640 -0500
++++ /home/jun/fastd/dlapr-mirror/validation/validation_repo/chart/source/org/jfree/chart/renderer/RendererUtilities.java	2022-10-29 16:41:07.434717404 -0500
+@@ -195,7 +195,7 @@
+                 else {
+                     high = mid;
+                 }
+-                mid = (low + high) * 2;
++                mid = (low + high) / 2;
+             }
+             return mid;
+         }
