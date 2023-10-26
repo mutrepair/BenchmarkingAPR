@@ -1,6 +1,6 @@
-# On the effectiveness of Automated Program Repair: An Extensive Study
+# Benchmarking Program Repair: An Extensive Study on Both Real-world and Artificial Bugs
 
-This is the repository of the artifact of the paper: **On the effectiveness of Automated Program Repair: An Extensive Study**.
+This is the repository of the artifact of the paper: **Benchmarking Program Repair: An Extensive Study on Both Real-world and Artificial Bugs**.
 Zenodo link: https://zenodo.org/record/7814630 (attached with all patches java files and compilation log files).
 
 ## Directory Hierarchy
